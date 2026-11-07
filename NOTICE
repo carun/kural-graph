@@ -16,6 +16,12 @@ Its commentaries and translations are not included.
 The English readings were written for this project by an AI (Anthropic's
 Claude), from the Tamil and parimēlaḻagar's commentary.
 
+The project's own annotations and readings are licensed under Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International: see content/LICENSE in
+https://github.com/carun/kural-graph. Commercial use needs the owner's permission:
+ask at https://arunc.dev/contact/. The texts described here keep their own terms,
+and the code is under the MIT licence.
+
 parimēlaḻagar's commentary is about seven hundred years old. The Tamil shown
 here is from Tamil Wikisource
 (https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை), whose text is available

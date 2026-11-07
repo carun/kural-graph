@@ -79,6 +79,9 @@ export default function About() {
           <p className="reading">
             The Tamil starts from the <Link href="https://github.com/tk120404/thirukkural">thirukkural dataset</Link> (Apache 2.0). It was checked line by line against <Link href="https://www.projectmadurai.org/">Project Madurai</Link> and two editions on <Link href="https://ta.wikisource.org/">Tamil Wikisource</Link>, and 105 decisions were reviewed, including 63 repairs of damaged text. <Link href="/NOTICE.txt">Notices and credits</Link>.
           </p>
+  <p className="reading">
+            The annotations and readings written for this project are under <Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</Link>, so commercial use needs the owner’s permission, which you can <Link href="https://arunc.dev/contact/">ask for here</Link>. The texts above keep their own terms, and the code is under the MIT licence.
+          </p>
         </Section>
 
         <Section title="The romanised Tamil">

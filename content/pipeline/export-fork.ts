@@ -231,6 +231,7 @@ const byRelation: Record<string, number> = {};
 for (const e of edges) byRelation[e.type] = (byRelation[e.type] ?? 0) + 1;
 
 const numbering = '1,330 couplets in 133 chapters of ten.';
+const license = 'Annotations and readings: CC BY-NC-SA 4.0, commercial use by permission. Source texts keep their own terms: see NOTICE.txt.';
 const generatedAt = new Date(0).toISOString();
 const sources = [
   { name: 'Tirukkural', url: 'https://github.com/tk120404/thirukkural', license: 'Apache-2.0' },
@@ -244,7 +245,7 @@ const sources = [
 ];
 
 const graphDoc = {
-  meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, sources },
+  meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, license, sources },
   schema: { nodeLabels: { Chapter: '133 chapters', Verse: '1,330 couplets', Character: 'the poet and the speakers of Part 3', SanskritConcept: 'themes, roles and images', Emotion: 'virtues, vices and states of mind', LifeDilemma: 'life situations', PersonalThought: 'private thoughts, on this device only' }, relations: {} },
   categories: { theme: 'Themes', role: 'Roles', image: 'Images' },
   threads,
@@ -255,7 +256,7 @@ const graphDoc = {
   stats: { nodes: nodes.length, edges: edges.length, byLabel, byRelation },
 };
 const versesDoc = {
-  meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, defaults: { en: 1, hi: 1 }, audioNote: 'Couplets are read by your device until a recording exists.', sources },
+  meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, license, defaults: { en: 1, hi: 1 }, audioNote: 'Couplets are read by your device until a recording exists.', sources },
   authors: [
     { id: 1, name: 'Plain reading', lang: 'en', kind: 'translation' },
     { id: 2, name: 'Parimelazhagar', lang: 'en', kind: 'both', school: 'Classical commentary', work: 'Paraphrased in English by an AI' },

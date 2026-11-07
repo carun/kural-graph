@@ -231,6 +231,10 @@ test("the Tamil commentaries sit beside his, and each couplet lists the ones it 
   }
 });
 
+test("the licence travels with the data files", () => {
+  for (const doc of [versesDoc, read<{ meta: object }>("kural-graph")]) assert.match((doc.meta as { license?: string }).license ?? "", /CC BY-NC-SA 4\.0/);
+});
+
 test("readers see his name in the owner’s romanisation, everywhere", () => {
   const all = readFileSync(fileURLToPath(new URL("../public/data/kural-graph.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/kural-verses.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/commentary/K_380.json", import.meta.url)), "utf8");
   assert.ok(!all.includes("Parimelazhagar"));

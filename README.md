@@ -85,4 +85,4 @@ All are WebP files in `public/images/home/`. `public/og.jpg` is the picture for 
 
 ## Licence
 
-MIT, as his is: see [LICENSE](LICENSE), which keeps his copyright. [NOTICE](NOTICE) gives the sources of the texts. `public/third-party-notices.txt` covers the software, fonts and search model the site ships, and `node scripts/licences.mjs` rebuilds it after a change of dependencies.
+The code is MIT, as his is: see [LICENSE](LICENSE), which keeps his copyright. The project's own annotations and readings are under [CC BY-NC-SA 4.0](content/LICENSE), so commercial use needs the owner's permission. The source texts keep their own terms, listed in [content/README.md](content/README.md#licence). [NOTICE](NOTICE) gives the sources of the texts. `public/third-party-notices.txt` covers the software, fonts and search model the site ships, and `node scripts/licences.mjs` rebuilds it after a change of dependencies.
