@@ -8,7 +8,7 @@ import { lessonDoneAt, markLessonDone } from "@/lib/store/readingPosition";
 import type { ConnectionRelation } from "@/lib/types";
 import { askPartha } from "@/components/chat/GraphRagChatbot";
 
-const VERSE = "K_2.47";
+const VERSE = "K_100";
 
 /** The three ways to answer, each kept as the relation of the note to the verse. Disagreement is welcome. */
 const RESPONSES: { label: string; starter: string; relation: ConnectionRelation }[] = [
@@ -35,7 +35,7 @@ function Step({ n, title, kind, children }: { n: number; title: string; kind?: s
 }
 
 /**
- * "Start here": one short, complete lesson on BG 2.47. Source text and translation come from the data with their
+ * "Start here": one short, complete lesson on Kural 100. Source text and translation come from the data with their
  * attribution; the explanation and example are labelled as editorial (a draft for review, not a translation). It ends
  * in the person's own words and a clear next step.
  */
@@ -47,6 +47,8 @@ export function Lesson({ onClose }: { onClose: () => void }) {
   if (!verse || !versesDoc) return null;
   const author = versesDoc.authors.find((a) => a.id === enAuthor);
   const translation = verse.translations.en?.[String(enAuthor)] || Object.values(verse.translations.en || {})[0] || "";
+  const chapter = versesDoc.chapters.find((c) => c.number === verse.chapter);
+  const his = verse.translations.en?.["2"];
 
   const respond = (r: (typeof RESPONSES)[number]) => {
     const kind = useDraft.getState().startVerseNote(VERSE, r.relation);
@@ -69,7 +71,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
       </button>
       <header className="mt-4">
         <div className="label">Start here · one idea · about five minutes</div>
-        <h1 className="serif mt-2 text-[30px] font-semibold leading-[1.15] tracking-[-0.01em] text-text sm:text-[34px]">Effort, without being ruled by the outcome</h1>
+        <h1 className="serif mt-2 text-[30px] font-semibold leading-[1.15] tracking-[-0.01em] text-text sm:text-[34px]">Harsh words, when sweet ones are there</h1>
         {done && (
           <p className="mt-2 flex items-center gap-1.5 text-[13px] text-text-3">
             <Check size={14} className="text-good" /> You finished this on {new Date(done).toLocaleDateString(undefined, { dateStyle: "medium" })}. It&apos;s here whenever you want to return.
@@ -79,16 +81,16 @@ export function Lesson({ onClose }: { onClose: () => void }) {
 
       <div className="mt-8 space-y-9">
         <Step n={1} title="A question to hold">
-          <p className="reading">Can you care deeply about your work and still not be ruled by how it turns out?</p>
+          <p className="reading">When a kind way of saying something is within reach, why do we so often pick the harsh one?</p>
         </Step>
 
         <Step n={2} title="The setting" kind="Context">
-          <p className="reading">
-            Arjuna stands in his chariot between two armies, with teachers and relatives on the other side. Overwhelmed, he puts down his bow and asks his friend and charioteer, Kṛṣṇa, what he should do. Chapter 2 is Kṛṣṇa&apos;s first long answer, and this verse is one of its best-known lines.
-          </p>
+          <p className="reading">The Kural is 1,330 couplets in 133 chapters of ten. This one closes chapter {verse.chapter}, “{chapter?.title}”. Parimelazhagar opens the chapter like this:</p>
+          <p className="reading mt-2 border-l-2 border-line pl-3">{chapter?.summary.en}</p>
+          <p className="mt-2 text-[12px] text-text-3">Parimelazhagar, paraphrased in English by an AI.</p>
         </Step>
 
-        <Step n={3} title="The verse" kind={`Kural ${verse.ref} · source`}>
+        <Step n={3} title="The couplet" kind={`Kural ${verse.ref} · source`}>
           <div className="rounded-3 border border-line bg-surface p-4 sm:p-5">
             <div className="deva text-[19px] leading-[1.8] text-text [overflow-wrap:anywhere]">
               {verse.sanskrit.map((l, i) => (
@@ -98,7 +100,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
             <div className="serif mt-1.5 text-[14px] italic leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{verse.iast.join(" ")}</div>
             <p className="serif mt-3 border-t border-line pt-3 text-[16.5px] leading-[1.65] text-text">{translation}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2 text-[12px] text-text-3">
-              <span>Translation: {author?.name ?? "default translator"}</span>
+              <span>{author?.name ?? "Plain reading"}, written by an AI</span>
               <button className="btn btn-sm btn-ghost max-sm:h-10" onClick={() => audio.playVerse(VERSE)}>
                 <Play size={13} /> Listen
               </button>
@@ -108,19 +110,24 @@ export function Lesson({ onClose }: { onClose: () => void }) {
 
         <Step n={4} title="In plain words" kind="Explanation · editorial draft, not a translation">
           <p className="reading">
-            What is yours is the doing: the effort, the care, the choices you make. How it lands is not entirely yours. The verse asks for two things at once: don&apos;t make the result the reason you act, and don&apos;t give up acting because the result isn&apos;t in your hands.
+            Two fruits are within reach, one ripe and one not, and no one would pick the unripe one. The couplet says harsh words are that same choice. The sweet words were there too, and you passed them by.
           </p>
-          <p className="mt-2 text-[13px] leading-5 text-text-3">Commentators across traditions read this line in different ways. Open the verse to compare their readings.</p>
+          {his && (
+            <>
+              <p className="reading mt-2 border-l-2 border-line pl-3">{his}</p>
+              <p className="mt-2 text-[12px] text-text-3">Parimelazhagar, paraphrased in English by an AI. Open the couplet to read his Tamil.</p>
+            </>
+          )}
         </Step>
 
         <Step n={5} title="An everyday example" kind="Editorial draft">
           <p className="reading">
-            Preparing for an exam, you can study steadily, ask for help and get some sleep. The questions and the marking are not yours to choose. If only the grade matters, every hour is anxious; if the work itself matters, you can give it your full attention, whatever the grade.
+            A friend shows you something they made, and it has a fault. “This doesn’t work” and “this part could be stronger, and here is why” both tell the truth, and both are in your mouth at that moment. Only one of them is the ripe fruit.
           </p>
         </Step>
 
         <Step n={6} title="In your own words">
-          <p className="reading">How would you put this, or where do you disagree? Your answer is saved as a note on this verse, in your own words. You can change it or remove the connection later.</p>
+          <p className="reading">How would you put this, or where do you disagree? Your answer is saved as a note on this couplet, in your own words. You can change it or remove the connection later.</p>
           <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
             {RESPONSES.map((r) => (
               <button key={r.label} className="btn max-sm:h-11 max-sm:justify-start" onClick={() => respond(r)}>
@@ -133,14 +140,14 @@ export function Lesson({ onClose }: { onClose: () => void }) {
         <section className="rounded-3 border border-line bg-surface-2 p-4 sm:p-5" aria-label="What next">
           <h2 className="text-[15px] font-semibold text-text">{done ? "Where to go next" : "When you're ready"}</h2>
           <div className="mt-3 flex flex-wrap gap-2">
-            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(2), useGita.getState().select(VERSE, { fly: false }))}>
-              Read it in chapter 2
+            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(verse.chapter), useGita.getState().select(VERSE, { fly: false }))}>
+              Read it in chapter {verse.chapter}
             </button>
-            <button className="btn max-sm:h-11" onClick={() => askPartha("Explain BG 2.47 in simple words for someone new to the Gita.")}>
+            <button className="btn max-sm:h-11" onClick={() => askPartha("Explain Kural 100 in simple words for someone new to the Kural.")}>
               <MessagesSquare size={14} /> Ask about it
             </button>
-            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(2), useGita.getState().select("K_2.48", { fly: false }))}>
-              Next idea: BG 2.48, evenness of mind
+            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(13), useGita.getState().select("K_129", { fly: false }))}>
+              Next idea: Kural 129, the scar a tongue leaves
             </button>
             {!done && (
               <button className="btn btn-ghost max-sm:h-11" onClick={finish}>

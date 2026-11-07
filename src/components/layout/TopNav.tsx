@@ -57,20 +57,20 @@ export function TopNav() {
         className="flex min-w-0 items-center gap-2.5 justify-self-start rounded-[var(--radius-2)] pr-2"
         onClick={() => (select(null), setView("home"))}
         aria-current={view === "home" ? "page" : undefined}
-        aria-label="GitaViśva home"
+        aria-label="Kural Graph home"
         title="Home"
       >
         <BrandMark size={26} />
         <span className="flex items-baseline gap-2">
-          <span className="text-[15px] font-semibold tracking-[-0.01em] text-text">GitaViśva</span>
-          <span className="deva hidden text-[13px] leading-none text-text-3 lg:inline">गीताविश्व</span>
+          <span className="text-[15px] font-semibold tracking-[-0.01em] text-text">Kural Graph</span>
+          <span className="deva hidden text-[13px] leading-none text-text-3 lg:inline">குறள் வரைபடம்</span>
         </span>
       </button>
 
       <nav className="hidden justify-self-center md:block" aria-label="Views">
         <div className="seg">
           {VIEWS.map((v) => (
-            <button key={v.id} aria-current={view === v.id ? "page" : undefined} onClick={() => setView(v.id)} title={`${v.name} · ${v.sa}. ${v.blurb}`} className="!h-8 !px-3">
+            <button key={v.id} aria-current={view === v.id ? "page" : undefined} onClick={() => setView(v.id)} title={`${v.name}. ${v.blurb}`} className="!h-8 !px-3">
               <v.icon size={15} />
               <span>{v.name}</span>
             </button>
@@ -82,7 +82,7 @@ export function TopNav() {
         <button className="btn btn-ghost btn-icon lg:hidden" onClick={() => setPaletteOpen(true)} aria-label="Search" title={`Search (${mod} K)`}>
           <Search size={17} />
         </button>
-        <button className="btn hidden h-8 w-[13.5rem] justify-start gap-2 bg-surface px-2.5 text-text-3 lg:inline-flex" onClick={() => setPaletteOpen(true)} title={`Search verses, ideas and feelings (${mod} K)`}>
+        <button className="btn hidden h-8 w-[13.5rem] justify-start gap-2 bg-surface px-2.5 text-text-3 lg:inline-flex" onClick={() => setPaletteOpen(true)} title={`Search couplets, ideas and feelings (${mod} K)`}>
           <Search size={15} />
           <span className="flex-1 text-left text-[13px]">Search</span>
           <kbd className="kbd">{mod} K</kbd>

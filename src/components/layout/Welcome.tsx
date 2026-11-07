@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, BookOpen, ChevronDown, MessagesSquare, NotebookPen, ShieldCheck, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
@@ -22,6 +22,9 @@ export function Welcome() {
   const overlayRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const firstRef = useRef<HTMLButtonElement>(null);
+  // useModal's Tab loop can't see a <summary> or tell what a closed <details> hides: the summary gets a tabindex, and the
+  // list exists only while open, so focus can't leave the dialog from here or get stuck on a hidden button.
+  const [more, setMore] = useState(false);
   useModal(open, overlayRef, dialogRef, () => setOpen(false), firstRef);
 
   const go = (fn: () => void) => {
@@ -32,7 +35,7 @@ export function Welcome() {
     {
       icon: NotebookPen,
       title: "Save a thought",
-      blurb: "A feeling, a question, or an idea. Keep it in your own words; connections to the Gita are optional.",
+      blurb: "A feeling, a question, or an idea. Keep it in your own words; connections to the Kural are optional.",
       run: () => {
         setView("manas");
         useDraft.getState().requestFocus();
@@ -40,14 +43,14 @@ export function Welcome() {
     },
     {
       icon: BookOpen,
-      title: "Understand one verse",
-      blurb: "A five-minute start: one famous verse, its setting, a plain explanation, and room for your own view.",
+      title: "Understand one couplet",
+      blurb: "A five-minute start: one couplet, its setting, a plain explanation, and room for your own view.",
       run: () => useGita.getState().openLesson(true),
     },
     {
       icon: MessagesSquare,
       title: "Ask a question",
-      blurb: "About an idea, a verse or a comparison. Answers show the verses they draw on.",
+      blurb: "About an idea, a couplet or a comparison. Answers show the couplets they draw on.",
       run: () => setChatOpen(true),
     },
   ];
@@ -80,9 +83,9 @@ export function Welcome() {
             <div className="overflow-y-auto px-6 pb-6 pt-7 sm:px-8">
               <BrandMark size={34} />
               <h2 id="welcome-title" className="mt-4 pr-8 text-[22px] font-semibold tracking-[-0.015em] text-text">
-                A place for your thoughts, with the Gita alongside
+                A place for your thoughts, with the Kural alongside
               </h2>
-              <p className="mt-2 max-w-[52ch] text-[14px] leading-[1.6] text-text-2">Keep what is on your mind, learn one idea at a time, or ask. The Gita is there to explore when you want it; nothing has to connect to it.</p>
+              <p className="mt-2 max-w-[52ch] text-[14px] leading-[1.6] text-text-2">Keep what is on your mind, learn one idea at a time, or ask. The Kural is there to explore when you want it; nothing has to connect to it.</p>
 
               <ul className="mt-5 space-y-2">
                 {paths.map((p, i) => (
@@ -101,12 +104,12 @@ export function Welcome() {
                 ))}
               </ul>
 
-              <details className="group mt-4 rounded-[var(--radius-3)] border border-line">
-                <summary className="flex cursor-pointer select-none items-center gap-2 px-4 py-3 text-[13px] font-medium text-text-2 hover:text-text">
+              <details className="group mt-4 rounded-[var(--radius-3)] border border-line" open={more} onToggle={(e) => setMore(e.currentTarget.open)}>
+                <summary tabIndex={0} className="flex cursor-pointer select-none items-center gap-2 px-4 py-3 text-[13px] font-medium text-text-2 hover:text-text">
                   <ChevronDown size={14} className="transition-transform group-open:rotate-180" />
-                  Other ways in: the whole Gita as a graph, lineage, the full reader
+                  Other ways in: the whole Kural as a graph, lineage, the full reader
                 </summary>
-                <ul className="divide-y divide-line border-t border-line">
+                {more && <ul className="divide-y divide-line border-t border-line">
                   {VIEWS.map((v) => (
                     <li key={v.id}>
                       <button className="group/v flex w-full items-start gap-3 px-4 py-3 text-left transition-colors hover:bg-surface-3" onClick={() => go(() => setView(v.id))}>
@@ -114,24 +117,28 @@ export function Welcome() {
                         <span className="min-w-0 flex-1">
                           <span className="flex items-baseline gap-2">
                             <span className="text-[13.5px] font-semibold text-text">{v.name}</span>
-                            <span className="text-[12px] text-text-3">{v.sa}</span>
                           </span>
                           <span className="mt-0.5 block text-[12.5px] leading-5 text-text-2">{v.blurb}</span>
                         </span>
                       </button>
                     </li>
                   ))}
-                </ul>
+                </ul>}
               </details>
 
               <div className="mt-5 flex items-start gap-2 text-[12.5px] leading-5 text-text-3">
                 <ShieldCheck size={15} className="mt-0.5 shrink-0 text-good" />
                 <span>
-                  Your thoughts are saved on this device, in this browser; they don&apos;t sync to other devices (use Export to move them). Reading, search and suggestions work without a language model. AI features are optional and send only the text you choose to the provider shown.
+                  Your thoughts are saved on this device, in this browser; they don&apos;t sync to other devices (use Export to move them). Reading, search and suggestions work without a language model. AI features are optional and send only the text you choose to the provider shown. An AI wrote the English and drew the links, and no person has reviewed the links yet.
                 </span>
               </div>
-              <div className="mt-4 text-[12.5px] text-text-3">
-                Search anything with <kbd className="kbd">{mod} K</kbd>
+              <div className="mt-4 flex items-center justify-between gap-3 text-[12.5px] text-text-3">
+                <span>
+                  Search anything with <kbd className="kbd">{mod} K</kbd>
+                </span>
+                <a className="btn btn-ghost btn-sm" href="/about">
+                  About
+                </a>
               </div>
             </div>
           </motion.div>

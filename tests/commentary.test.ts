@@ -71,6 +71,7 @@ test("voices: Indian English for English, Hindi for Hindi and Sanskrit, natural 
   ];
   assert.equal(pickVoice(voices, "en")?.name, "Microsoft Neerja Online (Natural)");
   assert.equal(pickVoice(voices, "hi")?.name, "Microsoft Kalpana");
-  assert.equal(pickVoice(voices, "sa")?.name, "Microsoft Kalpana");
+  assert.equal(pickVoice(voices, "sa"), null);
+  assert.equal(pickVoice([...voices, { lang: "ta-IN", name: "Microsoft Valluvar" }], "sa")?.name, "Microsoft Valluvar");
   assert.equal(pickVoice([{ lang: "en-US", name: "x" }], "hi"), null);
 });

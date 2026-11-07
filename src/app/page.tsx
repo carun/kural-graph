@@ -50,8 +50,8 @@ function AppLoading() {
     <div className="absolute inset-0 flex items-center justify-center p-6" role="status" aria-live="polite">
       <div className="flex w-full max-w-[280px] flex-col items-center text-center">
         <BrandMark size={40} />
-        <div className="mt-5 text-[15px] font-semibold text-text">Loading the Gita</div>
-        <div className="mt-1 text-[13px] text-text-3">701 verses and the relationships between them</div>
+        <div className="mt-5 text-[15px] font-semibold text-text">Loading the Kural</div>
+        <div className="mt-1 text-[13px] text-text-3">1,330 couplets and the relationships between them</div>
         <div className="progress-indeterminate mt-5 w-full" />
       </div>
     </div>
@@ -97,7 +97,7 @@ export default function App() {
     useGita.setState({ view: startView });
     if (startView === "home") delete document.documentElement.dataset.entry;
     const ch = Number(qs.get("chapter"));
-    if (ch >= 1 && ch <= 18) useGita.setState({ readerChapter: ch });
+    if (ch >= 1 && ch <= 133) useGita.setState({ readerChapter: ch });
     else {
       const pos = getReadingPosition();
       if (pos) useGita.setState({ readerChapter: pos.chapter });
@@ -202,7 +202,7 @@ export default function App() {
       const node = qs.get("node");
       const g = useGita.getState();
       popping.current = true;
-      useGita.setState({ view: viewFromQuery(qs), ...(ch >= 1 && ch <= 18 ? { readerChapter: ch } : {}) });
+      useGita.setState({ view: viewFromQuery(qs), ...(ch >= 1 && ch <= 133 ? { readerChapter: ch } : {}) });
       if (node && g.graphs?.graph.hasNode(node)) g.select(node, { fly: false });
       else if (!node && g.selectedId) g.select(null);
     };

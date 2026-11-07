@@ -1,19 +1,19 @@
-// Offline Devanagari → regional Indic script transliteration (Brahmic blocks share the ISCII-derived layout,
+// Offline Tamil → other Indic script transliteration (Brahmic blocks share the ISCII-derived layout,
 // so most characters map by a fixed code-point offset; gaps are patched per script).
 
-export type RegionalScript = "odia" | "bengali" | "gujarati" | "tamil" | "telugu" | "kannada" | "malayalam";
+export type RegionalScript = "devanagari" | "odia" | "bengali" | "gujarati" | "telugu" | "kannada" | "malayalam";
 
 export const SCRIPT_INFO: Record<RegionalScript, { name: string; native: string; lang: string; offset: number; font: string }> = {
+  devanagari: { name: "Hindi", native: "हिन्दी", lang: "Hindi", offset: 0, font: "var(--font-indic)" },
   bengali: { name: "Bengali", native: "বাংলা", lang: "Bengali", offset: 0x0980 - 0x0900, font: "var(--font-indic)" },
   gujarati: { name: "Gujarati", native: "ગુજરાતી", lang: "Gujarati", offset: 0x0a80 - 0x0900, font: "var(--font-indic)" },
   odia: { name: "Odia", native: "ଓଡ଼ିଆ", lang: "Odia", offset: 0x0b00 - 0x0900, font: "var(--font-indic)" },
-  tamil: { name: "Tamil", native: "தமிழ்", lang: "Tamil", offset: 0x0b80 - 0x0900, font: "var(--font-indic)" },
   telugu: { name: "Telugu", native: "తెలుగు", lang: "Telugu", offset: 0x0c00 - 0x0900, font: "var(--font-indic)" },
   kannada: { name: "Kannada", native: "ಕನ್ನಡ", lang: "Kannada", offset: 0x0c80 - 0x0900, font: "var(--font-indic)" },
   malayalam: { name: "Malayalam", native: "മലയാളം", lang: "Malayalam", offset: 0x0d00 - 0x0900, font: "var(--font-indic)" },
 };
 
-/** Languages offered for on-demand (LLM) meaning translation; Marathi shares Devanagari script. */
+/** Languages offered for on-demand (LLM) meaning translation. English is the only one that ships with the site. */
 export const TRANSLATION_LANGS = [
   { id: "en", name: "English", native: "English" },
   { id: "hi", name: "Hindi", native: "हिन्दी" },
@@ -27,56 +27,30 @@ export const TRANSLATION_LANGS = [
   { id: "ml", name: "Malayalam", native: "മലയാളം" },
 ];
 
-// Devanagari code points whose straight offset lands on an unassigned slot → replacement in the target script.
+// Tamil letters whose straight offset lands on an unassigned slot, or on a letter fonts rarely carry → replacement.
+// Bengali, Gujarati and Odia have no short e or o, and no ன, ற or ழ: the nearest letter stands in, so ள and ழ merge there.
+// Telugu's own letter for ழ (U+0C34) is missing from many fonts; ళ is how Telugu itself spells தமிழ். Kannada keeps ழ at U+0CDE.
 const PATCH: Partial<Record<RegionalScript, Record<string, string>>> = {
-  bengali: { "व": "ব", "ळ": "ল", "ॐ": "ওঁ", "ॅ": "", "ऍ": "এ" },
-  gujarati: { "ॐ": "ૐ" },
-  odia: { "ॐ": "ଓଁ", "व": "ବ" },
-  telugu: { "ॐ": "ఓం" },
-  kannada: { "ॐ": "ಓಂ" },
-  malayalam: { "ॐ": "ഓം" },
-  tamil: { "ॐ": "ஓம்", "ऋ": "ரு", "ॠ": "ரூ", "ं": "ம்", "ँ": "ம்", "ऽ": "’", "ॄ": "்ரூ", "ृ": "்ரு" },
+  bengali: { "எ": "এ", "ஒ": "ও", "ெ": "ে", "ொ": "ো", "ன": "ন", "ற": "র", "ள": "ল", "ழ": "ল", "வ": "ব", "ய": "য়" },
+  gujarati: { "எ": "એ", "ஒ": "ઓ", "ெ": "ે", "ொ": "ો", "ன": "ન", "ற": "ર", "ழ": "ળ" },
+  odia: { "எ": "ଏ", "ஒ": "ଓ", "ெ": "େ", "ொ": "ୋ", "ன": "ନ", "ற": "ର", "ழ": "ଳ", "வ": "ବ", "ய": "ୟ" },
+  telugu: { "ன": "న", "ழ": "ళ" },
+  kannada: { "ன": "ನ", "ழ": "ೞ" },
+  malayalam: { "ன": "ന" },
 };
 
-// Tamil lacks aspirated & voiced stops: write the base letter with a Grantha-style superscript (²³⁴).
-const TAMIL_STOPS: Record<string, [string, string]> = {
-  "ख": ["க", "²"], "ग": ["க", "³"], "घ": ["க", "⁴"],
-  "छ": ["ச", "²"], "झ": ["ஜ", "²"],
-  "ठ": ["ட", "²"], "ड": ["ட", "³"], "ढ": ["ட", "⁴"],
-  "थ": ["த", "²"], "द": ["த", "³"], "ध": ["த", "⁴"],
-  "फ": ["ப", "²"], "ब": ["ப", "³"], "भ": ["ப", "⁴"],
-};
-
-// Vowel signs & virāma only — anusvāra/visarga follow the superscript ("ப⁴ம்", not "பம்⁴").
-const isCombining = (ch: string) => /[ा-्ॢॣ]/.test(ch);
-const SHARED = new Set(["।", "॥", " ", "\n", "‌", "‍"]);
+// Offsets above count from the Devanagari block, which is where Tamil's letters are first moved to.
+const TAMIL = 0x0b80 - 0x0900;
 
 export function transliterate(text: string, script: RegionalScript): string {
   const info = SCRIPT_INFO[script];
   const patch = PATCH[script] || {};
-  const chars = [...text];
   let out = "";
-  let pendingSup = "";
-  for (let i = 0; i < chars.length; i++) {
-    const ch = chars[i];
-    if (script === "tamil" && TAMIL_STOPS[ch]) {
-      const [base, sup] = TAMIL_STOPS[ch];
-      out += base;
-      pendingSup = sup;
-    } else if (patch[ch] !== undefined) {
-      out += patch[ch];
-    } else {
-      const cp = ch.codePointAt(0)!;
-      if (cp >= 0x0900 && cp <= 0x097f && !SHARED.has(ch)) {
-        const mapped = String.fromCodePoint(cp + info.offset);
-        out += mapped;
-      } else out += ch;
-    }
-    // The superscript follows the whole syllable (after vowel signs / virama), never inside it.
-    if (pendingSup && !(chars[i + 1] && isCombining(chars[i + 1]))) {
-      out += pendingSup;
-      pendingSup = "";
-    }
+  for (const ch of text.normalize("NFC")) {
+    const cp = ch.codePointAt(0)!;
+    if (patch[ch] !== undefined) out += patch[ch];
+    else if (cp >= 0x0b80 && cp <= 0x0bff) out += String.fromCodePoint(cp - TAMIL + info.offset);
+    else out += ch;
   }
   return out;
 }

@@ -15,12 +15,12 @@ import { askPartha } from "@/components/chat/GraphRagChatbot";
 import { NodeGlyph, Notice, SectionLabel } from "@/components/ui/primitives";
 import { PadacchedaLexicon } from "./PadacchedaLexicon";
 import { Perspectives } from "./Perspectives";
+import { IastKey, OldView, englishBy } from "@/kural/reader";
 
-const SPEAKER: Record<string, string> = { krishna: "Kṛṣṇa", arjuna: "Arjuna", sanjaya: "Sañjaya", dhritarashtra: "Dhṛtarāṣṭra", duryodhana: "Duryodhana" };
-const LISTENER: Record<string, string> = { krishna: "Arjuna", arjuna: "Kṛṣṇa", sanjaya: "Dhṛtarāṣṭra", dhritarashtra: "Sañjaya", duryodhana: "Droṇa" };
+const SPEAKER: Record<string, string> = { tiruvalluvar: "Tiruvalluvar", he: "He", she: "She", friend: "The Friend" };
 const PRIMARY_SCRIPTS: { id: ScriptChoice; label: string }[] = [
-  { id: "deva", label: "देवनागरी" },
-  { id: "iast", label: "IAST" },
+  { id: "deva", label: "தமிழ்" },
+  { id: "iast", label: "Revised IAST" },
   { id: "phonetic", label: "Phonetic" },
 ];
 const REGIONAL = Object.keys(SCRIPT_INFO) as RegionalScript[];
@@ -56,14 +56,14 @@ export function verseLines(verse: Verse, script: ScriptChoice) {
 
 function SanskritBlock({ verse, script }: { verse: Verse; script: ScriptChoice }) {
   const lines = verseLines(verse, script);
-  const head = verse.uvacha ? (script === "iast" ? verse.uvacha.iast : script === "phonetic" ? verse.uvacha.tr : isRegionalScript(script) ? transliterate(verse.uvacha.sa, script) : verse.uvacha.sa) : null;
-  const cls = script === "deva" ? "deva text-[21px] leading-[1.85]" : isRegionalScript(script) ? "indic text-[19px]" : "serif text-[17px] italic leading-[1.6]";
+  const head = verse.uvacha ? (script === "iast" ? verse.uvacha.iast : script === "phonetic" ? verse.uvacha.iast.normalize("NFD").replace(/\p{M}/gu, "") : isRegionalScript(script) ? transliterate(verse.uvacha.sa, script) : verse.uvacha.sa) : null;
+  const cls = script === "deva" ? "deva text-[18px] leading-[1.85]" : isRegionalScript(script) ? "indic text-[19px]" : "serif text-[17px] italic leading-[1.6]";
   return (
     <div>
       {head && <div className={`${script === "deva" ? "deva" : isRegionalScript(script) ? "indic" : "serif italic"} mb-1 text-[13.5px] text-text-3`}>{head}</div>}
       <div className={`${cls} text-text`}>
         {lines.map((l, i) => (
-          <div key={i}>{l}</div>
+          <div key={i} className="pl-4 -indent-4">{l}</div>
         ))}
       </div>
       {script === "deva" && <div className="serif mt-2 text-[14px] italic leading-[1.55] text-text-3">{verse.iast.join(" ")}</div>}
@@ -95,7 +95,6 @@ function Translation({ verse }: { verse: Verse }) {
   const lang = useGita((s) => s.translationLang);
   const setLang = useGita((s) => s.setTranslationLang);
   const enAuthor = useGita((s) => s.enAuthor);
-  const hiAuthor = useGita((s) => s.hiAuthor);
   const setAuthors = useGita((s) => s.setAuthors);
   const setSettingsOpen = useGita((s) => s.setSettingsOpen);
   const conn = useConnection();
@@ -106,7 +105,7 @@ function Translation({ verse }: { verse: Verse }) {
   const langInfo = TRANSLATION_LANGS.find((l) => l.id === lang);
 
   useEffect(() => {
-    if (lang === "en" || lang === "hi") return;
+    if (lang === "en") return;
     let live = true;
     setRegional("");
     setErr("");
@@ -121,7 +120,7 @@ function Translation({ verse }: { verse: Verse }) {
     setBusy(true);
     setErr("");
     const en = verse.translations.en?.[String(enAuthor)] || Object.values(verse.translations.en)[0];
-    const r = await streamFromApi({ mode: "translate", question: `Translate the meaning of Bhagavad Gita ${verse.ref} into ${langInfo.name} (${langInfo.native} script).`, context: `Sanskrit: ${verse.sanskrit.join(" ")}\nIAST: ${verse.iast.join(" ")}\nEnglish: ${en}`, onToken: (_t, full) => setRegional(full) });
+    const r = await streamFromApi({ mode: "translate", question: `Translate the meaning of Tirukkural couplet ${verse.ref} into ${langInfo.name} (${langInfo.native} script).`, context: `Tamil: ${verse.sanskrit.join(" ")}\nRomanised: ${verse.iast.join(" ")}\nEnglish: ${en}`, onToken: (_t, full) => setRegional(full) });
     if (r.ok && r.text.trim()) await cacheTranslation(verse.id, lang, r.text.trim());
     else {
       setRegional("");
@@ -130,8 +129,8 @@ function Translation({ verse }: { verse: Verse }) {
     setBusy(false);
   };
 
-  const text = lang === "en" ? verse.translations.en?.[String(enAuthor)] : lang === "hi" ? verse.translations.hi?.[String(hiAuthor)] : regional;
-  const authorList = authors.filter((a) => (lang === "en" ? verse.translations.en?.[String(a.id)] : lang === "hi" ? verse.translations.hi?.[String(a.id)] : false));
+  const text = lang === "en" ? verse.translations.en?.[String(enAuthor)] : regional;
+  const authorList = authors.filter((a) => lang === "en" && verse.translations.en?.[String(a.id)]);
   return (
     <section>
       <div className="grid grid-cols-2 gap-2">
@@ -141,15 +140,15 @@ function Translation({ verse }: { verse: Verse }) {
             {TRANSLATION_LANGS.map((l) => (
               <option key={l.id} value={l.id}>
                 {l.name}
-                {l.id !== "en" && l.id !== "hi" ? " (generated)" : ""}
+                {l.id !== "en" ? " (generated)" : ""}
               </option>
             ))}
           </select>
         </label>
-        {(lang === "en" || lang === "hi") && (
+        {lang === "en" && (
           <label className="block min-w-0">
             <span className="label mb-1 block">Translator</span>
-            <select className="field field-sm" value={lang === "en" ? enAuthor : hiAuthor} onChange={(e) => (lang === "en" ? setAuthors(Number(e.target.value)) : setAuthors(undefined, Number(e.target.value)))}>
+            <select className="field field-sm" value={enAuthor} onChange={(e) => setAuthors(Number(e.target.value))}>
               {authorList.map((a) => (
                 <option key={a.id} value={a.id}>
                   {a.name}
@@ -159,8 +158,11 @@ function Translation({ verse }: { verse: Verse }) {
           </label>
         )}
       </div>
-      {lang === "en" || lang === "hi" ? (
-        <p className={`mt-3 whitespace-pre-line ${lang === "hi" ? "deva text-[16.5px] text-text" : "reading !text-text"}`}>{text || "No translation by this translator for this verse."}</p>
+      {lang === "en" ? (
+        <>
+          <p className="reading mt-3 whitespace-pre-line !text-text">{text || "No reading by this translator for this couplet."}</p>
+          <p className="mt-2 text-[11.5px] text-text-3">{englishBy(enAuthor)}</p>
+        </>
       ) : regional ? (
         <>
           <p className="indic mt-3 whitespace-pre-line text-[16px] text-text">{regional}</p>
@@ -181,7 +183,7 @@ function Translation({ verse }: { verse: Verse }) {
             </Notice>
           ) : (
             <Notice action={<button className="text-[12px] font-medium text-accent-text hover:underline" onClick={() => setSettingsOpen(true, "model")}>Connect</button>}>
-              {langInfo?.name} meanings are generated by a language model. You can already read the Sanskrit in {langInfo?.name === "Marathi" ? "Devanagari" : "regional scripts"} above, offline.
+              {langInfo?.name} meanings are generated by a language model. You can already read the couplet in other scripts above, offline.
             </Notice>
           )}
           {err && <p className="mt-2 text-[12.5px] text-danger">{err}</p>}
@@ -199,7 +201,7 @@ function Connections({ verse }: { verse: Verse }) {
     const nb = neighbors(graphs, verse.id).filter((n) => !["BELONGS_TO", "NEXT_VERSE", "SPOKE", "NARRATED"].includes(n.type));
     const def: [string, (t: string) => boolean][] = [
       ["In dialogue with", (t) => t === "ANSWERS_QUESTION_IN"],
-      ["Thematic threads", (t) => t === "ECHOES_VERSE" || t === "CULMINATES_IN"],
+      ["Other couplets", (t) => ["ECHOES_VERSE", "CULMINATES_IN", "IN_TENSION_WITH", "QUALIFIES"].includes(t)],
       ["Life situations", (t) => t === "ADDRESSES_DILEMMA"],
       ["States of mind", (t) => ["HEALS", "CULTIVATES", "DEPICTS_STATE", "MENTIONS_STATE"].includes(t)],
       ["Concepts", (t) => t === "DEFINES_CONCEPT" || t === "MENTIONS_CONCEPT"],
@@ -207,7 +209,7 @@ function Connections({ verse }: { verse: Verse }) {
     ];
     return def.map(([title, f]) => [title, nb.filter((n) => f(n.type))] as const).filter(([, l]) => l.length);
   }, [graphs, verse.id]);
-  if (!groups.length) return <p className="text-[13px] text-text-3">Beyond its chapter and the verses either side, this verse has no curated connections yet.</p>;
+  if (!groups.length) return <p className="text-[13px] text-text-3">Beyond its chapter and the couplets either side, this couplet has no connections yet.</p>;
   return (
     <div className="space-y-5">
       {groups.map(([title, list]) => (
@@ -232,6 +234,7 @@ function Connections({ verse }: { verse: Verse }) {
           </ul>
         </section>
       ))}
+      <p className="text-[12px] leading-4 text-text-3">An AI drew these links and wrote their reasons. No person has reviewed them yet.</p>
     </div>
   );
 }
@@ -275,12 +278,12 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
           <div className="label truncate">
             Chapter {verse.chapter} · {ch?.title}
           </div>
-          <div className="text-[14px] font-semibold leading-5 text-text">Verse {verse.verse}</div>
+          <div className="text-[14px] font-semibold leading-5 text-text">Couplet {verse.verse} of {ch?.verseCount}</div>
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous verse" title={prev ? `Kural ${prev.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous couplet" title={prev ? `Kural ${prev.ref}` : undefined}>
           <ChevronLeft size={16} />
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next verse" title={next ? `Kural ${next.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next couplet" title={next ? `Kural ${next.ref}` : undefined}>
           <ChevronRight size={16} />
         </button>
         <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">
@@ -292,14 +295,18 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
         <div className="px-5 pb-6 pt-5">
           <div className="flex items-baseline justify-between gap-3">
             <h2 className="text-[24px] font-semibold tracking-[-0.015em] text-text">Kural {verse.ref}</h2>
-            <button className="chip shrink-0" aria-pressed={showMeter} onClick={() => setShowMeter(!showMeter)} title="Show the metre (guru-laghu scansion)">
-              {verse.meter.name}
-            </button>
+            {verse.meter.scansion.length ? (
+              <button className="chip shrink-0" aria-pressed={showMeter} onClick={() => setShowMeter(!showMeter)} title="Show the metre (guru-laghu scansion)">
+                {verse.meter.name}
+              </button>
+            ) : (
+              <span className="chip shrink-0">{verse.meter.name}</span>
+            )}
           </div>
           <div className="mt-0.5 text-[13px] text-text-3">
-            {SPEAKER[verse.speaker]} speaking to {LISTENER[verse.speaker]}
-            {verse.narratedBy ? ", as narrated by Sañjaya" : ""}
+            {SPEAKER[verse.speaker]}
           </div>
+          {verse.uvacha?.tr && verse.uvacha.tr !== SPEAKER[verse.speaker] && <p className="mt-1 text-[13px] leading-5 text-text-2">{verse.uvacha.tr}</p>}
           {!verse.canonical && <div className="mt-2"><Notice>This verse appears in some recensions but not in the traditional count of 700.</Notice></div>}
 
           {/* Phones: the meaning first, before scripts and study tools (the full Meaning tab follows below). */}
@@ -307,24 +314,25 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
             <div className="mt-3 md:hidden">
               <p className="serif line-clamp-4 text-[16px] leading-[1.6] text-text [overflow-wrap:anywhere]">{quick}</p>
               {translator && <div className="mt-1 text-[12px] text-text-3">Translation: {translator}</div>}
+              <OldView verse={verse} className="mt-1" />
             </div>
           )}
 
           <div className="mt-4 flex flex-wrap gap-1.5">
-            <button className="btn btn-primary max-sm:h-11" onClick={reflect} title="Write what this verse means to you, or where you disagree. Saved on this device.">
-              <NotebookPen size={14} /> Reflect on this verse
+            <button className="btn btn-primary max-sm:h-11" onClick={reflect} title="Write what this couplet means to you, or where you disagree. Saved on this device.">
+              <NotebookPen size={14} /> Reflect on this couplet
             </button>
             <button className="btn max-sm:h-11" aria-pressed={isPlaying} onClick={() => (isCurrent ? audio.toggle() : audio.playVerse(verse.id))}>
               {isCurrent && loading ? <LoaderCircle size={14} className="animate-spin" /> : isPlaying ? <Pause size={14} /> : <Play size={14} />}
               {isPlaying ? "Pause" : "Listen"}
             </button>
             {view !== "darshana" && (
-              <button className="btn" onClick={() => focusLineage(verse.id)} title="Open in Lineage: what leads to this verse and what follows from it">
+              <button className="btn" onClick={() => focusLineage(verse.id)} title="Open in Lineage: what leads to this couplet and what follows from it">
                 <Waypoints size={14} /> Lineage
               </button>
             )}
             {view !== "cosmos" && (
-              <button className="btn" onClick={() => (useGita.getState().setView("cosmos"), useGita.getState().fly(verse.id))} title="Show this verse in the 3D graph">
+              <button className="btn" onClick={() => (useGita.getState().setView("cosmos"), useGita.getState().fly(verse.id))} title="Show this couplet in the 3D graph">
                 <Orbit size={14} /> In graph
               </button>
             )}
@@ -351,7 +359,9 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
           </details>
           <div className="mt-4">
             <SanskritBlock verse={verse} script={script} />
-            {showMeter && <Scansion verse={verse} />}
+            <OldView verse={verse} className="mt-2 max-md:hidden" />
+            {(script === "deva" || script === "iast") && <IastKey className="mt-2" />}
+            {showMeter && verse.meter.scansion.length > 0 && <Scansion verse={verse} />}
           </div>
         </div>
 
@@ -376,7 +386,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
             <div className="space-y-7">
               <Translation verse={verse} />
               <section>
-                <SectionLabel>Word by word</SectionLabel>
+                <SectionLabel>Word by word, in Parimelazhagar’s Tamil</SectionLabel>
                 <PadacchedaLexicon verse={verse} />
               </section>
             </div>

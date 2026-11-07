@@ -7,7 +7,7 @@ const commentaryCache = new Map<string, Promise<CommentaryDoc | null>>();
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url, { cache: "force-cache" });
   // Shown to people (the developer hint lives in AppError, development only).
-  if (!res.ok) throw new Error(`Part of the Gita data could not be loaded (${url.split("/").pop()}, HTTP ${res.status}).`);
+  if (!res.ok) throw new Error(`Part of the Kural data could not be loaded (${url.split("/").pop()}, HTTP ${res.status}).`);
   return (await res.json()) as T;
 }
 

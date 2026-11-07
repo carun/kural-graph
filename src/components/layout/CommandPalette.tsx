@@ -12,6 +12,7 @@ import { askPartha } from "@/components/chat/GraphRagChatbot";
 import { NodeGlyph } from "@/components/ui/primitives";
 import { useModal } from "@/lib/hooks/useModal";
 import { VIEWS } from "./views";
+import { OLD_VIEW } from "@/kural/reader";
 
 interface Item {
   id: string;
@@ -25,7 +26,7 @@ interface Item {
 
 // Ideas, states and situations first: they are hubs that lead to many verses.
 const GROUP_ORDER = ["emotion", "concept", "dilemma", "character", "chapter", "verse"];
-const GROUP_NAME: Record<string, string> = { verse: "Verses", concept: "Concepts", emotion: "States of mind", dilemma: "Life situations", character: "Characters", chapter: "Chapters" };
+const GROUP_NAME: Record<string, string> = { verse: "Couplets", concept: "Concepts", emotion: "States of mind", dilemma: "Life situations", character: "Characters", chapter: "Chapters" };
 
 /** Ctrl/⌘K: search across every verse, translation, gloss and node, or jump anywhere. */
 export function CommandPalette() {
@@ -77,7 +78,10 @@ export function CommandPalette() {
     searchIndex(index, t, { limit: 24 }).then((r) => {
       if (!live) return;
       const id = ref ? `K_${Number(ref[1])}` : null;
-      const direct = id && graphs?.graph.hasNode(id) ? [{ id, kind: "verse" as const, score: 99, title: "" }] : [];
+      // "38" is both a couplet and a chapter; "chapter 38" or "ch 38" is the chapter alone.
+      const chapter = t.match(/^(?:(?:ch|chapter)\s*)?(\d{1,3})$/i);
+      const chId = chapter ? `CH_${Number(chapter[1])}` : null;
+      const direct = [...(id && graphs?.graph.hasNode(id) ? [{ id, kind: "verse" as const, score: 99, title: "" }] : []), ...(chId && graphs?.graph.hasNode(chId) ? [{ id: chId, kind: "chapter" as const, score: 98, title: "" }] : [])];
       setHits([...direct, ...r.hits.filter((h) => !direct.some((d) => d.id === h.id))]);
       setCursor(0);
     });
@@ -92,7 +96,7 @@ export function CommandPalette() {
     const t = q.trim();
     if (!t) {
       const nav: Item[] = [
-        { id: "view:home", group: "Go to", title: "Home", sub: "What GitaViśva is, and ways in", icon: <House size={15} />, run: () => (s().select(null), s().setView("home")) },
+        { id: "view:home", group: "Go to", title: "Home", sub: "What Kural Graph is, and ways in", icon: <House size={15} />, run: () => (s().select(null), s().setView("home")) },
         ...VIEWS.map((v) => ({ id: `view:${v.id}`, group: "Go to", title: v.name, sub: v.blurb, icon: <v.icon size={15} />, run: () => s().setView(v.id) })),
       ];
       const actions: Item[] = [
@@ -107,8 +111,8 @@ export function CommandPalette() {
     const nodes = [...hits]
       .map((h) => ({ h, n: graphs?.nodeById.get(h.id) }))
       .filter((x) => !!x.n)
-      .sort((a, b) => GROUP_ORDER.indexOf(a.h.kind) - GROUP_ORDER.indexOf(b.h.kind) || b.h.score - a.h.score)
-      .map(({ h, n }) => ({ id: h.id, group: GROUP_NAME[h.kind] || "Results", title: nodeTitle(n!), sub: n!.type === "Verse" ? n!.sa : nodeSub(n!), icon: <NodeGlyph node={n!} />, hint: n!.type === "Emotion" ? typeName(n!) : undefined, run: () => select(h.id) }) as Item);
+      .sort((a, b) => Number(b.h.score >= 98) - Number(a.h.score >= 98) || (a.h.score >= 98 ? 0 : GROUP_ORDER.indexOf(a.h.kind) - GROUP_ORDER.indexOf(b.h.kind)) || b.h.score - a.h.score)
+      .map(({ h, n }) => ({ id: h.id, group: GROUP_NAME[h.kind] || "Results", title: nodeTitle(n!), sub: n!.type === "Verse" ? ("sensitive" in n! ? `${n!.sa} · ${OLD_VIEW}` : n!.sa) : nodeSub(n!), icon: <NodeGlyph node={n!} />, hint: n!.type === "Emotion" ? typeName(n!) : undefined, run: () => (n!.type === "Chapter" ? useGita.getState().openChapter(n!.number) : select(h.id)) }) as Item);
     // Your own writing first, kept apart from scripture and never sent anywhere: matched locally, in this browser.
     const mine: Item[] = searchThoughts(thoughts, t, 5).map((m) => ({
       id: `mine:${m.thought.id}`,
@@ -141,7 +145,7 @@ export function CommandPalette() {
               <input
                 ref={inputRef}
                 className="h-14 min-w-0 flex-1 bg-transparent text-[16px] text-text outline-none placeholder:text-text-3 focus-visible:outline-none"
-                placeholder="Search verses, ideas, feelings, or type 2.47"
+                placeholder="Search couplets, ideas, feelings, or type 380"
                 value={q}
                 role="combobox"
                 aria-expanded
@@ -188,7 +192,7 @@ export function CommandPalette() {
                   </div>
                 );
               })}
-              {q.trim() && index && items.length === 1 && <div className="px-3 pb-2 pt-4 text-center text-[13px] text-text-3">No matches in your thoughts or the graph. Try a verse number like 6.35 or a feeling like “restless”.</div>}
+              {q.trim() && index && items.length === 1 && <div className="px-3 pb-2 pt-4 text-center text-[13px] text-text-3">No matches in your thoughts or the graph. Try a couplet number like 380 or a feeling like “restless”.</div>}
             </div>
             <div className="hidden items-center gap-4 border-t border-line px-4 py-2 text-[11.5px] text-text-3 sm:flex">
               <span className="flex items-center gap-1.5">
@@ -198,7 +202,7 @@ export function CommandPalette() {
               <span className="flex items-center gap-1.5">
                 <kbd className="kbd">Enter</kbd> to open
               </span>
-              <span className="ml-auto">Searches your saved thoughts (on this device), Sanskrit, IAST, translations and concepts</span>
+              <span className="ml-auto">Searches your saved thoughts (on this device), romanised text, readings and ideas</span>
             </div>
           </motion.div>
         </motion.div>

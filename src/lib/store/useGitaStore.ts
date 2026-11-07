@@ -25,7 +25,7 @@ export type ThemePref = "auto" | "dark" | "light";
 export type CameraCmd = { kind: "fit" | "zoomIn" | "zoomOut" | "home"; nonce: number };
 export type DockTab = "details" | "ask";
 export type ColorBy = "label" | "community" | "chapter";
-export type ScriptChoice = "deva" | "iast" | "phonetic" | "odia" | "bengali" | "gujarati" | "tamil" | "telugu" | "kannada" | "malayalam";
+export type ScriptChoice = "deva" | "iast" | "phonetic" | "devanagari" | "odia" | "bengali" | "gujarati" | "telugu" | "kannada" | "malayalam";
 
 interface GitaState {
   status: "idle" | "loading" | "ready" | "error";
@@ -125,7 +125,7 @@ function startingLineage(graphs: GitaGraphs): string {
     const read = JSON.parse(localStorage.getItem("gitaviswa:reading") || "null") as { verse?: string } | null;
     if (read?.verse && graphs.graph.hasNode(read.verse)) return read.verse;
   } catch {}
-  return "K_2.47";
+  return "K_1";
 }
 
 const PREFS = "gitaviswa:prefs";
@@ -147,7 +147,7 @@ function savePrefs(s: Pick<GitaState, "script" | "translationLang" | "enAuthor" 
     localStorage.setItem(PREFS, JSON.stringify({ script: s.script, translationLang: s.translationLang, enAuthor: s.enAuthor, hiAuthor: s.hiAuthor }));
   } catch {}
 }
-const SCRIPTS: ScriptChoice[] = ["deva", "iast", "phonetic", "odia", "bengali", "gujarati", "tamil", "telugu", "kannada", "malayalam"];
+const SCRIPTS: ScriptChoice[] = ["deva", "iast", "phonetic", "devanagari", "odia", "bengali", "gujarati", "telugu", "kannada", "malayalam"];
 
 export const useGita = create<GitaState>((set, get) => ({
   status: "idle",
@@ -172,7 +172,7 @@ export const useGita = create<GitaState>((set, get) => ({
   cameraCmd: null,
   autoRotate: true,
   selectedId: null,
-  lineageFocus: "K_2.47",
+  lineageFocus: "K_1",
   lineageChain: null,
   // First visits start at the beginning; afterwards the saved reading position takes over (page.tsx).
   readerChapter: 1,
@@ -188,8 +188,8 @@ export const useGita = create<GitaState>((set, get) => ({
   settingsSection: null,
   script: "deva",
   translationLang: "en",
-  enAuthor: 16,
-  hiAuthor: 17,
+  enAuthor: 1,
+  hiAuthor: 1,
   flyTo: null,
   graphMode: "focus",
   egoSummary: null,

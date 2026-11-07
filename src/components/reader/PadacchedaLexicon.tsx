@@ -17,12 +17,12 @@ export function PadacchedaLexicon({ verse }: { verse: Verse }) {
     return m;
   }, [versesDoc]);
 
-  if (!verse.padaccheda.length) return <p className="text-[13px] text-text-3">The source has no word-by-word analysis for this verse.</p>;
+  if (!verse.padaccheda.length) return <p className="text-[13px] text-text-3">His commentary gives no word-by-word gloss for this couplet.</p>;
   const pinnedVerses = pinned ? (stemIndex.get(pinned) || []).filter((id) => id !== verse.id) : [];
 
   return (
     <div>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(112px,1fr))] gap-1.5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,240px),1fr))] gap-1.5">
         {verse.padaccheda.map((p, i) => {
           const k = p.k[0];
           const n = k ? (stemIndex.get(k)?.length || 1) - 1 : 0;
@@ -43,8 +43,8 @@ export function PadacchedaLexicon({ verse }: { verse: Verse }) {
               }}
               title={k ? `Stem “${k}”: appears in ${n} other verse${n === 1 ? "" : "s"}. Click to list them.` : undefined}
             >
-              <div className="serif text-[14.5px] italic leading-tight text-text">{p.w}</div>
-              <div className="mt-0.5 text-[12px] leading-4 text-text-2">{p.m}</div>
+              <div lang="ta" className="deva text-[14.5px] !leading-snug text-text">{p.w}</div>
+              <div lang="ta" className="deva mt-1 text-[13px] !leading-[1.6] text-text-2">{p.m}</div>
               {n > 0 && <div className="num mt-1 text-[11px] text-text-3">in {n} more</div>}
             </button>
           );

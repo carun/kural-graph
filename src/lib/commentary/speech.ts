@@ -75,12 +75,12 @@ export interface VoiceLike {
   localService?: boolean;
 }
 
-/** Best available voice: Indian English for English, Hindi for Hindi and Sanskrit (Devanagari). Natural voices first. */
+/** Best available voice: Indian English for English, Hindi for Hindi, and only a Tamil voice for Tamil ("sa" in the data), which no other voice can read. Natural voices first. */
 export function pickVoice<V extends VoiceLike>(voices: V[], lang: "en" | "hi" | "sa"): V | null {
   const natural = (v: V) => /natural|neural|online|enhanced|premium/i.test(v.name);
   const rank = (list: V[]) => [...list].sort((a, b) => Number(natural(b)) - Number(natural(a)))[0] ?? null;
   const by = (re: RegExp) => voices.filter((v) => re.test(v.lang.replace("_", "-")));
   if (lang === "en") return rank(by(/^en-IN/i)) || rank(by(/^en-GB/i)) || rank(by(/^en/i));
-  if (lang === "sa") return rank(by(/^sa/i)) || rank(by(/^hi/i)) || rank(by(/^mr/i));
+  if (lang === "sa") return rank(by(/^ta\b/i));
   return rank(by(/^hi/i));
 }

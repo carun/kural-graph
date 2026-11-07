@@ -8,6 +8,7 @@ import { isRegionalScript } from "@/lib/indic/scripts";
 import { getReadingPosition, lessonDoneAt, setReadingPosition } from "@/lib/store/readingPosition";
 import { ScriptPicker, verseLines } from "./VerseExplorer";
 import { Lesson } from "./Lesson";
+import { IastKey, OldView, chapterGroups, partOf } from "@/kural/reader";
 
 function TranslatorSelect() {
   const versesDoc = useGita((s) => s.versesDoc);
@@ -74,7 +75,7 @@ export function ChapterReader() {
   const playing = useAudio((s) => s.playing);
   const lessonOpen = useGita((s) => s.lessonOpen);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [summaryOpen, setSummaryOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
   const [lessonDone] = useState(lessonDoneAt);
   const ch = versesDoc?.chapters.find((c) => c.number === chapterNo);
   const verses = versesDoc?.verses.filter((v) => v.chapter === chapterNo) || [];
@@ -87,7 +88,6 @@ export function ChapterReader() {
   // Showing a chapter continues at the last verse read in it; a chapter you have not been reading starts at its top.
   // (Derived from the saved position, not a "first mount" flag, so it also holds when effects run twice.)
   useEffect(() => {
-    setSummaryOpen(false);
     const pos = getReadingPosition();
     const target = pos?.chapter === chapterNo ? document.getElementById(`reader-${pos.verse}`) : null;
     // Braces matter: Chromium's scrollTo may return a Promise, which React would treat as a cleanup function.
@@ -96,6 +96,15 @@ export function ChapterReader() {
       scrollRef.current?.scrollTo({ top: 0 });
     }
   }, [chapterNo, lessonOpen]);
+  // 133 chapters: keep the current one in sight in the list.
+  useEffect(() => {
+    const nav = navRef.current;
+    const on = nav?.querySelector<HTMLElement>('[aria-current="page"]');
+    if (!nav || !on) return;
+    const a = on.getBoundingClientRect();
+    const b = nav.getBoundingClientRect();
+    if (a.top < b.top + 64 || a.bottom > b.bottom) nav.scrollTop += a.top - b.top - nav.clientHeight / 2;
+  }, [chapterNo, versesDoc]);
   // Remember the first verse in view (throttled to one check per frame).
   useEffect(() => {
     const el = scrollRef.current;
@@ -119,46 +128,62 @@ export function ChapterReader() {
   if (!versesDoc || !ch) return null;
   const prevCh = versesDoc.chapters.find((c) => c.number === ch.number - 1);
   const nextCh = versesDoc.chapters.find((c) => c.number === ch.number + 1);
-  const lineCls = script === "deva" ? "deva text-[20px] leading-[1.8] sm:text-[21px]" : isRegionalScript(script) ? "indic text-[18px]" : "serif text-[17px] italic leading-[1.6]";
+  const groups = chapterGroups(versesDoc.chapters);
+  const lineCls = script === "deva" ? "deva text-[18px] leading-[1.8] sm:text-[19px]" : isRegionalScript(script) ? "indic text-[18px]" : "serif text-[17px] italic leading-[1.6]";
 
   return (
     <div className="absolute inset-0 flex bg-bg">
-      <nav className="hidden w-[248px] shrink-0 overflow-y-auto border-r border-line py-3 lg:block" aria-label="Chapters">
-        <div className="label px-5 pb-2">Chapters</div>
-        <ol>
-          {versesDoc.chapters.map((c) => {
-            const on = c.number === chapterNo;
-            return (
-              <li key={c.number}>
-                <button onClick={() => openChapter(c.number)} aria-current={on ? "page" : undefined} className={`flex w-full items-baseline gap-3 px-5 py-2 text-left transition-colors ${on ? "bg-surface-3" : "hover:bg-surface-2"}`}>
-                  <span className={`num w-5 shrink-0 text-right text-[12px] ${on ? "font-semibold text-accent-text" : "text-text-3"}`}>{c.number}</span>
-                  <span className="min-w-0">
-                    <span className={`block truncate text-[13.5px] ${on ? "font-medium text-text" : "text-text-2"}`}>{c.title}</span>
-                    <span className="deva block truncate text-[12px] !leading-5 text-text-3">{c.name}</span>
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ol>
+      <nav ref={navRef} className="hidden w-[248px] shrink-0 overflow-y-auto border-r border-line pb-3 lg:block" aria-label="Chapters">
+        {groups.map((p) => (
+          <section key={p.n} aria-label={`Part ${p.n}, ${p.title}`}>
+            <div className="label sticky top-0 z-[1] border-b border-line bg-bg px-5 py-2">
+              Part {p.n} · {p.title}
+            </div>
+            {p.divisions.map((d) => (
+              <div key={d.title}>
+                <div className="px-5 pb-1 pt-3 text-[12px] font-medium text-text-3">{d.title}</div>
+                <ol>
+                  {d.chapters.map((c) => {
+                    const on = c.number === chapterNo;
+                    return (
+                      <li key={c.number}>
+                        <button onClick={() => openChapter(c.number)} aria-current={on ? "page" : undefined} className={`flex w-full items-baseline gap-3 px-5 py-2 text-left transition-colors ${on ? "bg-surface-3" : "hover:bg-surface-2"}`}>
+                          <span className={`num w-6 shrink-0 text-right text-[12px] ${on ? "font-semibold text-accent-text" : "text-text-3"}`}>{c.number}</span>
+                          <span className="min-w-0">
+                            <span className={`block truncate text-[13.5px] ${on ? "font-medium text-text" : "text-text-2"}`}>{c.title}</span>
+                            <span className="deva block truncate text-[12px] !leading-5 text-text-3">{c.name}</span>
+                          </span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ))}
+          </section>
+        ))}
       </nav>
 
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Container query: inline reading controls only when the toolbar itself is wide enough (the dock may be open). */}
         <div className="@container z-[1] flex h-12 shrink-0 items-center gap-2 border-b border-line bg-bg px-3 sm:px-5">
           <select className="field field-sm !w-auto min-w-0 max-w-[60%] lg:hidden" aria-label="Chapter" value={chapterNo} onChange={(e) => openChapter(Number(e.target.value))}>
-            {versesDoc.chapters.map((c) => (
-              <option key={c.number} value={c.number}>
-                {c.number}. {c.title}
-              </option>
+            {groups.map((p) => (
+              <optgroup key={p.n} label={`Part ${p.n} · ${p.title}`}>
+                {p.divisions.flatMap((d) => d.chapters).map((c) => (
+                  <option key={c.number} value={c.number}>
+                    {c.number}. {c.title}
+                  </option>
+                ))}
+              </optgroup>
             ))}
           </select>
-          <div className="hidden items-center gap-2 @min-[680px]:flex">
+          <div className="hidden items-center gap-2 @min-[700px]:flex">
             <ScriptPicker compact nowrap />
             <TranslatorSelect />
           </div>
           <div className="ml-auto flex items-center gap-1.5">
-            <div className="@min-[680px]:hidden">
+            <div className="@min-[700px]:hidden">
               <ReadingOptions />
             </div>
             <button className="btn" aria-pressed={chapterPlaying} onClick={() => (chapterPlaying ? audio.toggle() : audio.playChapter(ch.number))} title="Listen to the whole chapter">
@@ -175,20 +200,22 @@ export function ChapterReader() {
           <div className="mx-auto max-w-[720px] px-5 pb-24 pt-10 sm:px-8 sm:pt-14">
             <header>
               <div className="label">
-                Chapter {ch.number} of 18 · {ch.verseCount} verses
+                Chapter {ch.number} of {versesDoc.chapters.length} · {ch.verseCount} couplets
               </div>
               <h1 className="serif mt-2 text-[32px] font-semibold leading-[1.15] tracking-[-0.01em] text-text sm:text-[38px]">{ch.title}</h1>
               <div className="deva mt-1 text-[19px] text-text-2">{ch.name}</div>
-              <div className="serif mt-0.5 text-[16px] italic text-text-3">{ch.meaning}</div>
-              <div className="mt-5">
-                <p className={`reading ${summaryOpen ? "" : "line-clamp-4"}`}>{ch.summary.en}</p>
-                <button className="mt-1 text-[13px] font-medium text-text-2 hover:text-text" onClick={() => setSummaryOpen(!summaryOpen)} aria-expanded={summaryOpen}>
-                  {summaryOpen ? "Show less" : "Read the full summary"}
-                </button>
+              <div className="serif mt-0.5 text-[16px] italic text-text-3">
+                Part {partOf(ch.number).n}, {partOf(ch.number).title} · {ch.meaning}
               </div>
+              {ch.summary.en && (
+                <div className="mt-5">
+                  <div className="label mb-1">Parimelazhagar’s introduction, paraphrased by an AI</div>
+                  <p className="reading">{ch.summary.en}</p>
+                </div>
+              )}
               <div className="mt-6 flex flex-wrap gap-1.5">
-                <button className="btn" onClick={() => audio.playVerse(`K_${(ch.number - 1) * 10 + 1}`)} title="Recite one verse at a time from the start of the chapter">
-                  <AudioLines size={14} /> Recite verse by verse
+                <button className="btn" onClick={() => audio.playVerse(`K_${(ch.number - 1) * 10 + 1}`)} title="Recite one couplet at a time from the start of the chapter">
+                  <AudioLines size={14} /> Recite couplet by couplet
                 </button>
                 <button className="btn" onClick={() => (useGita.getState().setView("cosmos"), select(`CH_${ch.number}`))} title="See this chapter in the 3D graph">
                   <Orbit size={14} /> See in graph
@@ -197,14 +224,16 @@ export function ChapterReader() {
               <button className="group mt-6 flex w-full items-start gap-3 rounded-3 border border-accent-line bg-accent-soft px-4 py-3.5 text-left transition-colors hover:bg-surface-2" onClick={() => useGita.getState().openLesson(true)}>
                 <BookOpen size={17} className="mt-0.5 shrink-0 text-accent-text" />
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold text-text">{lessonDone ? "Revisit: effort, without being ruled by the outcome" : "New to the Gita? Start with one idea"}</span>
-                  <span className="mt-0.5 block text-[13px] leading-5 text-text-2">BG 2.47: its setting, a plain explanation, an example, and your own view. About five minutes.</span>
+                  <span className="block text-[14px] font-semibold text-text">{lessonDone ? "Revisit: harsh words, when sweet ones are there" : "New to the Kural? Start with one idea"}</span>
+                  <span className="mt-0.5 block text-[13px] leading-5 text-text-2">Kural 100: its setting, a plain explanation, an example, and your own view. About five minutes.</span>
                 </span>
                 <ArrowRight size={15} className="mt-1 shrink-0 text-text-3 transition-transform group-hover:translate-x-0.5" />
               </button>
             </header>
 
             <div className="mt-12 border-t border-line pt-6">
+              <p className="text-[12px] leading-4 text-text-3">An AI wrote the English on this page, not a scholar or translator.</p>
+              {(script === "deva" || script === "iast") && <IastKey className="mb-3 mt-2" />}
               {verses.map((v) => {
                 const active = v.id === audioVerse;
                 const sel = v.id === selectedId;
@@ -234,16 +263,18 @@ export function ChapterReader() {
                       {(v.uvacha || !v.canonical) && (
                         <div className="mb-1 flex flex-wrap items-center gap-2 text-[12.5px] text-text-3">
                           {v.uvacha && <span className="deva !leading-5">{v.uvacha.sa}</span>}
+                          {v.uvacha?.tr && <span className="leading-5">{v.uvacha.tr}</span>}
                           {!v.canonical && <span className="chip !min-h-0 !py-0 text-[11px]">Not in the traditional 700</span>}
                         </div>
                       )}
                       <div className={`${lineCls} text-text [overflow-wrap:anywhere]`}>
                         {lines.map((l, i) => (
-                          <div key={i}>{l}</div>
+                          <div key={i} className="pl-4 -indent-4">{l}</div>
                         ))}
                       </div>
                       {script === "deva" && <div className="serif mt-1.5 text-[14px] italic leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{v.iast.join(" ")}</div>}
                       <p className={`serif mt-3 text-[16.5px] leading-[1.65] [overflow-wrap:anywhere] ${sel ? "text-text" : "text-text-2"}`}>{v.translations.en?.[String(enAuthor)]}</p>
+                      <OldView verse={v} className="mt-1.5" />
                     </div>
                   </article>
                 );

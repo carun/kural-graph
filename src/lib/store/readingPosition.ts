@@ -13,7 +13,7 @@ export interface ReadingPosition {
 export function getReadingPosition(): ReadingPosition | null {
   try {
     const p = JSON.parse(localStorage.getItem(KEY) || "null") as ReadingPosition | null;
-    return p && Number.isInteger(p.chapter) && p.chapter >= 1 && p.chapter <= 18 && typeof p.verse === "string" ? p : null;
+    return p && Number.isInteger(p.chapter) && p.chapter >= 1 && p.chapter <= 133 && typeof p.verse === "string" ? p : null;
   } catch {
     return null;
   }

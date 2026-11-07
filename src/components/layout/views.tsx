@@ -8,17 +8,16 @@ import type { ViewMode } from "@/lib/types";
 export interface ViewInfo {
   id: ViewMode;
   name: string;
-  sa: string;
   icon: LucideIcon;
   /** one-line purpose, shown in the guide, tooltips and the command palette */
   blurb: string;
 }
 
 export const VIEWS: ViewInfo[] = [
-  { id: "cosmos", name: "Explore", sa: "Viśvarūpa", icon: Orbit, blurb: "See the whole Gita as one graph: chapters, verses, ideas, states of mind and life situations." },
-  { id: "darshana", name: "Lineage", sa: "Darśana", icon: Waypoints, blurb: "Focus on one verse or idea and follow what leads to it and what follows from it." },
-  { id: "adhyayana", name: "Read", sa: "Adhyayana", icon: BookOpen, blurb: "Read chapter by chapter with transliteration, translations, commentary and recitation." },
-  { id: "manas", name: "Reflect", sa: "Manas", icon: NotebookPen, blurb: "Write what is on your mind and see which states, situations and verses it maps to. Private to this browser." },
+  { id: "cosmos", name: "Explore", icon: Orbit, blurb: "See the whole Kural as one graph: chapters, couplets, ideas, states of mind and life situations." },
+  { id: "darshana", name: "Lineage", icon: Waypoints, blurb: "Focus on one couplet or idea and follow what leads to it and what follows from it." },
+  { id: "adhyayana", name: "Read", icon: BookOpen, blurb: "Read chapter by chapter with romanised Tamil, English readings, commentary and recitation." },
+  { id: "manas", name: "Reflect", icon: NotebookPen, blurb: "Write what is on your mind and see which states, situations and couplets it maps to. Private to this browser." },
 ];
 
 export const viewInfo = (id: ViewMode) => VIEWS.find((v) => v.id === id)!;

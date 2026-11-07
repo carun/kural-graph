@@ -9,9 +9,10 @@ import { loadCommentary } from "@/lib/data/loader";
 import { cacheTranslation, getCachedTranslation } from "@/lib/store/personalStore";
 import { streamFromApi } from "@/lib/llm/browser";
 import { useModal } from "@/lib/hooks/useModal";
-import { LANG_NAME, SPOKEN_COMMENTARIES, TRADITIONS, commentatorOf, traditionById, type CommentaryLang, type TraditionId } from "@/lib/commentary/traditions";
+import { LANG_NAME, SPOKEN_COMMENTARIES, TRADITIONS, commentatorOf, traditionById, type CommentaryLang } from "@/lib/commentary/traditions";
 import { findExcerpts, matcherFor, regexFor, splitHits, type WordMatcher } from "@/lib/commentary/lens";
 import type { CommentaryDoc, CommentaryEntry, Verse } from "@/lib/types";
+import { OldView, TAG_LABEL, withoutNote, type KuralVerse } from "@/kural/reader";
 
 /**
  * Commentaries as perspectives: the same verse read by different schools (darśanas), side by side.
@@ -22,7 +23,7 @@ import type { CommentaryDoc, CommentaryEntry, Verse } from "@/lib/types";
 
 type LangFilter = CommentaryLang | "all";
 const LANG_KEY = "gitaviswa:commentary-lang";
-const LANG_LABEL: Record<LangFilter, string> = { en: "English", hi: "हिन्दी", sa: "संस्कृत", all: "All" };
+const LANG_LABEL: Record<LangFilter, string> = { en: "English", hi: "Hindi", sa: "தமிழ்", all: "All" };
 const MAX_COMPARE = 4;
 
 const traditionIndex = (e: CommentaryEntry) => TRADITIONS.findIndex((t) => t.id === commentatorOf(e).tradition);
@@ -74,10 +75,10 @@ function ListenControls({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
           className="btn btn-sm"
           aria-pressed={after === e.authorId}
           onClick={() => setCommentaryAfter(after === e.authorId ? null : e.authorId)}
-          title="When verses play one at a time, read this commentary aloud after each one"
+          title="When couplets play one at a time, read this commentary aloud after each one"
         >
           <AudioLines size={13} />
-          {after === e.authorId ? "Reads after each verse" : "After each verse"}
+          {after === e.authorId ? "Reads after each couplet" : "After each couplet"}
         </button>
       )}
     </>
@@ -108,8 +109,8 @@ function AiTranslation({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
     const c = commentatorOf(e);
     const r = await streamFromApi({
       mode: "commentary",
-      question: `Translate ${c.name}'s Sanskrit commentary${c.work ? ` (${c.work})` : ""} on Bhagavad Gita ${verse.ref} into ${target}.`,
-      context: `Verse ${verse.ref}: ${verse.sanskrit.join(" ")}\n\nCommentary by ${c.name}, ${traditionById(c.tradition).name}:\n${e.text}`,
+      question: `Translate ${c.name}'s Tamil commentary on Tirukkural couplet ${verse.ref} into ${target}.`,
+      context: `Couplet ${verse.ref}: ${verse.sanskrit.join(" ")}\n\nCommentary by ${c.name}:\n${e.text}`,
       onToken: (_t, full) => setText(full),
     });
     if (r.ok && r.text.trim()) await cacheTranslation(key, target, r.text.trim());
@@ -123,8 +124,8 @@ function AiTranslation({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
     <div className="mt-3">
       {text ? (
         <div className="rounded-[var(--radius-2)] border border-line bg-surface px-3 py-2.5">
-          <div className="text-[11.5px] font-medium text-text-3">AI translation into {target}, a draft: check it against the Sanskrit</div>
-          <p className={`mt-1.5 whitespace-pre-line text-text-2 ${target === "Hindi" ? "deva text-[15px] leading-[1.9]" : "serif text-[15px] leading-[1.6]"}`}>{text}</p>
+          <div className="text-[11.5px] font-medium text-text-3">AI translation into {target}, a draft: check it against his Tamil</div>
+          <p className={`mt-1.5 whitespace-pre-line text-text-2 ${target === "Hindi" ? "indic text-[15px] leading-[1.9]" : "serif text-[15px] leading-[1.6]"}`}>{text}</p>
         </div>
       ) : (
         <button className="btn btn-sm" onClick={run} disabled={busy}>
@@ -144,6 +145,8 @@ function CommentaryCard({ e, verse, matcher, inCompare, canCompare, onCompare }:
   const re = matcher ? regexFor(matcher, e.lang) : null;
   const excerpts = useMemo(() => (re ? findExcerpts(e.text, re, 2) : []), [e.text, re]);
   const long = e.text.length > (e.lang === "en" ? 460 : 340);
+  // His English reading carries how it compares with the plain reading, as in the data.
+  const reading = e.lang === "en" ? (verse as KuralVerse).reading : undefined;
   const lensMiss = !!matcher && !excerpts.length;
   return (
     <article className={`rounded-[var(--radius-3)] border bg-surface-2 p-3.5 ${inCompare ? "border-accent-line" : "border-line"}`} aria-label={`${c.name}, ${t.name}, ${LANG_NAME[e.lang]}`}>
@@ -154,11 +157,8 @@ function CommentaryCard({ e, verse, matcher, inCompare, canCompare, onCompare }:
             {c.name}
             <span className="font-normal text-text-3"> in {LANG_NAME[e.lang]}</span>
           </div>
-          <div className="text-[12px] leading-4 text-text-3">
-            {t.name}
-            {c.work ? `, ${c.work}` : ""}
-            {c.translator ? `. Translated by ${c.translator}` : ""}
-          </div>
+          {reading && <div className="text-[12px] font-medium leading-4 text-accent-text">{TAG_LABEL[reading.tag]}</div>}
+          <div className="text-[12px] leading-4 text-text-3">{c.work}</div>
         </div>
         <button className="btn btn-ghost btn-sm shrink-0" aria-pressed={inCompare} disabled={!inCompare && !canCompare} onClick={onCompare} title={inCompare ? "Remove from the comparison" : canCompare ? "Add to the comparison" : `Up to ${MAX_COMPARE} at a time`}>
           <Columns2 size={13} />
@@ -181,9 +181,10 @@ function CommentaryCard({ e, verse, matcher, inCompare, canCompare, onCompare }:
           )
         ) : (
           <p className={`whitespace-pre-line ${textClass(e.lang)} ${open || !long ? "" : "line-clamp-6"}`}>
-            <Highlighted text={e.text} re={re} />
+            <Highlighted text={withoutNote(e.text, reading?.note)} re={re} />
           </p>
         )}
+        {reading?.note && <p className="mt-2 text-[13.5px] leading-[1.55] text-text-3">{reading.note}</p>}
       </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-1.5">
@@ -213,12 +214,13 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
         <header className="flex items-start gap-3 border-b border-line px-4 py-3 md:px-6">
           <div className="min-w-0 flex-1">
             <h2 id="compare-title" className="text-[15px] font-semibold text-text">
-              Kural {verse.ref}, read {entries.length} ways
+              Kural {verse.ref}, side by side
             </h2>
-            <p lang="sa" className="deva mt-1 text-[15px] leading-7 text-text-2">
+            <p lang="ta" className="deva mt-1 text-[15px] leading-7 text-text-2">
               {verse.sanskrit.join(" ")}
             </p>
             {translation && <p className="serif mt-0.5 text-[14px] leading-6 text-text-3">{translation}</p>}
+            <OldView verse={verse} className="mt-0.5" />
           </div>
           <button ref={closeRef} className="btn btn-ghost btn-icon shrink-0" onClick={onClose} aria-label="Close the comparison">
             <X size={16} />
@@ -239,16 +241,12 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
                         {c.name}
                         <span className="font-normal text-text-3"> in {LANG_NAME[e.lang]}</span>
                       </div>
-                      <div className="text-[12px] leading-4 text-text-3">
-                        {t.name}
-                        {c.translator ? `. Translated by ${c.translator}` : ""}
-                      </div>
+                      <div className="text-[12px] leading-4 text-text-3">{c.work}</div>
                     </div>
                     <button className="btn btn-ghost btn-icon btn-sm shrink-0" onClick={() => onRemove(e.authorId)} aria-label={`Remove ${c.name} from the comparison`}>
                       <X size={13} />
                     </button>
                   </div>
-                  <p className="mt-2 text-[12.5px] leading-5 text-text-3">{t.lens}</p>
                   <p className={`mt-3 whitespace-pre-line text-text-2 ${textClass(e.lang)}`}>
                     <Highlighted text={e.text} re={re} />
                   </p>
@@ -265,16 +263,14 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
 
 export function Perspectives({ verse }: { verse: Verse }) {
   const select = useGita((s) => s.select);
-  const translationLang = useGita((s) => s.translationLang);
   const [doc, setDoc] = useState<CommentaryDoc | null | undefined>(undefined);
   const [lang, setLangState] = useState<LangFilter>(() => {
     try {
       const v = localStorage.getItem(LANG_KEY) as LangFilter | null;
       if (v && v in LANG_LABEL) return v;
     } catch {}
-    return translationLang === "hi" ? "hi" : "en";
+    return "all";
   });
-  const [trad, setTrad] = useState<TraditionId | "all">("all");
   const [word, setWord] = useState<number | null>(null);
   const [compare, setCompare] = useState<number[]>([]);
   const [comparing, setComparing] = useState(false);
@@ -305,13 +301,7 @@ export function Perspectives({ verse }: { verse: Verse }) {
   const counts = useMemo(() => ({ en: readable.filter((e) => e.lang === "en").length, hi: readable.filter((e) => e.lang === "hi").length, sa: readable.filter((e) => e.lang === "sa").length, all: readable.length }), [readable]);
   const effLang: LangFilter = lang === "all" || counts[lang] ? lang : ((["en", "hi", "sa"] as const).find((l) => counts[l]) ?? "all");
   const inLang = useMemo(() => readable.filter((e) => effLang === "all" || e.lang === effLang), [readable, effLang]);
-  const tradCounts = useMemo(() => {
-    const m = new Map<TraditionId, number>();
-    for (const e of inLang) m.set(commentatorOf(e).tradition, (m.get(commentatorOf(e).tradition) ?? 0) + 1);
-    return m;
-  }, [inLang]);
-  const effTrad = trad !== "all" && tradCounts.get(trad) ? trad : "all";
-  const shown = useMemo(() => inLang.filter((e) => effTrad === "all" || commentatorOf(e).tradition === effTrad).sort((a, b) => traditionIndex(a) - traditionIndex(b) || a.authorId - b.authorId), [inLang, effTrad]);
+  const shown = useMemo(() => [...inLang].sort((a, b) => traditionIndex(a) - traditionIndex(b) || a.authorId - b.authorId), [inLang]);
 
   const words = useMemo(() => verse.padaccheda.map((p, i) => ({ ...p, i })).filter((p) => p.k.some((k) => k.length >= 3)), [verse]);
   const matcher = useMemo(() => (word !== null && verse.padaccheda[word] ? matcherFor(verse.padaccheda[word].k) : null), [word, verse]);
@@ -320,7 +310,6 @@ export function Perspectives({ verse }: { verse: Verse }) {
   const present = new Set(readable.map((e) => commentatorOf(e).name));
   const silent = [...new Set(all.filter((e) => e.none).map((e) => commentatorOf(e).name))].filter((n) => !present.has(n));
   const crossRefs = [...new Map(all.filter((e) => e.seeAlso).map((e) => [`${commentatorOf(e).name}|${e.seeAlso}`, { name: commentatorOf(e).name, to: e.seeAlso! }])).values()];
-  const traditionsHere = TRADITIONS.filter((t) => readable.some((e) => commentatorOf(e).tradition === t.id));
 
   if (doc === undefined)
     return (
@@ -333,71 +322,27 @@ export function Perspectives({ verse }: { verse: Verse }) {
   if (!doc || !readable.length)
     return (
       <p className="text-[13px] leading-5 text-text-3">
-        Commentary for this verse isn&apos;t available right now. If you are offline, it appears once the verse has been opened with a connection.
+        Commentary for this couplet isn&apos;t available right now. If you are offline, it appears once the couplet has been opened with a connection.
         {process.env.NODE_ENV !== "production" && " (Developer: run npm run data to bundle commentaries.)"}
       </p>
     );
 
   const toggleCompare = (id: number) => setCompare((c) => (c.includes(id) ? c.filter((x) => x !== id) : c.length < MAX_COMPARE ? [...c, id] : c));
   const compareEntries = compare.map((id) => readable.find((e) => e.authorId === id)).filter((e): e is CommentaryEntry => !!e);
-  const tradInfo = effTrad !== "all" ? traditionById(effTrad) : null;
 
   return (
     <div className="space-y-4">
       <div>
-        <div className="label mb-1.5">
-          {readable.length} commentaries from {traditionsHere.length} traditions
-        </div>
+        <div className="label mb-1.5">Parimelazhagar’s commentary</div>
         <div className="seg w-full" role="radiogroup" aria-label="Commentary language">
-          {(["en", "hi", "sa", "all"] as LangFilter[]).map((l) => (
-            <button key={l} role="radio" aria-checked={effLang === l} disabled={l !== "all" && !counts[l]} className={`flex-1 ${l === "hi" || l === "sa" ? "deva !text-[13px]" : ""}`} onClick={() => setLang(l)}>
+          {(["en", "sa", "all"] as LangFilter[]).map((l) => (
+            <button key={l} role="radio" aria-checked={effLang === l} disabled={l !== "all" && !counts[l]} className={`flex-1 ${l === "sa" ? "deva !text-[13px]" : ""}`} onClick={() => setLang(l)}>
               {LANG_LABEL[l]}
               <span className="num text-[11px] text-text-3">{counts[l]}</span>
             </button>
           ))}
         </div>
       </div>
-
-      <div role="group" aria-label="Traditions" className="flex flex-wrap gap-1.5">
-        <button className="chip shrink-0" aria-pressed={effTrad === "all"} onClick={() => setTrad("all")}>
-          All traditions
-        </button>
-        {TRADITIONS.filter((t) => tradCounts.get(t.id)).map((t) => (
-          <button key={t.id} className="chip shrink-0" aria-pressed={effTrad === t.id} onClick={() => setTrad(effTrad === t.id ? "all" : t.id)}>
-            <span aria-hidden className="h-1.5 w-1.5 rounded-full" style={{ background: t.color }} />
-            {t.short}
-            <span className="num text-text-3">{tradCounts.get(t.id)}</span>
-          </button>
-        ))}
-      </div>
-
-      {tradInfo ? (
-        <div className="rounded-[var(--radius-2)] border border-line bg-surface px-3 py-2.5">
-          <div className="text-[13px] font-semibold text-text">{tradInfo.name}</div>
-          <div className="text-[12px] text-text-3">{tradInfo.teacher}</div>
-          <p className="mt-1 text-[13px] leading-5 text-text-2">{tradInfo.lens}</p>
-        </div>
-      ) : (
-        <details className="group rounded-[var(--radius-2)] border border-line bg-surface px-3 py-2">
-          <summary className="flex cursor-pointer list-none items-center gap-1.5 text-[13px] font-medium text-text-2">
-            <ChevronDown size={13} className="transition-transform group-open:rotate-180" />
-            How these traditions read the Gita
-          </summary>
-          <ul className="mt-2 space-y-2.5 pb-1">
-            {traditionsHere.map((t) => (
-              <li key={t.id} className="flex gap-2.5">
-                <Mark color={t.color} />
-                <div>
-                  <div className="text-[13px] font-semibold text-text">
-                    {t.name} <span className="font-normal text-text-3">({t.teacher})</span>
-                  </div>
-                  <p className="text-[12.5px] leading-5 text-text-2">{t.lens}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
 
       {words.length > 0 && (
         <div>
@@ -425,19 +370,19 @@ export function Perspectives({ verse }: { verse: Verse }) {
         ))}
       </div>
 
-      {effLang === "sa" && <p className="text-[12px] leading-5 text-text-3">Sanskrit commentaries are read aloud with a Hindi voice, which approximates the pronunciation.</p>}
+      {effLang === "sa" && <p className="text-[12px] leading-5 text-text-3">His Tamil is read aloud by your device’s voice. A Tamil voice reads it best.</p>}
       {(silent.length > 0 || crossRefs.length > 0) && (
         <div className="space-y-1 border-t border-line pt-3 text-[12.5px] leading-5 text-text-3">
           {crossRefs.map((x) => (
             <p key={`${x.name}${x.to}`}>
-              {x.name} discusses this verse together with{" "}
+              {x.name} discusses this couplet together with{" "}
               <button className="font-medium text-accent-text hover:underline" onClick={() => select(x.to, { fly: false })}>
                 Kural {x.to.slice(2)}
               </button>
               .
             </p>
           ))}
-          {silent.length > 0 && <p>No comment on this verse from {silent.join(", ")}.</p>}
+          {silent.length > 0 && <p>No comment on this couplet from {silent.join(", ")}.</p>}
         </div>
       )}
 
