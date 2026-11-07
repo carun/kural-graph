@@ -334,6 +334,13 @@ There are no analytics and no third-party requests. Cloudflare injects its analy
 
 Pausing never calls `speechSynthesis.pause()`, because on Android that ends the utterance and leaves `resume()` nothing to resume. So pausing stops the voice and keeps the place, and resuming starts that passage again: a couplet, or one part of a reading, which is at most 220 characters.
 
+The device's voice belongs to the operating system, not the browser, and English prefers US, then British, then any other. So the same browser can speak on one machine and not another:
+
+- **Linux:** Chromium browsers, Brave included, have no voices unless `speech-dispatcher` is installed and the browser starts with `--enable-speech-dispatcher`. Its default engine, eSpeak NG, sounds robotic.
+- **Brave:** at the strictest fingerprinting setting, Shields hides every voice on any system. At the standard setting it adds one fake voice, which `pickVoice` doesn't reach because the real ones come first.
+
+With no voice and no recording, the player says so. Only recordings reach every reader.
+
 With Follow along on, Read moves to the chapter the audio has reached. It stays put if the reader has gone to another chapter, and picks up again when they come back.
 
 ## Build and deploy

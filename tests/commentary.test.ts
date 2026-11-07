@@ -67,14 +67,20 @@ test("Hindi text keeps its sentences; long text is cut into sentence-sized chunk
   assert.equal(chunks.join(" ").replace(/\s+/g, " ").trim().split(" ").length, 30 * 3 + 120, "nothing is dropped");
 });
 
-test("voices: Indian English for English, Hindi for Hindi and Sanskrit, natural voices preferred", () => {
+test("voices: US English for English, Hindi for Hindi and Sanskrit, natural voices preferred", () => {
   const voices = [
-    { lang: "en-US", name: "Microsoft David" },
-    { lang: "en-IN", name: "Microsoft Ravi" },
     { lang: "en-IN", name: "Microsoft Neerja Online (Natural)" },
+    { lang: "en-US", name: "Microsoft David" },
+    { lang: "en-US", name: "Microsoft Aria Online (Natural)" },
     { lang: "hi-IN", name: "Microsoft Kalpana" },
   ];
-  assert.equal(pickVoice(voices, "en")?.name, "Microsoft Neerja Online (Natural)");
+  assert.equal(pickVoice(voices, "en")?.name, "Microsoft Aria Online (Natural)");
+  // Android writes en_US, and speech-dispatcher on Linux en-us.
+  assert.equal(pickVoice([{ lang: "en_IN", name: "India" }, { lang: "en_US", name: "US" }], "en")?.name, "US");
+  assert.equal(pickVoice([{ lang: "en-in", name: "India" }, { lang: "en-us", name: "US" }], "en")?.name, "US");
+  // Any English beats silence.
+  assert.equal(pickVoice([{ lang: "en-IN", name: "India" }, { lang: "en-GB", name: "UK" }], "en")?.name, "UK");
+  assert.equal(pickVoice([{ lang: "en-IN", name: "India" }], "en")?.name, "India");
   assert.equal(pickVoice(voices, "hi")?.name, "Microsoft Kalpana");
   assert.equal(pickVoice(voices, "sa"), null);
   assert.equal(pickVoice([...voices, { lang: "ta-IN", name: "Microsoft Valluvar" }], "sa")?.name, "Microsoft Valluvar");
