@@ -263,7 +263,7 @@ sequenceDiagram
   else No model connected
     A-->>R: An answer composed from the graph
   else A model is connected
-    A->>M: Question, context, last 6 messages
+    A->>M: Question, context, last 6 messages less any concern
     M-->>A: Streamed answer
     Note over A: Citations the model wasn't given are dropped.<br/>If a reply cited only those, the graph answers instead.
     A-->>R: The answer, with its citations
@@ -281,15 +281,15 @@ sequenceDiagram
 |---|---|
 | Support comes before any couplet | `src/kural/concern.ts`, `src/kural/Support.tsx` |
 | When a question raises a self-harm concern, Ask holds its results until the reader asks for them, lights nothing on the map and calls no model for it | `src/lib/graphrag/engine.ts`, `GraphRagChatbot.tsx` |
+| Those words, and the reply to them, never go out as history with a later question | `withoutConcerns` in `src/kural/concern.ts` |
+| A note that raises a self-harm concern can't be sent from Reflect, even when the reader shows the couplets anyway | `deepen` in `PersonalMindMapper.tsx` |
 | Sensitive couplets stay off walks and Reflect, and off Ask unless a question is plainly about the text | `safeFor` in `src/kural/walk.ts`, `offerable` in `engine.ts` |
 | A sensitive couplet can't be cited without its note | `src/lib/graphrag/citations.ts` |
 | Invented citations are dropped | `keepSupplied` in `citations.ts` |
 | A reader's notes never shape public retrieval | `retrieve` in `engine.ts` |
+| A path through a reader's note is shown on the device and never sent to a model | `SutraPathFinder.tsx` |
 
-Two gaps are known, both confirmed by capturing what a stand-in provider received:
-
-- **Ask** holds one question at a time. A later question in the same conversation goes to the model as usual, and the last 6 messages sent with it can include the one that raised the concern.
-- **Reflect** holds its results too, but its model call has no check of its own. If a reader chooses to show the couplets anyway, "Explore with AI" appears, and pressing it sends the note.
+A later question in the same conversation still goes to the model, with the support kept on screen. Only the words that raised the concern stay behind.
 
 ## Models and keys
 
@@ -297,9 +297,9 @@ Readers bring their own key. The browser calls the provider directly, and the Co
 
 | Mode | Started from | What is sent |
 |---|---|---|
-| `chat` | Ask | The question, the context and the last 6 messages |
+| `chat` | Ask | The question, the context and the last 6 messages, less anything that raised a self-harm concern |
 | `analyze` | "Explore with AI" in Reflect | The note, and lists of ideas and couplets to choose from |
-| `bridge` | The path finder on the map | The path to explain |
+| `bridge` | The path finder on the map | The path to explain, if it doesn't run through a reader's note |
 | `translate` | The Language picker on a couplet | The couplet and its English |
 | `commentary` | The Commentaries tab | A Tamil commentary, to translate |
 
@@ -307,9 +307,9 @@ Readers bring their own key. The browser calls the provider directly, and the Co
 
 | What | Where | Leaves the device? |
 |---|---|---|
-| Reflect notes and drafts | IndexedDB | Only a note the reader sends with "Explore with AI" |
+| Reflect notes and drafts | IndexedDB | Only a note the reader sends with "Explore with AI", and never one that raises a self-harm concern |
 | AI translations | IndexedDB | No |
-| Conversation in Ask | Memory, gone on reload | Sent to the model, if one is connected |
+| Conversation in Ask | Memory, gone on reload | Sent to the model, if one is connected, less anything that raised a self-harm concern |
 | Provider keys | `sessionStorage`, or `localStorage` if the reader asks | Only to that provider |
 | Settings and reading preferences | `localStorage` | No |
 | Site files, data and commentaries | Cache Storage, named for the build | No |
@@ -331,6 +331,10 @@ There are no analytics and no third-party requests. Cloudflare injects its analy
 `src/lib/store/audioStore.ts` plays `/audio/0380.mp3` for Kural 380, if the recording exists, and otherwise hands over to the device's voice. A device with no Tamil voice reads the plain reading in English instead, and says so. Chapter recordings play when they exist.
 
 "After each couplet, read the translation" reads whatever the page's Translation picker has chosen. Translators' words come from `kural-verses.json` and need no network. parimēlaḻagar's English comes from the commentary entry, which on 330 couplets adds a setting or a note to what the page shows. See [public/audio/README.md](public/audio/README.md).
+
+Pausing never calls `speechSynthesis.pause()`, because on Android that ends the utterance and leaves `resume()` nothing to resume. So pausing stops the voice and keeps the place, and resuming starts that passage again: a couplet, or one part of a reading, which is at most 220 characters.
+
+With Follow along on, Read moves to the chapter the audio has reached. It stays put if the reader has gone to another chapter, and picks up again when they come back.
 
 ## Build and deploy
 
