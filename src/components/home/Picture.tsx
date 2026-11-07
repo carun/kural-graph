@@ -1,19 +1,23 @@
-/* eslint-disable @next/next/no-img-element -- pre-sized WebP sets (scripts: see public/images/home), so no runtime optimiser is needed. */
+/* eslint-disable @next/next/no-img-element -- pre-sized WebP sets (scripts/home-art), so no runtime optimiser is needed. */
 import type { CSSProperties } from "react";
 
-/** Responsive illustration sets in /public/images/home, generated once from the source paintings. */
+/**
+ * Responsive illustration sets in /public/images/home. Today they are painted by scripts/home-art/paint.mjs. To use a
+ * real painting instead, write it over the files of the same name, one per width listed here, keeping the aspect
+ * ratio of w by h: `node scripts/home-art/swap.mjs <key> <painting>` does that. No code changes.
+ */
 export const ART = {
   hero: { base: "hero", widths: [828, 1280, 1672], w: 1672, h: 941 },
   heroPortrait: { base: "hero-portrait", widths: [750, 1120], w: 1120, h: 1400 },
   setting: { base: "setting", widths: [768, 1200], w: 1200, h: 800 },
-  cosmicWide: { base: "cosmic-wide", widths: [1280, 1911], w: 1911, h: 819 },
-  cosmic: { base: "cosmic", widths: [828, 1280], w: 1280, h: 720 },
-  ch01: { base: "ch01", widths: [640, 960], w: 960, h: 720 },
-  ch02: { base: "ch02", widths: [640, 960], w: 960, h: 720 },
-  ch18: { base: "ch18", widths: [640, 960], w: 960, h: 720 },
+  cosmicWide: { base: "night-wide", widths: [1280, 1911], w: 1911, h: 819 },
+  cosmic: { base: "night", widths: [828, 1280], w: 1280, h: 720 },
+  ch01: { base: "part-righteousness", widths: [640, 960], w: 960, h: 720 },
+  ch02: { base: "part-wealth", widths: [640, 960], w: 960, h: 720 },
+  ch18: { base: "part-desire", widths: [640, 960], w: 960, h: 720 },
   lamp: { base: "lamp", widths: [560, 900], w: 900, h: 900 },
   dusk: { base: "dusk", widths: [800, 1200], w: 1200, h: 630 },
-  fightOrFlight: { base: "fight-or-flight", widths: [720, 1080], w: 1080, h: 607 },
+  fightOrFlight: { base: "leaves", widths: [720, 1080], w: 1080, h: 607 },
 } as const;
 
 export type ArtKey = keyof typeof ART;

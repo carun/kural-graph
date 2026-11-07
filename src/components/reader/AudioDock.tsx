@@ -44,8 +44,11 @@ export function AudioDock() {
   }, [menu]);
 
   const title = reading && v ? `${reading.name} on Kural ${v.ref}` : a.mode === "chapter" && ch ? `Chapter ${ch.number} · ${ch.title}` : v ? `Kural ${v.ref}` : "Recitation";
-  const sub = a.error ? a.error : reading ? `Commentary in ${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the commentary" : a.mode === "chapter" && v ? `Now at Kural ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
-  const devaSub = !a.error && !reading && a.source !== "commentary" && a.mode !== "chapter";
+  // Which voice this is, always in view: a person's recording, or the device.
+  const voice = a.loading || a.error || a.source === "commentary" ? "" : a.source === "speech" ? "Read by your device" : "Recording";
+  const sub = a.error ? a.error : a.note ? a.note : reading ? `Commentary in ${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the commentary" : a.mode === "chapter" && v ? `Now at Kural ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
+  const devaSub = !a.error && !a.note && !reading && a.source !== "commentary" && a.mode !== "chapter";
+  const notice = a.error || a.note;
 
   return (
     <AnimatePresence initial={false}>
@@ -87,14 +90,14 @@ export function AudioDock() {
             </button>
             <div className="flex items-center">
               {a.mode !== "chapter" && v && (
-                <button className="btn btn-ghost btn-icon" onClick={() => audio.playVerse(v.id)} aria-label={`Replay Kural ${v.ref}`} title="Replay this verse">
+                <button className="btn btn-ghost btn-icon" onClick={() => audio.playVerse(v.id)} aria-label={`Replay Kural ${v.ref}`} title="Replay this couplet">
                   <RotateCcw size={15} />
                 </button>
               )}
-              <button className="btn btn-ghost btn-icon" onClick={() => audio.prev()} aria-label={a.mode === "chapter" ? "Previous chapter" : "Previous verse"}>
+              <button className="btn btn-ghost btn-icon" onClick={() => audio.prev()} aria-label={a.mode === "chapter" ? "Previous chapter" : "Previous couplet"}>
                 <SkipBack size={15} />
               </button>
-              <button className="btn btn-ghost btn-icon" onClick={() => audio.next()} aria-label={a.mode === "chapter" ? "Next chapter" : "Next verse"}>
+              <button className="btn btn-ghost btn-icon" onClick={() => audio.next()} aria-label={a.mode === "chapter" ? "Next chapter" : "Next couplet"}>
                 <SkipForward size={15} />
               </button>
             </div>
@@ -103,11 +106,13 @@ export function AudioDock() {
               <div className="flex items-center gap-2">
                 {a.playing && <AudioLines size={13} className="shrink-0 text-accent-text" />}
                 <span className="truncate text-[13px] font-medium text-text">{title}</span>
+                {voice && <span className="hidden shrink-0 text-[11.5px] text-text-3 md:inline">{voice}</span>}
               </div>
-              <div className={`truncate text-[12px] ${a.error ? "text-danger" : "text-text-3"} ${devaSub ? "deva !leading-5" : ""}`}>{sub}</div>
+              <div className={`truncate text-[12px] max-md:hidden ${a.error ? "text-danger" : "text-text-3"} ${devaSub ? "deva !leading-5" : ""}`}>{sub}</div>
+              <div className="truncate text-[12px] text-text-3 md:hidden">{voice || (notice ? "" : sub)}</div>
             </button>
 
-            <span className="num hidden text-[12px] text-text-3 md:inline">{reading ? `Part ${reading.part + 1} of ${reading.parts}` : `${fmt(a.currentTime)} / ${fmt(a.duration)}`}</span>
+            <span className="num hidden text-[12px] text-text-3 md:inline">{reading ? `Part ${reading.part + 1} of ${reading.parts}` : a.source === "speech" ? "" : `${fmt(a.currentTime)} / ${fmt(a.duration)}`}</span>
             <div ref={menuRef} className="relative">
               <button className="btn btn-ghost btn-icon" aria-expanded={menu} aria-label="Playback options" onClick={() => setMenu(!menu)}>
                 <SlidersHorizontal size={15} />
@@ -118,7 +123,7 @@ export function AudioDock() {
                     <div className="label mb-1.5">Play</div>
                     <div className="seg mb-3 w-full">
                       <button className="flex-1" aria-pressed={a.mode === "verse"} onClick={() => v && audio.playVerse(v.id)}>
-                        One verse at a time
+                        One couplet at a time
                       </button>
                       <button className="flex-1" aria-pressed={a.mode === "chapter"} onClick={() => audio.playChapter(v?.chapter ?? useGita.getState().readerChapter)}>
                         Whole chapter
@@ -132,13 +137,13 @@ export function AudioDock() {
                         </button>
                       ))}
                     </div>
-                    <Toggle on={a.autoAdvance} onChange={(autoAdvance) => useAudio.setState({ autoAdvance })} label="Continue automatically" hint="Play the next verse or chapter when one ends" />
-                    <Toggle on={a.follow} onChange={(follow) => useAudio.setState({ follow })} label="Follow along" hint="Move the graph camera and reader to the verse being recited" />
+                    <Toggle on={a.autoAdvance} onChange={(autoAdvance) => useAudio.setState({ autoAdvance })} label="Continue automatically" hint="Play the next couplet or chapter when one ends" />
+                    <Toggle on={a.follow} onChange={(follow) => useAudio.setState({ follow })} label="Follow along" hint="Move the graph camera and reader to the couplet being read" />
                     <label className="mt-2 block border-t border-line pt-2.5">
-                      <span className="block text-[13px] text-text">After each verse, read a commentary</span>
-                      <span className="block text-[12px] leading-4 text-text-3">Read aloud by this device&apos;s voice, then on to the next verse. One verse at a time only.</span>
+                      <span className="block text-[13px] text-text">After each couplet, read a commentary</span>
+                      <span className="block text-[12px] leading-4 text-text-3">Read aloud by this device&apos;s voice, then on to the next couplet. One couplet at a time only.</span>
                       <select className="field field-sm mt-1.5" value={a.commentaryAfter ?? ""} onChange={(e) => setCommentaryAfter(Number(e.target.value) || null)}>
-                        <option value="">No, just the verses</option>
+                        <option value="">No, just the couplets</option>
                         {SPOKEN_COMMENTARIES.map((c) => (
                           <option key={c.authorId} value={c.authorId}>
                             {spokenLabel(c.authorId)}
@@ -155,6 +160,8 @@ export function AudioDock() {
               <X size={16} />
             </button>
           </div>
+          {/* A phone has no room for this on the line above, and it has to be read in full. */}
+          {notice && <p className={`px-3 pb-2 text-[12px] leading-4 md:hidden ${a.error ? "text-danger" : "text-text-3"}`}>{notice}</p>}
         </motion.footer>
       )}
     </AnimatePresence>

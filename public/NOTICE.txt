@@ -1,0 +1,59 @@
+Kural Graph
+===========
+
+The Tamil text of the Tirukkural is ancient and in the public domain. This
+project's digital copy starts from:
+
+  tk120404/thirukkural (https://github.com/tk120404/thirukkural)
+  Licensed under the Apache License, Version 2.0.
+
+Lines from that dataset have been corrected: see data/clean/tamil-fixes.yaml in
+the tirukkural-kb content repository for every change. Only the Tamil lines,
+their numbering, chapter names and its romanisation (for search only) are used.
+Its commentaries and translations are not included.
+
+The English readings were written for this project by an AI (Anthropic's
+Claude), from the Tamil and Parimelazhagar's commentary.
+
+Parimelazhagar's commentary is about seven hundred years old. The Tamil shown
+here is from Tamil Wikisource
+(https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை), whose text is available
+under the Creative Commons Attribution-ShareAlike licence. Wiki markup, editors'
+word lists and footnote numbers have been removed.
+
+The Tamil couplets were also checked against Project Madurai
+(https://www.projectmadurai.org/) and a proofread edition on Tamil Wikisource.
+Project Madurai's edition is not redistributed here.
+
+This site is a fork of GitaViśva
+(https://github.com/HimanshuMohanty-Git24/gitaviswa). Its interface and code,
+and the idea of walking from a situation to a feeling to the text, come from
+that project. Its name, its paintings and its Gita data are not used:
+
+  Copyright (c) 2026 Himanshu Mohanty
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+Semantic search runs all-MiniLM-L6-v2 in the browser, in the quantised ONNX
+conversion by Xenova (https://huggingface.co/Xenova/all-MiniLM-L6-v2). It is
+licensed under the Apache License, Version 2.0.
+
+The notices for the software and fonts shipped with this site, including the
+SIL Open Font License for Inter, Source Serif 4 and Noto Serif Tamil, are in
+third-party-notices.txt.

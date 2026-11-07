@@ -1,11 +1,11 @@
 /**
- * Static content for the home page, so it paints before the 3 MB of verse data arrives.
- * Sanskrit, IAST and translations are copied verbatim from public/data/kural-verses.json
- * (English: Swami Adidevananda, author 18). Speaker prefixes ("The Lord said") are dropped for display.
- * The one-line glosses are editorial paraphrases, shown as such, never as translation.
+ * Static content for the home page, so it paints before the couplet data arrives.
+ * Tamil, romanisation and plain readings are copied verbatim from public/data/kural-verses.json (author 1), and
+ * tests/home-content.test.ts holds them to it. Everything here is a couplet people know, none of it sensitive.
  */
 
-export const HOME_TRANSLATOR = "Swami Adidevananda";
+/** Follows a couplet's number wherever a reading is quoted, as his page named the translator. */
+export const HOME_TRANSLATOR = "plain reading written by an AI";
 
 export interface HomeVerse {
   id: string;
@@ -15,112 +15,118 @@ export interface HomeVerse {
   en: string;
   /** Chip label in the verse switcher. */
   theme: string;
-  /** Editorial one-liner. */
+  /** Where the couplet comes from. We add no paraphrase of our own to a couplet. */
   gloss: string;
 }
 
-/** The verse switcher: BG 2.47 first, then other lines people carry with them. */
+/** The couplet switcher: Kural 1 first, then other lines people carry with them. */
 export const SPOTLIGHT: HomeVerse[] = [
   {
-    id: "K_2.47",
-    ref: "2.47",
-    sa: ["कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।", "मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"],
-    iast: ["karmaṇyevādhikāraste mā phaleṣu kadācana |", "mā karmaphalaheturbhūrmā te saṅgo’stvakarmaṇi ||"],
-    en: "You have the right to work alone, but not to the fruits of it. Do not be driven by the results of your work, nor have attachment to inaction.",
-    theme: "Work, not its fruits",
-    gloss: "Give the work everything. Let go of what it earns you.",
+    id: "K_1",
+    ref: "1",
+    sa: ["அகர முதல எழுத்தெல்லாம் ஆதி", "பகவன் முதற்றே உலகு."],
+    iast: ["agara muḍala eḻuṭṭellām āḍi", "pagavaṉ muḍaṟṟē ulagu."],
+    en: "As all letters begin with A, the world begins with the First Lord.",
+    theme: "Where it begins",
+    gloss: "Chapter 1, Praising God",
   },
   {
-    id: "K_2.14",
-    ref: "2.14",
-    sa: ["मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।", "आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"],
-    iast: ["mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ |", "āgamāpāyino’nityāstāṃstitikṣasva bhārata ||"],
-    en: "The contact of the senses with their objects, O Arjuna, gives rise to feelings of cold and heat, pleasure and pain. They come and go, never lasting long. Endure them, O Arjuna.",
-    theme: "This too will pass",
-    gloss: "Pleasure and pain arrive and leave. You can learn to bear both.",
+    id: "K_391",
+    ref: "391",
+    sa: ["கற்க கசடறக் கற்பவை கற்றபின்", "நிற்க அதற்குத் தக."],
+    iast: ["kaṟka kasadaṟak kaṟpavai kaṟṟabiṉ", "niṟka aḍaṟkuṭ ṭaga."],
+    en: "Learn what should be learned, and learn it without flaw. Once you have learned it, live up to it.",
+    theme: "Learn, then live it",
+    gloss: "Chapter 40, Learning",
   },
   {
-    id: "K_2.20",
-    ref: "2.20",
-    // The source splits this triṣṭubh into four quarter-lines mid-word; shown as two half-verses.
-    sa: ["न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः ।", "अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"],
-    iast: ["na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ |", "ajo nityaḥ śāśvato’yaṃ purāṇo na hanyate hanyamāne śarīre ||"],
-    en: "It is never born; it never dies; having come into existence once, it never ceases to exist. Unborn, eternal, perpetual, and primordial, it is not destroyed when the body is destroyed.",
-    theme: "What never dies",
-    gloss: "What you most deeply are was never born, and cannot be killed.",
+    id: "K_396",
+    ref: "396",
+    sa: ["தொட்டனைத் தூறும் மணற்கேணி மாந்தர்க்குக்", "கற்றனைத் தூறும் அறிவு."],
+    iast: ["ṭottaṉaiṭ ṭūṟum maṇaṟkēṇi mānḍarkkuk", "kaṟṟaṉaiṭ ṭūṟum aṟivu."],
+    en: "A well in the sand gives water as far as you dig. People’s understanding flows as far as they learn.",
+    theme: "A well in the sand",
+    gloss: "Chapter 40, Learning",
   },
   {
-    id: "K_3.35",
-    ref: "3.35",
-    sa: ["श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।", "स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"],
-    iast: ["śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt |", "svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"],
-    en: "Better is one's own duty, even if done poorly, than the duty of another done well. It is better to die while performing one's own duty; the duty of another is full of fear.",
-    theme: "Your own path",
-    gloss: "Your own path walked imperfectly beats someone else's walked well.",
+    id: "K_100",
+    ref: "100",
+    sa: ["இனிய உளவாக இன்னாத கூறல்", "கனிஇருப்பக் காய்கவர்ந் தற்று."],
+    iast: ["iṉiya uḷavāga iṉṉāḍa kūṟal", "kaṉi-iruppak kāygavarn ḍaṟṟu."],
+    en: "To speak harsh words when sweet ones are there is like picking unripe fruit when ripe fruit is there.",
+    theme: "Ripe fruit",
+    gloss: "Chapter 10, Speaking Sweet Words",
   },
   {
-    id: "K_4.7",
-    ref: "4.7",
-    sa: ["यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।", "अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"],
-    iast: ["yadā yadā hi dharmasya glānirbhavati bhārata |", "abhyutthānamadharmasya tadā’’tmānaṃ sṛjāmyaham ||"],
-    en: "Whenever there is a decline of Dharma, O Arjuna, and an uprising of Adharma, then I incarnate myself.",
-    theme: "Whenever dharma declines",
-    gloss: "When right order breaks down, Krishna says, he comes back.",
+    id: "K_423",
+    ref: "423",
+    sa: ["எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள்", "மெய்ப்பொருள் காண்ப தறிவு."],
+    iast: ["epporuḷ yāryārvāyk kētpiṉum apporuḷ", "meypporuḷ kāṇba ṭaṟivu."],
+    en: "Whatever you hear, from whoever’s mouth, understanding is seeing the reality in it.",
+    theme: "See what is real",
+    gloss: "Chapter 43, Having Understanding",
   },
   {
-    id: "K_6.5",
-    ref: "6.5",
-    sa: ["उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् ।", "आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"],
-    iast: ["uddharedātmanā’’tmānaṃ nātmānamavasādayet |", "ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"],
-    en: "One should raise oneself by one's own mind and not allow oneself to sink; for the mind alone is the friend of the self, and the mind alone is the foe of the self.",
-    theme: "Lift yourself",
-    gloss: "You can be your own best friend, or your own worst enemy.",
+    id: "K_467",
+    ref: "467",
+    sa: ["எண்ணித் துணிக கருமம் துணிந்தபின்", "எண்ணுவம் என்பது இழுக்கு."],
+    iast: ["eṇṇiṭ ṭuṇiga karumam ṭuṇinḍabiṉ", "eṇṇuvam eṉbaḍu iḻukku."],
+    en: "Think, then commit to the task. To say you will think after you have committed is a mistake.",
+    theme: "Think, then commit",
+    gloss: "Chapter 47, Thinking Before You Act",
   },
   {
-    id: "K_6.35",
-    ref: "6.35",
-    sa: ["असंशयं महाबाहो मनो दुर्निग्रहं चलं ।", "अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥"],
-    iast: ["asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ |", "abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||"],
-    en: "The mind is indeed hard to subdue and fickle, O mighty-armed one, but, O son of Kunti, it can be brought under control through practice and the exercise of dispassion.",
-    theme: "The restless mind",
-    gloss: "A restless mind can be trained, through practice and letting go.",
+    id: "K_595",
+    ref: "595",
+    sa: ["வெள்ளத் தனைய மலர்நீட்டம் மாந்தர்தம்", "உள்ளத் தனையது உயர்வு."],
+    iast: ["veḷḷaṭ ṭaṉaiya malarnīttam mānḍarḍam", "uḷḷaṭ ṭaṉaiyaḍu uyarvu."],
+    en: "The stem of a water flower is as long as the water is deep. People rise as high as their spirit.",
+    theme: "As high as your spirit",
+    gloss: "Chapter 60, Having Drive",
   },
   {
-    id: "K_18.66",
-    ref: "18.66",
-    sa: ["सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।", "अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"],
-    iast: ["sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja |", "ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"],
-    en: "Relinquishing all Dharmas completely, seek Me alone for refuge. I will release you from all sins; grieve not.",
-    theme: "Surrender",
-    gloss: "The last word of the teaching: let go, take refuge, do not grieve.",
+    id: "K_786",
+    ref: "786",
+    sa: ["முகநக நட்பது நட்பன்று நெஞ்சத்து", "அகநக நட்பது நட்பு."],
+    iast: ["muganaga natpaḍu natpaṉṟu neñjaṭṭu", "aganaga natpaḍu natpu."],
+    en: "Friendship that makes the face smile is not friendship. Friendship makes the heart smile deep within.",
+    theme: "A smile in the heart",
+    gloss: "Chapter 79, Friendship",
   },
 ];
 
-/** Krishna's first reply to Arjuna's collapse (BG 2.3), quoted in the "Fight or flight" section. */
+/** The couplet quoted beside "why it matters": a small kindness, at the right moment, in an ordinary day. */
 export const ARISE = {
-  id: "K_2.3",
-  ref: "2.3",
-  sa: "क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥",
-  en: "Shake off this base faint-heartedness and arise, O conqueror of foes!",
+  id: "K_102",
+  ref: "102",
+  sa: ["காலத்தி னாற்செய்த நன்றி சிறிதெனினும்", "ஞாலத்தின் மாணப் பெரிது."],
+  en: "A good deed done at the right time, though small, is far greater than the world.",
 };
 
-/** Life situations from the graph (LifeDilemma nodes), the most common ways people arrive. */
+/**
+ * Life situations from the graph (LifeDilemma nodes), each with a walk. Gentle and common on purpose: this is a front
+ * page, so none of these is a crisis, a `silent` walk or a situation with `leaveOut` couplets.
+ */
 export const SITUATIONS: { id: string; label: string }[] = [
-  { id: "dilemma:decision-paralysis", label: "I can't decide" },
-  { id: "dilemma:outcome-anxiety", label: "I'm afraid of failing" },
-  { id: "dilemma:burnout", label: "I'm burnt out" },
-  { id: "dilemma:self-doubt", label: "I doubt myself" },
-  { id: "dilemma:anger", label: "I get angry too fast" },
-  { id: "dilemma:bereavement", label: "I lost someone" },
-  { id: "dilemma:restless-mind", label: "My mind won't settle" },
-  { id: "dilemma:life-purpose", label: "I don't know my purpose" },
+  { id: "dilemma:you-tried-and-failed", label: "I tried hard and failed" },
+  { id: "dilemma:work-unrecognised", label: "My work goes unrecognised" },
+  { id: "dilemma:is-this-the-right-time", label: "Is this the right time?" },
+  { id: "dilemma:feels-impossible", label: "It feels impossible" },
+  { id: "dilemma:speaking-in-public", label: "I have to speak in public" },
+  { id: "dilemma:looking-for-a-mentor", label: "I need someone wiser" },
+  { id: "dilemma:friend-in-trouble", label: "A friend needs me" },
+  { id: "dilemma:raising-children", label: "I want to do right by my children" },
 ];
 
 export interface Scene {
-  /** True when the quote is one sentence of a longer translation. */
+  /** True when the quote is one sentence of a longer reading. */
   excerpt?: boolean;
+  /** The chapter this Part opens at. */
   chapter: number;
-  /** Sanskrit chapter title (IAST). */
+  /** How many chapters it holds. */
+  chapters: number;
+  part: number;
+  /** The Part's Tamil name. */
   name: string;
   title: string;
   verseId: string;
@@ -130,58 +136,59 @@ export interface Scene {
   alt: string;
 }
 
-/** The arc of the conversation in three paintings (chapter 11 has its own section with the graph). */
+/** The book's three Parts, each with a couplet of its own. */
 export const SCENES: Scene[] = [
   {
+    part: 1,
     chapter: 1,
-    name: "Arjuna Viṣāda Yoga",
-    title: "The bow falls",
-    verseId: "K_1.47",
-    ref: "1.47",
-    quote: "Having spoken thus on the battlefield, Arjuna threw aside his bow and arrows and sat down on the chariot seat, his heart overwhelmed with grief.",
+    chapters: 38,
+    name: "அறத்துப்பால்",
+    title: "Righteousness",
+    verseId: "K_34",
+    ref: "34",
+    quote: "To be without stain in your mind is all of righteousness. Everything else is noise.",
     image: "ch01",
-    alt: "Warriors on both sides blow conch shells as Krishna and Arjuna's chariot stands alone between the two armies at dusk.",
+    alt: "Rain falls over a flooded rice field at dusk, with palmyra palms along the far bank and a break of gold in the cloud.",
   },
   {
-    chapter: 2,
-    name: "Sāṅkhya Yoga",
-    title: "The teaching begins",
-    verseId: "K_2.11",
-    excerpt: true,
-    ref: "2.11",
-    quote: "The wise grieve neither for the dead nor for the living.",
+    part: 2,
+    chapter: 39,
+    chapters: 70,
+    name: "பொருட்பால்",
+    title: "Wealth",
+    verseId: "K_400",
+    ref: "400",
+    quote: "Learning is the great wealth that can’t be destroyed. All else is not wealth.",
     image: "ch02",
-    alt: "Krishna and Arjuna sit facing each other under the chariot's golden canopy, Krishna speaking with an open hand.",
+    alt: "Ripe ears of rice bow over against a low sun, with palmyra palms standing far off.",
   },
   {
-    chapter: 18,
-    name: "Mokṣa Saṃnyāsa Yoga",
-    title: "The doubt is gone",
-    verseId: "K_18.73",
-    excerpt: true,
-    ref: "18.73",
-    quote: "Freed from doubts, I stand steadfast, and I will fulfill Your will.",
+    part: 3,
+    chapter: 109,
+    chapters: 25,
+    name: "காமத்துப்பால்",
+    title: "Desire",
+    verseId: "K_1289",
+    ref: "1289",
+    quote: "Desire is softer than a flower. Few ever find it at its peak.",
     image: "ch18",
-    alt: "Arjuna stands upright in the chariot holding his bow, Krishna beside him, the four white horses ready at sunset.",
+    alt: "A full moon rises over a lotus pond in the last rose light of the evening.",
   },
 ];
 
-/** The Ladder of Fall (BG 2.62 to 2.63), a causal chain in the graph. Labels are plain-English glosses. */
+/** A chain from the graph, step by step. Labels are the graph's own. */
 export const LADDER = {
-  id: "ladder-of-fall",
+  id: "from-a-kind-word",
+  title: "From a sweet word to compassion",
   steps: [
-    { id: "emotion:vishaya-dhyana", label: "Dwelling on things" },
-    { id: "emotion:sanga", label: "Attachment" },
-    { id: "emotion:kama", label: "Desire" },
-    { id: "emotion:krodha", label: "Anger" },
-    { id: "emotion:sammoha", label: "Delusion" },
-    { id: "emotion:smriti-vibhrama", label: "Lost memory" },
-    { id: "emotion:buddhi-nasha", label: "Lost judgement" },
-    { id: "emotion:pranasha", label: "Ruin" },
+    { id: "emotion:kind-speech", label: "Kind Speech" },
+    { id: "emotion:righteousness", label: "Righteousness" },
+    { id: "concept:wealth", label: "Wealth" },
+    { id: "emotion:compassion", label: "Compassion" },
   ],
 };
 
-export const SAMPLE_QUESTIONS = ["How do I stop worrying about results?", "What does the Gita say about anger?", "Is it ever right to walk away?"];
+export const SAMPLE_QUESTIONS = ["What does the Kural say about anger?", "How do I choose a friend?", "Is it wrong to want wealth?"];
 
 /** Shown while the graph data loads; matches public/data/kural-graph.json (stats). */
-export const GRAPH_COUNTS_FALLBACK = { Chapter: 18, Verse: 701, SanskritConcept: 67, Emotion: 33, LifeDilemma: 22, Character: 16, edges: 5350 };
+export const GRAPH_COUNTS_FALLBACK = { Chapter: 133, Verse: 1330, SanskritConcept: 117, Emotion: 129, LifeDilemma: 58, Character: 4, edges: 6862 };

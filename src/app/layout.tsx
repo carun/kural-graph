@@ -8,21 +8,22 @@ const inter = Inter({ subsets: ["latin", "latin-ext"], axes: ["opsz"], variable:
 const sourceSerif = Source_Serif_4({ subsets: ["latin", "latin-ext"], style: ["normal", "italic"], axes: ["opsz"], variable: "--font-source-serif", display: "swap" });
 const tiro = Noto_Serif_Tamil({ subsets: ["tamil", "latin"], variable: "--font-tiro", display: "swap" });
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL;
+// A static export bakes this into every page, and link previews need the picture's full address.
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://kural-graph.carun.workers.dev";
 
 export const metadata: Metadata = {
   ...(SITE ? { metadataBase: new URL(SITE) } : {}),
-  title: "GitaViśva · The Bhagavad Gita as a knowledge graph",
+  title: "Kural Graph · The Tirukkural as a knowledge graph",
   description:
-    "Explore all 701 verses of the Bhagavad Gita as an interactive knowledge graph: read them with translations and commentary, trace how ideas connect, ask questions grounded in the text, and map your own reflections privately.",
-  applicationName: "GitaViśva",
+    "Explore all 1,330 couplets of the Tirukkural as an interactive knowledge graph: read the Tamil with a plain reading and Parimelazhagar’s commentary, trace how ideas connect, ask questions grounded in the text, and map your own reflections privately.",
+  applicationName: "Kural Graph",
   icons: { icon: "/favicon.svg" },
   openGraph: {
     type: "website",
-    siteName: "GitaViśva",
-    title: "GitaViśva · The Bhagavad Gita as a knowledge graph",
-    description: "Read all 701 verses, see how the Gita's ideas connect, and bring your own questions to it.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Krishna and Arjuna's chariot in silhouette against a sunset over Kurukshetra." }],
+    siteName: "Kural Graph",
+    title: "Kural Graph · The Tirukkural as a knowledge graph",
+    description: "Read all 1,330 couplets, see how the Kural’s ideas connect, and bring your own questions to it.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "The words Kural Graph beside a line of palmyra palms against a dusk sky." }],
   },
   twitter: { card: "summary_large_image", images: ["/og.jpg"] },
 };
@@ -37,19 +38,15 @@ export const viewport: Viewport = {
   ],
 };
 
-// Resolve the theme before first paint (no flash): a pinned choice wins, otherwise follow the system.
-const themeScript = `try{var p=localStorage.getItem('gitaviswa:theme');var t=p==='light'||p==='dark'?p:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t}catch(e){}`;
-// The server always renders the home page. A link straight into a tool (?view=…, or the older ?node=/?trace=/?ask=)
-// hides it before first paint so it doesn't flash; page.tsx clears the flag once that tool is showing.
-// Mirrors viewFromQuery() in page.tsx.
-const entryScript = `try{var q=new URLSearchParams(location.search),v=q.get('view');if(v?v!=='home':(q.get('node')||q.get('trace')||q.get('ask')||q.get('chat')==='1'))document.documentElement.dataset.entry='deep'}catch(e){}`;
-
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" data-theme="dark" suppressHydrationWarning className={`${inter.variable} ${sourceSerif.variable} ${tiro.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <script dangerouslySetInnerHTML={{ __html: entryScript }} />
+        {/* Before first paint, so they can't be async. Files, because public/_headers blocks inline scripts. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/theme.js" />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/entry.js" />
       </head>
       <body>
         {children}

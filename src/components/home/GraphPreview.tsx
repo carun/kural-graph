@@ -17,7 +17,7 @@ import type { GraphNode } from "@/lib/types";
 /** Relations that make the picture busy without saying much (every verse has a speaker and a next verse). */
 const SKIP = new Set(["SPOKE", "NEXT_VERSE", "MENTIONS_CHARACTER", "NARRATED"]);
 /** Nodes the preview cycles through when nobody is pointing at it. */
-const SHOWCASE = ["K_2.47", "dilemma:decision-paralysis", "emotion:krodha", "concept:karma-yoga", "CH_2", "K_6.35", "emotion:shanti"];
+const SHOWCASE = ["K_1", "dilemma:you-tried-and-failed", "emotion:anger", "concept:rain", "CH_38", "K_595", "emotion:compassion"];
 const RADIUS: Record<NodeKind, number> = { chapter: 4.4, verse: 1.3, concept: 2.5, afflictive: 2.5, healing: 2.5, dilemma: 2.7, character: 2.5, personal: 2 };
 const DRAW_ORDER: NodeKind[] = ["verse", "character", "concept", "afflictive", "healing", "dilemma", "chapter"];
 const TILT = 0.42;
@@ -414,7 +414,7 @@ export function GraphPreview({ onOpen }: { onOpen: (id?: string) => void }) {
           ref={canvasRef}
           className="absolute inset-0 h-full w-full cursor-grab"
           role="img"
-          aria-label="A live preview of the graph: chapters, verses, ideas, states of mind and life situations as points, joined by their connections."
+          aria-label="A live preview of the graph: chapters, couplets, ideas, states of mind and life situations as points, joined by their connections."
         />
         {!model && (
           <div className="absolute inset-0 flex items-center justify-center" role="status">

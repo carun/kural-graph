@@ -1,6 +1,6 @@
 "use client";
-// Shravana — the persistent recitation engine. Plays per-verse recitations (holy-bhagavad-gita.org) or full
-// chapter recordings (archive.org), falls back to Web Speech synthesis offline, and keeps the graph in sync.
+// Shravana — the persistent recitation engine. Plays the project's own recordings from /audio/ (one per couplet, and
+// whole chapters where they exist), falls back to the device's voice where there is none, and keeps the graph in sync.
 import { create } from "zustand";
 import { useGita } from "./useGitaStore";
 import { loadCommentary } from "@/lib/data/loader";
@@ -55,6 +55,8 @@ interface AudioState {
   rate: number;
   source: AudioSource;
   sourceLabel: string;
+  /** Said plainly in the player, without being an error: what the device can't do, or why playback changed. */
+  note: string;
   currentTime: number;
   duration: number;
   approx: boolean;
@@ -75,6 +77,7 @@ export const useAudio = create<AudioState>(() => ({
   rate: 1,
   source: null,
   sourceLabel: "",
+  note: "",
   currentTime: 0,
   duration: 0,
   approx: false,
@@ -98,13 +101,17 @@ class AudioEngine {
   private el: HTMLAudioElement | null = null;
   private chapterSourceIdx = 0;
   private speaking = false;
+  /** Recordings that didn't load this session, so a replay or the next pass goes straight to the device's voice. */
+  private missing = new Set<string>();
+  private primed = false;
 
   private ensure(): HTMLAudioElement {
     if (this.el) return this.el;
     const el = new Audio();
     el.preload = "auto";
     el.addEventListener("playing", () => set({ playing: true, loading: false }));
-    el.addEventListener("pause", () => set({ playing: false }));
+    // Only while the element is what's playing: pausing it to hand over to the device's voice fires this after speech starts.
+    el.addEventListener("pause", () => (st().source === "recitation" || st().source === "chapter") && set({ playing: false }));
     el.addEventListener("waiting", () => set({ loading: true }));
     el.addEventListener("ended", () => this.onEnded());
     el.addEventListener("error", () => this.onError());
@@ -126,11 +133,20 @@ class AudioEngine {
 
   private meta(title: string, album: string) {
     if (typeof navigator === "undefined" || !("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
-    navigator.mediaSession.metadata = new MediaMetadata({ title, artist: "Śrīmad Bhagavad Gītā · GitaViswa", album });
+    navigator.mediaSession.metadata = new MediaMetadata({ title, artist: "Tirukkural · Kural Graph", album });
   }
 
   private follow(id: string) {
     if (st().follow) useGita.getState().fly(id);
+  }
+
+  /** iOS only lets speech start from a tap, and the fallback starts after a failed load, so unlock it during the tap. */
+  private primeSpeech() {
+    if (this.primed || typeof speechSynthesis === "undefined") return;
+    this.primed = true;
+    const u = new SpeechSynthesisUtterance(" ");
+    u.volume = 0;
+    speechSynthesis.speak(u);
   }
 
   /** The commentary being read: its chunks, voice, and a token that retires stale utterance callbacks. */
@@ -156,7 +172,7 @@ class AudioEngine {
     this.el?.pause();
     this.stopSpeech();
     const my = this.gen;
-    set({ verseId, chapter: v?.chapter ?? null, mode: "verse", loading: true, playing: false, error: undefined, source: "commentary", sourceLabel: "", approx: false, currentTime: 0, duration: 0 });
+    set({ verseId, chapter: v?.chapter ?? null, mode: "verse", loading: true, playing: false, error: undefined, note: "", source: "commentary", sourceLabel: "", approx: false, currentTime: 0, duration: 0 });
     const doc = await loadCommentary(verseId);
     if (my !== this.gen) return;
     const e = doc?.commentaries.find((c) => c.authorId === authorId);
@@ -164,12 +180,12 @@ class AudioEngine {
     if (!e || e.none || e.seeAlso) {
       set({ loading: false });
       if (thenNext) return this.afterCommentary();
-      return set({ error: e?.seeAlso ? `${name} discusses this verse under Kural ${e.seeAlso.slice(2)}.` : `${name} has no commentary on this verse.` });
+      return set({ error: e?.seeAlso ? `${name} discusses this couplet under Kural ${e.seeAlso.slice(2)}.` : `${name} has no commentary on this couplet.` });
     }
     const voices = await voicesReady();
     if (my !== this.gen) return;
     const voice = pickVoice(voices, e.lang);
-    if (!voice) return set({ loading: false, error: e.lang === "en" ? "No English voice is available on this device." : "No Hindi voice is installed on this device, so this can't be read aloud." });
+    if (!voice) return set({ loading: false, error: e.lang === "en" ? "No English voice is available on this device." : "This device has no Tamil voice, so this can't be read aloud." });
     const parts = chunkText(speechText(e));
     if (!parts.length) return thenNext ? this.afterCommentary() : set({ loading: false });
     this.reading = { verseId, authorId, parts, voice, lang: e.lang, thenNext, tok: 0 };
@@ -214,19 +230,33 @@ class AudioEngine {
     else set({ playing: false });
   }
 
-  playVerse(id: string) {
+  playVerse(id: string, note = "") {
     const g = useGita.getState();
     const v = g.versesById.get(id);
     if (!v) return;
     this.stopSpeech();
+    this.primeSpeech();
     const ch = g.versesDoc?.chapters.find((c) => c.number === v.chapter);
-    set({ verseId: id, chapter: v.chapter, mode: "verse", loading: true, error: undefined, source: "recitation", sourceLabel: "holy-bhagavad-gita.org", approx: false, currentTime: 0, duration: 0 });
+    set({ verseId: id, chapter: v.chapter, mode: "verse", loading: true, error: undefined, note, source: "recitation", sourceLabel: "Recording", approx: false, currentTime: 0, duration: 0 });
     const el = this.ensure();
-    el.src = v.audio.verse[0];
-    el.playbackRate = st().rate;
-    el.play().catch(() => this.speak(id));
+    const url = v.audio.verse[0];
     this.meta(`Kural ${v.ref}`, ch ? `Chapter ${ch.number} · ${ch.title}` : "");
     this.follow(id);
+    if (!url || this.missing.has(url)) return void this.speak(id);
+    el.src = url;
+    el.playbackRate = st().rate;
+    el.play().catch((e) => this.noRecording(id, e));
+  }
+
+  /** A couplet's recording didn't play. Most haven't been made yet, so this isn't an error: the device reads it instead. */
+  private noRecording(id: string, e?: unknown) {
+    const name = e instanceof DOMException ? e.name : "";
+    if (name === "AbortError") return; // The next couplet took over before this one loaded.
+    const s = st();
+    if (s.source !== "recitation" || s.verseId !== id) return; // Already handled: this fires from play() and from the element.
+    const url = useGita.getState().versesById.get(id)?.audio.verse[0];
+    if (url && name !== "NotAllowedError") this.missing.add(url);
+    void this.speak(id);
   }
 
   playChapter(n: number, sourceIdx = 0) {
@@ -234,13 +264,11 @@ class AudioEngine {
     const ch = g.versesDoc?.chapters.find((c) => c.number === n);
     if (!ch) return;
     this.stopSpeech();
+    this.primeSpeech();
     const src = ch.audio[sourceIdx];
-    if (!src) {
-      set({ error: "No chapter recording is available, so verses play one at a time.", mode: "verse" });
-      return this.playVerse(`K_${(n - 1) * 10 + 1}`);
-    }
+    if (!src) return this.playVerse(`K_${(n - 1) * 10 + 1}`, "This chapter has no recording of its own yet, so its couplets play one at a time.");
     this.chapterSourceIdx = sourceIdx;
-    set({ chapter: n, mode: "chapter", loading: true, error: undefined, source: "chapter", sourceLabel: src.source, approx: true, verseId: `K_${(n - 1) * 10 + 1}`, currentTime: 0, duration: src.duration || 0 });
+    set({ chapter: n, mode: "chapter", loading: true, error: undefined, note: "", source: "chapter", sourceLabel: src.source, approx: true, verseId: `K_${(n - 1) * 10 + 1}`, currentTime: 0, duration: src.duration || 0 });
     const el = this.ensure();
     el.src = src.url;
     el.playbackRate = st().rate;
@@ -249,32 +277,45 @@ class AudioEngine {
     this.follow(`K_${(n - 1) * 10 + 1}`);
   }
 
-  /** Offline / failure fallback: Sanskrit read by the platform speech engine (hi-IN voice, sa-IN if present). */
-  speak(id: string) {
+  /**
+   * No recording, or offline: the device reads the couplet. Tamil needs a Tamil voice. A device without one says so
+   * and reads the plain reading in English, so that listening still works, rather than mangling the Tamil.
+   */
+  async speak(id: string) {
     const v = useGita.getState().versesById.get(id);
     if (!v || typeof speechSynthesis === "undefined") {
-      set({ loading: false, playing: false, error: "Audio unavailable offline on this device." });
+      set({ loading: false, playing: false, error: "There is no recording of this couplet yet, and this browser can't read aloud." });
       return;
     }
     this.el?.pause();
     this.stopSpeech();
     speechSynthesis.cancel();
     const my = this.gen;
-    const u = new SpeechSynthesisUtterance([v.uvacha?.sa, ...v.sanskrit].filter(Boolean).join(" ").replace(/[।॥]/g, ", "));
-    const voices = speechSynthesis.getVoices();
-    const voice = voices.find((x) => x.lang.startsWith("sa")) || voices.find((x) => x.lang === "hi-IN") || voices.find((x) => x.lang.startsWith("hi"));
-    if (voice) u.voice = voice;
-    u.lang = voice?.lang || "hi-IN";
-    u.rate = 0.78 * st().rate;
+    const kept = st().note;
+    set({ verseId: id, chapter: v.chapter, loading: true, playing: false, source: "speech", sourceLabel: "Read by your device", mode: "verse", error: undefined, approx: false, currentTime: 0, duration: 0 });
+    const voices = await voicesReady();
+    if (my !== this.gen) return;
+    const tamil = pickVoice(voices, "sa");
+    const voice = tamil ?? pickVoice(voices, "en");
+    if (!voice) return set({ loading: false, error: "There is no recording of this couplet yet, and this device has no voice to read it." });
+    const u = new SpeechSynthesisUtterance(tamil ? v.sanskrit.join(" ") : v.translations.en["1"]);
+    u.voice = voice;
+    u.lang = voice.lang;
+    u.rate = (tamil ? 0.78 : 1) * st().rate;
     u.onend = () => {
       if (my !== this.gen) return;
       this.speaking = false;
       set({ playing: false });
       this.onEnded();
     };
+    u.onerror = (ev) => {
+      if (my !== this.gen || ev.error === "interrupted" || ev.error === "canceled") return;
+      this.speaking = false;
+      set({ playing: false, error: "The device voice stopped reading." });
+    };
     this.speaking = true;
     speechSynthesis.speak(u);
-    set({ verseId: id, chapter: v.chapter, playing: true, loading: false, source: "speech", sourceLabel: voice ? `speech · ${voice.name}` : "speech synthesis", mode: "verse", error: undefined });
+    set({ playing: true, loading: false, sourceLabel: `Read by your device (${voice.name})`, note: tamil ? kept : "This device has no Tamil voice, so it is reading the plain reading in English." });
     this.follow(id);
   }
 
@@ -322,7 +363,7 @@ class AudioEngine {
       this.el.removeAttribute("src");
       this.el.load();
     }
-    set({ verseId: null, chapter: null, currentTime: 0, duration: 0, error: undefined, loading: false, source: null, sourceLabel: "" });
+    set({ verseId: null, chapter: null, currentTime: 0, duration: 0, error: undefined, note: "", loading: false, source: null, sourceLabel: "" });
   }
 
   private neighbour(delta: number): string | null {
@@ -335,7 +376,7 @@ class AudioEngine {
 
   next() {
     const s = st();
-    if (s.mode === "chapter" && s.chapter) return s.chapter < 18 ? this.playChapter(s.chapter + 1) : this.stop();
+    if (s.mode === "chapter" && s.chapter) return s.chapter < 133 ? this.playChapter(s.chapter + 1) : this.stop();
     const id = this.neighbour(1);
     if (id) this.playVerse(id);
   }
@@ -377,10 +418,9 @@ class AudioEngine {
     if (s.mode === "chapter" && s.chapter) {
       const ch = useGita.getState().versesDoc?.chapters.find((c) => c.number === s.chapter);
       if (ch && this.chapterSourceIdx + 1 < ch.audio.length) return this.playChapter(s.chapter, this.chapterSourceIdx + 1);
-      set({ error: "The chapter recording could not be reached, so verses play one at a time." });
-      return this.playVerse(`K_${(s.chapter - 1) * 10 + 1}`);
+      return this.playVerse(`K_${(s.chapter - 1) * 10 + 1}`, "The chapter recording could not be reached, so its couplets play one at a time.");
     }
-    if (s.verseId) this.speak(s.verseId);
+    if (s.verseId) this.noRecording(s.verseId);
   }
 
   /** In chapter mode, estimate the verse being chanted from the syllable-proportional offsets. */
