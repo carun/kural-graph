@@ -1,4 +1,6 @@
+import { listAnthropicModels, streamAnthropic } from "./anthropic";
 import { PROVIDERS, type ProviderId } from "./providers";
+import { canChat, sseData, stripThinking, trimLeading } from "./stream";
 
 export interface ChatMessage {
   role: "system" | "user" | "assistant";
@@ -13,28 +15,26 @@ export interface ResolvedProvider {
   model: string;
   /** the model the caller asked for (differs from `model` when a retired model was substituted) */
   requested: string;
-  keySource: "request" | "env" | "none";
 }
 
 export class ProviderError extends Error {
-  constructor(
-    message: string,
-    public status: number,
-    public code: "no-key" | "upstream" | "network" | "bad-request",
-  ) {
+  status: number;
+  code: "no-key" | "upstream" | "network" | "bad-request";
+  constructor(message: string, status: number, code: ProviderError["code"]) {
     super(message);
+    this.status = status;
+    this.code = code;
   }
 }
 
-/** Pick credentials: a key sent by the browser (BYOK) wins, otherwise the server's .env when `serverKeys` allows it. */
-export function resolveProvider(id: ProviderId, opts: { apiKey?: string | null; model?: string | null; baseUrl?: string | null; serverKeys: boolean }): ResolvedProvider {
+/** Everything is in the browser now, so the only credentials are the key typed for this provider. */
+export function resolveProvider(id: ProviderId, opts: { apiKey?: string | null; model?: string | null; baseUrl?: string | null }): ResolvedProvider {
   const p = PROVIDERS[id];
-  const envKey = opts.serverKeys && p.envKey ? process.env[p.envKey]?.trim() || null : null;
-  const apiKey = opts.apiKey?.trim() || envKey;
-  const model = opts.model?.trim() || process.env[p.envModel]?.trim() || p.defaultModel;
+  const apiKey = opts.apiKey?.trim() || null;
+  const model = opts.model?.trim() || p.defaultModel;
   let base = p.baseUrl;
   if (id === "ollama") {
-    base = (opts.baseUrl?.trim() || process.env.OLLAMA_BASE_URL?.trim() || p.baseUrl).replace(/\/+$/, "");
+    base = (opts.baseUrl?.trim() || p.baseUrl).replace(/\/+$/, "");
     base = base.endsWith("/v1") ? base : `${base}/v1`;
   }
   if (p.envKey && !apiKey) throw new ProviderError(`No API key configured for ${p.name}.`, 400, "no-key");
@@ -43,25 +43,34 @@ export function resolveProvider(id: ProviderId, opts: { apiKey?: string | null; 
     id,
     base,
     url: `${base}/chat/completions`,
-    apiKey: apiKey ?? null,
+    apiKey,
     model: remembered || model,
     requested: model,
-    keySource: opts.apiKey?.trim() ? "request" : envKey ? "env" : "none",
   };
 }
 
 function headers(p: ResolvedProvider): Record<string, string> {
   const h: Record<string, string> = { "Content-Type": "application/json" };
   if (p.apiKey) h.Authorization = `Bearer ${p.apiKey}`;
-  if (p.id === "openrouter") {
-    h["HTTP-Referer"] = "https://github.com/gitaviswa";
-    h["X-Title"] = "GitaViswa";
-  }
   return h;
 }
 
-/** Stream text deltas from any OpenAI-compatible endpoint. */
-export async function* streamChat(p: ResolvedProvider, messages: ChatMessage[], opts: { temperature?: number; maxTokens?: number; signal?: AbortSignal } = {}): AsyncGenerator<string> {
+/** A browser only says "failed to fetch", and for Ollama that nearly always means it isn't allowing this site. */
+function unreachable(p: ResolvedProvider, e: unknown): Error {
+  if ((e as Error).name === "AbortError") return e as Error;
+  const name = PROVIDERS[p.id].name;
+  if (p.id !== "ollama") return new ProviderError(`Could not reach ${name}: ${(e as Error).message}`, 502, "network");
+  return new ProviderError(`Could not reach ${name} at ${p.base.replace(/\/v1$/, "")}. Check that it is running and that OLLAMA_ORIGINS includes ${globalThis.location?.origin}.`, 502, "network");
+}
+
+/** Stream text deltas from the provider, and to nowhere else. */
+export function streamChat(p: ResolvedProvider, messages: ChatMessage[], opts: { temperature?: number; maxTokens?: number; signal?: AbortSignal } = {}): AsyncGenerator<string> {
+  if (p.id === "anthropic") return streamAnthropic({ apiKey: p.apiKey ?? "", model: p.model, messages, signal: opts.signal });
+  // Reasoning models (e.g. DeepSeek R1) may inline <think>…</think>; keep only the answer.
+  return trimLeading(stripThinking(streamOpenAiCompatible(p, messages, opts)));
+}
+
+async function* streamOpenAiCompatible(p: ResolvedProvider, messages: ChatMessage[], opts: { temperature?: number; maxTokens?: number; signal?: AbortSignal }): AsyncGenerator<string> {
   let res: Response;
   try {
     res = await fetch(p.url, {
@@ -71,16 +80,20 @@ export async function* streamChat(p: ResolvedProvider, messages: ChatMessage[], 
         model: p.model,
         messages,
         stream: true,
-        temperature: opts.temperature ?? 0.5,
-        // Reasoning models spend tokens before answering; give them headroom.
-        max_tokens: opts.maxTokens ?? (isReasoningModel(p.model) ? 2400 : 1100),
+        // OpenAI's newer models refuse both of these, and the model list offers them.
+        ...(p.id === "openai" ? {} : { temperature: opts.temperature ?? 0.5 }),
+        // Reasoning models spend tokens before answering; give them headroom. Ollama costs nothing, and a thinking
+        // model there that ran out of budget mid-thought would leave no answer at all.
+        ...(p.id === "openai" || p.id === "ollama" ? {} : { max_tokens: opts.maxTokens ?? (isReasoningModel(p.model) ? 2400 : 1100) }),
         // Groq's gpt-oss models stream reasoning separately; "low" keeps first-token latency down.
         ...(p.id === "groq" && /gpt-oss/.test(p.model) ? { reasoning_effort: "low" } : {}),
+        // A local thinking model can reason for minutes before its first word. Only Ollama takes this: others may refuse it.
+        ...(p.id === "ollama" ? { reasoning_effort: "none" } : {}),
       }),
       signal: opts.signal,
     });
   } catch (e) {
-    throw new ProviderError(`Could not reach ${PROVIDERS[p.id].name}: ${(e as Error).message}`, 502, "network");
+    throw unreachable(p, e);
   }
   if (!res.ok || !res.body) {
     const body = await res.text().catch(() => "");
@@ -92,37 +105,12 @@ export async function* streamChat(p: ResolvedProvider, messages: ChatMessage[], 
     throw new ProviderError(`${PROVIDERS[p.id].name} responded ${res.status}: ${msg}`, res.status, "upstream");
   }
 
-  const reader = res.body.getReader();
-  const dec = new TextDecoder();
-  let buf = "";
-  let inThink = false;
-  while (true) {
-    const { value, done } = await reader.read();
-    if (done) break;
-    buf += dec.decode(value, { stream: true });
-    let nl: number;
-    while ((nl = buf.indexOf("\n")) >= 0) {
-      const line = buf.slice(0, nl).trim();
-      buf = buf.slice(nl + 1);
-      if (!line.startsWith("data:")) continue;
-      const data = line.slice(5).trim();
-      if (data === "[DONE]") return;
-      try {
-        const j = JSON.parse(data);
-        let delta: string = j.choices?.[0]?.delta?.content ?? "";
-        if (!delta) continue;
-        // Reasoning models (e.g. DeepSeek R1) may inline <think>…</think>; keep only the answer.
-        if (delta.includes("<think>")) inThink = true;
-        if (inThink) {
-          const end = delta.indexOf("</think>");
-          if (end < 0) continue;
-          delta = delta.slice(end + 8);
-          inThink = false;
-        }
-        if (delta) yield delta;
-      } catch {
-        // partial / keep-alive line
-      }
+  for await (const data of sseData(res.body)) {
+    try {
+      const delta: string = JSON.parse(data).choices?.[0]?.delta?.content ?? "";
+      if (delta) yield delta;
+    } catch {
+      // partial / keep-alive line
     }
   }
 }
@@ -131,27 +119,22 @@ const isReasoningModel = (m: string) => /gpt-oss|qwen3|deepseek-r1|o[134]|reas
 
 // ── model discovery & retired-model fallback ─────────────────────────────────────────────────────
 // Providers retire models (Groq dropped llama-3.3-70b-versatile in 2026). When a configured model is gone we
-// pick the best available chat model, remember the substitution for this server process, and tell the user.
+// pick the best available chat model, remember the substitution for this page, and tell the user.
 
 const NON_CHAT = /whisper|tts|orpheus|guard|embed|moderation|transcri|speech|vision-preview|dall-e|image/i;
-const modelCache = new Map<string, { at: number; ids: string[] }>();
 const fallbackFor = new Map<string, string>();
 
 export async function listModels(p: ResolvedProvider): Promise<string[]> {
-  const cacheKey = `${p.id}|${p.base}|${p.apiKey?.slice(-6) ?? ""}`;
-  const hit = modelCache.get(cacheKey);
-  if (hit && Date.now() - hit.at < 10 * 60_000) return hit.ids;
+  if (p.id === "anthropic") return (await listAnthropicModels(p.apiKey ?? "")).filter(canChat).sort();
   let res: Response;
   try {
     res = await fetch(`${p.base}/models`, { headers: headers(p), signal: AbortSignal.timeout(15_000) });
   } catch (e) {
-    throw new ProviderError(`Could not list ${PROVIDERS[p.id].name} models: ${(e as Error).message}`, 502, "network");
+    throw unreachable(p, e);
   }
   if (!res.ok) throw new ProviderError(`${PROVIDERS[p.id].name} /models responded ${res.status}`, res.status, "upstream");
   const j = (await res.json()) as { data?: { id: string; active?: boolean }[] };
-  const ids = (j.data || []).filter((m) => m.active !== false && !NON_CHAT.test(m.id)).map((m) => m.id).sort();
-  modelCache.set(cacheKey, { at: Date.now(), ids });
-  return ids;
+  return (j.data || []).filter((m) => m.active !== false && !NON_CHAT.test(m.id) && canChat(m.id)).map((m) => m.id).sort();
 }
 
 /** Choose a replacement: the provider's preset order first, then anything chat-capable. */

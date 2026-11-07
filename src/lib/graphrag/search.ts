@@ -1,5 +1,6 @@
 import { create, insertMultiple, search, type AnyOrama } from "@orama/orama";
 import type { GraphData, GraphNode, Verse, VersesDoc } from "@/lib/types";
+import { embed } from "@/kural/embedder";
 import { fold, hasDevanagari, keywords } from "./text";
 
 export type DocKind = "verse" | "chapter" | "concept" | "emotion" | "dilemma" | "character";
@@ -49,7 +50,7 @@ export async function buildSearchIndex(versesDoc: VersesDoc, graph: GraphData, v
   } as const;
   const db = create({ schema: schema as never });
 
-  const enKeys = [String(versesDoc.meta.defaults.en), "21", "19"];
+  const enKeys = [String(versesDoc.meta.defaults.en), "2"];
   const docs: Record<string, unknown>[] = [];
   for (const v of versesDoc.verses) {
     const english = enKeys.map((k) => v.translations.en?.[k]).filter(Boolean).join(" \n ");
@@ -145,22 +146,18 @@ export async function searchIndex(idx: SearchIndex, query: string, opts: SearchO
   return { hits, mode: useVector ? "hybrid" : "fulltext", ms: performance.now() - t0 };
 }
 
-/** Ask the local embedding route for a query vector (returns null when semantic mode is unavailable). */
-let embedUnavailable = false;
+/**
+ * Embed a query in this browser (returns null when semantic mode is unavailable). The model loads on the first call
+ * and goes on loading past the timeout, so a slow first question uses keywords and a later one gets the vector.
+ */
 export async function embedQuery(text: string): Promise<number[] | null> {
-  if (embedUnavailable) return null;
+  let timer: ReturnType<typeof setTimeout> | undefined;
   try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 2500);
-    const res = await fetch("/api/embed", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ texts: [text] }), signal: ctrl.signal });
-    clearTimeout(t);
-    if (!res.ok) {
-      if (res.status === 503) embedUnavailable = true;
-      return null;
-    }
-    const j = (await res.json()) as { vectors: number[][] };
-    return j.vectors?.[0] ?? null;
+    const vector = await Promise.race([embed(text), new Promise<null>((resolve) => (timer = setTimeout(() => resolve(null), 2500)))]);
+    return vector && Array.from(vector);
   } catch {
     return null;
+  } finally {
+    clearTimeout(timer);
   }
 }

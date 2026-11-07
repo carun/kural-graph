@@ -1,6 +1,7 @@
-// Unified BYOK provider registry — every provider speaks the OpenAI-compatible /chat/completions protocol.
+// Unified BYOK provider registry. Every provider speaks the OpenAI-compatible /chat/completions protocol, except
+// Anthropic, which has its own adapter. `envKey` now only marks that a provider needs a key: a static site has no .env.
 
-export type ProviderId = "groq" | "openrouter" | "xai" | "openai" | "ollama";
+export type ProviderId = "groq" | "openrouter" | "xai" | "openai" | "anthropic" | "ollama";
 
 export interface ModelPreset {
   id: string;
@@ -89,10 +90,25 @@ export const PROVIDERS: Record<ProviderId, ProviderInfo> = {
     keyUrl: "https://platform.openai.com/api-keys",
     keyPrefix: "sk-",
   },
+  anthropic: {
+    id: "anthropic",
+    name: "Anthropic",
+    tagline: "Claude models",
+    baseUrl: "https://api.anthropic.com/v1",
+    envKey: "ANTHROPIC_API_KEY",
+    envModel: "ANTHROPIC_MODEL",
+    defaultModel: "claude-opus-5-5",
+    models: [
+      { id: "claude-opus-5-5", label: "Claude Opus 5.5" },
+      { id: "claude-sonnet-5-5", label: "Claude Sonnet 5.5" },
+    ],
+    keyUrl: "https://platform.claude.com/settings/keys",
+    keyPrefix: "sk-ant-",
+  },
   ollama: {
     id: "ollama",
     name: "Local Ollama",
-    tagline: "100% free & offline on your machine",
+    tagline: "Runs on your own machine",
     baseUrl: "http://localhost:11434",
     envKey: null,
     envModel: "OLLAMA_MODEL",
@@ -108,17 +124,6 @@ export const PROVIDERS: Record<ProviderId, ProviderInfo> = {
   },
 };
 
-export const PROVIDER_ORDER: ProviderId[] = ["groq", "openrouter", "xai", "openai", "ollama"];
+export const PROVIDER_ORDER: ProviderId[] = ["groq", "openrouter", "xai", "openai", "anthropic", "ollama"];
 
 export const isProviderId = (s: unknown): s is ProviderId => typeof s === "string" && s in PROVIDERS;
-
-/** The env variable names the settings API is allowed to read & write. */
-export const MANAGED_ENV_KEYS = [
-  "LLM_PROVIDER",
-  ...PROVIDER_ORDER.flatMap((p) => [PROVIDERS[p].envKey, PROVIDERS[p].envModel, PROVIDERS[p].envBaseUrl]).filter((x): x is string => !!x),
-  "NEO4J_URI",
-  "NEO4J_USER",
-  "NEO4J_PASSWORD",
-];
-
-export const maskKey = (k: string) => (k.length <= 10 ? "••••" : `${k.slice(0, 4)}…${k.slice(-4)}`);

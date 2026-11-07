@@ -1,19 +1,13 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  // Lets a verification build run beside a live `next dev` (both would otherwise share .next/).
-  distDir: process.env.NEXT_DIST_DIR || ".next",
-  // Native / node-only packages used by optional server routes (local embeddings, Neo4j sync).
-  serverExternalPackages: ["@xenova/transformers", "onnxruntime-node", "sharp", "neo4j-driver"],
-  async headers() {
-    return [
-      {
-        source: "/data/:path*",
-        headers: [{ key: "Cache-Control", value: "public, max-age=3600, stale-while-revalidate=86400" }],
-      },
-    ];
-  },
-};
-
-export default nextConfig;
+// A static site: `npm run build` writes out/, which Cloudflare serves as it is (wrangler.jsonc, public/_headers).
+export default function nextConfig(phase: string): NextConfig {
+  return {
+    reactStrictMode: true,
+    output: "export",
+    // An export always builds in .next, and takes any other distDir as where to write the site. So `next dev` moves
+    // out of the way instead, into a folder git already ignores, and a build can run beside a live dev server.
+    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-verify" : ".next",
+  };
+}

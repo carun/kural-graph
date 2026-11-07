@@ -1,37 +1,31 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, ChevronDown, Database, Download, ExternalLink, Eye, EyeOff, LoaderCircle, Monitor, Moon, PlugZap, Radio, Search, Sparkles, Sun, Trash2, WifiOff, X } from "lucide-react";
+import { Check, ChevronDown, ExternalLink, Eye, EyeOff, LoaderCircle, Monitor, Moon, PlugZap, Search, Sparkles, Sun, Trash2, WifiOff, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { useModal } from "@/lib/hooks/useModal";
 import { useConnection, useSettings } from "@/lib/store/settingsStore";
+import { fetchModels, testConnection } from "@/lib/llm/browser";
 import { PROVIDER_ORDER, PROVIDERS, type ProviderId } from "@/lib/llm/providers";
 import { Notice } from "@/components/ui/primitives";
 
-type Section = "model" | "search" | "appearance" | "data";
-// Everyday settings first; the AI provider, search engine and graph-database integrations are optional extras.
+type Section = "model" | "search" | "appearance";
+// Everyday settings first; the AI provider and search engine are optional extras.
 const SECTIONS: { id: Section; label: string; icon: React.ReactNode }[] = [
   { id: "appearance", label: "Appearance", icon: <Monitor size={15} /> },
   { id: "model", label: "AI (optional)", icon: <Sparkles size={15} /> },
   { id: "search", label: "Search · advanced", icon: <Search size={15} /> },
-  { id: "data", label: "Graph data · advanced", icon: <Database size={15} /> },
 ];
 
 function StatusBadge({ p }: { p: ProviderId }) {
-  const env = useSettings((s) => s.env?.providers[p]);
   const key = useSettings((s) => s.keys[p]);
+  const remember = useSettings((s) => s.remember);
   const base = "inline-flex items-center gap-1.5 text-[11.5px]";
   if (p === "ollama") return <span className={`${base} text-text-3`}>Runs locally, no key</span>;
-  if (env?.configured)
-    return (
-      <span className={`${base} text-good`} title={`${env.source}: ${env.masked}`}>
-        <span className="h-1.5 w-1.5 rounded-full bg-good" /> Key found in {env.source}
-      </span>
-    );
   if (key)
     return (
       <span className={`${base} text-good`}>
-        <span className="h-1.5 w-1.5 rounded-full bg-good" /> Key saved in this browser
+        <span className="h-1.5 w-1.5 rounded-full bg-good" /> {remember ? "Key saved in this browser" : "Key saved for this tab"}
       </span>
     );
   return <span className={`${base} text-text-3`}>No key yet</span>;
@@ -52,10 +46,10 @@ function Field({ label, children, hint, htmlFor }: { label: React.ReactNode; chi
 function ProviderForm({ p }: { p: ProviderId }) {
   const info = PROVIDERS[p];
   const s = useSettings();
-  const env = s.env?.providers[p];
   const [key, setKey] = useState(s.keys[p] || "");
-  const [model, setModel] = useState(s.models[p] || env?.model || info.defaultModel);
+  const [model, setModel] = useState(s.models[p] || info.defaultModel);
   const [baseUrl, setBaseUrl] = useState(s.ollamaBaseUrl);
+  const [remember, setRemember] = useState(s.remember);
   const [show, setShow] = useState(false);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [testing, setTesting] = useState(false);
@@ -65,7 +59,7 @@ function ProviderForm({ p }: { p: ProviderId }) {
 
   useEffect(() => {
     setKey(useSettings.getState().keys[p] || "");
-    setModel(useSettings.getState().models[p] || useSettings.getState().env?.providers[p]?.model || PROVIDERS[p].defaultModel);
+    setModel(useSettings.getState().models[p] || PROVIDERS[p].defaultModel);
     setMsg(null);
     setLive(null);
     setLiveErr("");
@@ -74,14 +68,15 @@ function ProviderForm({ p }: { p: ProviderId }) {
   // Providers retire models: fetch what this key can actually use.
   const loadLive = async () => {
     setLiveErr("");
-    const headers: Record<string, string> = {};
-    if (key) headers["x-gitaviswa-key"] = key;
-    const qs = new URLSearchParams({ provider: p, ...(p === "ollama" ? { baseUrl } : {}) });
-    const r = await fetch(`/api/settings/models?${qs}`, { headers }).then((x) => x.json()).catch((e) => ({ error: String(e) }));
-    if (r.error) setLiveErr(r.error);
-    else setLive({ models: r.models, recommended: r.recommended });
+    try {
+      setLive(await fetchModels(p, { key, baseUrl }));
+    } catch (e) {
+      setLive(null);
+      setLiveErr((e as Error).message);
+    }
   };
-  const connected = p === "ollama" || !!key || !!env?.configured;
+  // Ollama isn't asked until someone wants it: opening its tab shouldn't make this site call their machine.
+  const connected = !!key || (p === "ollama" && s.active === p);
   useEffect(() => {
     if (connected) loadLive();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -91,18 +86,16 @@ function ProviderForm({ p }: { p: ProviderId }) {
 
   const save = async () => {
     setSaving(true);
-    const r = await s.saveProvider(p, { key: info.envKey ? key : undefined, model, baseUrl: p === "ollama" ? baseUrl : undefined, makeDefault: true });
+    const r = await s.saveProvider(p, { key: info.envKey ? key : undefined, model, baseUrl: p === "ollama" ? baseUrl : undefined, makeDefault: true, remember: info.envKey ? remember : undefined });
     setSaving(false);
     setMsg({ ok: true, text: r.message });
   };
   const test = async () => {
     setTesting(true);
     setMsg(null);
-    const headers: Record<string, string> = { "Content-Type": "application/json" };
-    if (key) headers["x-gitaviswa-key"] = key;
-    const res = await fetch("/api/settings/test", { method: "POST", headers, body: JSON.stringify({ provider: p, model, baseUrl: p === "ollama" ? baseUrl : undefined }) }).then((r) => r.json()).catch((e) => ({ ok: false, error: String(e) }));
+    const res = await testConnection(p, { key, model, baseUrl });
     setTesting(false);
-    setMsg(res.ok ? { ok: true, text: `Connected. ${info.name} replied in ${res.latencyMs} ms using ${res.model}.${res.fallbackFrom ? ` “${res.fallbackFrom}” is retired, so ${res.model} was used instead.` : ""}` } : { ok: false, text: res.error || "The test request failed." });
+    setMsg(res.ok ? { ok: true, text: `Connected. ${info.name} replied in ${res.latencyMs} ms using ${res.model}.${res.fallbackFrom ? ` “${res.fallbackFrom}” is retired, so ${res.model} was used instead.` : ""}` } : { ok: false, text: res.error });
     if (res.ok && res.fallbackFrom) setModel(res.model);
   };
 
@@ -122,12 +115,6 @@ function ProviderForm({ p }: { p: ProviderId }) {
         <p className="mt-0.5 text-[13px] text-text-3">{info.tagline}</p>
       </div>
 
-      {env?.configured && info.envKey && (
-        <Notice tone="accent" icon={<Check size={14} />}>
-          {info.envKey} was found in <code className="text-text">{env.source}</code> ({env.masked}), so there is nothing to type. A key entered below overrides it in this browser only.
-        </Notice>
-      )}
-
       {info.envKey && (
         <Field
           label="API key"
@@ -139,16 +126,20 @@ function ProviderForm({ p }: { p: ProviderId }) {
           }
         >
           <div className="flex gap-1.5">
-            <input id={`key-${p}`} className="field font-mono !text-[12.5px]" type={show ? "text" : "password"} placeholder={env?.configured ? "Using the key from your .env file" : `${info.keyPrefix || ""}…`} value={key} onChange={(e) => setKey(e.target.value)} autoComplete="off" spellCheck={false} />
+            <input id={`key-${p}`} className="field font-mono !text-[12.5px]" type={show ? "text" : "password"} placeholder={`${info.keyPrefix || ""}…`} value={key} onChange={(e) => setKey(e.target.value)} autoComplete="off" spellCheck={false} />
             <button type="button" className="btn btn-icon h-9 w-9 shrink-0" onClick={() => setShow(!show)} aria-label={show ? "Hide key" : "Show key"}>
               {show ? <EyeOff size={14} /> : <Eye size={14} />}
             </button>
           </div>
+          <label className="mt-2 flex cursor-pointer items-center gap-2 text-[12.5px] text-text-2">
+            <input type="checkbox" className="h-4 w-4 accent-[var(--accent)]" checked={remember} onChange={(e) => setRemember(e.target.checked)} />
+            Remember the key on this device
+          </label>
         </Field>
       )}
 
       {p === "ollama" && (
-        <Field label="Ollama address" htmlFor="ollama-url" hint={`Run \`ollama serve\` and \`ollama pull ${model}\`. Everything stays on this machine.`}>
+        <Field label="Ollama address" htmlFor="ollama-url" hint={`Start Ollama with OLLAMA_ORIGINS=${location.origin} so that it answers this site, then run \`ollama pull ${model}\`. This site can reach localhost or an HTTPS address such as a tailnet name, but not plain HTTP on another machine.`}>
           <input id="ollama-url" className="field font-mono !text-[12.5px]" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} />
         </Field>
       )}
@@ -157,10 +148,10 @@ function ProviderForm({ p }: { p: ProviderId }) {
         label={
           <>
             Model
-            {live && <span className="font-normal text-text-3">{live.models.length} available to this key</span>}
-            {connected && (
+            {live && <span className="font-normal text-text-3">{live.models.length} available{info.envKey ? " to this key" : ""}</span>}
+            {(connected || p === "ollama") && (
               <button type="button" className="ml-auto font-normal text-text-3 hover:text-text" onClick={loadLive}>
-                Refresh list
+                {live ? "Refresh list" : "List models"}
               </button>
             )}
           </>
@@ -188,7 +179,7 @@ function ProviderForm({ p }: { p: ProviderId }) {
       </Field>
       {modelMissing && (
         <Notice tone="danger">
-          “{model}” is not offered by {info.name} for this key.{" "}
+          “{model}” is not offered by {info.name}{info.envKey ? " for this key" : ""}.{" "}
           {live?.recommended && (
             <button type="button" className="font-medium text-accent-text underline" onClick={() => setModel(live.recommended!)}>
               Use {live.recommended}
@@ -215,11 +206,11 @@ function ProviderForm({ p }: { p: ProviderId }) {
         <button type="submit" className="btn btn-primary" disabled={saving}>
           {saving ? <LoaderCircle size={14} className="animate-spin" /> : <Check size={14} />} Save and use
         </button>
-        <button type="button" className="btn" onClick={test} disabled={testing || (!!info.envKey && !key && !env?.configured)}>
+        <button type="button" className="btn" onClick={test} disabled={testing || (!!info.envKey && !key)}>
           {testing ? <LoaderCircle size={14} className="animate-spin" /> : <PlugZap size={14} />} {testing ? "Testing" : "Test connection"}
         </button>
-        {info.envKey && (s.keys[p] || env?.source === ".env.local") && (
-          <button type="button" className="btn btn-ghost btn-danger ml-auto" onClick={async () => (await s.forgetKey(p), setKey(""), setMsg({ ok: true, text: "Key removed from this browser and from .env.local." }))}>
+        {info.envKey && s.keys[p] && (
+          <button type="button" className="btn btn-ghost btn-danger ml-auto" onClick={async () => (await s.forgetKey(p), setKey(""), setMsg({ ok: true, text: "Key removed from this browser." }))}>
             <Trash2 size={14} /> Remove key
           </button>
         )}
@@ -230,7 +221,7 @@ function ProviderForm({ p }: { p: ProviderId }) {
           <ChevronDown size={14} className="-rotate-90 transition-transform group-open:rotate-0" /> How keys are stored
         </summary>
         <p className="mt-2 pl-5 leading-5">
-          A saved key is kept in this browser&apos;s local storage. When GitaViśva runs on your own machine it is also written to <code className="text-text-2">.env.local</code> (ignored by git) so it survives restarts. Keys are never sent back to the browser from the server. {s.env && !s.env.writable && s.env.reason ? `Here: ${s.env.reason}` : ""}
+          A key stays in this tab and goes when you close it, unless you choose to remember it, which keeps it in this browser&apos;s local storage. It is sent only to {info.name}, straight from your browser. This site has no server of its own. Use a key with a spending limit.
         </p>
       </details>
     </form>
@@ -245,7 +236,7 @@ function ModelSection() {
   return (
     <div>
       <h2 className="text-[18px] font-semibold text-text">Language model</h2>
-      <p className="mt-1 max-w-[60ch] text-[13.5px] leading-[1.55] text-text-2">GitaViśva works fully offline. Connecting a model adds written answers in Ask, explanations of paths, deeper reflections and translations into more languages.</p>
+      <p className="mt-1 max-w-[60ch] text-[13.5px] leading-[1.55] text-text-2">Kural Graph works fully offline. Connecting a model adds written answers in Ask, explanations of paths, deeper reflections and translations into more languages.</p>
       <div className="mt-3">
         {conn ? (
           <Notice tone="accent" icon={<Check size={14} />}>
@@ -291,13 +282,13 @@ function SearchSection() {
   return (
     <div>
       <h2 className="text-[18px] font-semibold text-text">Search</h2>
-      <p className="mt-1 max-w-[60ch] text-[13.5px] leading-[1.55] text-text-2">Search and Ask both run in this browser over {index?.docCount ?? "every"} documents: the Sanskrit, transliteration, five translations, word glosses and every concept.</p>
+      <p className="mt-1 max-w-[60ch] text-[13.5px] leading-[1.55] text-text-2">Search and Ask both run in this browser over {index?.docCount ?? "every"} documents: the Tamil, its romanisation, the readings, word glosses and every idea.</p>
       <label className="mt-5 flex cursor-pointer items-start gap-3 rounded-3 border border-line p-4 hover:bg-surface-2">
         <input type="checkbox" className="mt-0.5 h-4 w-4 accent-[var(--accent)]" checked={semantic} onChange={(e) => setSemantic(e.target.checked)} />
         <span>
           <span className="block text-[13.5px] font-medium text-text">Match by meaning as well as words</span>
           <span className="mt-0.5 block text-[12.5px] leading-[1.45] text-text-3">
-            {index?.hasVectors ? `Combines keyword search with semantic vectors (all-MiniLM-L6-v2, ${index.dim} dimensions) computed on this machine.` : "Keyword search is active. Run `npm run data:embeddings` once to add semantic vectors."}
+            {index?.hasVectors ? `Combines keyword search with semantic vectors (all-MiniLM-L6-v2, ${index.dim} dimensions) computed on this device. Your next question starts a one-time download of about 38 MB, and it then works offline.` : "Keyword search is active."}
           </span>
         </span>
       </label>
@@ -329,60 +320,6 @@ function AppearanceSection() {
   );
 }
 
-function DataSection() {
-  const env = useSettings((s) => s.env);
-  const graphs = useGita((s) => s.graphs);
-  const [uri, setUri] = useState("");
-  const [user, setUser] = useState("neo4j");
-  const [password, setPassword] = useState("");
-  const [state, setState] = useState<{ busy: boolean; ok?: boolean; text?: string }>({ busy: false });
-  const sync = async () => {
-    setState({ busy: true });
-    const r = await fetch("/api/neo4j", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ uri: uri || undefined, user, password: password || undefined }) }).then((x) => x.json()).catch((e) => ({ ok: false, error: String(e) }));
-    setState(r.ok ? { busy: false, ok: true, text: `Merged ${r.nodes} nodes and ${r.relationships} relationships in ${(r.ms / 1000).toFixed(1)} s.` } : { busy: false, ok: false, text: r.error });
-  };
-  return (
-    <div>
-      <h2 className="text-[18px] font-semibold text-text">Data</h2>
-      <p className="mt-1 max-w-[60ch] text-[13.5px] leading-[1.55] text-text-2">
-        The graph has {graphs?.graph.order.toLocaleString() ?? "857"} nodes and {graphs?.graph.size.toLocaleString() ?? "5,350"} relationships. Export it to a Neo4j database to query it with Cypher.
-      </p>
-      <form
-        className="mt-5 space-y-3 rounded-3 border border-line p-4 sm:p-5"
-        onSubmit={(e) => {
-          e.preventDefault();
-          sync();
-        }}
-      >
-        <div className="flex items-center gap-2">
-          <span className="text-[14px] font-semibold text-text">Sync to Neo4j</span>
-          {env?.neo4j.configured && <span className="text-[11.5px] text-good">NEO4J_URI found in .env</span>}
-        </div>
-        <Field label="Connection URI" htmlFor="neo-uri">
-          <input id="neo-uri" className="field font-mono !text-[12.5px]" placeholder={env?.neo4j.uri || "neo4j://localhost:7687"} value={uri} onChange={(e) => setUri(e.target.value)} />
-        </Field>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <Field label="User" htmlFor="neo-user">
-            <input id="neo-user" className="field" value={user} onChange={(e) => setUser(e.target.value)} />
-          </Field>
-          <Field label="Password" htmlFor="neo-pass">
-            <input id="neo-pass" className="field" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          </Field>
-        </div>
-        <div className="flex flex-wrap gap-2 pt-1">
-          <button type="submit" className="btn btn-primary" disabled={state.busy}>
-            {state.busy ? <LoaderCircle size={14} className="animate-spin" /> : <Radio size={14} />} {state.busy ? "Syncing" : "Sync now"}
-          </button>
-          <a className="btn" href="/data/gita-cypher-seed.cypher" download>
-            <Download size={14} /> Download Cypher seed
-          </a>
-        </div>
-        {state.text && <p className={`text-[12.5px] ${state.ok ? "text-good" : "text-danger"}`} role="status">{state.text}</p>}
-      </form>
-    </div>
-  );
-}
-
 export function ByokSettingsModal() {
   const open = useGita((s) => s.settingsOpen);
   const setOpen = useGita((s) => s.setSettingsOpen);
@@ -393,7 +330,6 @@ export function ByokSettingsModal() {
 
   useEffect(() => {
     if (!open) return;
-    useSettings.getState().loadEnv();
     const want = useGita.getState().settingsSection;
     setSection(SECTIONS.some((x) => x.id === want) ? (want as Section) : "appearance");
   }, [open]);
@@ -415,9 +351,12 @@ export function ByokSettingsModal() {
           >
             <header className="flex h-14 shrink-0 items-center justify-between border-b border-line pl-5 pr-2">
               <h1 className="text-[15px] font-semibold text-text">Settings</h1>
-              <button className="btn btn-ghost btn-icon" onClick={() => setOpen(false)} aria-label="Close settings">
-                <X size={16} />
-              </button>
+              <div className="flex items-center gap-1">
+                <a className="btn btn-ghost btn-sm" href="/about">About</a>
+                <button className="btn btn-ghost btn-icon" onClick={() => setOpen(false)} aria-label="Close settings">
+                  <X size={16} />
+                </button>
+              </div>
             </header>
             <div className="flex min-h-0 flex-1 flex-col md:flex-row">
               <nav className="flex shrink-0 gap-1 overflow-x-auto border-b border-line p-2 md:w-[210px] md:flex-col md:border-b-0 md:border-r md:p-3" aria-label="Settings sections">
@@ -432,7 +371,6 @@ export function ByokSettingsModal() {
                 {section === "model" && <ModelSection />}
                 {section === "search" && <SearchSection />}
                 {section === "appearance" && <AppearanceSection />}
-                {section === "data" && <DataSection />}
               </div>
             </div>
           </motion.div>

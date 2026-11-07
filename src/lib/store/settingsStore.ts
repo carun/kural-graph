@@ -1,30 +1,38 @@
 "use client";
-// Agni-Kunda — dual-persistence BYOK settings: keys live in localStorage AND (when running locally) in .env.local.
+// Agni-Kunda — BYOK settings. A static site has nowhere else to keep a key, and it goes only to its own provider.
 import { useMemo } from "react";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { PROVIDER_ORDER, PROVIDERS, type ProviderId } from "@/lib/llm/providers";
-
-export interface EnvProviderStatus {
-  configured: boolean;
-  source: string | null;
-  masked: string | null;
-  model: string | null;
-  baseUrl?: string | null;
-}
-export interface EnvStatus {
-  providers: Record<ProviderId, EnvProviderStatus>;
-  defaultProvider: ProviderId | null;
-  writable: boolean;
-  reason?: string;
-  file: string;
-  neo4j: { configured: boolean; uri: string | null };
-}
+import { PROVIDERS, type ProviderId } from "@/lib/llm/providers";
 
 export interface SaveResult {
-  browser: boolean;
-  env: "written" | "skipped" | "failed";
   message: string;
+}
+
+const KEYS_KEY = "gitaviswa:keys";
+
+function readKeys(): Partial<Record<ProviderId, string>> {
+  try {
+    return JSON.parse(localStorage.getItem(KEYS_KEY) ?? sessionStorage.getItem(KEYS_KEY) ?? "{}");
+  } catch {
+    return {};
+  }
+}
+
+function writeKeys(keys: Partial<Record<ProviderId, string>>, remember: boolean) {
+  const value = JSON.stringify(keys);
+  try {
+    // Keys stay for this tab only unless someone asks otherwise.
+    if (remember) {
+      localStorage.setItem(KEYS_KEY, value);
+      sessionStorage.removeItem(KEYS_KEY);
+    } else {
+      sessionStorage.setItem(KEYS_KEY, value);
+      localStorage.removeItem(KEYS_KEY);
+    }
+  } catch {
+    // The key still works for this page view.
+  }
 }
 
 interface SettingsState {
@@ -33,14 +41,14 @@ interface SettingsState {
   models: Partial<Record<ProviderId, string>>;
   ollamaBaseUrl: string;
   semantic: boolean;
-  env: EnvStatus | null;
-  envLoaded: boolean;
+  /** Whether keys outlive this tab. */
+  remember: boolean;
 
   loadEnv: () => Promise<void>;
   setActive: (p: ProviderId | null) => void;
   setModel: (p: ProviderId, model: string) => void;
   setSemantic: (on: boolean) => void;
-  saveProvider: (p: ProviderId, input: { key?: string; model?: string; baseUrl?: string; makeDefault?: boolean }) => Promise<SaveResult>;
+  saveProvider: (p: ProviderId, input: { key?: string; model?: string; baseUrl?: string; makeDefault?: boolean; remember?: boolean }) => Promise<SaveResult>;
   forgetKey: (p: ProviderId) => Promise<void>;
 }
 
@@ -48,31 +56,15 @@ export const useSettings = create<SettingsState>()(
   persist(
     (set, get) => ({
       active: null,
-      keys: {},
+      keys: readKeys(),
       models: {},
       ollamaBaseUrl: "http://localhost:11434",
-      semantic: true,
-      env: null,
-      envLoaded: false,
+      // Off until the reader asks: unlike his server-side search, this downloads about 38 MB to their device.
+      semantic: false,
+      remember: false,
 
-      loadEnv: async () => {
-        try {
-          const res = await fetch("/api/settings/env", { cache: "no-store" });
-          if (!res.ok) throw new Error(String(res.status));
-          const env = (await res.json()) as EnvStatus;
-          set({ env, envLoaded: true });
-          // Auto-connect: if nothing chosen yet, adopt the .env default or the first configured provider.
-          if (!get().active) {
-            const usable = (p: ProviderId | null) => !!p && (p === "ollama" || env.providers[p]?.configured || !!get().keys[p]);
-            const def = usable(env.defaultProvider) ? env.defaultProvider : null;
-            const first = def || PROVIDER_ORDER.find((p) => p !== "ollama" && env.providers[p]?.configured) || PROVIDER_ORDER.find((p) => get().keys[p]) || null;
-            if (first) set({ active: first });
-          }
-          if (env.providers.ollama?.baseUrl && get().ollamaBaseUrl === "http://localhost:11434") set({ ollamaBaseUrl: env.providers.ollama.baseUrl });
-        } catch {
-          set({ envLoaded: true });
-        }
-      },
+      // There is no .env to read on a static site. Kept so that page.tsx can stay as it is.
+      loadEnv: async () => {},
 
       setActive: (active) => set({ active }),
       setModel: (p, model) => set({ models: { ...get().models, [p]: model } }),
@@ -86,48 +78,37 @@ export const useSettings = create<SettingsState>()(
           else delete keys[p];
         }
         if (input.model) models[p] = input.model;
-        set({ keys, models, ...(p === "ollama" && input.baseUrl ? { ollamaBaseUrl: input.baseUrl } : {}), ...(input.makeDefault ? { active: p } : {}) });
-
-        try {
-          const res = await fetch("/api/settings/env", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ provider: p, apiKey: input.key, model: input.model, baseUrl: input.baseUrl, makeDefault: input.makeDefault }),
-          });
-          const j = (await res.json().catch(() => ({}))) as { written?: boolean; reason?: string; file?: string };
-          await get().loadEnv();
-          if (res.ok && j.written) return { browser: true, env: "written", message: `Saved in this browser and written to ${j.file || ".env.local"}.` };
-          return { browser: true, env: "skipped", message: `Saved in this browser. ${j.reason || "Server-side .env write is disabled here."}` };
-        } catch {
-          return { browser: true, env: "failed", message: "Saved in this browser. Could not reach the settings API to update .env.local." };
-        }
+        const remember = input.remember ?? get().remember;
+        set({ keys, models, remember, ...(p === "ollama" && input.baseUrl ? { ollamaBaseUrl: input.baseUrl } : {}), ...(input.makeDefault ? { active: p } : {}) });
+        writeKeys(keys, remember);
+        if (!keys[p]) return { message: "Saved in this browser." };
+        return { message: remember ? "Saved in this browser. The key stays until you remove it." : "Saved for this tab. The key goes when you close it." };
       },
 
       forgetKey: async (p) => {
         const keys = { ...get().keys };
         delete keys[p];
         set({ keys });
-        await fetch("/api/settings/env", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ provider: p }) }).catch(() => {});
-        await get().loadEnv();
+        writeKeys(keys, get().remember);
       },
     }),
     {
       name: "gitaviswa:agni-kunda",
-      partialize: (s) => ({ active: s.active, keys: s.keys, models: s.models, ollamaBaseUrl: s.ollamaBaseUrl, semantic: s.semantic }),
+      // Keys are left out on purpose: readKeys and writeKeys decide where they live.
+      partialize: (s) => ({ active: s.active, models: s.models, ollamaBaseUrl: s.ollamaBaseUrl, semantic: s.semantic, remember: s.remember }),
     },
   ),
 );
 
-export type Connection = { provider: ProviderId; via: "browser" | "env" | "local"; model: string } | null;
+export type Connection = { provider: ProviderId; via: "browser" | "local"; model: string } | null;
 
 /** The provider Partha-Sarathi will actually use right now (null → offline graph-composed answers). */
-export function currentConnection(s: Pick<SettingsState, "active" | "keys" | "models" | "env">): Connection {
+export function currentConnection(s: Pick<SettingsState, "active" | "keys" | "models">): Connection {
   const p = s.active;
   if (!p) return null;
-  const model = s.models[p] || s.env?.providers[p]?.model || PROVIDERS[p].defaultModel;
+  const model = s.models[p] || PROVIDERS[p].defaultModel;
   if (p === "ollama") return { provider: p, via: "local", model };
   if (s.keys[p]) return { provider: p, via: "browser", model };
-  if (s.env?.providers[p]?.configured) return { provider: p, via: "env", model };
   return null;
 }
 
@@ -140,6 +121,5 @@ export function useConnection(): Connection {
   const active = useSettings((s) => s.active);
   const keys = useSettings((s) => s.keys);
   const models = useSettings((s) => s.models);
-  const env = useSettings((s) => s.env);
-  return useMemo(() => currentConnection({ active, keys, models, env }), [active, keys, models, env]);
+  return useMemo(() => currentConnection({ active, keys, models }), [active, keys, models]);
 }
