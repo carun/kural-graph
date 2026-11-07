@@ -491,7 +491,7 @@ function WaysIn() {
 // ── What it promises ────────────────────────────────────────────────────────────────────────────────
 function TrustStrip() {
   const items = [
-    { icon: Bot, title: "An AI wrote the English", body: "The readings and the links between couplets were written by an AI (Anthropic’s Claude), not by a scholar or translator. No person has reviewed them yet, so treat them as a reading of the text and not as authority." },
+    { icon: Bot, title: "An AI wrote the English", body: "The readings and the links between couplets were written by an AI (Anthropic’s Claude), not by a scholar or translator. They’re still in draft and need review, so treat them as a reading of the text and not as authority." },
     { icon: ShieldCheck, title: "Your thoughts stay with you", body: "Reflections are saved on this device, in this browser. They don't sync anywhere; export them when you want to move them." },
     { icon: Sparkles, title: "AI is optional", body: "Reading, search, the graph and suggestions all work without a language model. If you connect one, only the text you choose is sent." },
     { icon: Library, title: "Built on open texts", body: "The Tamil starts from an open dataset and was checked line by line against Project Madurai and Tamil Wikisource. parimēlaḻagar’s Tamil comes from Tamil Wikisource." },
@@ -573,7 +573,18 @@ function Footer() {
         </nav>
       </div>
       <p className="mx-auto mt-6 max-w-7xl text-[12.5px] leading-5 text-text-3">
-        An AI wrote the readings on this site, and no person has reviewed them yet. The pictures on this page were painted by a computer program, not by an artist.
+        An AI wrote the readings on this site. They’re still in draft and need review. The pictures on this page were painted by a computer program, not by an artist.
+      </p>
+      <p className="mx-auto mt-1 max-w-7xl text-[12.5px] leading-5 text-text-3">
+        The interface is adapted from{" "}
+        <a className="underline underline-offset-2 hover:text-text" target="_blank" rel="noreferrer" href="https://gitaviswa.vercel.app/">
+          GitaViśva
+        </a>
+        . Source code:{" "}
+        <a className="underline underline-offset-2 hover:text-text" target="_blank" rel="noreferrer" href="https://github.com/carun/kural-graph">
+          github.com/carun/kural-graph
+        </a>
+        .
       </p>
     </footer>
   );

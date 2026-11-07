@@ -56,7 +56,7 @@ export default function About() {
             <strong className={strong}>The links between couplets and ideas were written by an AI (Anthropic’s Claude), not by a scholar.</strong> Every link shows its reason, and the words in the plain reading that support it. Links marked “inferred” are an interpretation, not something the couplet says outright.
           </p>
           <p className="reading">
-            A second, different AI model checked them independently, and disagreements were judged again. No person has yet reviewed these links, so treat them as a reading of the text and not as authority. The text itself always outranks them: <Link href="/?view=adhyayana">read the couplets</Link>.
+            A second, different AI model checked them independently, and disagreements were judged again. These links are still in draft and need review, so treat them as a reading of the text and not as authority. The text itself always outranks them: <Link href="/?view=adhyayana">read the couplets</Link>.
           </p>
         </Section>
 
