@@ -7,6 +7,9 @@
 /.next/
 /.next-verify/
 /out/
+# Written by pipeline/export-fork.ts in tirukkural-kb.
+/public/models/
+/.wrangler/
 next-env.d.ts
 *.tsbuildinfo
 

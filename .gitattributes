@@ -1,0 +1,3 @@
+# Keep every file byte for byte. His sources mix CRLF and LF, and a global core.autocrlf would rewrite whole files,
+# which turns each of his later edits into a merge conflict.
+* -text
