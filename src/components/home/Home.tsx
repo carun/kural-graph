@@ -31,7 +31,7 @@ const go = {
   read: () => useGita.getState().setView("adhyayana"),
   verseInReader: (id: string) => {
     const s = useGita.getState();
-    s.openChapter(Number(id.slice(3).split(".")[0]));
+    s.openChapter(Math.ceil(Number(id.slice(2)) / 10));
     s.select(id, { fly: false });
   },
   lineage: (id: string) => useGita.getState().focusLineage(id),
@@ -100,7 +100,7 @@ function Hero({ scroller }: { scroller: RefObject<HTMLDivElement | null> }) {
             {resume ? (
               <button className="btn btn-lg home-glass max-sm:flex-1" onClick={go.read}>
                 <BookOpen size={16} />
-                Continue at BG {resume.verse.slice(3)}
+                Continue at Kural {resume.verse.slice(2)}
               </button>
             ) : (
               <button className="btn btn-lg home-glass max-sm:flex-1" onClick={go.lesson}>
@@ -141,7 +141,7 @@ function Crossroads() {
             </p>
             <p className="serif mt-1 text-[17px] italic leading-7 text-text">“{ARISE.en}”</p>
             <footer className="mt-2 text-[12.5px] text-text-3">
-              BG {ARISE.ref}, translated by {HOME_TRANSLATOR}
+              Kural {ARISE.ref}, translated by {HOME_TRANSLATOR}
             </footer>
           </blockquote>
 
@@ -342,7 +342,7 @@ function Arc() {
                 <h3 className="serif mt-1 text-[21px] font-medium leading-7 text-text">{s.title}</h3>
                 <p className="serif mt-2 text-[15px] italic leading-6 text-text-2">“{s.quote}”</p>
                 <p className="mt-2 text-[12px] text-text-3">
-                  {s.excerpt ? "From " : ""}BG {s.ref}
+                  {s.excerpt ? "From " : ""}Kural {s.ref}
                 </p>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-text group-hover:text-accent-text">
                   Read chapter {s.chapter}
@@ -369,7 +369,7 @@ function Arc() {
               </div>
               <button className={`btn mt-5 w-full ${resume ? "btn-primary" : ""}`} onClick={resume ? go.read : () => go.chapter(1)}>
                 <BookOpen size={14} />
-                {resume ? `Continue at BG ${resume.verse.slice(3)}` : "Begin at chapter 1"}
+                {resume ? `Continue at Kural ${resume.verse.slice(2)}` : "Begin at chapter 1"}
               </button>
             </div>
           </Reveal>

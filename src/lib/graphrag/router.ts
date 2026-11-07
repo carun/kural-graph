@@ -120,18 +120,16 @@ export function routeText(text: string, nodes: GraphNode[], verseExists: (id: st
   }
 
   const verses: string[] = [];
-  const refRe = /(?:^|[^\d])(\d{1,2})\s*[.:]\s*(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?(?!\d)/g;
+  const refRe = /\b(?:k|kural|couplet)\s*(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?(?!\d)/gi;
   for (const m of text.matchAll(refRe)) {
-    const c = Number(m[1]);
-    const a = Number(m[2]);
-    const b = m[3] ? Number(m[3]) : a;
-    if (c < 1 || c > 18) continue;
+    const a = Number(m[1]);
+    const b = m[2] ? Number(m[2]) : a;
     for (let v = a; v <= Math.min(b, a + 12); v++) {
-      const id = `BG_${c}.${v}`;
+      const id = `K_${v}`;
       if (verseExists(id) && !verses.includes(id)) verses.push(id);
     }
   }
-  const chapters = [...text.matchAll(/chapter\s+(\d{1,2})/gi)].map((m) => Number(m[1])).filter((c) => c >= 1 && c <= 18);
+  const chapters = [...text.matchAll(/chapter\s+(\d{1,3})/gi)].map((m) => Number(m[1])).filter((c) => c >= 1 && c <= 133);
 
   return {
     emotions: sortTop(emotions, 5),

@@ -42,7 +42,7 @@ function itemFor(nb: Neighbor, role: Role, verb: string, versesById: Map<string,
   // Solid lines for curated links and for connections the person kept; dashed for everything unconfirmed.
   const group = RELATIONS[nb.type].group;
   const curated = group === "curated" || (group === "personal" && !isSuggestedEdge(nb.props));
-  if (n.type === "Verse") return { role, nodeId: n.id, kind: "verse", title: `BG ${n.ref}`, sa: n.sa, subtitle: why || snippet(n.snippet), relation: verb, curated, verse: versesById.get(n.id), node: n };
+  if (n.type === "Verse") return { role, nodeId: n.id, kind: "verse", title: `Kural ${n.ref}`, sa: n.sa, subtitle: why || snippet(n.snippet), relation: verb, curated, verse: versesById.get(n.id), node: n };
   const sub = "en" in n ? n.en : n.type === "Chapter" ? n.title : n.type === "Character" ? n.role : n.type === "LifeDilemma" ? snippet(n.desc, 80) : undefined;
   return { role, nodeId: n.id, kind: "entity", title: n.type === "Chapter" ? `Chapter ${n.number}` : n.label, sa: "sa" in n ? n.sa : n.type === "Chapter" ? n.name : undefined, subtitle: why || sub, relation: verb, curated, node: n };
 }
@@ -60,7 +60,7 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
 
   if (n.type === "Verse") {
     const v = versesById.get(n.id);
-    out.push({ role: "core", nodeId: n.id, kind: "core-verse", title: `BG ${n.ref}`, verse: v, node: n });
+    out.push({ role: "core", nodeId: n.id, kind: "core-verse", title: `Kural ${n.ref}`, verse: v, node: n });
     out.push(...pick(["SPOKE"], false, 1, "up"));
     out.push(...pick(["ANSWERS_QUESTION_IN"], true, 3, "up"));
     out.push(...pick(["ECHOES_VERSE"], false, 2, "up"));
@@ -343,7 +343,7 @@ function useFocus() {
   const selectedId = useGita((s) => s.selectedId);
   const graphs = useGita((s) => s.graphs);
   const [history, setHistory] = useState<string[]>([]);
-  const focus = lineageFocus && graphs?.graph.hasNode(lineageFocus) ? lineageFocus : "BG_2.47";
+  const focus = lineageFocus && graphs?.graph.hasNode(lineageFocus) ? lineageFocus : "K_2.47";
   const focusRef = useRef(focus);
   focusRef.current = focus;
   // Opening Lineage with nothing selected and nothing traced yet: start from the verse being read, not a fixed verse.
@@ -402,7 +402,7 @@ function Toolbar({ focusNode, chain, setChainId, chainId, canGoBack, back, go, l
         {chain ? <Workflow size={15} className="shrink-0 text-accent-text" /> : focusNode && <NodeGlyph node={focusNode} />}
         <div className="min-w-0">
           <div className="label">{chain ? "Causal chain" : focusNode?.type === "PersonalThought" ? "Map of your thought" : "Lineage of"}</div>
-          <div className="truncate text-[14px] font-semibold leading-5 text-text">{chain ? chain.title : focusNode ? (focusNode.type === "Verse" ? `BG ${focusNode.ref}` : focusNode.type === "Chapter" ? `Chapter ${focusNode.number}: ${focusNode.title}` : focusNode.label) : ""}</div>
+          <div className="truncate text-[14px] font-semibold leading-5 text-text">{chain ? chain.title : focusNode ? (focusNode.type === "Verse" ? `Kural ${focusNode.ref}` : focusNode.type === "Chapter" ? `Chapter ${focusNode.number}: ${focusNode.title}` : focusNode.label) : ""}</div>
         </div>
       </div>
       <div className="flex w-full items-center gap-2 sm:w-auto">
@@ -540,7 +540,7 @@ function ChainList({ chain, go }: { chain: Chain; go: (id: string) => void }) {
   return (
     <div className="h-full overflow-y-auto px-4 pb-10 pt-4">
       <p className="serif text-[14.5px] leading-[1.55] text-text-2">{chain.summary}</p>
-      <div className="num mt-2 text-[12px] font-medium text-accent-text">{chain.verses.map((v) => v.replace("BG_", "")).join("  →  ")}</div>
+      <div className="num mt-2 text-[12px] font-medium text-accent-text">{chain.verses.map((v) => v.replace("K_", "")).join("  →  ")}</div>
       <ol className="mt-5">
         {chain.steps.map((id, i) => {
           const n = graphs?.nodeById.get(id);
@@ -702,7 +702,7 @@ function Flow() {
           )}
           {chain && (
             <div className="hud absolute bottom-3 left-3 max-w-[min(34rem,calc(100%-5rem))] px-4 py-3">
-              <div className="num text-[12px] font-medium text-accent-text">{chain.verses.map((v) => v.replace("BG_", "")).join("  →  ")}</div>
+              <div className="num text-[12px] font-medium text-accent-text">{chain.verses.map((v) => v.replace("K_", "")).join("  →  ")}</div>
               <p className="serif mt-1 text-[14px] leading-[1.5] text-text-2">{chain.summary}</p>
               <p className="mt-1.5 text-[12px] text-text-3">Each arrow reads “gives rise to”. Select a step to see its lineage.</p>
             </div>

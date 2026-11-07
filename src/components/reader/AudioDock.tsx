@@ -43,8 +43,8 @@ export function AudioDock() {
     return () => window.removeEventListener("mousedown", close);
   }, [menu]);
 
-  const title = reading && v ? `${reading.name} on BG ${v.ref}` : a.mode === "chapter" && ch ? `Chapter ${ch.number} · ${ch.title}` : v ? `BG ${v.ref}` : "Recitation";
-  const sub = a.error ? a.error : reading ? `Commentary in ${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the commentary" : a.mode === "chapter" && v ? `Now at BG ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
+  const title = reading && v ? `${reading.name} on Kural ${v.ref}` : a.mode === "chapter" && ch ? `Chapter ${ch.number} · ${ch.title}` : v ? `Kural ${v.ref}` : "Recitation";
+  const sub = a.error ? a.error : reading ? `Commentary in ${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the commentary" : a.mode === "chapter" && v ? `Now at Kural ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
   const devaSub = !a.error && !reading && a.source !== "commentary" && a.mode !== "chapter";
 
   return (
@@ -87,7 +87,7 @@ export function AudioDock() {
             </button>
             <div className="flex items-center">
               {a.mode !== "chapter" && v && (
-                <button className="btn btn-ghost btn-icon" onClick={() => audio.playVerse(v.id)} aria-label={`Replay BG ${v.ref}`} title="Replay this verse">
+                <button className="btn btn-ghost btn-icon" onClick={() => audio.playVerse(v.id)} aria-label={`Replay Kural ${v.ref}`} title="Replay this verse">
                   <RotateCcw size={15} />
                 </button>
               )}
@@ -99,7 +99,7 @@ export function AudioDock() {
               </button>
             </div>
 
-            <button className="min-w-0 flex-1 rounded-[var(--radius-2)] px-1 text-left" onClick={() => v && select(v.id)} disabled={!v} title={v ? `Open BG ${v.ref}` : undefined}>
+            <button className="min-w-0 flex-1 rounded-[var(--radius-2)] px-1 text-left" onClick={() => v && select(v.id)} disabled={!v} title={v ? `Open Kural ${v.ref}` : undefined}>
               <div className="flex items-center gap-2">
                 {a.playing && <AudioLines size={13} className="shrink-0 text-accent-text" />}
                 <span className="truncate text-[13px] font-medium text-text">{title}</span>

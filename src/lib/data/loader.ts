@@ -12,7 +12,7 @@ async function getJson<T>(url: string): Promise<T> {
 }
 
 export function loadVerses(): Promise<VersesDoc> {
-  versesPromise ??= getJson<VersesDoc>("/data/gita-verses.json").catch((e) => {
+  versesPromise ??= getJson<VersesDoc>("/data/kural-verses.json").catch((e) => {
     versesPromise = null;
     throw e;
   });
@@ -20,7 +20,7 @@ export function loadVerses(): Promise<VersesDoc> {
 }
 
 export function loadGraph(): Promise<GraphData> {
-  graphPromise ??= getJson<GraphData>("/data/gita-graph.json").catch((e) => {
+  graphPromise ??= getJson<GraphData>("/data/kural-graph.json").catch((e) => {
     graphPromise = null;
     throw e;
   });
@@ -36,7 +36,7 @@ export interface LayoutDoc {
 let layoutPromise: Promise<LayoutDoc | null> | null = null;
 /** Precomputed 3D positions (scripts/build-layout.mjs). Null when absent or unreadable: the graph then lays itself out live. */
 export function loadLayout(): Promise<LayoutDoc | null> {
-  layoutPromise ??= fetch("/data/gita-layout.json", { cache: "force-cache" })
+  layoutPromise ??= fetch("/data/kural-layout.json", { cache: "force-cache" })
     .then((r) => (r.ok ? (r.json() as Promise<LayoutDoc>) : null))
     .then((d) => (d && d.kind === "gitaviswa-layout" && d.positions ? d : null))
     .catch(() => null);
@@ -66,7 +66,7 @@ export interface EmbeddingsDoc {
 
 let embPromise: Promise<EmbeddingsDoc | null> | null = null;
 export function loadEmbeddings(): Promise<EmbeddingsDoc | null> {
-  embPromise ??= fetch("/data/gita-embeddings.json")
+  embPromise ??= fetch("/data/kural-embeddings.json")
     .then((r) => (r.ok ? (r.json() as Promise<EmbeddingsDoc>) : null))
     .catch(() => null);
   return embPromise;

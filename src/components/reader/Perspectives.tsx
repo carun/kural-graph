@@ -213,7 +213,7 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
         <header className="flex items-start gap-3 border-b border-line px-4 py-3 md:px-6">
           <div className="min-w-0 flex-1">
             <h2 id="compare-title" className="text-[15px] font-semibold text-text">
-              BG {verse.ref}, read {entries.length} ways
+              Kural {verse.ref}, read {entries.length} ways
             </h2>
             <p lang="sa" className="deva mt-1 text-[15px] leading-7 text-text-2">
               {verse.sanskrit.join(" ")}
@@ -432,7 +432,7 @@ export function Perspectives({ verse }: { verse: Verse }) {
             <p key={`${x.name}${x.to}`}>
               {x.name} discusses this verse together with{" "}
               <button className="font-medium text-accent-text hover:underline" onClick={() => select(x.to, { fly: false })}>
-                BG {x.to.slice(3)}
+                Kural {x.to.slice(2)}
               </button>
               .
             </p>

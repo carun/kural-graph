@@ -1,6 +1,6 @@
 /**
  * Static content for the home page, so it paints before the 3 MB of verse data arrives.
- * Sanskrit, IAST and translations are copied verbatim from public/data/gita-verses.json
+ * Sanskrit, IAST and translations are copied verbatim from public/data/kural-verses.json
  * (English: Swami Adidevananda, author 18). Speaker prefixes ("The Lord said") are dropped for display.
  * The one-line glosses are editorial paraphrases, shown as such, never as translation.
  */
@@ -22,7 +22,7 @@ export interface HomeVerse {
 /** The verse switcher: BG 2.47 first, then other lines people carry with them. */
 export const SPOTLIGHT: HomeVerse[] = [
   {
-    id: "BG_2.47",
+    id: "K_2.47",
     ref: "2.47",
     sa: ["कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।", "मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"],
     iast: ["karmaṇyevādhikāraste mā phaleṣu kadācana |", "mā karmaphalaheturbhūrmā te saṅgo’stvakarmaṇi ||"],
@@ -31,7 +31,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "Give the work everything. Let go of what it earns you.",
   },
   {
-    id: "BG_2.14",
+    id: "K_2.14",
     ref: "2.14",
     sa: ["मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।", "आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"],
     iast: ["mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ |", "āgamāpāyino’nityāstāṃstitikṣasva bhārata ||"],
@@ -40,7 +40,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "Pleasure and pain arrive and leave. You can learn to bear both.",
   },
   {
-    id: "BG_2.20",
+    id: "K_2.20",
     ref: "2.20",
     // The source splits this triṣṭubh into four quarter-lines mid-word; shown as two half-verses.
     sa: ["न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः ।", "अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"],
@@ -50,7 +50,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "What you most deeply are was never born, and cannot be killed.",
   },
   {
-    id: "BG_3.35",
+    id: "K_3.35",
     ref: "3.35",
     sa: ["श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।", "स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"],
     iast: ["śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt |", "svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"],
@@ -59,7 +59,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "Your own path walked imperfectly beats someone else's walked well.",
   },
   {
-    id: "BG_4.7",
+    id: "K_4.7",
     ref: "4.7",
     sa: ["यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।", "अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"],
     iast: ["yadā yadā hi dharmasya glānirbhavati bhārata |", "abhyutthānamadharmasya tadā’’tmānaṃ sṛjāmyaham ||"],
@@ -68,7 +68,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "When right order breaks down, Krishna says, he comes back.",
   },
   {
-    id: "BG_6.5",
+    id: "K_6.5",
     ref: "6.5",
     sa: ["उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् ।", "आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"],
     iast: ["uddharedātmanā’’tmānaṃ nātmānamavasādayet |", "ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"],
@@ -77,7 +77,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "You can be your own best friend, or your own worst enemy.",
   },
   {
-    id: "BG_6.35",
+    id: "K_6.35",
     ref: "6.35",
     sa: ["असंशयं महाबाहो मनो दुर्निग्रहं चलं ।", "अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥"],
     iast: ["asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ |", "abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||"],
@@ -86,7 +86,7 @@ export const SPOTLIGHT: HomeVerse[] = [
     gloss: "A restless mind can be trained, through practice and letting go.",
   },
   {
-    id: "BG_18.66",
+    id: "K_18.66",
     ref: "18.66",
     sa: ["सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।", "अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"],
     iast: ["sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja |", "ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"],
@@ -98,7 +98,7 @@ export const SPOTLIGHT: HomeVerse[] = [
 
 /** Krishna's first reply to Arjuna's collapse (BG 2.3), quoted in the "Fight or flight" section. */
 export const ARISE = {
-  id: "BG_2.3",
+  id: "K_2.3",
   ref: "2.3",
   sa: "क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥",
   en: "Shake off this base faint-heartedness and arise, O conqueror of foes!",
@@ -136,7 +136,7 @@ export const SCENES: Scene[] = [
     chapter: 1,
     name: "Arjuna Viṣāda Yoga",
     title: "The bow falls",
-    verseId: "BG_1.47",
+    verseId: "K_1.47",
     ref: "1.47",
     quote: "Having spoken thus on the battlefield, Arjuna threw aside his bow and arrows and sat down on the chariot seat, his heart overwhelmed with grief.",
     image: "ch01",
@@ -146,7 +146,7 @@ export const SCENES: Scene[] = [
     chapter: 2,
     name: "Sāṅkhya Yoga",
     title: "The teaching begins",
-    verseId: "BG_2.11",
+    verseId: "K_2.11",
     excerpt: true,
     ref: "2.11",
     quote: "The wise grieve neither for the dead nor for the living.",
@@ -157,7 +157,7 @@ export const SCENES: Scene[] = [
     chapter: 18,
     name: "Mokṣa Saṃnyāsa Yoga",
     title: "The doubt is gone",
-    verseId: "BG_18.73",
+    verseId: "K_18.73",
     excerpt: true,
     ref: "18.73",
     quote: "Freed from doubts, I stand steadfast, and I will fulfill Your will.",
@@ -183,5 +183,5 @@ export const LADDER = {
 
 export const SAMPLE_QUESTIONS = ["How do I stop worrying about results?", "What does the Gita say about anger?", "Is it ever right to walk away?"];
 
-/** Shown while the graph data loads; matches public/data/gita-graph.json (stats). */
+/** Shown while the graph data loads; matches public/data/kural-graph.json (stats). */
 export const GRAPH_COUNTS_FALLBACK = { Chapter: 18, Verse: 701, SanskritConcept: 67, Emotion: 33, LifeDilemma: 22, Character: 16, edges: 5350 };

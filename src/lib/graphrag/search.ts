@@ -56,7 +56,7 @@ export async function buildSearchIndex(versesDoc: VersesDoc, graph: GraphData, v
     docs.push({
       id: v.id,
       kind: "verse",
-      title: `BG ${v.ref}`,
+      title: `Kural ${v.ref}`,
       iast: fold(v.iast.join(" ") + " " + v.transliteration.join(" ")),
       english,
       meanings: v.padaccheda.map((p) => `${fold(p.w)} ${p.m}`).join(" ; "),
@@ -110,7 +110,7 @@ export async function searchIndex(idx: SearchIndex, query: string, opts: SearchO
     const hits: SearchHit[] = [];
     for (const v of idx.verses) {
       const hay = v.sanskrit.join("").replace(/\s+/g, "") + Object.values(v.translations.hi || {}).join(" ");
-      if (hay.includes(needle)) hits.push({ id: v.id, kind: "verse", score: 1, title: `BG ${v.ref}` });
+      if (hay.includes(needle)) hits.push({ id: v.id, kind: "verse", score: 1, title: `Kural ${v.ref}` });
       if (hits.length >= limit) break;
     }
     return { hits, mode: "devanagari", ms: performance.now() - t0 };

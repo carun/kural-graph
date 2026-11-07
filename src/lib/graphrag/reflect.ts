@@ -23,7 +23,7 @@ const VERSE_VIA: Partial<Record<RelationType, { phrase: string; rank: number }>>
 
 export function themeLabel(n: GraphNode | undefined): string {
   if (!n) return "";
-  if (n.type === "Verse") return `BG ${n.ref}`;
+  if (n.type === "Verse") return `Kural ${n.ref}`;
   if (n.type === "Emotion" || n.type === "SanskritConcept") return `${n.label} (${n.en.toLowerCase()})`;
   if (n.type === "PersonalThought") return `“${n.label}”`;
   return n.label;
@@ -130,15 +130,15 @@ export function offlinePerspective(ctx: RagContext, s: ThoughtSuggestions): stri
   const node = (id: string) => ctx.graphs.nodeById.get(id);
   const parts: string[] = [];
   const felt = s.candidates.find((c) => c.basis === "expressed");
-  const themes = s.candidates.filter((c) => (c.basis === "named" || c.basis === "expressed") && !c.targetId.startsWith("BG_") && c !== felt);
+  const themes = s.candidates.filter((c) => (c.basis === "named" || c.basis === "expressed") && !c.targetId.startsWith("K_") && c !== felt);
   const f = felt && node(felt.targetId);
   if (f && f.type === "Emotion") parts.push(`You wrote about feeling “${felt.cue}”. A word the Gita uses for something close to it is **${f.label}**, ${f.en.toLowerCase()}.`);
   if (themes.length) parts.push(`${f ? "Your words also touch on" : "Your words touch on"} ${themes.slice(0, 3).map((c) => `**${themeLabel(node(c.targetId))}**`).join(", ")}.`);
-  const verse = s.candidates.find((c) => c.targetId.startsWith("BG_") && c.basis !== "words");
+  const verse = s.candidates.find((c) => c.targetId.startsWith("K_") && c.basis !== "words");
   const v = verse && ctx.versesById.get(verse.targetId);
   if (v) {
     const en = (v.translations.en?.[String(ctx.versesDoc.meta.defaults.en)] || "").replace(/\s+/g, " ").trim();
-    parts.push(`One passage to read alongside it is **[BG ${v.ref}]**: “${en.length > 220 ? `${en.slice(0, 220).trimEnd()}…` : en}” It is one moment in a longer dialogue, so it reads best in its chapter.`);
+    parts.push(`One passage to read alongside it is **[Kural ${v.ref}]**: “${en.length > 220 ? `${en.slice(0, 220).trimEnd()}…` : en}” It is one moment in a longer dialogue, so it reads best in its chapter.`);
   }
   return parts.join("\n\n");
 }

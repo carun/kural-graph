@@ -24,7 +24,7 @@ export function describeNode(n: GraphNode | undefined): string {
   if (!n) return "?";
   switch (n.type) {
     case "Verse":
-      return `BG ${n.ref}`;
+      return `Kural ${n.ref}`;
     case "Chapter":
       return `Chapter ${n.number} (${n.title})`;
     case "SanskritConcept":
@@ -67,7 +67,7 @@ export function findSutraPath(g: GitaGraphs, a: string, b: string): SutraPath | 
 }
 
 export const SUTRA_PRESETS: { label: string; from: string; to: string }[] = [
-  { label: "Arjuna's collapse → Final surrender", from: "BG_1.28", to: "BG_18.66" },
+  { label: "Arjuna's collapse → Final surrender", from: "K_1.28", to: "K_18.66" },
   { label: "Fear & anxiety → Equanimity", from: "emotion:bhaya", to: "concept:samatva" },
   { label: "Anger → Inner peace", from: "emotion:krodha", to: "emotion:shanti" },
   { label: "Restless mind → Liberation", from: "emotion:chanchalata", to: "concept:moksha" },

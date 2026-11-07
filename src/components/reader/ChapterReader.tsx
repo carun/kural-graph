@@ -187,7 +187,7 @@ export function ChapterReader() {
                 </button>
               </div>
               <div className="mt-6 flex flex-wrap gap-1.5">
-                <button className="btn" onClick={() => audio.playVerse(`BG_${ch.number}.1`)} title="Recite one verse at a time from the start of the chapter">
+                <button className="btn" onClick={() => audio.playVerse(`K_${(ch.number - 1) * 10 + 1}`)} title="Recite one verse at a time from the start of the chapter">
                   <AudioLines size={14} /> Recite verse by verse
                 </button>
                 <button className="btn" onClick={() => (useGita.getState().setView("cosmos"), select(`CH_${ch.number}`))} title="See this chapter in the 3D graph">
@@ -219,7 +219,7 @@ export function ChapterReader() {
                   >
                     {(sel || active) && <span className="absolute bottom-4 left-0 top-4 w-[2px] rounded-full bg-accent" aria-hidden />}
                     <div className="flex flex-col items-start gap-2 pt-1">
-                      <button className={`num rounded-1 text-[13px] font-medium ${sel || active ? "text-accent-text" : "text-text-3 group-hover:text-text-2"}`} onClick={(e) => (e.stopPropagation(), select(v.id, { fly: false }))} aria-label={`Open BG ${v.ref}`}>
+                      <button className={`num rounded-1 text-[13px] font-medium ${sel || active ? "text-accent-text" : "text-text-3 group-hover:text-text-2"}`} onClick={(e) => (e.stopPropagation(), select(v.id, { fly: false }))} aria-label={`Open Kural ${v.ref}`}>
                         {v.ref}
                       </button>
                       <button

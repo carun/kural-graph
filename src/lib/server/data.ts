@@ -14,7 +14,7 @@ let stamp = "";
 
 /** Drop the caches when `npm run data` regenerates public/data while the server is running. */
 async function revalidate() {
-  const stats = await Promise.all(["gita-graph.json", "gita-verses.json", "gita-embeddings.json"].map((f) => fs.stat(dataFile(f)).then((s) => s.mtimeMs).catch(() => 0)));
+  const stats = await Promise.all(["kural-graph.json", "kural-verses.json", "kural-embeddings.json"].map((f) => fs.stat(dataFile(f)).then((s) => s.mtimeMs).catch(() => 0)));
   const now = stats.join("|");
   if (stamp && now !== stamp) {
     docs = null;
@@ -26,7 +26,7 @@ async function revalidate() {
 export async function loadServerDocs() {
   await revalidate();
   docs ??= (async () => {
-    const [v, g] = await Promise.all([fs.readFile(dataFile("gita-verses.json"), "utf8"), fs.readFile(dataFile("gita-graph.json"), "utf8")]);
+    const [v, g] = await Promise.all([fs.readFile(dataFile("kural-verses.json"), "utf8"), fs.readFile(dataFile("kural-graph.json"), "utf8")]);
     return { versesDoc: JSON.parse(v) as VersesDoc, graphData: JSON.parse(g) as GraphData };
   })().catch((e) => {
     docs = null;
@@ -42,7 +42,7 @@ export async function getServerRag(): Promise<RagContext> {
     const { versesDoc, graphData } = await loadServerDocs();
     const graphs = buildGraphs(graphData);
     const emb = await fs
-      .readFile(dataFile("gita-embeddings.json"), "utf8")
+      .readFile(dataFile("kural-embeddings.json"), "utf8")
       .then((t) => decodeEmbeddings(JSON.parse(t) as EmbeddingsDoc))
       .catch(() => null);
     const index = await buildSearchIndex(versesDoc, graphData, emb);

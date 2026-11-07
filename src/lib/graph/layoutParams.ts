@@ -2,7 +2,7 @@
 // (scripts/build-layout.mjs, which precomputes positions so the browser never has to run the simulation).
 // No runtime imports, so Node can load this file directly.
 
-export const RING_R = 380;
+export const RING_R = 640;
 export const LAYOUT_TICKS = 350; // 90 warm-up + 260 cool-down ticks, as the live simulation ran
 export const ALPHA_DECAY = 0.022;
 export const VELOCITY_DECAY = 0.33;
@@ -22,10 +22,10 @@ export const linkStrength = (type: string) => LINK_STR[type] ?? 0.07;
 /** Chapters sit on a gently waved ring; Kṛṣṇa is the fixed centre. Everything else is placed by the forces. */
 export function fixedPosition(node: { id: string; type: string; number?: number }): [number, number, number] | null {
   if (node.type === "Chapter" && typeof node.number === "number") {
-    const th = ((node.number - 1) / 18) * Math.PI * 2;
-    return [RING_R * Math.cos(th), 26 * Math.sin(th * 3), RING_R * Math.sin(th)];
+    const th = ((node.number - 1) / 133) * Math.PI * 2;
+    return [RING_R * Math.cos(th), 34 * Math.sin(th * 7), RING_R * Math.sin(th)];
   }
-  if (node.id === "character:krishna") return [0, 0, 0];
+  if (node.id === "character:tiruvalluvar") return [0, 0, 0];
   return null;
 }
 

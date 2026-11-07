@@ -125,7 +125,7 @@ function startingLineage(graphs: GitaGraphs): string {
     const read = JSON.parse(localStorage.getItem("gitaviswa:reading") || "null") as { verse?: string } | null;
     if (read?.verse && graphs.graph.hasNode(read.verse)) return read.verse;
   } catch {}
-  return "BG_2.47";
+  return "K_2.47";
 }
 
 const PREFS = "gitaviswa:prefs";
@@ -172,7 +172,7 @@ export const useGita = create<GitaState>((set, get) => ({
   cameraCmd: null,
   autoRotate: true,
   selectedId: null,
-  lineageFocus: "BG_2.47",
+  lineageFocus: "K_2.47",
   lineageChain: null,
   // First visits start at the beginning; afterwards the saved reading position takes over (page.tsx).
   readerChapter: 1,
@@ -274,7 +274,7 @@ export const useGita = create<GitaState>((set, get) => ({
   select: (id, opts) => {
     set(id ? { selectedId: id, dockTab: "details" } : { selectedId: null, dockTab: get().chatOpen ? "ask" : "details" });
     if (id && opts?.fly !== false) get().fly(id);
-    if (id?.startsWith("BG_")) {
+    if (id?.startsWith("K_")) {
       const v = get().versesById.get(id);
       if (v) set({ readerChapter: v.chapter });
     }

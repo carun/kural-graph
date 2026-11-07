@@ -237,7 +237,7 @@ export function PersonalMindMapper() {
     try {
       const list = (type: string) => ctx.data.nodes.filter((n) => n.type === type).map((n) => `${n.id} — ${n.label}${"en" in n ? ` (${n.en})` : ""}`);
       const r = await retrieve(ctx, base.forText, { limitVerses: 10 });
-      const verseIds = [...new Set([...base.candidates.filter((c) => c.targetId.startsWith("BG_")).map((c) => c.targetId), ...r.verses.map((v) => v.id)])].slice(0, 12);
+      const verseIds = [...new Set([...base.candidates.filter((c) => c.targetId.startsWith("K_")).map((c) => c.targetId), ...r.verses.map((v) => v.id)])].slice(0, 12);
       const verseList = verseIds.map((id) => `${id} — ${(ctx.versesById.get(id)?.translations.en?.[String(ctx.versesDoc.meta.defaults.en)] || "").replace(/\s+/g, " ").slice(0, 160)}`);
       const context = `Emotion ids:\n${list("Emotion").join("\n")}\n\nDilemma ids:\n${list("LifeDilemma").join("\n")}\n\nConcept ids:\n${list("SanskritConcept").join("\n")}\n\nCandidate verses:\n${verseList.join("\n")}\n\nThe person's note:\n${base.forText}`;
       res = await streamFromApi({ mode: "analyze", question: "Suggest where this note might meet the Gita.", context });
@@ -250,8 +250,8 @@ export function PersonalMindMapper() {
     try {
       const j = JSON.parse(res.text.slice(res.text.indexOf("{"), res.text.lastIndexOf("}") + 1)) as Record<string, unknown>;
       const has = (id: string) => ctx.graphs.graph.hasNode(id) && !id.startsWith("thought:");
-      const themes = [...readIds(j.themes, has), ...readIds(j.emotions, has), ...readIds(j.dilemmas, has)].filter((x) => !x.id.startsWith("BG_"));
-      const verses = readIds(j.verses, has).filter((x) => x.id.startsWith("BG_"));
+      const themes = [...readIds(j.themes, has), ...readIds(j.emotions, has), ...readIds(j.dilemmas, has)].filter((x) => !x.id.startsWith("K_"));
+      const verses = readIds(j.verses, has).filter((x) => x.id.startsWith("K_"));
       const existing = new Set(base.candidates.map((c) => c.targetId));
       const added: ConnectionCandidate[] = [...themes.slice(0, 3), ...verses.slice(0, 3)]
         .filter((x) => !existing.has(x.id))
@@ -377,7 +377,7 @@ export function PersonalMindMapper() {
     return (
       <button key={id} className="chip min-w-0 max-w-full" onClick={() => select(id)}>
         <NodeGlyph node={n} />
-        <span className="truncate">{n.type === "Verse" ? `BG ${n.ref}` : n.label}</span>
+        <span className="truncate">{n.type === "Verse" ? `Kural ${n.ref}` : n.label}</span>
       </button>
     );
   };
@@ -393,7 +393,7 @@ export function PersonalMindMapper() {
           <NodeGlyph node={n} className="mt-1.5" />
           <span className="min-w-0 flex-1 text-[13px] leading-5">
             <span className="flex min-w-0 items-baseline gap-2">
-              <span className="shrink-0 font-medium text-text">{n.type === "Verse" ? `BG ${n.ref}` : themeLabel(n)}</span>
+              <span className="shrink-0 font-medium text-text">{n.type === "Verse" ? `Kural ${n.ref}` : themeLabel(n)}</span>
               {v && <span className="deva truncate text-[13px] !leading-6 text-text-3">{v.sanskrit[0]}</span>}
             </span>
             <span className="block text-[12px] leading-4 text-text-3">
@@ -421,8 +421,8 @@ export function PersonalMindMapper() {
   };
 
   const shown = (s?.candidates ?? []).filter((c) => statusOf(c.targetId) !== "rejected");
-  const themeCands = shown.filter((c) => c.basis !== "words" && !c.targetId.startsWith("BG_"));
-  const verseCands = shown.filter((c) => c.basis !== "words" && c.targetId.startsWith("BG_"));
+  const themeCands = shown.filter((c) => c.basis !== "words" && !c.targetId.startsWith("K_"));
+  const verseCands = shown.filter((c) => c.basis !== "words" && c.targetId.startsWith("K_"));
   const wordCands = shown.filter((c) => c.basis === "words");
   const declined = (s?.candidates ?? []).filter((c) => statusOf(c.targetId) === "rejected");
   const noClear = !!s && !themeCands.length && !verseCands.length;
@@ -511,11 +511,11 @@ export function PersonalMindMapper() {
                   <div className="min-w-0 flex-1">
                     A note on{" "}
                     <button className="font-medium text-text underline-offset-2 hover:underline" onClick={() => select(verseOrigin.id, { fly: false })}>
-                      BG {verseOrigin.ref}
+                      Kural {verseOrigin.ref}
                     </button>
                     . The verse stays recorded as where this began; how it connects is up to you.
                   </div>
-                  <button className="btn btn-ghost btn-icon btn-sm max-sm:h-10 max-sm:w-10" aria-label={`This note isn't about BG ${verseOrigin.ref}`} title="Not about this verse" disabled={saving} onClick={() => (useDraft.getState().clearOrigin(), decide({ targetId: verseOrigin.id }, undefined))}>
+                  <button className="btn btn-ghost btn-icon btn-sm max-sm:h-10 max-sm:w-10" aria-label={`This note isn't about Kural ${verseOrigin.ref}`} title="Not about this verse" disabled={saving} onClick={() => (useDraft.getState().clearOrigin(), decide({ targetId: verseOrigin.id }, undefined))}>
                     <X size={14} />
                   </button>
                 </div>

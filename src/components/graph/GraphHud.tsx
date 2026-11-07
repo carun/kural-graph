@@ -141,7 +141,7 @@ function FocusBar() {
   const graphs = useGita((s) => s.graphs);
   const n = selectedId ? graphs?.nodeById.get(selectedId) : undefined;
   if (!n || highlight) return null;
-  const name = n.type === "Verse" ? `BG ${n.ref}` : n.type === "Chapter" ? `Chapter ${n.number}` : n.label;
+  const name = n.type === "Verse" ? `Kural ${n.ref}` : n.type === "Chapter" ? `Chapter ${n.number}` : n.label;
   const count = graphMode === "focus" && ego?.id === n.id ? (ego.total > ego.shown ? `${ego.shown} of ${ego.total} connections` : `${ego.total} connection${ego.total === 1 ? "" : "s"}`) : "in the whole graph";
   return (
     <div className="pointer-events-none absolute inset-x-0 top-3 z-10 flex justify-center px-3 max-md:top-14">

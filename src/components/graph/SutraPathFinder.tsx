@@ -23,8 +23,8 @@ export function SutraPathFinder() {
   const select = useGita((s) => s.select);
   const setSettingsOpen = useGita((s) => s.setSettingsOpen);
   const conn = useConnection();
-  const [from, setFrom] = useState<string | null>("BG_1.28");
-  const [to, setTo] = useState<string | null>("BG_18.66");
+  const [from, setFrom] = useState<string | null>("K_1.28");
+  const [to, setTo] = useState<string | null>("K_18.66");
   const [path, setPath] = useState<SutraPath | null>(null);
   const [missing, setMissing] = useState(false);
   const [bridge, setBridge] = useState("");
@@ -45,7 +45,7 @@ export function SutraPathFinder() {
     if (!path || !graphs || !ctx) return;
     setBusy(true);
     setBridge("");
-    const verses = path.nodes.filter((id) => id.startsWith("BG_")).map((id) => ({ id, score: 1, reasons: [] }));
+    const verses = path.nodes.filter((id) => id.startsWith("K_")).map((id) => ({ id, score: 1, reasons: [] }));
     const pick = (t: string) => path.nodes.filter((id) => graphs.nodeById.get(id)?.type === t).map((id) => ({ id, score: 1, reasons: [] }));
     const pseudo = { verses, concepts: pick("SanskritConcept"), emotions: pick("Emotion"), dilemmas: pick("LifeDilemma"), chains: [], dialogues: [] } as unknown as Retrieval;
     const context = buildContext(ctx, pseudo) + "\n\n## Path (hop by hop)\n" + path.narration.map((s, i) => `${i + 1}. ${s}`).join("\n");
@@ -58,7 +58,7 @@ export function SutraPathFinder() {
     if (!graphs || !graphData) return;
     const t = graphData.threads.find((x) => x.id === id);
     if (!t) return;
-    const nodes = t.verses.map((r) => `BG_${r}`);
+    const nodes = t.verses.map((r) => `K_${r}`);
     const edges = new Set<string>();
     for (let i = 1; i < nodes.length; i++) edges.add(`ECHOES_VERSE|${nodes[i - 1]}|${nodes[i]}`);
     setPath(null);

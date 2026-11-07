@@ -164,7 +164,7 @@ class AudioEngine {
     if (!e || e.none || e.seeAlso) {
       set({ loading: false });
       if (thenNext) return this.afterCommentary();
-      return set({ error: e?.seeAlso ? `${name} discusses this verse under BG ${e.seeAlso.slice(3)}.` : `${name} has no commentary on this verse.` });
+      return set({ error: e?.seeAlso ? `${name} discusses this verse under Kural ${e.seeAlso.slice(2)}.` : `${name} has no commentary on this verse.` });
     }
     const voices = await voicesReady();
     if (my !== this.gen) return;
@@ -175,7 +175,7 @@ class AudioEngine {
     this.reading = { verseId, authorId, parts, voice, lang: e.lang, thenNext, tok: 0 };
     this.speaking = true;
     set({ loading: false, playing: true, sourceLabel: `${voice.name}, this device's voice`, reading: { authorId, name, lang: e.lang, part: 0, parts: parts.length } });
-    this.meta(`${name} on BG ${v?.ref ?? verseId.slice(3)}`, "Commentary, read aloud");
+    this.meta(`${name} on Kural ${v?.ref ?? verseId.slice(2)}`, "Commentary, read aloud");
     this.sayPart(0);
   }
 
@@ -225,7 +225,7 @@ class AudioEngine {
     el.src = v.audio.verse[0];
     el.playbackRate = st().rate;
     el.play().catch(() => this.speak(id));
-    this.meta(`BG ${v.ref}`, ch ? `Chapter ${ch.number} · ${ch.title}` : "");
+    this.meta(`Kural ${v.ref}`, ch ? `Chapter ${ch.number} · ${ch.title}` : "");
     this.follow(id);
   }
 
@@ -237,16 +237,16 @@ class AudioEngine {
     const src = ch.audio[sourceIdx];
     if (!src) {
       set({ error: "No chapter recording is available, so verses play one at a time.", mode: "verse" });
-      return this.playVerse(`BG_${n}.1`);
+      return this.playVerse(`K_${(n - 1) * 10 + 1}`);
     }
     this.chapterSourceIdx = sourceIdx;
-    set({ chapter: n, mode: "chapter", loading: true, error: undefined, source: "chapter", sourceLabel: src.source, approx: true, verseId: `BG_${n}.1`, currentTime: 0, duration: src.duration || 0 });
+    set({ chapter: n, mode: "chapter", loading: true, error: undefined, source: "chapter", sourceLabel: src.source, approx: true, verseId: `K_${(n - 1) * 10 + 1}`, currentTime: 0, duration: src.duration || 0 });
     const el = this.ensure();
     el.src = src.url;
     el.playbackRate = st().rate;
     el.play().catch(() => this.onError());
     this.meta(`Chapter ${n} · ${ch.title}`, src.title);
-    this.follow(`BG_${n}.1`);
+    this.follow(`K_${(n - 1) * 10 + 1}`);
   }
 
   /** Offline / failure fallback: Sanskrit read by the platform speech engine (hi-IN voice, sa-IN if present). */
@@ -303,7 +303,7 @@ class AudioEngine {
     }
     if (!this.el || !this.el.src) {
       const sel = useGita.getState().selectedId;
-      return this.playVerse(sel?.startsWith("BG_") ? sel : "BG_1.1");
+      return this.playVerse(sel?.startsWith("K_") ? sel : "K_1");
     }
     if (this.el.paused) this.el.play().catch(() => this.onError());
     else this.el.pause();
@@ -378,7 +378,7 @@ class AudioEngine {
       const ch = useGita.getState().versesDoc?.chapters.find((c) => c.number === s.chapter);
       if (ch && this.chapterSourceIdx + 1 < ch.audio.length) return this.playChapter(s.chapter, this.chapterSourceIdx + 1);
       set({ error: "The chapter recording could not be reached, so verses play one at a time." });
-      return this.playVerse(`BG_${s.chapter}.1`);
+      return this.playVerse(`K_${(s.chapter - 1) * 10 + 1}`);
     }
     if (s.verseId) this.speak(s.verseId);
   }

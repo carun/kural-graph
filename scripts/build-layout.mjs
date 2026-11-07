@@ -1,4 +1,4 @@
-// Precomputes the 3D cosmos layout into public/data/gita-layout.json, so browsers place nodes directly instead of
+// Precomputes the 3D cosmos layout into public/data/kural-layout.json, so browsers place nodes directly instead of
 // running a 350-tick force simulation on the main thread at every visit (and again on every legend toggle).
 // Runs the same forces CosmicGraph3D used live (shared constants in src/lib/graph/layoutParams.ts).
 // Usage: npm run data:layout   (also run after `npm run data` regenerates the graph)
@@ -9,7 +9,7 @@ import { forceCenter, forceLink, forceManyBody, forceSimulation } from "d3-force
 import { ALPHA_DECAY, CHARGE, LAYOUT_TICKS, VELOCITY_DECAY, containForce, fixedPosition, linkDistance, linkStrength } from "../src/lib/graph/layoutParams.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const graph = JSON.parse(readFileSync(join(root, "public/data/gita-graph.json"), "utf8"));
+const graph = JSON.parse(readFileSync(join(root, "public/data/kural-graph.json"), "utf8"));
 
 const nodes = graph.nodes.map((n) => {
   const f = fixedPosition(n);
@@ -32,5 +32,5 @@ for (let i = 0; i < LAYOUT_TICKS; i++) sim.tick();
 const round = (v) => Math.round(v * 10) / 10;
 const positions = Object.fromEntries(nodes.map((n) => [n.id, [round(n.x), round(n.y), round(n.z)]]));
 const doc = { kind: "gitaviswa-layout", version: 1, graphVersion: graph.meta?.version ?? null, generatedAt: new Date().toISOString(), nodeCount: nodes.length, ticks: LAYOUT_TICKS, positions };
-writeFileSync(join(root, "public/data/gita-layout.json"), JSON.stringify(doc));
-console.log(`layout: ${nodes.length} nodes, ${links.length} links, ${LAYOUT_TICKS} ticks in ${Math.round(performance.now() - t0)} ms → public/data/gita-layout.json`);
+writeFileSync(join(root, "public/data/kural-layout.json"), JSON.stringify(doc));
+console.log(`layout: ${nodes.length} nodes, ${links.length} links, ${LAYOUT_TICKS} ticks in ${Math.round(performance.now() - t0)} ms → public/data/kural-layout.json`);

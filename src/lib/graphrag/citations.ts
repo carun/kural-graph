@@ -9,20 +9,19 @@ export interface Citation {
 }
 
 /** Matches [BG 2.47], [BG 2.55-72], [Concept: Nishkama Karma], [Emotion: Vishada], [Dilemma: …], [Character: …], [Chapter 2] */
-export const CITATION_RE = /\[(BG\s*\d{1,2}\.\d{1,2}(?:\s*[-–]\s*\d{1,2})?|(?:Concept|Emotion|State|Dilemma|Character|Chapter)\s*:?\s*[^\]\n]{1,64})\]/g;
+export const CITATION_RE = /\[((?:K|Kural)\s*\d{1,4}(?:\s*[-–]\s*\d{1,4})?|(?:Concept|Emotion|State|Dilemma|Character|Chapter)\s*:?\s*[^\]\n]{1,64})\]/g;
 
 export function resolveCitation(raw: string, nodes: GraphNode[], verseExists: (id: string) => boolean): Citation {
   const inner = raw.replace(/^\[|\]$/g, "").trim();
-  const bg = inner.match(/^BG\s*(\d{1,2})\.(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?$/i);
-  if (bg) {
-    const c = Number(bg[1]);
-    const a = Number(bg[2]);
-    const b = bg[3] ? Number(bg[3]) : a;
+  const kural = inner.match(/^(?:K|Kural)\s*(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?$/i);
+  if (kural) {
+    const a = Number(kural[1]);
+    const b = kural[2] ? Number(kural[2]) : a;
     const ids: string[] = [];
-    for (let v = a; v <= Math.min(b, a + 30); v++) if (verseExists(`BG_${c}.${v}`)) ids.push(`BG_${c}.${v}`);
-    return { raw, label: `BG ${c}.${a}${b !== a ? `–${b}` : ""}`, kind: ids.length ? "verse" : "unknown", ids };
+    for (let v = a; v <= Math.min(b, a + 30); v++) if (verseExists(`K_${v}`)) ids.push(`K_${v}`);
+    return { raw, label: `Kural ${a}${b !== a ? `–${b}` : ""}`, kind: ids.length ? "verse" : "unknown", ids };
   }
-  const ch = inner.match(/^Chapter\s*:?\s*(\d{1,2})/i);
+  const ch = inner.match(/^Chapter\s*:?\s*(\d{1,3})/i);
   if (ch) return { raw, label: `Chapter ${ch[1]}`, kind: "chapter", ids: [`CH_${Number(ch[1])}`] };
 
   const m = inner.match(/^(Concept|Emotion|State|Dilemma|Character)\s*:?\s*(.+)$/i);

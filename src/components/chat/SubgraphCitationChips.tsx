@@ -70,7 +70,7 @@ export function SubgraphCitationChips({ retrieval }: { retrieval: Retrieval }) {
               return (
                 <button key={it.id} className="chip" title={it.reasons.join("; ")} onClick={() => focusIds([it.id], n.label)}>
                   <NodeGlyph node={n} />
-                  {n.type === "Verse" ? `BG ${n.ref}` : n.label}
+                  {n.type === "Verse" ? `Kural ${n.ref}` : n.label}
                 </button>
               );
             })}

@@ -7,7 +7,7 @@ import { typeName } from "@/lib/graph/palette";
 import type { GraphNode } from "@/lib/types";
 import { NodeGlyph } from "@/components/ui/primitives";
 
-const nodeTitle = (n: GraphNode) => (n.type === "Verse" ? `BG ${n.ref}` : n.type === "Chapter" ? `Chapter ${n.number}: ${n.title}` : n.label);
+const nodeTitle = (n: GraphNode) => (n.type === "Verse" ? `Kural ${n.ref}` : n.type === "Chapter" ? `Chapter ${n.number}: ${n.title}` : n.label);
 const nodeSub = (n: GraphNode) => (n.type === "Verse" ? n.snippet : "en" in n ? n.en : n.type === "Character" ? n.role : n.type === "LifeDilemma" ? n.desc : "");
 
 /** Accessible combobox over every node (verse references, labels, IAST, English names). */
@@ -28,9 +28,9 @@ export function NodePicker({ value, onChange, placeholder, label, exclude }: { v
   const results = useMemo(() => {
     const t = fold(q.trim());
     if (!t) return [];
-    const ref = t.match(/^(?:bg\s*)?(\d{1,2})[.:\s](\d{1,2})$/);
+    const ref = t.match(/^(?:k|kural\s*)?(\d{1,4})$/);
     if (ref) {
-      const hit = graphs?.nodeById.get(`BG_${Number(ref[1])}.${Number(ref[2])}`);
+      const hit = graphs?.nodeById.get(`K_${Number(ref[1])}`);
       if (hit && !exclude?.(hit)) return [hit];
     }
     return index

@@ -1,13 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Source_Serif_4, Tiro_Devanagari_Sanskrit } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { Inter, Noto_Serif_Tamil, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
 // Variable faces (full axes). Pinning discrete weights narrows the axis, which makes Google intermittently serve
 // `/l/font?kit=…&skey=…` instance URLs that Turbopack 15.5 can't resolve. All three cover the full IAST range.
 const inter = Inter({ subsets: ["latin", "latin-ext"], axes: ["opsz"], variable: "--font-inter", display: "swap" });
 const sourceSerif = Source_Serif_4({ subsets: ["latin", "latin-ext"], style: ["normal", "italic"], axes: ["opsz"], variable: "--font-source-serif", display: "swap" });
-const tiro = Tiro_Devanagari_Sanskrit({ subsets: ["devanagari", "latin", "latin-ext"], weight: "400", style: ["normal", "italic"], variable: "--font-tiro", display: "swap" });
+const tiro = Noto_Serif_Tamil({ subsets: ["tamil", "latin"], variable: "--font-tiro", display: "swap" });
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -54,9 +53,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body>
         {children}
-        {/* Vercel Web Analytics: cookieless page-view counts, no personal data. Only on Vercel deployments
-            (VERCEL is set at build time there), so copies run on someone's own computer send nothing. */}
-        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );

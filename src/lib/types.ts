@@ -7,6 +7,7 @@ export type RelationType =
   | "MENTIONS_CONCEPT" | "DEFINES_CONCEPT" | "EXPOUNDS" | "MENTIONS_STATE" | "DEPICTS_STATE" | "HEALS" | "CULTIVATES"
   | "CAUSES_STATE" | "ANTIDOTE_TO" | "ADDRESSES_DILEMMA" | "EVOKES_STATE" | "RESOLVED_THROUGH" | "ANSWERS_QUESTION_IN"
   | "ECHOES_VERSE" | "CULMINATES_IN" | "FEELS" | "FACES" | "RESONATES_WITH"
+  | "REQUIRES" | "OPPOSES" | "QUALIFIES" | "IN_TENSION_WITH"
   // personal connections (schema 3); FEELS / FACES / RESONATES_WITH are the retired schema ≤2 personal relations
   | "CONNECTS_TO" | "ASKS_ABOUT" | "QUESTIONS" | "REMINDS_OF" | "RESPONDS_TO";
 
@@ -101,7 +102,7 @@ export interface CommentaryEntry {
   source?: string;
   /** The commentator did not comment on this verse (the text is the dataset's note saying so). */
   none?: boolean;
-  /** The commentator treats this verse under another one, e.g. "BG_10.42". */
+  /** The commentator treats this verse under another one, e.g. "K_10.42". */
   seeAlso?: string;
 }
 

@@ -222,7 +222,7 @@ function Connections({ verse }: { verse: Verse }) {
                     <NodeGlyph node={n.node} className="mt-1.5" />
                     <span className="min-w-0 flex-1 text-[13px] leading-5">
                       <span className="text-text-3">{n.outgoing ? RELATIONS[n.type].verb : RELATIONS[n.type].inverse} </span>
-                      <span className="font-medium text-text">{n.node.type === "Verse" ? `BG ${n.node.ref}` : n.node.label}</span>
+                      <span className="font-medium text-text">{n.node.type === "Verse" ? `Kural ${n.node.ref}` : n.node.label}</span>
                       {extra && <span className="block text-[12px] leading-4 text-text-3">{String(extra)}</span>}
                     </span>
                   </button>
@@ -277,10 +277,10 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
           </div>
           <div className="text-[14px] font-semibold leading-5 text-text">Verse {verse.verse}</div>
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous verse" title={prev ? `BG ${prev.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous verse" title={prev ? `Kural ${prev.ref}` : undefined}>
           <ChevronLeft size={16} />
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next verse" title={next ? `BG ${next.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next verse" title={next ? `Kural ${next.ref}` : undefined}>
           <ChevronRight size={16} />
         </button>
         <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">
@@ -291,7 +291,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className="px-5 pb-6 pt-5">
           <div className="flex items-baseline justify-between gap-3">
-            <h2 className="text-[24px] font-semibold tracking-[-0.015em] text-text">BG {verse.ref}</h2>
+            <h2 className="text-[24px] font-semibold tracking-[-0.015em] text-text">Kural {verse.ref}</h2>
             <button className="chip shrink-0" aria-pressed={showMeter} onClick={() => setShowMeter(!showMeter)} title="Show the metre (guru-laghu scansion)">
               {verse.meter.name}
             </button>
@@ -333,7 +333,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
                 <BookOpen size={14} /> Read
               </button>
             )}
-            <button className="btn" onClick={() => askPartha(`Explain BG ${verse.ref}: its meaning in context and how to live it today.`)}>
+            <button className="btn" onClick={() => askPartha(`Explain Kural ${verse.ref}: its meaning in context and how to live it today.`)}>
               <MessagesSquare size={14} /> Ask
             </button>
           </div>

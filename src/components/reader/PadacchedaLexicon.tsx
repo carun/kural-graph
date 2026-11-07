@@ -63,7 +63,7 @@ export function PadacchedaLexicon({ verse }: { verse: Verse }) {
           <div className="flex max-h-32 flex-wrap gap-1 overflow-auto">
             {pinnedVerses.map((id) => (
               <button key={id} className="chip num" onClick={() => select(id)}>
-                {id.replace("BG_", "")}
+                {id.replace("K_", "")}
               </button>
             ))}
           </div>

@@ -210,7 +210,7 @@ function verseBlock(ctx: RagContext, id: string, reasons: string[]) {
   const alt = v.translations.en?.["21"];
   const speaker = SPEAKER_NAME[v.speaker] || v.speaker;
   return [
-    `[BG ${v.ref}] — spoken by ${speaker}${v.canonical ? "" : " (non-canonical verse found in some recensions)"}`,
+    `[Kural ${v.ref}] — spoken by ${speaker}${v.canonical ? "" : " (non-canonical verse found in some recensions)"}`,
     `  Sanskrit: ${v.sanskrit.join(" ")}`,
     `  IAST: ${v.iast.join(" ")}`,
     `  Translation (Swami Sivananda): ${en.replace(/\s+/g, " ").slice(0, 600)}`,
@@ -249,11 +249,11 @@ export function buildContext(ctx: RagContext, r: Retrieval): string {
   for (const v of r.verses) out.push(verseBlock(ctx, v.id, v.reasons));
   if (r.chains.length) {
     out.push("\n## Causal chains");
-    for (const c of r.chains) out.push(`${c.title} (${c.verses.map((v) => v.replace("BG_", "BG ")).join(", ")}): ${c.summary} Steps: ${c.steps.map((s) => n(s)?.label || s).join(" → ")}.`);
+    for (const c of r.chains) out.push(`${c.title} (${c.verses.map((v) => v.replace("K_", "Kural ")).join(", ")}): ${c.summary} Steps: ${c.steps.map((s) => n(s)?.label || s).join(" → ")}.`);
   }
   if (r.dialogues.length) {
     out.push("\n## Dialogue structure");
-    for (const d of r.dialogues) out.push(`Question at ${d.anchor.replace("BG_", "BG ")} (${d.asker}): “${d.question}” → answered in BG ${d.a}. ${d.theme}`);
+    for (const d of r.dialogues) out.push(`Question at ${d.anchor.replace("K_", "Kural ")} (${d.asker}): “${d.question}” → answered in Kural ${d.a}. ${d.theme}`);
   }
   return out.join("\n");
 }
@@ -306,7 +306,7 @@ export function composeOfflineAnswer(ctx: RagContext, r: Retrieval): string {
     const t = (verse.translations.en?.[def] || "").replace(/\s+/g, " ");
     const short = t.length > 260 ? t.slice(0, 257).replace(/\s+\S*$/, "") + "…" : t;
     const why = bestReason(v.reasons);
-    lines.push(`- **[BG ${verse.ref}]** *${verse.iast[0]?.replace(/[|]/g, "").trim()}*: “${short}”${why ? `\n  <small>${why}</small>` : ""}`);
+    lines.push(`- **[Kural ${verse.ref}]** *${verse.iast[0]?.replace(/[|]/g, "").trim()}*: “${short}”${why ? `\n  <small>${why}</small>` : ""}`);
   }
 
   const chain = r.chains[0];

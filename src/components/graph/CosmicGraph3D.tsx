@@ -137,7 +137,7 @@ function radiusOf(d: GraphNode, degree: number, maxDegree: number) {
     case "verse":
       return d.type === "Verse" && !d.canonical ? 1.3 : 1.65;
     case "character":
-      return d.id === "character:krishna" ? 7.5 : d.id === "character:arjuna" ? 5 : 3.2;
+      return d.id === "character:tiruvalluvar" ? 7.5 : d.id === "character:she" ? 5 : 3.2;
     case "dilemma":
       return 4.2 * lift;
     case "personal":
@@ -426,7 +426,7 @@ export default function CosmicGraph3D() {
       if (kind !== "verse") {
         labelSpec = {
           text: d.type === "Chapter" ? `${ROMAN[d.number]}  ${d.title}` : d.label,
-          size: kind === "chapter" ? 8.5 : d.id === "character:krishna" ? 6.4 : 5,
+          size: kind === "chapter" ? 8.5 : d.id === "character:tiruvalluvar" ? 6.4 : 5,
           color: dark ? (kind === "chapter" ? "#edeae4" : "#cfc9bf") : kind === "chapter" ? "#1b1a17" : "#3a3732",
           weight: kind === "chapter" ? "600" : "500",
           stroke: dark ? "rgba(13,12,11,0.85)" : "rgba(245,244,241,0.9)",
@@ -505,10 +505,10 @@ export default function CosmicGraph3D() {
     m.sel = place(m.sel, sel, 4.2, 1);
     m.audio = place(m.audio, aud && aud !== sel ? aud : null, 5.2, 0.6);
     // Verses carry no permanent labels; the focused ones get their reference.
-    const want = new Set([sel, hov, aud].filter((x): x is string => !!x && x.startsWith("BG_")));
+    const want = new Set([sel, hov, aud].filter((x): x is string => !!x && x.startsWith("K_")));
     // In the focus view every verse shown gets its reference.
-    if (live.current.ego) for (const id of live.current.ego) if (id.startsWith("BG_")) want.add(id);
-    if (e?.kind === "highlight" && e.nodes.size <= 40) for (const id of e.nodes) if (id.startsWith("BG_")) want.add(id);
+    if (live.current.ego) for (const id of live.current.ego) if (id.startsWith("K_")) want.add(id);
+    if (e?.kind === "highlight" && e.nodes.size <= 40) for (const id of e.nodes) if (id.startsWith("K_")) want.add(id);
     for (const [id, l] of m.verseLabels) {
       if (want.has(id) && l.parent === visuals.current.get(id)?.group) continue;
       l.parent?.remove(l);
@@ -517,7 +517,7 @@ export default function CosmicGraph3D() {
     for (const id of want) {
       const v = visuals.current.get(id);
       if (!v || m.verseLabels.has(id)) continue;
-      const l = new SpriteText(id.replace("BG_", "BG "), 4.6 * (live.current.ego ? labelScale.current : 1), dk ? "#edeae4" : "#1b1a17");
+      const l = new SpriteText(id.replace("K_", "Kural "), 4.6 * (live.current.ego ? labelScale.current : 1), dk ? "#edeae4" : "#1b1a17");
       l.fontFace = fontFace.current;
       l.fontWeight = "600";
       l.strokeWidth = 0.9;
@@ -980,7 +980,7 @@ export default function CosmicGraph3D() {
       const hint = `<div class="hint">Click to open</div>`;
       switch (d.type) {
         case "Verse":
-          return `<div class="gv-tip">${head}<div class="h">BG ${d.ref}${d.canonical ? "" : " <span style='font-weight:400;color:var(--text-3)'>(not in the traditional 700)</span>"}</div><div class="deva">${esc(d.sa)}</div><div class="s">${esc(d.snippet)}</div>${hint}</div>`;
+          return `<div class="gv-tip">${head}<div class="h">Kural ${d.ref}${d.canonical ? "" : " <span style='font-weight:400;color:var(--text-3)'>(not in the traditional 700)</span>"}</div><div class="deva">${esc(d.sa)}</div><div class="s">${esc(d.snippet)}</div>${hint}</div>`;
         case "Chapter":
           return `<div class="gv-tip">${head}<div class="h">${d.number}. ${esc(d.title)}</div><div class="deva">${esc(d.name)}</div><div class="s">${esc(d.meaning)}. ${d.verseCount} verses.</div>${hint}</div>`;
         case "SanskritConcept":

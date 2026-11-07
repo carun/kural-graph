@@ -69,7 +69,7 @@ export function RightDock() {
         </div>
       )}
       <div className={`min-h-0 flex-1 ${tab === "details" ? "" : "hidden"}`}>
-        {selectedId && (selectedId.startsWith("BG_") ? <VerseExplorer verseId={selectedId} onClose={closeDetails} /> : <NodeInspector nodeId={selectedId} onClose={closeDetails} />)}
+        {selectedId && (selectedId.startsWith("K_") ? <VerseExplorer verseId={selectedId} onClose={closeDetails} /> : <NodeInspector nodeId={selectedId} onClose={closeDetails} />)}
       </div>
       {chatOpen && (
         <div className={`min-h-0 flex-1 ${tab === "ask" ? "" : "hidden"}`}>

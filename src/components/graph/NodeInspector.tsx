@@ -20,7 +20,7 @@ function Row({ n, onClick }: { n: Neighbor; onClick: () => void }) {
       <button className="row" onClick={onClick}>
         <NodeGlyph node={n.node} className="mt-1.5" />
         <span className="min-w-0 flex-1 text-[13px] leading-5">
-          <span className="font-medium text-text">{n.node.type === "Verse" ? `BG ${n.node.ref}` : n.node.label}</span>
+          <span className="font-medium text-text">{n.node.type === "Verse" ? `Kural ${n.node.ref}` : n.node.label}</span>
           {why && <span className="block line-clamp-2 text-[12px] leading-4 text-text-3">{why}</span>}
         </span>
       </button>

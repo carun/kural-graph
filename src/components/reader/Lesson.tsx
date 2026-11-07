@@ -8,7 +8,7 @@ import { lessonDoneAt, markLessonDone } from "@/lib/store/readingPosition";
 import type { ConnectionRelation } from "@/lib/types";
 import { askPartha } from "@/components/chat/GraphRagChatbot";
 
-const VERSE = "BG_2.47";
+const VERSE = "K_2.47";
 
 /** The three ways to answer, each kept as the relation of the note to the verse. Disagreement is welcome. */
 const RESPONSES: { label: string; starter: string; relation: ConnectionRelation }[] = [
@@ -88,7 +88,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
           </p>
         </Step>
 
-        <Step n={3} title="The verse" kind={`BG ${verse.ref} · source`}>
+        <Step n={3} title="The verse" kind={`Kural ${verse.ref} · source`}>
           <div className="rounded-3 border border-line bg-surface p-4 sm:p-5">
             <div className="deva text-[19px] leading-[1.8] text-text [overflow-wrap:anywhere]">
               {verse.sanskrit.map((l, i) => (
@@ -139,7 +139,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
             <button className="btn max-sm:h-11" onClick={() => askPartha("Explain BG 2.47 in simple words for someone new to the Gita.")}>
               <MessagesSquare size={14} /> Ask about it
             </button>
-            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(2), useGita.getState().select("BG_2.48", { fly: false }))}>
+            <button className="btn max-sm:h-11" onClick={() => (useGita.getState().openChapter(2), useGita.getState().select("K_2.48", { fly: false }))}>
               Next idea: BG 2.48, evenness of mind
             </button>
             {!done && (

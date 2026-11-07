@@ -73,10 +73,10 @@ export function CommandPalette() {
     let live = true;
     const t = q.trim();
     if (!t || !index) return setHits([]);
-    const ref = t.match(/^(?:bg\s*)?(\d{1,2})[.:\s](\d{1,2})$/i);
+    const ref = t.match(/^(?:k|kural\s*)?(\d{1,4})$/i);
     searchIndex(index, t, { limit: 24 }).then((r) => {
       if (!live) return;
-      const id = ref ? `BG_${Number(ref[1])}.${Number(ref[2])}` : null;
+      const id = ref ? `K_${Number(ref[1])}` : null;
       const direct = id && graphs?.graph.hasNode(id) ? [{ id, kind: "verse" as const, score: 99, title: "" }] : [];
       setHits([...direct, ...r.hits.filter((h) => !direct.some((d) => d.id === h.id))]);
       setCursor(0);
@@ -180,7 +180,7 @@ export function CommandPalette() {
                       <span className="flex w-5 shrink-0 justify-center text-text-3">{it.icon}</span>
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-[13.5px] text-text">{it.title}</span>
-                        {it.sub && <span className={`block truncate text-[12px] text-text-3 ${it.id.startsWith("BG_") ? "deva !leading-5" : ""}`}>{it.sub}</span>}
+                        {it.sub && <span className={`block truncate text-[12px] text-text-3 ${it.id.startsWith("K_") ? "deva !leading-5" : ""}`}>{it.sub}</span>}
                       </span>
                       {it.hint && <span className="shrink-0 text-[11.5px] text-text-3">{it.hint}</span>}
                       {i === cursor && <CornerDownLeft size={13} className="shrink-0 text-text-3" />}
