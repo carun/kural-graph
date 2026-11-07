@@ -1,10 +1,10 @@
 # Kural Graph
 
-The Tirukkural as a knowledge graph you can read, explore and question: all 1,330 couplets in 133 chapters, in Tamil, romanised and in plain English, with Parimelazhagar's commentary, and the ideas, states of mind and life situations that connect them.
+The Tirukkural as a knowledge graph you can read, explore and question: all 1,330 couplets in 133 chapters, in Tamil, romanised and in plain English, with parimēlaḻagar's commentary, and the ideas, states of mind and life situations that connect them.
 
 **This is a fork of [GitaViśva](https://github.com/HimanshuMohanty-Git24/gitaviswa) by Himanshu Mohanty, used under the MIT licence.** The interface, the graph and nearly all the code are his, and they are the reason this site looks and works as well as it does. What's ours is the content and the changes the Kural needs. We keep the fork close to his so that we can go on merging his updates: see [UPSTREAM.md](UPSTREAM.md).
 
-**An AI wrote the English.** The plain readings, the paraphrases of Parimelazhagar and the links between couplets were written by Anthropic's Claude, not by a scholar or translator, and no person has reviewed the links yet. The site says so to its readers. Treat them as a reading of the text and not as authority.
+**An AI wrote the English.** The plain readings, the paraphrases of parimēlaḻagar and the links between couplets were written by Anthropic's Claude, not by a scholar or translator, and no person has reviewed the links yet. The site says so to its readers. Treat them as a reading of the text and not as authority.
 
 ## What it does
 
@@ -13,7 +13,7 @@ The Tirukkural as a knowledge graph you can read, explore and question: all 1,33
 | Home | What the Kural is, and a way into everything else. |
 | Explore | The whole book as one 3D graph, as a galaxy or a lotus. |
 | Lineage | Follow one couplet or idea to what it connects to, or walk from a situation through what it can feel like to the couplets that speak to it. |
-| Read | Chapter by chapter, with the Tamil, its romanisation, a plain reading and Parimelazhagar in English and in his Tamil. |
+| Read | Chapter by chapter, with the Tamil, its romanisation, a plain reading and parimēlaḻagar in English and in his Tamil. |
 | Reflect | Write what's on your mind and see what it touches. It stays in your browser. |
 | Ask | Answers composed from the graph, offline. Connect a language model with your own key for written answers. |
 

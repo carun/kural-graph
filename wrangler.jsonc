@@ -1,6 +1,8 @@
 {
-  "name": "kural-graph",
+  "name": "kural",
   "compatibility_date": "2026-10-03",
+  "workers_dev": false,
+  "routes": [{ "pattern": "kural.arunc.dev", "custom_domain": true }],
   "assets": {
     "directory": "./out",
     "not_found_handling": "404-page"

@@ -386,7 +386,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
             <div className="space-y-7">
               <Translation verse={verse} />
               <section>
-                <SectionLabel>Word by word, in Parimelazhagar’s Tamil</SectionLabel>
+                <SectionLabel>Word by word, in parimēlaḻagar’s Tamil</SectionLabel>
                 <PadacchedaLexicon verse={verse} />
               </section>
             </div>

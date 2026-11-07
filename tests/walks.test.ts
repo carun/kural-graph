@@ -82,7 +82,8 @@ const printed = (w: Walk) => {
 };
 
 test("the walks match the reviewed walks.md, line for line", { skip: !existsSync(REVIEWED) }, () => {
-  const [, ...reviewed] = readFileSync(REVIEWED, "utf8").trimEnd().split(/^(?=## )/m);
+  // The review copy keeps the English spelling. The site uses the owner’s romanisation.
+  const [, ...reviewed] = readFileSync(REVIEWED, "utf8").replaceAll("Parimelazhagar", "parimēlaḻagar").trimEnd().split(/^(?=## )/m);
   const mine = situations.map((s) => printed(walks.get(s.id)!));
   assert.equal(reviewed.length, 58);
   const expected = new Map(reviewed.map((r) => [r.split("\n")[0], r.trimEnd()]));

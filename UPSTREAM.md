@@ -54,7 +54,7 @@ These differ most from his, so expect conflicts here first. For the present list
 | `src/components/home/*` | All the words and pictures. Keep his layout and motion. |
 | `src/lib/graphrag/*`, `src/lib/llm/*`, `src/components/chat/*` | Couplet citations, safety, and model calls made from the browser. |
 | `src/components/graph/*` | 133 chapters, couplet ids, the galaxy and lotus shapes, walks in Lineage. |
-| `src/components/reader/*` | The readings, Parimelazhagar and the Tamil type. |
+| `src/components/reader/*` | The readings, parimēlaḻagar and the Tamil type. |
 | `src/lib/store/useGitaStore.ts`, `src/lib/store/audioStore.ts` | Couplet ids, and recordings with the device's voice as a fallback. |
 | `src/components/settings/ByokSettingsModal.tsx`, `src/lib/store/settingsStore.ts` | Keys kept in the browser. |
 | `src/app/api/*` | We deleted these: this is a static site. If he changes one, keep it deleted and bring the change into `src/lib/llm/` if it matters. |

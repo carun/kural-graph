@@ -62,10 +62,13 @@ export default function About() {
 
         <Section title="The texts">
           <p className="reading">
-            <strong className={strong}>The English on this site was written by an AI (Anthropic’s Claude), not by a scholar or translator.</strong> Each couplet has two readings. The plain reading says what the Tamil says, in today’s words, and adds no fate, god or setting of its own. Parimelazhagar’s reading is his 13th-century Tamil commentary, paraphrased into English. It keeps what he says, including his views on caste, karma and women, which are of their time.
+            <strong className={strong}>The readings on this site were written by an AI (Anthropic’s Claude), not by a scholar or translator.</strong> Each couplet has two readings. The plain reading says what the Tamil says, in today’s words, and adds no fate, god or setting of its own. parimēlaḻagar’s reading is his 13th-century Tamil commentary, paraphrased into English. It keeps what he says, including his views on caste, karma and women, which are of their time.
           </p>
           <p className="reading">
-            The paraphrases are not his exact words, so each one opens onto his Tamil, from <Link href="https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை">Tamil Wikisource</Link>. Two key words follow the project’s own reading: <span lang="ta" className="deva">அன்பு</span> is loving-kindness, the mēttā of Buddhism, and <span lang="ta" className="deva">காமம்</span> is desire. Parimelazhagar himself defines <span lang="ta" className="deva">அன்பு</span> more narrowly, as fondness for your family and those connected to you.
+            V. V. S. Aiyar’s English translation of 1916 is also offered wherever you choose a reading. It is in his own words, from the <Link href="https://standardebooks.org/ebooks/thiruvalluvar/the-kural/v-v-s-aiyar">Standard Ebooks edition</Link>, which is believed to be in the United States public domain. The readings don’t draw on it, and it uses words of its time, such as “love” where the plain reading says “loving-kindness”.
+          </p>
+          <p className="reading">
+            The paraphrases are not his exact words, so each one opens onto his Tamil, from <Link href="https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை">Tamil Wikisource</Link>. Two key words follow the project’s own reading: <span lang="ta" className="deva">அன்பு</span> is loving-kindness, the mēttā of Buddhism, and <span lang="ta" className="deva">காமம்</span> is desire. parimēlaḻagar himself defines <span lang="ta" className="deva">அன்பு</span> more narrowly, as fondness for your family and those connected to you.
           </p>
           <p className="reading">
             The Tamil starts from the <Link href="https://github.com/tk120404/thirukkural">thirukkural dataset</Link> (Apache 2.0). It was checked line by line against <Link href="https://www.projectmadurai.org/">Project Madurai</Link> and two editions on <Link href="https://ta.wikisource.org/">Tamil Wikisource</Link>, and 105 decisions were reviewed, including 63 repairs of damaged text. <Link href="/NOTICE.txt">Notices and credits</Link>.

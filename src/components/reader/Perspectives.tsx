@@ -333,7 +333,7 @@ export function Perspectives({ verse }: { verse: Verse }) {
   return (
     <div className="space-y-4">
       <div>
-        <div className="label mb-1.5">Parimelazhagar’s commentary</div>
+        <div className="label mb-1.5">parimēlaḻagar’s commentary</div>
         <div className="seg w-full" role="radiogroup" aria-label="Commentary language">
           {(["en", "sa", "all"] as LangFilter[]).map((l) => (
             <button key={l} role="radio" aria-checked={effLang === l} disabled={l !== "all" && !counts[l]} className={`flex-1 ${l === "sa" ? "deva !text-[13px]" : ""}`} onClick={() => setLang(l)}>

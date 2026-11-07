@@ -129,7 +129,7 @@ export function Welcome() {
               <div className="mt-5 flex items-start gap-2 text-[12.5px] leading-5 text-text-3">
                 <ShieldCheck size={15} className="mt-0.5 shrink-0 text-good" />
                 <span>
-                  Your thoughts are saved on this device, in this browser; they don&apos;t sync to other devices (use Export to move them). Reading, search and suggestions work without a language model. AI features are optional and send only the text you choose to the provider shown. An AI wrote the English and drew the links, and no person has reviewed the links yet.
+                  Your thoughts are saved on this device, in this browser; they don&apos;t sync to other devices (use Export to move them). Reading, search and suggestions work without a language model. AI features are optional and send only the text you choose to the provider shown. An AI wrote the readings and drew the links, and no person has reviewed the links yet.
                 </span>
               </div>
               <div className="mt-4 flex items-center justify-between gap-3 text-[12.5px] text-text-3">

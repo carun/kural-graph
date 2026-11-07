@@ -22,7 +22,7 @@ class Memory {
 }
 const session = new Memory();
 const local = new Memory();
-Object.assign(globalThis, { window: globalThis, sessionStorage: session, localStorage: local, location: { origin: "https://kural.test" } });
+Object.assign(globalThis, { window: globalThis, sessionStorage: session, localStorage: local, location: { origin: "https://kural.test", protocol: "https:" } });
 
 const { ModelDeclined, streamAnthropic } = await import("../src/lib/llm/anthropic.ts");
 const { listModels, openStream, resolveProvider, streamChat } = await import("../src/lib/llm/client.ts");
@@ -141,6 +141,8 @@ test("a failed call to Ollama says what to check", async () => {
     throw new TypeError("Failed to fetch");
   }) as typeof fetch;
   await assert.rejects(listModels(resolveProvider("ollama", {})), /OLLAMA_ORIGINS includes https:\/\/kural\.test/);
+  // No setting on the Ollama side could fix this one, so the message must not send anyone there.
+  await assert.rejects(listModels(resolveProvider("ollama", { baseUrl: "http://other-machine:11434" })), /plain http address on another machine/);
 });
 
 test("stopping a reply stays a stop, not a connection failure", async () => {

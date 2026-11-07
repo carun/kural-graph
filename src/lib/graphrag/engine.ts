@@ -256,7 +256,7 @@ function verseBlock(ctx: RagContext, id: string, reasons: string[]) {
     `  Tamil: ${v.sanskrit.join(" ")}`,
     `  Romanised: ${v.iast.join(" ")}`,
     `  Plain reading: ${en.replace(/\s+/g, " ").slice(0, 600)}`,
-    alt ? `  Parimelazhagar, paraphrased in English by an AI: ${alt.replace(/\s+/g, " ").slice(0, 400)}` : "",
+    alt ? `  parimēlaḻagar, paraphrased in English by an AI: ${alt.replace(/\s+/g, " ").slice(0, 400)}` : "",
     reasons.length ? `  Why retrieved: ${reasons.join("; ")}` : "",
     isSensitive(v) ? `  Old view: cite this only with the words "${OLD_VIEW_NOTE}"` : "",
   ]

@@ -8,7 +8,7 @@ import { isRegionalScript } from "@/lib/indic/scripts";
 import { getReadingPosition, lessonDoneAt, setReadingPosition } from "@/lib/store/readingPosition";
 import { ScriptPicker, verseLines } from "./VerseExplorer";
 import { Lesson } from "./Lesson";
-import { IastKey, OldView, chapterGroups, partOf } from "@/kural/reader";
+import { AIYAR, IastKey, OldView, chapterGroups, partOf } from "@/kural/reader";
 
 function TranslatorSelect() {
   const versesDoc = useGita((s) => s.versesDoc);
@@ -68,6 +68,7 @@ export function ChapterReader() {
   const select = useGita((s) => s.select);
   const selectedId = useGita((s) => s.selectedId);
   const script = useGita((s) => s.script);
+  const chosenEnglish = useGita((s) => s.enAuthor);
   const enAuthor = useGita((s) => s.enAuthor);
   const audioVerse = useAudio((s) => s.verseId);
   const audioMode = useAudio((s) => s.mode);
@@ -209,7 +210,7 @@ export function ChapterReader() {
               </div>
               {ch.summary.en && (
                 <div className="mt-5">
-                  <div className="label mb-1">Parimelazhagar’s introduction, paraphrased by an AI</div>
+                  <div className="label mb-1">parimēlaḻagar’s introduction, paraphrased by an AI</div>
                   <p className="reading">{ch.summary.en}</p>
                 </div>
               )}
@@ -232,7 +233,7 @@ export function ChapterReader() {
             </header>
 
             <div className="mt-12 border-t border-line pt-6">
-              <p className="text-[12px] leading-4 text-text-3">An AI wrote the English on this page, not a scholar or translator.</p>
+              <p className="text-[12px] leading-4 text-text-3">{chosenEnglish === AIYAR ? "This page shows V. V. S. Aiyar’s translation of 1916, in his own words." : "An AI wrote the English on this page, not a scholar or translator."}</p>
               {(script === "deva" || script === "iast") && <IastKey className="mb-3 mt-2" />}
               {verses.map((v) => {
                 const active = v.id === audioVerse;

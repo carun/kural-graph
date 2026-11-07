@@ -37,7 +37,7 @@ const ANYWHERE: Helpline[] = [
 export const SUPPORT: Record<Exclude<Concern, null>, { title: string; text: string; lines: Helpline[] }> = {
   "self-harm": {
     title: "Please talk to someone now",
-    text: "What you’ve written matters more than any old book. A real person can help you tonight, and you don’t have to explain it perfectly.",
+    text: "What you’ve written matters more than any book. A real person can help you tonight, and you don’t have to explain it perfectly.",
     lines: [
       { label: "India: Tele-MANAS (24×7, free)", contact: "14416 or 1-800-891-4416", href: "tel:14416" },
       { label: "United States: call or text", contact: "988", href: "tel:988" },

@@ -341,7 +341,7 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
           )}
         </div>
         <p className="mt-2 px-1 text-[11.5px] leading-4 text-text-3">
-          This is an old book, read by an AI, and it can’t replace a person or professional care.{" "}
+          This is a book, read by an AI, and it can’t replace a person or professional care.{" "}
           {conn ? `Your question, the last few messages and the retrieved couplets are sent to ${PROVIDERS[conn.provider].name}. Your saved thoughts are not.` : "Answers are composed in this browser; nothing is sent."}
         </p>
       </div>

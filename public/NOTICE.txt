@@ -13,13 +13,17 @@ their numbering, chapter names and its romanisation (for search only) are used.
 Its commentaries and translations are not included.
 
 The English readings were written for this project by an AI (Anthropic's
-Claude), from the Tamil and Parimelazhagar's commentary.
+Claude), from the Tamil and parimēlaḻagar's commentary.
 
-Parimelazhagar's commentary is about seven hundred years old. The Tamil shown
+parimēlaḻagar's commentary is about seven hundred years old. The Tamil shown
 here is from Tamil Wikisource
 (https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை), whose text is available
 under the Creative Commons Attribution-ShareAlike licence. Wiki markup, editors'
 word lists and footnote numbers have been removed.
+
+V. V. S. Aiyar's 1916 English translation is taken from the Standard Ebooks
+edition (https://standardebooks.org/ebooks/thiruvalluvar/the-kural/v-v-s-aiyar),
+which is believed to be in the United States public domain.
 
 The Tamil couplets were also checked against Project Madurai
 (https://www.projectmadurai.org/) and a proofread edition on Tamil Wikisource.

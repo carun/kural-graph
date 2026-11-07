@@ -7,6 +7,7 @@ import { audio } from "@/lib/store/audioStore";
 import { lessonDoneAt, markLessonDone } from "@/lib/store/readingPosition";
 import type { ConnectionRelation } from "@/lib/types";
 import { askPartha } from "@/components/chat/GraphRagChatbot";
+import { AIYAR } from "@/kural/reader";
 
 const VERSE = "K_100";
 
@@ -85,9 +86,9 @@ export function Lesson({ onClose }: { onClose: () => void }) {
         </Step>
 
         <Step n={2} title="The setting" kind="Context">
-          <p className="reading">The Kural is 1,330 couplets in 133 chapters of ten. This one closes chapter {verse.chapter}, “{chapter?.title}”. Parimelazhagar opens the chapter like this:</p>
+          <p className="reading">The Kural is 1,330 couplets in 133 chapters of ten. This one closes chapter {verse.chapter}, “{chapter?.title}”. parimēlaḻagar opens the chapter like this:</p>
           <p className="reading mt-2 border-l-2 border-line pl-3">{chapter?.summary.en}</p>
-          <p className="mt-2 text-[12px] text-text-3">Parimelazhagar, paraphrased in English by an AI.</p>
+          <p className="mt-2 text-[12px] text-text-3">parimēlaḻagar, paraphrased in English by an AI.</p>
         </Step>
 
         <Step n={3} title="The couplet" kind={`Kural ${verse.ref} · source`}>
@@ -100,7 +101,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
             <div className="serif mt-1.5 text-[14px] italic leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{verse.iast.join(" ")}</div>
             <p className="serif mt-3 border-t border-line pt-3 text-[16.5px] leading-[1.65] text-text">{translation}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2 text-[12px] text-text-3">
-              <span>{author?.name ?? "Plain reading"}, written by an AI</span>
+              <span>{enAuthor === AIYAR ? author?.name : `${author?.name ?? "Plain reading"}, written by an AI`}</span>
               <button className="btn btn-sm btn-ghost max-sm:h-10" onClick={() => audio.playVerse(VERSE)}>
                 <Play size={13} /> Listen
               </button>
@@ -115,7 +116,7 @@ export function Lesson({ onClose }: { onClose: () => void }) {
           {his && (
             <>
               <p className="reading mt-2 border-l-2 border-line pl-3">{his}</p>
-              <p className="mt-2 text-[12px] text-text-3">Parimelazhagar, paraphrased in English by an AI. Open the couplet to read his Tamil.</p>
+              <p className="mt-2 text-[12px] text-text-3">parimēlaḻagar, paraphrased in English by an AI. Open the couplet to read his Tamil.</p>
             </>
           )}
         </Step>

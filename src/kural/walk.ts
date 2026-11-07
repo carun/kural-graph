@@ -60,7 +60,7 @@ const MAX_ALSO = 5;
 
 export const FEELINGS_NOTE = "Our suggestion, not the Kural’s words.";
 export const OLD_VIEW_NOTE = "An old view, given here as the text has it.";
-export const HELPLINE_LINE = "This is an old book, read by an AI, and it can’t replace a person. If you are in danger, or thinking of ending your life, please reach out now:";
+export const HELPLINE_LINE = "This is a book, read by an AI, and it can’t replace a person. If you are in danger, or thinking of ending your life, please reach out now:";
 export const HELPLINE_URL = "https://findahelpline.com";
 
 const whyOf = (e: WalkEdge) => (typeof e.props?.why === "string" ? e.props.why : "");

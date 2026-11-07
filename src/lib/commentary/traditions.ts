@@ -25,7 +25,7 @@ export const TRADITIONS: Tradition[] = [
     id: "classical",
     name: "Classical commentary",
     short: "Classical",
-    teacher: "Parimelazhagar",
+    teacher: "parimēlaḻagar",
     lens: "",
     color: "var(--n-concept)",
   },
@@ -44,8 +44,8 @@ export interface Commentator {
 }
 
 export const COMMENTATORS: Record<number, Commentator> = {
-  2: { tradition: "classical", name: "Parimelazhagar", work: "Paraphrased in English by an AI. These are not his exact words." },
-  3: { tradition: "classical", name: "Parimelazhagar", work: "His 13th-century commentary, from Tamil Wikisource" },
+  2: { tradition: "classical", name: "parimēlaḻagar", work: "Paraphrased in English by an AI. These are not his exact words." },
+  3: { tradition: "classical", name: "parimēlaḻagar", work: "His 13th-century commentary, from Tamil Wikisource" },
 };
 
 export type CommentaryLang = CommentaryEntry["lang"];

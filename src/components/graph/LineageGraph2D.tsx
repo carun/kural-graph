@@ -104,7 +104,7 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
         bySchool.set(a.school, [...(bySchool.get(a.school) || []), a.name.replace(/^(Sri|Swami|Shri|Dr\.) /, "")]);
       }
       // One card for the commentarial traditions: they are context, not lineage, and should not dominate the layout.
-      if (bySchool.size) out.push({ role: "down", kind: "school", title: "Parimelazhagar’s commentary", subtitle: "His Tamil, and a paraphrase in English by an AI", relation: "is commented on in", curated: false });
+      if (bySchool.size) out.push({ role: "down", kind: "school", title: "parimēlaḻagar’s commentary", subtitle: "His Tamil, and a paraphrase in English by an AI", relation: "is commented on in", curated: false });
     }
   } else {
     const sub = "en" in n ? n.en : n.type === "Chapter" ? n.meaning : n.type === "Character" ? n.role : n.type === "PersonalThought" ? n.text : undefined;

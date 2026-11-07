@@ -9,13 +9,13 @@ const sourceSerif = Source_Serif_4({ subsets: ["latin", "latin-ext"], style: ["n
 const tiro = Noto_Serif_Tamil({ subsets: ["tamil", "latin"], variable: "--font-tiro", display: "swap" });
 
 // A static export bakes this into every page, and link previews need the picture's full address.
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://kural-graph.carun.workers.dev";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://kural.arunc.dev";
 
 export const metadata: Metadata = {
   ...(SITE ? { metadataBase: new URL(SITE) } : {}),
   title: "Kural Graph · The Tirukkural as a knowledge graph",
   description:
-    "Explore all 1,330 couplets of the Tirukkural as an interactive knowledge graph: read the Tamil with a plain reading and Parimelazhagar’s commentary, trace how ideas connect, ask questions grounded in the text, and map your own reflections privately.",
+    "Explore all 1,330 couplets of the Tirukkural as an interactive knowledge graph: read the Tamil with a plain reading and parimēlaḻagar’s commentary, trace how ideas connect, ask questions grounded in the text, and map your own reflections privately.",
   applicationName: "Kural Graph",
   icons: { icon: "/favicon.svg" },
   openGraph: {

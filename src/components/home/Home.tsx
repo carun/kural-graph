@@ -331,7 +331,7 @@ function Arc() {
           <h2 id="arc-title" className="serif max-w-[22ch] text-balance text-[clamp(1.9rem,3.6vw,2.75rem)] font-medium leading-[1.1] tracking-[-0.015em] text-text">
             Three parts, 133 chapters, ten couplets in each.
           </h2>
-          <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-text-2">Read it in order, with the Tamil, its romanisation, a plain reading and Parimelazhagar’s commentary for every couplet.</p>
+          <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-text-2">Read it in order, with the Tamil, its romanisation, a plain reading and parimēlaḻagar’s commentary for every couplet.</p>
         </Reveal>
       </div>
       <ol className={`home-rail mx-auto mt-10 flex max-w-7xl snap-x snap-mandatory gap-5 overflow-x-auto pb-6 lg:grid lg:grid-cols-4 lg:items-start lg:overflow-visible ${PAD}`}>
@@ -494,7 +494,7 @@ function TrustStrip() {
     { icon: Bot, title: "An AI wrote the English", body: "The readings and the links between couplets were written by an AI (Anthropic’s Claude), not by a scholar or translator. No person has reviewed them yet, so treat them as a reading of the text and not as authority." },
     { icon: ShieldCheck, title: "Your thoughts stay with you", body: "Reflections are saved on this device, in this browser. They don't sync anywhere; export them when you want to move them." },
     { icon: Sparkles, title: "AI is optional", body: "Reading, search, the graph and suggestions all work without a language model. If you connect one, only the text you choose is sent." },
-    { icon: Library, title: "Built on open texts", body: "The Tamil starts from an open dataset and was checked line by line against Project Madurai and Tamil Wikisource. Parimelazhagar’s Tamil comes from Tamil Wikisource." },
+    { icon: Library, title: "Built on open texts", body: "The Tamil starts from an open dataset and was checked line by line against Project Madurai and Tamil Wikisource. parimēlaḻagar’s Tamil comes from Tamil Wikisource." },
   ];
   return (
     <section aria-labelledby="promise-title" className={`pb-20 md:pb-28 ${PAD}`}>
@@ -573,7 +573,7 @@ function Footer() {
         </nav>
       </div>
       <p className="mx-auto mt-6 max-w-7xl text-[12.5px] leading-5 text-text-3">
-        An AI wrote the English on this site, and no person has reviewed it yet. The pictures on this page were painted by a computer program, not by an artist.
+        An AI wrote the readings on this site, and no person has reviewed them yet. The pictures on this page were painted by a computer program, not by an artist.
       </p>
     </footer>
   );

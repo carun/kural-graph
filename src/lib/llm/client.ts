@@ -60,7 +60,10 @@ function unreachable(p: ResolvedProvider, e: unknown): Error {
   if ((e as Error).name === "AbortError") return e as Error;
   const name = PROVIDERS[p.id].name;
   if (p.id !== "ollama") return new ProviderError(`Could not reach ${name}: ${(e as Error).message}`, 502, "network");
-  return new ProviderError(`Could not reach ${name} at ${p.base.replace(/\/v1$/, "")}. Check that it is running and that OLLAMA_ORIGINS includes ${globalThis.location?.origin}.`, 502, "network");
+  const base = p.base.replace(/\/v1$/, "");
+  // Reported as the same "failed to fetch", though no setting on the Ollama side could fix it.
+  if (globalThis.location?.protocol === "https:" && /^http:\/\/(?!localhost|127\.0\.0\.1)/.test(base)) return new ProviderError(`Your browser won’t let this secure page call ${base}, a plain http address on another machine. Use an https address, such as the machine’s tailnet name, or run Ollama on this computer.`, 502, "network");
+  return new ProviderError(`Could not reach ${name} at ${base}. Check that it is running and that OLLAMA_ORIGINS includes ${globalThis.location?.origin}.`, 502, "network");
 }
 
 /** Stream text deltas from the provider, and to nowhere else. */

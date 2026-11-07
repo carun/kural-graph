@@ -193,3 +193,20 @@ test("no situation or feeling, asked as a person would, puts a sensitive or left
     }
   }
 });
+
+test("Aiyar is offered in his own words on every couplet, and is never the default or what a model reads", async () => {
+  assert.equal(versesDoc.meta.defaults.en, 1);
+  assert.ok(versesDoc.authors.some((a) => a.id === 4 && a.name === "V. V. S. Aiyar"));
+  assert.equal(versesDoc.verses.filter((v) => (v.translations.en as Record<string, string>)["4"]).length, 1330);
+  const aiyar = (versesDoc.verses.find((v) => v.id === "K_380")!.translations.en as Record<string, string>)["4"];
+  assert.match(aiyar, /mightier than Destiny/);
+  const r = await retrieve(ctx, "Explain Kural 380");
+  assert.ok(!r.context.includes(aiyar));
+  assert.ok(!composeOfflineAnswer(ctx, r).includes("mightier than Destiny"));
+});
+
+test("readers see his name in the owner’s romanisation, everywhere", () => {
+  const all = readFileSync(fileURLToPath(new URL("../public/data/kural-graph.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/kural-verses.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/commentary/K_380.json", import.meta.url)), "utf8");
+  assert.ok(!all.includes("Parimelazhagar"));
+  assert.ok(all.includes("parimēlaḻagar"));
+});
