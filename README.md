@@ -19,6 +19,8 @@ The Tirukkural as a knowledge graph you can read, explore and question: all 1,33
 
 Search is under Ctrl K. Couplets can be listened to: see [public/audio/README.md](public/audio/README.md).
 
+[ARCHITECTURE.md](ARCHITECTURE.md) explains how it's built.
+
 ## Running it
 
 You need Node 24.
