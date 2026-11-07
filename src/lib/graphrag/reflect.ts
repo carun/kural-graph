@@ -142,7 +142,7 @@ export async function suggestConnections(ctx: RagContext, text: string): Promise
       if (n >= MAX_WORD_VERSES || seen.has(h.id) || !offerable(h.id)) continue;
       const v = ctx.versesById.get(h.id);
       if (!v) continue;
-      const theirs = new Set(keywords([...Object.values(v.translations.en || {}), ...v.padaccheda.map((p) => p.m)].join(" ")));
+      const theirs = new Set(keywords([v.translations.en?.[String(ctx.versesDoc.meta.defaults.en)] ?? "", v.translations.en?.["2"] ?? "", ...v.padaccheda.map((p) => p.m)].join(" ")));
       const shared = [...mine].filter((w) => theirs.has(w)).slice(0, 3);
       if (!shared.length && mode !== "hybrid") continue;
       push({ targetId: h.id, basis: "words", why: shared.length ? `Shares the word${shared.length > 1 ? "s" : ""} ${shared.map((w) => `“${w}”`).join(", ")}` : "Similar in wording or meaning", score: 0.2, origin: "local" });

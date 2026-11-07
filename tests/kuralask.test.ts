@@ -205,6 +205,32 @@ test("Aiyar is offered in his own words on every couplet, and is never the defau
   assert.ok(!composeOfflineAnswer(ctx, r).includes("mightier than Destiny"));
 });
 
+test("Pope and Drew and Lazarus are offered on every couplet, and are never the default or what a model reads", async () => {
+  const on = (id: string, author: string) => (versesDoc.verses.find((v) => v.id === id)!.translations.en as Record<string, string>)[author];
+  for (const [id, name] of [[5, "G. U. Pope"], [6, "W. H. Drew and J. Lazarus"]] as const) {
+    assert.ok(versesDoc.authors.some((a) => a.id === id && a.name === name && a.lang === "en"));
+    assert.equal(versesDoc.verses.filter((v) => (v.translations.en as Record<string, string>)[String(id)]).length, 1330);
+  }
+  assert.match(on("K_380", "5"), /^What powers so great as those of Destiny\? Man’s skill\nSome other thing contrives/);
+  assert.match(on("K_380", "6"), /^What is stronger than fate\?/);
+  // His verse keeps its printed lines: two, or four in the stanzas of Part 3.
+  for (const v of versesDoc.verses) assert.ok([2, 4].includes((v.translations.en as Record<string, string>)["5"].split("\n").length), v.id);
+  const r = await retrieve(ctx, "Explain Kural 380");
+  for (const line of [on("K_380", "5"), on("K_380", "6")]) assert.ok(!r.context.includes(line.split("\n")[0]));
+  assert.ok(!composeOfflineAnswer(ctx, r).includes("powers so great"));
+});
+
+test("the Tamil commentaries sit beside his, and each couplet lists the ones it has", () => {
+  const read = (n: number) => JSON.parse(readFileSync(fileURLToPath(new URL(`../public/data/commentary/K_${n}.json`, import.meta.url)), "utf8")) as { commentaries: { authorId: number; lang: string; text: string }[] };
+  for (const v of versesDoc.verses) {
+    const n = Number(v.ref);
+    const held = read(n).commentaries.map((c) => c.authorId);
+    assert.deepEqual(held, n <= 1080 ? [2, 3, 7, 8, 9, 10] : [2, 3, 7, 8, 10], v.id);
+    assert.deepEqual(v.commentaryAuthors, held, v.id);
+    for (const c of read(n).commentaries) if (c.authorId >= 7) assert.ok(c.lang === "sa" && /[\u0B80-\u0BFF]/.test(c.text), `${v.id} ${c.authorId}`);
+  }
+});
+
 test("readers see his name in the owner’s romanisation, everywhere", () => {
   const all = readFileSync(fileURLToPath(new URL("../public/data/kural-graph.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/kural-verses.json", import.meta.url)), "utf8") + readFileSync(fileURLToPath(new URL("../public/data/commentary/K_380.json", import.meta.url)), "utf8");
   assert.ok(!all.includes("Parimelazhagar"));

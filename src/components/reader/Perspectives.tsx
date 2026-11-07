@@ -124,7 +124,7 @@ function AiTranslation({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
     <div className="mt-3">
       {text ? (
         <div className="rounded-[var(--radius-2)] border border-line bg-surface px-3 py-2.5">
-          <div className="text-[11.5px] font-medium text-text-3">AI translation into {target}, a draft: check it against his Tamil</div>
+          <div className="text-[11.5px] font-medium text-text-3">AI translation into {target}, a draft: check it against the Tamil</div>
           <p className={`mt-1.5 whitespace-pre-line text-text-2 ${target === "Hindi" ? "indic text-[15px] leading-[1.9]" : "serif text-[15px] leading-[1.6]"}`}>{text}</p>
         </div>
       ) : (
@@ -219,7 +219,7 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
             <p lang="ta" className="deva mt-1 text-[15px] leading-7 text-text-2">
               {verse.sanskrit.join(" ")}
             </p>
-            {translation && <p className="serif mt-0.5 text-[14px] leading-6 text-text-3">{translation}</p>}
+            {translation && <p className="serif mt-0.5 whitespace-pre-line text-[14px] leading-6 text-text-3">{translation}</p>}
             <OldView verse={verse} className="mt-0.5" />
           </div>
           <button ref={closeRef} className="btn btn-ghost btn-icon shrink-0" onClick={onClose} aria-label="Close the comparison">
@@ -333,7 +333,7 @@ export function Perspectives({ verse }: { verse: Verse }) {
   return (
     <div className="space-y-4">
       <div>
-        <div className="label mb-1.5">parimēlaḻagar’s commentary</div>
+        <div className="label mb-1.5">Commentaries</div>
         <div className="seg w-full" role="radiogroup" aria-label="Commentary language">
           {(["en", "sa", "all"] as LangFilter[]).map((l) => (
             <button key={l} role="radio" aria-checked={effLang === l} disabled={l !== "all" && !counts[l]} className={`flex-1 ${l === "sa" ? "deva !text-[13px]" : ""}`} onClick={() => setLang(l)}>
@@ -370,7 +370,7 @@ export function Perspectives({ verse }: { verse: Verse }) {
         ))}
       </div>
 
-      {effLang === "sa" && <p className="text-[12px] leading-5 text-text-3">His Tamil is read aloud by your device’s voice. A Tamil voice reads it best.</p>}
+      {effLang === "sa" && <p className="text-[12px] leading-5 text-text-3">The Tamil is read aloud by your device’s voice. A Tamil voice reads it best.</p>}
       {(silent.length > 0 || crossRefs.length > 0) && (
         <div className="space-y-1 border-t border-line pt-3 text-[12.5px] leading-5 text-text-3">
           {crossRefs.map((x) => (

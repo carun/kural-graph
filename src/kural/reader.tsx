@@ -18,11 +18,17 @@ export function OldView({ verse, className = "" }: { verse: Verse; className?: s
   return <p className={`text-[12px] leading-4 text-text-3 ${className}`}>{OLD_VIEW}</p>;
 }
 
-/** V. V. S. Aiyar’s 1916 translation, the one English here that no AI wrote. */
-export const AIYAR = 4;
+/** The translations no AI wrote, by author id in the data. */
+const OWN_WORDS: Record<number, string> = {
+  4: "V. V. S. Aiyar’s translation of 1916, in his own words.",
+  5: "G. U. Pope’s verse translation of 1886, in his own words.",
+  6: "W. H. Drew and J. Lazarus’s translation of 1885, in their own words.",
+};
+
+export const inOwnWords = (authorId: number) => authorId in OWN_WORDS;
 
 /** Who wrote the English of a reading, by author id in the data. */
-export const englishBy = (authorId: number) => (authorId === AIYAR ? "V. V. S. Aiyar’s translation of 1916, in his own words." : authorId === 1 ? "An AI wrote this English, not a scholar or translator." : "Paraphrased in English by an AI. These are not his exact words.");
+export const englishBy = (authorId: number) => OWN_WORDS[authorId] ?? (authorId === 1 ? "An AI wrote this English, not a scholar or translator." : "Paraphrased in English by an AI. These are not his exact words.");
 
 /** The note closes the English commentary in the data. Taken off so it can be set apart, as a note. */
 export const withoutNote = (text: string, note?: string) => (note && text.endsWith(note) ? text.slice(0, -note.length).trimEnd() : text);

@@ -312,7 +312,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
           {/* Phones: the meaning first, before scripts and study tools (the full Meaning tab follows below). */}
           {quick && (
             <div className="mt-3 md:hidden">
-              <p className="serif line-clamp-4 text-[16px] leading-[1.6] text-text [overflow-wrap:anywhere]">{quick}</p>
+              <p className="serif line-clamp-4 whitespace-pre-line text-[16px] leading-[1.6] text-text [overflow-wrap:anywhere]">{quick}</p>
               {translator && <div className="mt-1 text-[12px] text-text-3">Translation: {translator}</div>}
               <OldView verse={verse} className="mt-1" />
             </div>

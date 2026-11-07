@@ -7,7 +7,7 @@ import { audio } from "@/lib/store/audioStore";
 import { lessonDoneAt, markLessonDone } from "@/lib/store/readingPosition";
 import type { ConnectionRelation } from "@/lib/types";
 import { askPartha } from "@/components/chat/GraphRagChatbot";
-import { AIYAR } from "@/kural/reader";
+import { inOwnWords } from "@/kural/reader";
 
 const VERSE = "K_100";
 
@@ -99,9 +99,9 @@ export function Lesson({ onClose }: { onClose: () => void }) {
               ))}
             </div>
             <div className="serif mt-1.5 text-[14px] leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{verse.iast.join(" ")}</div>
-            <p className="serif mt-3 border-t border-line pt-3 text-[16.5px] leading-[1.65] text-text">{translation}</p>
+            <p className="serif mt-3 whitespace-pre-line border-t border-line pt-3 text-[16.5px] leading-[1.65] text-text">{translation}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2 text-[12px] text-text-3">
-              <span>{enAuthor === AIYAR ? author?.name : `${author?.name ?? "Plain reading"}, written by an AI`}</span>
+              <span>{inOwnWords(enAuthor) ? author?.name : `${author?.name ?? "Plain reading"}, written by an AI`}</span>
               <button className="btn btn-sm btn-ghost max-sm:h-10" onClick={() => audio.playVerse(VERSE)}>
                 <Play size={13} /> Listen
               </button>

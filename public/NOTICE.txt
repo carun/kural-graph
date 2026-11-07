@@ -25,9 +25,57 @@ V. V. S. Aiyar's 1916 English translation is taken from the Standard Ebooks
 edition (https://standardebooks.org/ebooks/thiruvalluvar/the-kural/v-v-s-aiyar),
 which is believed to be in the United States public domain.
 
+G. U. Pope's English verse (The 'Sacred' Kurral of Tiruvalluva-Nayanar, 1886) was
+read from the scans at https://archive.org/details/tiruvalluvanayan00tiruuoft and
+https://archive.org/details/in.ernet.dli.2015.43871. W. H. Drew and J. Lazarus's
+English prose (The Kural of Tiruvalluvar, 1885) was read from the scan at
+https://archive.org/details/kuraloftiruvallu00tirurich, and Kurals 604 and 761 to
+765 from a later reprint at
+https://archive.org/details/xkae-thirukkural-w.-h.-drew-john-lazarus. Both are in
+the public domain. Plain printing errors have been corrected; see
+data/clean/pope.json and data/clean/drew-lazarus.json in the tirukkural-kb content
+repository for every change.
+
+mu. varaḍarāsaṉār's திருக்குறள் தெளிவுரை and mayilai civamuṭṭu's திருக்குறள், இனிய
+எளிய உரை are from Tamil Wikisource
+(https://ta.wikisource.org/wiki/திருக்குறள்_தெளிவுரை,_மு._வரதராசன்,
+https://ta.wikisource.org/wiki/திருக்குறள்,_இனிய_எளிய_உரை), whose text is available
+under the Creative Commons Attribution-ShareAlike licence. Wiki markup has been
+removed, and slips in the first were corrected against its scan. Tamil Wikisource
+lists mayilai civamuṭṭu's works as nationalised by the Government of Tamil Nadu.
+The Government announced the nationalisation of mu. varaḍarāsaṉār's works in 2009.
+
+ṭēvanēyap pāvāṇar's திருக்குறள் தமிழ் மரபுரை (first published 1967) is from the
+2009 reprint in பாவாணர் தமிழ்க் களஞ்சியம், volumes 1 to 4, in the Tamil Digital
+Library (https://archive.org/details/tdl.48404-1-1 and its three companions). His
+works were nationalised by the Government of Tamil Nadu in 2006. The reprint's
+hyphen for the letter ய் has been restored.
+
+maṇakkudavar's commentary is a medieval work. The text here is from Project
+Madurai (https://www.projectmadurai.org/pm_etexts/utf8/pmuni0650.html), rearranged
+so that each comment sits under its couplet's usual number. That file's header:
+
+  tirukkuRaL verses with maNakkuTavar urai (in unicode format)
+  திருவள்ளுவர் அருளிச் செய்த
+  திருக்குறள் மூலமும் மணக்குடவர் உரையும்
+  (திருவள்ளுவமாலையுடன்)
+  tirukkuRaL verses with the urai/commentary
+  of maNakkudavar, along with tiruvaLLuvamAlai
+  In tamil script, unicode/utf-8 format
+  Acknowledgements:
+  Our thanks also go to the International Institute of Tamil Studies and Tamil Virtual Academy for providing a scanned PDF copy of this work.
+  This e-text has been generated using Google OCR online followed by proof-reading and corrections.
+  Preparation of HTML and PDF versions: Dr. K. Kalyanasundaram, Lausanne, Switzerland.
+  © Project Madurai, 1998-2018.
+  Project Madurai is an open, voluntary, worldwide initiative devoted to preparation
+  of electronic texts of tamil literary works and to distribute them free on the Internet.
+  Details of Project Madurai are available at the website
+  http://www.projectmadurai.org/
+  You are welcome to freely distribute this file, provided this header page is kept intact.
+
 The Tamil couplets were also checked against Project Madurai
 (https://www.projectmadurai.org/) and a proofread edition on Tamil Wikisource.
-Project Madurai's edition is not redistributed here.
+Project Madurai's edition of the couplets is not redistributed here.
 
 This site is a fork of GitaViśva
 (https://github.com/HimanshuMohanty-Git24/gitaviswa). Its interface and code,

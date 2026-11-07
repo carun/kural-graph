@@ -8,7 +8,7 @@ import { isRegionalScript } from "@/lib/indic/scripts";
 import { getReadingPosition, lessonDoneAt, setReadingPosition } from "@/lib/store/readingPosition";
 import { ScriptPicker, verseLines } from "./VerseExplorer";
 import { Lesson } from "./Lesson";
-import { AIYAR, IastKey, OldView, chapterGroups, partOf } from "@/kural/reader";
+import { IastKey, OldView, chapterGroups, englishBy, inOwnWords, partOf } from "@/kural/reader";
 
 function TranslatorSelect() {
   const versesDoc = useGita((s) => s.versesDoc);
@@ -233,7 +233,7 @@ export function ChapterReader() {
             </header>
 
             <div className="mt-12 border-t border-line pt-6">
-              <p className="text-[12px] leading-4 text-text-3">{chosenEnglish === AIYAR ? "This page shows V. V. S. Aiyar’s translation of 1916, in his own words." : "An AI wrote the English on this page, not a scholar or translator."}</p>
+              <p className="text-[12px] leading-4 text-text-3">{inOwnWords(chosenEnglish) ? `This page shows ${englishBy(chosenEnglish)}` : "An AI wrote the English on this page, not a scholar or translator."}</p>
               {(script === "deva" || script === "iast") && <IastKey className="mb-3 mt-2" />}
               {verses.map((v) => {
                 const active = v.id === audioVerse;
@@ -274,7 +274,7 @@ export function ChapterReader() {
                         ))}
                       </div>
                       {script === "deva" && <div className="serif mt-1.5 text-[14px] leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{v.iast.join(" ")}</div>}
-                      <p className={`serif mt-3 text-[16.5px] leading-[1.65] [overflow-wrap:anywhere] ${sel ? "text-text" : "text-text-2"}`}>{v.translations.en?.[String(enAuthor)]}</p>
+                      <p className={`serif mt-3 whitespace-pre-line text-[16.5px] leading-[1.65] [overflow-wrap:anywhere] ${sel ? "text-text" : "text-text-2"}`}>{v.translations.en?.[String(enAuthor)]}</p>
                       <OldView verse={v} className="mt-1.5" />
                     </div>
                   </article>
