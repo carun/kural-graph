@@ -8,3 +8,10 @@
 
 /data/*
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Cloudflare injects its analytics script into HTML on this zone unless told not to. This site promises none.
+/
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+
+/about
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
