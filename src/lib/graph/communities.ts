@@ -45,3 +45,36 @@ export function communityColor(c: Communities, id: string, dark: boolean): strin
   const r = c.rank[c.of[id] ?? -1];
   return r !== undefined && r < 8 ? PALETTE[dark ? "dark" : "light"][r] : dark ? "#5f5a52" : "#b9b3a9";
 }
+
+// ── the three Parts of the book, a fixed grouping beside the detected ones ──
+export const PART_NAMES = ["Righteousness", "Wealth", "Desire"];
+const PART_COLORS = { dark: ["#3987e5", "#d95926", "#199e70"], light: ["#2a78d6", "#eb6834", "#1baf7a"] };
+export const partColors = (dark: boolean) => PART_COLORS[dark ? "dark" : "light"];
+export const partOfChapter = (n: number) => (n <= 38 ? 0 : n <= 108 ? 1 : 2);
+
+/** Part of each node: couplets and chapters by position, anything else by where most of its couplets lie (if most do). */
+export function partsOf(g: GitaGraphs): Map<string, number> {
+  const of = new Map<string, number>();
+  const counts = new Map<string, number[]>();
+  g.graph.forEachNode((id, n) => {
+    if (n.type === "Chapter") of.set(id, partOfChapter(n.number));
+    if (n.type !== "Verse") return;
+    const part = partOfChapter(n.chapter);
+    of.set(id, part);
+    g.graph.forEachNeighbor(id, (other) => {
+      const c = counts.get(other) ?? [0, 0, 0];
+      c[part]++;
+      counts.set(other, c);
+    });
+  });
+  for (const [id, c] of counts) {
+    if (of.has(id)) continue;
+    const top = Math.max(...c);
+    if (top >= (c[0] + c[1] + c[2]) * 0.6) of.set(id, c.indexOf(top));
+  }
+  return of;
+}
+export function partColor(parts: Map<string, number>, id: string, dark: boolean): string {
+  const part = parts.get(id);
+  return part === undefined ? (dark ? "#5f5a52" : "#b9b3a9") : partColors(dark)[part];
+}

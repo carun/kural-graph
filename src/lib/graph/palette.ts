@@ -4,8 +4,8 @@ import type { GraphNode, NodeLabel } from "@/lib/types";
  * Visual encoding for node kinds — the single source of truth for the 3D cosmos, the 2D lineage, legends and chips.
  *
  * Identity is never carried by hue alone. Three categorical hues (blue · orange · aqua, validated all-pairs for
- * protan/deutan in both themes) mark the ontology a reader most needs to tell apart: concepts, afflictive states and
- * healing states. Everything else is separated by form: chapters are large amber hubs with a halo ring and permanent
+ * protan/deutan in both themes) mark the ontology a reader most needs to tell apart: concepts (the Kural's themes, roles
+ * and images), afflictive states (its vices and feelings) and healing states (its virtues). Everything else is separated by form: chapters are large amber hubs with a halo ring and permanent
  * labels; life situations are hollow rings; verses are small neutral points; characters and reflections are neutral.
  * DOM surfaces use the matching `--n-*` CSS variables so they follow the active theme automatically.
  */
@@ -13,13 +13,13 @@ export type NodeKind = "chapter" | "verse" | "concept" | "afflictive" | "healing
 export type NodeShape = "hub" | "point" | "sphere" | "ring" | "halo";
 
 export const KIND_META: Record<NodeKind, { label: string; shape: NodeShape; hint: string }> = {
-  chapter: { label: "Chapters", shape: "hub", hint: "The 18 adhyāyas, the structural hubs every verse belongs to" },
-  verse: { label: "Verses", shape: "point", hint: "All 701 ślokas, clustered around their chapter" },
-  concept: { label: "Concepts", shape: "sphere", hint: "Sanskrit ideas such as dharma, ātman and samatva" },
-  afflictive: { label: "Afflictive states", shape: "sphere", hint: "Fear, anger, grief and other states the Gita diagnoses" },
-  healing: { label: "Healing states", shape: "sphere", hint: "Peace, steadiness, faith: the states it cultivates" },
-  dilemma: { label: "Life situations", shape: "ring", hint: "Everyday dilemmas the verses speak to" },
-  character: { label: "Characters", shape: "sphere", hint: "Speakers and persons named in the dialogue" },
+  chapter: { label: "Chapters", shape: "hub", hint: "The 133 chapters, the hubs every couplet belongs to" },
+  verse: { label: "Couplets", shape: "point", hint: "All 1,330 couplets, clustered around their chapter" },
+  concept: { label: "Concepts", shape: "sphere", hint: "Themes, roles and images such as wealth, the minister and the lamp" },
+  afflictive: { label: "Vices and feelings", shape: "sphere", hint: "Anger, envy, grief and the other states the Kural warns of or gives voice to" },
+  healing: { label: "Virtues", shape: "sphere", hint: "Compassion, truthfulness, forgiveness: the states it commends" },
+  dilemma: { label: "Life situations", shape: "ring", hint: "Everyday situations the couplets speak to" },
+  character: { label: "Characters", shape: "sphere", hint: "The poet, and the three who speak in Part 3" },
   personal: { label: "My reflections", shape: "halo", hint: "Your journal entries, stored only in this browser" },
 };
 
@@ -89,11 +89,11 @@ export function typeName(n: GraphNode): string {
     case "Chapter":
       return "Chapter";
     case "Verse":
-      return "Verse";
+      return "Couplet";
     case "SanskritConcept":
-      return "Concept";
+      return { theme: "Theme", role: "Role", image: "Image" }[n.category] ?? "Concept";
     case "Emotion":
-      return n.valence === "healing" ? "Healing state" : "Afflictive state";
+      return n.valence === "healing" ? "Virtue" : (n as { polarity?: string }).polarity === "vice" ? "Vice" : "Feeling";
     case "LifeDilemma":
       return "Life situation";
     case "Character":

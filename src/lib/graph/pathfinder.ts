@@ -28,9 +28,9 @@ export function describeNode(n: GraphNode | undefined): string {
     case "Chapter":
       return `Chapter ${n.number} (${n.title})`;
     case "SanskritConcept":
-      return `${n.label} (${n.en})`;
+      return n.en ? `${n.label} (${n.en})` : n.label;
     case "Emotion":
-      return `${n.label} (${n.en})`;
+      return n.en ? `${n.label} (${n.en})` : n.label;
     default:
       return n.label;
   }
@@ -67,10 +67,10 @@ export function findSutraPath(g: GitaGraphs, a: string, b: string): SutraPath | 
 }
 
 export const SUTRA_PRESETS: { label: string; from: string; to: string }[] = [
-  { label: "Arjuna's collapse → Final surrender", from: "K_1.28", to: "K_18.66" },
-  { label: "Fear & anxiety → Equanimity", from: "emotion:bhaya", to: "concept:samatva" },
-  { label: "Anger → Inner peace", from: "emotion:krodha", to: "emotion:shanti" },
-  { label: "Restless mind → Liberation", from: "emotion:chanchalata", to: "concept:moksha" },
-  { label: "Grief → The undying Self", from: "emotion:shoka", to: "concept:atman" },
-  { label: "Burnout → Selfless action", from: "dilemma:burnout", to: "concept:nishkama-karma" },
+  { label: "The first couplet → Liberation", from: "K_1", to: "concept:liberation" },
+  { label: "Craving → Liberation", from: "emotion:craving", to: "concept:liberation" },
+  { label: "Worry → Equanimity", from: "emotion:worry", to: "emotion:equanimity" },
+  { label: "Fear → Courage", from: "emotion:fear", to: "emotion:courage" },
+  { label: "Arrogance → Humility", from: "emotion:arrogance", to: "emotion:humility" },
+  { label: "Humiliation → Honour", from: "emotion:humiliation", to: "emotion:honour" },
 ];

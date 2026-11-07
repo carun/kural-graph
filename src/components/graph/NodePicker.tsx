@@ -10,7 +10,7 @@ import { NodeGlyph } from "@/components/ui/primitives";
 const nodeTitle = (n: GraphNode) => (n.type === "Verse" ? `Kural ${n.ref}` : n.type === "Chapter" ? `Chapter ${n.number}: ${n.title}` : n.label);
 const nodeSub = (n: GraphNode) => (n.type === "Verse" ? n.snippet : "en" in n ? n.en : n.type === "Character" ? n.role : n.type === "LifeDilemma" ? n.desc : "");
 
-/** Accessible combobox over every node (verse references, labels, IAST, English names). */
+/** Accessible combobox over every node (verse references, labels, IAST, Tamil, English names). */
 export function NodePicker({ value, onChange, placeholder, label, exclude }: { value: string | null; onChange: (id: string | null) => void; placeholder: string; label: string; exclude?: (n: GraphNode) => boolean }) {
   const graphs = useGita((s) => s.graphs);
   const [q, setQ] = useState("");
@@ -22,7 +22,7 @@ export function NodePicker({ value, onChange, placeholder, label, exclude }: { v
   const index = useMemo(() => {
     if (!graphs) return [];
     // A saved thought is findable by any phrase in it, not only its short label.
-    return [...graphs.nodeById.values()].map((n) => ({ n, key: fold(`${nodeTitle(n)} ${"iast" in n ? n.iast : ""} ${"en" in n ? n.en : ""} ${n.type === "Verse" ? n.ref : ""} ${n.type === "PersonalThought" ? n.text : ""}`) }));
+    return [...graphs.nodeById.values()].map((n) => ({ n, key: fold(`${nodeTitle(n)} ${"iast" in n ? n.iast : ""} ${"sa" in n ? n.sa : ""} ${"en" in n ? n.en : ""} ${n.type === "Verse" ? n.ref : ""} ${n.type === "PersonalThought" ? n.text : ""}`) }));
   }, [graphs]);
 
   const results = useMemo(() => {
@@ -118,7 +118,7 @@ export function NodePicker({ value, onChange, placeholder, label, exclude }: { v
               </button>
             ))
           ) : (
-            <div className="px-3 py-2.5 text-[12.5px] text-text-3">No match. Try a verse number like 6.35, or a word like “fear”.</div>
+            <div className="px-3 py-2.5 text-[12.5px] text-text-3">No match. Try a couplet number like 380, or a word like “fear”.</div>
           )}
         </div>
       )}

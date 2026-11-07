@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Eye, EyeOff, Maximize, Minus, Pause, Plus, Rotate3d, Route, SlidersHorizontal, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { KIND_LAYER, KIND_META, KIND_ORDER, nodeKind, type NodeKind } from "@/lib/graph/palette";
+import { PART_NAMES, partColors } from "@/lib/graph/communities";
+import type { GraphColor } from "@/kural/graphShape";
 import { useCoarsePointer, useIsMobile } from "@/lib/hooks/useMedia";
 import { NodeGlyph } from "@/components/ui/primitives";
 import { DisplayPanel } from "./LensPanel";
@@ -16,7 +18,8 @@ function Legend({ onClose }: { onClose?: () => void }) {
   const layers = useGita((s) => s.layers);
   const toggleLayer = useGita((s) => s.toggleLayer);
   const graphs = useGita((s) => s.graphs);
-  const colorBy = useGita((s) => s.colorBy);
+  const colorBy = useGita((s) => s.colorBy as GraphColor);
+  const dark = useGita((s) => s.theme === "dark");
   const counts = useMemo(() => {
     const c = {} as Record<NodeKind, number>;
     graphs?.graph.forEachNode((_id, a) => {
@@ -24,6 +27,14 @@ function Legend({ onClose }: { onClose?: () => void }) {
       c[k] = (c[k] || 0) + 1;
     });
     return c;
+  }, [graphs]);
+  // Our concepts are three things, so they get a line like the one under mental states.
+  const conceptKinds = useMemo(() => {
+    const c: Record<string, number> = {};
+    graphs?.graph.forEachNode((_id, a) => {
+      if (a.type === "SanskritConcept") c[a.category] = (c[a.category] || 0) + 1;
+    });
+    return ["theme", "role", "image"].map((k) => `${c[k] || 0} ${k}s`).join(", ");
   }, [graphs]);
   // Afflictive and healing states share the Emotion layer: present them as one toggle with two marks.
   const rows = KIND_ORDER.filter((k) => k !== "healing");
@@ -60,19 +71,24 @@ function Legend({ onClose }: { onClose?: () => void }) {
               {isState && on && (
                 <div className="flex gap-3 pb-1 pl-9 text-[11.5px] text-text-3">
                   <span className="flex items-center gap-1.5">
-                    <NodeGlyph kind="afflictive" /> afflictive
+                    <NodeGlyph kind="afflictive" /> vices, feelings
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <NodeGlyph kind="healing" /> healing
+                    <NodeGlyph kind="healing" /> virtues
                   </span>
                 </div>
               )}
+              {k === "concept" && on && <div className="pb-1 pl-9 text-[11.5px] text-text-3">{conceptKinds}</div>}
             </li>
           );
         })}
       </ul>
       <p className="mt-2 border-t border-line pt-2 text-[11.5px] leading-4 text-text-3">
-        {colorBy === "label" ? "Larger points are more connected." : colorBy === "chapter" ? "Verses are shaded by chapter, light to deep. Shapes still mark each kind." : "Colours show communities. Shapes still mark each kind."}
+        {colorBy === "label" ? "Larger points are more connected." : colorBy === "chapter" ? "Couplets are shaded by chapter, light to deep. Shapes still mark each kind." : colorBy === "part" ? PART_NAMES.map((name, i) => (
+          <span key={name} className="mr-2 inline-flex items-center gap-1 whitespace-nowrap">
+            <span className="h-2 w-2 rounded-full" style={{ background: partColors(dark)[i] }} aria-hidden /> {name}
+          </span>
+        )) : "Colours show communities. Shapes still mark each kind."}
       </p>
       {onClose && (
         <button className="btn mt-3 w-full md:hidden" onClick={onClose}>
@@ -153,7 +169,7 @@ function FocusBar() {
           <button aria-pressed={graphMode === "focus"} onClick={() => setGraphMode("focus")} title="Just this and its connections, each labelled">
             Focus
           </button>
-          <button aria-pressed={graphMode === "world"} onClick={() => setGraphMode("world")} title="The whole Gita, with this highlighted">
+          <button aria-pressed={graphMode === "world"} onClick={() => setGraphMode("world")} title="The whole Kural, with this highlighted">
             Whole graph
           </button>
         </div>
@@ -170,7 +186,7 @@ function HighlightBanner() {
       {highlight && (
         <motion.div
           key={highlight.label}
-          className="pointer-events-none absolute inset-x-0 top-3 z-10 flex justify-center px-3 max-md:top-14"
+          className="pointer-events-none absolute inset-x-0 top-3 z-10 flex justify-center px-3 max-md:top-16"
           initial={{ opacity: 0, y: -6 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -6 }}
@@ -222,7 +238,7 @@ function GestureHint() {
       {show && (
         <motion.div className="pointer-events-none absolute inset-x-0 bottom-5 z-10 flex justify-center px-4" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 6 }}>
           <div className="hud pointer-events-auto flex items-center gap-3 py-2 pl-3.5 pr-1.5 text-[12.5px] text-text-2">
-            <span>{coarse ? "Drag to rotate, pinch to zoom, tap any point to open it." : "Drag to rotate, scroll to zoom, right-drag to pan. Click any point to open it."}</span>
+            <span>{coarse ? "Drag to rotate, pinch to zoom, tap any point to open it. Tap empty space to pause." : "Drag to rotate, scroll to zoom, right-drag to pan. Click any point to open it, or empty space to pause."}</span>
             <button className="btn btn-ghost btn-icon btn-sm" onClick={() => setShow(false)} aria-label="Dismiss hint">
               <X size={14} />
             </button>

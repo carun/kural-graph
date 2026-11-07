@@ -7,13 +7,16 @@ import { useGita } from "@/lib/store/useGitaStore";
 import { useAudio } from "@/lib/store/audioStore";
 import { RELATIONS, type RelationGroup } from "@/lib/graph/relations";
 import { isSuggestedEdge } from "@/lib/graph/graphStore";
-import { communityColor } from "@/lib/graph/communities";
+import { communityColor, partColor, partsOf } from "@/lib/graph/communities";
 import { KIND_META, NODE_HEX, nodeKind, typeName, type NodeKind } from "@/lib/graph/palette";
 import { useCoarsePointer, useIsDesktop, useIsMobile, useReducedMotion } from "@/lib/hooks/useMedia";
 import { loadLayout } from "@/lib/data/loader";
-import { RING_R, containForce, fixedPosition, linkDistance, linkStrength, placeThought } from "@/lib/graph/layoutParams";
+import { RING_R, WORLD, containForce, fixedPosition, linkDistance, linkStrength, placeThought, ringWave } from "@/lib/graph/layoutParams";
 import { egoPositions, pickEgo, type EgoCandidate, type EgoPick } from "@/lib/graph/ego";
 import { sheetPx } from "@/components/layout/SidePanel";
+import { LOTUS_VIEW, lotusPositions, useGraphShape, type GraphColor } from "@/kural/graphShape";
+import { ShapeMorph, drawLine, pointBatches } from "@/kural/shapeMorph";
+import { hubsNear, pickLabels, sizeLabel, type LabelView } from "@/kural/chapterLabels";
 import type { GraphNode, NodeLabel, RelationType } from "@/lib/types";
 
 type NodeT = { id: string; type: NodeLabel; label: string; data: GraphNode };
@@ -34,18 +37,18 @@ function deviceTier(): "low" | "high" {
 }
 /** Height of the graph toolbar row on phones; the visible strip for the graph starts below it. */
 const TOP_HUD = 56;
-const ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
-const HOME = { x: 0, y: 520, z: 820 };
+const HOME = { x: 0, y: 520 * WORLD, z: 820 * WORLD };
 /**
  * Home camera for a viewport: on portrait screens look down more steeply (the wheel reads rounder and uses the height)
  * and pull back just enough for the wheel to fit the width.
  */
-function homePosition(w: number, h: number) {
+function homePosition(w: number, h: number, lotus = false) {
   const aspect = w / h;
-  const k = Math.max(1, 1 / aspect);
-  const base = aspect < 0.9 ? { x: 0, y: 700, z: 640 } : HOME;
-  return { x: base.x * k, y: base.y * k, z: base.z * k };
+  const k = Math.max(1, 1 / aspect) * (lotus ? LOTUS_VIEW.zoom : 1);
+  const base = aspect < 0.9 ? { x: 0, y: 700 * WORLD, z: 640 * WORLD } : HOME;
+  return { x: base.x * k, y: base.y * k + (lotus ? LOTUS_VIEW.lift : 0), z: base.z * k };
 }
+const homeTarget = (lotus = false) => ({ x: 0, y: lotus ? LOTUS_VIEW.lift : 0, z: 0 });
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
 const smooth = (a: number, b: number, x: number) => {
@@ -55,7 +58,7 @@ const smooth = (a: number, b: number, x: number) => {
 
 /** "Read by position": verses coloured by chapter on one amber ramp, early chapters light, late ones deep. */
 function chapterTone(ch: number, dark: boolean) {
-  const t = (ch - 1) / 17;
+  const t = (ch - 1) / 132;
   return `#${new THREE.Color().setHSL(0.095, dark ? 0.62 : 0.7, dark ? 0.8 - t * 0.42 : 0.62 - t * 0.38).getHexString()}`;
 }
 
@@ -95,6 +98,7 @@ function ring(weight: number) {
 /** A node label (canvas text sprite); created lazily, the first time it has to be visible. */
 function makeLabel(spec: NonNullable<NodeVisual["labelSpec"]>, font: string, scale = 1): SpriteText {
   const l = new SpriteText(spec.text, spec.size * scale, spec.color);
+  l.fontSize = spec.fontSize;
   l.fontFace = font;
   l.fontWeight = spec.weight;
   l.strokeWidth = 0.9;
@@ -103,6 +107,8 @@ function makeLabel(spec: NonNullable<NodeVisual["labelSpec"]>, font: string, sca
   l.material.opacity = 0;
   l.visible = false;
   l.position.y = spec.y;
+  // Raycasting ignores visibility, and a faded-out label must not catch clicks meant for what is behind it.
+  l.raycast = (ray, hits) => void (l.visible && THREE.Sprite.prototype.raycast.call(l, ray, hits));
   return l;
 }
 
@@ -121,11 +127,13 @@ interface NodeVisual {
   ringSprite: THREE.Sprite | null;
   label: SpriteText | null;
   /** Not yet created: built the first time the label has to appear, so ~140 canvases aren't drawn at start-up. */
-  labelSpec: { text: string; size: number; color: string; weight: string; stroke: string; y: number } | null;
+  labelSpec: { text: string; size: number; fontSize: number; color: string; weight: string; stroke: string; y: number } | null;
   kind: NodeKind;
   color: string;
   r: number;
   labelOpacity: number;
+  /** Sized for the screen, like a chapter label, while it is part of a path or thread seen from far away. */
+  fitted?: boolean;
 }
 
 function radiusOf(d: GraphNode, degree: number, maxDegree: number) {
@@ -133,17 +141,17 @@ function radiusOf(d: GraphNode, degree: number, maxDegree: number) {
   const lift = 0.82 + 0.5 * Math.sqrt(Math.min(1, degree / Math.max(1, maxDegree)));
   switch (k) {
     case "chapter":
-      return 6.4;
+      return 5.4;
     case "verse":
-      return d.type === "Verse" && !d.canonical ? 1.3 : 1.65;
+      return d.type === "Verse" && !d.canonical ? 1.3 : 2.1;
     case "character":
       return d.id === "character:tiruvalluvar" ? 7.5 : d.id === "character:she" ? 5 : 3.2;
     case "dilemma":
-      return 4.2 * lift;
+      return 5.2 * lift;
     case "personal":
       return 3.6;
     default:
-      return 3.9 * lift;
+      return 4.8 * lift;
   }
 }
 
@@ -155,7 +163,7 @@ export default function CosmicGraph3D() {
   const graphVersion = useGita((s) => s.graphVersion);
   const layers = useGita((s) => s.layers);
   const edgeGroups = useGita((s) => s.edgeGroups);
-  const colorBy = useGita((s) => s.colorBy);
+  const colorBy = useGita((s) => s.colorBy as GraphColor);
   const communities = useGita((s) => s.communities);
   const highlight = useGita((s) => s.highlight);
   const selectedId = useGita((s) => s.selectedId);
@@ -173,11 +181,14 @@ export default function CosmicGraph3D() {
   const coarse = useCoarsePointer();
   const dark = theme === "dark";
   const [hoverId, setHoverId] = useState<string | null>(null);
+  const shape = useGraphShape((s) => s.shape);
 
   const visuals = useRef(new Map<string, NodeVisual>());
   const labelScale = useRef(1.3);
   labelScale.current = mobile ? 1.6 : 1.3;
   const nodeCache = useRef(new Map<string, GNode>());
+  const shownLayout = useRef<Map<string, Vec3> | null | undefined>(undefined);
+  const [morph] = useState(() => new ShapeMorph<GNode>(useGraphShape.getState().shape));
   const materials = useRef(new Map<string, THREE.Material>());
   const fontFace = useRef("Inter, system-ui, sans-serif");
   // Latest visual inputs for the frame loop; `dirty` asks it to re-apply materials and markers.
@@ -215,7 +226,9 @@ export default function CosmicGraph3D() {
 
   // ── layout: precomputed positions when available (no simulation at all), else the live force layout ──
   const [tier] = useState(deviceTier);
-  const [layout, setLayout] = useState<Map<string, Vec3> | null | undefined>(undefined);
+  const [galaxy, setLayout] = useState<Map<string, Vec3> | null | undefined>(undefined);
+  const [lotus, setLotus] = useState<Map<string, Vec3> | null>(null);
+  const layout = shape === "lotus" && galaxy && lotus ? lotus : galaxy;
   useEffect(() => {
     let live = true;
     loadLayout().then((doc) => {
@@ -225,6 +238,7 @@ export default function CosmicGraph3D() {
       const publicIds = graphs ? [...graphs.nodeById.values()].filter((n) => n.type !== "PersonalThought").map((n) => n.id) : [];
       const covered = m && publicIds.length ? publicIds.filter((id) => m.has(id)).length / publicIds.length : 0;
       setLayout(m && covered >= 0.95 ? m : null);
+      setLotus(doc && lotusPositions(doc));
     });
     return () => {
       live = false;
@@ -242,6 +256,9 @@ export default function CosmicGraph3D() {
   // ── graph data (re-filtered on layer changes; node objects are reused so positions persist) ──
   const data = useMemo(() => {
     if (!graphs || layout === undefined) return { nodes: [] as GNode[], links: [] as GLink[], ego: null as { id: string; pick: EgoPick } | null };
+    // A change of shape glides from where everything is now.
+    if (shownLayout.current && layout && shownLayout.current !== layout) morph.remember(nodeCache.current.values());
+    shownLayout.current = layout;
     const nodes: GNode[] = [];
     const at = (id: string): Vec3 | undefined => layout?.get(id) ?? (fixedPosition(graphs.nodeById.get(id) as { id: string; type: string; number?: number }) || undefined);
     graphs.graph.forEachNode((id, attr) => {
@@ -336,7 +353,7 @@ export default function CosmicGraph3D() {
     if (!fg) return;
     const bg = new THREE.Color(dark ? "#0d0c0b" : "#f5f4f1");
     const scene = fg.scene();
-    scene.fog = new THREE.Fog(bg, 620, 2100);
+    scene.fog = new THREE.Fog(bg, 620 * WORLD, 2100 * WORLD);
     const key = new THREE.DirectionalLight(0xfff6ea, dark ? 2.2 : 2.0);
     key.position.set(320, 720, 460);
     const rim = new THREE.DirectionalLight(dark ? 0x9fb4ff : 0xffffff, dark ? 0.55 : 0.4);
@@ -348,10 +365,12 @@ export default function CosmicGraph3D() {
     const pts: THREE.Vector3[] = [];
     for (let i = 0; i <= 256; i++) {
       const th = (i / 256) * Math.PI * 2;
-      pts.push(new THREE.Vector3(RING_R * Math.cos(th), 26 * Math.sin(th * 3), RING_R * Math.sin(th)));
+      pts.push(new THREE.Vector3(RING_R * Math.cos(th), ringWave(th), RING_R * Math.sin(th)));
     }
     const circle = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: dark ? 0xe3a44b : 0x9a5a0c, transparent: true, opacity: dark ? 0.16 : 0.2 }));
     group.add(circle);
+    circle.scale.y = 1 - morph.mix;
+    morph.ring = circle;
     scene.add(group);
 
     const r = fg.renderer();
@@ -363,16 +382,18 @@ export default function CosmicGraph3D() {
       circle.geometry.dispose();
       (circle.material as THREE.Material).dispose();
     };
-  }, [dark, tier]);
+  }, [dark, tier, morph]);
 
+  const parts = useMemo(() => (colorBy === "part" && graphs ? partsOf(graphs) : null), [colorBy, graphs]);
   const baseColor = useCallback(
     (n: GNode): string => {
       const d = n.data;
       if (colorBy === "community" && communities) return communityColor(communities, n.id, dark);
+      if (parts) return partColor(parts, n.id, dark);
       if (colorBy === "chapter" && d.type === "Verse") return chapterTone(d.chapter, dark);
       return NODE_HEX[dark ? "dark" : "light"][nodeKind(d)];
     },
-    [colorBy, communities, dark],
+    [colorBy, communities, parts, dark],
   );
 
   const material = useCallback(
@@ -406,11 +427,11 @@ export default function CosmicGraph3D() {
       const group = new THREE.Group();
       let mesh: THREE.Mesh | null = null;
       if (kind !== "dilemma") {
-        mesh = new THREE.Mesh(sphere(kind === "verse" ? "lo" : kind === "chapter" || r > 5 ? "hi" : "mid", tier === "low"), material(color, "base"));
+        mesh = new THREE.Mesh(sphere(kind === "verse" ? "lo" : "mid", tier === "low"), material(color, "base"));
         mesh.scale.setScalar(r);
-        // With a fixed layout the 701 verses are drawn in one instanced batch; this mesh stays (invisible, so it costs no
+        // With a fixed layout the points are drawn in instanced batches; this mesh stays (invisible, so it costs no
         // draw call) because raycasting ignores visibility, keeping hover, tooltips and clicks exactly as they were.
-        if (fixed && kind === "verse") mesh.visible = false;
+        if (fixed) mesh.visible = false;
         group.add(mesh);
       }
       let ringSprite: THREE.Sprite | null = null;
@@ -421,25 +442,20 @@ export default function CosmicGraph3D() {
         ringSprite.scale.set(s, s, 1);
         group.add(ringSprite);
       }
-      let label: SpriteText | null = null;
       let labelSpec: NodeVisual["labelSpec"] = null;
       if (kind !== "verse") {
         labelSpec = {
-          text: d.type === "Chapter" ? `${ROMAN[d.number]}  ${d.title}` : d.label,
+          text: d.type === "Chapter" ? `${d.number}  ${d.title}` : d.label,
           size: kind === "chapter" ? 8.5 : d.id === "character:tiruvalluvar" ? 6.4 : 5,
+          // Hundreds of these can end up in memory, so they are no sharper than they will ever be seen.
+          fontSize: tier === "low" ? 44 : kind === "chapter" ? 56 : 90,
           color: dark ? (kind === "chapter" ? "#edeae4" : "#cfc9bf") : kind === "chapter" ? "#1b1a17" : "#3a3732",
           weight: kind === "chapter" ? "600" : "500",
           stroke: dark ? "rgba(13,12,11,0.85)" : "rgba(245,244,241,0.9)",
           y: r + (kind === "chapter" ? 10.5 : 6.5),
         };
-        if (kind === "chapter") {
-          label = makeLabel(labelSpec, fontFace.current);
-          label.material.opacity = 0.92;
-          label.visible = true;
-          group.add(label);
-        }
       }
-      visuals.current.set(n.id, { group, mesh, ringSprite, label, labelSpec, kind, color, r, labelOpacity: label?.material.opacity ?? 0 });
+      visuals.current.set(n.id, { group, mesh, ringSprite, label: null, labelSpec, kind, color, r, labelOpacity: 0 });
       live.current.dirty = true;
       return group;
     },
@@ -531,6 +547,11 @@ export default function CosmicGraph3D() {
     }
   }, []);
 
+  const named = useRef<ReadonlySet<string>>(new Set());
+  const namedAt = useRef(0);
+  const mobileNow = useRef(mobile);
+  mobileNow.current = mobile;
+
   // ── per-frame: reconcile visual state, then label level-of-detail (chapters always, others by proximity/focus) ──
   useEffect(() => {
     let raf = 0;
@@ -543,6 +564,9 @@ export default function CosmicGraph3D() {
         return;
       }
       let fading = false;
+      const morphing = morph.step((n) => visuals.current.get(String(n.id))?.group.position.set(n.x ?? 0, n.y ?? 0, n.z ?? 0));
+      // The thick path lines belong to the force graph; a reheat with no ticks left makes it redraw them in place.
+      if (morphing && live.current.emphasis?.path) fg.d3ReheatSimulation();
       if (live.current.dirty) {
         live.current.dirty = false;
         reconcile();
@@ -551,28 +575,49 @@ export default function CosmicGraph3D() {
       const fog = fg.scene().fog as THREE.Fog | null;
       if (fog) {
         const target = (fg.controls() as { target?: THREE.Vector3 }).target;
-        const d = target ? cam.position.distanceTo(target) : 900;
+        const d = target ? cam.position.distanceTo(target) : 900 * WORLD;
         fog.near = d * 0.7;
-        fog.far = d + 1350;
+        fog.far = d + 1350 * WORLD;
       }
       const { emphasis: e, selectedId: sel, hoverId: hov } = live.current;
       const forceAll = !!live.current.ego || (!!e && e.nodes.size <= 60);
+      // As many names as fit without touching, nearest first, refreshed a few times a second.
+      const el = wrapRef.current;
+      const view: LabelView = { camera: cam as THREE.PerspectiveCamera, width: el?.clientWidth || 800, height: el?.clientHeight || 600, distance: 0, home: 0 };
+      view.distance = cam.position.distanceTo((fg.controls() as { target?: THREE.Vector3 }).target ?? p.set(0, 0, 0));
+      const hp = homePosition(view.width, view.height);
+      view.home = Math.hypot(hp.x, hp.y, hp.z);
+      if (performance.now() >= namedAt.current) {
+        namedAt.current = performance.now() + 160;
+        named.current = pickLabels(hubsNear(visuals.current, view), named.current, view, mobileNow.current ? 12 : 32);
+      }
       for (const [id, v] of visuals.current) {
         if (!v.label && !v.labelSpec) continue;
         const on = !e || e.nodes.has(id);
         let target: number;
         if (id === sel || id === hov) target = 1;
-        else if (!on) target = v.kind === "chapter" ? 0.18 : 0;
-        else if (v.kind === "chapter") target = 0.92;
+        else if (!on) target = v.kind === "chapter" && named.current.has(id) ? 0.18 : 0;
+        else if (v.kind === "chapter") target = named.current.has(id) || (e && forceAll) ? 0.92 : 0;
         else if (e && forceAll) target = 0.9;
         else {
           v.group.getWorldPosition(p);
-          target = 0.9 * (1 - smooth(320, 600, p.distanceTo(cam.position)));
+          target = named.current.has(id) ? 0.9 * (1 - smooth(320, 600, p.distanceTo(cam.position))) : 0;
         }
+        if (v.label?.visible && (v.kind === "chapter" || (e && forceAll && !live.current.ego))) {
+          sizeLabel(v.label, v.r, v.group.position, view);
+          v.fitted = true;
+        } else if (v.fitted && v.label && v.labelSpec && v.kind !== "chapter") {
+          v.fitted = false;
+          v.label.scale.set((v.label.scale.x / v.label.scale.y) * v.labelSpec.size, v.labelSpec.size, 1);
+          v.label.position.y = v.labelSpec.y;
+        }
+        // A halo too small to see is a draw call for nothing: on phones it waits until you come closer.
+        if (v.kind === "chapter" && v.ringSprite && tier === "low") v.ringSprite.visible = v.group.position.distanceTo(cam.position) < view.height * 2.4;
         if (v.labelOpacity === target) continue;
         if (!v.label) {
           if (target <= 0.02 || !v.labelSpec) continue;
           v.label = makeLabel(v.labelSpec, fontFace.current, live.current.ego?.has(id) ? labelScale.current : 1);
+          if (v.kind === "chapter") sizeLabel(v.label, v.r, v.group.position, view);
           v.group.add(v.label);
         }
         fading = true;
@@ -581,10 +626,17 @@ export default function CosmicGraph3D() {
         v.label.material.opacity = v.labelOpacity;
         v.label.visible = v.labelOpacity > 0.02;
       }
+      // The references of couplets on a path stay readable however far back the camera has to stand to frame it.
+      if (!live.current.ego) {
+        for (const [id, l] of marks.current.verseLabels) {
+          const v = visuals.current.get(id);
+          if (v) sizeLabel(l, v.r, v.group.position, view);
+        }
+      }
       // Sleep when nothing moves: no rotation, no label fading, no flowing path particles, no recent input or change.
       const rotating = !!(fg.controls() as { autoRotate?: boolean }).autoRotate;
       const flowing = !!live.current.emphasis?.path;
-      if (!rotating && !fading && !flowing && performance.now() > awakeUntil.current) {
+      if (!rotating && !fading && !flowing && !morphing && performance.now() > awakeUntil.current) {
         running = false;
         sleeping.current = true;
         fg.pauseAnimation();
@@ -603,7 +655,7 @@ export default function CosmicGraph3D() {
       running = false;
       startLoop.current = null;
     };
-  }, [reconcile]);
+  }, [reconcile, morph, tier]);
 
   // ── links ──
   const ink = dark ? "237,234,228" : "27,26,23";
@@ -636,30 +688,44 @@ export default function CosmicGraph3D() {
   const fgData = useMemo(() => {
     if (!fixed) return data;
     const path = emphasis?.path ? data.links.filter((l) => emphasis.edges.has(l.key)) : [];
+    // A thread is read in order rather than stored as links: join its couplets one to the next.
+    const order = highlight?.source === "thread" ? (highlight.order ?? []) : [];
+    order.slice(1).forEach((id, i) => {
+      const key = `ECHOES_VERSE|${order[i]}|${id}`;
+      if (nodeCache.current.has(id) && nodeCache.current.has(order[i]) && !path.some((l) => l.key === key)) path.push({ key, source: order[i], target: id, type: "ECHOES_VERSE", group: "curated" });
+    });
     return { nodes: data.nodes, links: path.map((l) => ({ ...l, source: nodeCache.current.get(String(l.source)) ?? l.source, target: nodeCache.current.get(String(l.target)) ?? l.target })) };
-  }, [fixed, data, emphasis]);
+  }, [fixed, data, emphasis, highlight]);
 
   // ── links, batched: one draw call per visual class instead of one per link (5,350 → ≤ 8) ──
   useEffect(() => {
     const fg = fgRef.current;
     if (!fg || !fixed || !data.links.length) return;
     const idOf = (x: GLink["source"]) => (typeof x === "object" && x ? String((x as GNode).id) : String(x));
-    const posOf = (id: string) => nodeCache.current.get(id);
-    const positions = new Float32Array(data.links.length * 6);
+    const nodeOf = (id: string) => nodeCache.current.get(id);
+    const ends: [GNode, GNode, number, number][] = [];
     const classes = new Map<string, number[]>();
-    const cls = (l: GLink) => (emphasis ? (emphasis.edges.has(l.key) ? (emphasis.kind === "highlight" ? "hi" : "focus") : "dim") : l.group === "personal" ? (l.suggested ? "suggested" : "personal") : l.group);
-    data.links.forEach((l, i) => {
-      const s = posOf(idOf(l.source));
-      const t = posOf(idOf(l.target));
+    const bowed = morph.mix > 0 || !!morph.from;
+    let segments = 0;
+    const cls = (l: GLink) => (emphasis ? (emphasis.edges.has(l.key) ? (emphasis.kind === "highlight" ? "hi" : "focus") : l.type === "SPOKE" ? "spoke" : "dim") : l.type === "SPOKE" ? "spoke" : l.group === "personal" ? (l.suggested ? "suggested" : "personal") : l.group);
+    data.links.forEach((l) => {
+      const s = nodeOf(idOf(l.source));
+      const t = nodeOf(idOf(l.target));
       if (!s || !t) return;
-      positions.set([s.fx ?? s.x ?? 0, s.fy ?? s.y ?? 0, s.fz ?? s.z ?? 0, t.fx ?? t.x ?? 0, t.fy ?? t.y ?? 0, t.fz ?? t.z ?? 0], i * 6);
+      // Links between ideas and couplets bow in the lotus; the short structural ones stay straight.
+      const n = l.group === "structure" || !bowed ? 1 : tier === "low" ? 4 : 7;
+      ends.push([s, t, segments, n]);
       const c = cls(l);
       const list = classes.get(c) ?? [];
-      list.push(i * 2, i * 2 + 1);
+      for (let k = segments; k < segments + n; k++) list.push(k * 2, k * 2 + 1);
       classes.set(c, list);
+      segments += n;
     });
+    const positions = new Float32Array(segments * 6);
+    for (const [a, b, at, n] of ends) drawLine(positions, at, a, b, n, morph.mix);
     const style: Record<string, [string, number]> = {
       structure: [ink, dark ? 0.028 : 0.03],
+      spoke: [ink, emphasis ? (dark ? 0.014 : 0.02) : dark ? 0.028 : 0.03],
       lexical: [ink, dark ? 0.032 : 0.034],
       curated: [ink, 0.085],
       personal: [ink, 0.55],
@@ -669,6 +735,7 @@ export default function CosmicGraph3D() {
       dim: [ink, dark ? 0.014 : 0.02],
     };
     const attr = new THREE.BufferAttribute(positions, 3);
+    morph.links = { attr, ends, spokes: null, spokeAlpha: style.spoke[1] };
     const group = new THREE.Group();
     group.name = "gv-links";
     for (const [c, idx] of classes) {
@@ -677,6 +744,8 @@ export default function CosmicGraph3D() {
       geo.setIndex(idx);
       const [rgb, opacity] = style[c] ?? style.curated;
       const line = new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color: new THREE.Color(`rgb(${rgb})`), transparent: true, opacity, depthWrite: false }));
+      // The poet's lines to his couplets make the star at the heart of the galaxy; the lotus has a stem there instead.
+      if (c === "spoke") (morph.links.spokes = line.material).opacity = opacity * (1 - morph.mix);
       line.frustumCulled = false;
       line.raycast = () => {};
       line.renderOrder = c === "hi" || c === "focus" ? 2 : 0;
@@ -691,7 +760,7 @@ export default function CosmicGraph3D() {
         (o.material as THREE.Material).dispose();
       }
     };
-  }, [fixed, data, emphasis, ink, accent, dark]);
+  }, [fixed, data, emphasis, ink, accent, dark, tier, morph]);
 
   // ── verses, instanced: one draw call for every verse in view (two while some are dimmed) instead of 701 ──
   useEffect(() => {
@@ -723,8 +792,10 @@ export default function CosmicGraph3D() {
       if (im.instanceColor) im.instanceColor.needsUpdate = true;
       im.frustumCulled = false;
       im.raycast = () => {};
+      morph.verses.push({ im, list });
       return im;
     };
+    morph.verses = [];
     const group = new THREE.Group();
     group.name = "gv-verses";
     if (solid.length) group.add(batch(solid, false));
@@ -738,7 +809,55 @@ export default function CosmicGraph3D() {
         o.dispose();
       }
     };
-  }, [fixed, data, emphasis, baseColor, dark, degree, selectedId, hoverId, tier]);
+  }, [fixed, data, emphasis, baseColor, dark, degree, selectedId, hoverId, tier, morph]);
+
+  // ── chapters and ideas, instanced too: one draw call per colour instead of one per point (his 134, our 440) ──
+  useEffect(() => {
+    const fg = fgRef.current;
+    if (!fg || !fixed) return;
+    const { group, batches } = pointBatches(
+      data.nodes,
+      (n) => {
+        const id = String(n.id);
+        if (n.type === "Verse" || n.type === "LifeDilemma") return null;
+        const state = emphasis && !emphasis.nodes.has(id) ? "dim" : emphasis && (id === selectedId || id === hoverId || emphasis.kind === "highlight") ? "focus" : "base";
+        return { color: baseColor(n), state, r: radiusOf(n.data, degree.of.get(id) ?? 0, degree.max) };
+      },
+      sphere("mid", tier === "low"),
+      material,
+    );
+    group.name = "gv-ideas";
+    morph.ideas = batches;
+    const scene = fg.scene();
+    scene.add(group);
+    return () => {
+      scene.remove(group);
+      for (const { im } of batches) im.dispose();
+    };
+  }, [fixed, data, emphasis, baseColor, material, degree, selectedId, hoverId, tier, morph]);
+
+  // ── the change of shape: every point glides to its place in the other shape, its lines and batches with it ──
+  useEffect(() => {
+    if (!morph.from) return;
+    morph.start(data.nodes, shape, reduceMotion ? 1 : 1700);
+    wake(2000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
+  // The camera moves with it, keeping the direction and zoom you chose, unless it is framing a selection or a path.
+  const shapeSeen = useRef(shape);
+  useEffect(() => {
+    const fg = fgRef.current;
+    if (!fg || shapeSeen.current === shape) return;
+    shapeSeen.current = shape;
+    if (useGita.getState().selectedId || useGita.getState().highlight) return;
+    const up = shape === "lotus" ? LOTUS_VIEW.lift : -LOTUS_VIEW.lift;
+    const k = shape === "lotus" ? LOTUS_VIEW.zoom : 1 / LOTUS_VIEW.zoom;
+    const target = (fg.controls() as { target?: THREE.Vector3 }).target ?? new THREE.Vector3();
+    const look = target.clone().setY(target.y + up);
+    const pos = fg.camera().position.clone().sub(target).multiplyScalar(k).add(look);
+    fg.cameraPosition({ x: pos.x, y: pos.y, z: pos.z }, { x: look.x, y: look.y, z: look.z }, reduceMotion ? 0 : 1700);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shape]);
 
   // ── render only while something changes: an idle frame costs nothing (cooler laptops, longer battery) ──
   const awakeUntil = useRef(0);
@@ -859,12 +978,13 @@ export default function CosmicGraph3D() {
     if (!fg) return;
     // Measure the element directly: the ResizeObserver hasn't reported yet on the first run.
     const el = wrapRef.current;
-    fg.cameraPosition(homePosition(el?.clientWidth || size.w, el?.clientHeight || size.h), { x: 0, y: 0, z: 0 }, 0);
+    const lotusHome = useGraphShape.getState().shape === "lotus";
+    fg.cameraPosition(homePosition(el?.clientWidth || size.w, el?.clientHeight || size.h, lotusHome), homeTarget(lotusHome), 0);
     const controls = fg.controls() as { enableDamping?: boolean; dampingFactor?: number; minDistance?: number; maxDistance?: number; screenSpacePanning?: boolean; rotateSpeed?: number; addEventListener?: (e: string, fn: () => void) => void };
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
     controls.minDistance = 40;
-    controls.maxDistance = 2600;
+    controls.maxDistance = 2600 * WORLD;
     controls.screenSpacePanning = true;
     controls.rotateSpeed = 0.7;
     controls.addEventListener?.("start", () => useGita.getState().autoRotate && useGita.getState().setAutoRotate(false));
@@ -922,7 +1042,7 @@ export default function CosmicGraph3D() {
     useGita.getState().setAutoRotate(false);
     wake(reduceMotion ? 400 : 1600);
     const { x = 0, y = 0, z = 0 } = n;
-    const dist = n.type === "Verse" ? 170 : n.type === "Chapter" ? 230 : 200;
+    const dist = n.type === "Verse" ? 240 : n.type === "Chapter" ? 300 : 240;
     const len = Math.hypot(x, y, z);
     const pos = len < 1 ? { x: 0, y: dist * 0.45, z: dist } : { x: x * (1 + dist / len), y: y * (1 + dist / len) + dist * 0.4, z: z * (1 + dist / len) };
     fg.cameraPosition(pos, { x, y, z }, reduceMotion ? 0 : 1100);
@@ -944,7 +1064,7 @@ export default function CosmicGraph3D() {
 
   useEffect(() => {
     const fg = fgRef.current;
-    if (!fg || !highlight?.order?.length || highlight.source !== "path") return;
+    if (!fg || !highlight?.order?.length || (highlight.source !== "path" && highlight.source !== "thread")) return;
     const ids = new Set(highlight.order);
     wake(1800);
     const t = setTimeout(() => fg.zoomToFit(reduceMotion ? 0 : 1200, 90, (n) => ids.has(String(n.id))), 120);
@@ -962,7 +1082,7 @@ export default function CosmicGraph3D() {
     const cam = fg.camera().position;
     if (cameraCmd.kind === "fit") fg.zoomToFit(ms, 40);
     else if (cameraCmd.kind === "home") {
-      fg.cameraPosition(homePosition(size.w, size.h), { x: 0, y: 0, z: 0 }, ms);
+      fg.cameraPosition(homePosition(size.w, size.h, shape === "lotus"), homeTarget(shape === "lotus"), ms);
     } else {
       const f = cameraCmd.kind === "zoomIn" ? 0.7 : 1.4;
       const next = target.clone().add(cam.clone().sub(target).multiplyScalar(f));
@@ -980,14 +1100,14 @@ export default function CosmicGraph3D() {
       const hint = `<div class="hint">Click to open</div>`;
       switch (d.type) {
         case "Verse":
-          return `<div class="gv-tip">${head}<div class="h">Kural ${d.ref}${d.canonical ? "" : " <span style='font-weight:400;color:var(--text-3)'>(not in the traditional 700)</span>"}</div><div class="deva">${esc(d.sa)}</div><div class="s">${esc(d.snippet)}</div>${hint}</div>`;
+          return `<div class="gv-tip">${head}<div class="h">Kural ${d.ref}</div><div class="deva">${esc(d.sa)}</div><div class="s">${esc(d.snippet)}</div>${hint}</div>`;
         case "Chapter":
-          return `<div class="gv-tip">${head}<div class="h">${d.number}. ${esc(d.title)}</div><div class="deva">${esc(d.name)}</div><div class="s">${esc(d.meaning)}. ${d.verseCount} verses.</div>${hint}</div>`;
+          return `<div class="gv-tip">${head}<div class="h">${d.number}. ${esc(d.title)}</div><div class="deva">${esc(d.name)}</div><div class="s">${esc(d.meaning)}. ${d.verseCount} couplets.</div>${hint}</div>`;
         case "SanskritConcept":
         case "Emotion":
-          return `<div class="gv-tip">${head}<div class="h">${esc(d.label)} <span class="deva" style="font-weight:400">${esc(d.sa)}</span></div><div class="s">${esc(d.en)}. ${esc(d.desc.slice(0, 140))}${d.desc.length > 140 ? "…" : ""}</div>${hint}</div>`;
+          return `<div class="gv-tip">${head}<div class="h">${esc(d.label)} <span class="deva" style="font-weight:400">${esc(d.sa)}</span></div><div class="s">${d.en ? `${esc(d.en)}. ` : ""}${esc(d.desc.slice(0, 140))}${d.desc.length > 140 ? "…" : ""}</div>${hint}</div>`;
         case "Character":
-          return `<div class="gv-tip">${head}<div class="h">${esc(d.label)} <span class="deva" style="font-weight:400">${esc(d.sa)}</span></div><div class="s">${esc(d.role)}${d.versesSpoken ? `. Speaks ${d.versesSpoken} verses.` : ""}</div>${hint}</div>`;
+          return `<div class="gv-tip">${head}<div class="h">${esc(d.label)} <span class="deva" style="font-weight:400">${esc(d.sa)}</span></div><div class="s">${esc(d.role)}${d.versesSpoken ? `. Speaks ${d.versesSpoken} couplets.` : ""}</div>${hint}</div>`;
         case "LifeDilemma":
           return `<div class="gv-tip">${head}<div class="h">${esc(d.label)}</div><div class="s">${esc(d.desc)}</div>${hint}</div>`;
         default:
@@ -1013,8 +1133,12 @@ export default function CosmicGraph3D() {
     setHoverId(null);
     useGita.getState().select(String(n.id));
   }, []);
+  // Pressing the canvas stops the rotation (a drag should not fight it), so a click goes by what it was before the press.
+  const rotatingAtPress = useRef(true);
   const onBackgroundClick = useCallback(() => {
-    if (useGita.getState().selectedId) useGita.getState().select(null);
+    const { selectedId: open, select, setAutoRotate } = useGita.getState();
+    if (open) select(null);
+    else setAutoRotate(!rotatingAtPress.current);
   }, []);
 
   return (
@@ -1023,6 +1147,7 @@ export default function CosmicGraph3D() {
       className="absolute inset-0"
       aria-label="3D knowledge graph. Use search or the legend to find nodes."
       role="img"
+      onPointerDownCapture={() => (rotatingAtPress.current = useGita.getState().autoRotate)}
       onPointerDown={() => wake(1500)}
       onPointerMove={() => wake(900)}
       onWheel={() => wake(1200)}

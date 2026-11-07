@@ -11,6 +11,9 @@ import { NodeGlyph, Notice } from "@/components/ui/primitives";
 import { NodePicker, nodeTitle } from "./NodePicker";
 import { RichText } from "@/components/chat/RichText";
 
+/** Our threads carry a reason for each couplet. */
+type ThreadWithSteps = { steps?: { n: number; why: string }[] };
+
 /**
  * Find a path (the Sūtra tracer): the strongest chain of relationships between any two nodes, lit up on the graph and
  * narrated step by step; plus the curated thematic threads that run through the text.
@@ -23,8 +26,8 @@ export function SutraPathFinder() {
   const select = useGita((s) => s.select);
   const setSettingsOpen = useGita((s) => s.setSettingsOpen);
   const conn = useConnection();
-  const [from, setFrom] = useState<string | null>("K_1.28");
-  const [to, setTo] = useState<string | null>("K_18.66");
+  const [from, setFrom] = useState<string | null>(SUTRA_PRESETS[0].from);
+  const [to, setTo] = useState<string | null>(SUTRA_PRESETS[0].to);
   const [path, setPath] = useState<SutraPath | null>(null);
   const [missing, setMissing] = useState(false);
   const [bridge, setBridge] = useState("");
@@ -63,7 +66,6 @@ export function SutraPathFinder() {
     for (let i = 1; i < nodes.length; i++) edges.add(`ECHOES_VERSE|${nodes[i - 1]}|${nodes[i]}`);
     setPath(null);
     setHighlight({ nodes: new Set(nodes), edges, label: `Thread: ${t.title}`, source: "thread", order: nodes });
-    useGita.getState().fly(nodes[0]);
   };
 
   return (
@@ -79,9 +81,9 @@ export function SutraPathFinder() {
 
       {tab === "trace" ? (
         <>
-          <p className="mb-3 text-[12.5px] leading-[1.45] text-text-3">Choose any two verses, ideas or states. GitaViśva finds the strongest chain of relationships that connects them.</p>
+          <p className="mb-3 text-[12.5px] leading-[1.45] text-text-3">Choose any two couplets, ideas or states. This finds the strongest chain of relationships that connects them.</p>
           <div className="space-y-1.5">
-            <NodePicker label="From" value={from} onChange={setFrom} placeholder="From: a verse, idea or feeling" />
+            <NodePicker label="From" value={from} onChange={setFrom} placeholder="From: a couplet, idea or feeling" />
             <div className="flex items-center gap-2 pl-1">
               <span className="h-px flex-1 bg-line" />
               <button className="btn btn-ghost btn-icon btn-sm" onClick={() => (setFrom(to), setTo(from))} aria-label="Swap start and end" title="Swap">
@@ -89,7 +91,7 @@ export function SutraPathFinder() {
               </button>
               <span className="h-px flex-1 bg-line" />
             </div>
-            <NodePicker label="To" value={to} onChange={setTo} placeholder="To: a verse, idea or feeling" />
+            <NodePicker label="To" value={to} onChange={setTo} placeholder="To: a couplet, idea or feeling" />
           </div>
           <button className="btn btn-primary mt-3 w-full" disabled={!from || !to} onClick={() => trace()}>
             <Route size={15} /> Show the path
@@ -169,7 +171,7 @@ export function SutraPathFinder() {
         </>
       ) : (
         <>
-          <p className="mb-3 text-[12.5px] leading-[1.45] text-text-3">Curated progressions of a single idea through the text. Choose one to light it up.</p>
+          <p className="mb-3 text-[12.5px] leading-[1.45] text-text-3">Curated progressions of a single idea through the book. Choose one to light it up and read why each couplet follows.</p>
           <ul className="space-y-1">
             {graphData?.threads.map((t) => (
               <li key={t.id}>
@@ -178,6 +180,22 @@ export function SutraPathFinder() {
                   <span className="num text-[12px] text-accent-text">{t.verses.join("  →  ")}</span>
                   <span className="text-[12px] leading-4 text-text-3">{t.note}</span>
                 </button>
+                {highlight?.label === `Thread: ${t.title}` && (
+                  <ol className="mb-2 mt-1.5 pl-2.5">
+                    {(t as ThreadWithSteps).steps?.map((step, i, all) => (
+                      <li key={step.n} className="relative pb-2 pl-5">
+                        {i < all.length - 1 && <span className="absolute bottom-0 left-[7px] top-4 w-px bg-accent-line" aria-hidden />}
+                        <span className="absolute left-[3px] top-[7px] flex h-2.5 w-2.5 items-center justify-center">
+                          <NodeGlyph kind="verse" />
+                        </span>
+                        <button className="text-left text-[13px] font-medium text-text hover:text-accent-text" onClick={() => select(`K_${step.n}`)}>
+                          Kural {step.n}
+                        </button>
+                        <div className="pt-0.5 text-[12px] leading-4 text-text-3">{step.why}</div>
+                      </li>
+                    ))}
+                  </ol>
+                )}
               </li>
             ))}
           </ul>
