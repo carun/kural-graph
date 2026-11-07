@@ -80,12 +80,10 @@ export function ChapterReader() {
   const [lessonDone] = useState(lessonDoneAt);
   const ch = versesDoc?.chapters.find((c) => c.number === chapterNo);
   const verses = versesDoc?.verses.filter((v) => v.chapter === chapterNo) || [];
-  const chapterPlaying = playing && audioMode === "chapter" && audioChapter === chapterNo;
+  // With no recording of its own, a chapter plays couplet by couplet, and this button still pauses that.
+  const chapterListening = audioChapter === chapterNo && (audioMode === "chapter" || !ch?.audio.length);
+  const chapterPlaying = playing && chapterListening;
 
-  useEffect(() => {
-    if (!audioVerse || !useAudio.getState().follow) return;
-    document.getElementById(`reader-${audioVerse}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }, [audioVerse]);
   // Showing a chapter continues at the last verse read in it; a chapter you have not been reading starts at its top.
   // (Derived from the saved position, not a "first mount" flag, so it also holds when effects run twice.)
   useEffect(() => {
@@ -97,6 +95,11 @@ export function ChapterReader() {
       scrollRef.current?.scrollTo({ top: 0 });
     }
   }, [chapterNo, lessonOpen]);
+  // After the one above, so that moving to a new chapter with the audio ends on the couplet being read.
+  useEffect(() => {
+    if (!audioVerse || !useAudio.getState().follow) return;
+    document.getElementById(`reader-${audioVerse}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [audioVerse, chapterNo]);
   // 133 chapters: keep the current one in sight in the list.
   useEffect(() => {
     const nav = navRef.current;
@@ -187,7 +190,7 @@ export function ChapterReader() {
             <div className="@min-[700px]:hidden">
               <ReadingOptions />
             </div>
-            <button className="btn" aria-pressed={chapterPlaying} onClick={() => (chapterPlaying ? audio.toggle() : audio.playChapter(ch.number))} title="Listen to the whole chapter">
+            <button className="btn" aria-pressed={chapterPlaying} onClick={() => (chapterListening ? audio.toggle() : audio.playChapter(ch.number))} title="Listen to the whole chapter">
               {chapterPlaying ? <Pause size={14} /> : <Play size={14} />}
               <span className="hidden sm:inline">{chapterPlaying ? "Pause" : "Listen"}</span>
             </button>

@@ -136,8 +136,18 @@ class AudioEngine {
     navigator.mediaSession.metadata = new MediaMetadata({ title, artist: "Tirukkural · Kural Graph", album });
   }
 
+  /** The chapter last followed, to tell the audio moving on from someone having gone to read elsewhere. */
+  private followed: number | null = null;
+
   private follow(id: string) {
-    if (st().follow) useGita.getState().fly(id);
+    if (!st().follow) return;
+    const g = useGita.getState();
+    g.fly(id);
+    const chapter = g.versesById.get(id)?.chapter;
+    if (!chapter) return;
+    // Read moves with the audio, unless someone there has gone to another chapter. Not openChapter: that would change the view.
+    if (g.view !== "adhyayana" || g.readerChapter === this.followed) useGita.setState({ readerChapter: chapter });
+    this.followed = chapter;
   }
 
   /** iOS only lets speech start from a tap, and the fallback starts after a failed load, so unlock it during the tap. */
@@ -153,10 +163,13 @@ class AudioEngine {
   private reading: { verseId: string; authorId: number; parts: string[]; voice: SpeechSynthesisVoice; lang: "en" | "hi" | "sa"; thenNext: boolean; tok: number } | null = null;
   /** Bumped by every stop, so an async step that resolves later knows it has been superseded. */
   private gen = 0;
+  /** How to carry on after a pause, while speech is paused. */
+  private resumeSpeech: (() => void) | null = null;
 
   private stopSpeech() {
     this.gen++;
     this.reading = null;
+    this.resumeSpeech = null;
     if (this.speaking && typeof speechSynthesis !== "undefined") speechSynthesis.cancel();
     this.speaking = false;
     if (st().reading) set({ reading: null });
@@ -197,6 +210,30 @@ class AudioEngine {
     set({ loading: false, playing: true, sourceLabel: `${voice.name}, this device's voice`, reading: { authorId, name, lang: text.lang, part: 0, parts: parts.length } });
     this.meta(`${name} on Kural ${v?.ref ?? verseId.slice(2)}`, "Read aloud");
     this.sayPart(0);
+  }
+
+  /**
+   * Stop the voice and keep how to carry on. speechSynthesis.pause() can't do this: on Android it ends the utterance,
+   * which runs on to the next step and leaves resume() nothing to resume. A passage is short enough to start again.
+   */
+  private pauseSpeech() {
+    const s = st();
+    const r = this.reading;
+    if (r) {
+      const part = s.reading?.part ?? 0;
+      r.tok++;
+      this.resumeSpeech = () => {
+        this.speaking = true;
+        set({ playing: true });
+        this.sayPart(part);
+      };
+    } else {
+      this.gen++;
+      this.resumeSpeech = () => s.verseId && void this.speak(s.verseId);
+    }
+    speechSynthesis.cancel();
+    this.speaking = false;
+    set({ playing: false });
   }
 
   private sayPart(i: number) {
@@ -325,25 +362,15 @@ class AudioEngine {
 
   toggle() {
     const s = st();
-    if (s.source === "commentary") {
-      if (speechSynthesis.speaking && !speechSynthesis.paused) {
-        speechSynthesis.pause();
-        set({ playing: false });
-      } else if (speechSynthesis.paused) {
-        speechSynthesis.resume();
-        set({ playing: true });
-      } else if (s.verseId && s.reading) void this.readCommentary(s.verseId, s.reading.authorId);
+    if (s.source === "commentary" || s.source === "speech") {
+      const resume = this.resumeSpeech;
+      this.resumeSpeech = null;
+      if (resume) resume();
+      else if (s.playing) this.pauseSpeech();
+      else if (s.loading) return;
+      else if (s.source === "speech" && s.verseId) void this.speak(s.verseId);
+      else if (s.verseId && s.reading) void this.readCommentary(s.verseId, s.reading.authorId, { thenNext: this.reading?.thenNext });
       else if (s.verseId) this.playVerse(s.verseId);
-      return;
-    }
-    if (s.source === "speech") {
-      if (speechSynthesis.speaking && !speechSynthesis.paused) {
-        speechSynthesis.pause();
-        set({ playing: false });
-      } else if (speechSynthesis.paused) {
-        speechSynthesis.resume();
-        set({ playing: true });
-      } else if (s.verseId) this.speak(s.verseId);
       return;
     }
     if (!this.el || !this.el.src) {
@@ -397,6 +424,8 @@ class AudioEngine {
     if (st().source === "commentary" && r) {
       // Jump to a passage: retire the current utterance's callbacks, then read from there.
       r.tok++;
+      this.resumeSpeech = null;
+      this.speaking = true;
       speechSynthesis.cancel();
       set({ playing: true });
       return this.sayPart(Math.min(r.parts.length - 1, Math.max(0, Math.floor(frac * r.parts.length))));
