@@ -33,6 +33,8 @@ export function SutraPathFinder() {
   const [bridge, setBridge] = useState("");
   const [busy, setBusy] = useState(false);
   const [tab, setTab] = useState<"trace" | "threads">("trace");
+  // A saved note stays in this browser, so a path through one can be shown here but not sent to a model.
+  const throughNote = !!path?.nodes.some((id) => graphs?.nodeById.get(id)?.type === "PersonalThought");
 
   const trace = (a = from, b = to) => {
     if (!graphs || !a || !b) return;
@@ -45,12 +47,12 @@ export function SutraPathFinder() {
 
   const explain = async () => {
     const ctx = useGita.getState().ragContext();
-    if (!path || !graphs || !ctx) return;
+    if (!path || !graphs || !ctx || throughNote) return;
     setBusy(true);
     setBridge("");
     const verses = path.nodes.filter((id) => id.startsWith("K_")).map((id) => ({ id, score: 1, reasons: [] }));
     const pick = (t: string) => path.nodes.filter((id) => graphs.nodeById.get(id)?.type === t).map((id) => ({ id, score: 1, reasons: [] }));
-    const pseudo = { verses, concepts: pick("SanskritConcept"), emotions: pick("Emotion"), dilemmas: pick("LifeDilemma"), chains: [], dialogues: [] } as unknown as Retrieval;
+    const pseudo = { verses, concepts: pick("SanskritConcept"), emotions: pick("Emotion"), dilemmas: pick("LifeDilemma"), chains: [], dialogues: [], tensions: [] } as unknown as Retrieval;
     const context = buildContext(ctx, pseudo) + "\n\n## Path (hop by hop)\n" + path.narration.map((s, i) => `${i + 1}. ${s}`).join("\n");
     const r = await streamFromApi({ mode: "bridge", question: `Explain the bridge from ${describeNode(graphs.nodeById.get(path.nodes[0]))} to ${describeNode(graphs.nodeById.get(path.nodes[path.nodes.length - 1]))}.`, context, onToken: (_t, full) => setBridge(full) });
     if (!r.ok) setBridge(`_${r.error}_`);
@@ -150,7 +152,9 @@ export function SutraPathFinder() {
                 })}
               </ol>
               <div className="mt-3">
-                {conn ? (
+                {throughNote ? (
+                  <p className="text-[12.5px] leading-[1.45] text-text-3">This path runs through your own note, which stays on this device, so a language model can’t explain it.</p>
+                ) : conn ? (
                   <button className="btn w-full" onClick={explain} disabled={busy}>
                     {busy ? <LoaderCircle size={14} className="animate-spin" /> : <Sparkles size={14} />}
                     {busy ? "Writing the explanation" : "Explain this path"}

@@ -1,7 +1,7 @@
 // Crisis detection, ported from the Kural site's reflect.test.ts. Every phrase here was once a real miss or a real false alarm.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { concernAcross, concernIn, SUPPORT } from "../src/kural/concern.ts";
+import { concernAcross, concernIn, SUPPORT, withoutConcerns } from "../src/kural/concern.ts";
 
 const SELF_HARM = [
   // reflect.test.ts: the phrases the first version missed
@@ -149,4 +149,28 @@ test("the helplines stay: Tele-MANAS, the others, and a line for anywhere", () =
   assert.match(abuse, /1-800-799-7233/);
   assert.match(abuse, /findahelpline\.com/);
   assert.match(abuse, /emergency number/);
+});
+
+test("a model is never shown what raised a self-harm concern, nor the reply to it", () => {
+  const talk = [
+    { role: "user", content: "What does the Kural say about patience?" },
+    { role: "assistant", content: "It says [K151]." },
+    { role: "user", content: "I want to die" },
+    { role: "assistant", content: "Please talk to someone." },
+    { role: "user", content: "What about friendship?" },
+    { role: "assistant", content: "It says [K781]." },
+  ];
+  assert.deepEqual(
+    withoutConcerns(talk).map((m) => m.content),
+    ["What does the Kural say about patience?", "It says [K151].", "What about friendship?", "It says [K781]."],
+  );
+});
+
+test("the rest of a conversation still reaches a model, abuse included, which it answers with support beside it", () => {
+  const talk = [
+    { role: "user", content: "my husband hits me" },
+    { role: "assistant", content: "That isn't your fault." },
+  ];
+  assert.deepEqual(withoutConcerns(talk), talk);
+  assert.deepEqual(withoutConcerns([]), []);
 });

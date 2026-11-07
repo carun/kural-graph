@@ -216,7 +216,8 @@ export function PersonalMindMapper() {
     const ctx = useGita.getState().ragContext();
     const d = useDraft.getState().draft;
     const base = d.suggestions;
-    if (!ctx || !base || !suggestionsFresh(d)) return;
+    // The words stay in this browser, even when the reader has chosen to see the couplets.
+    if (!ctx || !base || !suggestionsFresh(d) || concern === "self-harm") return;
     setBusy("deepen");
     let res: StreamResult;
     let offerable: (id: string) => boolean = () => false;
@@ -775,7 +776,7 @@ export function PersonalMindMapper() {
                 )}
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-2">
-                {conn ? (
+                {concern === "self-harm" ? null : conn ? (
                   <button className="btn" onClick={deepen} disabled={!!busy || stale || saving}>
                     {busy === "deepen" ? <LoaderCircle size={14} className="animate-spin" /> : <Sparkles size={14} />}
                     {busy === "deepen" ? "Exploring" : "Explore with AI"}

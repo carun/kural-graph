@@ -7,7 +7,7 @@ import { useConnection, useSettings } from "@/lib/store/settingsStore";
 import { keepSupplied, suppliedIn } from "@/lib/graphrag/citations";
 import { composeOfflineAnswer, retrieve, type Retrieval } from "@/lib/graphrag/engine";
 import { embedQuery } from "@/lib/graphrag/search";
-import { concernAcross, type Concern } from "@/lib/graphrag/safety";
+import { concernAcross, withoutConcerns, type Concern } from "@/lib/graphrag/safety";
 import { ShowAnyway, Support } from "@/kural/Support";
 import { askIntent, intentNote, isFollowUp } from "@/lib/graphrag/intent";
 import { themeLabel } from "@/lib/graphrag/reflect";
@@ -118,7 +118,7 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
     const uid = newId();
     const aid = newId();
     atBottom.current = true;
-    const history = useChat.getState().messages.slice(-6).map((m) => ({ role: m.role, content: m.content }));
+    const history = withoutConcerns(useChat.getState().messages).slice(-6).map((m) => ({ role: m.role, content: m.content }));
     // Support shows before any search, and stays for the rest of a conversation that raised a concern.
     const asked = useChat.getState().messages.filter((m) => m.role === "user").map((m) => m.content);
     setMessages((m) => [...m, { id: uid, role: "user", content: q }, { id: aid, role: "assistant", content: "", streaming: true, phase: "searching", concern: concernAcross(q, ...asked) }]);

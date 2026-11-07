@@ -23,6 +23,15 @@ export function concernAcross(...texts: (string | undefined)[]): Concern {
   return found.includes("self-harm") ? "self-harm" : found.includes("abuse") ? "abuse" : null;
 }
 
+/** What a model may see of a conversation: a question that raised a self-harm concern stays in this browser, and so does the reply to it. */
+export function withoutConcerns<M extends { role: string; content: string }>(messages: M[]): M[] {
+  let held = false;
+  return messages.filter((m) => {
+    if (m.role === "user") held = concernIn(m.content) === "self-harm";
+    return !held;
+  });
+}
+
 export interface Helpline {
   label: string;
   contact: string;
