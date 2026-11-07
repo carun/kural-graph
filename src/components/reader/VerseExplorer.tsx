@@ -234,7 +234,7 @@ function Connections({ verse }: { verse: Verse }) {
           </ul>
         </section>
       ))}
-      <p className="text-[12px] leading-4 text-text-3">An AI drew these links and wrote their reasons. No person has reviewed them yet.</p>
+      <p className="text-[12px] leading-4 text-text-3">Still in draft and needs review.</p>
     </div>
   );
 }
