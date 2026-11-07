@@ -26,6 +26,9 @@ export function speechText(e: Pick<CommentaryEntry, "text" | "lang">): string {
     .trim();
 }
 
+/** A translator's words go to the voice as written, without the cleaning above: only a verse's line breaks go. */
+export const translationText = (text: string) => text.replace(/\s+/g, " ").trim();
+
 /** Split into chunks of at most `max` characters, preferring sentence ends, then commas, then spaces. */
 export function chunkText(text: string, max = 220): string[] {
   const sentences = text.split(/(?<=[.!?;।॥])\s+/).filter((s) => s.trim());

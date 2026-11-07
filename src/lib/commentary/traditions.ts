@@ -69,12 +69,3 @@ export function commentatorOf(e: CommentaryEntry): Commentator {
   if (known) return { ...known, translator: e.translator || known.translator };
   return { tradition: "classical", name: e.author.replace(/^(Sri|Swami|Shri|Dr\.) /, ""), work: e.work, translator: e.translator };
 }
-
-/** Commentaries that read aloud well after a verse, for the player's menu: English and Hindi only. */
-export const SPOKEN_COMMENTARIES: { authorId: number; lang: "en" | "hi" }[] = [{ authorId: 2, lang: "en" }];
-
-export const spokenLabel = (authorId: number) => {
-  const c = COMMENTATORS[authorId];
-  const lang = SPOKEN_COMMENTARIES.find((s) => s.authorId === authorId)?.lang;
-  return c ? `${c.name}${lang ? `, ${LANG_NAME[lang]}` : ""}` : `Commentary ${authorId}`;
-};

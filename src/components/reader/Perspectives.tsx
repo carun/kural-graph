@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { AudioLines, ChevronDown, Columns2, Languages, LoaderCircle, Pause, Play, X } from "lucide-react";
+import { ChevronDown, Columns2, Languages, LoaderCircle, Pause, Play, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
-import { audio, setCommentaryAfter, useAudio } from "@/lib/store/audioStore";
+import { audio, useAudio } from "@/lib/store/audioStore";
 import { useConnection } from "@/lib/store/settingsStore";
 import { loadCommentary } from "@/lib/data/loader";
 import { cacheTranslation, getCachedTranslation } from "@/lib/store/personalStore";
 import { streamFromApi } from "@/lib/llm/browser";
 import { useModal } from "@/lib/hooks/useModal";
-import { LANG_NAME, SPOKEN_COMMENTARIES, TRADITIONS, commentatorOf, traditionById, type CommentaryLang } from "@/lib/commentary/traditions";
+import { LANG_NAME, TRADITIONS, commentatorOf, traditionById, type CommentaryLang } from "@/lib/commentary/traditions";
 import { findExcerpts, matcherFor, regexFor, splitHits, type WordMatcher } from "@/lib/commentary/lens";
 import type { CommentaryDoc, CommentaryEntry, Verse } from "@/lib/types";
 import { OldView, TAG_LABEL, withoutNote, type KuralVerse } from "@/kural/reader";
@@ -49,39 +49,24 @@ function Mark({ color }: { color: string }) {
   return <span aria-hidden className="mt-[7px] h-2 w-2 shrink-0 rounded-full" style={{ background: color }} />;
 }
 
-/** Listen to one commentary; offer it as the reading after every verse. */
+/** Listen to one commentary. */
 function ListenControls({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
   const state = useAudio((s) => (s.source === "commentary" && s.verseId === verse.id && s.reading?.authorId === e.authorId ? (s.playing ? "playing" : "paused") : null));
   const loadingHere = useAudio((s) => s.source === "commentary" && s.verseId === verse.id && s.loading);
-  const after = useAudio((s) => s.commentaryAfter);
   const [asked, setAsked] = useState(false);
   useEffect(() => {
     if (state || !loadingHere) setAsked(false);
   }, [state, loadingHere]);
-  const spoken = SPOKEN_COMMENTARIES.some((s) => s.authorId === e.authorId);
   const onListen = () => {
     if (state === "playing" || state === "paused") return audio.toggle();
     setAsked(true);
     void audio.readCommentary(verse.id, e.authorId);
   };
   return (
-    <>
-      <button className="btn btn-sm" onClick={onListen} aria-label={state === "playing" ? `Pause ${commentatorOf(e).name}` : `Listen to ${commentatorOf(e).name} read aloud`}>
-        {asked && loadingHere ? <LoaderCircle size={13} className="animate-spin" /> : state === "playing" ? <Pause size={13} /> : <Play size={13} />}
-        {state === "playing" ? "Pause" : state === "paused" ? "Resume" : "Listen"}
-      </button>
-      {spoken && (
-        <button
-          className="btn btn-sm"
-          aria-pressed={after === e.authorId}
-          onClick={() => setCommentaryAfter(after === e.authorId ? null : e.authorId)}
-          title="When couplets play one at a time, read this commentary aloud after each one"
-        >
-          <AudioLines size={13} />
-          {after === e.authorId ? "Reads after each couplet" : "After each couplet"}
-        </button>
-      )}
-    </>
+    <button className="btn btn-sm" onClick={onListen} aria-label={state === "playing" ? `Pause ${commentatorOf(e).name}` : `Listen to ${commentatorOf(e).name} read aloud`}>
+      {asked && loadingHere ? <LoaderCircle size={13} className="animate-spin" /> : state === "playing" ? <Pause size={13} /> : <Play size={13} />}
+      {state === "playing" ? "Pause" : state === "paused" ? "Resume" : "Listen"}
+    </button>
   );
 }
 

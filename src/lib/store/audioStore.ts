@@ -5,11 +5,11 @@ import { create } from "zustand";
 import { useGita } from "./useGitaStore";
 import { loadCommentary } from "@/lib/data/loader";
 import { COMMENTATORS } from "@/lib/commentary/traditions";
-import { chunkText, pickVoice, speechText } from "@/lib/commentary/speech";
+import { chunkText, pickVoice, speechText, translationText } from "@/lib/commentary/speech";
 
 export type AudioSource = "recitation" | "chapter" | "speech" | "commentary" | null;
 
-/** A commentary being read aloud by the device's voice. */
+/** A commentary or translation being read aloud by the device's voice. */
 export interface CommentaryReading {
   authorId: number;
   name: string;
@@ -19,11 +19,11 @@ export interface CommentaryReading {
 }
 
 const AFTER_KEY = "gitaviswa:commentary-after";
-const storedAfter = (): number | null => {
+const storedAfter = (): boolean => {
   try {
-    return Number(localStorage.getItem(AFTER_KEY)) || null;
+    return !!localStorage.getItem(AFTER_KEY);
   } catch {
-    return null;
+    return false;
   }
 };
 
@@ -61,8 +61,8 @@ interface AudioState {
   duration: number;
   approx: boolean;
   error?: string;
-  /** Commentator to read aloud after each verse (one-verse-at-a-time mode), or null. */
-  commentaryAfter: number | null;
+  /** Read the translation chosen on the page aloud after each verse (one-verse-at-a-time mode). */
+  commentaryAfter: boolean;
   reading: CommentaryReading | null;
 }
 
@@ -88,11 +88,11 @@ export const useAudio = create<AudioState>(() => ({
 const set = useAudio.setState;
 const st = () => useAudio.getState();
 
-/** Choose (or clear) the commentary read aloud after each verse. Remembered on this device. */
-export function setCommentaryAfter(authorId: number | null) {
-  set({ commentaryAfter: authorId });
+/** Switch the reading after each verse on or off. Remembered on this device. */
+export function setCommentaryAfter(on: boolean) {
+  set({ commentaryAfter: on });
   try {
-    if (authorId) localStorage.setItem(AFTER_KEY, String(authorId));
+    if (on) localStorage.setItem(AFTER_KEY, "1");
     else localStorage.removeItem(AFTER_KEY);
   } catch {}
 }
@@ -163,35 +163,39 @@ class AudioEngine {
   }
 
   /**
-   * Read a commentary aloud with the device's voice (English, Hindi; Sanskrit with a Hindi voice).
+   * Read a commentary or translation aloud with the device's voice (English; Tamil, "sa" in the data, with a Tamil voice).
    * `thenNext`: this is the "after each verse" step, so continue to the next verse when done.
    */
   async readCommentary(verseId: string, authorId: number, { thenNext = false }: { thenNext?: boolean } = {}) {
     if (typeof speechSynthesis === "undefined") return set({ error: "This browser can't read text aloud." });
-    const v = useGita.getState().versesById.get(verseId);
+    const g = useGita.getState();
+    const v = g.versesById.get(verseId);
     this.el?.pause();
     this.stopSpeech();
     const my = this.gen;
     set({ verseId, chapter: v?.chapter ?? null, mode: "verse", loading: true, playing: false, error: undefined, note: "", source: "commentary", sourceLabel: "", approx: false, currentTime: 0, duration: 0 });
-    const doc = await loadCommentary(verseId);
+    // A translator has no commentary entry: their words are in the verse, so reading them needs no network.
+    const doc = v?.commentaryAuthors.includes(authorId) ? await loadCommentary(verseId) : null;
     if (my !== this.gen) return;
     const e = doc?.commentaries.find((c) => c.authorId === authorId);
-    const name = COMMENTATORS[authorId]?.name ?? e?.author ?? "This commentator";
-    if (!e || e.none || e.seeAlso) {
+    const words = v?.translations.en?.[String(authorId)];
+    const text = e && !e.none && !e.seeAlso ? { lang: e.lang, said: speechText(e) } : !e && words ? { lang: "en" as const, said: translationText(words) } : null;
+    const name = COMMENTATORS[authorId]?.name ?? e?.author ?? g.versesDoc?.authors.find((a) => a.id === authorId)?.name ?? "This commentator";
+    if (!text) {
       set({ loading: false });
       if (thenNext) return this.afterCommentary();
       return set({ error: e?.seeAlso ? `${name} discusses this couplet under Kural ${e.seeAlso.slice(2)}.` : `${name} has no commentary on this couplet.` });
     }
     const voices = await voicesReady();
     if (my !== this.gen) return;
-    const voice = pickVoice(voices, e.lang);
-    if (!voice) return set({ loading: false, error: e.lang === "en" ? "No English voice is available on this device." : "This device has no Tamil voice, so this can't be read aloud." });
-    const parts = chunkText(speechText(e));
+    const voice = pickVoice(voices, text.lang);
+    if (!voice) return set({ loading: false, error: text.lang === "en" ? "No English voice is available on this device." : "This device has no Tamil voice, so this can't be read aloud." });
+    const parts = chunkText(text.said);
     if (!parts.length) return thenNext ? this.afterCommentary() : set({ loading: false });
-    this.reading = { verseId, authorId, parts, voice, lang: e.lang, thenNext, tok: 0 };
+    this.reading = { verseId, authorId, parts, voice, lang: text.lang, thenNext, tok: 0 };
     this.speaking = true;
-    set({ loading: false, playing: true, sourceLabel: `${voice.name}, this device's voice`, reading: { authorId, name, lang: e.lang, part: 0, parts: parts.length } });
-    this.meta(`${name} on Kural ${v?.ref ?? verseId.slice(2)}`, "Commentary, read aloud");
+    set({ loading: false, playing: true, sourceLabel: `${voice.name}, this device's voice`, reading: { authorId, name, lang: text.lang, part: 0, parts: parts.length } });
+    this.meta(`${name} on Kural ${v?.ref ?? verseId.slice(2)}`, "Read aloud");
     this.sayPart(0);
   }
 
@@ -306,7 +310,7 @@ class AudioEngine {
       if (my !== this.gen) return;
       this.speaking = false;
       set({ playing: false });
-      this.onEnded();
+      this.onEnded(tamil ? undefined : 1);
     };
     u.onerror = (ev) => {
       if (my !== this.gen || ev.error === "interrupted" || ev.error === "canceled") return;
@@ -405,10 +409,12 @@ class AudioEngine {
     if (this.el) this.el.playbackRate = rate;
   }
 
-  private onEnded() {
+  /** `alreadyRead`: whose English the device has just read in place of the Tamil, so it isn't read twice. */
+  private onEnded(alreadyRead?: number) {
     const s = st();
-    // Commentary after each verse: read it, then afterCommentary() continues.
-    if (s.mode === "verse" && s.commentaryAfter && s.verseId && s.source !== "commentary") return void this.readCommentary(s.verseId, s.commentaryAfter, { thenNext: true });
+    const chosen = useGita.getState().enAuthor;
+    // The chosen translation after each verse: read it, then afterCommentary() continues.
+    if (s.mode === "verse" && s.commentaryAfter && s.verseId && s.source !== "commentary" && chosen !== alreadyRead) return void this.readCommentary(s.verseId, chosen, { thenNext: true });
     if (!s.autoAdvance) return set({ playing: false });
     this.next();
   }

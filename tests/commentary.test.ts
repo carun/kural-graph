@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { findExcerpts, latinStemPattern, matcherFor, regexFor, splitHits, stemToDeva } from "../src/lib/commentary/lens.ts";
-import { chunkText, pickVoice, speechText } from "../src/lib/commentary/speech.ts";
+import { chunkText, pickVoice, speechText, translationText } from "../src/lib/commentary/speech.ts";
 
 test("stems in the holy-bhagavad-gita.org style convert to Devanagari", () => {
   assert.equal(stemToDeva("karm"), "कर्म");
@@ -51,6 +51,11 @@ test("excerpts are the sentences that discuss the word, trimmed around it when l
 test("Sivananda's word-by-word gloss is skipped and Devanagari removed before reading English aloud", () => {
   const t = speechText({ lang: "en", text: "2.47 कर्मणि in work? एव only? अधिकारः right? Commentary When you work, do not hope for the fruit? or for anything (BG 2.47)." });
   assert.equal(t, "When you work, do not hope for the fruit, or for anything (BG 2 47).");
+});
+
+test("a translator's words reach the voice as written: questions and brackets stay, only line breaks go", () => {
+  assert.equal(translationText("Goddess? or peafowl rare?\nShe whose ears rich jewels wear,"), "Goddess? or peafowl rare? She whose ears rich jewels wear,");
+  assert.equal(translationText("divisions of men [enemies, strangers and friends] is a virtue."), "divisions of men [enemies, strangers and friends] is a virtue.");
 });
 
 test("Hindi text keeps its sentences; long text is cut into sentence-sized chunks", () => {

@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { AudioLines, LoaderCircle, Pause, Play, RotateCcw, SkipBack, SkipForward, SlidersHorizontal, X } from "lucide-react";
 import { audio, setCommentaryAfter, useAudio } from "@/lib/store/audioStore";
 import { useGita } from "@/lib/store/useGitaStore";
-import { LANG_NAME, SPOKEN_COMMENTARIES, spokenLabel } from "@/lib/commentary/traditions";
+import { LANG_NAME } from "@/lib/commentary/traditions";
 
 const fmt = (s: number) => (isFinite(s) && s > 0 ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}` : "0:00");
 
@@ -28,6 +28,7 @@ export function AudioDock() {
   const a = useAudio();
   const versesDoc = useGita((s) => s.versesDoc);
   const select = useGita((s) => s.select);
+  const chosen = useGita((s) => s.versesDoc?.authors.find((x) => x.id === s.enAuthor)?.name);
   const v = a.verseId ? useGita.getState().versesById.get(a.verseId) : null;
   const ch = versesDoc?.chapters.find((c) => c.number === (v?.chapter ?? a.chapter));
   const reading = a.source === "commentary" ? a.reading : null;
@@ -46,7 +47,7 @@ export function AudioDock() {
   const title = reading && v ? `${reading.name} on Kural ${v.ref}` : a.mode === "chapter" && ch ? `Chapter ${ch.number} · ${ch.title}` : v ? `Kural ${v.ref}` : "Recitation";
   // Which voice this is, always in view: a person's recording, or the device.
   const voice = a.loading || a.error || a.source === "commentary" ? "" : a.source === "speech" ? "Read by your device" : "Recording";
-  const sub = a.error ? a.error : a.note ? a.note : reading ? `Commentary in ${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the commentary" : a.mode === "chapter" && v ? `Now at Kural ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
+  const sub = a.error ? a.error : a.note ? a.note : reading ? `${LANG_NAME[reading.lang]}, read by this device` : a.source === "commentary" && a.loading ? "Preparing the reading" : a.mode === "chapter" && v ? `Now at Kural ${v.ref}${a.approx ? " (approximate)" : ""}` : v ? v.sanskrit[0] : "";
   const devaSub = !a.error && !a.note && !reading && a.source !== "commentary" && a.mode !== "chapter";
   const notice = a.error || a.note;
 
@@ -139,18 +140,7 @@ export function AudioDock() {
                     </div>
                     <Toggle on={a.autoAdvance} onChange={(autoAdvance) => useAudio.setState({ autoAdvance })} label="Continue automatically" hint="Play the next couplet or chapter when one ends" />
                     <Toggle on={a.follow} onChange={(follow) => useAudio.setState({ follow })} label="Follow along" hint="Move the graph camera and reader to the couplet being read" />
-                    <label className="mt-2 block border-t border-line pt-2.5">
-                      <span className="block text-[13px] text-text">After each couplet, read a commentary</span>
-                      <span className="block text-[12px] leading-4 text-text-3">Read aloud by this device&apos;s voice, then on to the next couplet. One couplet at a time only.</span>
-                      <select className="field field-sm mt-1.5" value={a.commentaryAfter ?? ""} onChange={(e) => setCommentaryAfter(Number(e.target.value) || null)}>
-                        <option value="">No, just the couplets</option>
-                        {SPOKEN_COMMENTARIES.map((c) => (
-                          <option key={c.authorId} value={c.authorId}>
-                            {spokenLabel(c.authorId)}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
+                    <Toggle on={a.commentaryAfter} onChange={setCommentaryAfter} label="After each couplet, read the translation" hint={`${chosen}, as chosen on the page. Read by this device's voice, one couplet at a time only.`} />
                     {a.sourceLabel && <div className="mt-2 border-t border-line pt-2 text-[11.5px] text-text-3">Source: {a.sourceLabel}</div>}
                   </motion.div>
                 )}
