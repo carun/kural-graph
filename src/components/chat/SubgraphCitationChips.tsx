@@ -76,7 +76,7 @@ export function SubgraphCitationChips({ retrieval }: { retrieval: Retrieval }) {
             })}
           </div>
           <div className="num mt-2 text-[11.5px] text-text-3">
-            {retrieval.subgraph.edges.length} relationships, {retrieval.searchMode} search, {retrieval.timings.total.toFixed(0)} ms
+            {retrieval.subgraph.edges.length} relationships, {retrieval.searchMode === "devanagari" ? "Tamil" : retrieval.searchMode} search, {retrieval.timings.total.toFixed(0)} ms
           </div>
         </div>
       )}

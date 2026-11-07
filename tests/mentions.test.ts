@@ -26,6 +26,12 @@ test("a denied feeling is not attributed to the writer", () => {
   assert.equal(kind("Mujhe gussa nahi aata.", "gussa"), "negated");
 });
 
+test("not being able to stop is not a denial", () => {
+  assert.equal(kind("I can't stop gambling.", "gambling"), "mentioned");
+  assert.equal(kind("I don't gamble, and gambling is not for me.", "gambling"), "mentioned");
+  assert.equal(kind("I do not drink.", "drink"), "negated");
+});
+
 test("curiosity about a feeling is a topic, not a disclosure", () => {
   assert.equal(kind("I am not angry; I am curious about anger in the text.", "anger"), "mentioned");
   assert.equal(combineMentions([kind("I am not angry; I am curious about anger in the text.", "angry"), kind("I am not angry; I am curious about anger in the text.", "anger")]), "mentioned");

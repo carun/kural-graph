@@ -9,7 +9,7 @@ import { readTable } from "./markdownTable";
 // GraphRAG citations rendered as interactive chips.
 
 // Bracketed citations first; bare "BG 2.58" references (models don't always bracket them) are chips too.
-const INLINE = new RegExp(`(${CITATION_RE.source})|(\\bBG\\s?\\d{1,2}\\.\\d{1,2}(?:\\s?[-–]\\s?\\d{1,2})?\\b)|(\\*\\*[^*]+\\*\\*)|(\\*[^*\\n]+\\*)|(_[^_\\n]+_)|(\`[^\`]+\`)|(<small>[\\s\\S]*?</small>)`, "g");
+const INLINE = new RegExp(`(${CITATION_RE.source})|(\\b(?:Kural\\s|K)\\d{1,4}(?:\\s?[-–]\\s?\\d{1,4})?\\b)|(\\*\\*[^*]+\\*\\*)|(\\*[^*\\n]+\\*)|(_[^_\\n]+_)|(\`[^\`]+\`)|(<small>[\\s\\S]*?</small>)`, "g");
 
 function inline(text: string, key: string): ReactNode[] {
   const out: ReactNode[] = [];
@@ -21,7 +21,7 @@ function inline(text: string, key: string): ReactNode[] {
     const tok = m[0];
     const k = `${key}-${i++}`;
     if (tok.startsWith("[")) out.push(<CitationChip key={k} raw={tok} />);
-    else if (tok.startsWith("BG")) out.push(<CitationChip key={k} raw={`[${tok}]`} />);
+    else if (tok.startsWith("K")) out.push(<CitationChip key={k} raw={`[${tok}]`} />);
     else if (tok.startsWith("**")) out.push(<strong key={k}>{inline(tok.slice(2, -2), k)}</strong>);
     else if (tok.startsWith("`")) out.push(<code key={k} className="rounded bg-sunken px-1 text-[0.9em]">{tok.slice(1, -1)}</code>);
     else if (tok.startsWith("<small>")) out.push(<small key={k}>{inline(tok.slice(7, -8), k)}</small>);

@@ -275,7 +275,7 @@ export function ThoughtDetail({ nodeId }: { nodeId: string }) {
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
           <RelationSelect value={relation} onChange={setRelation} label="How the new connection relates" disabled={busy} />
           <div className="min-w-0 flex-1">
-            <NodePicker label="Connect this thought to" value={null} placeholder="A verse, idea, feeling or another thought" exclude={(n) => n.id === nodeId} onChange={(id) => id && void persist(addConnection(thought, id, relation, now()))} />
+            <NodePicker label="Connect this thought to" value={null} placeholder="A couplet, idea, feeling or another thought" exclude={(n) => n.id === nodeId} onChange={(id) => id && void persist(addConnection(thought, id, relation, now()))} />
           </div>
         </div>
         <p className="mt-1.5 flex items-center gap-1 text-[12px] text-text-3">

@@ -1,12 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { create } from "zustand";
-import { ArrowDown, ArrowUp, HeartHandshake, Info, NotebookPen, Square, Trash2, X } from "lucide-react";
+import { ArrowDown, ArrowUp, Info, NotebookPen, Square, Trash2, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { useConnection, useSettings } from "@/lib/store/settingsStore";
+import { keepSupplied, suppliedIn } from "@/lib/graphrag/citations";
 import { composeOfflineAnswer, retrieve, type Retrieval } from "@/lib/graphrag/engine";
 import { embedQuery } from "@/lib/graphrag/search";
-import { CRISIS_RESOURCES } from "@/lib/graphrag/safety";
+import { concernAcross, type Concern } from "@/lib/graphrag/safety";
+import { ShowAnyway, Support } from "@/kural/Support";
 import { askIntent, intentNote, isFollowUp } from "@/lib/graphrag/intent";
 import { themeLabel } from "@/lib/graphrag/reflect";
 import { useDraft } from "@/lib/store/draftStore";
@@ -24,7 +26,7 @@ interface Msg {
   retrieval?: Retrieval;
   via?: string;
   offline?: boolean;
-  crisis?: boolean;
+  concern?: Concern;
   streaming?: boolean;
   /** what the assistant is doing right now, shown while there is no text yet */
   phase?: "searching" | "writing";
@@ -43,31 +45,13 @@ export function askPartha(q: string) {
   useGita.getState().setChatOpen(true);
 }
 
-const SUGGESTIONS: { group: string; items: string[] }[] = [
-  { group: "For what you are going through", items: ["I'm anxious about my exam results and can't sleep.", "I lost my father last month. How do I carry this grief?"] },
-  { group: "To understand the teaching", items: ["What does the Gita say about anger?", "Who is a sthitaprajña?", "Explain the ladder of fall in 2.62 to 2.63."] },
-  { group: "To compare", items: ["Compare BG 2.47 with BG 18.66."] },
-];
+const CITES_COUPLET = /\[(?:K|Kural)\s*\d/;
 
-function CrisisCard() {
-  return (
-    <div className="rounded-2 border border-[color-mix(in_srgb,var(--danger)_40%,transparent)] bg-danger-soft p-3.5" role="alert">
-      <div className="flex items-center gap-2 text-danger">
-        <HeartHandshake size={16} />
-        <span className="text-[13px] font-semibold">You are not alone</span>
-      </div>
-      <p className="mt-1.5 text-[13px] leading-5 text-text-2">If you are thinking about ending your life or hurting yourself, please reach out to a person right now. You deserve real-time care.</p>
-      <ul className="mt-2 space-y-0.5 text-[13px]">
-        {CRISIS_RESOURCES.map((r) => (
-          <li key={r.label}>
-            <span className="text-text-3">{r.label}: </span>
-            <span className="font-semibold text-text">{r.contact}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+const SUGGESTIONS: { group: string; items: string[] }[] = [
+  { group: "For what you are going through", items: ["I tried hard and failed. How do I go on?", "I keep putting things off. What does the Kural say?"] },
+  { group: "To understand the teaching", items: ["What does the Kural say about anger?", "What is loving-kindness in the Kural?", "What does the Kural say about fate?"] },
+  { group: "To compare", items: ["Compare Kural 380 with Kural 620."] },
+];
 
 function Thinking({ phase }: { phase?: Msg["phase"] }) {
   return (
@@ -135,39 +119,55 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
     const aid = newId();
     atBottom.current = true;
     const history = useChat.getState().messages.slice(-6).map((m) => ({ role: m.role, content: m.content }));
-    setMessages((m) => [...m, { id: uid, role: "user", content: q }, { id: aid, role: "assistant", content: "", streaming: true, phase: "searching" }]);
+    // Support shows before any search, and stays for the rest of a conversation that raised a concern.
+    const asked = useChat.getState().messages.filter((m) => m.role === "user").map((m) => m.content);
+    setMessages((m) => [...m, { id: uid, role: "user", content: q }, { id: aid, role: "assistant", content: "", streaming: true, phase: "searching", concern: concernAcross(q, ...asked) }]);
 
     // 1–2 · hybrid retrieval + 2-hop traversal, entirely in the browser
     const vector = semantic && ctx.index?.hasVectors ? await embedQuery(q) : null;
     const intent = askIntent(q);
     const extraSeeds = carry.length && isFollowUp(q) ? carry.map((id, i) => ({ id, score: 0.9 - i * 0.15, via: "discussed just before" })) : undefined;
-    const retrieval = await retrieve(ctx, q, { vector, extraSeeds });
+    const retrieval = await retrieve(ctx, q, { vector, extraSeeds, careful: concernAcross(...asked) !== null });
     setCarry([...retrieval.verses.slice(0, 2).map((v) => v.id), ...retrieval.concepts.slice(0, 1).map((c) => c.id)]);
     // 3 · show on the canvas the subgraph the answer is grounded in
-    setHighlight({ nodes: new Set(retrieval.subgraph.nodes), edges: new Set(retrieval.subgraph.edges), label: `Answer to “${q.slice(0, 48)}${q.length > 48 ? "…" : ""}”`, source: "chat" });
-    patch(aid, { retrieval, crisis: retrieval.crisis, phase: "writing" });
+    // Nothing is lit after a self-harm concern, and those words are not repeated over the map.
+    setHighlight(retrieval.held ? null : { nodes: new Set(retrieval.subgraph.nodes), edges: new Set(retrieval.subgraph.edges), label: `Answer to “${q.slice(0, 48)}${q.length > 48 ? "…" : ""}”`, source: "chat" });
+    patch(aid, { retrieval, phase: "writing" });
 
     const offline = (note?: string) => patch(aid, { content: composeOfflineAnswer(ctx, retrieval), streaming: false, offline: true, via: "Composed from the graph", note });
 
-    if (!conn) {
+    // After a self-harm concern no model is called: the words stay in this browser and nothing is written back.
+    if (!conn || retrieval.held) {
       offline();
     } else {
       const ac = new AbortController();
       abortRef.current = ac;
-      const r = await streamFromApi({ mode: "chat", question: q, context: `${retrieval.context}\n\n# How to answer\n${intentNote(intent)}`, history, signal: ac.signal, onToken: (_t, full) => patch(aid, { content: full }) });
+      // A model can only cite what it was given, so a made-up or remembered reference never reaches the reader.
+      const supplied = suppliedIn(retrieval.context);
+      const r = await streamFromApi({ mode: "chat", question: q, context: `${retrieval.context}\n\n# How to answer\n${intentNote(intent)}`, history, signal: ac.signal, onToken: (_t, full) => patch(aid, { content: keepSupplied(full, supplied) }) });
       // Adopt the working model in this browser so the header and later requests skip the retired one.
       if (r.ok && r.fallbackFrom && r.model) useSettings.getState().setModel(conn.provider, r.model);
-      if (r.ok && r.text.trim())
+      const answer = r.ok ? keepSupplied(r.text, supplied).trim() : "";
+      // A reply whose every citation was invented has nothing left to stand on. One that cited nothing may just say the text is silent.
+      if (answer && (CITES_COUPLET.test(answer) || !CITES_COUPLET.test(r.text)))
         patch(aid, {
+          content: answer,
           streaming: false,
           via: `${PROVIDERS[conn.provider].name}, ${r.model}`,
-          note: r.fallbackFrom ? `“${r.fallbackFrom}” is no longer offered by ${r.provider}, so ${r.model} answered and is now selected in this browser. Update ${PROVIDERS[conn.provider].envModel} in .env (or choose a model in Settings) to make this permanent.` : undefined,
+          note: r.fallbackFrom ? `“${r.fallbackFrom}” is no longer offered by ${r.provider}, so ${r.model} answered and is now selected in this browser. You can choose a model in Settings.` : CITES_COUPLET.test(answer) ? undefined : "This reply cites no couplets, so treat it as commentary rather than the text.",
         });
       else if (ac.signal.aborted) patch(aid, { streaming: false, note: "Stopped." });
-      else offline(`${PROVIDERS[conn.provider].name} could not be reached (${r.error}). This answer was composed from the graph instead.`);
+      else offline(r.ok ? "The reply cited only couplets it wasn’t given, so this answer was composed from the graph instead." : `${PROVIDERS[conn.provider].name} could not be reached (${r.error}). This answer was composed from the graph instead.`);
       abortRef.current = null;
     }
     setBusy(false);
+  };
+
+  /** The reader chose to see what was held back after a concern. */
+  const reveal = (m: Msg) => {
+    const held = m.retrieval?.held;
+    const ctx = useGita.getState().ragContext();
+    if (held && ctx) patch(m.id, { retrieval: held, content: composeOfflineAnswer(ctx, held) });
   };
 
   /** Your own takeaway, in Reflect: the question and cited sources are kept as context (not as your view). */
@@ -225,7 +225,7 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
         {!messages.length && (
           <div>
             <h3 className="text-[17px] font-semibold tracking-[-0.01em] text-text">What would you like to understand?</h3>
-            <p className="mt-1.5 text-[13.5px] leading-[1.55] text-text-2">Ask about an idea, compare verses, or describe what you are going through. Each answer cites the verses it draws on and lights up that part of the graph.</p>
+            <p className="mt-1.5 text-[13.5px] leading-[1.55] text-text-2">Ask about an idea, compare couplets, or describe what you are going through. Each answer cites the couplets it draws on and lights up that part of the graph.</p>
             {!conn && (
               <div className="mt-4">
                 <Notice icon={<Info size={14} />} action={<button className="shrink-0 text-[12px] font-medium text-accent-text hover:underline" onClick={() => setSettingsOpen(true, "model")}>Connect</button>}>
@@ -247,7 +247,7 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
                 </div>
               ))}
             </div>
-            {!ready && <div className="mt-4 text-[12px] text-text-3">Preparing search over 701 verses…</div>}
+            {!ready && <div className="mt-4 text-[12px] text-text-3">Preparing search over 1,330 couplets…</div>}
           </div>
         )}
         <div className="space-y-6">
@@ -258,9 +258,9 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
               </div>
             ) : (
               <div key={m.id}>
-                {m.crisis && (
+                {m.concern && (
                   <div className="mb-3">
-                    <CrisisCard />
+                    <Support concern={m.concern} />
                   </div>
                 )}
                 {m.content ? (
@@ -271,10 +271,15 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
                 ) : (
                   <Thinking phase={m.phase} />
                 )}
+                {m.retrieval?.held && !m.streaming && (
+                  <div className="mt-2">
+                    <ShowAnyway onClick={() => reveal(m)} />
+                  </div>
+                )}
                 {m.note && <p className="mt-2 text-[12px] leading-[1.45] text-text-3">{m.note}</p>}
-                {m.retrieval && !m.streaming && <SubgraphCitationChips retrieval={m.retrieval} />}
-                {m.via && !m.streaming && <div className="mt-2 text-[11.5px] text-text-4">{m.via}</div>}
-                {!m.streaming && m.content && (
+                {m.retrieval && !m.retrieval.held && !m.streaming && <SubgraphCitationChips retrieval={m.retrieval} />}
+                {m.via && !m.retrieval?.held && !m.streaming && <div className="mt-2 text-[11.5px] text-text-4">{m.via}</div>}
+                {!m.streaming && m.content && !m.retrieval?.held && (
                   <div className="mt-2">
                     <button className="btn btn-sm max-sm:h-10" onClick={() => takeaway(m)} title="Write your own takeaway in Reflect. The question and cited sources are kept with it as context.">
                       <NotebookPen size={13} /> Save my takeaway
@@ -336,8 +341,8 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
           )}
         </div>
         <p className="mt-2 px-1 text-[11.5px] leading-4 text-text-3">
-          A contemplative companion, not a substitute for professional care.{" "}
-          {conn ? `Your question, the last few messages and the retrieved verses are sent to ${PROVIDERS[conn.provider].name}. Your saved thoughts are not.` : "Answers are composed in this browser; nothing is sent."}
+          This is an old book, read by an AI, and it can’t replace a person or professional care.{" "}
+          {conn ? `Your question, the last few messages and the retrieved couplets are sent to ${PROVIDERS[conn.provider].name}. Your saved thoughts are not.` : "Answers are composed in this browser; nothing is sent."}
         </p>
       </div>
     </div>

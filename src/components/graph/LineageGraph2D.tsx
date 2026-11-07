@@ -10,9 +10,14 @@ import { RELATIONS } from "@/lib/graph/relations";
 import { typeName } from "@/lib/graph/palette";
 import { useIsMobile } from "@/lib/hooks/useMedia";
 import type { Chain, GraphNode, RelationType, Verse, VersesDoc } from "@/lib/types";
+import type { Tension } from "@/kural/tensions";
 import { NodeGlyph } from "@/components/ui/primitives";
 import { NodePicker } from "./NodePicker";
 import { getReadingPosition } from "@/lib/store/readingPosition";
+import { allTensions, tensionsTouching } from "@/kural/tensions";
+import { TensionList, WalkAndTensionHud, WalkAndTensionPickers, WalkList, WalkNoteView, cardHeight, tensionLayout, tensionTitle, useTensionRequest, walkLayout } from "@/kural/walkFlow";
+import { isSensitive, safeFor, walkFrom } from "@/kural/walk";
+import { basisNote, linkWords } from "@/kural/wording";
 
 type Role = "up" | "core" | "down";
 interface LData extends Record<string, unknown> {
@@ -27,6 +32,16 @@ interface LData extends Record<string, unknown> {
   verse?: Verse;
   node?: GraphNode;
   kind: "verse" | "entity" | "school" | "core-verse" | "core-entity" | "heading";
+  /** The subtitle is a reason, shown whole: a clipped reason can say something the Kural doesn't. */
+  full?: boolean;
+  /** "Stated in the text." or "Inferred." */
+  basis?: string;
+  /** Replaces the type name over the core card. */
+  kicker?: string;
+  /** A wider card than the usual, for a walk. */
+  w?: number;
+  /** Opens this tension instead of a node. */
+  tension?: string;
 }
 type LNode = Node<LData>;
 
@@ -34,6 +49,7 @@ const W = 248;
 const H: Record<string, number> = { verse: 98, entity: 72, school: 78, heading: 26 };
 const CORE_W = { "core-verse": 400, "core-entity": 340 };
 const snippet = (s: string, n = 110) => (s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : s);
+const heightOf = (it: LData) => (it.full && it.subtitle ? cardHeight(it.subtitle, it.w ?? W, (it.kind === "verse" ? (it.sa ? 48 : 24) : 26) + (it.basis ? 18 : 0)) : H[it.kind]);
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 function itemFor(nb: Neighbor, role: Role, verb: string, versesById: Map<string, Verse>): LData {
@@ -42,25 +58,31 @@ function itemFor(nb: Neighbor, role: Role, verb: string, versesById: Map<string,
   // Solid lines for curated links and for connections the person kept; dashed for everything unconfirmed.
   const group = RELATIONS[nb.type].group;
   const curated = group === "curated" || (group === "personal" && !isSuggestedEdge(nb.props));
-  if (n.type === "Verse") return { role, nodeId: n.id, kind: "verse", title: `Kural ${n.ref}`, sa: n.sa, subtitle: why || snippet(n.snippet), relation: verb, curated, verse: versesById.get(n.id), node: n };
+  const reason = why ? { full: true, basis: basisNote(nb.props) } : {};
+  if (n.type === "Verse") return { role, nodeId: n.id, kind: "verse", title: `Kural ${n.ref}`, sa: n.sa, subtitle: why || snippet(n.snippet), relation: verb, curated, verse: versesById.get(n.id), node: n, ...reason };
   const sub = "en" in n ? n.en : n.type === "Chapter" ? n.title : n.type === "Character" ? n.role : n.type === "LifeDilemma" ? snippet(n.desc, 80) : undefined;
-  return { role, nodeId: n.id, kind: "entity", title: n.type === "Chapter" ? `Chapter ${n.number}` : n.label, sa: "sa" in n ? n.sa : n.type === "Chapter" ? n.name : undefined, subtitle: why || sub, relation: verb, curated, node: n };
+  return { role, nodeId: n.id, kind: "entity", title: n.type === "Chapter" ? `Chapter ${n.number}` : n.label, sa: "sa" in n ? n.sa : n.type === "Chapter" ? n.name : undefined, subtitle: why || sub, relation: verb, curated, node: n, ...reason };
 }
 
 function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Verse>, versesDoc: VersesDoc): LData[] {
   const n = g.nodeById.get(focus);
   if (!n) return [];
-  const all = neighbors(g, focus);
+  // Someone reading a couplet can follow it to a sensitive one, but an idea or a situation doesn't send them there.
+  const fenced = n.type === "Emotion" || n.type === "SanskritConcept" || n.type === "LifeDilemma";
+  const all = neighbors(g, focus).filter((x) => !fenced || x.node.type !== "Verse" || safeFor(g, x.id, n.type === "LifeDilemma" ? n.id : undefined));
   const pick = (types: RelationType[], outgoing: boolean, limit: number, role: Role, sort?: (a: Neighbor, b: Neighbor) => number) => {
     const list = all.filter((x) => types.includes(x.type) && x.outgoing === outgoing);
     if (sort) list.sort(sort);
-    return list.slice(0, limit).map((x) => itemFor(x, role, outgoing ? RELATIONS[x.type].verb : RELATIONS[x.type].inverse, versesById));
+    return list.slice(0, limit).map((x) => itemFor(x, role, linkWords(x.props, outgoing, outgoing ? RELATIONS[x.type].verb : RELATIONS[x.type].inverse), versesById));
   };
+  const tensionsHere = (): LData[] =>
+    tensionsTouching(g, all.filter((x) => x.node.type === "Verse" && !isSensitive(x.node)).map((x) => x.id), 3).map((t) => ({ role: "down", tension: t.key, kind: "entity", title: tensionTitle(t), subtitle: t.reason, relation: "where it pulls two ways", curated: true, full: true, basis: t.stated ? "Stated in the text." : "Inferred.", node: g.nodeById.get(t.a) }));
   const out: LData[] = [];
 
   if (n.type === "Verse") {
     const v = versesById.get(n.id);
     out.push({ role: "core", nodeId: n.id, kind: "core-verse", title: `Kural ${n.ref}`, verse: v, node: n });
+    out.push(...pick(["IN_TENSION_WITH"], true, 3, "down"), ...pick(["IN_TENSION_WITH"], false, 3, "down"));
     out.push(...pick(["SPOKE"], false, 1, "up"));
     out.push(...pick(["ANSWERS_QUESTION_IN"], true, 3, "up"));
     out.push(...pick(["ECHOES_VERSE"], false, 2, "up"));
@@ -69,6 +91,7 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
     out.push(...pick(["NEXT_VERSE"], false, 1, "up"));
     out.push(...pick(["ANSWERS_QUESTION_IN"], false, 4, "down"));
     out.push(...pick(["ECHOES_VERSE", "CULMINATES_IN"], true, 3, "down"));
+    out.push(...pick(["QUALIFIES"], false, 2, "up"), ...pick(["QUALIFIES"], true, 2, "down"));
     out.push(...pick(["HEALS", "CULTIVATES"], true, 4, "down"));
     out.push(...pick(["DEFINES_CONCEPT"], true, 3, "down"));
     if (out.filter((x) => x.role === "down" && x.node?.type === "SanskritConcept").length < 2) out.push(...pick(["MENTIONS_CONCEPT"], true, 2, "down"));
@@ -81,7 +104,7 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
         bySchool.set(a.school, [...(bySchool.get(a.school) || []), a.name.replace(/^(Sri|Swami|Shri|Dr\.) /, "")]);
       }
       // One card for the commentarial traditions: they are context, not lineage, and should not dominate the layout.
-      if (bySchool.size) out.push({ role: "down", kind: "school", title: `${bySchool.size} commentarial ${bySchool.size === 1 ? "tradition" : "traditions"}`, subtitle: [...bySchool.keys()].join(", "), relation: "is commented on in", curated: false });
+      if (bySchool.size) out.push({ role: "down", kind: "school", title: "Parimelazhagar’s commentary", subtitle: "His Tamil, and a paraphrase in English by an AI", relation: "is commented on in", curated: false });
     }
   } else {
     const sub = "en" in n ? n.en : n.type === "Chapter" ? n.meaning : n.type === "Character" ? n.role : n.type === "PersonalThought" ? n.text : undefined;
@@ -90,12 +113,12 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
     const versesFirst = (a: Neighbor, b: Neighbor) => (b.node.type === "Verse" ? 1 : 0) - (a.node.type === "Verse" ? 1 : 0);
     switch (n.type) {
       case "Emotion":
-        out.push(...pick(["CAUSES_STATE"], false, 3, "up"), ...pick(["EVOKES_STATE"], false, 3, "up"), ...pick(["DEPICTS_STATE"], false, 3, "up"));
-        out.push(...pick(["CAUSES_STATE"], true, 3, "down"), ...pick(["ANTIDOTE_TO"], false, 4, "down"), ...pick(["HEALS", "CULTIVATES"], false, 5, "down"));
+        out.push(...pick(["CAUSES_STATE"], false, 3, "up"), ...pick(["EVOKES_STATE"], false, 3, "up"), ...pick(["REQUIRES"], false, 3, "up"), ...pick(["DEPICTS_STATE"], false, 3, "up"));
+        out.push(...tensionsHere(), ...pick(["CAUSES_STATE"], true, 3, "down"), ...pick(["REQUIRES"], true, 3, "down"), ...pick(["OPPOSES"], true, 3, "down"), ...pick(["OPPOSES"], false, 3, "down"), ...pick(["ANTIDOTE_TO"], false, 4, "down"), ...pick(["ANTIDOTE_TO"], true, 4, "down"), ...pick(["HEALS", "CULTIVATES"], false, 5, "down"));
         break;
       case "SanskritConcept":
         out.push(...pick(["EXPOUNDS"], false, 2, "up"), ...pick(["CAUSES_STATE"], false, 2, "up"), ...pick(["DEFINES_CONCEPT"], false, 5, "up"));
-        out.push(...pick(["ANTIDOTE_TO"], true, 4, "down"), ...pick(["CAUSES_STATE"], true, 3, "down"), ...pick(["RESOLVED_THROUGH"], false, 4, "down"));
+        out.push(...tensionsHere(), ...pick(["ANTIDOTE_TO"], true, 4, "down"), ...pick(["CAUSES_STATE"], true, 3, "down"), ...pick(["REQUIRES"], true, 3, "down"), ...pick(["REQUIRES"], false, 3, "up"), ...pick(["OPPOSES"], true, 3, "down"), ...pick(["OPPOSES"], false, 3, "down"), ...pick(["RESOLVED_THROUGH"], false, 4, "down"), ...pick(["MENTIONS_CONCEPT"], false, 5, "down"));
         break;
       case "LifeDilemma":
         out.push(...pick(["EVOKES_STATE"], true, 4, "up"));
@@ -159,7 +182,7 @@ function layout(items: LData[]): { nodes: LNode[]; edges: Edge[] } {
     // pack whole groups into columns
     const cols: { groups: Group[]; h: number }[] = [];
     for (const g of gs) {
-      const gh = H.heading + g.items.reduce((s, it) => s + H[it.kind] + 8, 0);
+      const gh = H.heading + g.items.reduce((s, it) => s + heightOf(it) + 8, 0);
       const col = cols[cols.length - 1];
       if (!col || col.h + gh > maxCol) cols.push({ groups: [g], h: gh });
       else {
@@ -184,7 +207,7 @@ function layout(items: LData[]): { nodes: LNode[]; edges: Edge[] } {
             style: { stroke, strokeWidth: it.curated ? 1.4 : 1.1, strokeDasharray: it.curated ? undefined : "4 4" },
             markerEnd: { type: MarkerType.ArrowClosed, width: 14, height: 14, color: it.curated ? "var(--accent)" : "var(--text-4)" },
           });
-          y += H[it.kind] + 8;
+          y += heightOf(it) + 8;
         });
         y += 18;
       });
@@ -233,33 +256,40 @@ const Handles = () => (
 const card = "rounded-2 border border-line-2 bg-surface px-3 py-2.5 shadow-[var(--shadow-1)] transition-colors hover:border-line-3 hover:bg-surface-2 cursor-pointer";
 
 const HeadingLabel = memo(function HeadingLabel({ data }: NodeProps<LNode>) {
-  return <div className="w-[248px] cursor-default truncate pb-1 text-[12.5px] font-medium text-text-3">{data.title}</div>;
+  return (
+    <div className="w-[248px] cursor-default truncate pb-1 text-[12.5px] font-medium text-text-3" style={data.w ? { width: data.w } : undefined}>
+      {data.title}
+      {data.subtitle && <div className="truncate text-[12px] font-normal">{data.subtitle}</div>}
+    </div>
+  );
 });
 
 const VerseNodeView = memo(function VerseNodeView({ data }: NodeProps<LNode>) {
   return (
-    <div className={`${card} w-[248px]`}>
+    <div className={`${card} w-[248px]`} style={data.w ? { width: data.w } : undefined}>
       <Handles />
       <div className="flex items-center gap-2">
         <NodeGlyph kind="verse" />
         <span className="text-[13.5px] font-semibold text-text">{data.title}</span>
       </div>
       {data.sa && <div className="deva mt-0.5 truncate text-[14px] !leading-6 text-text-2">{data.sa}</div>}
-      {data.subtitle && <div className="line-clamp-2 text-[12.5px] leading-[1.05rem] text-text-3">{data.subtitle}</div>}
+      {data.subtitle && <div className={`${data.full ? "" : "line-clamp-2"} text-[12.5px] leading-[1.05rem] text-text-3`}>{data.subtitle}</div>}
+      {data.basis && <div className="mt-0.5 text-[11.5px] leading-4 text-text-4">{data.basis}</div>}
     </div>
   );
 });
 
 const EntityNodeView = memo(function EntityNodeView({ data }: NodeProps<LNode>) {
   return (
-    <div className={`${card} w-[248px]`}>
+    <div className={`${card} w-[248px]`} style={data.w ? { width: data.w } : undefined}>
       <Handles />
       <div className="flex items-center gap-2">
         {data.node && <NodeGlyph node={data.node} />}
         <span className="min-w-0 truncate text-[14px] font-semibold text-text">{data.title}</span>
         {data.sa && <span className="deva ml-auto shrink-0 truncate pl-1 text-[13px] !leading-5 text-text-3">{data.sa}</span>}
       </div>
-      {data.subtitle && <div className="mt-0.5 line-clamp-2 text-[12.5px] leading-[1.05rem] text-text-3">{data.subtitle}</div>}
+      {data.subtitle && <div className={`mt-0.5 ${data.full ? "" : "line-clamp-2"} text-[12.5px] leading-[1.05rem] text-text-3`}>{data.subtitle}</div>}
+      {data.basis && <div className="mt-0.5 text-[11.5px] leading-4 text-text-4">{data.basis}</div>}
     </div>
   );
 });
@@ -285,7 +315,7 @@ const CoreNodeView = memo(function CoreNodeView({ data }: NodeProps<LNode>) {
         <Handles />
         <div className="flex items-start justify-between gap-3">
           <div>
-            <div className="label">Verse</div>
+            <div className="label">Couplet</div>
             <div className="text-[20px] font-semibold tracking-[-0.01em] text-text">{data.title}</div>
           </div>
           <div className="flex gap-1">
@@ -319,7 +349,7 @@ const CoreNodeView = memo(function CoreNodeView({ data }: NodeProps<LNode>) {
       <Handles />
       <div className="flex items-center gap-2">
         {data.node && <NodeGlyph node={data.node} />}
-        <span className="label">{data.node ? typeName(data.node) : ""}</span>
+        <span className="label">{data.kicker ?? (data.node ? typeName(data.node) : "")}</span>
         <button className="btn btn-sm ml-auto" onClick={details}>
           <PanelRight size={13} /> Details
         </button>
@@ -336,14 +366,14 @@ const CoreNodeView = memo(function CoreNodeView({ data }: NodeProps<LNode>) {
   );
 });
 
-const nodeTypes = { verse: VerseNodeView, entity: EntityNodeView, school: SchoolNodeView, core: CoreNodeView, heading: HeadingLabel };
+const nodeTypes = { verse: VerseNodeView, entity: EntityNodeView, school: SchoolNodeView, core: CoreNodeView, heading: HeadingLabel, walknote: WalkNoteView };
 
 function useFocus() {
   const lineageFocus = useGita((s) => s.lineageFocus);
   const selectedId = useGita((s) => s.selectedId);
   const graphs = useGita((s) => s.graphs);
   const [history, setHistory] = useState<string[]>([]);
-  const focus = lineageFocus && graphs?.graph.hasNode(lineageFocus) ? lineageFocus : "K_2.47";
+  const focus = lineageFocus && graphs?.graph.hasNode(lineageFocus) ? lineageFocus : "K_1";
   const focusRef = useRef(focus);
   focusRef.current = focus;
   // Opening Lineage with nothing selected and nothing traced yet: start from the verse being read, not a fixed verse.
@@ -390,37 +420,38 @@ function useFocus() {
   return { focus, go, inspect, back, canGoBack: history.length > 0 };
 }
 
-function Toolbar({ focusNode, chain, setChainId, chainId, canGoBack, back, go, listView, setListView }: { focusNode?: GraphNode; chain: Chain | null | undefined; chainId: string | null; setChainId: (id: string | null) => void; canGoBack: boolean; back: () => void; go: (id: string) => void; listView: boolean | null; setListView: (on: boolean) => void }) {
+function Toolbar({ focusNode, chain, setChainId, chainId, tension, setTensionKey, walking, canGoBack, back, go, listView, setListView }: { focusNode?: GraphNode; chain: Chain | null | undefined; chainId: string | null; setChainId: (id: string | null) => void; tension: Tension | null | undefined; setTensionKey: (key: string | null) => void; walking: boolean; canGoBack: boolean; back: () => void; go: (id: string) => void; listView: boolean | null; setListView: (on: boolean) => void }) {
   const graphData = useGita((s) => s.graphData);
   const [picking, setPicking] = useState(false);
   return (
     <div className="z-10 flex shrink-0 flex-wrap items-center gap-2 border-b border-line bg-bg px-3 py-2 sm:px-4">
-      <button className="btn btn-ghost btn-icon" disabled={!canGoBack && !chain} onClick={() => (chain ? setChainId(null) : back())} aria-label="Back" title="Back">
+      <button className="btn btn-ghost btn-icon" disabled={!canGoBack && !chain && !tension} onClick={() => (tension ? setTensionKey(null) : chain ? setChainId(null) : back())} aria-label="Back" title="Back">
         <ArrowLeft size={16} />
       </button>
       <div className="flex min-w-0 flex-1 items-center gap-2.5">
-        {chain ? <Workflow size={15} className="shrink-0 text-accent-text" /> : focusNode && <NodeGlyph node={focusNode} />}
+        {tension || chain ? <Workflow size={15} className="shrink-0 text-accent-text" /> : focusNode && <NodeGlyph node={focusNode} />}
         <div className="min-w-0">
-          <div className="label">{chain ? "Causal chain" : focusNode?.type === "PersonalThought" ? "Map of your thought" : "Lineage of"}</div>
-          <div className="truncate text-[14px] font-semibold leading-5 text-text">{chain ? chain.title : focusNode ? (focusNode.type === "Verse" ? `Kural ${focusNode.ref}` : focusNode.type === "Chapter" ? `Chapter ${focusNode.number}: ${focusNode.title}` : focusNode.label) : ""}</div>
+          <div className="label">{tension ? "Where it pulls two ways" : chain ? "Causal chain" : walking ? "A walk through the book" : focusNode?.type === "PersonalThought" ? "Map of your thought" : "Lineage of"}</div>
+          <div className="truncate text-[14px] font-semibold leading-5 text-text">{tension ? tensionTitle(tension) : chain ? chain.title : focusNode ? (focusNode.type === "Verse" ? `Kural ${focusNode.ref}` : focusNode.type === "Chapter" ? `Chapter ${focusNode.number}: ${focusNode.title}` : focusNode.label) : ""}</div>
         </div>
       </div>
-      <div className="flex w-full items-center gap-2 sm:w-auto">
+      <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:flex-nowrap">
         {picking ? (
           <div className="flex min-w-0 flex-1 items-center gap-1 sm:w-72">
             <div className="min-w-0 flex-1">
-              <NodePicker label="Focus on" value={null} onChange={(id) => (id && (setChainId(null), go(id)), setPicking(false))} placeholder="Focus on a verse or idea" />
+              <NodePicker label="Focus on" value={null} onChange={(id) => (id && (setChainId(null), setTensionKey(null), go(id)), setPicking(false))} placeholder="Focus on a couplet or idea" />
             </div>
             <button className="btn btn-ghost btn-icon" onClick={() => setPicking(false)} aria-label="Cancel">
               <X size={15} />
             </button>
           </div>
         ) : (
-          <button className="btn flex-1 sm:flex-none" onClick={() => setPicking(true)}>
+          <button className="btn flex-1 max-sm:basis-[calc(50%-0.25rem)] sm:flex-none" onClick={() => setPicking(true)}>
             Change focus
           </button>
         )}
-        <select className="field field-sm !w-auto min-w-0 flex-1 sm:max-w-[15rem] sm:flex-none" aria-label="Causal chains" value={chainId || ""} onChange={(e) => setChainId(e.target.value || null)}>
+        <WalkAndTensionPickers walkId={walking && !chain && !tension ? focusNode?.id : undefined} tensionKey={tension?.key} onWalk={(id) => (setChainId(null), setTensionKey(null), go(id))} onTension={(key) => (setChainId(null), setTensionKey(key))} />
+        <select className="field field-sm !w-auto min-w-0 flex-1 max-sm:basis-[calc(50%-0.25rem)] sm:max-w-[15rem] sm:flex-none" aria-label="Causal chains" value={chainId || ""} onChange={(e) => (setTensionKey(null), setChainId(e.target.value || null))}>
           <option value="">Causal chains</option>
           {graphData?.chains.map((c) => (
             <option key={c.id} value={c.id}>
@@ -433,12 +464,12 @@ function Toolbar({ focusNode, chain, setChainId, chainId, canGoBack, back, go, l
             <List size={15} />
           </button>
         )}
-        {focusNode && !chain && (
+        {focusNode && !chain && !tension && (
           <button className="btn btn-icon hidden sm:inline-flex" onClick={() => (useGita.getState().setView("cosmos"), useGita.getState().fly(focusNode.id))} title="See in the 3D graph" aria-label="See in the 3D graph">
             <Orbit size={15} />
           </button>
         )}
-        {focusNode?.type === "Verse" && !chain && (
+        {focusNode?.type === "Verse" && !chain && !tension && (
           <button className="btn btn-icon hidden sm:inline-flex" onClick={() => useGita.getState().openChapter(focusNode.chapter)} title={`Read chapter ${focusNode.chapter}`} aria-label={`Read chapter ${focusNode.chapter}`}>
             <BookOpen size={15} />
           </button>
@@ -449,21 +480,22 @@ function Toolbar({ focusNode, chain, setChainId, chainId, canGoBack, back, go, l
 }
 
 /** Narrow canvases: the same lineage as a vertical reading list, far easier to use than a pannable diagram. */
-function LineageList({ items, go }: { items: LData[]; go: (id: string) => void }) {
+function LineageList({ items, go, openTensionKey }: { items: LData[]; go: (id: string) => void; openTensionKey: (key: string) => void }) {
   const alone = items.length <= 1;
   const groups = groupItems(items);
   const core = items.find((x) => x.role === "core");
   const enAuthor = useGita((s) => s.enAuthor);
   const Item = ({ it }: { it: LData }) => (
     <li>
-      <button className="row" disabled={!it.nodeId} onClick={() => it.nodeId && go(it.nodeId)}>
+      <button className="row" disabled={!it.nodeId && !it.tension} onClick={() => (it.tension ? openTensionKey(it.tension) : it.nodeId && go(it.nodeId))}>
         {it.node ? <NodeGlyph node={it.node} className="mt-1.5" /> : <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full border border-line-3" />}
         <span className="min-w-0 flex-1">
           <span className="flex items-baseline gap-2">
             <span className="truncate text-[13.5px] font-medium text-text">{it.title}</span>
             {it.sa && it.kind !== "verse" && <span className="deva truncate text-[12px] !leading-5 text-text-3">{it.sa}</span>}
           </span>
-          {it.subtitle && <span className="block line-clamp-2 text-[12px] leading-4 text-text-3">{it.subtitle}</span>}
+          {it.subtitle && <span className={`block ${it.full ? "" : "line-clamp-2"} text-[12px] leading-4 text-text-3`}>{it.subtitle}</span>}
+          {it.basis && <span className="block text-[11.5px] leading-4 text-text-4">{it.basis}</span>}
         </span>
       </button>
     </li>
@@ -528,7 +560,7 @@ function LineageList({ items, go }: { items: LData[]; go: (id: string) => void }
           </div>
         )}
         {side("down", "What follows from it")}
-        {groups.length === 0 && <p className="text-center text-[13px] text-text-3">No curated connections for this yet.</p>}
+        {groups.length === 0 && <p className="text-center text-[13px] text-text-3">No connections with reasons for this yet.</p>}
       </div>
     </div>
   );
@@ -554,7 +586,7 @@ function ChainList({ chain, go }: { chain: Chain; go: (id: string) => void }) {
                   {n && "en" in n && <span className="block text-[12px] text-text-3">{n.en}</span>}
                 </span>
               </button>
-              {i < chain.steps.length - 1 && <div className="pb-1 pl-2 text-[11.5px] text-text-3">gives rise to</div>}
+              {i < chain.steps.length - 1 && <div className="pb-1 pl-2 text-[11.5px] text-text-3">leads to</div>}
             </li>
           );
         })}
@@ -587,6 +619,15 @@ function Flow() {
     } catch {}
   };
   const [chainId, setChainId] = useState<string | null>(null);
+  const [tensionKey, setTensionKey] = useState<string | null>(null);
+  // A tension requested from elsewhere (an idea's details) opens once, as a chain does.
+  const pendingTension = useTensionRequest((s) => s.key);
+  useEffect(() => {
+    if (!pendingTension) return;
+    setChainId(null);
+    setTensionKey(pendingTension);
+    useTensionRequest.setState({ key: null });
+  }, [pendingTension]);
   // A chain requested from elsewhere (the home page) opens once, then the toolbar owns it.
   const pendingChain = useGita((s) => s.lineageChain);
   useEffect(() => {
@@ -609,12 +650,17 @@ function Flow() {
   const list = forcedList || preferList;
 
   const chain = chainId ? graphData?.chains.find((c) => c.id === chainId) : null;
+  const tension = useMemo(() => (tensionKey && graphs ? allTensions(graphs).find((t) => t.key === tensionKey) : null), [tensionKey, graphs]);
+  const walk = useMemo(() => (graphs ? walkFrom(graphs, focus) : null), [graphs, focus]);
+  const walking = !!walk?.feelings.length;
   const items = useMemo(() => (graphs && versesDoc ? buildLineage(graphs, focus, versesById, versesDoc) : []), [graphs, versesDoc, versesById, focus]);
   const { nodes, edges } = useMemo(() => {
     if (!graphs) return { nodes: [], edges: [] };
+    if (tension) return tensionLayout(graphs, tension, versesById) as { nodes: LNode[]; edges: Edge[] };
     if (chain) return chainLayout(graphs, chain);
+    if (walk && walking) return walkLayout(graphs, walk) as { nodes: LNode[]; edges: Edge[] };
     return layout(items);
-  }, [graphs, chain, items]);
+  }, [graphs, chain, tension, walk, walking, versesById, items]);
 
   // Fit when the diagram fits at a legible zoom; otherwise start at its left edge (the reading direction) and let the
   // reader pan right, rather than shrinking every card below readability.
@@ -622,9 +668,9 @@ function Flow() {
     const t = setTimeout(() => {
       const el = wrapRef.current;
       if (!el || !nodes.length) return;
-      const bottom = (n: LNode) => n.position.y + (n.type === "core" ? (n.data.kind === "core-verse" ? 320 : 190) : H[n.data.kind] ?? 80);
+      const bottom = (n: LNode) => n.position.y + (n.type === "core" ? (n.data.kind === "core-verse" ? 320 : 190) : heightOf(n.data) ?? 80);
       const minX = Math.min(...nodes.map((n) => n.position.x)) - 24;
-      const maxX = Math.max(...nodes.map((n) => n.position.x + (n.type === "core" ? 400 : W))) + 24;
+      const maxX = Math.max(...nodes.map((n) => n.position.x + (n.type === "core" ? 400 : (n.data.w ?? W)))) + 24;
       const minY = Math.min(...nodes.map((n) => n.position.y)) - 24;
       const maxY = Math.max(...nodes.map(bottom)) + 24;
       const cw = el.clientWidth;
@@ -641,17 +687,25 @@ function Flow() {
   }, [nodes, fitView, setViewport, list]);
 
   const focusNode = graphs?.nodeById.get(focus);
-  const empty = !chain && items.length <= 1;
+  const empty = !chain && !tension && !walking && items.length <= 1;
   const sample = items.find((x) => x.role === "down" && x.nodeId) || items.find((x) => x.role === "up" && x.nodeId);
   const coreItem = items.find((x) => x.role === "core");
   const example = sample && coreItem ? `${coreItem.title} ${sample.relation} ${sample.title}` : "";
 
   return (
     <div ref={outerRef} className="absolute inset-0 flex flex-col bg-bg">
-      <Toolbar focusNode={focusNode} chain={chain} chainId={chainId} setChainId={setChainId} canGoBack={canGoBack} back={back} go={go} listView={forcedList || chain ? null : preferList} setListView={setListView} />
+      <Toolbar focusNode={focusNode} chain={chain} chainId={chainId} setChainId={setChainId} tension={tension} setTensionKey={setTensionKey} walking={walking} canGoBack={canGoBack} back={back} go={go} listView={forcedList || chain || tension ? null : preferList} setListView={setListView} />
       {list ? (
         <div className="min-h-0 flex-1">
-          {chain ? (
+          {tension ? (
+            <TensionList
+              tension={tension}
+              go={(id) => {
+                setTensionKey(null);
+                go(id);
+              }}
+            />
+          ) : chain ? (
             <ChainList
               chain={chain}
               go={(id) => {
@@ -659,8 +713,10 @@ function Flow() {
                 go(id);
               }}
             />
+          ) : walk && walking ? (
+            <WalkList walk={walk} go={open} />
           ) : (
-            <LineageList items={items} go={open} />
+            <LineageList items={items} go={open} openTensionKey={setTensionKey} />
           )}
         </div>
       ) : (
@@ -671,8 +727,10 @@ function Flow() {
             nodeTypes={nodeTypes}
             onNodeClick={(_, n) => {
               const d = n.data as LData;
+              if (d.tension) return setTensionKey(d.tension);
               if (n.type === "core" || n.type === "heading" || !d.nodeId) return;
               setChainId(null);
+              setTensionKey(null);
               open(d.nodeId);
             }}
             fitView
@@ -687,29 +745,30 @@ function Flow() {
             <Background variant={BackgroundVariant.Dots} gap={24} size={1} color="var(--line-2)" />
             <Controls showInteractive={false} position="bottom-right" />
           </ReactFlow>
-          {!chain && example && (
+          {!chain && !tension && !walking && example && (
             <div className="hud pointer-events-none absolute bottom-3 left-3 hidden max-w-[calc(100%-5rem)] items-center gap-4 px-3 py-2 text-[12px] text-text-3 md:flex">
               <span className="min-w-0 truncate">
                 Read each heading from the centre: <span className="text-text-2">“{example}”</span>
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="h-0 w-5 border-t-[1.5px] border-accent-line" /> {thoughtFocus ? "kept by you" : "curated"}
+                <span className="h-0 w-5 border-t-[1.5px] border-accent-line" /> {thoughtFocus ? "kept by you" : "with a reason"}
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="h-0 w-5 border-t-[1.5px] border-dashed border-line-3" /> {thoughtFocus ? "suggested, not confirmed" : "word match or sequence"}
+                <span className="h-0 w-5 border-t-[1.5px] border-dashed border-line-3" /> {thoughtFocus ? "suggested, not confirmed" : "mention or sequence"}
               </span>
             </div>
           )}
+          {!chain && <WalkAndTensionHud walking={walking} tension={tension} />}
           {chain && (
             <div className="hud absolute bottom-3 left-3 max-w-[min(34rem,calc(100%-5rem))] px-4 py-3">
               <div className="num text-[12px] font-medium text-accent-text">{chain.verses.map((v) => v.replace("K_", "")).join("  →  ")}</div>
               <p className="serif mt-1 text-[14px] leading-[1.5] text-text-2">{chain.summary}</p>
-              <p className="mt-1.5 text-[12px] text-text-3">Each arrow reads “gives rise to”. Select a step to see its lineage.</p>
+              <p className="mt-1.5 text-[12px] text-text-3">Each arrow reads “leads to”. Select a step to see its lineage.</p>
             </div>
           )}
           {empty && (
             <div className="pointer-events-none absolute inset-x-0 top-6 flex justify-center">
-              <div className="hud px-4 py-2 text-[13px] text-text-2">{thoughtFocus ? "This thought stands on its own, and that is complete. Open Details to add a connection." : "No curated connections for this yet. Try another focus."}</div>
+              <div className="hud px-4 py-2 text-[13px] text-text-2">{thoughtFocus ? "This thought stands on its own, and that is complete. Open Details to add a connection." : "No connections with reasons for this yet. Try another focus."}</div>
             </div>
           )}
         </div>

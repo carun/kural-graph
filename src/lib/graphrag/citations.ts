@@ -1,4 +1,5 @@
 import type { GraphNode } from "@/lib/types";
+import { OLD_VIEW_NOTE, isSensitive } from "@/kural/walk";
 import { fold } from "./text";
 
 export interface Citation {
@@ -8,7 +9,7 @@ export interface Citation {
   ids: string[];
 }
 
-/** Matches [BG 2.47], [BG 2.55-72], [Concept: Nishkama Karma], [Emotion: Vishada], [Dilemma: …], [Character: …], [Chapter 2] */
+/** Matches [K380], [K371-380], [Concept: Fate], [Emotion: Anger], [Dilemma: …], [Character: …], [Chapter 2] */
 export const CITATION_RE = /\[((?:K|Kural)\s*\d{1,4}(?:\s*[-–]\s*\d{1,4})?|(?:Concept|Emotion|State|Dilemma|Character|Chapter)\s*:?\s*[^\]\n]{1,64})\]/g;
 
 export function resolveCitation(raw: string, nodes: GraphNode[], verseExists: (id: string) => boolean): Citation {
@@ -19,7 +20,9 @@ export function resolveCitation(raw: string, nodes: GraphNode[], verseExists: (i
     const b = kural[2] ? Number(kural[2]) : a;
     const ids: string[] = [];
     for (let v = a; v <= Math.min(b, a + 30); v++) if (verseExists(`K_${v}`)) ids.push(`K_${v}`);
-    return { raw, label: `Kural ${a}${b !== a ? `–${b}` : ""}`, kind: ids.length ? "verse" : "unknown", ids };
+    // The label is what every chip shows, so a sensitive couplet can't be cited without its note, model or no model.
+    const old = ids.some((id) => isSensitive(nodes.find((n) => n.id === id)));
+    return { raw, label: `Kural ${a}${b !== a ? `–${b}` : ""}${old ? `: ${OLD_VIEW_NOTE}` : ""}`, kind: ids.length ? "verse" : "unknown", ids };
   }
   const ch = inner.match(/^Chapter\s*:?\s*(\d{1,3})/i);
   if (ch) return { raw, label: `Chapter ${ch[1]}`, kind: "chapter", ids: [`CH_${Number(ch[1])}`] };
@@ -40,6 +43,19 @@ export function resolveCitation(raw: string, nodes: GraphNode[], verseExists: (i
   };
   const best = pool.map((n) => [n, score(n)] as const).filter(([, s]) => s > 0).sort((a, b) => b[1] - a[1])[0];
   return best ? { raw, label: best[0].label, kind, ids: [best[0].id] } : { raw, label: m[2].trim(), kind: "unknown", ids: [] };
+}
+
+/** The couplets a model was given: exactly those tagged in the context it received. */
+export function suppliedIn(context: string): Set<string> {
+  return new Set([...context.matchAll(/\[K(\d{1,4})\]/g)].map((m) => `K_${Number(m[1])}`));
+}
+
+/** Drops couplet tags outside what was supplied. A model can't then cite from memory, or reach a couplet held back from it. */
+export function keepSupplied(text: string, supplied: Set<string>): string {
+  return text.replace(/\s*\[(?:K|Kural)\s*(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?\]/g, (tag, a, b) => {
+    for (let n = Number(a); n <= Number(b ?? a); n++) if (!supplied.has(`K_${n}`)) return "";
+    return tag;
+  });
 }
 
 export function extractCitations(text: string, nodes: GraphNode[], verseExists: (id: string) => boolean): Citation[] {

@@ -104,7 +104,7 @@ export function exportThoughts(list: PersonalThought[]): string {
 
 /** Exactly what is stored, for recovery when it can't be read as entries. */
 export async function exportStoredRaw(): Promise<string> {
-  return JSON.stringify({ app: "GitaViswa", kind: "manas-darpan-raw", exportedAt: new Date().toISOString(), stored: (await get(THOUGHTS, db())) ?? null }, null, 2);
+  return JSON.stringify({ app: "Kural Graph", kind: "reflections-raw", exportedAt: new Date().toISOString(), stored: (await get(THOUGHTS, db())) ?? null }, null, 2);
 }
 
 /** Merges a backup file into what is stored. Validation happens before anything is written. */

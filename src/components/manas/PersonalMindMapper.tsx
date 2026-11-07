@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
-import { BookOpen, Check, ChevronDown, Copy, CornerDownRight, MessagesSquare, Search, Waypoints, Download, HeartHandshake, Link2, LoaderCircle, NotebookPen, Orbit, RotateCw, ShieldCheck, Sparkles, Trash2, TriangleAlert, Undo2, Upload, X } from "lucide-react";
+import { BookOpen, Check, ChevronDown, Copy, CornerDownRight, MessagesSquare, Search, Waypoints, Download, Link2, LoaderCircle, NotebookPen, Orbit, RotateCw, ShieldCheck, Sparkles, Trash2, TriangleAlert, Undo2, Upload, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { useDraft } from "@/lib/store/draftStore";
 import { useConnection } from "@/lib/store/settingsStore";
 import { exportStoredRaw, exportThoughts, importThoughts, purgeDeleted, restoreThoughts, trashThoughts, upsertThought } from "@/lib/store/personalStore";
 import { CHECK_IN_LABELS, connectionsWith, describeStorageError, searchThoughts, suggestionsFresh, thoughtFromDraft, uid } from "@/lib/store/thoughtModel";
 import { retrieve } from "@/lib/graphrag/engine";
-import { offlinePerspective, suggestConnections, themeLabel } from "@/lib/graphrag/reflect";
-import { detectCrisis, CRISIS_RESOURCES } from "@/lib/graphrag/safety";
+import { keepSupplied } from "@/lib/graphrag/citations";
+import { offerableIn, offlinePerspective, situationsIn, suggestConnections, themeLabel } from "@/lib/graphrag/reflect";
+import { concernAcross } from "@/lib/graphrag/safety";
+import { ShowAnyway, Support } from "@/kural/Support";
 import { streamFromApi, type StreamResult } from "@/lib/llm/browser";
 import { PROVIDERS } from "@/lib/llm/providers";
 import { thoughtNodeId } from "@/lib/graph/graphStore";
@@ -19,7 +21,7 @@ import { EmptyState, NodeGlyph, Notice, SectionLabel } from "@/components/ui/pri
 import { RelationSelect } from "./ThoughtDetail";
 import { useChat } from "@/components/chat/GraphRagChatbot";
 
-/** Ways to begin a note about a verse. Each sets how the note relates to the verse; disagreeing is as valid as agreeing. */
+/** Ways to begin a note about a couplet. Each sets how the note relates to the couplet; disagreeing is as valid as agreeing. */
 const VERSE_PROMPTS: { label: string; starter: string; relation: DraftLink["relation"] }[] = [
   { label: "I understand this as…", starter: "I understand this as ", relation: "relates_to" },
   { label: "I disagree, or I'm unsure…", starter: "I'm not sure about this, because ", relation: "questions" },
@@ -29,7 +31,7 @@ const VERSE_PROMPTS: { label: string; starter: string; relation: DraftLink["rela
 const EXAMPLES = [
   { kind: "An idea", text: "Could a city be designed around cooperation rather than competition?" },
   { kind: "Gratitude", text: "I'm grateful for the long walk with my father this evening. We hardly spoke, and it was enough." },
-  { kind: "A question about a verse", text: "In BG 2.47, how can effort matter if I am not supposed to care about the results?" },
+  { kind: "A question about a couplet", text: "In Kural 380, how can effort matter if fate gets there first?" },
   { kind: "Something difficult", text: "I keep replaying an argument and can't let the anger go." },
 ];
 
@@ -52,26 +54,6 @@ function readIds(x: unknown, has: (id: string) => boolean): { id: string; why?: 
   return x
     .map((i) => (typeof i === "string" ? { id: i } : i && typeof i === "object" && typeof (i as { id?: unknown }).id === "string" ? { id: (i as { id: string }).id, why: typeof (i as { why?: unknown }).why === "string" ? (i as { why: string }).why : undefined } : null))
     .filter((i): i is { id: string; why?: string } => !!i && has(i.id));
-}
-
-function CrisisNotice() {
-  return (
-    <div className="rounded-3 border border-[color-mix(in_srgb,var(--danger)_40%,transparent)] bg-danger-soft p-4" role="alert">
-      <div className="flex items-center gap-2 text-danger">
-        <HeartHandshake size={16} />
-        <span className="text-[13.5px] font-semibold">Please reach out to someone today</span>
-      </div>
-      <p className="mt-1.5 text-[13px] leading-5 text-text-2">What you are carrying sounds very heavy. A person can help right now:</p>
-      <ul className="mt-2 space-y-0.5 text-[13px]">
-        {CRISIS_RESOURCES.map((r) => (
-          <li key={r.label}>
-            <span className="text-text-3">{r.label}: </span>
-            <span className="font-semibold text-text">{r.contact}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
 }
 
 /** Optional, initially unanswered. Words rather than numbers; arrow keys move between choices. */
@@ -123,7 +105,7 @@ function CheckIn({ value, onChange, disabled }: { value?: number; onChange: (v?:
 
 type SaveState = { state: "idle" } | { state: "saving" } | { state: "saved"; id: string; kept: number; response: boolean } | { state: "error"; message: string };
 
-/** Reflect (Manas-Darpaṇa): keep a thought in your own words; optionally choose how it connects to the Gita. Stored only in this browser's IndexedDB. */
+/** Reflect: keep a thought in your own words; optionally choose how it connects to the Kural. Stored only in this browser's IndexedDB. */
 export function PersonalMindMapper() {
   const thoughts = useGita((s) => s.thoughts);
   const thoughtsStatus = useGita((s) => s.thoughtsStatus);
@@ -173,7 +155,10 @@ export function PersonalMindMapper() {
   const saving = save.state === "saving";
   const s = draft.suggestions;
   const stale = !!s && !suggestionsFresh(draft);
-  const crisis = detectCrisis(text) || (s ? detectCrisis(s.forText) : false);
+  const concern = concernAcross(text, s?.forText);
+  // After a self-harm concern, everything found waits until the reader asks for it, for the words it was found for.
+  const [seenAnyway, setSeenAnyway] = useState<string | null>(null);
+  const heldBack = concern === "self-harm" && s?.forText !== seenAnyway;
   const links = draft.links ?? [];
   // A response's link to the earlier thought is shown in the banner above the composer, not with the other connections.
   const responseTo = draft.origin?.kind === "thought" ? draft.origin.thoughtId : null;
@@ -234,13 +219,16 @@ export function PersonalMindMapper() {
     if (!ctx || !base || !suggestionsFresh(d)) return;
     setBusy("deepen");
     let res: StreamResult;
+    let offerable: (id: string) => boolean = () => false;
+    let verseIds: string[] = [];
     try {
       const list = (type: string) => ctx.data.nodes.filter((n) => n.type === type).map((n) => `${n.id} — ${n.label}${"en" in n ? ` (${n.en})` : ""}`);
       const r = await retrieve(ctx, base.forText, { limitVerses: 10 });
-      const verseIds = [...new Set([...base.candidates.filter((c) => c.targetId.startsWith("K_")).map((c) => c.targetId), ...r.verses.map((v) => v.id)])].slice(0, 12);
+      offerable = offerableIn(ctx.graphs, situationsIn(ctx, base.forText));
+      verseIds = [...new Set([...base.candidates.filter((c) => c.targetId.startsWith("K_")).map((c) => c.targetId), ...(r.held ?? r).verses.map((v) => v.id)])].filter(offerable).slice(0, 12);
       const verseList = verseIds.map((id) => `${id} — ${(ctx.versesById.get(id)?.translations.en?.[String(ctx.versesDoc.meta.defaults.en)] || "").replace(/\s+/g, " ").slice(0, 160)}`);
       const context = `Emotion ids:\n${list("Emotion").join("\n")}\n\nDilemma ids:\n${list("LifeDilemma").join("\n")}\n\nConcept ids:\n${list("SanskritConcept").join("\n")}\n\nCandidate verses:\n${verseList.join("\n")}\n\nThe person's note:\n${base.forText}`;
-      res = await streamFromApi({ mode: "analyze", question: "Suggest where this note might meet the Gita.", context });
+      res = await streamFromApi({ mode: "analyze", question: "Suggest where this note might meet the Kural.", context });
     } catch {
       res = { ok: false, text: "", error: "The language model couldn't be reached. Your writing and the offline suggestions are unchanged." };
     } finally {
@@ -249,7 +237,7 @@ export function PersonalMindMapper() {
     if (!res.ok) return setNotice({ text: res.error || "The language model could not explore this note.", tone: "danger" });
     try {
       const j = JSON.parse(res.text.slice(res.text.indexOf("{"), res.text.lastIndexOf("}") + 1)) as Record<string, unknown>;
-      const has = (id: string) => ctx.graphs.graph.hasNode(id) && !id.startsWith("thought:");
+      const has = (id: string) => ctx.graphs.graph.hasNode(id) && !id.startsWith("thought:") && offerable(id);
       const themes = [...readIds(j.themes, has), ...readIds(j.emotions, has), ...readIds(j.dilemmas, has)].filter((x) => !x.id.startsWith("K_"));
       const verses = readIds(j.verses, has).filter((x) => x.id.startsWith("K_"));
       const existing = new Set(base.candidates.map((c) => c.targetId));
@@ -257,7 +245,7 @@ export function PersonalMindMapper() {
         .filter((x) => !existing.has(x.id))
         .map((x) => ({ targetId: x.id, basis: "ai", why: x.why || "Suggested by your language model", score: 0.5, origin: "ai" }));
       // Still bound to the text that was sent: if the writing changed meanwhile, these show as out of date.
-      useDraft.getState().setSuggestions(d.id, { ...base, candidates: [...base.candidates, ...added], reflection: typeof j.reflection === "string" && j.reflection.trim() ? j.reflection : base.reflection, enrichedBy: `${res.provider} · ${res.model}` });
+      useDraft.getState().setSuggestions(d.id, { ...base, candidates: [...base.candidates, ...added], reflection: typeof j.reflection === "string" && j.reflection.trim() ? keepSupplied(j.reflection, new Set(verseIds)) : base.reflection, enrichedBy: `${res.provider} · ${res.model}` });
     } catch {
       setNotice({ text: "The model's reply could not be read, so the offline suggestions were kept.", tone: "neutral" });
     }
@@ -354,7 +342,7 @@ export function PersonalMindMapper() {
   // Summaries count only connections the person kept. A theme "recurs" only when it is in two or more thoughts.
   const patterns = useMemo(() => {
     const themes = new Map<string, number>();
-    const chapters = new Array(18).fill(0) as number[];
+    const chapters = new Array(133).fill(0) as number[];
     let withKept = 0;
     for (const t of thoughts) {
       const ids = new Set(connectionsWith(t, "accepted").map((c) => c.targetId));
@@ -426,6 +414,11 @@ export function PersonalMindMapper() {
   const wordCands = shown.filter((c) => c.basis === "words");
   const declined = (s?.candidates ?? []).filter((c) => statusOf(c.targetId) === "rejected");
   const noClear = !!s && !themeCands.length && !verseCands.length;
+  const silences = themeCands.flatMap((c) => {
+    const n = graphs?.nodeById.get(c.targetId);
+    const silent = n?.type === "LifeDilemma" ? (n as { silent?: string }).silent : undefined;
+    return silent ? [{ id: c.targetId, label: nameOf(c.targetId), silent }] : [];
+  });
   const readyToList = thoughtsStatus === "ready";
   // Newest first; a search narrows to your own words that match (current or earlier wording).
   const shownThoughts = find.trim() ? searchThoughts(thoughts, find, thoughts.length).map((m) => m.thought) : [...thoughts].reverse();
@@ -437,7 +430,7 @@ export function PersonalMindMapper() {
           <h1 id="reflect-title" className="text-[26px] font-semibold tracking-[-0.02em] text-text sm:text-[28px]">
             Reflect
           </h1>
-          <p className="mt-1.5 max-w-[56ch] text-[14px] leading-[1.6] text-text-2">Keep a thought in your own words: a feeling, a question, an idea. Save it as it is, or look for where it might meet the Gita.</p>
+          <p className="mt-1.5 max-w-[56ch] text-[14px] leading-[1.6] text-text-2">Keep a thought in your own words: a feeling, a question, an idea. Save it as it is, or look for where it might meet the Kural.</p>
           <div className="mt-3 flex items-start gap-1.5 text-[12.5px] leading-5 text-text-3">
             <ShieldCheck size={14} className="mt-[3px] shrink-0 text-good" />
             Saved on this device, in this browser. Nothing is sent anywhere unless you choose “Explore with AI”.
@@ -513,9 +506,9 @@ export function PersonalMindMapper() {
                     <button className="font-medium text-text underline-offset-2 hover:underline" onClick={() => select(verseOrigin.id, { fly: false })}>
                       Kural {verseOrigin.ref}
                     </button>
-                    . The verse stays recorded as where this began; how it connects is up to you.
+                    . The couplet stays recorded as where this began; how it connects is up to you.
                   </div>
-                  <button className="btn btn-ghost btn-icon btn-sm max-sm:h-10 max-sm:w-10" aria-label={`This note isn't about Kural ${verseOrigin.ref}`} title="Not about this verse" disabled={saving} onClick={() => (useDraft.getState().clearOrigin(), decide({ targetId: verseOrigin.id }, undefined))}>
+                  <button className="btn btn-ghost btn-icon btn-sm max-sm:h-10 max-sm:w-10" aria-label={`This note isn't about Kural ${verseOrigin.ref}`} title="Not about this couplet" disabled={saving} onClick={() => (useDraft.getState().clearOrigin(), decide({ targetId: verseOrigin.id }, undefined))}>
                     <X size={14} />
                   </button>
                 </div>
@@ -679,13 +672,19 @@ export function PersonalMindMapper() {
             </div>
           )}
 
-          {crisis && (
+          {concern && (
             <div className="mt-5">
-              <CrisisNotice />
+              <Support concern={concern} />
             </div>
           )}
 
-          {s && (
+          {s && heldBack && (
+            <div className="mt-3">
+              <ShowAnyway onClick={() => setSeenAnyway(s.forText)} />
+            </div>
+          )}
+
+          {s && !heldBack && (
             <div ref={resultRef} className="panel mt-6 p-5 sm:p-6">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h2 className="text-[16px] font-semibold text-text">Possible connections</h2>
@@ -718,15 +717,26 @@ export function PersonalMindMapper() {
                     <ul className="-mx-1.5 space-y-1">{themeCands.map(candidateRow)}</ul>
                   </section>
                 )}
+                {silences.length > 0 && (
+                  <section className="mt-5">
+                    <SectionLabel>What the Kural doesn’t offer</SectionLabel>
+                    {silences.map((x) => (
+                      <p key={x.id} className="mt-1.5 text-[13px] leading-5 text-text-2">
+                        {silences.length > 1 && <span className="font-medium text-text">{x.label}: </span>}
+                        {x.silent}
+                      </p>
+                    ))}
+                  </section>
+                )}
                 {verseCands.length > 0 && (
                   <section className="mt-5">
-                    <SectionLabel>Verses that may speak to it</SectionLabel>
+                    <SectionLabel>Couplets that may speak to it</SectionLabel>
                     <ul className="-mx-1.5 space-y-1">{verseCands.map(candidateRow)}</ul>
                   </section>
                 )}
                 {wordCands.length > 0 && (
                   <details className="mt-5">
-                    <summary className="cursor-pointer select-none text-[12.5px] font-medium text-text-2 hover:text-text">Verses that share some wording ({wordCands.length})</summary>
+                    <summary className="cursor-pointer select-none text-[12.5px] font-medium text-text-2 hover:text-text">Couplets that share some wording ({wordCands.length})</summary>
                     <p className="mt-1.5 text-[12px] leading-4 text-text-3">Shared words can be a coincidence. Open one before deciding whether it fits.</p>
                     <ul className="-mx-1.5 mt-2 space-y-1">{wordCands.map(candidateRow)}</ul>
                   </details>
@@ -751,7 +761,7 @@ export function PersonalMindMapper() {
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
                     <RelationSelect value={newRelation} onChange={setNewRelation} label="How the new connection relates" disabled={saving} />
                     <div className="min-w-0 flex-1">
-                      <NodePicker label="Connect this thought to" value={null} placeholder="A verse, idea, feeling or another thought" onChange={(id) => id && decide({ targetId: id, origin: "user", relation: newRelation }, "accepted")} />
+                      <NodePicker label="Connect this thought to" value={null} placeholder="A couplet, idea, feeling or another thought" onChange={(id) => id && decide({ targetId: id, origin: "user", relation: newRelation }, "accepted")} />
                     </div>
                   </div>
                 </section>
@@ -816,7 +826,7 @@ export function PersonalMindMapper() {
                     className="btn btn-sm btn-ghost"
                     onClick={async () => {
                       try {
-                        download(`gitaviswa-stored-reflections-${new Date().toISOString().slice(0, 10)}.json`, await exportStoredRaw());
+                        download(`kural-graph-stored-reflections-${new Date().toISOString().slice(0, 10)}.json`, await exportStoredRaw());
                       } catch (e) {
                         setNotice({ text: `The stored data couldn't be read for download either. ${describeStorageError(e)}`, tone: "danger" });
                       }
@@ -832,7 +842,7 @@ export function PersonalMindMapper() {
               </div>
             ) : thoughts.length === 0 ? (
               <EmptyState icon={<NotebookPen size={18} />} title="Nothing saved yet">
-                Saved thoughts collect here, with or without a connection to the Gita.
+                Saved thoughts collect here, with or without a connection to the Kural.
               </EmptyState>
             ) : (
               <div className="p-5">
@@ -863,16 +873,16 @@ export function PersonalMindMapper() {
                 )}
                 {patterns.chapters.some(Boolean) && (
                   <section className="mb-6">
-                    <SectionLabel>Chapters of verses you&apos;ve connected</SectionLabel>
-                    <div className="flex h-14 items-end gap-[3px]" role="img" aria-label={`Verses you kept, by chapter: ${patterns.chapters.map((c, i) => `${i + 1}: ${c}`).join(", ")}`}>
+                    <SectionLabel>Chapters of couplets you&apos;ve connected</SectionLabel>
+                    <div className="flex h-14 items-end gap-px" role="img" aria-label={`Couplets you kept, by chapter: ${patterns.chapters.flatMap((c, i) => (c ? [`${i + 1}: ${c}`] : [])).join(", ")}`}>
                       {patterns.chapters.map((c, i) => (
-                        <button key={i} className="flex-1 rounded-t-[3px] transition-opacity hover:opacity-80" style={{ height: `${Math.max(c ? 8 : 3, (c / maxCh) * 100)}%`, background: c ? "var(--n-chapter)" : "var(--line-2)" }} title={`Chapter ${i + 1}: ${c} kept verse connection${c === 1 ? "" : "s"}`} aria-label={`Read chapter ${i + 1}`} onClick={() => useGita.getState().openChapter(i + 1)} />
+                        <button key={i} className="flex-1 rounded-t-[3px] transition-opacity hover:opacity-80" style={{ height: `${Math.max(c ? 8 : 3, (c / maxCh) * 100)}%`, background: c ? "var(--n-chapter)" : "var(--line-2)" }} title={`Chapter ${i + 1}: ${c} kept couplet connection${c === 1 ? "" : "s"}`} aria-label={`Read chapter ${i + 1}`} onClick={() => useGita.getState().openChapter(i + 1)} />
                       ))}
                     </div>
                     <div className="num mt-1 flex justify-between text-[11px] text-text-3">
                       <span>1</span>
-                      <span>9</span>
-                      <span>18</span>
+                      <span>67</span>
+                      <span>133</span>
                     </div>
                     <p className="mt-1.5 text-[11.5px] leading-4 text-text-3">From connections you kept, in {patterns.withKept} of {thoughts.length} thoughts.</p>
                   </section>
@@ -973,7 +983,7 @@ export function PersonalMindMapper() {
             )}
             <div className="flex flex-wrap items-center gap-1.5 border-t border-line px-4 py-3">
               <button className="btn btn-sm" disabled={!readyToList || !thoughts.length} onClick={() => {
-                  download(`gitaviswa-reflections-${new Date().toISOString().slice(0, 10)}.json`, exportThoughts(thoughts));
+                  download(`kural-graph-reflections-${new Date().toISOString().slice(0, 10)}.json`, exportThoughts(thoughts));
                   const b = { at: Date.now(), count: thoughts.length };
                   setLastBackup(b);
                   try {

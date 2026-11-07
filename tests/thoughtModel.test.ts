@@ -212,7 +212,7 @@ test("schema-1 backups still import; their intensity is preserved, not invented"
 
 test("invalid backups fail with a readable message", () => {
   assert.throws(() => parseBackup("{not json"), /not valid JSON/);
-  assert.throws(() => parseBackup(JSON.stringify({ hello: 1 })), /isn't a GitaViśva reflections backup/);
+  assert.throws(() => parseBackup(JSON.stringify({ hello: 1 })), /isn't a Kural Graph reflections backup/);
 });
 
 test("export → import round trip keeps text, dates, check-ins, origin, status and provenance", () => {

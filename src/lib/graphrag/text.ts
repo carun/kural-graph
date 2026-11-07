@@ -10,10 +10,11 @@ export function fold(s: string): string {
     .replace(/[’'`]/g, "");
 }
 
-export const hasDevanagari = (s: string) => /[ऀ-ॿ]/.test(s);
+/** Native-script text, which BM25 can't tokenise and search.ts scans for directly. His name, kept for merging: it now means Tamil. */
+export const hasDevanagari = (s: string) => /[\u0B80-\u0BFF]/.test(s);
 
 const STOP = new Set(
-  "a an the and or but if then so of to in on at by for with about from as is are was were be been being it its this that these those i me my we our you your he she they them their what which who whom how why when where do does did can could should would will shall may might must not no yes very just than too also into over under again more most some any each other such only own same both few all there here gita bhagavad verse verses chapter krishna arjuna says say said tell explain".split(
+  "a an the and or but if then so of to in on at by for with about from as is are was were be been being it its this that these those i me my we our you your he she they them their what which who whom how why when where do does did can could should would will shall may might must not no yes very just than too also into over under again more most some any each other such only own same both few all there here kural kurals tirukkural couplet couplets verse verses chapter valluvar tiruvalluvar says say said tell explain".split(
     " ",
   ),
 );

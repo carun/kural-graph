@@ -8,6 +8,8 @@ export type MentionKind = "expressed" | "negated" | "mentioned";
 const NEGATORS = new Set(["not", "no", "never", "nor", "without", "hardly", "barely", "neither", "dont", "doesnt", "didnt", "isnt", "arent", "wasnt", "werent", "cant", "cannot", "wont", "wouldnt", "aint", "nothing"]);
 /** Hindi / Hinglish negation usually follows the word it negates ("gussa nahi hai"). */
 const AFTER_NEGATORS = new Set(["nahi", "nahin", "nhi", "nahim", "na", "mat"]);
+/** "Can't stop drinking" states the thing itself: the negator belongs to the word before, not to what follows. */
+const PERSISTING = new Set(["stop", "stopping", "quit", "help"]);
 /** The word right before marks it as a subject of study, not a state: "curious about anger", "the concept of fear". */
 const TOPIC_MARKERS = new Set(["about", "regarding", "called", "concept", "term", "word", "topic", "define", "defines", "explain", "explains", "meaning", "understand"]);
 /** Someone other than the writer is the subject ("my friend is angry", "when you feel anxious", "Arjuna's grief"). */
@@ -33,7 +35,7 @@ function hasFrame(before: string[]): boolean {
 
 function classifyAt(before: string[], after: string[]): MentionKind {
   // Narrow scope on purpose: "not angry", "don't feel angry" are denials; "can't let the anger go" is not.
-  if (before.slice(-2).some((w) => NEGATORS.has(w)) || after.slice(0, 2).some((w) => AFTER_NEGATORS.has(w))) return "negated";
+  if ((!PERSISTING.has(before[before.length - 1]) && before.slice(-2).some((w) => NEGATORS.has(w))) || after.slice(0, 2).some((w) => AFTER_NEGATORS.has(w))) return "negated";
   if (TOPIC_MARKERS.has(before[before.length - 1])) return "mentioned";
   if (before.some((w) => OTHERS.has(w))) return "mentioned";
   return hasFrame(before) ? "expressed" : "mentioned";

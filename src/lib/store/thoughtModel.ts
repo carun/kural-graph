@@ -10,7 +10,7 @@ import type { ConnectionOrigin, ConnectionRelation, DeletedThought, DraftLink, P
  *       schema ≤2 become unreviewed suggestions, because nothing proves the person approved them.
  */
 export const THOUGHT_SCHEMA = 3;
-export const BACKUP_KIND = "manas-darpan-backup";
+export const BACKUP_KIND = "kural-graph-backup";
 export const CHECK_IN_LABELS = ["Light", "Noticeable", "Heavy", "Very heavy", "Overwhelming"] as const;
 
 export const RELATION_LABELS: Record<ConnectionRelation, string> = {
@@ -316,7 +316,7 @@ export function thoughtFromDraft(d: ThoughtDraft, now: number): PersonalThought 
 // ── backups ──
 
 export function exportDocument(list: PersonalThought[], exportedAt: string): string {
-  return JSON.stringify({ app: "GitaViswa", kind: BACKUP_KIND, version: 2, schema: THOUGHT_SCHEMA, exportedAt, thoughts: list }, null, 2);
+  return JSON.stringify({ app: "Kural Graph", kind: BACKUP_KIND, version: 2, schema: THOUGHT_SCHEMA, exportedAt, thoughts: list }, null, 2);
 }
 
 /** Reads a backup file (current or older schema). Throws a readable message for anything that isn't one. */
@@ -328,7 +328,7 @@ export function parseBackup(json: string): { thoughts: PersonalThought[]; skippe
     throw new Error("This file isn't a readable backup (it is not valid JSON). Nothing was changed.");
   }
   const list = Array.isArray(doc) ? doc : isObj(doc) ? doc.thoughts : undefined;
-  if (!Array.isArray(list)) throw new Error("This file isn't a GitaViśva reflections backup. Nothing was changed.");
+  if (!Array.isArray(list)) throw new Error("This file isn't a Kural Graph reflections backup. Nothing was changed.");
   const thoughts = list.map(migrateThought).filter((t): t is PersonalThought => !!t);
   return { thoughts, skipped: list.length - thoughts.length };
 }
@@ -357,9 +357,9 @@ export function mergeThoughts(existing: PersonalThought[], incoming: PersonalTho
 export function describeStorageError(e: unknown): string {
   const name = (e as { name?: string } | null)?.name;
   if (name === "StoredFormatError") return (e as Error).message;
-  if (name === "QuotaExceededError") return "This browser is out of storage space for GitaViśva.";
+  if (name === "QuotaExceededError") return "This browser is out of storage space for Kural Graph.";
   if (name === "InvalidStateError" || name === "SecurityError" || name === "UnknownError" || name === "NotFoundError")
     return "This browser's storage isn't available right now. Private browsing or blocked site data can cause this.";
-  if (typeof indexedDB === "undefined") return "This browser doesn't offer the storage GitaViśva uses.";
+  if (typeof indexedDB === "undefined") return "This browser doesn't offer the storage Kural Graph uses.";
   return "The browser's storage didn't respond as expected.";
 }
