@@ -43,6 +43,14 @@ function Field({ label, children, hint, htmlFor }: { label: React.ReactNode; chi
   );
 }
 
+/** What Ollama needs depends on where this page is open. By default it answers only pages on localhost, and only a secure page is limited to secure addresses. */
+function ollamaHint() {
+  const { hostname, origin, port, protocol } = location;
+  if (protocol === "https:") return `Add ${origin} to OLLAMA_ORIGINS where Ollama runs. From this secure page your browser can reach localhost or an HTTPS address, such as a tailnet name, but not plain HTTP on another machine.`;
+  if (hostname === "localhost" || hostname === "127.0.0.1") return "Ollama answers pages on localhost by default, even when it runs on another machine, so this needs no setup.";
+  return `Ollama answers only pages on localhost by default. Open this page at http://localhost:${port}, or add ${origin} to OLLAMA_ORIGINS where Ollama runs.`;
+}
+
 function ProviderForm({ p }: { p: ProviderId }) {
   const info = PROVIDERS[p];
   const s = useSettings();
@@ -69,7 +77,10 @@ function ProviderForm({ p }: { p: ProviderId }) {
   const loadLive = async () => {
     setLiveErr("");
     try {
-      setLive(await fetchModels(p, { key, baseUrl }));
+      const found = await fetchModels(p, { key, baseUrl });
+      setLive(found);
+      // Ollama has only what this machine has pulled, so take a real model rather than leave a preset that will fail.
+      if (p === "ollama" && found.models.length && !found.models.includes(model)) setModel(found.models[0]);
     } catch (e) {
       setLive(null);
       setLiveErr((e as Error).message);
@@ -82,7 +93,8 @@ function ProviderForm({ p }: { p: ProviderId }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [p, connected]);
   const modelMissing = !!live && live.models.length > 0 && !live.models.includes(model);
-  const options = [...new Set([...info.models.map((m) => m.id), ...(live?.models || [])])];
+  // His presets are guesses for Ollama: once it has answered, list only what it really has.
+  const options = p === "ollama" && live?.models.length ? live.models : [...new Set([...info.models.map((m) => m.id), ...(live?.models || [])])];
 
   const save = async () => {
     setSaving(true);
@@ -139,7 +151,7 @@ function ProviderForm({ p }: { p: ProviderId }) {
       )}
 
       {p === "ollama" && (
-        <Field label="Ollama address" htmlFor="ollama-url" hint={`Start Ollama with OLLAMA_ORIGINS=${location.origin} so that it answers this site, then run \`ollama pull ${model}\`. This site can reach localhost or an HTTPS address such as a tailnet name, but not plain HTTP on another machine.`}>
+        <Field label="Ollama address" htmlFor="ollama-url" hint={ollamaHint()}>
           <input id="ollama-url" className="field font-mono !text-[12.5px]" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} />
         </Field>
       )}
