@@ -122,7 +122,7 @@ export function NodeInspector({ nodeId, onClose }: { nodeId: string; onClose: ()
       <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-10 pt-5">
         <h2 className="text-[24px] font-semibold leading-tight tracking-[-0.015em] text-text">{n.type === "Chapter" ? n.title : n.label}</h2>
         {("sa" in n || n.type === "Chapter") && <div className="deva mt-1 text-[18px] text-text-2">{n.type === "Chapter" ? n.name : "sa" in n ? n.sa : ""}</div>}
-        {"en" in n && <div className="serif mt-0.5 text-[15px] italic text-text-3">{n.en}</div>}
+        {"en" in n && <div className="serif mt-0.5 text-[15px] text-text-3">{n.en}</div>}
         {n.type === "Chapter" && <div className="serif mt-0.5 text-[15px] italic text-text-3">{n.meaning}</div>}
         {n.type === "Character" && <div className="mt-1 text-[13px] text-text-3">{n.role}</div>}
         {n.type === "Emotion" && (

@@ -332,7 +332,7 @@ const CoreNodeView = memo(function CoreNodeView({ data }: NodeProps<LNode>) {
             <div key={i}>{l}</div>
           ))}
         </div>
-        <div className="serif mt-1 line-clamp-2 text-[13px] italic leading-snug text-text-3">{v.iast.join(" ")}</div>
+        <div className="serif mt-1 line-clamp-2 text-[13px] leading-snug text-text-3">{v.iast.join(" ")}</div>
         <p className="serif mt-3 line-clamp-3 border-t border-line pt-3 text-[14px] leading-[1.55] text-text-2">{v.translations.en?.[String(enAuthor)]}</p>
         <div className="mt-3 flex flex-wrap gap-1">
           {v.padaccheda.slice(0, 12).map((p, i) => (
@@ -360,7 +360,7 @@ const CoreNodeView = memo(function CoreNodeView({ data }: NodeProps<LNode>) {
         (data.node?.type === "PersonalThought" ? (
           <p className="serif mt-1.5 line-clamp-6 whitespace-pre-wrap text-[15px] leading-[1.55] text-text [overflow-wrap:anywhere]">{data.subtitle}</p>
         ) : (
-          <div className="serif mt-0.5 text-[14px] italic text-text-3">{data.subtitle}</div>
+          <div className="serif mt-0.5 text-[14px] text-text-3">{data.subtitle}</div>
         ))}
     </div>
   );
@@ -552,7 +552,7 @@ function LineageList({ items, go, openTensionKey }: { items: LData[]; go: (id: s
                   (core.node?.type === "PersonalThought" ? (
                     <p className="serif mt-1.5 whitespace-pre-wrap text-[15px] leading-[1.6] text-text [overflow-wrap:anywhere]">{core.subtitle}</p>
                   ) : (
-                    <div className="serif text-[14px] italic text-text-3">{core.subtitle}</div>
+                    <div className="serif text-[14px] text-text-3">{core.subtitle}</div>
                   ))}
               </>
             )}

@@ -39,7 +39,7 @@ function coupletLine(g: ComposeGraph, id: string, why?: string): string | null {
   const c = g.couplet(id);
   if (!c) return null;
   const notes = [why, isSensitive(g.node(id)) ? OLD_VIEW_NOTE : ""].filter(Boolean).join(" ");
-  return `- **[K${c.ref}]** *${c.roman}*: “${short(c.text)}”${notes ? `\n  <small>${notes}</small>` : ""}`;
+  return `- **[K${c.ref}]** ${c.roman}: “${short(c.text)}”${notes ? `\n  <small>${notes}</small>` : ""}`;
 }
 
 function tensionLines(g: ComposeGraph, tensions: Tension[]): string[] {

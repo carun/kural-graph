@@ -57,16 +57,16 @@ export function verseLines(verse: Verse, script: ScriptChoice) {
 function SanskritBlock({ verse, script }: { verse: Verse; script: ScriptChoice }) {
   const lines = verseLines(verse, script);
   const head = verse.uvacha ? (script === "iast" ? verse.uvacha.iast : script === "phonetic" ? verse.uvacha.iast.normalize("NFD").replace(/\p{M}/gu, "") : isRegionalScript(script) ? transliterate(verse.uvacha.sa, script) : verse.uvacha.sa) : null;
-  const cls = script === "deva" ? "deva text-[18px] leading-[1.85]" : isRegionalScript(script) ? "indic text-[19px]" : "serif text-[17px] italic leading-[1.6]";
+  const cls = script === "deva" ? "deva text-[18px] leading-[1.85]" : isRegionalScript(script) ? "indic text-[19px]" : "serif text-[17px] leading-[1.6]";
   return (
     <div>
-      {head && <div className={`${script === "deva" ? "deva" : isRegionalScript(script) ? "indic" : "serif italic"} mb-1 text-[13.5px] text-text-3`}>{head}</div>}
+      {head && <div className={`${script === "deva" ? "deva" : isRegionalScript(script) ? "indic" : "serif"} mb-1 text-[13.5px] text-text-3`}>{head}</div>}
       <div className={`${cls} text-text`}>
         {lines.map((l, i) => (
           <div key={i} className="pl-4 -indent-4">{l}</div>
         ))}
       </div>
-      {script === "deva" && <div className="serif mt-2 text-[14px] italic leading-[1.55] text-text-3">{verse.iast.join(" ")}</div>}
+      {script === "deva" && <div className="serif mt-2 text-[14px] leading-[1.55] text-text-3">{verse.iast.join(" ")}</div>}
     </div>
   );
 }

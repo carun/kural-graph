@@ -194,7 +194,7 @@ function VerseSpotlight() {
                   </span>
                 ))}
               </p>
-              <p className="serif mt-3 text-[14px] italic leading-6 text-text-3 md:text-[15.5px]">
+              <p className="serif mt-3 text-[14px] leading-6 text-text-3 md:text-[15.5px]">
                 {v.iast.map((l) => (
                   <span key={l} className="block">
                     {l}

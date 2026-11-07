@@ -130,7 +130,7 @@ export function ChapterReader() {
   const prevCh = versesDoc.chapters.find((c) => c.number === ch.number - 1);
   const nextCh = versesDoc.chapters.find((c) => c.number === ch.number + 1);
   const groups = chapterGroups(versesDoc.chapters);
-  const lineCls = script === "deva" ? "deva text-[18px] leading-[1.8] sm:text-[19px]" : isRegionalScript(script) ? "indic text-[18px]" : "serif text-[17px] italic leading-[1.6]";
+  const lineCls = script === "deva" ? "deva text-[18px] leading-[1.8] sm:text-[19px]" : isRegionalScript(script) ? "indic text-[18px]" : "serif text-[17px] leading-[1.6]";
 
   return (
     <div className="absolute inset-0 flex bg-bg">
@@ -273,7 +273,7 @@ export function ChapterReader() {
                           <div key={i} className="pl-4 -indent-4">{l}</div>
                         ))}
                       </div>
-                      {script === "deva" && <div className="serif mt-1.5 text-[14px] italic leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{v.iast.join(" ")}</div>}
+                      {script === "deva" && <div className="serif mt-1.5 text-[14px] leading-[1.55] text-text-3 [overflow-wrap:anywhere]">{v.iast.join(" ")}</div>}
                       <p className={`serif mt-3 text-[16.5px] leading-[1.65] [overflow-wrap:anywhere] ${sel ? "text-text" : "text-text-2"}`}>{v.translations.en?.[String(enAuthor)]}</p>
                       <OldView verse={v} className="mt-1.5" />
                     </div>
