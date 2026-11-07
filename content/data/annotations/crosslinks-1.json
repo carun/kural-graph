@@ -1,0 +1,797 @@
+{
+ "shard": "crosslinks-1",
+ "links": [
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 380,
+   "b": 620,
+   "basis": "explicit",
+   "reason": "Fate gets there before any plan to beat it, yet those who strive without faltering are promised they will see its back.",
+   "quoteA": "What is stronger than fate?",
+   "quoteB": "will see the back of fate itself"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 376,
+   "b": 619,
+   "basis": "explicit",
+   "reason": "What fate denies won’t stay however you guard it, yet effort pays the wages of your toil even if god won’t allow it.",
+   "quoteA": "What isn’t yours by fate won’t stay",
+   "quoteB": "Even if god won’t allow it, effort pays the wages"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 371,
+   "b": 618,
+   "basis": "inferred",
+   "reason": "The fate that takes wealth away brings laziness, yet making no effort is called your own disgrace, not fate’s.",
+   "quoteA": "The fate that takes it away brings laziness",
+   "quoteB": "The disgrace is to know what must be known and make no effort"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 265,
+   "b": 370,
+   "basis": "explicit",
+   "reason": "Austerity is striven for because it brings what you want as you want it, yet craving can never be filled and is to be given up.",
+   "quoteA": "what you want comes as you want it",
+   "quoteB": "If you give up craving, whose nature is never to be filled"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 203,
+   "b": 264,
+   "basis": "explicit",
+   "reason": "The highest wisdom does no evil even to those who hate you, yet austerity is held out as a power that can crush enemies, if you wish it.",
+   "quoteA": "do no evil even to those who hate you",
+   "quoteB": "Crushing enemies and raising those who are dear: if you wish it, austerity can do both"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 29,
+   "b": 310,
+   "basis": "explicit",
+   "reason": "Those on the hill called virtue have an anger hard to withstand, yet renouncing anger is what makes you the equal of renouncers.",
+   "quoteA": "The anger of those who stand on the hill called virtue is hard to withstand",
+   "quoteB": "Those who renounce anger are the equals of renouncers"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 158,
+   "b": 880,
+   "basis": "explicit",
+   "reason": "Those who wrong you in pride are to be conquered by nobility; fail to humble such pride, says the other, and you will not last.",
+   "quoteA": "Conquer by thy nobility those that in their pride have injured thee",
+   "quoteB": "they shall not last long, those who humble not the pride of men who defy them"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 250,
+   "b": 861,
+   "basis": "explicit",
+   "reason": "Think how you stand before the strong before you go against the weak, says one; the other tells you to seek enmity with the weak without holding back.",
+   "quoteA": "When you go against those weaker than you, think of yourself before those stronger",
+   "quoteB": "Without holding back, seek enmity with the weak"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 307,
+   "b": 487,
+   "basis": "explicit",
+   "reason": "Someone who prizes anger will surely be ruined, yet the wise are shown burning within and watching for their time.",
+   "quoteA": "Someone who prizes anger will be ruined",
+   "quoteB": "They watch for the time and burn within"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 951,
+   "b": 972,
+   "basis": "explicit",
+   "reason": "Uprightness and shame come by nature only to those of good family, yet birth is the same for all and only what they do sets them apart.",
+   "quoteA": "Only in those born of a good family do uprightness and shame come together by nature",
+   "quoteB": "Birth is the same for every living being"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 1137,
+   "b": 1255,
+   "basis": "inferred",
+   "reason": "He calls a woman’s restraint under ocean-deep passion her grandeur; she answers that such self-respect is unknown to the lovesick.",
+   "quoteA": "the woman who refuseth to ride the palm-stalk",
+   "quoteB": "a thing unknown to the lovesick fair"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 276,
+   "b": 586,
+   "basis": "inferred",
+   "reason": "No one is crueller than those who live by deceit as if they had renounced, yet a spy is praised for taking that very form.",
+   "quoteA": "those who don’t renounce in their hearts but live by deceit, as if they had renounced",
+   "quoteB": "A spy takes the form of those who have renounced"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 294,
+   "b": 830,
+   "basis": "explicit",
+   "reason": "A heart free of falsehood wins every heart, yet with a foe you cannot yet break from, you are told to feign friendship.",
+   "quoteA": "Live without lying in your heart",
+   "quoteB": "be friends with the face, and put friendship out of the heart"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 300,
+   "b": 323,
+   "basis": "explicit",
+   "reason": "Nothing at all is better than truthfulness, says one, yet the other ranks not killing first and puts not lying second.",
+   "quoteA": "nothing at all is better than truthfulness",
+   "quoteB": "Not killing stands alone as good. Next after it, not lying is good"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 241,
+   "b": 757,
+   "basis": "inferred",
+   "reason": "Compassion is the wealth above all wealth, and goods are found even among the low, yet compassion is said to thrive with wealth as its foster-mother.",
+   "quoteA": "The wealth of compassion is the wealth among wealth",
+   "quoteB": "thrives with the rich foster-mother called wealth"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 333,
+   "b": 753,
+   "basis": "explicit",
+   "reason": "Wealth by its nature doesn’t stay, yet it is also called an unfailing lamp that goes to whatever land you think of.",
+   "quoteA": "It is the nature of wealth not to stay",
+   "quoteB": "The unfailing lamp called wealth"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 47,
+   "b": 348,
+   "basis": "explicit",
+   "reason": "The one who lives home life well is first among all who strive, yet those who renounce completely have arrived and all others are caught in a net.",
+   "quoteA": "The one who lives home life as it should be lived is first among all who strive",
+   "quoteB": "All others are deluded, and caught in a net"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 220,
+   "b": 477,
+   "basis": "explicit",
+   "reason": "Ruin from helping others is worth buying, even if you must sell up, yet you are also told to give knowing your limit and to look after your wealth.",
+   "quoteA": "that ruin is worth buying, even if you must sell up to do it",
+   "quoteB": "Give in the right way, knowing your limit"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 321,
+   "b": 550,
+   "basis": "explicit",
+   "reason": "Not killing is what righteous action is, yet a ruler who punishes the wicked with death is likened to someone pulling weeds from a green crop.",
+   "quoteA": "What is righteous action? Not killing",
+   "quoteB": "A ruler who punishes the wicked with death is like someone pulling weeds from a green crop"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 1054,
+   "b": 1061,
+   "basis": "explicit",
+   "reason": "Begging from those who hide nothing is like giving, says one chapter; the next says not begging is worth ten million times more, even there.",
+   "quoteA": "Begging is like giving",
+   "quoteB": "not begging is worth ten million times more"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 1058,
+   "b": 1062,
+   "basis": "explicit",
+   "reason": "Without people who beg the world would be a wooden puppet; the next chapter curses its maker if anyone must live by begging.",
+   "quoteA": "Without people who beg, this great cool world would be a wooden puppet",
+   "quoteB": "wanted people to live even by begging, let him wander far and perish"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 488,
+   "b": 963,
+   "basis": "explicit",
+   "reason": "Bow to your adversaries until they decline, says one; in your own decline, says the other, hold fast to your dignity.",
+   "quoteA": "Bend down before thy adversaries",
+   "quoteB": "in the day of thy decline hold fast to thy dignity"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 841,
+   "b": 1041,
+   "basis": "explicit",
+   "reason": "A lack of understanding is called the worst poverty and no other lack counts, yet the other answers that only poverty hurts like poverty.",
+   "quoteA": "The world does not count any other lack as poverty",
+   "quoteB": "Only poverty hurts like poverty"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 955,
+   "b": 1044,
+   "basis": "explicit",
+   "reason": "Those of an old family keep their good nature when their means shrink, yet poverty brings even them a weakness from which shameful words are born.",
+   "quoteA": "those of an old family don’t part from their good nature",
+   "quoteB": "Even in those of good family, poverty brings a weakness"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 115,
+   "b": 245,
+   "basis": "explicit",
+   "reason": "Loss will always come, and only a heart that doesn’t lean sets the worthy apart, yet those who hold to compassion are said to have no misery.",
+   "quoteA": "Loss and gain will always come",
+   "quoteB": "Those who hold to compassion have no misery"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 110,
+   "b": 207,
+   "basis": "explicit",
+   "reason": "Only killing the good done to you leaves no escape, says one; the other says no one escapes their own deed, which follows them and kills.",
+   "quoteA": "Those who have killed any good may still escape",
+   "quoteB": "The enemy that is your own deed never goes away"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 128,
+   "b": 197,
+   "basis": "explicit",
+   "reason": "A single evil word turns all your good bad, yet the noble may say things without goodness, so long as they say nothing useless.",
+   "quoteA": "If a single evil word does its harm, the good you have done turns bad",
+   "quoteB": "Let the noble say things without goodness if they will"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 638,
+   "b": 696,
+   "basis": "inferred",
+   "reason": "The one at a ruler’s side must tell him what is good for him, however he takes it, yet those around him are told to say what isn’t disliked, and to please.",
+   "quoteA": "it is the duty of the one at his side to tell him what is good for him",
+   "quoteB": "say what is needed and not disliked, in a way that pleases"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 1282,
+   "b": 1309,
+   "basis": "explicit",
+   "reason": "Desire grown full leaves no room for a sulk, she says; he says sulking is sweet with those who love you.",
+   "quoteA": "you must not sulk even by a millet seed",
+   "quoteB": "sulking is sweet with those who love you"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 1206,
+   "b": 1250,
+   "basis": "explicit",
+   "reason": "Remembering their days together is how she stays alive, yet keeping him in her heart, she says later, will only cost her more of her beauty.",
+   "quoteA": "I live by remembering the days I was with him",
+   "quoteB": "If we keep in our heart the one who left us and won’t come near, we will lose still more of our beauty"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 901,
+   "b": 1103,
+   "basis": "inferred",
+   "reason": "Doting on a wife bars a man from the finest reward, yet the lover asks if even the world of the lotus-eyed one is sweeter than her shoulders.",
+   "quoteA": "Men who dote on their wives won’t win the finest reward",
+   "quoteB": "Is the world of the lotus-eyed one sweeter than sleep on the soft shoulders of the one you love?"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 473,
+   "b": 596,
+   "basis": "explicit",
+   "reason": "Many who didn’t know their strength broke halfway, yet all your thoughts are to be of rising higher, since even failing has the nature of not failing.",
+   "quoteA": "set out on a surge of zeal and broke halfway",
+   "quoteB": "Let all your thoughts be of rising higher"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 404,
+   "b": 423,
+   "basis": "explicit",
+   "reason": "The wise won’t accept an unlearned man’s cleverness even when it is very good, yet understanding is seeing the reality in what you hear, from anyone.",
+   "quoteA": "Even when an unlearned man’s cleverness is very good, the wise don’t accept it",
+   "quoteB": "Whatever you hear, from whoever’s mouth, understanding is seeing the reality in it"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 791,
+   "b": 818,
+   "basis": "explicit",
+   "reason": "For those who hold to friendship there is no leaving it once made, yet with those who spoil your work you are told to let it slowly slip away.",
+   "quoteA": "once made there is no leaving it",
+   "quoteB": "let the friendship slowly slip away"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 277,
+   "b": 706,
+   "basis": "inferred",
+   "reason": "People can be red outside and black inside, yet the face, like crystal, is said to show what is strongest in the heart.",
+   "quoteA": "red outside like the crab’s-eye seed, yet black inside",
+   "quoteB": "the face shows what is strongest in the heart"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 867,
+   "b": 871,
+   "basis": "explicit",
+   "reason": "The enmity of a man who does a task all wrong is worth paying for, yet the very next chapter says no one should want enmity, even in jest.",
+   "quoteA": "Even if you must pay for it, be sure to get the enmity",
+   "quoteB": "No one should want it, even in jest"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 546,
+   "b": 761,
+   "basis": "explicit",
+   "reason": "The sceptre, not the spear, brings a ruler victory, yet an army that fears no wound and wins is ranked first of all his riches.",
+   "quoteA": "It is not the spear that brings a ruler victory. It is the sceptre",
+   "quoteB": "A complete army that fears no wound and wins is the first of all a ruler’s riches"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 5,
+   "b": 38,
+   "basis": "inferred",
+   "reason": "A lifetime of good deeds walls up the road to rebirth, yet good deeds too bear pain-engendering fruits from which one must be freed.",
+   "quoteA": "the pain-engendering fruits of action both good and evil",
+   "quoteB": "thou wallest up the road to future births"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 338,
+   "b": 1122,
+   "basis": "explicit",
+   "reason": "The bond of body and soul is as slight as a bird leaving its shell, yet the lover takes that same bond as the measure of how deep his love runs.",
+   "quoteA": "that is the symbol of the love between the soul and the body",
+   "quoteB": "How great is the love between the body and the soul?"
+  },
+  {
+   "type": "IN_TENSION_WITH",
+   "a": 510,
+   "b": 584,
+   "basis": "explicit",
+   "reason": "Doubting someone you have come to trust brings endless suffering, yet a spy is there to watch everyone alike, even those who do your work and your kin.",
+   "quoteA": "to doubt someone you have come to trust",
+   "quoteB": "those who do your work, your own kin"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 729,
+   "b": 410,
+   "basis": "explicit",
+   "reason": "Learning lifts you above others as humans stand above beasts, unless you fear an assembly of the good, when you sink below the unlearned.",
+   "quoteA": "those who have learned and understood, yet fear an assembly of the good, are lower than the unlearned",
+   "quoteB": "As beasts are to humans, so others are to those who have learned bright books"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 834,
+   "b": 410,
+   "basis": "explicit",
+   "reason": "Learning alone doesn’t set you above the rest: someone who studies, teaches and still has no self-control is the greatest fool of all.",
+   "quoteA": "No one is a greater fool than someone who studies, understands, teaches others, and still has no self-control",
+   "quoteB": "As beasts are to humans, so others are to those who have learned bright books"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 301,
+   "b": 151,
+   "basis": "explicit",
+   "reason": "Bearing with those who scorn you is called the highest thing, but holding back anger only counts where the anger could take effect.",
+   "quoteA": "Whoever holds back anger where it can take effect truly holds it back",
+   "quoteB": "the highest thing is to bear with those who scorn you"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 963,
+   "b": 125,
+   "basis": "explicit",
+   "reason": "Humility is called good in everyone, but bowing low belongs to plenty: when your means shrink, you are told to stand tall.",
+   "quoteA": "In plenty, bow low. When your means shrink, stand tall",
+   "quoteB": "Humility is good in everyone"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 469,
+   "b": 33,
+   "basis": "explicit",
+   "reason": "Doing good however you can isn’t enough: even good can go wrong if it isn’t done knowing each person’s nature.",
+   "quoteA": "Even doing good can go wrong, if you don’t do it knowing each person’s nature",
+   "quoteB": "do righteous deeds everywhere they can be done"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 1302,
+   "b": 1330,
+   "basis": "explicit",
+   "reason": "Sulking may be the joy of desire, but it is like salt: drawing it out is a little too much.",
+   "quoteA": "Drawing it out is like a little too much",
+   "quoteB": "Sulking is the joy of desire"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 962,
+   "b": 236,
+   "basis": "explicit",
+   "reason": "Renown is made the point of appearing at all, but those who want glory with strength of character won’t do anything unworthy even for glory.",
+   "quoteA": "won’t do anything unworthy, even for glory",
+   "quoteB": "If you appear, appear with renown"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 885,
+   "b": 521,
+   "basis": "explicit",
+   "reason": "Only kin are said to cherish old ties when you have lost everything, but an enemy within who is close by kinship brings harms that lead towards death.",
+   "quoteA": "When an enemy within appears who is close by kinship, it brings many harms",
+   "quoteB": "Only kin go on cherishing old ties even when you have lost everything"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 514,
+   "b": 501,
+   "basis": "explicit",
+   "reason": "Trust is to go to those who pass every test, but many who pass every test still change once they are doing the work.",
+   "quoteA": "many people change with the nature of the work",
+   "quoteB": "Test someone by these four, righteousness, wealth, pleasure and fear for their life, and then trust them"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 489,
+   "b": 467,
+   "basis": "explicit",
+   "reason": "The rule to act only after careful deliberation has an exception: when a rare chance comes, do not hesitate.",
+   "quoteA": "do at that very moment what is hard to do",
+   "quoteB": "Think, then commit to the task"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 432,
+   "b": 384,
+   "basis": "explicit",
+   "reason": "A ruler’s honour must never slip from valour, but honour that has lost its nobility is itself counted among a ruler’s faults.",
+   "quoteA": "honour that has lost its nobility",
+   "quoteB": "an honour that never slips from valour"
+  },
+  {
+   "type": "QUALIFIES",
+   "a": 500,
+   "b": 597,
+   "basis": "inferred",
+   "reason": "The elephant firm under arrows does not prove that spirit is enough: stuck in a marsh, that same beast falls to a jackal.",
+   "quoteA": "even a jackal will triumph over him when he is entangled in marshy ground",
+   "quoteB": "the elephant planteth his legs only more firmly"
+  },
+  {
+   "type": "ECHOES",
+   "a": 180,
+   "b": 363,
+   "basis": "explicit",
+   "reason": "Wanting nothing is set above everything: a pride that breeds victory in one, a wealth with no equal here or there in the other.",
+   "quoteA": "The pride of wanting nothing breeds victory",
+   "quoteB": "There is no great wealth here to match wanting nothing"
+  },
+  {
+   "type": "ECHOES",
+   "a": 602,
+   "b": 1021,
+   "basis": "explicit",
+   "reason": "A family’s rise rests on refusing to idle, put as treating laziness for what it is in one and as not resting your hands from the work in the other.",
+   "quoteA": "should treat laziness as the laziness it is",
+   "quoteB": "I won’t rest my hands from the work"
+  },
+  {
+   "type": "ECHOES",
+   "a": 158,
+   "b": 314,
+   "basis": "explicit",
+   "reason": "Answer those who harm you by outdoing them in goodness: defeat them by your own worth, or punish them with good that shames them.",
+   "quoteA": "Defeat by your own worth those who wrong you",
+   "quoteB": "do them such good that they are ashamed"
+  },
+  {
+   "type": "ECHOES",
+   "a": 314,
+   "b": 987,
+   "basis": "explicit",
+   "reason": "Good done to the one who harmed you is the answer in each, and the later couplet makes it the very test of worth.",
+   "quoteA": "do them such good that they are ashamed",
+   "quoteB": "What use is worth, if you don’t do kindness even to those who have done you harm?"
+  },
+  {
+   "type": "ECHOES",
+   "a": 312,
+   "b": 852,
+   "basis": "explicit",
+   "reason": "Deliberate injury is no licence: even when someone hurts you out of hate or to pick a quarrel, you do not return it.",
+   "quoteA": "Not harming in return, even when someone has harmed you in hatred",
+   "quoteB": "it is best not to answer with harm out of strife"
+  },
+  {
+   "type": "ECHOES",
+   "a": 157,
+   "b": 308,
+   "basis": "explicit",
+   "reason": "However great the wrong, even one that burns like many fires, the good course is the same: do not be moved to answer it.",
+   "quoteA": "it is good to suffer the pain and do nothing unrighteous",
+   "quoteB": "it is good not to be angry, if you can"
+  },
+  {
+   "type": "ECHOES",
+   "a": 656,
+   "b": 961,
+   "basis": "explicit",
+   "reason": "No necessity excuses a shameful act, not a hungry mother in one nor things you can’t do without in the other.",
+   "quoteA": "Even if you see the mother who bore you go hungry, don’t do what the worthy condemn",
+   "quoteB": "Even things you can’t do without, give them up if they would lower you"
+  },
+  {
+   "type": "ECHOES",
+   "a": 206,
+   "b": 320,
+   "basis": "explicit",
+   "reason": "Anyone who wants to be free of suffering has the same single course in each: do no harm, since harm returns to its doer.",
+   "quoteA": "If you don’t want painful things to strike you down, don’t do evil things to others",
+   "quoteB": "Those who want to be free of pain cause none"
+  },
+  {
+   "type": "ECHOES",
+   "a": 208,
+   "b": 319,
+   "basis": "explicit",
+   "reason": "Evil comes back to those who do it, unprompted: it stays at their feet like a shadow in one and arrives by afternoon, by itself, in the other.",
+   "quoteA": "like a shadow that never leaves, and stays at their feet",
+   "quoteB": "harm will come to you in the afternoon, by itself"
+  },
+  {
+   "type": "ECHOES",
+   "a": 190,
+   "b": 436,
+   "basis": "explicit",
+   "reason": "Turn on your own faults the eye you keep for others’ and no harm can reach you, said first to everyone and later to the ruler.",
+   "quoteA": "If you could see your own faults as you see strangers’ faults",
+   "quoteB": "If a ruler removes his own faults first, and then looks at those of others"
+  },
+  {
+   "type": "ECHOES",
+   "a": 596,
+   "b": 772,
+   "basis": "explicit",
+   "reason": "A high aim that fails beats a low one that succeeds: rising thoughts don’t truly fail, and a spear that missed an elephant outdoes an arrow in a hare.",
+   "quoteA": "Even when it fails, it has the nature of not failing",
+   "quoteB": "Better to hold a spear that missed an elephant than an arrow that hit a hare"
+  },
+  {
+   "type": "ECHOES",
+   "a": 540,
+   "b": 666,
+   "basis": "explicit",
+   "reason": "You can get what you have set your mind on, on one condition stated in each: that you keep your mind on it and stay firm.",
+   "quoteA": "Getting what you have set your mind on is easy, if you can keep your mind on it",
+   "quoteB": "Those who plan will get what they planned, just as they planned it, if they are firm"
+  },
+  {
+   "type": "ECHOES",
+   "a": 720,
+   "b": 849,
+   "basis": "inferred",
+   "reason": "What you offer those who can’t take it is simply lost: ambrosia spilled in a filthy yard, or a lesson that leaves the teacher seeing nothing himself.",
+   "quoteA": "like ambrosia spilled in a filthy yard",
+   "quoteB": "Whoever tries to show a man who can’t see ends up seeing nothing himself"
+  },
+  {
+   "type": "ECHOES",
+   "a": 534,
+   "b": 750,
+   "basis": "explicit",
+   "reason": "A fort is only as good as those in it: there is no fort for those who are afraid, and none for those with no excellence in action.",
+   "quoteA": "There is no fort for those who are afraid",
+   "quoteB": "with those who have no excellence in action it is no fortress"
+  },
+  {
+   "type": "ECHOES",
+   "a": 492,
+   "b": 741,
+   "basis": "explicit",
+   "reason": "A fortress is not only the refuge of the weak: the strong and powerful, each insists, gain just as much from one.",
+   "quoteA": "Even to the strong and warlike, a gain that rests on a stronghold brings many benefits",
+   "quoteB": "A fortress is of value to those who are strong"
+  },
+  {
+   "type": "ECHOES",
+   "a": 650,
+   "b": 728,
+   "basis": "explicit",
+   "reason": "Learning that cannot be put across to others is worthless: a flower without scent in one, good for nothing in the other.",
+   "quoteA": "like flowers that bloom in clusters but have no scent",
+   "quoteB": "of no use, however much they have learned"
+  },
+  {
+   "type": "ECHOES",
+   "a": 502,
+   "b": 794,
+   "basis": "explicit",
+   "reason": "The person worth having is described in nearly the same words, well-born and dreading blame, first as one to trust and then as a friend.",
+   "quoteA": "born of good family, free of faults, and has the shame that dreads a scar",
+   "quoteB": "Someone well-born, who shrinks from blame upon himself"
+  },
+  {
+   "type": "ECHOES",
+   "a": 520,
+   "b": 553,
+   "basis": "explicit",
+   "reason": "Rule stays sound only if the ruler looks into it daily: do so every day, or watch the land go to ruin day by day.",
+   "quoteA": "Let the ruler look into it every day",
+   "quoteB": "When a ruler doesn’t look into things daily and do justice, his land goes to ruin day by day"
+  },
+  {
+   "type": "ECHOES",
+   "a": 279,
+   "b": 667,
+   "basis": "explicit",
+   "reason": "Looks are no measure of a person, shown by the cruel arrow and the bent harp in one and by the axle pin of a great chariot in the other.",
+   "quoteA": "Judge people the same way, by what they do",
+   "quoteB": "Don’t scorn people for how they look"
+  },
+  {
+   "type": "ECHOES",
+   "a": 954,
+   "b": 1016,
+   "basis": "explicit",
+   "reason": "No prize justifies a stain on your name: not piled-up millions for those of good family, not the wide world for the best of people.",
+   "quoteA": "Even for piled-up millions, those of good family won’t do anything that lowers them",
+   "quoteB": "won’t want the wide world unless they have shame as their fence"
+  },
+  {
+   "type": "ECHOES",
+   "a": 113,
+   "b": 755,
+   "basis": "explicit",
+   "reason": "Gain made the wrong way is to be let go, however good it looks: give it up at once in one, let it roll away in the other.",
+   "quoteA": "let go at once of gain that comes from leaving the middle",
+   "quoteB": "don’t embrace it, let it roll away"
+  },
+  {
+   "type": "ECHOES",
+   "a": 283,
+   "b": 660,
+   "basis": "explicit",
+   "reason": "Wealth won by stealing or deceit can’t hold, however it seems to grow: it perishes in one, and it is water in a pot of raw clay in the other.",
+   "quoteA": "seems to grow, then perishes beyond all measure",
+   "quoteB": "like pouring water into a pot of raw clay"
+  },
+  {
+   "type": "ECHOES",
+   "a": 435,
+   "b": 535,
+   "basis": "explicit",
+   "reason": "Failing to guard in advance is punished when the blow comes: you are straw before a fire in one, and left regretting it in the other.",
+   "quoteA": "like a stack of straw before a fire",
+   "quoteB": "will regret that mistake when the blow lands"
+  },
+  {
+   "type": "ECHOES",
+   "a": 508,
+   "b": 792,
+   "basis": "explicit",
+   "reason": "Giving trust or friendship without testing is the same mistake with a lasting price: suffering for those after you, or a sorrow that kills.",
+   "quoteA": "Trust a stranger without testing them, and the suffering won’t end",
+   "quoteB": "Someone who makes a friend without looking and looking again ends in a sorrow that kills him"
+  },
+  {
+   "type": "ECHOES",
+   "a": 1090,
+   "b": 1281,
+   "basis": "explicit",
+   "reason": "Desire outdoes liquor in the same way, heard first from him and then from her: liquor must be drunk, but desire delights at a glance.",
+   "quoteA": "It can’t delight those who merely see, as desire does",
+   "quoteB": "toddy can’t do this, but desire can"
+  },
+  {
+   "type": "ECHOES",
+   "a": 1130,
+   "b": 1220,
+   "basis": "explicit",
+   "reason": "She answers the same village gossip twice: they say he has left her, but they cannot see him in her heart or in her dreams.",
+   "quoteA": "This town says he lives apart from me",
+   "quoteB": "They say he left me in waking life"
+  },
+  {
+   "type": "ECHOES",
+   "a": 87,
+   "b": 105,
+   "basis": "explicit",
+   "reason": "What a service is worth lies not in the act but in the person it reaches: the worth of the guest in one, of those who received it in the other.",
+   "quoteA": "It is measured by the worth of the guest",
+   "quoteB": "It is the worth of those who received it"
+  },
+  {
+   "type": "ECHOES",
+   "a": 408,
+   "b": 657,
+   "basis": "inferred",
+   "reason": "Hard as a good man’s poverty is, wealth held by the wrong people ranks lower still, whether they are fools or got it dishonourably.",
+   "quoteA": "far worse is riches in the hands of the fool",
+   "quoteB": "The indigence of the worthy is better far than wealth that is amassed by dishonourable means."
+  },
+  {
+   "type": "ECHOES",
+   "a": 407,
+   "b": 982,
+   "basis": "inferred",
+   "reason": "Beauty of body counts for nothing alone: a clay image without understanding in one, no addition to the worth of character in the other.",
+   "quoteA": "no better than the beauty of an image of clay",
+   "quoteB": "the comeliness of the body addeth nothing"
+  },
+  {
+   "type": "ECHOES",
+   "a": 1138,
+   "b": 1254,
+   "basis": "explicit",
+   "reason": "Her reserve does not save her: desire breaks out of hiding into the open, whatever she had prided herself on.",
+   "quoteA": "It breaks out of hiding into the open",
+   "quoteB": "Now my desire has gone past hiding, out into the public square"
+  },
+  {
+   "type": "ECHOES",
+   "a": 54,
+   "b": 1137,
+   "basis": "explicit",
+   "reason": "Nothing, each declares, is greater than a woman holding firm, whether in chastity or in not riding the palmyra stalk under a sea of desire.",
+   "quoteA": "What is greater than a woman, if she has the strength called chastity?",
+   "quoteB": "Nothing is greater than a woman"
+  },
+  {
+   "type": "ECHOES",
+   "a": 1109,
+   "b": 1330,
+   "basis": "explicit",
+   "reason": "The joy of desire is a sequence, not a state: the sulk first, then the embrace that ends it.",
+   "quoteA": "Sulking, making up and coming together",
+   "quoteB": "the joy of sulking is the embrace that ends it"
+  },
+  {
+   "type": "ECHOES",
+   "a": 797,
+   "b": 839,
+   "basis": "inferred",
+   "reason": "Losing a fool as a friend is a gain: plain gain in one and, with irony, very sweet in the other, because the end brings no pain.",
+   "quoteA": "to give up the friendship of fools and get clear of them",
+   "quoteB": "When it ends, it brings no pain at all"
+  },
+  {
+   "type": "ECHOES",
+   "a": 201,
+   "b": 428,
+   "basis": "inferred",
+   "reason": "Fear is the mark of good sense here, not weakness: the worthy flee what the evil ignore, and the wise fear what fools rush into.",
+   "quoteA": "The evil fear not the folly called sin: but the worthy flee from it.",
+   "quoteB": "it is the part of the wise to fear what ought to be feared"
+  },
+  {
+   "type": "ECHOES",
+   "a": 1259,
+   "b": 1284,
+   "basis": "explicit",
+   "reason": "She tells the same small defeat twice: she set out to sulk, and her heart had already gone to him.",
+   "quoteA": "I went off meaning to sulk. I saw my heart was ready to join him",
+   "quoteB": "I went there to sulk, my friend, but my heart forgot that and went to join him"
+  },
+  {
+   "type": "ECHOES",
+   "a": 216,
+   "b": 1008,
+   "basis": "inferred",
+   "reason": "A village tree shows what a rich man’s wealth is to his neighbours: fruit for all when he has heart, poison when he is unloved.",
+   "quoteA": "a fruit-tree in the middle of the village",
+   "quoteB": "the fruiting of the poison tree in the midst of the village"
+  }
+ ]
+}

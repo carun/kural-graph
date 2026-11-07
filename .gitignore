@@ -7,7 +7,7 @@
 /.next/
 /.next-verify/
 /out/
-# Written by pipeline/export-fork.ts in tirukkural-kb.
+# Fetched by content/pipeline/08-models.ts and checked against its lock.
 /public/models/
 /.wrangler/
 next-env.d.ts
@@ -39,3 +39,9 @@ Thumbs.db
 .vercel
 
 videos/
+
+# The content pipeline. Its downloads hold dataset fields that must never be committed.
+/content/.cache/
+/content/public/
+/content/annotation/flows/
+/content/annotation/readings/

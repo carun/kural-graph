@@ -1,0 +1,775 @@
+[
+ {
+  "edge": "f9696d15ec4d9c2b",
+  "action": "remove",
+  "why": "Blind review: Both say overcome the proud; 158 names the means and 880 names none, so there is no pull."
+ },
+ {
+  "edge": "91358ec4de564833",
+  "action": "remove",
+  "why": "Blind review: Different acts in different mouths: his praise of not riding the madal, her confession about following."
+ },
+ {
+  "edge": "b0f219c68152c533",
+  "action": "remove",
+  "why": "Blind review: Shared image only: the bond is fleeting in one and close in the other, which are compatible."
+ },
+ {
+  "edge": "b79c840ee0496cff",
+  "action": "remove",
+  "why": "Blind review: Shared elephant only: being trapped on bad ground does not limit not flinching in defeat."
+ },
+ {
+  "edge": "33627fe2fe8f6c4c",
+  "action": "remove",
+  "why": "Blind review: A fool's riches and ill-gotten riches are different targets; only the comparison form is shared."
+ },
+ {
+  "edge": "fd26b2587be8697a",
+  "action": "remove",
+  "why": "Blind review: Tamil 982 never mentions the body, and 407 concerns intellect, not character."
+ },
+ {
+  "edge": "1ad2024d2142644c",
+  "action": "remove",
+  "why": "Blind review: Shared pattern only: 201 fears sin and 428 fears danger."
+ },
+ {
+  "edge": "d3431c789b3f5731",
+  "action": "remove",
+  "why": "Blind review: Inverted image, not the same point: a good man's fruit tree against an unloved man's poison tree."
+ },
+ {
+  "edge": "fdde6037c76de3e9",
+  "action": "remove",
+  "why": "Blind review: Aiyar's by benefactions is not in Tamil 1010, which says nothing about reckless giving."
+ },
+ {
+  "edge": "33df9ea2b1becded",
+  "action": "remove",
+  "why": "Blind review: Giving less as means shrink satisfies both, so there is no pull."
+ },
+ {
+  "edge": "da16044098400b52",
+  "action": "remove",
+  "why": "Blind review: Tamil கெழுதகைமை is a friend's liberty, which can include reproof, not merrymaking."
+ },
+ {
+  "edge": "0120e7e161fbb7d6",
+  "action": "remove",
+  "why": "Blind review: The striking is Aiyar's throw them down; Tamil 488 only says the foe's head falls at his end."
+ },
+ {
+  "edge": "3143e4ca9ca074fe",
+  "action": "remove",
+  "why": "Blind review: 274 condemns wrongdoing under the garb and 586 names no wrong; the real point sits in 276 and 586."
+ },
+ {
+  "edge": "9176afd97fd7592c",
+  "action": "remove",
+  "why": "Blind review: Character judged by deeds and momentary intent read from signs are different skills."
+ },
+ {
+  "edge": "9da2d41ada4753c0",
+  "action": "remove",
+  "why": "Blind review: Two rhetorical they-alone lines on different axes, spiritual and economic."
+ },
+ {
+  "edge": "df846243fc06cb16",
+  "action": "remove",
+  "why": "Blind review: Tamil 242 says mercy alone is one's support, not salvation, and a man can hold both."
+ },
+ {
+  "edge": "5270605b77cbcf55",
+  "action": "remove",
+  "why": "Blind review: 1006 calls unused wealth a bane without saying the miser could choose otherwise."
+ },
+ {
+  "edge": "974d98fa5f78266b",
+  "action": "remove",
+  "why": "Blind review: One ranks mercy above wealth, the other explains why the poor do not renounce; no collision."
+ },
+ {
+  "edge": "931600b883c84501",
+  "action": "remove",
+  "why": "Blind review: 984 assigns non-killing to tapas and non-slander to worth, which does not limit 321."
+ },
+ {
+  "edge": "475735276a67c55c",
+  "action": "remove",
+  "why": "Blind review: Indra is Aiyar's reading; Tamil 899 says only king, and its point is wrath, not sense control."
+ },
+ {
+  "edge": "20e47c24ff8c51af",
+  "action": "remove",
+  "why": "Blind review: Shared ornament image only: humility and speech in 95, her bashful beauty in 1089."
+ },
+ {
+  "edge": "4854ee40cd724d8f",
+  "action": "remove",
+  "why": "Blind review: Tamil 184 concedes harshness to a man's face, so the echo of 998 is Aiyar's, not the text's."
+ },
+ {
+  "edge": "47295485a15b34b3",
+  "action": "remove",
+  "why": "Blind review: Tamil 859 has no Destiny; its subject is strife, not resolve."
+ },
+ {
+  "edge": "0616c6866eb7bcb4",
+  "action": "remove",
+  "why": "Blind review: Shared image of air in an embrace: joy in one, pallor in the other."
+ },
+ {
+  "edge": "82bf8b0f431c2d0c",
+  "action": "remove",
+  "why": "Blind review: Parallel form only: ignorance discredits in one, poverty in the other."
+ },
+ {
+  "edge": "ddd3d76baffe9031",
+  "action": "remove",
+  "why": "Blind review: Parallel form only: the subjects differ, envy in one and folly in the other."
+ },
+ {
+  "edge": "540602bdf0998af6",
+  "action": "remove",
+  "why": "Blind review: Tamil 374 contrasts riches with clear-mindedness, not virtue; Aiyar's Saintliness makes the clash."
+ },
+ {
+  "edge": "7dc8b7d050869d87",
+  "action": "remove",
+  "why": "Blind review: 54 is conditional on firm chastity, so it sits easily beside a fickle-heart simile."
+ },
+ {
+  "edge": "6a2abba13c5be7e2",
+  "action": "remove",
+  "why": "Blind review: A reason for embodiment and a lament that it is temporary fit together."
+ },
+ {
+  "edge": "474f75fcfaf0bb51",
+  "action": "remove",
+  "why": "Blind review: Character shown in deeds and feeling shown on the face do not collide."
+ },
+ {
+  "edge": "bd1fa9d099a03c19",
+  "action": "remove",
+  "why": "Blind review: The renouncer's clinging and a friend's loyalty address different people."
+ },
+ {
+  "edge": "f3483b55d2732400",
+  "action": "remove",
+  "why": "Blind review: Two definitions of wisdom on different planes; neither excludes the other."
+ },
+ {
+  "edge": "7c17d1519d535998",
+  "action": "remove",
+  "why": "Blind review: Goodwill to all and avoiding low intimates sit together easily."
+ },
+ {
+  "edge": "eb44c09b3908394a",
+  "action": "remove",
+  "why": "Blind review: An enemy's heart may stay unchanged while a prince still makes him an ally."
+ },
+ {
+  "edge": "b4204bd2d11190f3",
+  "action": "remove",
+  "why": "Blind review: 1255 shares 966's ideal and only says the lovesick cannot keep it."
+ },
+ {
+  "edge": "8770de8789bca961",
+  "action": "remove",
+  "why": "Blind review: 988 is conditional on firm worth and 1044 speaks of birth, so they concern different people."
+ },
+ {
+  "edge": "2f0af7291e663ad4",
+  "action": "remove",
+  "why": "Blind review: 467 already bars rethinking after deciding, so read alone it does not mislead."
+ },
+ {
+  "edge": "0d878e26d83a8629",
+  "action": "remove",
+  "why": "Blind review: Tamil 79 is about love as the inner limb and 982 about character; only a generic inner over outer."
+ },
+ {
+  "edge": "b06f99a1a8a387ec",
+  "action": "remove",
+  "why": "Blind review: Tamil 859 has no fate; its subject is strife, not intelligence."
+ },
+ {
+  "edge": "6d8dd89a1d226eca",
+  "action": "remove",
+  "why": "Blind review: Tamil திறப்பாடு is executive ability, not firmness of will; irresolute is Aiyar's looseness."
+ },
+ {
+  "edge": "5ecbc52a5d337374",
+  "action": "remove",
+  "why": "Blind review: This is cutting an enemy's pride as a weapon, not curing the vice of Arrogance."
+ },
+ {
+  "edge": "ad2c420e2328810a",
+  "action": "remove",
+  "why": "Adjudicated: Says what rain does, ruining and restoring, not what rain is; a statement of its power is not a definition."
+ },
+ {
+  "edge": "6ce095df09070c88",
+  "action": "remove",
+  "why": "Adjudicated: Speaks of knowing the true nature of the five senses, not of holding them in; restraint has to be read into it."
+ },
+ {
+  "edge": "df8455fc02118ba8",
+  "action": "remove",
+  "why": "Adjudicated: About who deserves the name Brahman, a role the Ascetic entry sets apart; nothing in it speaks of renouncing."
+ },
+ {
+  "edge": "370a74aec0b07bf9",
+  "action": "remove",
+  "why": "Adjudicated: Palanquin bearer and rider illustrate that virtue pays; the couplet shows a case and does not say what the return of deeds is."
+ },
+ {
+  "edge": "980de730608d3f46",
+  "action": "remove",
+  "why": "Adjudicated: Says love cannot be hidden and tears betray it; a sign of love's presence does not say what love is."
+ },
+ {
+  "edge": "254fd00ac31f784c",
+  "action": "remove",
+  "why": "Adjudicated: The point here is the soul's lodging in the body, which the Bones entry excludes and leaves to Soul and Body."
+ },
+ {
+  "edge": "bc406239110e1608",
+  "action": "remove",
+  "why": "Adjudicated: Worthy and unworthy are known by what they leave behind; this is no test of even-handedness and does not define it."
+ },
+ {
+  "edge": "df951d69a9960837",
+  "action": "remove",
+  "why": "Adjudicated: A simile for the bond of soul and body; it pictures life's departure and does not say what impermanence is."
+ },
+ {
+  "edge": "0ee9e766fd045233",
+  "action": "remove",
+  "why": "Adjudicated: Says inner wit outweighs book learning; even read as destiny it asserts a power and does not say what destiny is."
+ },
+ {
+  "edge": "82dcaae62cf1e3f9",
+  "action": "remove",
+  "why": "Adjudicated: The bough tip is the limit of one's reach; the Tree entry pictures what a person is to others, which this is not."
+ },
+ {
+  "edge": "bdf611f8d5a2ed32",
+  "action": "remove",
+  "why": "Adjudicated: The flower here only shows how high the water stands; it is not beauty or delicacy, so the watered plant is the image."
+ },
+ {
+  "edge": "8323810c15c927b0",
+  "action": "remove",
+  "why": "Adjudicated: Warns of the disgrace of a slip before the wise; it does not speak of weighing hearers, and that takes more than one step."
+ },
+ {
+  "edge": "1379d49dd39a5893",
+  "action": "remove",
+  "why": "Adjudicated: Warns of the sweet words of women who want gold; the man's appetite is not what is judged here."
+ },
+ {
+  "edge": "edf6179fc548bb1b",
+  "action": "remove",
+  "why": "Adjudicated: The torch here is a futile search under water; it drives out no dark, and is not the lamp used of truth or wealth."
+ },
+ {
+  "edge": "21b0158842433b0a",
+  "action": "remove",
+  "why": "Adjudicated: Names the cause of disease, humours out of balance; it does not say what health or the care of the body is."
+ },
+ {
+  "edge": "400a863cc3daae27",
+  "action": "remove",
+  "why": "Adjudicated: Says high place does not make one high; this denies a false measure and never says what greatness is."
+ },
+ {
+  "edge": "917d5d7a756ded33",
+  "action": "remove",
+  "why": "Adjudicated: Ranks farm tasks, manure over ploughing and guarding over watering; it teaches technique and praises nothing about husbandry."
+ },
+ {
+  "edge": "baf26468171ee420",
+  "action": "remove",
+  "why": "Adjudicated: Explains why begging persists, because some do not refuse; it neither urges giving nor praises it."
+ },
+ {
+  "edge": "29342cbf2014b201",
+  "action": "remove",
+  "why": "Adjudicated: The eye here is only a room to clear for the beloved; it does not act, wound, weep or take blame as the entry says."
+ },
+ {
+  "edge": "44ad0ad902842c81",
+  "action": "remove",
+  "why": "Adjudicated: The eye is where he dwells, unhurt by a blink; it is not an actor that fights or suffers as the entry describes."
+ },
+ {
+  "edge": "41c2f822fcac7fcf",
+  "action": "remove",
+  "why": "Adjudicated: The eye is his dwelling, left unpainted so as not to hide him; it is a home, not an actor that wounds or weeps."
+ },
+ {
+  "edge": "aec931f5217b5568",
+  "action": "remove",
+  "why": "Adjudicated: Says the gossip keeps her alive; that is an effect on the speaker, not an account of what gossip is."
+ },
+ {
+  "edge": "83c86b8b5ab16def",
+  "action": "retype",
+  "why": "He calls the gossip precious, which is praise rather than a definition. Agreed by the build review and the local model.",
+  "to": "COMMENDS"
+ },
+ {
+  "edge": "3818a9c8fe3bc90e",
+  "action": "remove",
+  "why": "Adjudicated: The moon here is eclipsed for all to see; none of the entry's moons, waxing, spotted or rivalling her face, is meant."
+ },
+ {
+  "edge": "0ce69910cafb4bb0",
+  "action": "remove",
+  "why": "Adjudicated: A simile for a futile attempt, putting out fire with ghee; it pictures gossip's effect and does not say what gossip is."
+ },
+ {
+  "edge": "e388c18ef7dee160",
+  "action": "remove",
+  "why": "Adjudicated: A lover's wry wish that the village keeps talking; nothing here says what gossip is."
+ },
+ {
+  "edge": "9dfc1bfe403b09c6",
+  "action": "remove",
+  "why": "Adjudicated: Tears here are plain weeping run dry and proclaim nothing; the working figure is the eyes, not the entry's tears."
+ },
+ {
+  "edge": "00a504b101898994",
+  "action": "remove",
+  "why": "Adjudicated: Says the pride of life belongs to those whose love is returned; that is mutual love, not what one-sided love is."
+ },
+ {
+  "edge": "49758a1f0193b87c",
+  "action": "remove",
+  "why": "Adjudicated: Tamil has only வேறல்லம், we are not separate; Aiyar adds the one soul, and no soul lodged in a body is pictured."
+ },
+ {
+  "edge": "2585acee58b8da11",
+  "action": "remove",
+  "why": "Adjudicated: A plea to the real moon not to set; it is not waxing, spotted or rivalling her face, so the entry does not apply."
+ },
+ {
+  "edge": "506560fae8796cf5",
+  "action": "remove",
+  "why": "Adjudicated: The bud-to-bloom picture is real, but it shows sickness growing, not the entry's beauty, delicacy or lack."
+ },
+ {
+  "edge": "25587bed87083c18",
+  "action": "remove",
+  "why": "Adjudicated: The dead of night is only when love rules her heart: a word in its plain sense, not an image."
+ },
+ {
+  "edge": "daaded1dfc0e1403",
+  "action": "remove",
+  "why": "Adjudicated: Dull eyes and worn fingers are plain signs of waiting; the eyes do not act, fight or take blame here."
+ },
+ {
+  "edge": "deef093bc6e856a6",
+  "action": "remove",
+  "why": "Adjudicated: Seeing him to her eyes' content is plain longing; the eyes neither wound nor weep nor take blame."
+ },
+ {
+  "edge": "e615d9a1544a8a79",
+  "action": "remove",
+  "why": "Adjudicated: The eye that misses the painting brush is plain sight in a simile, not the eye as learning, spies or kindness."
+ },
+ {
+  "edge": "ee709dad1763b5f9",
+  "action": "remove",
+  "why": "Build review, every DEFINES read: States what speech can bring about, not what it is."
+ },
+ {
+  "edge": "6f6824cbedafc181",
+  "action": "remove",
+  "why": "Build review, every DEFINES read: Says speech reveals a family, not what speech is."
+ },
+ {
+  "edge": "2d0dcfe4b386e134",
+  "action": "remove",
+  "why": "Build review, every DEFINES read: Says what the gossip did for him, not what gossip is."
+ },
+ {
+  "edge": "ab937f3404beaacb",
+  "action": "retype",
+  "why": "Says the clamour keeps his passion alive, a reward rather than a definition. Agreed by the build review and the local model.",
+  "to": "COMMENDS"
+ },
+ {
+  "edge": "cbf95626e9c06092",
+  "action": "remove",
+  "why": "Build review, every DEFINES read: Compares being found out to drinking; no account of gossip."
+ },
+ {
+  "edge": "cca432320190bbe9",
+  "action": "remove",
+  "why": "Build review, every DEFINES read: Pictures how far the outcry spread, not what it is."
+ },
+ {
+  "edge": "8bc302df001178fa",
+  "action": "retype",
+  "why": "Shows the cost of separation rather than saying what it is. Agreed by the build review and the local model.",
+  "to": "CONDEMNS"
+ },
+ {
+  "edge": "e1f0a55d77fced87",
+  "action": "retype",
+  "why": "Shows the cost of separation rather than saying what it is. Agreed by the build review and the local model.",
+  "to": "CONDEMNS"
+ },
+ {
+  "edge": "51f0b7d76c3a8a64",
+  "action": "remove",
+  "why": "Readings: The ornament isn’t in the Tamil. உறுப்பு means a part, not a jewel."
+ },
+ {
+  "edge": "fa585dc001b2ccdf",
+  "action": "remove",
+  "why": "Readings: There is no ornament or jewel in the Tamil, which says only that it is good if no one can blame it."
+ },
+ {
+  "edge": "5930dbfc64f64a03",
+  "action": "remove",
+  "why": "Readings: ஏமாப்பு is shelter, not treasure. The image of savings isn’t in the Tamil."
+ },
+ {
+  "edge": "4c5aa3e8b12542f6",
+  "action": "remove",
+  "why": "Readings: The Tamil says only that a stone blocks the road of living days. Further births and release are his reading, not its words."
+ },
+ {
+  "edge": "231af24c304cccb5",
+  "action": "remove",
+  "why": "Readings: காட்சி here means understanding. The Tamil has no eye, whole or otherwise."
+ },
+ {
+  "edge": "23141a15d8563621",
+  "action": "remove",
+  "why": "Readings: The ark isn’t in the Tamil, which says only hold."
+ },
+ {
+  "edge": "4f7324255747ff6e",
+  "action": "remove",
+  "why": "Readings: The Tamil says pettiness. Lust comes only from the old note and his gloss."
+ },
+ {
+  "edge": "4562c182165b04ef",
+  "action": "remove",
+  "why": "Readings: Friendship is the old English’s word. The Tamil says cherish them and take them on, and he reads that as helpers."
+ },
+ {
+  "edge": "85074ad380ff1498",
+  "action": "remove",
+  "why": "Readings: The treasure image is the old English’s. The Tamil says a good mind brings prosperity, not that it is the true wealth."
+ },
+ {
+  "edge": "2551ca0c0a4abc27",
+  "action": "remove",
+  "why": "Readings: The ruler is his reading and the old English’s. The Tamil says only those who act."
+ },
+ {
+  "edge": "a5253bafae4dba21",
+  "action": "remove",
+  "why": "Readings: The ruler and the campaign are his reading and the old English’s. The Tamil says only those who go on."
+ },
+ {
+  "edge": "7f47bd0e89284f40",
+  "action": "remove",
+  "why": "Readings: The tank and its channels are the old English’s image. The Tamil says only the way in and the way out."
+ },
+ {
+  "edge": "81c35529e003634e",
+  "action": "remove",
+  "why": "Readings: The ruler is his reading and the old English’s. The Tamil names no one."
+ },
+ {
+  "edge": "800c7e72928fda18",
+  "action": "remove",
+  "why": "Readings: The kingdom is the old English’s. The Tamil names no ruler and speaks only of the one who does the work."
+ },
+ {
+  "edge": "5b905d52b8dba00e",
+  "action": "remove",
+  "why": "Readings: The Tamil names no ruler. He supplies one, and the old English follows him."
+ },
+ {
+  "edge": "192f0dfed17b5fd8",
+  "action": "remove",
+  "why": "Readings: The Tamil says justice, not sceptre, so the image isn’t in it."
+ },
+ {
+  "edge": "03f5e82faadbb08b",
+  "action": "remove",
+  "why": "Readings: The Tamil says only wealth and doesn’t name the ruler. He supplies him, and the old English follows."
+ },
+ {
+  "edge": "601ed5dd65769455",
+  "action": "remove",
+  "why": "Readings: The rod is the old English’s. The Tamil says only raise and strike, and he calls those images."
+ },
+ {
+  "edge": "af44158a430fbbea",
+  "action": "remove",
+  "why": "Readings: The Tamil names no ruler, only someone with a sour face."
+ },
+ {
+  "edge": "866e85d0142a017a",
+  "action": "remove",
+  "why": "Readings: The Tamil names no ruler. He supplies one, and the old English follows him."
+ },
+ {
+  "edge": "4d8170c80aab28fc",
+  "action": "remove",
+  "why": "Readings: The Tamil has prosperity asking the way, not a goddess. Neither ஆக்கம் nor his gloss, which says wealth, points to Lakshmi."
+ },
+ {
+  "edge": "fb631cd10047a83e",
+  "action": "remove",
+  "why": "Readings: The image in the Tamil is a flood, வெள்ளம், not the sea. The sea is the old English."
+ },
+ {
+  "edge": "1166703121a124b0",
+  "action": "remove",
+  "why": "Readings: The Tamil speaks of firmness in action, not of ambition or great deeds. Aspiration came from the old English."
+ },
+ {
+  "edge": "e558699eee5b8983",
+  "action": "remove",
+  "why": "Readings: The council is the old English. The Tamil names no ruler and no council."
+ },
+ {
+  "edge": "b7ed7ad8af98fcc8",
+  "action": "remove",
+  "why": "Readings: Rainwater is the old English. The Tamil says water, and he reads it as wells, tanks and rivers that last when the sky fails."
+ },
+ {
+  "edge": "768f88bfbb751152",
+  "action": "remove",
+  "why": "Readings: Vigour is the old English. The Tamil says excellence in action, and he reads it as doing the right work in the right measure, not drive."
+ },
+ {
+  "edge": "2ea449ea79adf7fb",
+  "action": "remove",
+  "why": "Readings: Discipline is the old English. The Tamil says they keep their excellence, and he reads it as fighting on against the ruler’s will."
+ },
+ {
+  "edge": "c27453397e84418f",
+  "action": "remove",
+  "why": "Readings: The love and the letting pass are the old English. The Tamil speaks of friends acting unasked, not of a friend who has hurt you."
+ },
+ {
+  "edge": "e4779379d5a7102c",
+  "action": "remove",
+  "why": "Readings: Rainwater is the old English. The Tamil says water, and he reads it as wells, tanks and rivers that last when the sky fails."
+ },
+ {
+  "edge": "e9570f9713dcb517",
+  "action": "remove",
+  "why": "Readings: Vigour is the old English. The Tamil says excellence in action, and he reads it as doing the right work in the right measure, not drive."
+ },
+ {
+  "edge": "1385cdd70590ec5f",
+  "action": "remove",
+  "why": "Readings: Seed and sowing aren’t in the Tamil. The image came from the old English."
+ },
+ {
+  "edge": "1424f71f7c338b5d",
+  "action": "remove",
+  "why": "Readings: The Tamil calls worth a strength, not wealth. The treasure image came from the old English."
+ },
+ {
+  "edge": "bf55b46f3382e248",
+  "action": "remove",
+  "why": "Readings: The couplet doesn’t name the family. He supplies it from the chapter, and the old English wrote it in."
+ },
+ {
+  "edge": "ce98211f4c717b75",
+  "action": "remove",
+  "why": "Readings: செறாஅர் means those who aren’t hostile, here her friend. “The loving” came from the old English."
+ },
+ {
+  "edge": "27557889f8034d3a",
+  "action": "remove",
+  "why": "Readings: “The lover” came from the old English. The Tamil speaks only of desire, and he reads it as the speaker’s own."
+ },
+ {
+  "edge": "5f071292ecdb0860",
+  "action": "remove",
+  "why": "Readings: The Tamil never addresses her friend. “My maid” was the old English, and only his context line brings her in."
+ },
+ {
+  "edge": "767711b390397aa5",
+  "action": "remove",
+  "why": "Readings: The Tamil says only “I will drink”. The ambrosia is his addition."
+ },
+ {
+  "edge": "4b4749a0113cb177",
+  "action": "remove",
+  "why": "Readings: The Tamil praises a woman’s nature, which he reads as simple-mindedness. Reserve came from the old English."
+ },
+ {
+  "edge": "24c54e179ce4646a",
+  "action": "remove",
+  "why": "Readings: K488 says carry your enemies, a ruler’s tactic. K963 is about dignity in want. The clash rested on “bow” in both, which the plain K488 doesn’t have."
+ },
+ {
+  "edge": "d02f0d579ab84df8",
+  "action": "remove",
+  "why": "Readings: The clash needs rebirth in K38 and good deeds among K5’s two kinds. Both are his reading, not the couplets’ words, so the plain readings don’t pull."
+ },
+ {
+  "edge": "b154acc085891814",
+  "action": "remove",
+  "why": "Readings: “Hard words” was the old English. K197 lets unjust words pass only to condemn useless ones, and K995 is about scorn. They don’t meet."
+ },
+ {
+  "edge": "fd310a74e2122de2",
+  "action": "remove",
+  "why": "Readings: “What pleases him” was the old English. K697 says to say what is wanted and never what is useless, which doesn’t pull against telling him what is good."
+ },
+ {
+  "edge": "5be8ce01a0621b90",
+  "action": "remove",
+  "why": "Readings: “Enemies should be won over” was the old English. K679 is about those not with you and K879 about clearing a thorn while young: two tactics, no real pull."
+ },
+ {
+  "edge": "8684306c2611b624",
+  "action": "remove",
+  "why": "Readings: “Two roads to a full life” was the old framing. K342 says nothing of wealth and K760 nothing of renouncing, so they don’t really pull."
+ },
+ {
+  "edge": "71f903157ecd442d",
+  "action": "remove",
+  "why": "Adjudicated: The list names measureless joy; the forgetful unguardedness it might lead to is a further step and is not itself a list item."
+ },
+ {
+  "edge": "3387921f0879109e",
+  "action": "remove",
+  "why": "Adjudicated: The couplet is about thinking first so the world will not scorn the act, which is prudence about opinion rather than refusing to sink below oneself."
+ },
+ {
+  "edge": "4f10a0cc8d7b7ae7",
+  "action": "retype",
+  "to": "DEFINES",
+  "why": "Adjudicated: The couplet says what spying is, the watching of everyone alike, and neither urges nor praises it."
+ },
+ {
+  "edge": "5770e085cc969d62",
+  "action": "remove",
+  "why": "Adjudicated: Officers are only one of three groups the spy watches, so the couplet is about the spy and not specifically about them."
+ },
+ {
+  "edge": "ba728d1f591a3727",
+  "action": "remove",
+  "why": "Adjudicated: The cause of failure named is lack of skill in execution (திறப்பாடு), not a wavering will."
+ },
+ {
+  "edge": "156376d5daea94b7",
+  "action": "remove",
+  "why": "Adjudicated: The item is the qualities rulers desire in general; the link rests on the shared word பண்புடைமை, not on a meaning of good manners."
+ },
+ {
+  "edge": "871560291633ba1b",
+  "action": "remove",
+  "why": "Adjudicated: The blank are a dull audience to be matched, not someone refusing to hear reason, so the situation fits only by stretching."
+ },
+ {
+  "edge": "3391c9595d04bcf4",
+  "action": "remove",
+  "why": "Adjudicated: A soldier's boast of his lord's might, warning enemies off; it neither urges nor praises standing by a master at any cost."
+ },
+ {
+  "edge": "ab616213ea73e59a",
+  "action": "remove",
+  "why": "Adjudicated: The couplet is about the warriors, and the இறைவன் who grows angry is the ruler, not a commander."
+ },
+ {
+  "edge": "1939f64a8b86b076",
+  "action": "retype",
+  "to": "COMMENDS",
+  "why": "Adjudicated: It values closeness as a limb of friendship and urges the worthy to be its salt, which is praise, not definition."
+ },
+ {
+  "edge": "08ce810d9cb93cd5",
+  "action": "remove",
+  "why": "Adjudicated: Not minding blame is one of four faults that make a man easy prey, and it is nearer shame; honour isn't the subject."
+ },
+ {
+  "edge": "92b454cd1221acf4",
+  "action": "remove",
+  "why": "Adjudicated: It is about the striker's joy in a witless, fearful enemy, which is strategy, not a warning against folly."
+ },
+ {
+  "edge": "4eef948be3597c10",
+  "action": "remove",
+  "why": "Adjudicated: It counsels neutrality in a time of ruin; the time is only the occasion, not the right moment as a strategic force."
+ },
+ {
+  "edge": "e059d555426001b0",
+  "action": "remove",
+  "why": "Adjudicated: It rests on the word கேளாது; the couplet is about offending the mighty, not learning by ear from the wise."
+ },
+ {
+  "edge": "c481e10e66a836b0",
+  "action": "remove",
+  "why": "Adjudicated: Scorning no one is regard for others, nearer courtesy than the lowering of oneself, so the list doesn't name humility."
+ },
+ {
+  "edge": "ecc767d3b79ab1ea",
+  "action": "retype",
+  "to": "COMMENDS",
+  "why": "Adjudicated: It praises the wealth of spirit that makes a person shine, without saying what greatness is."
+ },
+ {
+  "edge": "a1983098219b825a",
+  "action": "remove",
+  "why": "Adjudicated: The couplet names no town, and its context has her hurt by her friend's joke, so the fools aren't the neighbours."
+ },
+ {
+  "edge": "befe538ffb8de3ba",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "27ec00a0312ef850",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "31f8bb1883d19252",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "c333734ed978549a",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "1c7b750ae22ceb94",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "2b01264595e61b0d",
+  "action": "retype",
+  "to": "VOICES",
+  "why": "Adjudicated: One sign, spoken by a lover. It doesn’t define the signs, and it doesn’t praise them either, so it voices them."
+ },
+ {
+  "edge": "f267ebc7c07d60bc",
+  "action": "remove",
+  "why": "Blind review: K115's loss (கேடு) met with a steady heart and K245's freedom from misery (அல்லல்) fit together; neither denies the other."
+ }
+]

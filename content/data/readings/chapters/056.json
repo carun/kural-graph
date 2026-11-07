@@ -1,0 +1,221 @@
+{
+  "chapter": 56,
+  "title": "The Crooked Sceptre",
+  "note": "The leaning of a ruler’s justice, named again from the rod. It is the opposite of the straight sceptre, so it follows that chapter.",
+  "couplets": [
+    {
+      "n": 551,
+      "plain": "A ruler who takes to tormenting people and doing wrong is crueller than those who have taken up killing.",
+      "pm": "A ruler who covets wealth, takes up tormenting his subjects and does what is not justice is crueller than those who make killing their work out of hatred. What they do is the pain of a moment, and what he does is pain at all times. So tormenting is crueller than killing.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "acffd373312e97b1",
+          "quote": "crueller than those who have taken up killing",
+          "reason": "Ranks an oppressing ruler below even those who have taken up killing."
+        },
+        {
+          "id": "bdb2b68b0f40481a",
+          "quote": "A ruler who takes to tormenting people"
+        }
+      ]
+    },
+    {
+      "n": 552,
+      "plain": "When one who stands with a sceptre asks, it is like one who stands with a spear saying, “Hand it over.”",
+      "pm": "A ruler who stands ready to punish and asks his subjects for wealth is like a thief who stands alone with a spear on a lonely road and tells a traveller to give up what he carries. “Asks” shows this isn’t the tax that is due. He means to punish them if they don’t give, so taking by asking is also crooked rule.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "b7837c28627d71dc",
+          "quote": "one who stands with a spear"
+        },
+        {
+          "id": "68c64f7f8558ee3d",
+          "quote": "one who stands with a sceptre"
+        },
+        {
+          "id": "7670fcb08e05e2fa",
+          "quote": "stands with a sceptre"
+        }
+      ]
+    },
+    {
+      "n": 553,
+      "plain": "When a ruler doesn’t look into things daily and do justice, his land goes to ruin day by day.",
+      "pm": "A ruler who doesn’t examine each day the wrongs done in his land and give justice to match loses his land day by day. Losing means getting no benefit from it. Some read it as the land perishing day by day along with the ruler.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "6076dd3681a868f8",
+          "quote": "doesn’t look into things daily and do justice"
+        },
+        {
+          "id": "5bbf13191ee0084d",
+          "quote": "When a ruler doesn’t look into things daily"
+        }
+      ]
+    },
+    {
+      "n": 554,
+      "plain": "A ruler who bends the sceptre and acts without thinking will lose his riches and his people together.",
+      "pm": "A ruler who doesn’t think of what will follow and acts against justice loses, all at once, the wealth he has stored and the subjects who would bring him more. What takes the stored wealth is told in the next couplet.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "a57c50b103059a14",
+          "quote": "bends the sceptre and acts without thinking",
+          "reason": "A bent sceptre costs the ruler both his riches and his people."
+        },
+        {
+          "id": "b053fe04374e33b7",
+          "quote": "A ruler who bends the sceptre"
+        }
+      ]
+    },
+    {
+      "n": 555,
+      "plain": "The tears wept by those who suffer and can’t bear it: are they not the weapon that wears away wealth?",
+      "pm": "The tears wept by subjects who suffer because the ruler gives no justice, and who can’t bear it: aren’t these the tool that cuts down his wealth? Wealth is pictured as a tree. The work of the sin is laid on the tears, because nothing is crueller than those tears. So wealth wears away quickly.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "6e4d7f7ae28858e3",
+          "quote": "the weapon that wears away wealth"
+        },
+        {
+          "id": "2a1a7759dec74e46",
+          "quote": "those who suffer and can’t bear it"
+        },
+        {
+          "id": "03f5e82faadbb08b",
+          "remove": "The Tamil says only wealth and doesn’t name the ruler. He supplies him, and the old English follows."
+        },
+        {
+          "id": "71d66b9b3a321902",
+          "quote": "The tears wept",
+          "reason": "Tears become a weapon that wears down wealth."
+        }
+      ]
+    },
+    {
+      "n": 556,
+      "plain": "What makes rulers last is the straight sceptre. Without it, their light won’t last.",
+      "pm": "The renown of rulers lasts through the straight sceptre, and without it they have no renown. Once they are blamed their light goes, and so they don’t last either. He puts renown in the plural because it comes from victory, giving and the like, and all of it goes without the straight sceptre.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "fb55cda005a2d5b2",
+          "quote": "What makes rulers last is the straight sceptre",
+          "reason": "Says what lasts for rulers comes from the straight sceptre."
+        },
+        {
+          "id": "bad9f94e7066d95b",
+          "quote": "their light won’t last",
+          "reason": "Without the straight sceptre a ruler’s light won’t last."
+        },
+        {
+          "id": "0462c7503f3bdc2b",
+          "quote": "What makes rulers last"
+        }
+      ]
+    },
+    {
+      "n": 557,
+      "plain": "What no rain is to the earth, a ruler with no tenderness is to living beings.",
+      "pm": "The suffering that a lack of rain brings to living things on earth, a ruler’s lack of tenderness brings to the people of his land. This says in reverse what was said of living by looking to the sky.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "7bf7a13493e57f5c",
+          "quote": "a ruler with no tenderness"
+        },
+        {
+          "id": "dc5379b5aea156db",
+          "quote": "to living beings"
+        },
+        {
+          "id": "06d225d4c4edc358",
+          "quote": "a ruler with no tenderness"
+        },
+        {
+          "id": "521369cef150b6e5",
+          "quote": "What no rain is to the earth",
+          "reason": "The earth with no rain stands for people under a ruler with no tenderness."
+        }
+      ]
+    },
+    {
+      "n": 558,
+      "plain": "Under the sceptre of a ruler who does no justice, having is more painful than having nothing.",
+      "pm": "Under the crooked sceptre of a ruler who does no justice, owning wealth is worse for anyone than owning none. In the land of one who isn’t content with his own and craves more, being bound until the hands ache and the like fall only on those who own. So owning is worse than having nothing.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "cbe5cb80dc52f5e2",
+          "quote": "having is more painful than having nothing"
+        },
+        {
+          "id": "c09eb7cd58eea2c7",
+          "quote": "a ruler who does no justice"
+        }
+      ]
+    },
+    {
+      "n": 559,
+      "plain": "If the ruler acts against justice, the sky will fail its season and won’t rain.",
+      "pm": "If a ruler acts crookedly in what he does, the clouds don’t pour in season in his land. Rain turned aside means rain not falling when it should. The reason is given in the next couplet.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "9826c64501042976",
+          "quote": "acts against justice"
+        },
+        {
+          "id": "8c14a270cfd9ac8e",
+          "quote": "If the ruler acts against justice"
+        }
+      ]
+    },
+    {
+      "n": 560,
+      "plain": "If the protector doesn’t protect, cows give less and those of the six duties forget their books.",
+      "pm": "If the ruler who should protect living things doesn’t, the cows of his land, which has no righteousness, give less milk, and the sages forget their books. The six duties are studying, teaching, sacrificing, officiating, giving and receiving. With less milk there is no offering, and with no recitation no sacrifice, and so the sky won’t rain.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "1532f8181fb5073c",
+          "quote": "If the protector doesn’t protect"
+        },
+        {
+          "id": "d483f16dcba55261",
+          "quote": "those of the six duties forget their books",
+          "reason": "Shows even the learning of those of the six duties lapsing under a bad ruler."
+        },
+        {
+          "id": "6160093dcd59c698",
+          "quote": "If the protector doesn’t protect"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "5f680cdaa44e46ef",
+      "quote": "What makes rulers last is the straight sceptre"
+    },
+    {
+      "id": "876a5e6938ae526a",
+      "quote": "their light won’t last"
+    },
+    {
+      "id": "ebcfa62c10a9fd8b",
+      "quote": "What makes rulers last is the straight sceptre. Without it, their light won’t last"
+    },
+    {
+      "id": "a5d8230ce25518be",
+      "quote": "will lose his riches and his people together",
+      "reason": "A ruler who bends the sceptre loses his riches along with his people."
+    }
+  ]
+}

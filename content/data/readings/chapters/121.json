@@ -1,0 +1,166 @@
+{
+  "chapter": 121,
+  "title": "The Loneliness of Remembering",
+  "note": "Remembering the joy of their past union, she feels alone, and so does he in his war camp.",
+  "couplets": [
+    {
+      "n": 1201,
+      "plain": "Desire is sweeter than toddy, because even thinking of it brings a great joy that doesn’t fade.",
+      "pm": "Thinking in absence of the joy of past union gives an unfading gladness, as if it were happening now. So desire gives more joy than toddy, which delights only when drunk. He is telling of his loneliness and that he hasn’t forgotten.",
+      "tag": "agrees",
+      "context": "He says this to his companion, who has gone as a messenger.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "6e0a0a510558650e",
+          "quote": "even thinking of it brings a great joy that doesn’t fade",
+          "reason": "Mere remembering gives a joy that doesn’t fade."
+        },
+        {
+          "id": "52cbc3bf3e44b579",
+          "quote": "Desire is sweeter than toddy",
+          "reason": "Toddy loses to desire, which delights even when only remembered."
+        }
+      ]
+    },
+    {
+      "n": 1202,
+      "plain": "Desire is sweet in every way. When you think of the one you love, no pain comes.",
+      "pm": "When you think in parting of the one you love, no pain of parting comes to you. So desire is sweet in every degree, as sweet apart as together. He is saying how he has borne it.",
+      "tag": "agrees",
+      "context": "He goes on, to his companion.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "eb7c3079801cd6e8",
+          "quote": "When you think of the one you love, no pain comes",
+          "reason": "Thinking of the one you love keeps all pain away."
+        },
+        {
+          "id": "8c3dd0b9369fcb17",
+          "quote": "When you think of the one you love"
+        }
+      ]
+    },
+    {
+      "n": 1203,
+      "plain": "A sneeze starts to come and then dies away. Does he seem about to think of me, and then not?",
+      "pm": "A sneeze seems about to rise in me and dies away. So my lover must seem about to think of me, and then not. People say a sneeze comes when dear ones far away think of you. She says this on sensing that the work he went for, which seemed about to end, hasn’t ended.",
+      "tag": "adds",
+      "context": "Thinking of him and suffering, she says this to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "2fcaf81b1f1f16e6",
+          "quote": "A sneeze starts to come and then dies away"
+        }
+      ]
+    },
+    {
+      "n": 1204,
+      "plain": "Am I too in his heart? In mine, oh, he is always there.",
+      "pm": "He is always in my heart, without a break. Am I in his in the same way, or not? Is he staying away, though I am there, because his work isn’t done? Or is it done, and he stays away because I am not there?",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "b5e75186d68610c3",
+          "quote": "Am I too in his heart?"
+        }
+      ]
+    },
+    {
+      "n": 1205,
+      "plain": "He has barred me from his heart. Isn’t he ashamed to keep coming into mine?",
+      "pm": "My lover has set a guard in his heart so that I can’t enter. Isn’t he ashamed to keep coming into mine without end? To never let someone come to you, yet go to them again and again, isn’t what a person with shame does.",
+      "tag": "agrees",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "50c356b7e149d3a3",
+          "quote": "He has barred me from his heart"
+        }
+      ]
+    },
+    {
+      "n": 1206,
+      "plain": "How else would I live? I live by remembering the days I was with him.",
+      "pm": "I stay alive in this flood of pain by thinking of the joy of the days I joined him. Without that, what would I live by? Other things could sustain life, such as a messenger from him or one of my own, but I have none of them. This is my only support.",
+      "tag": "adds",
+      "context": "Her friend says that remembering the joy of their union is killing her, and she should forget it. She answers.",
+      "speaker": "she",
+      "sensitive": "Ties staying alive to an absent lover.",
+      "links": [
+        {
+          "id": "5d38d98b74c5dd7c",
+          "quote": "I live by remembering the days I was with him"
+        }
+      ]
+    },
+    {
+      "n": 1207,
+      "plain": "What would become of me if I forgot? I don’t know how to forget, and even remembering burns my heart.",
+      "pm": "I don’t know how to forget that joy, and even as I remember it, parting burns my heart. I can’t bear parting as it is. If I forgot, how could I stay alive and not die?",
+      "tag": "agrees",
+      "context": "She goes on, answering her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "19a0a547a5955f95",
+          "quote": "What would become of me if I forgot?"
+        },
+        {
+          "id": "6c02648bff1d4714",
+          "quote": "even remembering burns my heart"
+        }
+      ]
+    },
+    {
+      "n": 1208,
+      "plain": "However much I think of him, he doesn’t get angry. Isn’t that the honour my lover does me?",
+      "pm": "However much I think of him, he isn’t angry. He agrees to stay in my heart. Isn’t that all the joy my lover gives me? She knows no joy greater, so she calls it an honour. She is quietly mocking what her friend said.",
+      "tag": "adds",
+      "context": "Her friend says he will learn of her pain, come and give her joy. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "69d6875e921465b5",
+          "quote": "However much I think of him, he doesn’t get angry"
+        }
+      ]
+    },
+    {
+      "n": 1209,
+      "plain": "My sweet life is ending, as I dwell on the unkindness of the one who said, “We are not separate.”",
+      "pm": "My sweet life is going, as I think so much on the unkindness of the one who used to say, “We two are not separate.” His unkindness is leaving when he could come back, staying away and sending no messenger. It is his lack of loving-kindness, she answers her friend, not the parting, that is ending her life.",
+      "tag": "adds",
+      "context": "She grieves that no messenger comes. Her friend urges her to be firm, and she answers.",
+      "speaker": "she",
+      "sensitive": "speaks of her life ebbing away over his cruelty",
+      "links": []
+    },
+    {
+      "n": 1210,
+      "plain": "Long may you live, moon. Don’t set, so that my eyes may see the one who left without leaving me.",
+      "pm": "Moon, don’t set, so that I may meet with my eyes the one who stays always in my heart and yet has gone. Both of them look at the moon, so their eyes meet on it. She says “long may you live” because she is pleading. With another reading, the moon won’t set, so she can’t sleep and see him in a dream.",
+      "tag": "adds",
+      "context": "She has rejected her friend’s comfort. With desire at its height and her grief past bearing, she says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "fdc208f78483ae43",
+          "quote": "so that my eyes may see the one who left without leaving me"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "f4b10ba30d606017",
+      "quote": "no pain comes",
+      "reason": "Thinking of the absent one keeps the pain of parting away."
+    }
+  ]
+}

@@ -54,7 +54,7 @@ Unlike a couplet, a whole-chapter recording has to go into the data as well, bec
 2. Regenerate the data, which notices every `chapter-*.mp3` here:
 
    ```sh
-   cd ../tirukkural-kb && node pipeline/export-fork.ts && cd ../kural-graph && node scripts/build-layout.mjs
+   npm run data
    ```
 
 3. Commit the recording and `public/data/`, and deploy.

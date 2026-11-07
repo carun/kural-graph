@@ -1,0 +1,148 @@
+{
+  "chapter": 127,
+  "title": "Longing to Meet",
+  "note": "In a long separation, he and she each hurry with longing to see the other. He rejects the view that this is only her longing for him. Her words here come from lost reserve, so the chapter follows that one.",
+  "couplets": [
+    {
+      "n": 1261,
+      "plain": "My eyes have lost their light and grown dull, and my fingers have worn down from touching off the days since he left.",
+      "pm": "Touching the marks on the wall to count the days since he left, I have worn down my fingers. Watching the road he will come by, my eyes too have lost their light and can’t make out fine things. Even so he hasn’t come. How can I see him now? She does these things without a break, not once, and that is her eagerness.",
+      "tag": "adds",
+      "context": "She is eager to see him, and she says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "a2b4d427940755f3",
+          "quote": "my fingers have worn down",
+          "reason": "Gives longing its mark: eyes gone dull and fingers worn from counting the days."
+        }
+      ]
+    },
+    {
+      "n": 1262,
+      "plain": "You in your bright jewels, if I forget him today, my beauty will leave me and the bangles will slip from my arms.",
+      "pm": "You in your bright jewels, if I forget him today, the day I am dying, then in my next birth too beauty will leave me and the bangles will slip from my arms. “Bright jewels” hints that you care nothing for this. If I think of him at this last moment I can reach him in the next life and be happy, so I mustn’t forget him.",
+      "tag": "differs",
+      "note": "மேல் can mean “on” or “hereafter”. He takes it as hereafter: she is dying today, and forgetting him now would cost her in her next birth.",
+      "context": "Her friend tells her she can’t go on thinking of him without a break, and should forget him a little. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "fd366620a8638eb3",
+          "quote": "the bangles will slip from my arms",
+          "reason": "Forgetting him, she says, would only send her bangles sliding from her arms."
+        },
+        {
+          "id": "817bb7a39984f682",
+          "quote": "You in your bright jewels, if I forget him today",
+          "reason": "Put to her maid, as if answering a friend’s advice to forget him."
+        }
+      ]
+    },
+    {
+      "n": 1263,
+      "plain": "He left wanting victory, with his will for his companion. Wanting his return, I am still alive.",
+      "pm": "He didn’t want pleasure. He wanted victory, scorned me as his companion and went with his own will as his companion. Because I want him to scorn those things and come back here, I have lived even this long. That wanting keeps me alive. Without it I would die.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "sensitive": "Ties staying alive to an absent lover.",
+      "links": [
+        {
+          "id": "b9d1633c1433ab85",
+          "quote": "Wanting his return, I am still alive.",
+          "reason": "Sets his wanting of victory beside hers for his return, the one thing that keeps her alive."
+        }
+      ]
+    },
+    {
+      "n": 1264,
+      "plain": "Thinking of the return of the one who left, with all the desire we shared, my heart grows branches and climbs.",
+      "pm": "He left with desire put aside. I think of him coming back to me with that desire gathered again, and my heart drops its pain and rises, branching higher and higher. A man leaving for his work doesn’t look to the joys of desire, and when it is done he looks to nothing else. Branching is what a tree does, laid here on the heart. Without this thought I would die.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": []
+    },
+    {
+      "n": 1265,
+      "plain": "Let me see my husband until my eyes are full. Once I have, the pallor will leave my soft shoulders.",
+      "pm": "Let me see my husband until my eyes are sated. Once I have, the pallor on my soft shoulders will go by itself. She says this as a wish. Only hearing that he is coming won’t remove it.",
+      "tag": "agrees",
+      "context": "Her friend tells her he is coming, and that she mustn’t give way and grow pale. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "ae455b099d5b408a",
+          "quote": "the pallor will leave my soft shoulders",
+          "reason": "One full sight of him, she says, and the pallor will be gone from her shoulders."
+        }
+      ]
+    },
+    {
+      "n": 1266,
+      "plain": "Let my husband come, just one day. I will drink until all this sickness of grief is gone.",
+      "pm": "My husband hasn’t come in all these days. Let him come to me one day. If he comes, I will drink that ambrosia until this sickness that makes me grieve is gone. She means that within that one day she will destroy even the sickness still to come.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "767711b390397aa5",
+          "remove": "The Tamil says only “I will drink”. The ambrosia is his addition."
+        },
+        {
+          "id": "21421215336a2509",
+          "quote": "until all this sickness of grief is gone"
+        }
+      ]
+    },
+    {
+      "n": 1267,
+      "plain": "When the one as dear as my eyes comes, shall I sulk, shall I embrace him, or shall I join with him?",
+      "pm": "When the one as dear as my eyes comes, shall I sulk because he stayed away so long? Shall I embrace him because I can’t bear it? Or, wanting both, shall I blend the two? They can’t be mixed in one moment, so she asks. She means to do all three, and that is her eagerness. Some take the last as: shall I join with him as in the days before we parted?",
+      "tag": "adds",
+      "note": "கலப்பேன் can mean to mix or to join. He takes it as mixing the sulk and the embrace.",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": []
+    },
+    {
+      "n": 1268,
+      "plain": "May the ruler throw himself into the work and win. Then I will go to my wife and give the evening a feast.",
+      "pm": "May the ruler carry out his work and win. Let me go and join my wife, and feast the evening there. Evenings on campaign have no welcome and no adorning. It is said before the work is done, and that is the eagerness. He rejects the view that she is speaking: she wouldn’t say “may the ruler win” and leave out her husband.",
+      "tag": "adds",
+      "context": "He left to help the ruler in need, and the work drags on. He thinks of her and says this to himself.",
+      "speaker": "he",
+      "links": []
+    },
+    {
+      "n": 1269,
+      "plain": "For those who pine, counting on the day when the one far away returns, one day passes like seven.",
+      "pm": "Women who hold in mind the day set for their lover’s return from far away, and bear to stay alive until it comes, find one day feels as long as many. Seven stands for a great many. The man is laying her suffering on other women, which shows she isn’t the speaker.",
+      "tag": "adds",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "60cceed22c29c762",
+          "quote": "one day passes like seven"
+        },
+        {
+          "id": "53bc129b68053f21",
+          "quote": "For those who pine, counting on the day"
+        }
+      ]
+    },
+    {
+      "n": 1270,
+      "plain": "Once her heart has broken and spilled, what use is it if she will have me, if she has me, if she holds me?",
+      "pm": "If my beloved can’t bear the parting and her heart breaks and she dies, what good is it if she is to have me, or if she has me, or even if we join in the body? None of these is any use. So I must get there before that, and this is his eagerness. If she were the speaker it would be grief, not eagerness.",
+      "tag": "adds",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": []
+    }
+  ],
+  "ideaLinks": []
+}

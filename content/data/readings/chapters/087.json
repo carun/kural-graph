@@ -1,0 +1,158 @@
+{
+  "chapter": 87,
+  "title": "Enemies Worth Having",
+  "note": "A ruler can’t be wholly without enemies, so the strife forbidden in general is prescribed here in one special case: enmity made worthwhile because the enemy has faults such as lack of understanding.",
+  "couplets": [
+    {
+      "n": 861,
+      "plain": "Keep from opposing the strong. Without holding back, seek enmity with the weak.",
+      "pm": "Don’t stand against those stronger than you. Without holding back, seek enmity with those weaker. Strength includes allies, and weakness means lacking them. Allies are of two kinds: outer, such as army and wealth, and inner, such as sound understanding and living by statecraft. Beating those with neither costs you no strength, so enmity with them is allowed.",
+      "tag": "adds",
+      "sensitive": "Urges relentless war on the weak",
+      "links": [
+        {
+          "id": "b8852ce48a4968aa",
+          "quote": "seek enmity with the weak"
+        },
+        {
+          "id": "2c1bc30321a6e25b",
+          "quote": "opposing the strong"
+        },
+        {
+          "id": "dd5b4c9e421197ea",
+          "quote": "Keep from opposing the strong",
+          "reason": "Its first clause is direct advice to one facing a stronger opponent: don’t stand against them."
+        }
+      ]
+    },
+    {
+      "n": 862,
+      "plain": "He has no loving-kindness, no strong allies and no strength of his own. How can he wear down an enemy’s might?",
+      "pm": "A man has no loving-kindness for his own people, no strong allies and no strength of his own. How could he wear down the strength of the enemy who comes against him? Those who march on him lose no strength. They only gain it.",
+      "tag": "agrees",
+      "links": []
+    },
+    {
+      "n": 863,
+      "plain": "He fears, he doesn’t understand, he can’t get along with others, and he won’t give. His enemies will find him very easy.",
+      "pm": "He fears what needn’t be feared, doesn’t know what must be known, is at odds with others, and is miserly with everyone. Such a man is very easy for his enemies. A man with these four faults perishes even without enemies.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "d457c390732332ed",
+          "quote": "He fears",
+          "reason": "Fear comes first among the lacks that make him easy for his enemies."
+        },
+        {
+          "id": "ad56cb298a5d164d",
+          "quote": "he doesn’t understand"
+        },
+        {
+          "id": "e5c86106f081ed7a",
+          "quote": "he won’t give",
+          "reason": "Refusing to give completes the list of what he is without."
+        }
+      ]
+    },
+    {
+      "n": 864,
+      "plain": "He doesn’t give up anger and has no self-command. Anyone, anywhere, at any time, finds him easy.",
+      "pm": "A man who never lets go of anger and can’t keep his secrets is easy for anyone to march on, at any time and in any place. He is angry by nature and lets out his plans, so attackers needn’t weigh time, place or strength. Some read “sweet” for “easy”, and say enmity with him is sweet.",
+      "tag": "adds",
+      "note": "நிறை can mean self-command. He takes it as keeping your secrets.",
+      "links": [
+        {
+          "id": "444e92e3a7f5d9be",
+          "quote": "doesn’t give up anger"
+        }
+      ]
+    },
+    {
+      "n": 865,
+      "plain": "He doesn’t look to the right way, doesn’t do what works, doesn’t mind blame, and has no good nature. His enemies find him sweet.",
+      "pm": "He doesn’t study statecraft, doesn’t do the work it lays down, doesn’t care about the blame that comes to him, and has no good qualities. Enmity with him is sweet for his foes. Statecraft is “the way” because the ancients handed it down, and its work “works” because it never fails. Such a man destroys himself.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "08ce810d9cb93cd5",
+          "quote": "doesn’t mind blame",
+          "reason": "Not minding blame is among the faults that make him sweet to his enemies."
+        }
+      ]
+    },
+    {
+      "n": 866,
+      "plain": "A man of blinding anger and overflowing desire: his enmity is worth wanting.",
+      "pm": "Take the man whose anger leaves him unable to know himself or others, and the man whose desire keeps growing. Enmity with such men is to be sought. Everyone is the first man’s enemy, and the second can’t see his work. They will destroy themselves, so their enmity is welcome.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "ed91dff77fe5a22a",
+          "quote": "overflowing desire",
+          "reason": "Boundless desire makes a man’s enmity something his foes welcome."
+        },
+        {
+          "id": "0ab7b77ddca7a3b9",
+          "quote": "blinding anger",
+          "reason": "Anger that blinds a man leaves an opponent whose enmity is worth wanting."
+        }
+      ]
+    },
+    {
+      "n": 867,
+      "plain": "Even if you must pay for it, be sure to get the enmity of a man who stays at a task and does it all wrong.",
+      "pm": "Take on the enmity of a man who begins a task and then does what doesn’t suit it, even at the cost of some wealth. Unsuitable acts include being rash when weak and slack when strong. You may lose a little then, but you will surely gain much later, so this must certainly be done.",
+      "tag": "agrees",
+      "note": "அடுத்திருந்து can also mean staying near you. He takes it as having begun a task.",
+      "links": [
+        {
+          "id": "0aa0e177182f0414",
+          "quote": "Even if you must pay for it, be sure to get the enmity"
+        }
+      ]
+    },
+    {
+      "n": 868,
+      "plain": "A man with no virtues and many faults has no allies, and that is a safeguard for his enemies.",
+      "pm": "When a man has no virtues and many faults, he has no allies, and that very lack is an ally to his enemies. The virtues are those of the chapter on a ruler’s greatness, and the faults those of this chapter and the like. Allies are kin, friends, wealth, army and so on. What allies would do for his enemies, his having none does for them.",
+      "tag": "agrees",
+      "links": []
+    },
+    {
+      "n": 869,
+      "plain": "For those who strike, joy is never far away when the enemy they get has no understanding and is full of fear.",
+      "pm": "If you get enemies who don’t know statecraft and are afraid, high joys never leave those who attack them. Few who lack both the means and the firmness to use them ever become enemies, so he says “get”. March on such people and you gain freedom from enemies and wealth at once.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "d6ae27da3f3963e3",
+          "quote": "is full of fear"
+        },
+        {
+          "id": "92b454cd1221acf4",
+          "quote": "has no understanding",
+          "reason": "Having no understanding gives a man’s enemies joy that is never far away."
+        },
+        {
+          "id": "3efb5bd1429b5e6e",
+          "quote": "joy is never far away"
+        }
+      ]
+    },
+    {
+      "n": 870,
+      "plain": "If you won’t take the small prize of fighting an unlearned man, glory will never come to you.",
+      "pm": "Someone who won’t take the easy gain of enmity with a man unlearned in statecraft will never win fame. The gain is small only in the effort it takes. Whoever can’t even beat such a man can’t have the fame of victory. So get a great reward from small effort. He rejects other readings, which go against the chapter and don’t hold together.",
+      "tag": "adds",
+      "sensitive": "Ties glory to attacking a weak neighbour",
+      "links": [
+        {
+          "id": "0c68c16c8997674f",
+          "quote": "glory will never come to you",
+          "reason": "Refusing even the small prize of fighting an unlearned man shuts you out of glory for good."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

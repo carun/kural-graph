@@ -1,7 +1,7 @@
-// All 58 walks on the real data: nothing sensitive, nothing left out, and the same walks tirukkural-kb reviewed.
+// All 58 walks on the real data: nothing sensitive, nothing left out, and the same walks that were reviewed.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { coupletsOf, isSensitive, walkFrom, type Walk, type WalkEdge, type WalkGraph, type WalkNode } from "../src/kural/walk.ts";
 
@@ -64,8 +64,8 @@ test("every interpretive link keeps a reason and how firmly it stands", () => {
   }
 });
 
-// walks.md is the review copy. It lives with the content, so this only runs where that repo sits beside this one.
-const REVIEWED = path("../../tirukkural-kb/data/eval/walks.md");
+// walks.md is the review copy.
+const REVIEWED = path("../content/data/eval/walks.md");
 const printed = (w: Walk) => {
   const text = (id: string) => (g.nodeById.get(id) as WalkNode & { snippet: string }).snippet;
   const label = (id: string) => g.nodeById.get(id)!.label;
@@ -81,7 +81,7 @@ const printed = (w: Walk) => {
   return lines.join("\n");
 };
 
-test("the walks match the reviewed walks.md, line for line", { skip: !existsSync(REVIEWED) }, () => {
+test("the walks match the reviewed walks.md, line for line", () => {
   // The review copy keeps the English spelling. The site uses the owner’s romanisation.
   const [, ...reviewed] = readFileSync(REVIEWED, "utf8").replaceAll("Parimelazhagar", "parimēlaḻagar").trimEnd().split(/^(?=## )/m);
   const mine = situations.map((s) => printed(walks.get(s.id)!));

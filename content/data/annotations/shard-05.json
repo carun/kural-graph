@@ -1,0 +1,3210 @@
+{
+ "shard": "shard-05",
+ "chapters": [
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70
+ ],
+ "couplets": [
+  {
+   "n": 571,
+   "gloss": "Kindly regard for other people is a rare loveliness, and the whole world only keeps running because of it.",
+   "keywords": [
+    "making allowances",
+    "tolerance",
+    "getting along with people",
+    "social harmony"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Says the world stands only because this kindly regard is in it.",
+     "quote": "This world exists because of the surpassing beauty"
+    }
+   ]
+  },
+  {
+   "n": 572,
+   "gloss": "Everything that makes living together pleasant depends on looking kindly on others; people who never do are dead weight on the world.",
+   "keywords": [
+    "social graces",
+    "selfish people",
+    "why manners matter"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Rests the whole way of the world on this one grace.",
+     "quote": "The way of the world rests on kindly regard"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "The earth has to carry those without it as a load that gives her nothing.",
+     "quote": "a burden on the earth"
+    }
+   ]
+  },
+  {
+   "n": 573,
+   "gloss": "A tune that doesn't fit the song is useless, and so is an eye that never looks kindly on anyone.",
+   "keywords": [
+    "cold stare",
+    "lack of warmth",
+    "unkind looks"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Sets an eye without kindly regard beside a melody that doesn’t fit the song: both have lost their point.",
+     "quote": "What use is an eye without kindly regard?"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Asks what an eye is for, if not for looking on others with kindness.",
+     "quote": "an eye without kindly regard"
+    }
+   ]
+  },
+  {
+   "n": 574,
+   "gloss": "If your eyes don't look on people with fitting kindness, what are they doing in your face?",
+   "keywords": [
+    "noticing other people",
+    "empathy",
+    "ignoring people"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Asks the use of eyes that fail to give others the regard they are due.",
+     "quote": "Eyes without kindly regard, in due measure"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Reduces unkind eyes to features that only sit on the face and do no work.",
+     "quote": "only seem to be there in the face"
+    }
+   ]
+  },
+  {
+   "n": 575,
+   "gloss": "Kindness is what makes an eye beautiful; without it, an eye is just an open wound.",
+   "keywords": [
+    "beauty of kindness",
+    "compassionate gaze",
+    "inner beauty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Makes kindness the one thing that saves an eye from being a wound.",
+     "quote": "Kindly regard is the eye’s jewel"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Names kindly regard as the jewel an eye wears.",
+     "quote": "the eye’s jewel"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "An eye empty of kindness is taken for a sore, not an organ of sight.",
+     "quote": "an eye is taken for a sore"
+    }
+   ]
+  },
+  {
+   "n": 576,
+   "gloss": "People who have eyes but never look kindly on others are no more responsive than trees rooted in the ground.",
+   "keywords": [
+    "insensitive people",
+    "unfeeling",
+    "emotionally numb"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Those whose eyes give others no regard are ranked no higher than vegetation.",
+     "quote": "whose eyes never turn kindly to others"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "explicit",
+     "reason": "Compares unfeeling people to trees standing fixed in the soil.",
+     "quote": "like trees fixed in the soil"
+    }
+   ]
+  },
+  {
+   "n": 577,
+   "gloss": "Anyone without kindness in their eyes is really blind, and nobody who truly sees lacks that kindness.",
+   "keywords": [
+    "seeing past people's flaws",
+    "judgmental people",
+    "real insight"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Makes kindly regard the proof of real sight.",
+     "quote": "Those who have eyes are never without it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Turns blindness into the state of anyone without kindly regard.",
+     "quote": "Those without kindly regard have no eyes"
+    }
+   ]
+  },
+  {
+   "n": 578,
+   "gloss": "The world belongs to those who can be kind to people without letting the job suffer for it.",
+   "keywords": [
+    "kind but firm",
+    "compassionate leadership",
+    "boundaries at work"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Promises the earth only to kindness that leaves duty intact.",
+     "quote": "show kindly regard without ruining the work"
+    }
+   ]
+  },
+  {
+   "n": 579,
+   "gloss": "The finest quality is to stay kind and patient even with those who have wronged you.",
+   "keywords": [
+    "difficult people",
+    "turning the other cheek",
+    "being hurt by someone"
+   ],
+   "sensitive": "counsels forbearance towards those who wrong you",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Extends kindly regard even to people whose way is to hurt you.",
+     "quote": "Even with people whose way is to hurt you"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:forgiveness",
+     "basis": "explicit",
+     "reason": "Calls bearing with those who hurt you the highest quality.",
+     "quote": "show kindly regard and put up with it"
+    }
+   ]
+  },
+  {
+   "n": 580,
+   "gloss": "People who aim at true graciousness will knowingly swallow poison a friend has poured, rather than shame them.",
+   "keywords": [
+    "extreme tolerance",
+    "putting up with harm",
+    "politeness at a cost"
+   ],
+   "sensitive": "praises knowingly accepting harm from another",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:considerateness",
+     "basis": "inferred",
+     "reason": "Takes the courtesy everyone admires as far as drinking poison rather than refuse the one who poured it.",
+     "quote": "watch poison being poured, drink it"
+    }
+   ]
+  },
+  {
+   "n": 581,
+   "gloss": "A ruler should treat spies and the science of statecraft as his two eyes.",
+   "keywords": [
+    "intelligence agencies",
+    "information for leaders",
+    "national security"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "explicit",
+     "reason": "Gives spies equal place with the renowned books as what a ruler sees by.",
+     "quote": "Spies and books of high repute"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks by name to the ruler about what he must take as his eyes.",
+     "quote": "a ruler should be clear"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "A ruler's sources of knowledge are pictured as the very organ of his sight.",
+     "quote": "these two are his eyes"
+    }
+   ]
+  },
+  {
+   "n": 582,
+   "gloss": "A ruler's job is to find out quickly everything happening to everyone, every day.",
+   "keywords": [
+    "staying informed",
+    "situational awareness",
+    "knowing what's going on"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Makes knowing at once what happens to everyone the ruler’s stated work.",
+     "quote": "a ruler’s work"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "inferred",
+     "reason": "Knowing all that happens to everyone, every day, is what a ruler’s spies are for.",
+     "quote": "To know quickly, every day, all that happens to everyone"
+    }
+   ]
+  },
+  {
+   "n": 583,
+   "gloss": "A ruler who doesn't use agents to find out what's really happening has no chance of victory.",
+   "keywords": [
+    "intelligence failure",
+    "flying blind",
+    "knowing the facts before acting"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "explicit",
+     "reason": "Rules out victory for the ruler who doesn’t spy through his spies.",
+     "quote": "doesn’t spy through his spies"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Warns the ruler himself what he forfeits by staying uninformed.",
+     "quote": "A ruler who doesn’t spy"
+    }
+   ]
+  },
+  {
+   "n": 584,
+   "gloss": "Agents must keep watch on everyone alike: government officials, the ruler's own relatives and his enemies.",
+   "keywords": [
+    "internal surveillance",
+    "watching your own people",
+    "monitoring staff"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "explicit",
+     "reason": "Spares no one from scrutiny, not even the ruler's own family.",
+     "quote": "watches everyone alike"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "The work, the kin and the enemies are the ruler’s own, so this account of a spy is meant for him.",
+     "quote": "those who do your work, your own kin"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Names those who do the ruler’s work first among those to be watched.",
+     "quote": "those who do your work"
+    }
+   ]
+  },
+  {
+   "n": 585,
+   "gloss": "A good agent looks harmless, can't be stared down by anyone, and never lets a secret slip.",
+   "keywords": [
+    "undercover work",
+    "calm under pressure",
+    "poker face"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:spy",
+     "basis": "explicit",
+     "reason": "Lists what the agent needs: a harmless look, steady nerve, sealed lips.",
+     "quote": "A spy is someone with a look that draws no suspicion"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Counts never letting a secret leak among a spy's essential gifts.",
+     "quote": "never lets anything spill"
+    }
+   ]
+  },
+  {
+   "n": 586,
+   "gloss": "Agents should pose as monks and holy men, dig deep, and give nothing away whatever is done to them.",
+   "keywords": [
+    "disguise",
+    "resisting interrogation",
+    "going undercover"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:spy",
+     "basis": "explicit",
+     "reason": "Has the spy go about in the form of those who have renounced.",
+     "quote": "the form of those who have renounced"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Holds the secret fast even when the agent himself is made to suffer.",
+     "quote": "gives nothing away, whatever is done to them"
+    }
+   ]
+  },
+  {
+   "n": 587,
+   "gloss": "A good agent can get hidden things out of people and reports what he learns plainly, leaving no doubt.",
+   "keywords": [
+    "extracting information",
+    "accurate reporting",
+    "interviewing sources"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:spy",
+     "basis": "explicit",
+     "reason": "Picks out two skills: hearing what is hidden and being sure of what was learned.",
+     "quote": "can hear what has been hidden"
+    }
+   ]
+  },
+  {
+   "n": 588,
+   "gloss": "Even what one agent brings back should be checked by sending another.",
+   "keywords": [
+    "verifying information",
+    "fact checking",
+    "second source"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "explicit",
+     "reason": "Refuses to take a single agent's word: one report must be tested by another.",
+     "quote": "have another spy find out too"
+    }
+   ]
+  },
+  {
+   "n": 589,
+   "gloss": "Run your agents so that none knows the others, and believe a report only when three of them match.",
+   "keywords": [
+    "independent sources",
+    "corroboration",
+    "cross-checking"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:espionage",
+     "basis": "explicit",
+     "reason": "Keeps agents unknown to one another and asks for three matching reports.",
+     "quote": "When three agree, believe it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "inferred",
+     "reason": "Only the ruler running the service could be told to keep his spies apart.",
+     "quote": "Use spies so that one spy doesn’t know another"
+    }
+   ]
+  },
+  {
+   "n": 590,
+   "gloss": "Don't honour your agents in public: doing so gives away your own secret.",
+   "keywords": [
+    "protecting sources",
+    "public recognition",
+    "cover blown"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Even a public reward would betray what the ruler needs kept hidden.",
+     "quote": "brought your own secret out into the open"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "inferred",
+     "reason": "The spy here is his own, so the one addressed is the ruler who employs him.",
+     "quote": "Don’t honour a spy"
+    }
+   ]
+  },
+  {
+   "n": 591,
+   "gloss": "Only people with inner drive can be called rich; without it, do they truly own anything they have?",
+   "keywords": [
+    "motivation",
+    "what wealth really is",
+    "rich but lifeless"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Lets drive alone earn the name of having, and doubts all other ownership.",
+     "quote": "Drive is what truly counts as having"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Moves the title of possession from goods to a person’s own drive.",
+     "quote": "really have whatever else they have"
+    }
+   ]
+  },
+  {
+   "n": 592,
+   "gloss": "Your spirit is what truly belongs to you, because money doesn't stay and will leave one day.",
+   "keywords": [
+    "losing your savings",
+    "what you can't lose",
+    "drive over money"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Prefers spirit to wealth because only spirit stays with a man.",
+     "quote": "To have spirit is to truly have something"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Contrasts spirit as lasting property with riches that walk away.",
+     "quote": "Having wealth doesn’t last"
+    }
+   ]
+  },
+  {
+   "n": 593,
+   "gloss": "People who have real drive don't sit wailing that they've lost everything.",
+   "keywords": [
+    "bankruptcy",
+    "financial setback",
+    "starting over"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Drive is the wealth in hand that keeps people from crying that all is lost.",
+     "quote": "hold lasting drive in their hand"
+    }
+   ]
+  },
+  {
+   "n": 594,
+   "gloss": "Success asks the way to the door of someone whose drive never lets up.",
+   "keywords": [
+    "persistence",
+    "tireless people",
+    "luck finds the hard working"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Credits unwavering drive with drawing prosperity to itself.",
+     "quote": "whose drive never wavers"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "explicit",
+     "reason": "Fortune appears as a person stopping to ask directions to his house.",
+     "quote": "Good Fortune inquireth the way to his home"
+    }
+   ]
+  },
+  {
+   "n": 595,
+   "gloss": "A water flower's stem rises as high as the water, and a person rises as high as their spirit.",
+   "keywords": [
+    "potential",
+    "mindset",
+    "how far you can go",
+    "lotus"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Makes a person's spirit the exact gauge of how high they rise.",
+     "quote": "People rise as high as their spirit"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "The bloom grows with the water that feeds it, as a person grows with their spirit.",
+     "quote": "the measure of the luxuriance of its flower"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:watered-plant",
+     "basis": "explicit",
+     "reason": "The depth of the water sets how long a flower’s stem grows, as spirit sets how high people rise.",
+     "quote": "The stem of a water flower is as long as the water is deep"
+    }
+   ]
+  },
+  {
+   "n": 596,
+   "gloss": "Always aim high: even if you fall short, the aim itself keeps its honour.",
+   "keywords": [
+    "big goals",
+    "ambition",
+    "failing at something great"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:aspiration",
+     "basis": "explicit",
+     "reason": "Urges every thought towards rising, for such an aim does not fail even when it fails.",
+     "quote": "Let all your thoughts be of rising higher"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-tried-and-failed",
+     "basis": "explicit",
+     "reason": "Tells one who fell short that a high aim has the nature of not failing.",
+     "quote": "Even when it fails, it has the nature of not failing"
+    }
+   ]
+  },
+  {
+   "n": 597,
+   "gloss": "Strong-spirited people don't buckle when beaten; a wounded elephant just digs its feet in harder.",
+   "keywords": [
+    "after a defeat",
+    "standing firm",
+    "setback"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Says those with drive do not falter even when things fall apart.",
+     "quote": "The strong don’t falter when things fall apart"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The struck elephant stands its ground instead of giving way.",
+     "quote": "An elephant struck by a mass of arrows stands its ground"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bow-and-arrow",
+     "basis": "explicit",
+     "reason": "The mass of arrows is the blow of ruin, and it doesn’t bring the strong down.",
+     "quote": "a mass of arrows"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-tried-and-failed",
+     "basis": "explicit",
+     "reason": "Offers someone whose plans have fallen apart a picture of standing firm under the wound.",
+     "quote": "don’t falter when things fall apart"
+    }
+   ]
+  },
+  {
+   "n": 598,
+   "gloss": "People with no spirit will never know the pride of being openly and endlessly generous.",
+   "keywords": [
+    "giving freely",
+    "timid people",
+    "big-hearted giving"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Shows what lack of spirit costs: the pride of being generous.",
+     "quote": "Those without spirit will never have the pride"
+    }
+   ]
+  },
+  {
+   "n": 599,
+   "gloss": "Huge and sharp-tusked as it is, the elephant still panics when a tiger leaps at it.",
+   "keywords": [
+    "size isn't everything",
+    "big but scared",
+    "courage over strength"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "inferred",
+     "reason": "Bulk and tusks fail the elephant: spirit, not size, decides the contest.",
+     "quote": "huge and sharp of tusk, yet it fears"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The giant’s fear before the tiger shows size without spirit.",
+     "quote": "it fears a tiger’s attack"
+    }
+   ]
+  },
+  {
+   "n": 600,
+   "gloss": "Inner drive is the only real strength; people without it are logs that happen to be in human form.",
+   "keywords": [
+    "no motivation",
+    "apathy",
+    "what strength really is"
+   ],
+   "sensitive": "calls people without drive lifeless wood",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Declares high spirit to be the only strength worth the name.",
+     "quote": "A person’s strength is wealth of spirit"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "inferred",
+     "reason": "People without spirit are trees in human shape.",
+     "quote": "Those without it are trees"
+    }
+   ]
+  },
+  {
+   "n": 601,
+   "gloss": "A family's light could burn forever, but laziness fouls the air around it until it goes out.",
+   "keywords": [
+    "family decline",
+    "lazy household",
+    "family legacy"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Laziness is the grime that puts out a family’s unfailing lamp.",
+     "quote": "the grime called laziness"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lamp",
+     "basis": "explicit",
+     "reason": "Pictures the family as a lamp meant to stay lit.",
+     "quote": "The unfailing lamp called family"
+    }
+   ]
+  },
+  {
+   "n": 602,
+   "gloss": "Anyone who wants their family to stand strong must treat laziness as the danger it is and keep clear of it.",
+   "keywords": [
+    "building a family",
+    "family name",
+    "work ethic"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Tells those who want a true family to treat laziness as what it is.",
+     "quote": "treat laziness as the laziness it is"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Takes making a family truly a family as the goal worth shunning laziness for.",
+     "quote": "want their family to be a true family"
+    }
+   ]
+  },
+  {
+   "n": 603,
+   "gloss": "The fool who cherishes laziness will see his family collapse before he himself dies.",
+   "keywords": [
+    "ruining your family",
+    "idle parent",
+    "losing everything"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Says the fool who carries laziness within sees the family die first, in the fool’s own lifetime.",
+     "quote": "carries laziness within"
+    }
+   ]
+  },
+  {
+   "n": 604,
+   "gloss": "When people sink into laziness and attempt nothing worthwhile, their family falls apart and their faults multiply.",
+   "keywords": [
+    "no ambition",
+    "wasted life",
+    "bad habits growing"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Two costs follow idleness here: the family is ruined and faults multiply.",
+     "quote": "the family dies and faults multiply"
+    }
+   ]
+  },
+  {
+   "n": 605,
+   "gloss": "Delay, forgetfulness, laziness and oversleeping feel comfortable, and they are exactly what carries doomed people to their end.",
+   "keywords": [
+    "procrastination",
+    "sleeping in",
+    "comfort zone",
+    "bad habits"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Groups idleness with delay, forgetting and sleep as the habits of the doomed.",
+     "quote": "Delay, forgetfulness, laziness and sleep"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "These habits are a boat that people board gladly, and it carries them to ruin.",
+     "quote": "the boat that those bound for ruin desire"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:putting-things-off",
+     "basis": "explicit",
+     "reason": "Names delay first among the four that carry people to ruin.",
+     "quote": "Delay, forgetfulness"
+    }
+   ]
+  },
+  {
+   "n": 606,
+   "gloss": "Lazy people never really get ahead, even when they have powerful backers.",
+   "keywords": [
+    "connections aren't enough",
+    "nepotism",
+    "wasted opportunity",
+    "privilege"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Even with all that the lords of the earth hold, the lazy can’t win any great good.",
+     "quote": "the lazy won’t easily win any great good"
+    }
+   ]
+  },
+  {
+   "n": 607,
+   "gloss": "People who are lazy and try nothing worthwhile end up hearing constant scolding and contempt.",
+   "keywords": [
+    "being criticised",
+    "losing respect",
+    "nagging"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Scolding and scorn are what the idle have to sit and hear.",
+     "quote": "will hear words of rebuke and scorn"
+    }
+   ]
+  },
+  {
+   "n": 608,
+   "gloss": "Once laziness settles into a family, that family soon ends up enslaved to its enemies.",
+   "keywords": [
+    "losing independence",
+    "family downfall",
+    "being dominated"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Laziness settling in someone of good family ends in slavery to their enemies.",
+     "quote": "make them a slave to their enemies"
+    }
+   ]
+  },
+  {
+   "n": 609,
+   "gloss": "Whatever has gone wrong in a family ends the moment its head stops being lazy.",
+   "keywords": [
+    "turning things around",
+    "fixing family problems",
+    "taking responsibility"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Shows how much laziness was costing: end it and the faults in family and manhood go.",
+     "quote": "ends the rule of laziness over him"
+    }
+   ]
+  },
+  {
+   "n": 610,
+   "gloss": "A ruler who is never lazy can win all the lands that Vishnu paced out in three strides, which means everything.",
+   "keywords": [
+    "hard-working leader",
+    "no limits",
+    "conquest"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Freedom from laziness alone would win a ruler all that was crossed by the one who measured with his feet.",
+     "quote": "everything the one who measured with his feet strode over"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Holds out this vast promise to a ruler in particular.",
+     "quote": "A ruler free of laziness"
+    }
+   ]
+  },
+  {
+   "n": 611,
+   "gloss": "Never back away from a task because it looks too hard: effort itself gives you what you need to do it.",
+   "keywords": [
+    "too hard for me",
+    "self-belief",
+    "effort builds ability"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Effort itself supplies the greatness that a daunted person thinks is missing.",
+     "quote": "Effort will give you greatness"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:feels-impossible",
+     "basis": "explicit",
+     "reason": "Speaks straight to someone about to say a task is impossible.",
+     "quote": "Don’t lose heart and say"
+    }
+   ]
+  },
+  {
+   "n": 612,
+   "gloss": "Be careful not to leave a job half done: the world drops people who don't finish what they start.",
+   "keywords": [
+    "unfinished projects",
+    "quitting halfway",
+    "follow through"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Demands that work once begun be carried through to its end.",
+     "quote": "take care not to let the work fail"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:feels-impossible",
+     "basis": "explicit",
+     "reason": "Warns anyone tempted to drop a task midway that the world writes off quitters.",
+     "quote": "The world leaves those who leave work undone"
+    }
+   ]
+  },
+  {
+   "n": 613,
+   "gloss": "The pride of being able to help everyone belongs only to people who never shirk hard effort.",
+   "keywords": [
+    "being useful to others",
+    "public service",
+    "pulling your weight"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Only one with the quality of effort can know the pride of helping others.",
+     "quote": "the fine quality called effort"
+    }
+   ]
+  },
+  {
+   "n": 614,
+   "gloss": "Generosity from someone who won't work soon fails, as useless as a sword held by one who can't fight.",
+   "keywords": [
+    "can't afford to give",
+    "empty promises",
+    "generous but lazy"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "An idle man's giving cannot last, any more than a blade in hands unfit for it.",
+     "quote": "someone without effort"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "The sword here is a weapon held by one who will never use it.",
+     "quote": "a sword in a eunuch’s hand"
+    }
+   ],
+   "sensitive": "uses a eunuch as the image of what is useless"
+  },
+  {
+   "n": 615,
+   "gloss": "Someone who prefers work to pleasure becomes the support their friends and family lean on, and dries their tears.",
+   "keywords": [
+    "breadwinner",
+    "reliable person",
+    "supporting loved ones"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Choosing work over pleasure makes a man the pillar his people lean on.",
+     "quote": "wants work, not pleasure"
+    }
+   ]
+  },
+  {
+   "n": 616,
+   "gloss": "Hard work creates wealth, and not trying lets poverty move in.",
+   "keywords": [
+    "how to get rich",
+    "success",
+    "work ethic"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Effort is what builds prosperity.",
+     "quote": "Effort builds prosperity"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Lack of effort brings in one thing only, and that is want.",
+     "quote": "Lack of effort lets want in"
+    }
+   ]
+  },
+  {
+   "n": 617,
+   "gloss": "Misfortune lives in laziness, while the goddess of wealth lives in the efforts of those who aren't lazy.",
+   "keywords": [
+    "lakshmi",
+    "making your own luck",
+    "luck follows work"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Makes laziness the house where dark Misfortune lives.",
+     "quote": "dark Misfortune lives in laziness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Places the lady of the lotus inside the effort of those without laziness.",
+     "quote": "she of the lotus in the effort"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "explicit",
+     "reason": "She of the lotus and dark Misfortune each choose a dwelling by a person’s habits.",
+     "quote": "she of the lotus"
+    }
+   ]
+  },
+  {
+   "n": 618,
+   "gloss": "Bad luck is no disgrace, but knowingly refusing to make an effort is.",
+   "keywords": [
+    "failure isn't shameful",
+    "not trying",
+    "blaming luck"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Puts the disgrace on refusing to work, not on the outcome.",
+     "quote": "know what must be known and make no effort"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-tried-and-failed",
+     "basis": "explicit",
+     "reason": "Clears whoever tried and lost: lacking a favouring fate is no disgrace.",
+     "quote": "The lack of a favouring fate disgraces no one"
+    }
+   ]
+  },
+  {
+   "n": 619,
+   "gloss": "Even if the gods won't grant what you're after, effort still pays you for the sweat you put in.",
+   "keywords": [
+    "hard work pays off",
+    "against the odds",
+    "nothing is wasted"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Promises effort its wages even when god won’t grant the result.",
+     "quote": "effort pays the wages of your body’s toil"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fate-against-you",
+     "basis": "explicit",
+     "reason": "Answers the sense that god is against you: the effort is still paid.",
+     "quote": "Even if god won’t allow it"
+    }
+   ]
+  },
+  {
+   "n": 620,
+   "gloss": "People who keep working without let-up or giving in will see even fate turn its back and retreat.",
+   "keywords": [
+    "beating the odds",
+    "relentless effort",
+    "making your own destiny"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Striving without faltering is what lets a person see the back of fate.",
+     "quote": "strive without faltering"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fate-against-you",
+     "basis": "explicit",
+     "reason": "Tells one who feels doomed that refusing to give in can beat fate itself.",
+     "quote": "see the back of fate itself"
+    }
+   ]
+  },
+  {
+   "n": 621,
+   "gloss": "When trouble comes, smile at it: nothing helps you push through hardship as much.",
+   "keywords": [
+    "staying positive",
+    "laughing at trouble",
+    "keeping spirits up"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Makes laughter the strongest stand one can take against trouble.",
+     "quote": "Laugh when trouble comes"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:everything-going-wrong",
+     "basis": "explicit",
+     "reason": "Gives someone beset by trouble a plain first move: meet it laughing.",
+     "quote": "Laugh when trouble comes"
+    }
+   ]
+  },
+  {
+   "n": 622,
+   "gloss": "Even a flood of trouble shrinks away once a clever mind stops and thinks calmly about it.",
+   "keywords": [
+    "overwhelmed",
+    "calm thinking",
+    "keeping a clear head"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "A wise mind, once set to it, makes even a flood of trouble die away.",
+     "quote": "sets their mind to it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Trouble is measured as a whole sea, and still it gives way.",
+     "quote": "A whole sea of troubles"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:everything-going-wrong",
+     "basis": "explicit",
+     "reason": "Promises the swamped that collecting the mind is enough to bring the flood down.",
+     "quote": "Even a flood of trouble dies away"
+    }
+   ]
+  },
+  {
+   "n": 623,
+   "gloss": "Those who don't let trouble upset them are the ones who give trouble itself a hard time.",
+   "keywords": [
+    "not letting things get to you",
+    "unbothered",
+    "mental toughness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Turns the tables: refusing to be troubled leaves trouble itself the loser.",
+     "quote": "will give trouble trouble"
+    }
+   ]
+  },
+  {
+   "n": 624,
+   "gloss": "Someone who pushes through every obstacle like an ox hauling a load leaves those obstacles defeated.",
+   "keywords": [
+    "pushing through",
+    "hard slog",
+    "stubborn determination"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Pulling through every blocked place like an ox leaves the trouble itself in trouble.",
+     "quote": "like an ox, pulls through every blocked place"
+    }
+   ]
+  },
+  {
+   "n": 625,
+   "gloss": "When someone doesn't crumble however many troubles pile up, it's the troubles that are in trouble.",
+   "keywords": [
+    "one thing after another",
+    "never giving up",
+    "piling problems"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "One who stays unbroken as troubles pile up leaves the troubles themselves in trouble.",
+     "quote": "the troubles that reach an unbroken person"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:everything-going-wrong",
+     "basis": "explicit",
+     "reason": "Fits trouble piling on trouble: stay unbroken and it is the troubles that suffer.",
+     "quote": "Even if they come heaped one on another"
+    }
+   ]
+  },
+  {
+   "n": 626,
+   "gloss": "People who don't gloat when they gain something won't wail when they lose it.",
+   "keywords": [
+    "detachment",
+    "ups and downs",
+    "success and loss"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:equanimity",
+     "basis": "explicit",
+     "reason": "Whoever never clung to gain has no reason to cry out at loss.",
+     "quote": "never clung to what they gained"
+    }
+   ]
+  },
+  {
+   "n": 627,
+   "gloss": "The wise accept that the body is there to be hit by trouble, so disaster doesn't shake them.",
+   "keywords": [
+    "accepting suffering",
+    "body and pain",
+    "calm in a crisis"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Expecting the body to be struck, the wise stay unshaken when the blow lands.",
+     "quote": "the body is a target for suffering"
+    }
+   ]
+  },
+  {
+   "n": 628,
+   "gloss": "Someone who doesn't chase pleasure and accepts that hardship is natural doesn't really suffer when setbacks come.",
+   "keywords": [
+    "stoicism",
+    "acceptance",
+    "pain is part of life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Taking suffering as natural removes its power to bring sorrow.",
+     "quote": "says suffering is natural"
+    }
+   ]
+  },
+  {
+   "n": 629,
+   "gloss": "If you don't revel in pleasure when things go well, you won't be crushed by pain when they go badly.",
+   "keywords": [
+    "emotional balance",
+    "highs and lows",
+    "staying grounded"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:equanimity",
+     "basis": "explicit",
+     "reason": "Ties pain in bad days to pleasure chased in good ones, so restraint spares both.",
+     "quote": "won’t feel sorrow in times of sorrow"
+    }
+   ]
+  },
+  {
+   "n": 630,
+   "gloss": "Treat hardship as a joy and you will earn a standing that even your enemies admire.",
+   "keywords": [
+    "embracing the struggle",
+    "earning respect",
+    "respected by rivals"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fortitude",
+     "basis": "explicit",
+     "reason": "Taking strain as joy wins the praise of one's own enemies.",
+     "quote": "take what hurts as joy"
+    }
+   ],
+   "sensitive": "counsel to take pain as joy could reach someone enduring mistreatment"
+  },
+  {
+   "n": 631,
+   "gloss": "A good minister is one who knows the means, the timing and the way to carry out difficult undertakings.",
+   "keywords": [
+    "good adviser",
+    "strategic planning",
+    "chief of staff"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Sets the test for a minister: excellence in means, time, method and the work itself.",
+     "quote": "A minister is someone who excels"
+    }
+   ]
+  },
+  {
+   "n": 632,
+   "gloss": "A minister needs firmness, care for the people, learning and hard work, on top of the skills already named.",
+   "keywords": [
+    "what makes a good official",
+    "public servant",
+    "qualities of a leader"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Counts off the marks that make up a minister’s five qualities.",
+     "quote": "a minister excels in all five"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Learning is named among the minister’s marks.",
+     "quote": "learning and knowing"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Firmness in the work opens the list of his marks.",
+     "quote": "Firmness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Hard personal labour is required of him too, not only thought.",
+     "quote": "effort"
+    }
+   ]
+  },
+  {
+   "n": 633,
+   "gloss": "A capable minister can split enemy alliances, keep friends close and win back those who have turned hostile.",
+   "keywords": [
+    "divide and conquer",
+    "diplomacy",
+    "coalition building"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Measures an able minister by three skills: to part allies, keep friends, reunite foes.",
+     "quote": "A minister is someone who can split others apart"
+    }
+   ]
+  },
+  {
+   "n": 634,
+   "gloss": "A minister must be good at choosing what to do, at working out how to do it, and at giving clear, decisive advice.",
+   "keywords": [
+    "taking a firm position",
+    "good judgment",
+    "clear recommendations"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Requires a firm, unhedged opinion from the one who advises.",
+     "quote": "speak with certainty"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Asks for care in choosing projects and how to carry them out.",
+     "quote": "see clearly, act after weighing"
+    }
+   ]
+  },
+  {
+   "n": 635,
+   "gloss": "The best counsellor knows what is right, is well taught and measured in speech, and always sees how to handle things.",
+   "keywords": [
+    "trusted adviser",
+    "choosing an adviser",
+    "wise counsel"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Describes the one to have beside you in counsel: righteous, full in speech, knowing how to act.",
+     "quote": "a companion in counsel"
+    }
+   ]
+  },
+  {
+   "n": 636,
+   "gloss": "What's too subtle for people who combine a sharp natural mind with book learning?",
+   "keywords": [
+    "street smart and book smart",
+    "brains and education",
+    "solving hard problems"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Sharp wit is one half of the pair that nothing can stand before.",
+     "quote": "sharp wit"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Book learning added to wit leaves no subtlety able to stand against it.",
+     "quote": "book learning too"
+    }
+   ]
+  },
+  {
+   "n": 637,
+   "gloss": "Even when you know the theory, act in line with how the world really works.",
+   "keywords": [
+    "theory versus practice",
+    "real-world experience",
+    "practical knowledge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worldly-wisdom",
+     "basis": "explicit",
+     "reason": "Tells those who know the method to know also how the world is.",
+     "quote": "know the nature of the world"
+    }
+   ]
+  },
+  {
+   "n": 638,
+   "gloss": "Even if the ruler is a fool who blocks all advice, the person beside him must still tell him what is right.",
+   "keywords": [
+    "advising a stubborn boss",
+    "speaking up",
+    "telling the truth to power"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:frank-counsel",
+     "basis": "explicit",
+     "reason": "Keeps the adviser speaking even when each word is thwarted.",
+     "quote": "tell him what is good for him"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "States the duty of the one at the ruler’s side.",
+     "quote": "the duty of the one at his side"
+    }
+   ]
+  },
+  {
+   "n": 639,
+   "gloss": "A minister who secretly plots against his ruler does more damage than hundreds of millions of enemies.",
+   "keywords": [
+    "traitor in the cabinet",
+    "betrayal from within",
+    "insider threat"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Rates one plotter at your side as worse than a vast enemy host.",
+     "quote": "one minister at your side who plots harm"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Turns on a minister who plots against the ruler he sits beside.",
+     "quote": "one minister at your side"
+    }
+   ]
+  },
+  {
+   "n": 640,
+   "gloss": "People who can't follow through may plan perfectly and still never finish anything.",
+   "keywords": [
+    "indecisive",
+    "poor execution",
+    "great plans that go nowhere"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Even well-ordered plans stay unfinished for those without the skill and firmness to carry them out.",
+     "quote": "will leave them unfinished"
+    }
+   ]
+  },
+  {
+   "n": 641,
+   "gloss": "Being good with words is a gift in a class of its own, separate from every other blessing.",
+   "keywords": [
+    "gift of the gab",
+    "talent for speaking",
+    "way with words"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:speech",
+     "basis": "explicit",
+     "reason": "Ranks a good tongue as a good apart from every other.",
+     "quote": "a good not found among any other goods"
+    }
+   ]
+  },
+  {
+   "n": 642,
+   "gloss": "Both success and ruin come from what you say, so guard carefully against careless words.",
+   "keywords": [
+    "careless remarks",
+    "watching what you say",
+    "consequences of speech"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:speech",
+     "basis": "explicit",
+     "reason": "Places the power of life and death in the tongue.",
+     "quote": "Death and life are in the power of the tongue"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "Because so much hangs on it, demands a guard against any slip of speech.",
+     "quote": "guard carefully against any slip in your speech"
+    }
+   ]
+  },
+  {
+   "n": 643,
+   "gloss": "Real eloquence holds those who are listening and makes even those who aren't want to hear more.",
+   "keywords": [
+    "persuasion",
+    "charisma",
+    "winning people over"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Sets the test of true speech: it binds those who hear and draws even those who haven’t.",
+     "quote": "Speech is that which holds its hearers fast"
+    }
+   ]
+  },
+  {
+   "n": 644,
+   "gloss": "Size up the situation, then say what suits it: nothing does more for doing right and doing well.",
+   "keywords": [
+    "saying the right thing",
+    "reading the room",
+    "choosing when to speak"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Says nothing is worth more than weighing the circumstances first, then speaking to fit.",
+     "quote": "Know the right way and speak your words"
+    }
+   ]
+  },
+  {
+   "n": 645,
+   "gloss": "Say something only when you know no one can answer it with anything better.",
+   "keywords": [
+    "winning an argument",
+    "airtight argument",
+    "having the last word"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Asks for words so sound that no other words can answer them.",
+     "quote": "no other word can beat it"
+    }
+   ]
+  },
+  {
+   "n": 646,
+   "gloss": "The mark of the finest people is to speak so others love to listen, and to grasp what's useful in what others say.",
+   "keywords": [
+    "conversation skills",
+    "good listener",
+    "statesmanship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Joins making others want to hear with taking the use of what they say, as the way of the flawless.",
+     "quote": "speak so that others want to hear"
+    }
+   ]
+  },
+  {
+   "n": 647,
+   "gloss": "Nobody can beat a person in argument who speaks well, doesn't slip up and isn't afraid.",
+   "keywords": [
+    "debating",
+    "confident speaker",
+    "composure in arguments"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Fluent speech backed by calm nerve cannot be beaten in debate.",
+     "quote": "hard for anyone to beat"
+    }
+   ]
+  },
+  {
+   "n": 648,
+   "gloss": "The world moves quickly to do what is asked by those who can speak in a clear, orderly and pleasing way.",
+   "keywords": [
+    "influence",
+    "getting people to act",
+    "leadership communication"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Orderly, persuasive speech puts the whole world at the speaker's call.",
+     "quote": "The world quickly does as it is asked"
+    }
+   ]
+  },
+  {
+   "n": 649,
+   "gloss": "People who can't say what they mean in a few clean words end up in love with talking at length.",
+   "keywords": [
+    "getting to the point",
+    "brevity",
+    "talking too much"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Holds up a few flawless words as the mark the long-winded miss.",
+     "quote": "a few flawless words"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:vain-speech",
+     "basis": "inferred",
+     "reason": "Treats a love of much talk as what is left to those who cannot be brief.",
+     "quote": "surely desire to say many"
+    }
+   ]
+  },
+  {
+   "n": 650,
+   "gloss": "People who can't explain what they have learned are like a flower in bloom with no scent.",
+   "keywords": [
+    "teaching",
+    "experts who can't communicate",
+    "sharing knowledge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Learning that cannot be put into words for others is learning wasted.",
+     "quote": "can’t unfold what they have learned"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "A bloom without fragrance shows learning that never reaches anyone.",
+     "quote": "flowers that bloom in clusters but have no scent"
+    }
+   ]
+  },
+  {
+   "n": 651,
+   "gloss": "Good allies bring success, but doing things the right way brings you everything you could want.",
+   "keywords": [
+    "integrity pays",
+    "good connections",
+    "clean work"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Ranks clean action above allies: they bring success, it brings every desire.",
+     "quote": "Good deeds bring all you want"
+    }
+   ]
+  },
+  {
+   "n": 652,
+   "gloss": "Always stay away from actions that don't bring both a good name and real benefit.",
+   "keywords": [
+    "reputation",
+    "profit without honour",
+    "ethical choices"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Bars any work that doesn’t bring good along with fame.",
+     "quote": "keep away from work that doesn’t bring good along with fame"
+    }
+   ]
+  },
+  {
+   "n": 653,
+   "gloss": "If you want to go up in the world, give up anything you do that would dim your good name.",
+   "keywords": [
+    "career ambition",
+    "protecting your reputation",
+    "getting ahead"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Anyone wanting to rise must refuse whatever would dim their light.",
+     "quote": "must stop doing what dims their light"
+    }
+   ]
+  },
+  {
+   "n": 654,
+   "gloss": "Clear-sighted people won't do anything shameful even when they have fallen on hard times.",
+   "keywords": [
+    "desperate times",
+    "integrity under pressure",
+    "keeping your standards"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Even trouble does not excuse a shameful act.",
+     "quote": "won’t do anything shameful"
+    }
+   ]
+  },
+  {
+   "n": 655,
+   "gloss": "Don't do what will make you cry out in regret; and if you've done it, at least don't do it again.",
+   "keywords": [
+    "learning from mistakes",
+    "guilt",
+    "never again"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Tests an act by whether it will wring a cry of regret from the doer.",
+     "quote": "cry “What have I done?”"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:ashamed-of-something-you-did",
+     "basis": "explicit",
+     "reason": "Gives one already ashamed a plain course: do not do it again.",
+     "quote": "it is good not to do the like again"
+    }
+   ]
+  },
+  {
+   "n": 656,
+   "gloss": "Never do what good people condemn, even to save your own mother from starving.",
+   "keywords": [
+    "ends don't justify the means",
+    "moral limits",
+    "stealing for family"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Holds the line even where a starving mother would seem to excuse crossing it.",
+     "quote": "don’t do what the worthy condemn"
+    }
+   ]
+  },
+  {
+   "n": 657,
+   "gloss": "The deep poverty of good people is far better than riches gained by shameful means.",
+   "keywords": [
+    "dirty money",
+    "honest poverty",
+    "selling out"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Puts honest want far above wealth got by disgrace.",
+     "quote": "the deep poverty of the worthy"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:tempted-by-dishonest-gain",
+     "basis": "explicit",
+     "reason": "Speaks to anyone weighing easy money: better to stay poor and clean.",
+     "quote": "prosperity gained by wearing disgrace"
+    }
+   ]
+  },
+  {
+   "n": 658,
+   "gloss": "People who won't avoid what morality forbids will suffer for it, even if their schemes work.",
+   "keywords": [
+    "getting away with it",
+    "cost of wrongdoing",
+    "hollow success"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Grief follows forbidden means even when the scheme succeeds.",
+     "quote": "brings pain even if it succeeds"
+    }
+   ]
+  },
+  {
+   "n": 659,
+   "gloss": "What you take from people while they weep will leave you while you weep; honest gains, even if lost for a while, bear fruit later.",
+   "keywords": [
+    "exploiting people",
+    "what goes around comes around",
+    "honest earnings"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "What is good, even when lost for a time, bears fruit afterwards.",
+     "quote": "What is good, even if lost, bears fruit afterwards"
+    }
+   ]
+  },
+  {
+   "n": 660,
+   "gloss": "Building wealth through deceit is like storing water in a pot of unfired clay: it will all seep away.",
+   "keywords": [
+    "get rich quick",
+    "scam",
+    "cheating doesn't last"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Crooked means can no more keep wealth than raw clay can keep water.",
+     "quote": "pouring water into a pot of raw clay"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fraud",
+     "basis": "explicit",
+     "reason": "Treats riches heaped up by trickery as bound to drain away.",
+     "quote": "wealth made by deceit"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:tempted-by-dishonest-gain",
+     "basis": "explicit",
+     "reason": "Shows one tempted by a shady gain that such money will not stay.",
+     "quote": "wealth made by deceit"
+    }
+   ]
+  },
+  {
+   "n": 661,
+   "gloss": "Being strong in action really comes down to being strong in mind; nothing else counts.",
+   "keywords": [
+    "mental strength",
+    "willpower",
+    "what drives achievement"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Says firmness in action is nothing but firmness of mind.",
+     "quote": "Firmness in action is a person’s firmness of mind"
+    }
+   ]
+  },
+  {
+   "n": 662,
+   "gloss": "Thinkers agree on two rules: steer clear of what will fail, and don't lose heart when setbacks come.",
+   "keywords": [
+    "picking your battles",
+    "rules for success",
+    "keeping going"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Half the rule of those who have looked into it is not to give way once harm comes.",
+     "quote": "not giving way once it comes"
+    }
+   ]
+  },
+  {
+   "n": 663,
+   "gloss": "Real strength lies in revealing a plan only once it's done; showing it halfway brings trouble you can't undo.",
+   "keywords": [
+    "keeping plans secret",
+    "announcing too early",
+    "stealth launch"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Holds back a purpose until it is achieved, since early disclosure breeds obstacles.",
+     "quote": "so that it shows only at the end"
+    }
+   ]
+  },
+  {
+   "n": 664,
+   "gloss": "Anyone can say what they'll do; actually doing it the way they said is the hard part.",
+   "keywords": [
+    "talk is cheap",
+    "keeping promises",
+    "walking the talk"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Talk is easy for all: doing the thing as it was undertaken is rare.",
+     "quote": "Doing it as you said is hard"
+    }
+   ]
+  },
+  {
+   "n": 665,
+   "gloss": "The firmness of people who've proved themselves reaches the top and earns them respect from the leader and everyone else.",
+   "keywords": [
+    "track record",
+    "proven performer",
+    "getting noticed at work"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "inferred",
+     "reason": "The firmness of the excellent reaches the ruler and earns lasting regard.",
+     "quote": "firmness in action of those who have risen to excellence"
+    }
+   ]
+  },
+  {
+   "n": 666,
+   "gloss": "If people are firm enough of will, they will get what they set out to get, just the way they meant to.",
+   "keywords": [
+    "power of will",
+    "reaching your goals",
+    "determination"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Firmness gets what was planned, in the way it was planned.",
+     "quote": "if they are firm"
+    }
+   ]
+  },
+  {
+   "n": 667,
+   "gloss": "Don't look down on someone for how they look: some are as small and vital as the pin that holds a great cart's wheel.",
+   "keywords": [
+    "judging by appearances",
+    "underestimating people",
+    "looked down on"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "inferred",
+     "reason": "Warns against sizing a person up by looks, since the plainest may hold everything together.",
+     "quote": "Don’t scorn people for how they look"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:cart-and-axle",
+     "basis": "explicit",
+     "reason": "The small axle pin carries the great chariot, as an unimpressive person may.",
+     "quote": "the axle pin of the great rolling chariot"
+    }
+   ]
+  },
+  {
+   "n": 668,
+   "gloss": "Once you've clearly decided on something, stop hesitating and carry it out with energy.",
+   "keywords": [
+    "stop overthinking",
+    "committing to a decision",
+    "second-guessing yourself"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Once the choice is clearly made, forbids wavering and delay.",
+     "quote": "don’t waver or delay"
+    }
+   ]
+  },
+  {
+   "n": 669,
+   "gloss": "Stick firmly with work that brings lasting good, even if it causes you great pain along the way.",
+   "keywords": [
+    "worth the struggle",
+    "hard but rewarding",
+    "no pain no gain"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Asks for resolve in work that brings joy, whatever pain comes.",
+     "quote": "be resolute and do the work that brings joy"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:feels-impossible",
+     "basis": "explicit",
+     "reason": "Speaks to one worn down by a worthwhile task: press on to the end.",
+     "quote": "Even if great pain comes"
+    }
+   ]
+  },
+  {
+   "n": 670,
+   "gloss": "However strong people are in other ways, the world has no use for those who don't want to do great things.",
+   "keywords": [
+    "no drive to achieve",
+    "being ignored",
+    "lack of ambition"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:aspiration",
+     "basis": "explicit",
+     "reason": "Without the wish to do great deeds, other virtues win no one's notice.",
+     "quote": "have not the ambition to do great deeds"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "inferred",
+     "reason": "The Tamil's point is firmness in action, without which all other firmness is ignored.",
+     "quote": "the world doesn’t want those who don’t want firmness in action"
+    }
+   ]
+  },
+  {
+   "n": 671,
+   "gloss": "The purpose of thinking things over is to reach a decision, and once you've reached it, delaying is a mistake.",
+   "keywords": [
+    "overthinking",
+    "analysis paralysis",
+    "stalling"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "States what weighing a matter is for: arriving at a decision.",
+     "quote": "The end of deliberation is to reach a decision"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Once a decision stands, holding back its execution is called wrong.",
+     "quote": "sit in delay is wrong"
+    }
+   ]
+  },
+  {
+   "n": 672,
+   "gloss": "Take your time over what can wait, but don't delay a moment over what has to be done now.",
+   "keywords": [
+    "urgent versus important",
+    "prioritising",
+    "deadlines"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Sorts work into the leisurely and the urgent, each with its own pace.",
+     "quote": "Take your time over what should be done slowly"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:putting-things-off",
+     "basis": "explicit",
+     "reason": "Tells someone who keeps delaying that some work must be done without delay.",
+     "quote": "Don’t delay over what must be done without delay"
+    }
+   ]
+  },
+  {
+   "n": 673,
+   "gloss": "Go directly for your goal whenever you can; when you can't, take whatever route is still open.",
+   "keywords": [
+    "plan b",
+    "adapting to obstacles",
+    "flexibility"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Allows direct action where it can be done, and whatever way will work where it can’t.",
+     "quote": "look for the way that will work"
+    }
+   ]
+  },
+  {
+   "n": 674,
+   "gloss": "Unfinished work and half-beaten enemies are like sparks left burning: they grow back and destroy the careless.",
+   "keywords": [
+    "loose ends",
+    "finish the job",
+    "unresolved problems"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Warns that work left undone flares up later against the careless.",
+     "quote": "what is left of a task or an enemy"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Unfinished business is a spark that seems dead but grows to overwhelm.",
+     "quote": "what is left of a fire"
+    }
+   ]
+  },
+  {
+   "n": 675,
+   "gloss": "Before acting, think clearly through five things: your means, your tools, the task itself, the timing and the place.",
+   "keywords": [
+    "project planning",
+    "checklist before starting",
+    "budget and schedule"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Gives a five-point review to clear before any action is taken.",
+     "quote": "weigh all five until the darkness clears"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:wealth",
+     "basis": "inferred",
+     "reason": "Wealth comes first on the list of five.",
+     "quote": "Wealth"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Time is the third thing to weigh.",
+     "quote": "time"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "The right ground closes the list.",
+     "quote": "the place"
+    }
+   ]
+  },
+  {
+   "n": 676,
+   "gloss": "Before you act, look at what it will take to finish, what could block you, and what you stand to gain.",
+   "keywords": [
+    "business plan",
+    "cost and benefit",
+    "risk assessment",
+    "due diligence"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Sets out what to reckon first: the finish, the obstacles and the gain.",
+     "quote": "Look at the finish, the obstacles, and the gain"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:starting-something-new",
+     "basis": "explicit",
+     "reason": "Gives anyone weighing a venture three things to settle before committing.",
+     "quote": "Look at the finish, the obstacles, and the gain you will reach"
+    }
+   ]
+  },
+  {
+   "n": 677,
+   "gloss": "To do a job well, find out how it's really done from someone who knows it inside out.",
+   "keywords": [
+    "learning from an expert",
+    "apprenticeship",
+    "tricks of the trade"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Makes learning the mind of one who knows the task from inside the way to do it.",
+     "quote": "someone who knows that task from the inside"
+    }
+   ]
+  },
+  {
+   "n": 678,
+   "gloss": "Use one project to get another done, the way hunters use a tame elephant to catch a wild one.",
+   "keywords": [
+    "leverage",
+    "stepping stones",
+    "one success leads to another"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:enterprise",
+     "basis": "explicit",
+     "reason": "Shows how to make one undertaking carry a second.",
+     "quote": "To get one task done by means of another"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "One wet-cheeked elephant used to bind another models work that wins more work.",
+     "quote": "bind a wet-cheeked elephant with another elephant"
+    }
+   ]
+  },
+  {
+   "n": 679,
+   "gloss": "Be even quicker to win over your opponents than you are to do good to your friends.",
+   "keywords": [
+    "making peace",
+    "reconciling with rivals",
+    "conflict resolution"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Ranks winning over those not with you as more urgent even than doing good to a friend.",
+     "quote": "win over those not with you"
+    }
+   ]
+  },
+  {
+   "n": 680,
+   "gloss": "Weak parties shouldn't live in fear: when the chance comes they should make terms with the strong.",
+   "keywords": [
+    "partnering with a bigger player",
+    "joining forces",
+    "small business alliances"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "inferred",
+     "reason": "Urges those who hold little to own their weakness and bow to the great for terms.",
+     "quote": "will bow to the great"
+    }
+   ],
+   "sensitive": "Tells the weak to submit to the strong."
+  },
+  {
+   "n": 681,
+   "gloss": "An ambassador needs a loving heart, a good family background and the manners that win over rulers.",
+   "keywords": [
+    "diplomacy",
+    "foreign service",
+    "good manners at court"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Names the marks that fit a man for an embassy.",
+     "quote": "the qualities of an envoy"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Loving-kindness comes first in the envoy’s list.",
+     "quote": "Loving-kindness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "A good family is required of him too.",
+     "quote": "birth in a good family"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "The qualities rulers desire complete the three.",
+     "quote": "the qualities rulers desire"
+    }
+   ]
+  },
+  {
+   "n": 682,
+   "gloss": "Love, wisdom and carefully weighed speech are the three things a diplomat can't do without.",
+   "keywords": [
+    "negotiator",
+    "soft skills",
+    "representing others"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Calls these three indispensable to whoever carries a message abroad.",
+     "quote": "can’t do without these three"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Loving-kindness leads the envoy’s three needs.",
+     "quote": "Loving-kindness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Sound judgment is the second.",
+     "quote": "understanding"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "The third is command of words.",
+     "quote": "skill in well-weighed speech"
+    }
+   ]
+  },
+  {
+   "n": 683,
+   "gloss": "Whoever speaks for his side before foreign rulers must be the most learned among the learned.",
+   "keywords": [
+    "expert negotiator",
+    "preparation",
+    "knowing your subject"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "inferred",
+     "reason": "One who speaks for victory among men of the spear is the envoy in all but name.",
+     "quote": "speaks for victory among men of the spear"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Requires deep learning of the one speaking for his master.",
+     "quote": "a master of the books among those who know the books"
+    }
+   ]
+  },
+  {
+   "n": 684,
+   "gloss": "Send as your representative someone who combines good sense, an impressive presence and thorough learning.",
+   "keywords": [
+    "choosing a representative",
+    "gravitas",
+    "sending the right person"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Says who should be the one to go on embassies.",
+     "quote": "Let the one who has all three"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Intelligence heads the three things that qualify him.",
+     "quote": "understanding"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Learning completes the three, after understanding and presence.",
+     "quote": "well-tested learning"
+    }
+   ]
+  },
+  {
+   "n": 685,
+   "gloss": "An ambassador does good for his side by being brief, avoiding unpleasant words and speaking so as to please.",
+   "keywords": [
+    "diplomatic language",
+    "concise messaging",
+    "negotiation tips"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Lays down how an envoy’s manner of speaking brings about good.",
+     "quote": "An envoy sums up"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:eloquence",
+     "basis": "inferred",
+     "reason": "Brevity, the few well-chosen words of real eloquence, comes first.",
+     "quote": "sums up"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Speaking so that people smile is the third means.",
+     "quote": "speaks so that people smile"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "Dropping what is harsh is the second means.",
+     "quote": "drops what is harsh"
+    }
+   ]
+  },
+  {
+   "n": 686,
+   "gloss": "A diplomat is one who has studied, isn't cowed by hostile eyes, speaks convincingly and knows what suits the moment.",
+   "keywords": [
+    "staying composed",
+    "negotiating under pressure",
+    "foreign courts"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Collects what an envoy must bring to a foreign court.",
+     "quote": "An envoy is learned"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Study is the first of the four.",
+     "quote": "learned"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:courage",
+     "basis": "inferred",
+     "reason": "Not fearing a hard stare is the courage asked of him before a hostile ruler.",
+     "quote": "unafraid of a hard stare"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Speech that carries conviction is third.",
+     "quote": "speaks so that it goes home"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "A feel for what each moment calls for completes the list.",
+     "quote": "knows what suits the time"
+    }
+   ]
+  },
+  {
+   "n": 687,
+   "gloss": "The best envoy knows his duty, considers timing and place, and thinks before he speaks.",
+   "keywords": [
+    "choosing your moment",
+    "timing your message",
+    "best negotiator"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Says who is the fittest man to send.",
+     "quote": "The finest is the one"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Suits words to time and place, weighing them before they are spoken.",
+     "quote": "watches the time, knows the place"
+    }
+   ]
+  },
+  {
+   "n": 688,
+   "gloss": "An envoy needs purity, firm nerve and the backing of allies, and with these he delivers his message faithfully.",
+   "keywords": [
+    "trustworthy messenger",
+    "integrity in diplomacy",
+    "character of a representative"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Sets the marks for the one who carries a message.",
+     "quote": "one who carries a message"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Resolve is the third of the marks.",
+     "quote": "resolve"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Purity opens the list of marks.",
+     "quote": "Purity"
+    }
+   ]
+  },
+  {
+   "n": 689,
+   "gloss": "The person to carry a ruler's message abroad is someone firm who will never utter a word that shames his side.",
+   "keywords": [
+    "staying on message",
+    "spokesperson",
+    "embarrassing your side"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Fixes on who is fit to carry a message to rulers.",
+     "quote": "The one who delivers a message to rulers"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "He keeps every scarring word from leaving his mouth.",
+     "quote": "lets no scarring word slip"
+    }
+   ]
+  },
+  {
+   "n": 690,
+   "gloss": "Even when it could cost him his life, a true ambassador delivers for his master and does not shrink back.",
+   "keywords": [
+    "duty under threat",
+    "bravery of diplomats",
+    "doing your job under pressure"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:envoy",
+     "basis": "explicit",
+     "reason": "Holds up the true envoy at the moment of greatest danger.",
+     "quote": "even if it brings his death"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:loyalty",
+     "basis": "explicit",
+     "reason": "Serves his master's interest even under threat of death.",
+     "quote": "brings about what is good for his ruler"
+    }
+   ]
+  },
+  {
+   "n": 691,
+   "gloss": "Those who deal with powerful rulers should be like people warming themselves at a fire: not too close, not too far.",
+   "keywords": [
+    "office politics",
+    "keeping your distance",
+    "staying in favour"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Instructs whoever would live near rulers.",
+     "quote": "Those who live close to quarrelsome rulers"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "A fire warms at the right distance and burns when too near, and so does a ruler.",
+     "quote": "warming themselves at a fire"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:powerful-boss",
+     "basis": "inferred",
+     "reason": "Gives anyone reliant on a mighty superior a working rule of distance.",
+     "quote": "neither too far nor too near"
+    }
+   ]
+  },
+  {
+   "n": 692,
+   "gloss": "Not wanting the things the ruler himself wants is the way to gain lasting benefit from him.",
+   "keywords": [
+    "competing with your boss",
+    "staying out of the way",
+    "earning favour"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Reveals what brings lasting prosperity from rulers.",
+     "quote": "lasting prosperity from those rulers"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:powerful-boss",
+     "basis": "inferred",
+     "reason": "For anyone dependent on a superior: don't reach for what they want for themselves.",
+     "quote": "Not wanting what rulers want"
+    }
+   ]
+  },
+  {
+   "n": 693,
+   "gloss": "Be careful above all about the serious mistakes: once someone suspects you, nobody can clear your name.",
+   "keywords": [
+    "suspicion",
+    "losing trust",
+    "mud sticks"
+   ],
+   "edges": []
+  },
+  {
+   "n": 694,
+   "gloss": "In the presence of important people, don't whisper in someone's ear or share a private smile.",
+   "keywords": [
+    "workplace etiquette",
+    "whispering in meetings",
+    "being rude to the boss"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "inferred",
+     "reason": "Rules of bearing for someone standing near those in power.",
+     "quote": "In the presence of the truly great"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "inferred",
+     "reason": "Whispers and shared laughter near the great are slights to be avoided.",
+     "quote": "put a stop to whispers in the ear and shared laughter"
+    }
+   ]
+  },
+  {
+   "n": 695,
+   "gloss": "Don't eavesdrop or pry into what's being kept from you; wait until you're told the secret.",
+   "keywords": [
+    "being nosy",
+    "minding your own business",
+    "snooping"
+   ],
+   "edges": []
+  },
+  {
+   "n": 696,
+   "gloss": "Read the ruler's mood and the moment, then say what he wants to hear and won't object to.",
+   "keywords": [
+    "managing up",
+    "picking your moment",
+    "talking to your boss"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Teaches one who must speak before a ruler how to choose his moment.",
+     "quote": "Read the signs, consider the time"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Weighing the hearer's mood and the occasion comes before any word.",
+     "quote": "Read the signs, consider the time"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:powerful-boss",
+     "basis": "inferred",
+     "reason": "Transfers directly to a moody boss: read the mood and the time, then speak.",
+     "quote": "say what is needed and not disliked"
+    }
+   ]
+  },
+  {
+   "n": 697,
+   "gloss": "Tell the ruler what he'll be glad to hear, and never say what's pointless, even if he asks.",
+   "keywords": [
+    "what not to say to your boss",
+    "useless talk",
+    "refusing to gossip"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Governs what may and may not be said before a ruler.",
+     "quote": "Say what is wanted"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:vain-speech",
+     "basis": "explicit",
+     "reason": "Even being asked is no reason to say what serves no purpose.",
+     "quote": "What is of no use, never say, even if asked"
+    }
+   ]
+  },
+  {
+   "n": 698,
+   "gloss": "Don't take a ruler lightly because he's young or related to you: treat the position he holds with respect.",
+   "keywords": [
+    "working for a relative",
+    "young boss",
+    "family business"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Warns those close to a ruler by age or kinship against familiarity.",
+     "quote": "Don’t scorn someone as young or as your kin"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "Demands conduct fit for the light in a ruler, whatever his age or relation.",
+     "quote": "the light that stands in them"
+    }
+   ]
+  },
+  {
+   "n": 699,
+   "gloss": "Clear-sighted people don't do what displeases the ruler just because they think they're in favour.",
+   "keywords": [
+    "taking favour for granted",
+    "boss's favourite",
+    "overstepping"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Shows how the clear-sighted carry themselves when a ruler has taken them up.",
+     "quote": "We have been accepted"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "Favour is no licence: the wise still take care not to displease a ruler.",
+     "quote": "do what isn’t acceptable"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:powerful-boss",
+     "basis": "inferred",
+     "reason": "Warns anyone enjoying a superior's favour not to presume on it.",
+     "quote": "think “We have been accepted”"
+    }
+   ]
+  },
+  {
+   "n": 700,
+   "gloss": "Doing improper things because you've known the ruler a long time leads to your ruin.",
+   "keywords": [
+    "overfamiliar with the boss",
+    "old friends at work",
+    "crossing the line"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:courtier",
+     "basis": "explicit",
+     "reason": "Foretells the end of those who lean on closeness to a ruler.",
+     "quote": "The intimacy that says “We go back a long way”"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "inferred",
+     "reason": "Long acquaintance gives no licence to slight a ruler: those who presume on it perish.",
+     "quote": "does what isn’t fitting brings ruin"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "REQUIRES",
+   "source": "quality:liberality",
+   "target": "quality:energy",
+   "basis": "explicit",
+   "reason": "Without spirit behind it, the pride of being generous can’t be had.",
+   "quote": "Those without spirit will never have the pride of thinking",
+   "couplets": [
+    598
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:sloth",
+   "target": "theme:family-line",
+   "basis": "explicit",
+   "reason": "Laziness puts out the family’s lamp, brings it down and leaves it in ruin.",
+   "quote": "The unfailing lamp called family goes out",
+   "couplets": [
+    601,
+    603,
+    604
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:helpfulness",
+   "target": "quality:exertion",
+   "basis": "explicit",
+   "reason": "The pride of helping others rests in effort and nowhere else.",
+   "quote": "The pride called helping others rests in the fine quality called effort",
+   "couplets": [
+    613
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:liberality",
+   "target": "quality:exertion",
+   "basis": "explicit",
+   "reason": "An idle man's generosity cannot last: giving depends on the labour behind it.",
+   "quote": "Helping others, in someone without effort, will come to nothing",
+   "couplets": [
+    614
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:exertion",
+   "target": "theme:wealth",
+   "basis": "explicit",
+   "reason": "Effort is what builds prosperity.",
+   "quote": "Effort builds prosperity",
+   "couplets": [
+    616
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:sloth",
+   "target": "theme:poverty",
+   "basis": "inferred",
+   "reason": "Refusing effort lets poverty in.",
+   "quote": "Lack of effort lets want in",
+   "couplets": [
+    616
+   ]
+  },
+  {
+   "type": "OPPOSES",
+   "source": "quality:exertion",
+   "target": "quality:sloth",
+   "basis": "explicit",
+   "reason": "Effort and its lack are set side by side, one building prosperity and the other letting want in.",
+   "quote": "Effort builds prosperity. Lack of effort lets want in.",
+   "couplets": [
+    616,
+    617
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:exertion",
+   "target": "theme:destiny",
+   "basis": "explicit",
+   "reason": "Striving without faltering lets a person see the back of fate.",
+   "quote": "will see the back of fate itself",
+   "couplets": [
+    620
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:equanimity",
+   "target": "quality:grief",
+   "basis": "explicit",
+   "reason": "One who doesn’t crave joy in times of joy is spared sorrow in times of sorrow.",
+   "quote": "Someone who doesn’t crave joy in times of joy won’t feel sorrow in times of sorrow.",
+   "couplets": [
+    629
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:enterprise",
+   "target": "quality:resolve",
+   "basis": "explicit",
+   "reason": "Perfect plans go unfinished when the will wavers in the doing.",
+   "quote": "The irresolute may even plan perfectly: but they will waver in the course of the execution and will never accomplish their designs",
+   "couplets": [
+    640
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:deliberation",
+   "target": "quality:resolve",
+   "basis": "explicit",
+   "reason": "Thinking a matter through is meant to end in a firm decision.",
+   "quote": "The end of deliberation is to reach a decision",
+   "couplets": [
+    671
+   ]
+  }
+ ],
+ "proposals": []
+}

@@ -1,0 +1,348 @@
+{
+  "chapters": [
+    { "chapter": 2, "after": 1, "reason": "By god’s command rain keeps the world going, and with it righteousness, wealth and pleasure." },
+    { "chapter": 3, "after": 2, "reason": "Those who renounce are the ones who show the world righteousness, wealth and pleasure as they truly are." },
+    { "chapter": 4, "after": 3, "reason": "Of the three taught by those who renounce, only righteousness yields this life, the next and release, so it is stronger than the other two." },
+    { "chapter": 5, "after": 4, "reason": "Home life is the first of the two states in which righteousness is done." },
+    { "chapter": 6, "after": 5, "reason": "A wife is the companion of home life, so her worth is told next." },
+    { "chapter": 7, "after": 6, "reason": "The last couplet of The Worth of a Wife named good children as the fine ornament of a home’s excellence, and that opened the way to this chapter." },
+    { "chapter": 8, "after": 7, "reason": "Loving-kindness is fondness for the wife, the children and others joined to you, so it follows the chapters on them." },
+    { "chapter": 9, "after": 8, "reason": "Only two people undivided in loving-kindness, working together, can care for guests." },
+    { "chapter": 10, "after": 9, "reason": "Those who care for guests can’t do without sweet words." },
+    { "chapter": 11, "after": 10, "reason": "For those who speak sweetly and keep to household righteousness, the one fault with no escape is destroying a kindness, and this guards against it." },
+    { "chapter": 12, "after": 11, "reason": "Remembering a kindness can break your evenness towards the one who did it, and this says it must not break even there." },
+    { "chapter": 13, "after": 12, "reason": "Restraint belongs to those impartial enough to see their own faults as they see a stranger’s." },
+    { "chapter": 14, "after": 13, "reason": "Only those who have restrained body, speech and mind can keep good conduct." },
+    { "chapter": 15, "after": 14, "reason": "Not wanting another man’s wife is found only in those who have good conduct." },
+    { "chapter": 16, "after": 15, "reason": "He places it here to say that even those who have left the path and done wrong are to be borne." },
+    { "chapter": 17, "after": 16, "reason": "Envy is not bearing what others have, the opposite of bearing wrongs, so it is forbidden here." },
+    { "chapter": 18, "after": 17, "reason": "Beyond resenting what others have, even the thought of seizing it is a fault." },
+    { "chapter": 19, "after": 18, "reason": "Faults of speech grow from faults of the mind, so backbiting follows envy and coveting." },
+    { "chapter": 20, "after": 19, "reason": "Of the sins of speech a householder can give up, harsh words and backbiting have been dealt with, which leaves useless words." },
+    { "chapter": 21, "after": 20, "reason": "After the sins of speech, this gathers up and forbids all the sins of the body." },
+    { "chapter": 22, "after": 21, "reason": "What to avoid in mind, speech and body has been told, so this turns to what still remains to be done." },
+    { "chapter": 23, "after": 22, "reason": "Giving looks to the next life, so it follows the duty to the world, which looks to this one." },
+    { "chapter": 24, "after": 23, "reason": "Renown, this life’s reward for keeping household righteousness, comes mostly from giving." },
+    { "chapter": 25, "after": 24, "reason": "Renunciation begins here, and compassion comes first because it matters to renunciation as loving-kindness does to home life." },
+    { "chapter": 26, "after": 25, "reason": "Eating flesh is both cause and result of killing, so it can’t go with compassion and is forbidden here." },
+    { "chapter": 27, "after": 26, "reason": "Austerity is taken up once refusing flesh has ripened your compassion for living things." },
+    { "chapter": 28, "after": 27, "reason": "This forbids conduct that doesn’t fit austerity, when someone keeps the garb but lacks the strength and wants again the pleasures of desire they gave up." },
+    { "chapter": 29, "after": 28, "reason": "The last chapter forbade faults over desire, and this one forbids faults over wealth." },
+    { "chapter": 30, "after": 29, "reason": "Lying springs mostly from desire and wealth, so it follows the chapters on those two faults." },
+    { "chapter": 31, "after": 30, "reason": "This forbids the anger that arises from lying." },
+    { "chapter": 32, "after": 31, "reason": "Harm happens even without anger." },
+    { "chapter": 33, "after": 32, "reason": "Not killing surpasses all the righteousness told so far and takes in what hasn’t been named, so it comes last." },
+    { "chapter": 34, "after": 33, "reason": "Attachment to things won’t end until impermanence is understood, so this is told first." },
+    { "chapter": 35, "after": 34, "reason": "Renunciation is letting go of attachment to wealth outside you and the body within, on seeing that neither lasts." },
+    { "chapter": 36, "after": 35, "reason": "Knowing the truth, like renunciation, comes from holding to the one who has no attachment, so the two share one cause." },
+    { "chapter": 37, "after": 36, "reason": "Old habit can still draw the mind back to the senses, and that thought, a seed of birth, is cut off by constant knowledge of the truth." },
+    { "chapter": 38, "after": 37, "reason": "Fate is common to wealth and pleasure, so it can’t sit under either, and it is joined to righteousness, so it closes that part." },
+    { "chapter": 40, "after": 39, "reason": "The Excellence of a Ruler opened this subject with “wakefulness, learning and resolve”, and this chapter expands it." },
+    { "chapter": 41, "after": 40, "reason": "Praising learning wasn’t enough on its own, so it is shown from the other side as well." },
+    { "chapter": 42, "after": 41, "reason": "Listening strengthens the understanding of those who have learned and gives it to those who haven’t." },
+    { "chapter": 43, "after": 42, "reason": "This is having true understanding alongside the understanding that learning and listening give." },
+    { "chapter": 44, "after": 43, "reason": "Only those with understanding can see these six as faults and remove them." },
+    { "chapter": 45, "after": 44, "reason": "A ruler who has removed the six faults is fit to drive the cart of protection, and now takes those of great understanding as his helpers." },
+    { "chapter": 46, "after": 45, "reason": "Petty company twists the mind and ruins both worlds, so joining it makes taking the great as allies useless." },
+    { "chapter": 47, "after": 46, "reason": "Examining a task is done with the great, once keeping clear of petty company has made them useful allies." },
+    { "chapter": 48, "after": 47, "reason": "A ruler who has weighed the means and settled on punishment now measures the four kinds of strength." },
+    { "chapter": 49, "after": 48, "reason": "A ruler with the greater strength, setting out against his enemy, must next know the time that suits the march." },
+    { "chapter": 50, "after": 49, "reason": "Knowing his strength and the time, a ruler setting out against his enemy must next know the ground where he can win." },
+    { "chapter": 51, "after": 50, "reason": "Marching on an enemy with strength, time and ground known, a ruler needs this so that work gets done and no one betrays him." },
+    { "chapter": 52, "after": 51, "reason": "Those a ruler has come to trust must now be employed in the tasks they can do." },
+    { "chapter": 53, "after": 52, "reason": "Having told of those who do the ruler’s work, the book turns to the rest of his circle." },
+    { "chapter": 54, "after": 53, "reason": "Kin are of use only where a ruler doesn’t lapse." },
+    { "chapter": 55, "after": 54, "reason": "Justice can only be given by a ruler free of lapses." },
+    { "chapter": 56, "after": 55, "reason": "The crooked sceptre is the opposite of the straight one." },
+    { "chapter": 57, "after": 56, "reason": "Acts that frighten people belong with the crooked sceptre." },
+    { "chapter": 58, "after": 57, "reason": "This sets out in full, for its importance, the kindly regard already spoken of in Not Ruling by Fear." },
+    { "chapter": 59, "after": 58, "reason": "With the ruler’s own character told, the book turns to what he needs to run his land and take others’, and spies serve both, so they come first." },
+    { "chapter": 60, "after": 59, "reason": "Whoever learns through spies what has happened must act on it, and can’t do that without drive." },
+    { "chapter": 61, "after": 60, "reason": "Even those with drive can at times grow lazy through the pull of their nature." },
+    { "chapter": 62, "after": 61, "reason": "Getting rid of laziness isn’t enough, because work is only carried out by effort." },
+    { "chapter": 63, "after": 62, "reason": "Trouble comes to those who strive, whether from god, lack of wealth or strain on the body, and the mind must stay steady then." },
+    { "chapter": 65, "after": 64, "reason": "The Minister said he must “speak with certainty”, and that matters so much that this chapter expands it." },
+    { "chapter": 66, "after": 65, "reason": "Action must be good as well as speech." },
+    { "chapter": 67, "after": 66, "reason": "Clean work needs firmness of mind if it is to be carried through to the end." },
+    { "chapter": 68, "after": 67, "reason": "This is how a minister with that firmness carries out the work." },
+    { "chapter": 69, "after": 68, "reason": "Making peace and making war, the two errands of an envoy, were treated above as ways of carrying out work." },
+    { "chapter": 70, "after": 69, "reason": "The Envoy asked for “the qualities rulers desire”, so how to live with rulers comes next." },
+    { "chapter": 71, "after": 70, "reason": "No one who lives close to rulers can do without this." },
+    { "chapter": 72, "after": 71, "reason": "When you speak on business you need to know the assembly as well as read the ruler’s mind." },
+    { "chapter": 73, "after": 72, "reason": "Having judged an assembly fit to speak before, you must speak to it without fear." },
+    { "chapter": 74, "after": 73, "reason": "After the ruler and the minister comes the country they carry forward, which the other parts of the state, such as the fortress, can’t do without." },
+    { "chapter": 75, "after": 74, "reason": "The fortress belongs to the country, yet it counts as a part of the state on its own, because it protects both country and ruler when enemies bring ruin." },
+    { "chapter": 76, "after": 75, "reason": "Wealth is mostly made through the country and guarded by the fortress." },
+    { "chapter": 77, "after": 76, "reason": "Wealth is what raises an army, and an army is what wins." },
+    { "chapter": 78, "after": 77, "reason": "This is the surplus of valour in the army just described." },
+    { "chapter": 79, "after": 78, "reason": "Friendship helps a ruler in his work as an army does." },
+    { "chapter": 80, "after": 79, "reason": "You should befriend only those you have tested for the marks just given, so how to test them comes next." },
+    { "chapter": 81, "after": 80, "reason": "Even tested friends have faults that can be borne, and fate too makes them err." },
+    { "chapter": 82, "after": 81, "reason": "After faults that can be borne come faults that can’t, and friendship with such people must be dropped." },
+    { "chapter": 83, "after": 82, "reason": "This is the second friendship to be dropped, the friendship of enemies who never join you at heart." },
+    { "chapter": 84, "after": 83, "reason": "The book turns from friendship to enmity, which comes from anger and desire, and starts with folly, the first delusion at their root." },
+    { "chapter": 85, "after": 84, "reason": "After folly comes the other delusion: to have a small understanding and rate it as great." },
+    { "chapter": 86, "after": 85, "reason": "Of the anger and desire that come of delusion, anger weighs most with rulers, so what anger brings comes first, beginning with strife." },
+    { "chapter": 87, "after": 86, "reason": "A ruler can’t be wholly without enemies, so the strife forbidden in general is prescribed here in one special case." },
+    { "chapter": 88, "after": 87, "reason": "All that is weighed here concerns the enmity that isn’t worth having." },
+    { "chapter": 89, "after": 88, "reason": "The enemy within is also among the enmities to be removed." },
+    { "chapter": 90, "after": 89, "reason": "This was all that remained unsaid, so it closes the chapters on what anger brings." },
+    { "chapter": 91, "after": 90, "reason": "What desire brings isn’t enmity outright, but it wrecks gain and brings ruin as enmity does, so it closes the part on enmity, starting here." },
+    { "chapter": 92, "after": 91, "reason": "After the faults that come from a man’s own wife come those that come from women who sell their charms to anyone who pays." },
+    { "chapter": 93, "after": 92, "reason": "In ruining conduct and understanding, liquor is like the women of the last chapter." },
+    { "chapter": 94, "after": 93, "reason": "Like drinking, gambling and illness come between a person and righteousness, wealth and pleasure, and gambling comes first." },
+    { "chapter": 95, "after": 94, "reason": "Illness, like gambling, comes between a person and righteousness, wealth and pleasure, so it is told next, with its medicine." },
+    { "chapter": 96, "after": 95, "reason": "High birth is something all four varnas can’t do without, so the nature of those born to a high family comes first in this part." },
+    { "chapter": 97, "after": 96, "reason": "Among the qualities of the well-born, honour comes first because it keeps their birth upright." },
+    { "chapter": 98, "after": 97, "reason": "These good qualities, which lift you ever higher, arise only where you don’t fall from your standing." },
+    { "chapter": 99, "after": 98, "reason": "This gathers up the many good qualities that don’t fall under greatness." },
+    { "chapter": 100, "after": 99, "reason": "This is getting along with everyone, knowing their nature, without slipping yourself from greatness and worth." },
+    { "chapter": 101, "after": 100, "reason": "The last couplet of Being Courteous said great wealth is of no use in someone without courtesy, and that opened this subject." },
+    { "chapter": 102, "after": 100, "reason": "Those raised high by worth, courtesy and the like feel shame at acts unworthy of them." },
+    { "chapter": 103, "after": 102, "reason": "Raising your family belongs to those who feel shame at falling low." },
+    { "chapter": 104, "after": 103, "reason": "Ploughing is the effort that the last chapter said raises a family." },
+    { "chapter": 106, "after": 105, "reason": "The books of righteousness say the body, which can reach release, is to be kept even by begging that leaves honour whole, so this forbids Poverty’s utter renunciation." },
+    { "chapter": 107, "after": 106, "reason": "After begging that leaves your honour whole comes the fear of begging that costs you your honour." },
+    { "chapter": 108, "after": 107, "reason": "The base have none of the qualities stated or implied in all the chapters before, so they come after every one of them." },
+    { "chapter": 109, "after": 108, "reason": "This happens the moment he first sees her, so it is told first." },
+    { "chapter": 110, "after": 109, "reason": "A man struck by her beauty needs to read her signs if he is to reach her." },
+    { "chapter": 111, "after": 110, "reason": "Having read her signs and come together with her, he speaks of his delight." },
+    { "chapter": 112, "after": 111, "reason": "Praise of her beauty arises when he is delighting in their union." },
+    { "chapter": 113, "after": 112, "reason": "Telling how great their love is arises from that union and that beauty." },
+    { "chapter": 114, "after": 113, "reason": "Letting go of shame comes when love is at its height." },
+    { "chapter": 115, "after": 114, "reason": "Telling of the gossip comes once shame has been given up." },
+    { "chapter": 117, "after": 116, "reason": "Unable to bear the parting, she thinks always of her pain, and the thinking wastes her away." },
+    { "chapter": 118, "after": 117, "reason": "Her eyes ache to see him once grief has wasted her." },
+    { "chapter": 119, "after": 118, "reason": "Pallor comes when she can’t get to see him." },
+    { "chapter": 120, "after": 119, "reason": "This grief belongs to the woman who has suffered pallor." },
+    { "chapter": 122, "after": 121, "reason": "She saw the dream because she thought of him so much while awake." },
+    { "chapter": 123, "after": 122, "reason": "Trusting the saying that no deed comes without a dream before it, she has borne the day, and evening’s grief belongs to such a woman." },
+    { "chapter": 124, "after": 123, "reason": "Her features lose their beauty when grief is at its height." },
+    { "chapter": 125, "after": 124, "reason": "This comes once her features have lost their beauty and she has nothing left to hold on to." },
+    { "chapter": 126, "after": 125, "reason": "Her reserve breaks down because she has spoken to her heart." },
+    { "chapter": 127, "after": 126, "reason": "Her words here come from her lost reserve." },
+    { "chapter": 128, "after": 127, "reason": "This happens once he has come back and they are together." },
+    { "chapter": 129, "after": 128, "reason": "She has made known his intent to leave, yet the eagerness isn’t his alone: her great longing makes it rise in her too." },
+    { "chapter": 130, "after": 129, "reason": "Her heart, hurrying to union, won’t think of sulking even with cause, so she sulks with her heart, and he with his." },
+    { "chapter": 131, "after": 130, "reason": "When neither heart hurries to union and both mean to sulk, the two sulk with each other." },
+    { "chapter": 132, "after": 131, "reason": "She has no cause to sulk, but her love runs so high that she imagines a fine cause and lays it on him." },
+    { "chapter": 133, "after": 132, "reason": "When a sulk like that has made union sweeter, each of them delights in the sulking." }
+  ],
+  "threads": [
+    {
+      "id": "from-loving-kindness-to-compassion",
+      "title": "From loving-kindness to compassion",
+      "summary": "He holds that compassion grows from loving-kindness, which starts with your own people. This follows it outward until it reaches every living thing.",
+      "steps": [
+        { "n": 72, "quote": "give even their bones for others", "why": "Loving-kindness shows first in what you won’t keep for yourself." },
+        { "n": 74, "quote": "that warmth brings friendship", "why": "It doesn’t stay where it began: it makes you warm towards people, and the warmth becomes friendship." },
+        { "n": 757, "quote": "the child that loving-kindness bears", "why": "Here is the link: compassion is the child that loving-kindness bears." },
+        { "n": 241, "quote": "the wealth among wealth", "why": "The child is weighed against goods and outranks them, for even the low can have goods." },
+        { "n": 257, "quote": "Flesh is another creature’s wound", "why": "Compassion now goes past people: it sees a wound where others see food." },
+        { "n": 30, "quote": "tenderness towards every living thing", "why": "Its full reach: the sages are those who live with tenderness towards every living thing." }
+      ]
+    },
+    {
+      "id": "from-a-sweet-word-to-a-true-one",
+      "title": "From a sweet word to a true one",
+      "summary": "Speech is tested step by step: is it sweet, is it from the heart, is it of use, is it straight, does it harm? The last test is truth, and nothing stands above it.",
+      "steps": [
+        { "n": 100, "quote": "picking unripe fruit when ripe fruit is there", "why": "The first step is an easy choice: when a sweet word is there, a harsh one is unripe fruit." },
+        { "n": 93, "quote": "sweet words that come from the heart", "why": "Sweetness on the lips isn’t enough: the word must come from the heart, with the face and eyes agreeing." },
+        { "n": 200, "quote": "say the ones with use", "why": "A word can be sweet and sincere and still be empty, so the next test is whether it is of use." },
+        { "n": 119, "quote": "speech that does not bend", "why": "Now the word must be straight, and that depends on what is behind it: no bend within." },
+        { "n": 291, "quote": "speech with no harm in it at all", "why": "Truthfulness gets its definition, and it isn’t bare fact: it is speech that harms no one." },
+        { "n": 293, "quote": "your own heart will burn you", "why": "The judge of a lie is inside you: your own heart knows, and your own heart does the burning." },
+        { "n": 300, "quote": "nothing at all is better than truthfulness", "why": "The book’s verdict: of all it has seen to be true, nothing is better than this." }
+      ]
+    },
+    {
+      "id": "what-to-do-with-anger",
+      "title": "What to do with anger",
+      "summary": "The test comes where you have the power to act on your anger. The book counts what anger costs you, and ends by ranking those who give it up with those who renounce.",
+      "steps": [
+        { "n": 301, "quote": "holds back anger where it can take effect", "why": "The test comes first: holding back anger only counts where you have the power to act on it." },
+        { "n": 304, "quote": "kills your smile and your joy", "why": "The first cost falls inside you, on your own joy, before anyone else is touched." },
+        { "n": 306, "quote": "burns the raft of safety", "why": "Next it reaches your own people, the raft that would have carried you to safety." },
+        { "n": 864, "quote": "doesn’t give up anger and has no self-command", "why": "It also leaves you exposed: the man who won’t give up anger is easy for anyone, anywhere." },
+        { "n": 305, "quote": "it is you that anger kills", "why": "The costs come down to one reason, and it isn’t kindness to others: guard against anger to guard yourself." },
+        { "n": 130, "quote": "holds back anger, learns and keeps restraint", "why": "Holding it back also opens a way in: righteousness comes looking for such a person." },
+        { "n": 310, "quote": "Those who renounce anger are the equals of renouncers", "why": "To give up anger is to stand with those who gave up the world." }
+      ]
+    },
+    {
+      "id": "letting-go-step-by-step",
+      "title": "Letting go, step by step",
+      "summary": "Seeing that nothing lasts leads to letting go of attachment, letting go needs something to hold to, and the truth cuts off craving at the seed. This is the order of chapters 34 to 37.",
+      "steps": [
+        { "n": 334, "quote": "a blade sawing through life", "why": "Everything begins with seeing: what looks like a day is a blade sawing through life." },
+        { "n": 341, "quote": "From each thing you have let go of", "why": "Seeing that brings the first practical step: let go of one thing, and that thing can’t hurt you." },
+        { "n": 347, "quote": "hold on to attachment and won’t let go", "why": "The other side of it: suffering won’t let go of those who won’t let go of attachment." },
+        { "n": 350, "quote": "so that you can let go of attachment", "why": "Attachment isn’t simply dropped: you hold to the one who has none, in order to let go." },
+        { "n": 360, "quote": "desire, anger and delusion", "why": "Knowing the truth names what has to go: when even the names of these three are gone, pain is gone." },
+        { "n": 361, "quote": "craving is the seed", "why": "Then the seed itself: craving is what yields birth without end." },
+        { "n": 370, "quote": "a nature that never changes", "why": "Craving can never be filled, and the moment you give it up you have a nature that never changes." }
+      ]
+    },
+    {
+      "id": "fate-and-effort",
+      "title": "Fate and effort",
+      "summary": "The book says nothing is stronger than fate. It also says the disgrace is to know what must be known and make no effort, and that those who never falter will see fate’s back. It takes neither back.",
+      "steps": [
+        { "n": 380, "quote": "What is stronger than fate?", "why": "Fate stands at full strength here: even as you plan a way around it, it gets there first." },
+        { "n": 375, "quote": "everything that should help can go wrong", "why": "In making money, what should help can go wrong and what should hurt can turn out well, so the result isn’t yours to command." },
+        { "n": 618, "quote": "The lack of a favouring fate disgraces no one", "why": "The first turn: lacking a favouring fate is no disgrace, and the disgrace is to know what must be known and make no effort." },
+        { "n": 619, "quote": "effort pays the wages of your body’s toil", "why": "Even where the result is refused, effort is still paid: the toil earns its wages." },
+        { "n": 620, "quote": "will see the back of fate itself", "why": "The boldest claim against fate comes last, set beside the first step with neither taken back." }
+      ]
+    },
+    {
+      "id": "from-learning-to-living-by-it",
+      "title": "From learning to living by it",
+      "summary": "Understanding flows as far as you dig, but hearing isn’t knowing, and knowing isn’t self-control. The thread ends on the book’s plainest demand: live up to what you learned.",
+      "steps": [
+        { "n": 396, "quote": "gives water as far as you dig", "why": "Understanding has to be dug for, and it flows only as far as you have dug." },
+        { "n": 414, "quote": "Even if you have no learning, listen.", "why": "The way stays open to those without books: listening holds you up when you falter." },
+        { "n": 423, "quote": "seeing the reality in it", "why": "What you take in still has to be tested: whoever says it, understanding means seeing what is real in it." },
+        { "n": 844, "quote": "the conceit that says, “I am wise.”", "why": "The next danger comes from having got this far: to think “I am wise” is itself immaturity." },
+        { "n": 834, "quote": "still has no self-control", "why": "Even true knowledge can fail: the greatest fool is someone who understands, teaches, and still has no self-control." },
+        { "n": 391, "quote": "Once you have learned it, live up to it", "why": "This is what learning is for: once you have it, your life has to match it." }
+      ]
+    },
+    {
+      "id": "how-a-ruler-falls",
+      "title": "How a ruler falls",
+      "summary": "A ruler’s fall starts when he can’t bear to hear bitter words. It ends with the tears of people who can bear no more.",
+      "steps": [
+        { "n": 389, "quote": "bear words bitter to his ears", "why": "What keeps a ruler safe is the character to bear words he doesn’t want to hear." },
+        { "n": 448, "quote": "no one to rebuke him", "why": "Without those words he has no protection, and he can fall with no enemy at all." },
+        { "n": 548, "quote": "isn’t easy to reach", "why": "Next he closes himself off: hard to reach, looking into nothing, giving no justice." },
+        { "n": 552, "quote": "one who stands with a spear", "why": "Then power changes what his words are: when he asks, it is a spear saying “Hand it over.”" },
+        { "n": 564, "quote": "“Our ruler is harsh”", "why": "The people begin to say it, and the book counts those bitter words as shortening his days." },
+        { "n": 555, "quote": "The tears wept by those who suffer", "why": "The weapon that wears away his wealth is the tears of people who suffer and can’t bear it." }
+      ]
+    },
+    {
+      "id": "from-weighing-to-acting",
+      "title": "From weighing to acting",
+      "summary": "First weigh the task, your strength, the time and the place. Then the book turns: weighing must end in a decision, and firmness decides the rest.",
+      "steps": [
+        { "n": 467, "quote": "Think, then commit to the task.", "why": "The rule comes first: all the thinking belongs before you commit, none after." },
+        { "n": 471, "quote": "Weigh the strength of the task", "why": "What to weigh: the task, yourself, the enemy and your allies." },
+        { "n": 473, "quote": "set out on a surge of zeal and broke halfway", "why": "Zeal can’t stand in for that weighing: many have set out on it and broken halfway." },
+        { "n": 490, "quote": "be like the heron", "why": "Strength isn’t enough either: there is a time to hold still and a moment to strike." },
+        { "n": 496, "quote": "Ships that run on the sea can’t run on land", "why": "The place counts too: what rules one ground is useless on another." },
+        { "n": 671, "quote": "The end of deliberation is to reach a decision", "why": "Here it turns: weighing has an end, and a decision left sitting in delay is a wrong." },
+        { "n": 664, "quote": "Doing it as you said is hard", "why": "The hard part starts after the words: anyone can say it, few can do it as they said." },
+        { "n": 666, "quote": "if they are firm", "why": "Everything weighed so far comes down to this: those who plan get what they planned, if they are firm." }
+      ]
+    },
+    {
+      "id": "where-to-keep-your-wealth",
+      "title": "Where to keep your wealth",
+      "summary": "The book says plainly that wealth counts, and just as plainly that it won’t stay. The one place it says wealth can be stored is the hunger of those who have nothing.",
+      "steps": [
+        { "n": 751, "quote": "makes people who don’t count into people who do", "why": "No illusions to begin with: the book says wealth is what makes a person count." },
+        { "n": 754, "quote": "comes by knowing how, and without wrong", "why": "How it comes matters: wealth made with skill and without wrong gives birth to righteousness and happiness." },
+        { "n": 332, "quote": "It goes the way that crowd goes", "why": "However well it comes, it goes, as a crowd thins when the dance is over." },
+        { "n": 333, "quote": "do at once the things that stay", "why": "Since it won’t stay, the question becomes what to do with it now." },
+        { "n": 1005, "quote": "have nothing, even with ten million", "why": "Holding on is no answer: those who neither give nor enjoy have nothing, however much they have." },
+        { "n": 215, "quote": "the village tank filled with water", "why": "The better way is shown: wealth held for everyone, like a tank the whole village draws on." },
+        { "n": 226, "quote": "That is where someone who has wealth can store it", "why": "The answer: the place to store wealth is in ending the hunger of those who have nothing." }
+      ]
+    },
+    {
+      "id": "what-a-friend-is-for",
+      "title": "What a friend is for",
+      "summary": "A friend isn’t someone who makes you smile. A friend rebukes you, comes at once in trouble and stays. Ruin shows who that is, and the memory lasts.",
+      "steps": [
+        { "n": 786, "quote": "makes the heart smile deep within", "why": "The easy test goes first: a smiling face proves nothing, the heart has to smile." },
+        { "n": 784, "quote": "to step in and rebuke", "why": "Then it says what friendship is for, and it isn’t laughter: it is stepping in when you go too far." },
+        { "n": 795, "quote": "speak until you weep", "why": "So that is what to look for: friends who, when you go wrong, can bring you to tears and show you the right way." },
+        { "n": 788, "quote": "takes away trouble on the spot", "why": "In trouble the same friend moves at once, as a hand catches clothes that slip." },
+        { "n": 796, "quote": "measures your people to their full length", "why": "Ruin tests all of this: it is the rod that shows you the true length of each of your people." },
+        { "n": 799, "quote": "desert you in your ruin burns the heart", "why": "Those who fail that test stay with you as a burn, even when death is upon you." },
+        { "n": 107, "quote": "those who wiped away their sorrow", "why": "The other memory lasts longer still: those who wiped away your sorrow are remembered through seven births." }
+      ]
+    },
+    {
+      "id": "how-a-habit-holds-you",
+      "title": "How a habit holds you",
+      "summary": "Liquor and dice hold you the same way: you hide it, reason can’t reach you, a win is the hook, and each loss binds you tighter. The book shows it plainly.",
+      "steps": [
+        { "n": 928, "quote": "Give up saying, “I have never been drunk.”", "why": "Denial comes first, and hiding it only makes it show the more." },
+        { "n": 929, "quote": "taking a lamp to look for someone who has dived under water", "why": "While you are in it, reason can’t reach you: it is a lamp carried to someone under water." },
+        { "n": 930, "quote": "sober for the moment", "why": "The one opening is the sober moment, when you can see in someone else how you slip." },
+        { "n": 931, "quote": "a hook swallowed by a fish", "why": "Dice show the same trap from another side: even a win is the hook, not the prize." },
+        { "n": 938, "quote": "destroys your compassion", "why": "The cost moves inward: first your wealth, then your honesty, then your compassion." },
+        { "n": 940, "quote": "loved more with each loss", "why": "Why it is so hard to stop: each loss makes it dearer, and the book says the soul is the same with pain." }
+      ]
+    },
+    {
+      "id": "when-to-bow-and-when-to-stand-tall",
+      "title": "When to bow and when to stand tall",
+      "summary": "Humility adds most to those who have something. It is a strength, and the book gives it a limit: bow in plenty, stand tall when your means shrink.",
+      "steps": [
+        { "n": 125, "quote": "in the rich it is a further wealth", "why": "Humility is good in anyone, but it adds most to those who already have something." },
+        { "n": 978, "quote": "Greatness always bends low.", "why": "Bending becomes the mark of greatness, as admiring yourself is the mark of smallness." },
+        { "n": 985, "quote": "The strength of the capable is bowing.", "why": "It isn’t weakness: bowing is the weapon the worthy use to turn enemies around." },
+        { "n": 986, "quote": "Accepting defeat, even from those who are not your equals", "why": "The hardest test of it: to accept defeat from someone who isn’t your equal." },
+        { "n": 963, "quote": "When your means shrink, stand tall.", "why": "The limit: bowing belongs to plenty, and when you have little the book tells you to stand tall." }
+      ]
+    },
+    {
+      "id": "what-poverty-does",
+      "title": "What poverty does",
+      "summary": "The book doesn’t soften poverty: what it does, what asking costs, and its anger at a world where people must beg. It names no remedy here, though chapter 106 is gentler on asking those fit to give.",
+      "steps": [
+        { "n": 1041, "quote": "Only poverty hurts like poverty.", "why": "There is no comparing it: nothing else hurts like poverty." },
+        { "n": 1045, "quote": "many miseries come and settle", "why": "It isn’t one pain: many other miseries come to live inside it." },
+        { "n": 1049, "quote": "In poverty there is no sleep at all.", "why": "It won’t let you rest: you could sleep sooner in the middle of a fire." },
+        { "n": 1070, "quote": "the life goes out of those who beg", "why": "Asking costs more still: at a mere word the life goes out of those who beg, and the book turns on those who hide what they have." },
+        { "n": 1062, "quote": "let him wander far and perish", "why": "It ends in anger, not a remedy: if people were meant to live by begging, let the one who made the world perish." }
+      ]
+    },
+    {
+      "id": "from-a-glance-to-a-flood",
+      "title": "From a glance to a flood",
+      "summary": "Desire starts as one look and grows through every joy of union. Then parting comes, and the same desire becomes a flood with no shore.",
+      "steps": [
+        { "n": 1091, "quote": "One look brings sickness", "why": "Desire starts in her eyes, which hold two looks: one brings the sickness, and the other is its medicine." },
+        { "n": 1100, "quote": "the words of the mouth are no use", "why": "The look is returned, and two people agree before a word is said." },
+        { "n": 1106, "quote": "my life puts out new leaves", "why": "Union comes, and desire feels like life itself growing again at every touch." },
+        { "n": 1110, "quote": "Each thing you learn shows up your ignorance", "why": "It doesn’t settle: each time he holds her he finds how much more there is." },
+        { "n": 1152, "quote": "the pain of fearing he will leave", "why": "Now joy carries a fear inside it: even in union she feels the pain of his leaving." },
+        { "n": 1166, "quote": "the pain is greater than that sea", "why": "Parting comes and she gives the measure: the joy was a sea, and the pain is greater." },
+        { "n": 1167, "quote": "swim the fierce flood of desire and see no shore", "why": "It ends with no comfort: she is swimming, there is no shore, and at midnight she is alone." }
+      ]
+    },
+    {
+      "id": "trying-to-forget-him",
+      "title": "Trying to forget him",
+      "summary": "He keeps coming into her heart. She asks it for a cure, calls it a fool and resolves to forget him. Then she finds that forgetting costs what remembering costs.",
+      "steps": [
+        { "n": 1205, "quote": "keep coming into mine", "why": "The memory comes without being asked: he has shut her out of his heart, yet keeps coming into hers." },
+        { "n": 1207, "quote": "even remembering burns my heart", "why": "Her friend tells her to forget, but she asks what would become of her, she doesn’t know how, and even remembering burns." },
+        { "n": 1241, "quote": "any cure at all", "why": "So she turns to her own heart and asks it for a cure." },
+        { "n": 1242, "quote": "He has no love for you", "why": "She tries reason: he has no love for you, so suffering for him is foolish." },
+        { "n": 1248, "quote": "you go after the one who left", "why": "Reason doesn’t hold: the heart still goes after him, and she calls it a fool." },
+        { "n": 1250, "quote": "we will lose still more of our beauty", "why": "She reaches a decision: keep him in your heart and you lose still more of your beauty, so he must be forgotten." },
+        { "n": 1262, "quote": "if I forget him today, my beauty will leave me", "why": "It ends in a bind: told to forget him a little, she answers that forgetting would cost her beauty too." }
+      ]
+    },
+    {
+      "id": "how-a-sulk-comes-round",
+      "title": "How a sulk comes round",
+      "summary": "The book ends on sulking. A sulk she can’t keep up becomes something both of them want, with its measure and its risk, and the last couplet lands on the embrace that ends it.",
+      "steps": [
+        { "n": 1284, "quote": "my heart forgot that", "why": "The first sulk can’t even be kept up: her heart forgets it and goes over to him." },
+        { "n": 1302, "quote": "the right amount of salt", "why": "Her friend gives it a measure: a sulk is salt, and drawing it out is a little too much." },
+        { "n": 1307, "quote": "a pain even in sulking", "why": "He feels the risk in it: the sulk may keep them apart too long." },
+        { "n": 1321, "quote": "draws out his tenderness", "why": "She says what it is for: it no longer needs a wrong, because it draws out his tenderness." },
+        { "n": 1322, "quote": "it comes back greater", "why": "The risk turns out to be part of it: his tenderness dims for a moment and comes back greater." },
+        { "n": 1326, "quote": "a quarrel is sweeter than making love", "why": "He reaches the same place from his side: as digesting is sweeter than eating more, so the quarrel beats union." },
+        { "n": 1330, "quote": "the embrace that ends it", "why": "The book’s last couplet lands on the embrace, with its own caution: if you get that far." }
+      ]
+    }
+  ]
+}

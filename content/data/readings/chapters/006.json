@@ -1,0 +1,176 @@
+{
+  "chapter": 6,
+  "title": "The Worth of a Wife",
+  "note": "This is the goodness of the wife, the companion of home life. That is why it follows the chapter on home life.",
+  "couplets": [
+    {
+      "n": 51,
+      "plain": "She is a life’s companion who has the worth a home needs and lives within the means of the man who took her.",
+      "pm": "She is a companion to home life who has the good qualities and deeds household righteousness needs, and lives within the income of the man who took her. The qualities are caring for ascetics, feeding guests and compassion for the poor. The deeds are knowing and keeping what the home needs, skill in the kitchen and doing what is fitting.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "f882db450eea51ff",
+          "quote": "the worth a home needs",
+          "reason": "Gives the marks of a life’s companion: the worth a home needs, and living within his means."
+        },
+        {
+          "id": "2c64dc26b3d48c82",
+          "quote": "lives within the means of the man who took her"
+        }
+      ]
+    },
+    {
+      "n": 52,
+      "plain": "If a wife lacks the worth a home needs, that life is nothing, however fine it may be.",
+      "pm": "If a wife lacks the good qualities and deeds that household righteousness needs, that home life has nothing, however splendid it is with wealth. It is called nothing because it is of no use.",
+      "tag": "agrees",
+      "sensitive": "Blames a wife for the failure of all other blessings.",
+      "links": [
+        {
+          "id": "338ddd6d472b57a0",
+          "quote": "that life is nothing",
+          "reason": "Without her worth, a life comes to nothing, however fine."
+        },
+        {
+          "id": "82675ff7399b847b",
+          "quote": "If a wife lacks the worth a home needs"
+        }
+      ]
+    },
+    {
+      "n": 53,
+      "plain": "What is lacking if the wife has worth? What is there if she has none?",
+      "pm": "If a man’s wife has good qualities and deeds, what does he lack? If she doesn’t, what does he have? These two couplets say that what home life needs is the worth of the wife and nothing else.",
+      "tag": "agrees",
+      "sensitive": "Ties a household’s fortune to a wife’s worth.",
+      "links": [
+        {
+          "id": "84a7cf5fe6fb9abe",
+          "quote": "What is lacking if the wife has worth?",
+          "reason": "Says nothing is lacking where the wife has worth."
+        },
+        {
+          "id": "3c8be19ff4d77fec",
+          "quote": "the wife has worth",
+          "reason": "Hangs both having and lacking on the worth of the wife."
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "plain": "What is greater than a woman, if she has the strength called chastity?",
+      "pm": "Of all a man can gain, what is greater than a wife, if she has the unshaken state called chastity? Nothing else serves as a chaste woman does as the cause of righteousness, wealth and pleasure. This tells the excellence of chastity.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "150a0c37e09256af",
+          "quote": "the strength called chastity",
+          "reason": "Knows of nothing greater than a woman with the strength of chastity."
+        },
+        {
+          "id": "1f433deab07afaf0",
+          "quote": "What is greater than a woman",
+          "reason": "In a chapter on the wife, the woman praised here is the chaste wife."
+        }
+      ]
+    },
+    {
+      "n": 55,
+      "plain": "A woman who worships no god but wakes worshipping her husband has only to say “Rain”, and it rains.",
+      "pm": "She worships no other god and rises from sleep worshipping her husband, who is her god. If she says “Rain”, it rains. The mind is clearest for worship on waking, so he speaks of rising. The god itself obeys her. This tells the power of a chaste woman.",
+      "tag": "adds",
+      "sensitive": "tells a wife to worship her husband; could reach someone abused",
+      "links": [
+        {
+          "id": "dad0e278c320b483",
+          "quote": "wakes worshipping her husband",
+          "reason": "Praises a wife who puts her husband in the place of the gods."
+        },
+        {
+          "id": "9c01201e6a229aa5",
+          "quote": "A woman who worships no god",
+          "reason": "Holds up a wife whose devotion is so great that the rain answers to her."
+        }
+      ]
+    },
+    {
+      "n": 56,
+      "plain": "A woman is one who guards herself, cares for the man who took her, guards their good name and never flags.",
+      "pm": "A true woman guards herself so as not to slip from chastity, tends the man who took her with food and the like, keeps the good fame of both from leaving them, and holds firm to the good qualities and deeds named above. Her own fame is the praise of her chastity in the town where she lives. Flagging means forgetting.",
+      "tag": "adds",
+      "sensitive": "measures a wife by tending her husband; could reach someone abused",
+      "links": [
+        {
+          "id": "4f68155e6c81df92",
+          "quote": "A woman is one who guards herself",
+          "reason": "Spells out a true woman: guarding herself and their good name, and caring for him."
+        },
+        {
+          "id": "269f7001ecd6964f",
+          "quote": "cares for the man who took her"
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "plain": "What use is guarding women behind walls? The best guard is the one they keep by their own restraint.",
+      "pm": "What good does it do men to guard women by confinement, with walls and gatekeepers? The guard they keep by their own restraint, holding the heart to chastity, is the chief guard. Without it, confinement is useless.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "0692a890ebe22c23",
+          "quote": "by their own restraint"
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "plain": "If women gain the man who gained them, they gain great honour in the world where the gods live.",
+      "pm": "If women have the husband who took them, and worship him, they receive great honour from the gods in the world where the gods live. Women who tend the man who took them are tended by the gods.",
+      "tag": "adds",
+      "note": "The first words are compressed: “if they gain the one who gained them”. He supplies worship of the husband.",
+      "sensitive": "Ties a woman’s honour to her husband.",
+      "links": [
+        {
+          "id": "46b4626dd80c0fcb",
+          "quote": "they gain great honour",
+          "reason": "Promises great honour in the world of the gods to a woman as a wife."
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "plain": "Those without a wife who cares for a good name can’t walk proud as a bull before those who scorn them.",
+      "pm": "Those who have no wife who loves fame don’t have the proud walk of a lion before the enemies who scorn them. A lion’s walk is the figure for a man of pride. This tells the fault that follows when the wife doesn’t guard their good name.",
+      "tag": "agrees",
+      "note": "ஏறு is any male beast and usually a bull. He takes it as a lion.",
+      "links": [
+        {
+          "id": "c2f4edb137ce9d57",
+          "quote": "a wife who cares for a good name",
+          "reason": "What they lack is a wife who cares for a good name, and so they cannot walk proudly."
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "plain": "They call the excellence of a home a blessing, and having good children its fine ornament.",
+      "pm": "The wise say a wife’s good qualities and deeds are a man’s blessing, and that gaining good sons is their fine ornament. By naming an ornament for the wife, this opens the way to the next chapter.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "8ad60a2a5293cf73",
+          "quote": "the excellence of a home",
+          "reason": "மனைமாட்சி is the excellence of the home, and so of the wife, named as a blessing."
+        },
+        {
+          "id": "41ff4d17cd7f2075",
+          "quote": "having good children",
+          "reason": "Makes good children the fine ornament of the home’s excellence."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

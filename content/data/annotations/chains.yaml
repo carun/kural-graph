@@ -1,0 +1,139 @@
+# Chains the text itself states, curated from the annotators' idea links.
+- id: effort-to-freedom
+  title: From effort to righteousness
+  summary: Effort builds prosperity, and wealth that comes without wrong gives birth to righteousness.
+  steps:
+    - idea: quality:exertion
+      couplet: 616
+      quote: Effort builds prosperity
+    - idea: theme:wealth
+      couplet: 754
+      quote: Wealth that comes by knowing how, and without wrong, gives birth to righteousness and to happiness
+    - idea: quality:righteousness
+- id: what-a-just-ruler-sets-flowing
+  title: What a just ruler sets flowing
+  summary: The rain is said to depend on the ruler. Farming depends on the rain, and giving depends on those who eat by the work of their own hands.
+  steps:
+    - idea: quality:just-rule
+      couplet: 559
+      quote: If the ruler acts against justice, the sky will fail its season and won’t rain
+    - idea: theme:rain
+      couplet: 14
+      quote: If the riches called rain run short, farmers will not plough
+    - idea: theme:agriculture
+      couplet: 1035
+      quote: Those who by nature eat by the work of their own hands won’t beg. They give to those who beg, and hide nothing
+    - idea: quality:charity
+- id: how-fortune-leaves
+  title: When fate takes wealth away
+  summary: The fate that takes wealth away brings laziness. Lack of effort lets want in, and poverty brings a weakness from which shameful words are born, even in those of good family.
+  steps:
+    - idea: theme:destiny
+      couplet: 371
+      quote: The fate that takes it away brings laziness
+    - idea: quality:sloth
+      couplet: 616
+      quote: Lack of effort lets want in
+    - idea: theme:poverty
+      couplet: 1044
+      quote: Even in those of good family, poverty brings a weakness from which shameful words are born
+    - idea: quality:servility
+- id: the-round-of-love
+  title: The round of desire
+  summary: "In Part 3 desire feeds on its own quarrels: it needs its sulks, the sulk ends in an embrace, and each embrace shows how much more there is to desire."
+  steps:
+    - idea: quality:passion
+      couplet: 1306
+      quote: Without the deep sulk and the light one, desire is like a fruit too ripe and a fruit too green
+    - idea: quality:bouderie
+      couplet: 1330
+      quote: the joy of sulking is the embrace that ends it
+    - idea: theme:joy-of-love
+      couplet: 1110
+      quote: Each thing you learn shows up your ignorance. Desire is like that, each time I hold this woman in red jewels close
+    - idea: quality:passion
+- id: the-way-out-of-rebirth
+  title: The way out of rebirth
+  summary: Wanting truthfulness leads to having no craving, and wanting to want nothing is how you come not to be born.
+  steps:
+    - idea: quality:truthfulness
+      couplet: 364
+      quote: Purity is having no craving. That comes from wanting truthfulness
+    - idea: quality:desirelessness
+      couplet: 362
+      quote: If you must want something, want not to be born. That comes from wanting to want nothing
+    - idea: theme:liberation
+- id: what-desire-sows
+  title: What craving sows
+  summary: Craving is the seed that yields, for all living things at all times, birth that never ends.
+  steps:
+    - idea: quality:craving
+      couplet: 361
+      quote: craving is the seed that yields, for all living things at all times, birth that never ends
+    - idea: theme:rebirth
+- id: where-envy-leads
+  title: Where envy leads
+  summary: Envy destroys your wealth, and poverty brings a weakness from which shameful words are born.
+  steps:
+    - idea: quality:envy
+      couplet: 168
+      quote: That sinner called envy destroys your wealth
+    - idea: theme:poverty
+      couplet: 1044
+      quote: Even in those of good family, poverty brings a weakness from which shameful words are born
+    - idea: quality:servility
+- id: where-gambling-leads
+  title: Where gambling leads
+  summary: Gambling destroys your wealth, and poverty then brings a weakness from which shameful words are born.
+  steps:
+    - idea: quality:gambling
+      couplet: 938
+      quote: Gambling destroys your wealth
+    - idea: theme:poverty
+      couplet: 1044
+      quote: Even in those of good family, poverty brings a weakness from which shameful words are born
+    - idea: quality:servility
+- id: from-a-kind-word
+  title: From a sweet word to compassion
+  summary: Sweet speech makes righteousness grow, righteousness brings wealth, and compassion thrives with wealth as its foster-mother.
+  steps:
+    - idea: quality:kind-speech
+      couplet: 96
+      quote: If you seek out what is good and say it sweetly, wrongs will wear away and righteousness will grow
+    - idea: quality:righteousness
+      couplet: 31
+      quote: Righteousness brings distinction and it brings wealth
+    - idea: theme:wealth
+      couplet: 757
+      quote: Compassion, the child that loving-kindness bears, thrives with the rich foster-mother called wealth
+    - idea: quality:compassion
+- id: remembered-kindness
+  title: From remembered kindness to lasting renown
+  summary: Recalling one good thing someone did ends even a hurt like killing, and those who bear a wrong have renown until the end.
+  steps:
+    - idea: quality:gratitude
+      couplet: 109
+      quote: Though someone hurts you as if they were killing you, it all dies when you recall one good thing they did
+    - idea: quality:forgiveness
+      couplet: 156
+      quote: Those who bear it have renown until the end
+    - idea: theme:glory
+- id: love-and-its-children
+  title: Loving-kindness and what it bears
+  summary: Loving-kindness makes you warm towards people, and that warmth brings friendship.
+  steps:
+    - idea: quality:affection
+      couplet: 74
+      quote: Loving-kindness makes you warm towards people, and that warmth brings friendship, a gift beyond measure
+    - idea: theme:friendship
+- id: listening-to-honour
+  title: From listening to a good family name
+  summary: Humble speech comes hard to those without subtle listening, and a good family name needs that humility.
+  steps:
+    - idea: theme:listening
+      couplet: 419
+      quote: Those without subtle listening can hardly have humble mouths
+    - idea: quality:humility
+      couplet: 960
+      quote: If you want a good family name, bow to everyone
+    - idea: theme:family-line

@@ -1,0 +1,181 @@
+{
+  "chapter": 96,
+  "title": "Good Family",
+  "note": "This is the character of those born in a high family. All four varnas can’t do without high birth, so this chapter comes first in its part.",
+  "couplets": [
+    {
+      "n": 951,
+      "plain": "Only in those born of a good family do uprightness and shame come together by nature.",
+      "pm": "Uprightness and shame together are natural only in those born of a good family, not in others. Uprightness means thought, word and deed don’t clash. Shame means shrinking from blame and sin. Those of good family have these without being taught. In others, even when taught, they don’t last long.",
+      "tag": "adds",
+      "sensitive": "Says virtue comes naturally only to the well born",
+      "links": [
+        {
+          "id": "972023338900835b",
+          "quote": "do uprightness and shame come together by nature"
+        }
+      ]
+    },
+    {
+      "n": 952,
+      "plain": "Those of good family never slip from these three: good conduct, truth and shame.",
+      "pm": "Those born in a high family never slip in the three that are theirs, conduct, truth and shame, and they keep them by themselves, not through study. These belong to body, speech and mind, which is why they come in that order. They don’t even know how to slip, so he says “never slip”.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "7d780fb9d0bc867e",
+          "quote": "never slip from these three"
+        },
+        {
+          "id": "67f9620a501b52d4",
+          "quote": "good conduct"
+        },
+        {
+          "id": "2937b110a3201075",
+          "quote": "truth"
+        },
+        {
+          "id": "5c6c143cfa1f3fe4",
+          "quote": "shame"
+        }
+      ]
+    },
+    {
+      "n": 953,
+      "plain": "A smile, giving, sweet words and scorning no one: they say these four belong to a true family.",
+      "pm": "The learned say four things belong to those of an unchanging family: a bright face when the poor come, giving what you have, sweet words and no scorn. Falsehood changes, so changelessness is called “true”. Everyone despises those who have nothing, so not scorning them is made one of the four.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "1377f92a6456bbb6",
+          "quote": "these four belong to a true family",
+          "reason": "Gives the four marks of those from a true family."
+        },
+        {
+          "id": "4f1fe9d6ad461d92",
+          "quote": "giving",
+          "reason": "Giving is the second of the four."
+        },
+        {
+          "id": "e6116178192503c3",
+          "quote": "sweet words"
+        },
+        {
+          "id": "c481e10e66a836b0",
+          "quote": "scorning no one",
+          "reason": "Scorning no one is the last of the four."
+        }
+      ]
+    },
+    {
+      "n": 954,
+      "plain": "Even for piled-up millions, those of good family won’t do anything that lowers them.",
+      "pm": "Even if they could get wealth counted in millions upon millions, those born of a high family won’t do work that lowers their conduct.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "089e7290f880924f",
+          "quote": "Even for piled-up millions"
+        }
+      ]
+    },
+    {
+      "n": 955,
+      "plain": "Even when what they have to give has shrunk, those of an old family don’t part from their good nature.",
+      "pm": "Those of a family that has come down from of old don’t leave their good nature, even when what they can give has shrunk. Such a family is like the Chera, Chola and Pandya lines, great since creation. For them, poverty simply means having less to give.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "6f6342e49895b8e1",
+          "quote": "what they have to give has shrunk",
+          "reason": "Even when what they can give has shrunk, such people stay as they were."
+        },
+        {
+          "id": "c828d163eaf21f37",
+          "quote": "those of an old family",
+          "reason": "Good nature that outlasts the means to give is offered as the mark of an old family."
+        }
+      ]
+    },
+    {
+      "n": 956,
+      "plain": "Those who say, “We will live by our spotless family,” won’t turn to deceit and do unworthy things.",
+      "pm": "Those who resolve to live up to their family line, free of blame, won’t take to deceit and do what doesn’t suit that line, even when poor.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "ce402f4c83c860af",
+          "quote": "won’t turn to deceit and do unworthy things"
+        }
+      ]
+    },
+    {
+      "n": 957,
+      "plain": "A fault in those of good family stands out like the spot on the moon in the sky.",
+      "pm": "A fault in someone born of a high family, however small, stands out like the spot on the moon in the sky. The family is high, and the fault clashes with good qualities that are like the moon, so it spreads and shows across the world.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "4134168f27b59f7a",
+          "quote": "A fault in those of good family stands out"
+        },
+        {
+          "id": "ff94e4c9103bb816",
+          "quote": "the spot on the moon"
+        }
+      ]
+    },
+    {
+      "n": 958,
+      "plain": "If a lack of warmth shows in someone of good character, people will doubt his family.",
+      "pm": "If someone of fine family shows no kindness, the world doubts that he was born in that family. Lack of kindness means not giving, harsh words and the like. “If” shows it doesn’t usually appear. Because these things appear in a man of good standing, even what is true of him comes into doubt.",
+      "tag": "agrees",
+      "sensitive": "Links rudeness with doubtful birth",
+      "links": [
+        {
+          "id": "7903f2419ede169e",
+          "quote": "people will doubt his family",
+          "reason": "A lack of warmth is held so far from good family that it puts a man’s birth in doubt."
+        }
+      ]
+    },
+    {
+      "n": 959,
+      "plain": "A sprout shows what the soil is like. The words from a person’s mouth show what their family is like.",
+      "pm": "The sprout that rises from a field shows its nature. So the words in the mouths of those born in a family show its nature. A sprout alone shows whether the soil is good or bad, so leaves aren’t mentioned, and words alone show the family, so deeds aren’t needed. While seeming to name a way of knowing the family, he is saying that sweet speech is needed.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "ff0d3064022b64c2",
+          "quote": "A sprout shows what the soil is like",
+          "reason": "The sprout tells the soil as someone’s words tell their family."
+        }
+      ]
+    },
+    {
+      "n": 960,
+      "plain": "If you want goodness, have shame. If you want a good family name, bow to everyone.",
+      "pm": "If you want goodness, meaning fame and merit, you must have shame. If you want family standing, bow to all who should be bowed to: sages, the worthy, great ascetics, your elders, father and mother. Bowing means rising from your seat, going to meet them and the like.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "5fcf92bd9b838985",
+          "quote": "If you want goodness, have shame",
+          "reason": "Names shame as what anyone who wants goodness must have."
+        },
+        {
+          "id": "6d1dd8f57485ffb7",
+          "quote": "bow to everyone",
+          "reason": "Asks for bowing to everyone as the price of a good family name."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "21f0dfb9e6d19223",
+      "quote": "If you want a good family name, bow to everyone",
+      "reason": "To keep a good family name you must bow to everyone."
+    }
+  ]
+}

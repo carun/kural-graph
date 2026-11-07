@@ -1,0 +1,432 @@
+{
+  "feelings": [
+    {
+      "feeling": "quality:anger",
+      "portrays": [
+        { "n": 304, "basis": "explicit", "reason": "Anger takes your own smile and joy, which makes it an enemy like no other.", "quote": "Anger kills your smile and your joy" },
+        { "n": 305, "basis": "explicit", "reason": "If it isn’t guarded against, the one anger destroys is you.", "quote": "it is you that anger kills" },
+        { "n": 306, "basis": "explicit", "reason": "Anger doesn’t stop with you. It burns your own people, the raft that keeps you safe.", "quote": "burns the raft of safety that is your own people" },
+        { "n": 307, "basis": "explicit", "reason": "To value anger is to be hurt by it, as surely as a hand that strikes the ground.", "quote": "Someone who prizes anger will be ruined" },
+        { "n": 310, "basis": "explicit", "reason": "Anger taken far enough leaves a person no different from the dead.", "quote": "Those far gone in anger are like the dead" },
+        { "n": 864, "basis": "explicit", "reason": "Someone who can’t put anger down is easy for anyone to beat, anywhere, at any time.", "quote": "He doesn’t give up anger and has no self-command" },
+        { "n": 866, "basis": "explicit", "reason": "Anger that blinds makes a man the kind of enemy others are glad to have.", "quote": "A man of blinding anger" },
+        { "n": 568, "basis": "explicit", "reason": "A ruler who rages without thinking things through with his circle sees his good fortune shrink.", "quote": "flies into a rage, his good fortune shrinks" }
+      ],
+      "answers": [
+        { "n": 301, "basis": "explicit", "reason": "The real test is holding back where your anger could do damage, not where it can’t reach.", "quote": "holds back anger where it can take effect" },
+        { "n": 309, "basis": "explicit", "reason": "Says to keep anger out even of your thoughts, and that all you have set your mind on then comes.", "quote": "never even think of anger in your heart" },
+        { "n": 130, "basis": "explicit", "reason": "Holding back anger goes with learning and restraint here, and righteousness comes looking for such a person.", "quote": "holds back anger, learns and keeps restraint" }
+      ]
+    },
+    {
+      "feeling": "quality:envy",
+      "portrays": [
+        { "n": 165, "basis": "explicit", "reason": "The envious need no enemy. Envy by itself brings their ruin.", "quote": "Envy alone is enough for the envious" },
+        { "n": 168, "basis": "explicit", "reason": "Envy is called a sinner here, one that wrecks what you have and carries you somewhere worse.", "quote": "destroys your wealth and sends you to an evil place" },
+        { "n": 163, "basis": "explicit", "reason": "Refusing to be glad of another’s prosperity is the same as wanting no good of your own.", "quote": "Whoever envies another’s prosperity and won’t welcome it" },
+        { "n": 166, "basis": "explicit", "reason": "Grudging what others are given ends up costing your own people their food and clothes.", "quote": "Whoever grudges what others are given" },
+        { "n": 167, "basis": "explicit", "reason": "Good fortune can’t stay with the envious. She hands them to her elder sister and leaves.", "quote": "cannot bear the envious" },
+        { "n": 1079, "basis": "inferred", "reason": "The sight of what others wear and eat sets the low to finding fault with them.", "quote": "they can always find a fault in them" }
+      ],
+      "answers": [
+        { "n": 161, "basis": "explicit", "reason": "Makes a heart free of envy a rule of conduct to be held to.", "quote": "keep your heart free of envy" },
+        { "n": 162, "basis": "explicit", "reason": "Being free of envy towards everyone is ranked with the greatest of blessings.", "quote": "If you can be free of envy towards everyone" },
+        { "n": 164, "basis": "explicit", "reason": "Knowing the harm of a bad path is what holds people back from acting on envy.", "quote": "do nothing unrighteous out of envy" },
+        { "n": 170, "basis": "explicit", "reason": "Envy has never raised anyone, and having none of it has never cost anyone their prosperity.", "quote": "No one has grown great through envy" }
+      ]
+    },
+    {
+      "feeling": "quality:grief",
+      "portrays": [
+        { "n": 347, "basis": "explicit", "reason": "Suffering clings to those who cling, and doesn’t let go of them.", "quote": "Suffering holds on and won’t let go" },
+        { "n": 368, "basis": "explicit", "reason": "Where craving is, suffering keeps coming, one after another, with no end.", "quote": "suffering comes on and on, without end" }
+      ],
+      "answers": [
+        { "n": 341, "basis": "explicit", "reason": "Says that each thing you let go of is one thing that can no longer cause you pain.", "quote": "you suffer no more pain" },
+        { "n": 7, "basis": "explicit", "reason": "Says the sorrow in the mind is hard to remove without reaching the feet of the one who has no equal.", "quote": "the sorrow in your mind is hard to remove" },
+        { "n": 4, "basis": "explicit", "reason": "Promises no suffering, ever, to those who reach the feet of the one who wants nothing and rejects nothing.", "quote": "will have no suffering, ever" },
+        { "n": 628, "basis": "explicit", "reason": "Not craving pleasure, and calling suffering natural, is what keeps sorrow from coming.", "quote": "says suffering is natural" },
+        { "n": 442, "basis": "explicit", "reason": "Says to cherish and keep close the people who can end a suffering that has come.", "quote": "those who can end the suffering that has come" }
+      ]
+    },
+    {
+      "feeling": "quality:craving",
+      "portrays": [
+        { "n": 361, "basis": "explicit", "reason": "Craving is named as the seed of birth that never ends, for every living thing.", "quote": "craving is the seed that yields" },
+        { "n": 366, "basis": "explicit", "reason": "Craving works by deceiving you, so fearing it is called righteousness.", "quote": "Craving is what deceives you" },
+        { "n": 369, "basis": "explicit", "reason": "Craving is itself called the worst suffering, not just a cause of it.", "quote": "craving, the worst suffering of all" },
+        { "n": 370, "basis": "explicit", "reason": "However much it gets, craving stays unfilled, because that is its nature.", "quote": "whose nature is never to be filled" },
+        { "n": 940, "basis": "explicit", "reason": "Each loss makes gambling more loved, not less, and the soul goes the same way with pain.", "quote": "gambling is loved more with each loss" },
+        { "n": 1310, "basis": "explicit", "reason": "He hears his heart’s hope of joining one who lets a sulk wither, and calls it what it is.", "quote": "That is only craving" }
+      ],
+      "answers": [
+        { "n": 367, "basis": "explicit", "reason": "Cutting craving off completely is the step named, and deeds that never fail you follow.", "quote": "If you cut off craving completely" },
+        { "n": 370, "basis": "explicit", "reason": "Giving up what can never be filled gives you, at that very moment, a nature that doesn’t change.", "quote": "If you give up craving" },
+        { "n": 365, "basis": "explicit", "reason": "The free are defined as those free of craving. No one else is free in the same way.", "quote": "the ones free of craving" },
+        { "n": 364, "basis": "explicit", "reason": "Having no craving is called purity, and it comes from wanting truthfulness.", "quote": "Purity is having no craving" }
+      ]
+    },
+    {
+      "feeling": "quality:attachment",
+      "portrays": [
+        { "n": 347, "basis": "explicit", "reason": "What you hold on to is mirrored by what holds on to you. Suffering grips those who grip.", "quote": "those who hold on to attachment and won’t let go" },
+        { "n": 344, "basis": "explicit", "reason": "A single possession is enough to bring the old confusion back.", "quote": "Owning even one thing brings back delusion" },
+        { "n": 348, "basis": "explicit", "reason": "Those who haven’t let go completely are pictured as deluded and caught in a net.", "quote": "deluded, and caught in a net" }
+      ],
+      "answers": [
+        { "n": 350, "basis": "explicit", "reason": "Hold on to the one who holds on to nothing, as the way to let go of everything else.", "quote": "so that you can let go of attachment" },
+        { "n": 341, "basis": "explicit", "reason": "Letting go can go thing by thing, and each one let go stops being a source of pain.", "quote": "From each thing you have let go of" },
+        { "n": 359, "basis": "explicit", "reason": "Know what to rest on and live so that attachment dies, and the ills on their way to you won’t come.", "quote": "live so that attachment dies" },
+        { "n": 626, "basis": "explicit", "reason": "Not clinging at the moment of gain is what spares you the grief of loss.", "quote": "never clung to what they gained" }
+      ]
+    },
+    {
+      "feeling": "quality:passion",
+      "portrays": [
+        { "n": 1164, "basis": "explicit", "reason": "She tells a friend who says women like her can cross it that desire is a real sea.", "quote": "There is indeed a sea of desire" },
+        { "n": 1166, "basis": "explicit", "reason": "The joy of desire is a sea, and the pain when it turns on you is greater still.", "quote": "the pain is greater than that sea" },
+        { "n": 1134, "basis": "explicit", "reason": "Desire sweeps away shame and strength together, the very raft that should carry you.", "quote": "The fierce flood of desire carries off the raft" },
+        { "n": 1138, "basis": "explicit", "reason": "Desire has no regard for how firm a person is or how much they deserve pity. It breaks out anyway.", "quote": "It breaks out of hiding into the open" },
+        { "n": 1147, "basis": "explicit", "reason": "Gossip and a mother’s words only feed it, like manure and water on a plant.", "quote": "this sickness grows on" },
+        { "n": 1148, "basis": "explicit", "reason": "Trying to shame desire away with gossip only feeds it, as ghee feeds a fire.", "quote": "put out a fire with ghee" },
+        { "n": 1159, "basis": "explicit", "reason": "Fire burns when touched. Desire goes on burning when you have moved away from it.", "quote": "Can it burn when you leave it" },
+        { "n": 1253, "basis": "explicit", "reason": "Desire can’t be kept hidden. It comes out unannounced, as a sneeze does.", "quote": "it comes out without warning, like a sneeze" },
+        { "n": 1289, "basis": "explicit", "reason": "Desire is more tender than a flower, and few ever find it at its peak.", "quote": "Desire is softer than a flower" },
+        { "n": 1281, "basis": "explicit", "reason": "Desire can intoxicate on a thought or a glance, which toddy can’t do.", "quote": "To be drunk at a thought and elated at a glance" },
+        { "n": 1102, "basis": "explicit", "reason": "For this sickness the only medicine is the one who gave it.", "quote": "she herself is the medicine" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:pining",
+      "portrays": [
+        { "n": 1161, "basis": "explicit", "reason": "She tries to hide it, and it wells up the more, like water in a spring that is drawn from.", "quote": "it rises like spring water for those who draw it" },
+        { "n": 1162, "basis": "explicit", "reason": "Caught both ways, she can’t hide it, and telling him would shame her.", "quote": "I can’t hide this sickness" },
+        { "n": 1169, "basis": "explicit", "reason": "The long nights hurt her more than his cruelty does.", "quote": "these nights that now drag on" },
+        { "n": 1170, "basis": "explicit", "reason": "Her heart can go to him and her eyes can’t, so they stay behind and swim in tears.", "quote": "swimming in this flood of water" },
+        { "n": 1185, "basis": "explicit", "reason": "He is barely on his way when the pallor starts to spread over her.", "quote": "Look here, pallor spreading over my body" },
+        { "n": 1187, "basis": "explicit", "reason": "Even a small shift in an embrace is enough to bring the pallor on, thick enough to scoop up.", "quote": "I lay holding him and shifted a little" },
+        { "n": 1223, "basis": "explicit", "reason": "Evening brings it on. As the light turns pale, despair buds and pain grows.", "quote": "despair buds in me and pain grows" },
+        { "n": 1224, "basis": "explicit", "reason": "With him away, each evening comes to her like strangers to a killing ground.", "quote": "evening comes like strangers to a killing ground" },
+        { "n": 1226, "basis": "explicit", "reason": "Evening was only evening until he left.", "quote": "I never knew that evening brings pain" },
+        { "n": 1227, "basis": "explicit", "reason": "The sickness keeps a daily round, growing from morning until it blooms at evening.", "quote": "buds in the morning, fills out all day and flowers in the evening" },
+        { "n": 1232, "basis": "explicit", "reason": "Her friend sees his unkindness told in her eyes, pale and running with tears.", "quote": "pale and streaming with tears" },
+        { "n": 1234, "basis": "explicit", "reason": "Her friend sees it in her body. Her arms waste and her bangles slide off.", "quote": "Now they shrink and the gold bangles slip away" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:dread-of-parting",
+      "portrays": [
+        { "n": 1152, "basis": "explicit", "reason": "Union itself has turned painful, because now it holds the fear that he will leave.", "quote": "the pain of fearing he will leave" },
+        { "n": 1153, "basis": "explicit", "reason": "If even those who understand can leave, no promise settles her fear.", "quote": "Even those who understand can sometimes leave" },
+        { "n": 1154, "basis": "explicit", "reason": "He said “Don’t be afraid,” and now he is going. She asks if she is to blame for believing him.", "quote": "is there any fault in those who trusted what he swore" },
+        { "n": 1156, "basis": "explicit", "reason": "Someone hard enough to say he is leaving leaves her little to hope for.", "quote": "there is little hope that he will be kind" },
+        { "n": 1158, "basis": "explicit", "reason": "Living among strangers is painful, and parting from those dear to you is worse.", "quote": "More painful still is parting from those dear to you" },
+        { "n": 1295, "basis": "explicit", "reason": "Even having him brings no rest. Her heart simply moves from one fear to the other.", "quote": "when it has him it fears parting" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:longing",
+      "portrays": [
+        { "n": 1261, "basis": "explicit", "reason": "She has counted off the days since he left until her fingers wore down.", "quote": "my fingers have worn down from touching off the days" },
+        { "n": 1264, "basis": "explicit", "reason": "The thought of his return makes her heart climb like a plant putting out branches.", "quote": "my heart grows branches and climbs" },
+        { "n": 1265, "basis": "explicit", "reason": "All she wants is to look at him until her eyes are full, and then the pallor will go.", "quote": "Let me see my husband until my eyes are full" },
+        { "n": 1266, "basis": "explicit", "reason": "One day with him, she says, and she will drink until all this sickness is gone.", "quote": "Let my husband come, just one day" },
+        { "n": 1267, "basis": "explicit", "reason": "She is so ready for him that she can’t decide what she will do first when he comes.", "quote": "shall I sulk, shall I embrace him" },
+        { "n": 1268, "basis": "explicit", "reason": "He longs too, far off at the ruler’s work, for the win that will let him go home to her.", "quote": "give the evening a feast" },
+        { "n": 1269, "basis": "explicit", "reason": "For those counting on a return, each day takes as long as seven.", "quote": "one day passes like seven" },
+        { "n": 1270, "basis": "explicit", "reason": "He fears coming too late. If her heart breaks first, what use is it to have her?", "quote": "Once her heart has broken and spilled" },
+        { "n": 1244, "basis": "explicit", "reason": "Her eyes’ wanting to see him feels like being eaten.", "quote": "Wanting to see him, they are eating me" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:one-sided-love",
+      "portrays": [
+        { "n": 1196, "basis": "explicit", "reason": "Like a load on one end of a carrying pole, desire on one side only is painful to bear.", "quote": "Desire on one side only is painful" },
+        { "n": 1195, "basis": "explicit", "reason": "If he doesn’t love her too, there is nothing the one she loves can do for her.", "quote": "What can the one I love do for me" },
+        { "n": 1197, "basis": "explicit", "reason": "She asks why the god of desire stays on one side only and doesn’t see her pain.", "quote": "The god of desire stays on one side only" },
+        { "n": 1191, "basis": "explicit", "reason": "To her, those whose love is returned have the fruit without the stone.", "quote": "the stoneless fruit of desire" },
+        { "n": 1200, "basis": "explicit", "reason": "Telling your pain to one who isn’t close to you would be like trying to fill in the sea.", "quote": "Fill in the sea instead" },
+        { "n": 1205, "basis": "explicit", "reason": "He has shut her out of his heart, yet he keeps coming into hers.", "quote": "He has barred me from his heart" },
+        { "n": 1242, "basis": "explicit", "reason": "She calls her own heart foolish for suffering over one with no love for her.", "quote": "He has no love for you, yet you go on suffering" },
+        { "n": 1243, "basis": "explicit", "reason": "Why sit aching, she asks her heart, when the one who caused it has no tender thought for them?", "quote": "has no tender thought for us" },
+        { "n": 1248, "basis": "explicit", "reason": "Her heart pines and still goes after the one who left, and she calls it a fool.", "quote": "You pine because he won’t show tender kindness" },
+        { "n": 1250, "basis": "explicit", "reason": "Keeping in her heart one who left and won’t come near only costs her more.", "quote": "we will lose still more of our beauty" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:loving-remembrance",
+      "portrays": [
+        { "n": 1125, "basis": "explicit", "reason": "He would say he remembers her, except that he has never learned to forget.", "quote": "I don’t know how to forget" },
+        { "n": 1128, "basis": "explicit", "reason": "He is so present in her heart that she won’t eat anything hot, in case he burns.", "quote": "My lover lives in my heart" },
+        { "n": 1201, "basis": "explicit", "reason": "Just thinking of desire brings a joy that doesn’t fade, which toddy can’t do.", "quote": "even thinking of it brings a great joy" },
+        { "n": 1202, "basis": "explicit", "reason": "While he is thinking of the one he loves, there is no pain.", "quote": "When you think of the one you love, no pain comes" },
+        { "n": 1204, "basis": "explicit", "reason": "She knows he is always in her heart and can only ask whether she is in his.", "quote": "In mine, oh, he is always there" },
+        { "n": 1207, "basis": "explicit", "reason": "Forgetting is beyond her and remembering burns, so there is no easy place to stand.", "quote": "even remembering burns my heart" },
+        { "n": 1208, "basis": "explicit", "reason": "The honour left to her is that he doesn’t object to how much she thinks of him.", "quote": "However much I think of him, he doesn’t get angry" },
+        { "n": 1218, "basis": "explicit", "reason": "Asleep he is on her shoulders, awake he is in her heart. He doesn’t leave her either way.", "quote": "When I wake, he rushes into my heart" },
+        { "n": 1203, "basis": "explicit", "reason": "A sneeze that fades makes her wonder if he nearly thought of her, and then didn’t.", "quote": "A sneeze starts to come and then dies away" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:bouderie",
+      "portrays": [
+        { "n": 1321, "basis": "explicit", "reason": "She sulks though he has done nothing wrong, because sulking brings out his tenderness.", "quote": "sulking is what draws out his tenderness" },
+        { "n": 1322, "basis": "explicit", "reason": "The small hurt of a sulk dims his tenderness for a moment, and it comes back greater.", "quote": "but it comes back greater" },
+        { "n": 1307, "basis": "explicit", "reason": "Even the pleasure of a sulk has its pain: what if coming together is delayed?", "quote": "There is a pain even in sulking" },
+        { "n": 1323, "basis": "explicit", "reason": "Between two as blended as earth and water, a quarrel is called better than heaven.", "quote": "Is there any heaven better than a lovers’ quarrel" },
+        { "n": 1330, "basis": "explicit", "reason": "Sulking is the joy of desire, and its own joy is the embrace that ends it.", "quote": "the joy of sulking is the embrace that ends it" },
+        { "n": 1259, "basis": "explicit", "reason": "She sets out to sulk, sees her heart is ready to join him and gives in.", "quote": "I went off meaning to sulk" },
+        { "n": 1284, "basis": "explicit", "reason": "Her heart forgets what it came to do and goes to join him instead.", "quote": "my heart forgot that and went to join him" },
+        { "n": 1309, "basis": "explicit", "reason": "A sulk is sweet only with someone who loves you, as water is sweet in the shade.", "quote": "sulking is sweet with those who love you" }
+      ],
+      "answers": [
+        { "n": 1302, "basis": "explicit", "reason": "A sulk is like salt. The right amount helps, and drawing it out spoils things.", "quote": "Drawing it out is like a little too much" }
+      ]
+    },
+    {
+      "feeling": "quality:jealousy-of-affection",
+      "portrays": [
+        { "n": 1311, "basis": "explicit", "reason": "She refuses him because every woman’s eyes have had their share of him.", "quote": "I won’t go near your chest, you philanderer" },
+        { "n": 1313, "basis": "explicit", "reason": "Any flower he wears becomes proof, to her, of some other woman.", "quote": "You wear it to show some woman" },
+        { "n": 1314, "basis": "explicit", "reason": "His “more than anyone” only makes her ask who the others are.", "quote": "she sulked: “Than who? Than who?”" },
+        { "n": 1315, "basis": "explicit", "reason": "He promises not to part in this life, and she hears that he means to part in the next.", "quote": "her eyes filled with tears" },
+        { "n": 1316, "basis": "explicit", "reason": "To her, “I thought of you” can only mean he had forgotten her first.", "quote": "So why did you forget me?" },
+        { "n": 1317, "basis": "explicit", "reason": "She blesses his sneeze, then takes it back and weeps at who might be thinking of him.", "quote": "Who was thinking of you, that you sneezed" },
+        { "n": 1318, "basis": "explicit", "reason": "When he holds back a sneeze, she weeps at what he must be hiding.", "quote": "Are you hiding from me" },
+        { "n": 1319, "basis": "explicit", "reason": "His soothing her becomes proof of how he must be with others.", "quote": "So this is how you are with others too" },
+        { "n": 1320, "basis": "explicit", "reason": "Even his quiet gaze is read as thinking of someone else.", "quote": "Who are you thinking of" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:being-smitten",
+      "portrays": [
+        { "n": 1081, "basis": "explicit", "reason": "He can’t even tell what she is: a goddess, a peacock or a woman.", "quote": "My heart is lost in doubt" },
+        { "n": 1082, "basis": "explicit", "reason": "Her answering look hits him like a goddess with an army behind her.", "quote": "a goddess who strikes had brought an army" },
+        { "n": 1083, "basis": "explicit", "reason": "He says he has only now learned what death is, and it has a woman’s eyes.", "quote": "I never knew before what they call death" },
+        { "n": 1085, "basis": "explicit", "reason": "One glance holds death, an eye and a doe at once, and he can’t separate them.", "quote": "Is it death? Is it an eye? Is it a doe?" },
+        { "n": 1086, "basis": "explicit", "reason": "Her eyes, not hidden by her brows, leave him trembling with pain.", "quote": "this trembling pain" },
+        { "n": 1088, "basis": "explicit", "reason": "The strength that enemies feared in battle breaks before a bright forehead.", "quote": "has broken before it" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:bashfulness",
+      "portrays": [
+        { "n": 1094, "basis": "explicit", "reason": "She looks down when he looks, and looks at him when he doesn’t.", "quote": "When I look at her, she looks at the ground" },
+        { "n": 1089, "basis": "explicit", "reason": "To him her shy look and modesty are ornament enough.", "quote": "the shy look of a doe" },
+        { "n": 1162, "basis": "explicit", "reason": "Shame stops her from telling him what she can’t hide.", "quote": "telling the one who caused it brings me shame" },
+        { "n": 1247, "basis": "explicit", "reason": "She can’t carry both, and begs her heart to give up one.", "quote": "give up desire or give up modesty" },
+        { "n": 1251, "basis": "explicit", "reason": "Modesty is the bolt on the door, and the axe of desire breaks it down.", "quote": "the door of reserve, bolted with modesty" },
+        { "n": 1297, "basis": "explicit", "reason": "Caught up with a heart that can’t forget him, she finds her modesty gone.", "quote": "I have forgotten even my modesty" },
+        { "n": 1257, "basis": "explicit", "reason": "When the one she cherishes does all she longs for, modesty is forgotten.", "quote": "we don’t even know there is such a thing as modesty" }
+      ],
+      "answers": []
+    },
+    {
+      "feeling": "quality:worry",
+      "portrays": [
+        { "n": 1072, "basis": "explicit", "reason": "Bitterly calls the base fortunate, since they alone have no worry in their hearts.", "quote": "for their hearts have no worries" },
+        { "n": 1307, "basis": "explicit", "reason": "Even in a sulk there is a worry working away: will this delay coming together?", "quote": "the worry over whether union will be delayed" },
+        { "n": 1048, "basis": "explicit", "reason": "Yesterday’s want was almost too much, and the first thought today is whether it will come again.", "quote": "Will it come today too" },
+        { "n": 1049, "basis": "inferred", "reason": "Sleep is possible even in a fire, but not with poverty on your mind.", "quote": "In poverty there is no sleep at all" }
+      ],
+      "answers": [
+        { "n": 7, "basis": "explicit", "reason": "Says the sorrow of the mind is hard to shift unless you reach the feet of the one who has no equal.", "quote": "the sorrow in your mind is hard to remove" },
+        { "n": 429, "basis": "inferred", "reason": "Says the way to meet what is to come is to guard against it, and then nothing comes to shake you.", "quote": "have no suffering that comes and shakes them" }
+      ]
+    },
+    {
+      "feeling": "quality:fear",
+      "portrays": [
+        { "n": 534, "basis": "explicit", "reason": "However strong the walls, being afraid leaves you with no fort.", "quote": "There is no fort for those who are afraid" },
+        { "n": 569, "basis": "explicit", "reason": "A ruler with no defences ready takes fright when war comes, and quickly falls.", "quote": "will take fright when it does" },
+        { "n": 599, "basis": "explicit", "reason": "Size and sharp tusks don’t stop an elephant being afraid when a tiger comes.", "quote": "yet it fears a tiger’s attack" },
+        { "n": 730, "basis": "explicit", "reason": "Fear of the assembly can keep all you have learned from being said, as if you weren’t there.", "quote": "Those who fear the assembly" }
+      ],
+      "answers": [
+        { "n": 428, "basis": "explicit", "reason": "Some fear is wisdom. Fearing what should be feared is called the way of those who understand.", "quote": "To fear what should be feared" },
+        { "n": 725, "basis": "explicit", "reason": "Fear of speaking before others is met by learning well beforehand.", "quote": "so that you can answer in an assembly without fear" }
+      ]
+    },
+    {
+      "feeling": "quality:guilt",
+      "portrays": [
+        { "n": 293, "basis": "explicit", "reason": "After a lie it is your own heart, knowing what it knows, that does the burning.", "quote": "your own heart will burn you" },
+        { "n": 272, "basis": "explicit", "reason": "No outward look helps when your own heart is sinking into a fault you know is yours.", "quote": "your own heart sinks into what you know is a fault" },
+        { "n": 658, "basis": "inferred", "reason": "What is done against what has been forbidden brings pain later, even when it works.", "quote": "brings pain even if it succeeds" }
+      ],
+      "answers": [
+        { "n": 655, "basis": "explicit", "reason": "Once it is done, says not to do the like again. Parimelazhagar hears “don’t go on grieving”.", "quote": "it is good not to do the like again" },
+        { "n": 244, "basis": "explicit", "reason": "Tending living beings and holding to compassion leaves you with no deeds that frighten your own soul.", "quote": "no deeds that make their own soul afraid" }
+      ]
+    },
+    {
+      "feeling": "quality:humiliation",
+      "portrays": [
+        { "n": 995, "basis": "explicit", "reason": "Scorn stings even when it is meant as a joke.", "quote": "Scorn hurts, even in fun" },
+        { "n": 1070, "basis": "explicit", "reason": "A single word of refusal is enough to take the life out of someone who has had to beg.", "quote": "the life goes out of those who beg" },
+        { "n": 752, "basis": "explicit", "reason": "States it flatly: those with nothing are scorned and the rich are honoured.", "quote": "Everyone scorns those who have nothing" },
+        { "n": 1044, "basis": "explicit", "reason": "Poverty can bring even those of good family to say what shames them.", "quote": "poverty brings a weakness from which shameful words are born" },
+        { "n": 1188, "basis": "explicit", "reason": "The blame falls on her for turning pale, and no one says what he has done.", "quote": "No one says, “He has left her.”" },
+        { "n": 1140, "basis": "explicit", "reason": "People laugh in front of her because they have never suffered what she has.", "quote": "Fools laugh in front of my eyes" }
+      ],
+      "answers": [
+        { "n": 988, "basis": "explicit", "reason": "Having nothing isn’t itself the disgrace, if you have the strength called worth.", "quote": "Having nothing is no disgrace" },
+        { "n": 966, "basis": "explicit", "reason": "Following those who despise you brings neither fame nor the land of the gods, so why do it?", "quote": "why follow behind those who despise you" },
+        { "n": 963, "basis": "explicit", "reason": "Says to hold yourself higher, not lower, when your means shrink.", "quote": "When your means shrink, stand tall" },
+        { "n": 973, "basis": "explicit", "reason": "Where you have been put doesn’t settle what you are. Those who aren’t low aren’t made low by it.", "quote": "Those who aren’t low aren’t low, even sitting low" },
+        { "n": 1065, "basis": "explicit", "reason": "Gruel as thin as water, from your own labour, is called sweeter than anything.", "quote": "nothing is sweeter than eating what your own labour has brought" },
+        { "n": 618, "basis": "explicit", "reason": "Lacking good fortune shames no one. Disgrace lies only in knowing what must be done and making no effort.", "quote": "The lack of a favouring fate disgraces no one" }
+      ]
+    },
+    {
+      "feeling": "quality:regret",
+      "portrays": [
+        { "n": 535, "basis": "explicit", "reason": "Regret arrives with the blow, when it is too late to guard against what could have been prevented.", "quote": "will regret that mistake when the blow lands" },
+        { "n": 275, "basis": "explicit", "reason": "Hidden wrongdoing brings trouble after trouble, until the cry comes: what have we done?", "quote": "until they cry “What have we done?”" },
+        { "n": 1181, "basis": "inferred", "reason": "She agreed to his leaving, can’t bear it now, and has no one to tell.", "quote": "I agreed to go without the kindness" },
+        { "n": 1172, "basis": "inferred", "reason": "Her eyes looked first and understood later, and now they suffer for it.", "quote": "looked without knowing what would come" }
+      ],
+      "answers": [
+        { "n": 655, "basis": "explicit", "reason": "If you have done what makes you cry out, don’t do the like again. Parimelazhagar hears “don’t go on grieving”.", "quote": "it is good not to do the like again" }
+      ]
+    },
+    {
+      "feeling": "quality:loneliness",
+      "portrays": [
+        { "n": 1158, "basis": "explicit", "reason": "Living among people who aren’t your own is named as a pain, before she even gets to parting.", "quote": "It is painful to live in a town without your own people" },
+        { "n": 1167, "basis": "explicit", "reason": "When everyone else sleeps, she is the only one awake.", "quote": "Even at midnight I alone am here" },
+        { "n": 1168, "basis": "explicit", "reason": "All living things are asleep, and the night and she are left with each other.", "quote": "has no companion but me" },
+        { "n": 1296, "basis": "explicit", "reason": "Alone with her thoughts, she finds her own heart stays only to eat at her.", "quote": "When I sat alone and thought" },
+        { "n": 1293, "basis": "explicit", "reason": "Deserted even by her own heart, she asks if it is because the ruined have no friends.", "quote": "the ruined have no friends" }
+      ],
+      "answers": [
+        { "n": 814, "basis": "explicit", "reason": "Being alone is called better than calling your own those who fail you when it counts.", "quote": "Better to be alone" },
+        { "n": 74, "basis": "inferred", "reason": "Says where friendship comes from: loving-kindness makes you warm towards people, and the warmth brings it.", "quote": "that warmth brings friendship" }
+      ]
+    },
+    {
+      "feeling": "quality:hurt",
+      "portrays": [
+        { "n": 129, "basis": "explicit", "reason": "Words leave a scar that stays after a burn from fire has healed.", "quote": "A scar burned by the tongue never heals" },
+        { "n": 799, "basis": "explicit", "reason": "Being deserted in your ruin goes on burning, even when you think of it at the hour of death.", "quote": "desert you in your ruin burns the heart" },
+        { "n": 1165, "basis": "explicit", "reason": "She asks what people could do as enemies, if this is the suffering they bring as friends.", "quote": "bring suffering even in friendship" },
+        { "n": 819, "basis": "explicit", "reason": "Friends whose acts and words don’t match leave a bitterness that reaches you even in a dream.", "quote": "bitter even in a dream" },
+        { "n": 821, "basis": "inferred", "reason": "A friend who doesn’t agree at heart is an anvil. When they find their chance, you are what gets struck.", "quote": "you are struck on it" }
+      ],
+      "answers": [
+        { "n": 798, "basis": "inferred", "reason": "Says not to take on friends who cut away your strength in trouble.", "quote": "Don’t take the friendship of those who cut away your strength" },
+        { "n": 800, "basis": "inferred", "reason": "Says to leave friends who don’t fit, even if it costs you something to get free.", "quote": "leave the friendship of those who don’t fit" },
+        { "n": 820, "basis": "inferred", "reason": "Those who are warm in private and blame you in public are to be kept away altogether.", "quote": "come near you at all" }
+      ]
+    },
+    {
+      "feeling": "quality:distrust",
+      "portrays": [
+        { "n": 510, "basis": "explicit", "reason": "Doubting someone you have come to trust is named as a suffering that doesn’t end.", "quote": "to doubt someone you have come to trust" },
+        { "n": 693, "basis": "explicit", "reason": "Suspicion, once in place, is very hard for anyone to clear.", "quote": "Once suspicion has set in" },
+        { "n": 1153, "basis": "explicit", "reason": "Even those who understand can sometimes leave, so she can’t rest on anyone’s word.", "quote": "It is hard to trust" },
+        { "n": 890, "basis": "inferred", "reason": "Living with those who aren’t of one mind with you is like sharing a hut with a snake.", "quote": "sharing a hut with a snake" }
+      ],
+      "answers": [
+        { "n": 509, "basis": "explicit", "reason": "Trust follows testing, and goes only as far as the testing showed.", "quote": "After testing, trust them with what they can be trusted with" },
+        { "n": 504, "basis": "explicit", "reason": "Look at a person’s good points and faults together, and judge by which are more.", "quote": "see which are more, and judge them by that" },
+        { "n": 505, "basis": "explicit", "reason": "A person’s own deeds are what to test them by.", "quote": "their own deeds are the touchstone" }
+      ]
+    },
+    {
+      "feeling": "quality:losing-heart",
+      "portrays": [
+        { "n": 611, "basis": "explicit", "reason": "Names the moment itself: the thought that this is too hard.", "quote": "Don’t lose heart and say “This is too hard.”" }
+      ],
+      "answers": [
+        { "n": 611, "basis": "explicit", "reason": "The answer to “too hard” is effort, which gives you the greatness to finish.", "quote": "Effort will give you greatness" },
+        { "n": 622, "basis": "explicit", "reason": "A flood of trouble dies away once a wise person sets their mind to it.", "quote": "Even a flood of trouble dies away" },
+        { "n": 623, "basis": "explicit", "reason": "Those who won’t be troubled by trouble turn it back on itself.", "quote": "will give trouble trouble" },
+        { "n": 624, "basis": "explicit", "reason": "Keep going like an ox through every blocked place, and the trouble is what gets into trouble.", "quote": "pulls through every blocked place" },
+        { "n": 625, "basis": "explicit", "reason": "Stay unbroken, and even troubles that pile up are the ones in trouble.", "quote": "Even if they come heaped one on another" },
+        { "n": 596, "basis": "explicit", "reason": "Aiming high keeps its worth even when it falls short.", "quote": "Even when it fails, it has the nature of not failing" },
+        { "n": 772, "basis": "explicit", "reason": "Missing something great is called better than hitting something small.", "quote": "a spear that missed an elephant" },
+        { "n": 597, "basis": "explicit", "reason": "Struck by a mass of arrows, an elephant stands its ground, and so do the strong when things fall apart.", "quote": "The strong don’t falter when things fall apart" },
+        { "n": 798, "basis": "explicit", "reason": "Says to keep your mind off what makes your spirit shrink.", "quote": "Don’t think of things that make your spirit small" },
+        { "n": 414, "basis": "explicit", "reason": "What you have listened to becomes a prop when you falter.", "quote": "a prop to lean on when you falter" },
+        { "n": 669, "basis": "explicit", "reason": "Says to stay resolute in work that brings joy, even when great pain comes.", "quote": "Even if great pain comes, be resolute" }
+      ]
+    },
+    {
+      "feeling": "quality:helplessness",
+      "portrays": [
+        { "n": 555, "basis": "explicit", "reason": "People who suffer and can’t bear it have their tears, and those tears are called a weapon that wears away wealth.", "quote": "those who suffer and can’t bear it" },
+        { "n": 380, "basis": "explicit", "reason": "Whatever way round it you plan, fate is there ahead of you.", "quote": "Even as you plan a way around it, it gets there first" },
+        { "n": 1164, "basis": "explicit", "reason": "She can see the sea she is in, and no raft to cross it.", "quote": "There is no safe raft to cross it" },
+        { "n": 1167, "basis": "explicit", "reason": "She swims on and no shore comes into sight.", "quote": "and see no shore" },
+        { "n": 1241, "basis": "explicit", "reason": "With nothing left, she asks her own heart to think of any cure at all.", "quote": "any cure at all for this unending sickness" }
+      ],
+      "answers": [
+        { "n": 619, "basis": "explicit", "reason": "Even where the result is denied, the effort still pays its wages.", "quote": "effort pays the wages of your body’s toil" },
+        { "n": 673, "basis": "explicit", "reason": "Where action isn’t possible, the next step is to look for the way that will work.", "quote": "look for the way that will work and do that" },
+        { "n": 627, "basis": "explicit", "reason": "Knowing the body is a target for suffering is what stops turmoil being taken as distress.", "quote": "don’t treat the turmoil that comes on them as distress" }
+      ]
+    },
+    {
+      "feeling": "quality:restlessness",
+      "portrays": [
+        { "n": 1179, "basis": "explicit", "reason": "Her eyes can’t sleep when he stays away and can’t sleep when he comes.", "quote": "When he comes they don’t sleep" },
+        { "n": 1252, "basis": "explicit", "reason": "Desire gives her heart no rest, keeping it at work in the dead of night.", "quote": "Even in the dead of night it rules my heart" },
+        { "n": 1139, "basis": "explicit", "reason": "Her desire can’t stay still. It wanders the streets in a daze, thinking no one knows.", "quote": "wanders the streets in a daze" },
+        { "n": 337, "basis": "explicit", "reason": "Unsure of one more moment, people still run through thoughts by the ten million.", "quote": "they think thoughts by the ten million" },
+        { "n": 1178, "basis": "explicit", "reason": "However little he cherished her, her eyes can’t rest without seeing him.", "quote": "my eyes will not rest until they see him" },
+        { "n": 219, "basis": "inferred", "reason": "A good person’s poverty is this: not being able to settle when they can’t do what they must.", "quote": "being unable to rest when they can’t do what they must" }
+      ],
+      "answers": [
+        { "n": 422, "basis": "explicit", "reason": "Understanding is what stops the mind going wherever it goes, and turns it from evil to good.", "quote": "doesn’t let the mind go wherever it goes" }
+      ]
+    },
+    {
+      "feeling": "quality:elation",
+      "portrays": [
+        { "n": 531, "basis": "explicit", "reason": "Great delight can bring a carelessness called worse than boundless rage.", "quote": "the high spirits of great delight" },
+        { "n": 539, "basis": "explicit", "reason": "Names the moment when delight starts to feel like strength.", "quote": "When your delight makes you feel strong" },
+        { "n": 838, "basis": "inferred", "reason": "A fool with something of their own in hand is compared to a madman getting drunk.", "quote": "like a madman getting drunk" }
+      ],
+      "answers": [
+        { "n": 539, "basis": "explicit", "reason": "At the height of delight, the thing to do is call to mind those neglect has ruined.", "quote": "remember those who were ruined by neglect" }
+      ]
+    }
+  ],
+  "antidotes": [
+    { "feeling": "quality:anger", "idea": "quality:self-control", "basis": "explicit", "couplets": [130], "reason": "Holding back anger is named with restraint as what brings righteousness to you.", "quote": "holds back anger, learns and keeps restraint" },
+    { "feeling": "quality:anger", "idea": "quality:righteousness", "basis": "explicit", "couplets": [35], "reason": "Anger is one of four things that righteousness is defined as being free of.", "quote": "righteousness is a life free of these four" },
+    { "feeling": "quality:envy", "idea": "quality:good-conduct", "basis": "explicit", "couplets": [161], "reason": "Keeping the heart free of envy is itself to be taken as the rule of conduct.", "quote": "Make it your rule of conduct" },
+    { "feeling": "quality:envy", "idea": "quality:righteousness", "basis": "explicit", "couplets": [35], "reason": "Envy heads the list of four things that righteousness is a life free of.", "quote": "righteousness is a life free of these four" },
+    { "feeling": "quality:grief", "idea": "quality:renunciation", "basis": "explicit", "couplets": [341], "reason": "Letting go is set against pain, thing by thing. What you have let go of can’t hurt you.", "quote": "you suffer no more pain" },
+    { "feeling": "quality:grief", "idea": "quality:devotion", "basis": "explicit", "couplets": [4, 7], "reason": "Reaching the Lord’s feet is what the opening chapter sets against suffering and the sorrow of the mind.", "quote": "will have no suffering, ever" },
+    { "feeling": "quality:grief", "idea": "quality:compassion", "basis": "explicit", "couplets": [245], "reason": "Holding to compassion is set against misery, with the earth itself called as witness.", "quote": "Those who hold to compassion have no misery" },
+    { "feeling": "quality:grief", "idea": "theme:friendship", "basis": "explicit", "couplets": [787, 788], "reason": "Friendship is defined by what it does with pain: it shares it when ruin comes and takes trouble away at once.", "quote": "shares the pain when ruin comes" },
+    { "feeling": "quality:craving", "idea": "quality:desirelessness", "basis": "explicit", "couplets": [363], "reason": "Wanting nothing is set above all wealth, against the craving that is never filled.", "quote": "no great wealth here to match wanting nothing" },
+    { "feeling": "quality:craving", "idea": "quality:righteousness", "basis": "explicit", "couplets": [366, 35], "reason": "Fearing craving is called righteousness, and craving is one of four things righteousness is free of.", "quote": "To fear it is righteousness" },
+    { "feeling": "quality:attachment", "idea": "quality:renunciation", "basis": "explicit", "couplets": [341, 348], "reason": "Renouncing completely is set against being caught in the net of those who hold on.", "quote": "Those who renounce completely have arrived" },
+    { "feeling": "quality:attachment", "idea": "quality:devotion", "basis": "explicit", "couplets": [350], "reason": "Attachment to the one with no attachment is the one hold offered for letting go of all others.", "quote": "Hold to the attachment of the one who has no attachment" },
+    { "feeling": "quality:attachment", "idea": "quality:realisation-of-truth", "basis": "explicit", "couplets": [359], "reason": "Knowing what to rest on, in the chapter on truth, is what lets attachment die.", "quote": "live so that attachment dies" },
+    { "feeling": "quality:worry", "idea": "quality:devotion", "basis": "explicit", "couplets": [7], "reason": "The feet of the one who has no equal are named as what removes the sorrow of the mind.", "quote": "the sorrow in your mind is hard to remove" },
+    { "feeling": "quality:worry", "idea": "quality:foresight", "basis": "inferred", "couplets": [429], "reason": "Guarding against what is to come is set against the suffering that comes and shakes you.", "quote": "guard against what is to come" },
+    { "feeling": "quality:fear", "idea": "theme:learning", "basis": "explicit", "couplets": [725], "reason": "Learning is set against fear of the assembly: learn well so that you can answer without fear.", "quote": "Learn by the right path" },
+    { "feeling": "quality:guilt", "idea": "quality:compassion", "basis": "explicit", "couplets": [244], "reason": "Holding to compassion is what leaves a person with no deeds their own soul fears.", "quote": "no deeds that make their own soul afraid" },
+    { "feeling": "quality:humiliation", "idea": "quality:worth", "basis": "explicit", "couplets": [988], "reason": "Worth is named as the strength that keeps having nothing from being a disgrace.", "quote": "the strength called worth" },
+    { "feeling": "quality:regret", "idea": "quality:purity-of-action", "basis": "explicit", "couplets": [655], "reason": "Keeping your actions clean is what spares you the cry of “What have I done?”", "quote": "Don’t do what will make you cry" },
+    { "feeling": "quality:distrust", "idea": "theme:testing-people", "basis": "explicit", "couplets": [509, 510], "reason": "Testing is set against doubt: trusting the untested and doubting the tested both bring suffering.", "quote": "Trust no one without testing them" },
+    { "feeling": "quality:losing-heart", "idea": "quality:fortitude", "basis": "explicit", "couplets": [625], "reason": "Chapter 63 sets staying unbroken against trouble: heaped troubles that reach such a person are themselves in trouble.", "quote": "the troubles that reach an unbroken person are themselves in trouble" },
+    { "feeling": "quality:losing-heart", "idea": "quality:exertion", "basis": "explicit", "couplets": [611], "reason": "Effort is the answer given to the thought that something is too hard.", "quote": "Effort will give you greatness" },
+    { "feeling": "quality:losing-heart", "idea": "quality:aspiration", "basis": "explicit", "couplets": [596], "reason": "Thinking of rising higher is said to keep its worth even when it fails.", "quote": "Let all your thoughts be of rising higher" },
+    { "feeling": "quality:losing-heart", "idea": "theme:listening", "basis": "explicit", "couplets": [414], "reason": "Listening is named as the prop that holds you up when you falter.", "quote": "a prop to lean on when you falter" },
+    { "feeling": "quality:helplessness", "idea": "quality:exertion", "basis": "explicit", "couplets": [619], "reason": "Effort is set against fate itself: even where god won’t allow the result, it pays its wages.", "quote": "effort pays the wages of your body’s toil" },
+    { "feeling": "quality:elation", "idea": "quality:vigilance", "basis": "explicit", "couplets": [539], "reason": "Remembering those ruined by neglect is what keeps delight from turning into carelessness.", "quote": "remember those who were ruined by neglect" }
+  ]
+}

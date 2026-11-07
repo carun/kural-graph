@@ -1,0 +1,170 @@
+{
+  "chapter": 123,
+  "title": "Grieving at Evening",
+  "note": "When evening comes, she sees it and grieves. She has got through the day on the strength of her dream, so this chapter follows the one on the dream.",
+  "couplets": [
+    {
+      "n": 1221,
+      "plain": "Long may you live, hour. You are no evening, but the time that eats the lives of those who have wed.",
+      "pm": "Hour, you are not the evening of the days when we were together. You have become the final hour that eats the lives of women joined to their lovers then and parted now. “Long may you live” is irony. Some read the word for “time” as “spear”, so that she says: you are a spear.",
+      "tag": "adds",
+      "context": "She quarrels with the evening, and says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "d30e19dc65dcab7a",
+          "quote": "the time that eats the lives"
+        }
+      ]
+    },
+    {
+      "n": 1222,
+      "plain": "You are wretched, dim evening, long may you live. Is your mate as hard-hearted as mine?",
+      "pm": "Dim evening, where day and night run together, you too have lost your brightness, as I have. Tell me, is your mate as hard-hearted as mine? From that lost brightness she imagines it has a mate. “Long may you live” carries a hidden sense: you have hurt me, and you have found no joy yourself.",
+      "tag": "adds",
+      "context": "She lays her own inner sorrow on the evening, and says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "9476282c55f8237e",
+          "quote": "Is your mate as hard-hearted as mine?",
+          "reason": "Sees her own sorrow in the dusk and asks it whether it too has a hard-hearted mate."
+        }
+      ]
+    },
+    {
+      "n": 1223,
+      "plain": "Evening comes with cold budding and its light growing pale, and with it despair buds in me and pain grows.",
+      "pm": "On all the days I was with my lover, evening came before me trembling and pale. Today it brings death into view, and a loathing of life, and the pain of that grows from moment to moment. On the surface the words only say that evening comes cool and dim, but they suggest this. How am I to bear it?",
+      "tag": "adds",
+      "note": "பனி can be cold or trembling, and he hears both: the surface sense is a cool, dim evening, and beneath it evening once trembled before her.",
+      "context": "Her friend tells her she must bear it, and she answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "f998c5967959a52a",
+          "quote": "despair buds in me and pain grows",
+          "reason": "Evening buds with cold and turns pale, and as it comes her own despair buds and her pain grows."
+        }
+      ]
+    },
+    {
+      "n": 1224,
+      "plain": "When my lover is away, evening comes like strangers to a killing ground.",
+      "pm": "While my lover was here, evening came and my life put out new shoots. Now he is gone, it doesn’t only stop doing that. It comes to take my life, as executioners with no compassion come to the killing ground. It used to be my friend and bring me joy, and today it is my enemy and brings me pain. How am I to bear it?",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "d55750a5e1d01c3c",
+          "quote": "evening comes like strangers to a killing ground",
+          "reason": "Dusk comes to the woman left alone as strangers come to a killing ground."
+        }
+      ]
+    },
+    {
+      "n": 1225,
+      "plain": "What good did I do the morning, and what harm did I do the evening?",
+      "pm": "Morning and evening both come differently now. What favour did I do the morning? When we were together it made me fear his leaving, and now it comes as a shore to the flood of night. What harm did I do the evening? It used to bring joy and now brings endless pain. Unlike morning, it hurts me through its own cruelty.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "f5caab33ed6d94d9",
+          "quote": "what harm did I do the evening?"
+        }
+      ]
+    },
+    {
+      "n": 1226,
+      "plain": "Before the one who wed me left, I never knew that evening brings pain.",
+      "pm": "Evening used to be my friend and bring me joy, and today it is my enemy and brings me pain. I didn’t know this before my lover left. If I had known it would change like this, I wouldn’t have agreed to his going.",
+      "tag": "adds",
+      "context": "Her friend asks why she agreed to his leaving, if she is like this now. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "1ff2722dd05b797a",
+          "quote": "I never knew that evening brings pain",
+          "reason": "Evening brought no pain until he left: its cruelty is the work of his absence."
+        }
+      ]
+    },
+    {
+      "n": 1227,
+      "plain": "This sickness buds in the morning, fills out all day and flowers in the evening.",
+      "pm": "This sickness of desire is a flower. It buds in the morning, ripens all day into a full bud, and opens at evening. On waking she takes comfort in the union of her dream. As the day goes she forgets it and thinks of the parting. At evening she sees beasts and people drawn back to their mates, remembers her own joy, and can’t bear it.",
+      "tag": "adds",
+      "context": "Her friend asks why she suffers so at evening, and she answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "c3607446a989b41f",
+          "quote": "buds in the morning, fills out all day and flowers in the evening"
+        },
+        {
+          "id": "bee10b58f4b9d7e4",
+          "quote": "flowers in the evening"
+        },
+        {
+          "id": "76a65909095d75db",
+          "quote": "This sickness"
+        }
+      ]
+    },
+    {
+      "n": 1228,
+      "plain": "The cowherd’s flute is a messenger for the evening that burns like fire, and a weapon that kills.",
+      "pm": "The cowherd’s flute, once sweet, has become the messenger of evening, which now burns like fire, and the weapon that kills me when evening comes. It is a messenger because it announces evening in advance, and a weapon because it is the means of killing. If evening can burn by itself, what won’t it do with all this help?",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "2ed67a49247f583b",
+          "quote": "The cowherd’s flute is a messenger for the evening",
+          "reason": "Even a cowherd’s flute is dreaded, because it is the messenger of this hour."
+        },
+        {
+          "id": "d3613baf72d8ecb5",
+          "quote": "the evening that burns like fire"
+        }
+      ]
+    },
+    {
+      "n": 1229,
+      "plain": "When evening spreads and reason reels, the town reels too, and suffers.",
+      "pm": "Until now I alone was bewildered and in pain. Now evening comes so that all who see it lose their reason, and this whole town will be bewildered and suffer. She thinks of evening as Death coming for her, and she means that she will die. Some read it as: when evening comes dim, my town’s reason is shaken and it suffers.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "sensitive": "speaks of dying of grief and the town mourning",
+      "links": [
+        {
+          "id": "535bbf33b27706b4",
+          "quote": "When evening spreads and reason reels",
+          "reason": "As evening spreads it takes reason with it, until the town itself reels and suffers."
+        }
+      ]
+    },
+    {
+      "n": 1230,
+      "plain": "My life has not died yet, but in this dim evening it is dying, as I think of the man whose way is wealth.",
+      "pm": "My life, which bore his leaving and didn’t die, is dying in this dim evening as I think of him. The agreed season has passed and he stays away until his wealth is won. He has lost his own nature, of never changing his word, and taken on the nature of wealth. It has come to this, and nothing you say can help now.",
+      "tag": "adds",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "sensitive": "speaks of life ebbing away from grief",
+      "links": [
+        {
+          "id": "5557449e3c26896b",
+          "quote": "as I think of the man whose way is wealth",
+          "reason": "Evening wounds here through memory, calling up the man whose way is wealth."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

@@ -1,0 +1,471 @@
+{
+ "shard": "pilot",
+ "chapters": [
+  8,
+  38
+ ],
+ "couplets": [
+  {
+   "n": 71,
+   "gloss": "Real love can't be hidden or locked away: it gives itself away in the tears of those who feel it.",
+   "keywords": [
+    "showing feelings",
+    "hiding love",
+    "crying for someone"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Gives the mark of loving-kindness: nothing can shut it in, and tears betray it.",
+     "quote": "Where is the bar that can close in the gates of love?"
+    }
+   ]
+  },
+  {
+   "n": 72,
+   "gloss": "Unloving people live for themselves, while loving people would give everything they have, even their bones, for others.",
+   "keywords": [
+    "selfishness",
+    "giving everything",
+    "self-sacrifice"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Sets those who live only for themselves against those who give even their bones.",
+     "quote": "People with it would give even their bones for others"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bones",
+     "basis": "explicit",
+     "reason": "Bones stand for the last thing a loving person would still give away.",
+     "quote": "even their bones"
+    }
+   ]
+  },
+  {
+   "n": 73,
+   "gloss": "People say the whole point of having a body and being born again is the chance to love.",
+   "keywords": [
+    "meaning of life",
+    "why we are born",
+    "purpose"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Makes loving-kindness the very reason a soul is joined to a body.",
+     "quote": "joined to a body of bone so that it can practise loving-kindness"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bones",
+     "basis": "explicit",
+     "reason": "Pictures the body as a casing of bone that the soul accepts for the sake of loving-kindness.",
+     "quote": "encased in bone"
+    }
+   ]
+  },
+  {
+   "n": 74,
+   "gloss": "Love makes you warm towards everyone, and that warmth grows into friendship, which nothing can buy.",
+   "keywords": [
+    "making friends",
+    "warmth",
+    "how friendship starts"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Credits loving-kindness with making you warm towards people.",
+     "quote": "Loving-kindness makes you warm towards people"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Calls friendship a gift beyond measure, the fruit of warmth towards people.",
+     "quote": "friendship, a gift beyond measure"
+    }
+   ]
+  },
+  {
+   "n": 75,
+   "gloss": "People say that the happiness of the fortunate is simply what a lifetime of steady love has earned.",
+   "keywords": [
+    "happiness",
+    "reward",
+    "steady love"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Traces the happiness of the happy back to a life settled in loving-kindness.",
+     "quote": "comes from a life settled in loving-kindness"
+    }
+   ]
+  },
+  {
+   "n": 76,
+   "gloss": "It's foolish to think love is only for good people: it's your only real help even against those who wish you harm.",
+   "keywords": [
+    "loving enemies",
+    "dealing with bad people",
+    "kindness to the unkind"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Says loving-kindness helps against hostility as well as serving righteousness.",
+     "quote": "It helps against hostility too"
+    }
+   ]
+  },
+  {
+   "n": 77,
+   "gloss": "Just as the sun scorches a worm with no bones to shield it, moral law scorches a person with no love.",
+   "keywords": [
+    "lovelessness",
+    "consequences",
+    "moral punishment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Shows the cost of lacking loving-kindness: righteousness itself scorches such a person.",
+     "quote": "righteousness scorches a person with no loving-kindness"
+    }
+   ]
+  },
+  {
+   "n": 78,
+   "gloss": "A person without love will prosper when a dead tree in the desert grows leaves, which is to say never.",
+   "keywords": [
+    "lovelessness",
+    "never thriving",
+    "emptiness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "A life without loving-kindness is as unlikely as new leaves on a dead tree.",
+     "quote": "A life with no loving-kindness inside"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "explicit",
+     "reason": "The dead tree on barren ground pictures a life without loving-kindness.",
+     "quote": "a dead tree trying to sprout on barren ground"
+    }
+   ]
+  },
+  {
+   "n": 79,
+   "gloss": "Good looks are worthless if there is no love inside: love is what really adorns a person.",
+   "keywords": [
+    "inner beauty",
+    "appearance",
+    "looks do not matter"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Ranks loving-kindness, the part within, above everything on the outside.",
+     "quote": "loving-kindness, the part within"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Calls loving-kindness the jewel worn by the soul, not the body.",
+     "quote": "the soul’s ornament"
+    }
+   ]
+  },
+  {
+   "n": 80,
+   "gloss": "Love is what makes you alive: without it you are just bones wrapped in skin.",
+   "keywords": [
+    "being truly alive",
+    "emptiness",
+    "what makes us human"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Says outright that a living body is one that loving-kindness moves.",
+     "quote": "A living body is one that loving-kindness moves"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bones",
+     "basis": "explicit",
+     "reason": "A person without loving-kindness is reduced to bone wrapped in skin.",
+     "quote": "bones wrapped in skin"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "Counts a person without loving-kindness as a body with no life in it.",
+     "quote": "Without it, a body is just bones wrapped in skin"
+    }
+   ]
+  },
+  {
+   "n": 371,
+   "gloss": "When luck is turning your way you find your drive, and when it's leaving you, laziness moves in.",
+   "keywords": [
+    "motivation",
+    "luck",
+    "losing drive"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Shows fate at work inside a person, sending the drive to work or laziness.",
+     "quote": "The fate that takes it away brings laziness"
+    }
+   ]
+  },
+  {
+   "n": 372,
+   "gloss": "Bad luck dulls your mind, while good luck sharpens your thinking before it arrives.",
+   "keywords": [
+    "clear thinking",
+    "brain fog",
+    "luck"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Fate decides even how sharp your mind is.",
+     "quote": "Fate that is taking things from you makes you foolish"
+    }
+   ]
+  },
+  {
+   "n": 373,
+   "gloss": "However much you study, it's your inborn nature that wins out in the end.",
+   "keywords": [
+    "nature versus nurture",
+    "innate talent",
+    "limits of education"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "inferred",
+     "reason": "Aiyar's Spirit is the inborn wit fate assigns, which outweighs all study.",
+     "quote": "It is the Spirit that is inside that prevaileth over all"
+    }
+   ]
+  },
+  {
+   "n": 374,
+   "gloss": "The world has two separate paths: getting rich is one thing and becoming wise and good is quite another.",
+   "keywords": [
+    "money versus goodness",
+    "wealth and wisdom",
+    "different paths"
+   ],
+   "edges": []
+  },
+  {
+   "n": 375,
+   "gloss": "When your luck is out even good things go wrong, and when it's in even bad things turn out well.",
+   "keywords": [
+    "bad luck",
+    "good luck",
+    "everything going wrong"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Under the chapter’s subject, fate can make what should help go wrong and what should hurt turn out well.",
+     "quote": "everything that should help can go wrong, and everything that should hurt can turn out well"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fate-against-you",
+     "basis": "inferred",
+     "reason": "Says things can go wrong despite everything, and that they can also turn out well.",
+     "quote": "everything that should hurt can turn out well"
+    }
+   ]
+  },
+  {
+   "n": 376,
+   "gloss": "You can't hold on to what isn't meant for you, and you can't lose what is yours even if you throw it away.",
+   "keywords": [
+    "what is meant to be",
+    "losing things",
+    "letting go"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Care cannot keep what fate denies, nor carelessness lose what it grants.",
+     "quote": "What isn’t yours by fate won’t stay, however hard you guard it"
+    }
+   ]
+  },
+  {
+   "n": 377,
+   "gloss": "Even someone with a huge fortune can only enjoy as much of it as fate allows.",
+   "keywords": [
+    "rich but unhappy",
+    "limits of money",
+    "enjoying wealth"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Even vast riches are enjoyed only as far as fate has allotted.",
+     "quote": "can enjoy only what fate has allotted"
+    }
+   ]
+  },
+  {
+   "n": 378,
+   "gloss": "The very poor would give up everything and turn to spiritual life, if fate didn't hold them in their hardship.",
+   "keywords": [
+    "poverty",
+    "having nothing",
+    "hardship"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Even the escape of the poor into renunciation is closed off by fate.",
+     "quote": "if only fate didn’t make them live out the suffering still due to them"
+    }
+   ]
+  },
+  {
+   "n": 379,
+   "gloss": "If you enjoy the good times when they come, why be upset when the bad times come too?",
+   "keywords": [
+    "accepting bad times",
+    "staying calm",
+    "ups and downs"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:equanimity",
+     "basis": "explicit",
+     "reason": "Asks why someone who welcomes good times should be distressed by bad ones.",
+     "quote": "why be distressed when the bad ones come"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fate-against-you",
+     "basis": "explicit",
+     "reason": "Asks someone with bad fortune to meet it as they met good.",
+     "quote": "If you welcome good times as good"
+    }
+   ]
+  },
+  {
+   "n": 380,
+   "gloss": "Nothing is stronger than fate: even while you plan to beat it, it gets there first and brings you down.",
+   "keywords": [
+    "fate",
+    "inevitable",
+    "plans falling apart"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:destiny",
+     "basis": "explicit",
+     "reason": "Declares fate the mightiest thing, ahead of every plan to escape it.",
+     "quote": "What is stronger than fate?"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "LEADS_TO",
+   "source": "quality:affection",
+   "target": "theme:friendship",
+   "basis": "explicit",
+   "reason": "Loving-kindness makes you warm towards people, and that warmth brings friendship.",
+   "quote": "Loving-kindness makes you warm towards people, and that warmth brings friendship",
+   "couplets": [
+    74
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:destiny",
+   "target": "quality:resolve",
+   "basis": "explicit",
+   "reason": "The fate that brings wealth also brings the drive to work.",
+   "quote": "The fate that brings you wealth also brings the drive to work",
+   "couplets": [
+    371
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:destiny",
+   "target": "quality:sloth",
+   "basis": "explicit",
+   "reason": "The fate that takes wealth away brings laziness.",
+   "quote": "The fate that takes it away brings laziness",
+   "couplets": [
+    371
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:destiny",
+   "target": "quality:understanding",
+   "basis": "explicit",
+   "reason": "Fate that is bringing gain widens the mind.",
+   "quote": "Fate that is bringing you gain widens your mind",
+   "couplets": [
+    372
+   ]
+  }
+ ],
+ "proposals": []
+}

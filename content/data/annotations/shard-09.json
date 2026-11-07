@@ -1,0 +1,2767 @@
+{
+ "shard": "shard-09",
+ "chapters": [
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121
+ ],
+ "couplets": [
+  {
+   "n": 1091,
+   "gloss": "Her eyes have two kinds of look: one hurts you, and the other is the only cure for that hurt.",
+   "keywords": [
+    "mixed signals",
+    "hot and cold",
+    "attraction that hurts",
+    "the way she looks at me"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes act on him twice over, bringing sickness with one look and curing it with the other.",
+     "quote": "Her kohl-lined eyes hold two looks"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "The second look is medicine for the very sickness the first one gave him.",
+     "quote": "the other is the medicine for it"
+    }
+   ]
+  },
+  {
+   "n": 1092,
+   "gloss": "A quick secret look thrown your way when you aren't watching is worth more than half of everything love has to give.",
+   "keywords": [
+    "stolen glances",
+    "catching her looking",
+    "flirting",
+    "small gestures"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Rates one stolen glance at more than half of desire.",
+     "quote": "That small glance her eyes steal at me"
+    }
+   ]
+  },
+  {
+   "n": 1093,
+   "gloss": "She glanced at me, then lowered her head, and that small gesture was what made our new love grow.",
+   "keywords": [
+    "first signs of love",
+    "shy glance",
+    "early days of a relationship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "A look and a bowed head are credited with feeding the bond between them.",
+     "quote": "having looked she bowed her head"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:watered-plant",
+     "basis": "explicit",
+     "reason": "Her look and her bowed head are water poured on their bond, as on a growing plant.",
+     "quote": "water she poured on the bond between us"
+    }
+   ]
+  },
+  {
+   "n": 1094,
+   "gloss": "She looks down whenever I look at her, but the moment I turn away she watches me and smiles to herself.",
+   "keywords": [
+    "does she like me",
+    "shy crush",
+    "reading body language",
+    "caught looking"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Gives the classic pattern: eyes on the ground while watched, on him once he turns away.",
+     "quote": "When I look at her, she looks at the ground"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:just-fallen-for-someone",
+     "basis": "inferred",
+     "reason": "Shows someone newly in love what to watch for: the look that comes only when yours turns away.",
+     "quote": "When I don’t, she looks at me and softly smiles"
+    }
+   ]
+  },
+  {
+   "n": 1095,
+   "gloss": "She doesn't look straight at me, but she half-closes one eye as if by chance and smiles at me all the same.",
+   "keywords": [
+    "secret smile",
+    "playing it cool",
+    "subtle flirting",
+    "wink"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "inferred",
+     "reason": "A smile with one eye narrowed says what her averted eyes will not.",
+     "quote": "As if narrowing one eye, she smiles"
+    }
+   ]
+  },
+  {
+   "n": 1096,
+   "gloss": "Even when people in love talk as if they barely know each other, anyone can tell at once what their words really mean.",
+   "keywords": [
+    "pretending not to care",
+    "acting like strangers",
+    "obvious crush",
+    "hiding feelings"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Talking like a stranger is itself a sign: the words of those with no real hostility are soon seen through.",
+     "quote": "are soon seen through"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Says how all who love give themselves away, not just this pair.",
+     "quote": "the words of the loving"
+    }
+   ],
+   "sensitive": "reads a rebuff as hidden goodwill, which could excuse ignoring a no"
+  },
+  {
+   "n": 1097,
+   "gloss": "A mild telling-off and a cross look are how someone who secretly loves you behaves while acting as if they don't.",
+   "keywords": [
+    "mixed messages",
+    "playing hard to get",
+    "acting annoyed",
+    "teasing"
+   ],
+   "sensitive": "reads a rebuff as hidden love, which could excuse ignoring a no",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Names small harsh words and cross looks as the signs of those who only act like strangers.",
+     "quote": "the signs of people who are close but act like strangers"
+    }
+   ]
+  },
+  {
+   "n": 1098,
+   "gloss": "When she sees me pleading she softens and gives a small smile, and that smile makes her lovelier still.",
+   "keywords": [
+    "her smile",
+    "asking her out",
+    "winning her over",
+    "charm"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Her slow smile when he looks at her brings out a beauty in her.",
+     "quote": "There is a beauty then in this woman of swaying grace"
+    }
+   ]
+  },
+  {
+   "n": 1099,
+   "gloss": "Only people in love can give each other that blank, indifferent look, as though they had never met.",
+   "keywords": [
+    "acting indifferent",
+    "secret relationship",
+    "hiding love in public",
+    "pretending in front of others"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Makes a stranger’s blank look, turned on each other, a mark found only among lovers.",
+     "quote": "Looking at each other with a blank look, as strangers do"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Claims this look for lovers alone, as a thing that belongs to them.",
+     "quote": "found only among lovers"
+    }
+   ]
+  },
+  {
+   "n": 1100,
+   "gloss": "Once two people's eyes have said yes to each other, there's no need for words.",
+   "keywords": [
+    "eye contact",
+    "mutual attraction",
+    "no words needed",
+    "connection without talking"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Once eyes have agreed, nothing spoken can add to it.",
+     "quote": "the words of the mouth are no use at all"
+    }
+   ]
+  },
+  {
+   "n": 1101,
+   "gloss": "Everything the five senses can enjoy, I find all together in this one woman.",
+   "keywords": [
+    "physical intimacy",
+    "complete satisfaction",
+    "she is everything to me",
+    "sexual fulfilment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Finds the full pleasure of all five senses in one woman.",
+     "quote": "All that the five senses know"
+    }
+   ]
+  },
+  {
+   "n": 1102,
+   "gloss": "Normally the cure for an illness is something other than what caused it, but only she can heal the ache she gives me.",
+   "keywords": [
+    "lovesick",
+    "only you can fix this",
+    "love as medicine",
+    "heartache"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Gives desire’s odd rule: the one who causes the sickness is the one who cures it.",
+     "quote": "she herself is the medicine"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Sets this sickness against every other illness, whose cure lies somewhere other than its cause.",
+     "quote": "The medicine for an illness is something else"
+    }
+   ]
+  },
+  {
+   "n": 1103,
+   "gloss": "Could even the heaven of the gods be sweeter than lying in the arms of the person you love?",
+   "keywords": [
+    "heaven on earth",
+    "sleeping beside someone",
+    "better than paradise",
+    "cuddling"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Asks whether the world of the lotus-eyed one could be sweeter than sleep on soft shoulders.",
+     "quote": "sleep on the soft shoulders of the one you love"
+    }
+   ]
+  },
+  {
+   "n": 1104,
+   "gloss": "She scorches me when she's away and cools me when she's close: what sort of fire behaves like that?",
+   "keywords": [
+    "missing her",
+    "apart versus together",
+    "burning desire",
+    "absence hurts"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "He pictures a fire of hers that burns from far off and cools when close.",
+     "quote": "It burns when you move away and cools when you come near"
+    }
+   ]
+  },
+  {
+   "n": 1105,
+   "gloss": "Whatever I happen to crave at that moment, being with her feels like having exactly that.",
+   "keywords": [
+    "everything i want",
+    "perfect partner",
+    "fulfilled desire",
+    "satisfied in love"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Being with her becomes whatever his heart wants at that moment.",
+     "quote": "like whatever you want, just when you want it"
+    }
+   ]
+  },
+  {
+   "n": 1106,
+   "gloss": "Her arms must be made of the food of the gods, because each touch brings me back to life.",
+   "keywords": [
+    "healing touch",
+    "revived by love",
+    "physical affection",
+    "feeling alive"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "Her shoulders are made of the food of immortality, since touching them makes his life put out new leaves.",
+     "quote": "made of ambrosia"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Each touch of hers makes his life put out new leaves.",
+     "quote": "my life puts out new leaves"
+    }
+   ]
+  },
+  {
+   "n": 1107,
+   "gloss": "Holding her gives the same deep satisfaction as eating your own food in your own home after sharing it with others.",
+   "keywords": [
+    "contentment",
+    "feeling at home",
+    "deep satisfaction",
+    "a good embrace"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Likens her embrace to the contentment of a householder eating at home after giving to others.",
+     "quote": "like staying in your own home and eating your share of what is yours"
+    }
+   ]
+  },
+  {
+   "n": 1108,
+   "gloss": "For two people in love, the best embrace is one so close that not even air can get between them.",
+   "keywords": [
+    "holding tight",
+    "hugging",
+    "physical closeness",
+    "couple"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Finds the joy in a hold so close that air itself cannot part them.",
+     "quote": "an embrace that not even the air can cut through"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Speaks of what the two who love each other feel together, not of him alone.",
+     "quote": "two who love each other"
+    }
+   ]
+  },
+  {
+   "n": 1109,
+   "gloss": "The sulk, the making up, and then holding each other again: these are the real rewards of being in love.",
+   "keywords": [
+    "fighting and making up",
+    "make-up sex",
+    "reconciliation",
+    "lovers' quarrels"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Counts the sulk itself among the pleasures lovers get.",
+     "quote": "Sulking, making up and coming together"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Making up and coming together are named as what desire pays out.",
+     "quote": "making up and coming together"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Names what every pair of lovers gets from being together.",
+     "quote": "those who have joined in desire"
+    }
+   ]
+  },
+  {
+   "n": 1110,
+   "gloss": "The more you learn, the more you see how little you know, and the closer I get to her, the more there is to love.",
+   "keywords": [
+    "love growing over time",
+    "never tired of her",
+    "deepening relationship",
+    "the more you know"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Desire grows with each embrace, as learning only uncovers more ignorance.",
+     "quote": "Desire is like that, each time I hold this woman in red jewels close"
+    }
+   ]
+  },
+  {
+   "n": 1111,
+   "gloss": "The anicham is the softest of flowers, yet the woman I love is more delicate than even that.",
+   "keywords": [
+    "compliment",
+    "soft skin",
+    "gentle girlfriend",
+    "delicate"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Tells the softest of flowers that his beloved is tenderer still.",
+     "quote": "the one I love is softer than you"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:anicham-flower",
+     "basis": "explicit",
+     "reason": "The aṉiccam, byword for softness, is the standard she passes.",
+     "quote": "aṉiccam flower"
+    }
+   ]
+  },
+  {
+   "n": 1112,
+   "gloss": "My heart, you get flustered at every flower, imagining that blooms anyone can look at could match her eyes.",
+   "keywords": [
+    "her eyes",
+    "nothing compares to her",
+    "reminded of her everywhere",
+    "talking to myself"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Flowers everyone can see are too common to be compared with her eye.",
+     "quote": "blooms that everyone can see"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "The sight of any flower sets off thoughts of her eyes.",
+     "quote": "when you see flowers you lose your wits"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "He scolds his own heart for being fooled by a flower.",
+     "quote": "My heart"
+    }
+   ]
+  },
+  {
+   "n": 1113,
+   "gloss": "Praises her piece by piece: arms like bamboo, skin like a new leaf, pearl teeth, fragrant breath, eyes as sharp as a spear.",
+   "keywords": [
+    "describing her looks",
+    "love poetry",
+    "physical beauty",
+    "head to toe"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Goes over her from shoulder to eye, matching each part to something fine.",
+     "quote": "her smile is pearl"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "Gives her eyes the piercing edge of a spear.",
+     "quote": "her kohl-lined eyes are spears"
+    }
+   ]
+  },
+  {
+   "n": 1114,
+   "gloss": "Even the blue water-lily hangs its head when it sees her, knowing it can never be as lovely as her eyes.",
+   "keywords": [
+    "beautiful eyes",
+    "outshining everything",
+    "nothing compares to her"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "The flower itself gives up hope of matching her eye.",
+     "quote": "We can’t match the eyes of this woman in fine jewels"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "The blue lily bows its head before her eyes like a beaten rival.",
+     "quote": "it would bow its head and look at the ground"
+    }
+   ]
+  },
+  {
+   "n": 1115,
+   "gloss": "She has worn anicham flowers without trimming the stems, and her waist is so slight that the weight will snap it.",
+   "keywords": [
+    "slim waist",
+    "playful compliment",
+    "exaggeration",
+    "fragile"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Jokes that her waist is so slight a few flower stems could break it.",
+     "quote": "No good drums will sound for her waist now"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:anicham-flower",
+     "basis": "explicit",
+     "reason": "Even the stems of the lightest flower are a load too heavy for her.",
+     "quote": "aṉiccam flowers without pinching off the stems"
+    }
+   ]
+  },
+  {
+   "n": 1116,
+   "gloss": "The stars have lost their way because they can't tell her face from the moon.",
+   "keywords": [
+    "her face",
+    "star-struck",
+    "exaggeration",
+    "as lovely as the moon"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Her face throws the very stars into confusion.",
+     "quote": "the stars have been thrown from their places"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "Her face is a second moon, so like the first that the stars go astray.",
+     "quote": "Unable to tell the moon from this woman’s face"
+    }
+   ]
+  },
+  {
+   "n": 1117,
+   "gloss": "The moon wanes and fills out again and still carries its mark, but her face has no blemish like that.",
+   "keywords": [
+    "flawless skin",
+    "perfect face",
+    "no flaws"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Asks whether her face has any mark, expecting the answer no.",
+     "quote": "Is there a spot on this woman’s face"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "The moon, with its waning and its spot, is shown up by her unmarked face.",
+     "quote": "as there is on the bright moon"
+    }
+   ]
+  },
+  {
+   "n": 1118,
+   "gloss": "Moon, if you can ever glow like her face, then you will have my love too.",
+   "keywords": [
+    "compliment",
+    "glowing",
+    "moonlight"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Her face is the standard the moon would have to reach to win him.",
+     "quote": "If you can shine like this woman’s face"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "He speaks to the moon as a rival with a chance of earning his love.",
+     "quote": "you too can have my love"
+    }
+   ]
+  },
+  {
+   "n": 1119,
+   "gloss": "Moon, if you want to be like her face, stop showing yourself to everyone and shine only for me.",
+   "keywords": [
+    "mine alone",
+    "only for me",
+    "exclusive",
+    "possessive love"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Her face is what the moon would like to copy, and it is not shown to all the world.",
+     "quote": "the face of this woman with eyes like flowers"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "Tells the moon it must give up shining for everyone if it wants to be her equal.",
+     "quote": "don’t appear for all to see"
+    }
+   ]
+  },
+  {
+   "n": 1120,
+   "gloss": "Anicham petals and the softest feathers would feel like prickly burrs under her tender feet.",
+   "keywords": [
+    "delicate feet",
+    "softness",
+    "exaggeration"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Her feet are so tender that the softest things would prick them.",
+     "quote": "to this woman’s feet"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:anicham-flower",
+     "basis": "explicit",
+     "reason": "Even the aṉiccam, softest of things, would prick her like a thorny fruit.",
+     "quote": "The aṉiccam flower and the swan’s down"
+    }
+   ]
+  },
+  {
+   "n": 1121,
+   "gloss": "The taste of her lips, as she speaks so softly, is like honey stirred into milk.",
+   "keywords": [
+    "kissing",
+    "sweet lips",
+    "first kiss"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Tastes the moisture of her mouth as milk and honey mixed together.",
+     "quote": "like milk mixed with honey"
+    }
+   ]
+  },
+  {
+   "n": 1122,
+   "gloss": "The bond between the two of us is as close as the one between body and soul.",
+   "keywords": [
+    "soulmate",
+    "inseparable",
+    "deep bond",
+    "two as one"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:soul-and-body",
+     "basis": "explicit",
+     "reason": "Measures his love by the tie that holds soul and body together.",
+     "quote": "the bond between body and soul"
+    }
+   ]
+  },
+  {
+   "n": 1123,
+   "gloss": "Little figure in the pupil of my eye, move out: the woman I love needs that place and nowhere else is good enough for her.",
+   "keywords": [
+    "apple of my eye",
+    "always on my mind",
+    "can't stop seeing her"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "He orders the reflection out of his pupil so that she can live there instead.",
+     "quote": "the pupil of mine eye"
+    }
+   ]
+  },
+  {
+   "n": 1124,
+   "gloss": "With her I feel alive, and when she goes it feels like dying.",
+   "keywords": [
+    "she is my life",
+    "missing her",
+    "needing someone",
+    "when she leaves"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Her nearness is life to him and her leaving is death.",
+     "quote": "when she leaves, she is death to it"
+    }
+   ],
+   "sensitive": "Treats a lover’s absence as death."
+  },
+  {
+   "n": 1125,
+   "gloss": "I could only call her virtues to mind if I had first forgotten them, and I have no idea how to forget them.",
+   "keywords": [
+    "can't stop thinking about her",
+    "unforgettable",
+    "always on my mind"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "He cannot even recall her, since recalling would need a moment of having forgotten.",
+     "quote": "I don’t know how to forget"
+    }
+   ]
+  },
+  {
+   "n": 1126,
+   "gloss": "He never leaves my eyes and blinking doesn't hurt him, because my love is too fine a thing to be harmed.",
+   "keywords": [
+    "always in my sight",
+    "he lives in my eyes",
+    "thinking of him constantly"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "She keeps him seated in her eye, where even a blink cannot bruise him.",
+     "quote": "He will not go from my eyes"
+    }
+   ]
+  },
+  {
+   "n": 1127,
+   "gloss": "He lives inside my eyes, so I won't even put on eyeliner in case I lose sight of him for a moment.",
+   "keywords": [
+    "eyeliner",
+    "makeup",
+    "obsessed with him",
+    "devotion"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eye is his home, so she gives up painting it rather than blink him away.",
+     "quote": "My beloved dwelleth ever within my eyes"
+    }
+   ]
+  },
+  {
+   "n": 1128,
+   "gloss": "He lives in my heart, so I stay away from hot food in case it burns him.",
+   "keywords": [
+    "tender devotion",
+    "he's in my heart",
+    "caring even when apart"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1129,
+   "gloss": "I don't blink in case I miss him for even a moment, and because of this the villagers call him heartless.",
+   "keywords": [
+    "people misjudging my partner",
+    "sleepless",
+    "people blaming him",
+    "what people say"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "explicit",
+     "reason": "The town takes her unblinking devotion as proof that he is a stranger to her.",
+     "quote": "this town calls him a stranger"
+    }
+   ]
+  },
+  {
+   "n": 1130,
+   "gloss": "He happily lives in my heart and never leaves it, yet the neighbours say he has deserted me and call him cruel.",
+   "keywords": [
+    "people don't understand us",
+    "neighbours judging",
+    "defending my partner"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "explicit",
+     "reason": "They say he has left her, not knowing he has never left her heart.",
+     "quote": "This town says he lives apart from me"
+    }
+   ]
+  },
+  {
+   "n": 1131,
+   "gloss": "For someone cut off from the one they love and suffering badly, the only option left is the public ordeal of riding the palm stem.",
+   "keywords": [
+    "desperate gesture",
+    "public display of love",
+    "last resort",
+    "making a scene"
+   ],
+   "sensitive": "treats a self-wounding public ordeal as love’s only way out",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "Holds up the palmyra stalk as the one refuge left to those who ache with desire.",
+     "quote": "no refuge and no strength but the palmyra stalk"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Speaks for all who ache with desire, not for himself alone.",
+     "quote": "those who suffer and ache with desire"
+    }
+   ]
+  },
+  {
+   "n": 1132,
+   "gloss": "Unable to take the pain any longer, my body and soul have agreed to the public ride and thrown all shame aside.",
+   "keywords": [
+    "no shame left",
+    "desperate in love",
+    "can't bear it"
+   ],
+   "sensitive": "resolves on the self-wounding ride because the pain cannot be borne",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "Body and soul agree to the ride because they can bear the pain no longer.",
+     "quote": "will ride the palmyra stalk"
+    }
+   ]
+  },
+  {
+   "n": 1133,
+   "gloss": "I used to have self-respect and modesty, but all I have now is the stem that desperate lovers ride.",
+   "keywords": [
+    "lost my dignity",
+    "nothing left",
+    "love made a fool of me"
+   ],
+   "sensitive": "the self-wounding ride is all he says he has left",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "The stalk is now what he has, in place of the shame and manly strength he once had.",
+     "quote": "Today I have the palmyra stalk"
+    }
+   ]
+  },
+  {
+   "n": 1134,
+   "gloss": "I relied on my self-control and modesty to keep me afloat, but the flood of desire swept all that away.",
+   "keywords": [
+    "overwhelmed by love",
+    "losing control",
+    "swept away",
+    "desire beats reason"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "Shame and manly strength were the raft he trusted, and it went with the flood.",
+     "quote": "the raft of shame and good manly strength"
+    }
+   ]
+  },
+  {
+   "n": 1135,
+   "gloss": "This delicate girl with her small bangles is the one who has left me with that desperate ride and the misery of every evening.",
+   "keywords": [
+    "she did this to me",
+    "evenings are the worst",
+    "pain of love"
+   ],
+   "sensitive": "names the self-wounding ride as what she has left him with",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "He lays the stalk at her door, as something she herself has handed him.",
+     "quote": "gave me the palmyra stalk"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Dusk is the second thing she gave him, a grief of its own.",
+     "quote": "the sorrow that comes with the evening"
+    }
+   ]
+  },
+  {
+   "n": 1136,
+   "gloss": "I can't sleep for thinking about her, so I will make that desperate ride tonight, late as it is.",
+   "keywords": [
+    "can't sleep",
+    "insomnia",
+    "obsessed with her",
+    "late night impulse"
+   ],
+   "sensitive": "a sleepless lover resolves on the self-wounding ride",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "Sleeplessness keeps his mind on riding the stalk.",
+     "quote": "I think of riding the palmyra stalk"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "Midnight finds him awake, thinking of the ride.",
+     "quote": "Even at midnight"
+    }
+   ]
+  },
+  {
+   "n": 1137,
+   "gloss": "Nothing is finer than a woman who, however overwhelmed by love, keeps it in and never makes that desperate public ride.",
+   "keywords": [
+    "suffering in silence",
+    "women's strength",
+    "hiding heartbreak",
+    "dignity in love"
+   ],
+   "sensitive": "praises a woman for bearing love’s pain in silence; the ride it names is self-wounding",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reserve",
+     "basis": "explicit",
+     "reason": "Rates nothing above the woman who bears desire without the ride, however vast it is.",
+     "quote": "Nothing is greater than a woman"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:palmyra-stalk",
+     "basis": "explicit",
+     "reason": "The stalk is the step she refuses, whatever desire puts her through.",
+     "quote": "still doesn’t ride the palmyra stalk"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Her desire is measured by the vastness of the sea.",
+     "quote": "desire as vast as the sea"
+    }
+   ]
+  },
+  {
+   "n": 1138,
+   "gloss": "My love takes no account of my self-restraint or how gently I've treated it: it breaks cover and shows itself in public.",
+   "keywords": [
+    "can't hide my feelings",
+    "everyone can tell",
+    "feelings showing",
+    "love exposed"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Desire heeds neither firmness nor pity, and breaks out of its own hiding.",
+     "quote": "It breaks out of hiding into the open"
+    }
+   ]
+  },
+  {
+   "n": 1139,
+   "gloss": "Thinking nobody has noticed it, my love roams through the streets in a daze of distress.",
+   "keywords": [
+    "nobody notices",
+    "lonely in love",
+    "feelings spilling out"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1140,
+   "gloss": "Thoughtless people laugh at me openly because they have never gone through what I am going through.",
+   "keywords": [
+    "people mock me",
+    "being laughed at",
+    "nobody understands",
+    "they've never been in love"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "inferred",
+     "reason": "Those who jeer at her are the onlookers of her love, wrong because they have felt none of it.",
+     "quote": "Fools laugh in front of my eyes"
+    }
+   ]
+  },
+  {
+   "n": 1141,
+   "gloss": "The village gossip about us keeps me alive, and luckily most people don't realise that.",
+   "keywords": [
+    "rumours about us",
+    "secretly glad",
+    "being talked about"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "The talk that ought to shame him gives him back his life.",
+     "quote": "As the outcry riseth in the village my life cometh back to me"
+    }
+   ]
+  },
+  {
+   "n": 1142,
+   "gloss": "The villagers have no idea how rare she is, or they wouldn't have handed her to me so cheaply through their talk.",
+   "keywords": [
+    "rumours linking us",
+    "people assume we're together",
+    "she's out of my league"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "explicit",
+     "reason": "Their ignorance of her worth is what lets them pair her with him so lightly.",
+     "quote": "this town has made me a gift of gossip"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Their talk hands her to him at a price far below her worth.",
+     "quote": "they have given her cheaply to me by raising this clamour"
+    }
+   ]
+  },
+  {
+   "n": 1143,
+   "gloss": "The talk around the village is a gift to me, because it makes me feel she is mine even though she isn't.",
+   "keywords": [
+    "enjoying being talked about",
+    "rumours about us",
+    "as good as together"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Village talk lets him feel he already has her, though he has not won her.",
+     "quote": "It feels as if I have what I haven’t got"
+    }
+   ]
+  },
+  {
+   "n": 1144,
+   "gloss": "All the talk has made me want her more; without it this would have gone flat.",
+   "keywords": [
+    "forbidden love",
+    "drama keeps it exciting",
+    "love going flat"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "The gossip is what keeps his desire from shrinking away.",
+     "quote": "Gossip is what makes my desire grow"
+    }
+   ]
+  },
+  {
+   "n": 1145,
+   "gloss": "Just as each drink makes a drinker want another, each time others find out about a man's love it tastes sweeter to him.",
+   "keywords": [
+    "going public",
+    "addicted to love",
+    "love getting stronger"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:wine",
+     "basis": "explicit",
+     "reason": "Coming into the open works on desire as getting drunk works on the thirst for toddy.",
+     "quote": "getting drunk makes you want more toddy"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Every time others find out, the love only tastes sweeter.",
+     "quote": "every discovery of his passion by others"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Turns from his own case to say what exposure does for any lover.",
+     "quote": "its sweetness for the lover"
+    }
+   ]
+  },
+  {
+   "n": 1146,
+   "gloss": "We met just once, yet the uproar is as huge as an eclipse, when everyone runs outside to look.",
+   "keywords": [
+    "blown out of proportion",
+    "everyone talking",
+    "scandal over nothing",
+    "public attention"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "One day's meeting raises a noise far out of scale with it.",
+     "quote": "the outcry that hath arisen over it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:serpent",
+     "basis": "explicit",
+     "reason": "The eclipse is a snake seizing the moon, news that spreads through the whole world.",
+     "quote": "the snake seizing the moon"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "The swallowed moon sets the scale of the village's excitement.",
+     "quote": "swallowed the moon"
+    }
+   ]
+  },
+  {
+   "n": 1147,
+   "gloss": "The neighbours' talk fertilises this love-sickness and my mother's scolding waters it, so between them it keeps on growing.",
+   "keywords": [
+    "parents disapprove",
+    "mother scolding me",
+    "opposition makes it stronger",
+    "family against my relationship"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Talk and a mother’s harsh words are manure and water, feeding the very thing they oppose.",
+     "quote": "The town’s gossip is the manure"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:gossip-about-your-relationship",
+     "basis": "inferred",
+     "reason": "Anyone under pressure from neighbours and family can see that such talk feeds a love rather than ends it.",
+     "quote": "this sickness grows on"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:watered-plant",
+     "basis": "explicit",
+     "reason": "Gossip and a mother’s scolding only feed the pain, as manure and water feed a plant.",
+     "quote": "The town’s gossip is the manure and my mother’s words the water"
+    }
+   ]
+  },
+  {
+   "n": 1148,
+   "gloss": "Trying to kill my love with scandal is like trying to put out a fire by pouring on butter.",
+   "keywords": [
+    "adding fuel to the fire",
+    "trying to break us up",
+    "backfire",
+    "interfering family"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Scandal cannot put a love out, any more than ghee can put out a blaze.",
+     "quote": "To think of extinguishing my passion by raising this clamour"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Desire is a flame, and the gossip is ghee poured on it.",
+     "quote": "put out a fire with ghee"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:gossip-about-your-relationship",
+     "basis": "inferred",
+     "reason": "Tells anyone being shamed out of a love that the shaming will only feed it.",
+     "quote": "To say you will put out desire with gossip"
+    }
+   ]
+  },
+  {
+   "n": 1149,
+   "gloss": "Why should I be embarrassed by the talk now, when the man who told me not to worry has left me exposed to everyone?",
+   "keywords": [
+    "abandoned after a promise",
+    "public humiliation",
+    "left to face it alone",
+    "broken promise"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1150,
+   "gloss": "The villagers have raised the very talk I was hoping for, and now if I ask him, my love will surely grant what I want.",
+   "keywords": [
+    "wanting to go public",
+    "making it official",
+    "secretly glad people know"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "explicit",
+     "reason": "The town has unwittingly done them a favour with its gossip.",
+     "quote": "This town is raising the gossip we wanted"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:gossip",
+     "basis": "explicit",
+     "reason": "Far from dreading the talk, she has been wishing for it.",
+     "quote": "This clamour which I in my heart so much desire"
+    }
+   ]
+  },
+  {
+   "n": 1151,
+   "gloss": "If you're staying, tell me; if all you have is a promise to hurry back, save it for someone who'll still be alive when you do.",
+   "keywords": [
+    "please don't go",
+    "leaving for work",
+    "promises to come back",
+    "saying goodbye"
+   ],
+   "sensitive": "says she will not survive his leaving",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "Even the promise of a quick return is refused, because she will not live to see it.",
+     "quote": "tell that to whoever will still be alive"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Spoken straight to the man about to leave her.",
+     "quote": "If you aren’t going, tell me"
+    }
+   ]
+  },
+  {
+   "n": 1152,
+   "gloss": "Just seeing him used to make me happy, but now even when he holds me I'm sad, because I'm afraid he's going to leave.",
+   "keywords": [
+    "anxious in a relationship",
+    "can't enjoy the moment",
+    "fear of being left",
+    "dreading goodbye"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "Fear of his going sours even the embrace that would once have been pure joy.",
+     "quote": "our union itself holds the pain of fearing he will leave"
+    }
+   ]
+  },
+  {
+   "n": 1153,
+   "gloss": "How can I trust anyone, when even the person who understands me best has leaving somewhere in his mind?",
+   "keywords": [
+    "trust issues",
+    "everyone leaves",
+    "fear of abandonment",
+    "can't rely on anyone"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "If even the one who knows her heart can think of leaving, she sees no one left to trust.",
+     "quote": "Even those who understand can sometimes leave"
+    }
+   ]
+  },
+  {
+   "n": 1154,
+   "gloss": "He told me not to be afraid; if he now agrees to leave, how can it be my fault that I believed his promise?",
+   "keywords": [
+    "broken promise",
+    "is it my fault",
+    "i believed him",
+    "betrayed trust"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1155,
+   "gloss": "If you want to keep me alive, stop him leaving, because once he goes I doubt we will ever be together again.",
+   "keywords": [
+    "please stop him",
+    "asking a friend for help",
+    "fear he won't come back"
+   ],
+   "sensitive": "treats his going as the end of her life",
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:confidante",
+     "basis": "explicit",
+     "reason": "She turns to her maid as the one person who might yet stop him.",
+     "quote": "If you would save me"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "Before he has even gone she has given up hope of their meeting again.",
+     "quote": "it will be hard to meet again"
+    }
+   ]
+  },
+  {
+   "n": 1156,
+   "gloss": "If he can be cold enough to tell me to my face that he's leaving, I can't hope he will ever come back and be kind to me.",
+   "keywords": [
+    "he said he's leaving",
+    "losing hope",
+    "cold-hearted partner"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "The bare words of leaving are enough to end her hope.",
+     "quote": "there is little hope that he will be kind"
+    }
+   ]
+  },
+  {
+   "n": 1157,
+   "gloss": "My bangles, once tight, now slide off my wrists, and they will tell everyone that he has left me.",
+   "keywords": [
+    "weight loss from grief",
+    "body showing the pain",
+    "can't hide it"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Her slipping bangles will spread the word of the parting.",
+     "quote": "these bangles slipping from my forearm"
+    }
+   ]
+  },
+  {
+   "n": 1158,
+   "gloss": "Living somewhere without close friends is hard, but being separated from the one you love is harder still.",
+   "keywords": [
+    "lonely",
+    "moving away",
+    "no friends nearby",
+    "long distance"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:separation",
+     "basis": "explicit",
+     "reason": "Ranks being parted from the beloved as bitterer than living friendless.",
+     "quote": "More painful still is parting from those dear to you"
+    }
+   ]
+  },
+  {
+   "n": 1159,
+   "gloss": "Fire only burns you if you touch it; can it burn from a distance the way love does?",
+   "keywords": [
+    "burning for someone",
+    "hurts even from afar",
+    "missing someone",
+    "love pain"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Fire is the lesser burner, needing touch where desire burns from far off.",
+     "quote": "Fire burns if you touch it"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Says what sets desire apart: it burns when you are away from it.",
+     "quote": "burn when you leave it, as the sickness of desire does"
+    }
+   ]
+  },
+  {
+   "n": 1160,
+   "gloss": "So many people, apparently, bear the pain of goodbye and separation and live to see their partner return. I can't imagine how.",
+   "keywords": [
+    "how do people cope",
+    "surviving a long separation",
+    "long distance is hard"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:separation",
+     "basis": "inferred",
+     "reason": "Marvels that anyone can bear the parting and go on living afterwards.",
+     "quote": "bear the parting and go on living afterwards"
+    }
+   ]
+  },
+  {
+   "n": 1161,
+   "gloss": "I try to keep this pain hidden, but the more I push it down the more it rises, like a spring when you bail it out.",
+   "keywords": [
+    "bottling up feelings",
+    "can't stop crying",
+    "suppressing emotions",
+    "hiding heartbreak"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:pining",
+     "basis": "explicit",
+     "reason": "Hiding the sickness only raises it, as drawing from a spring brings up more water.",
+     "quote": "it rises like spring water"
+    }
+   ]
+  },
+  {
+   "n": 1162,
+   "gloss": "I can't hide this pain any more, yet I'd be too ashamed to tell it even to the man who caused it.",
+   "keywords": [
+    "can't tell him how i feel",
+    "stuck between hiding and telling",
+    "embarrassed about my feelings"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:pining",
+     "basis": "explicit",
+     "reason": "The grief has grown past the point where she can keep it hidden.",
+     "quote": "I can’t hide this sickness"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:bashfulness",
+     "basis": "explicit",
+     "reason": "Shame stops her telling even the man who caused the pain.",
+     "quote": "telling the one who caused it brings me shame"
+    }
+   ]
+  },
+  {
+   "n": 1163,
+   "gloss": "Love and modesty hang like two heavy loads from my life as if from a carrying pole, and my worn-out body can't take it.",
+   "keywords": [
+    "torn between love and pride",
+    "overwhelmed",
+    "emotional burden"
+   ],
+   "edges": [
+    {
+     "type": "ENUMERATES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "One of the two loads hung from the pole of her life.",
+     "quote": "Desire and shame hang from my life"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:bashfulness",
+     "basis": "explicit",
+     "reason": "The load at the other end, weighing as heavily as her desire.",
+     "quote": "Desire and shame hang from my life"
+    }
+   ],
+   "sensitive": "Pictures the body breaking under grief."
+  },
+  {
+   "n": 1164,
+   "gloss": "My love is a whole ocean in front of me, and I have no boat that could get me across.",
+   "keywords": [
+    "overwhelmed by love",
+    "no way through",
+    "helpless",
+    "drowning in feelings"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Her desire lies before her as a sea to be crossed.",
+     "quote": "a sea of desire"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "No safe raft exists to carry her over it.",
+     "quote": "no safe raft to cross it"
+    }
+   ]
+  },
+  {
+   "n": 1165,
+   "gloss": "If he lets me waste away like this while he's supposed to love me, what would he do if he were my enemy?",
+   "keywords": [
+    "partner who doesn't care",
+    "hurt by someone who loves you",
+    "neglect"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1166,
+   "gloss": "Love brings joy as big as the ocean, but when it turns painful the suffering is even bigger.",
+   "keywords": [
+    "love hurts",
+    "highs and lows",
+    "joy and pain of love",
+    "heartbreak"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Gives desire its two measures: joy as wide as the sea, and pain greater still.",
+     "quote": "The joy of desire is a sea"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "The sea is the measure of desire’s joy, and its pain goes past even that.",
+     "quote": "the pain is greater than that sea"
+    }
+   ]
+  },
+  {
+   "n": 1167,
+   "gloss": "I'm swimming through a raging flood of love and can't see land, and deep in the night I'm the only one awake.",
+   "keywords": [
+    "lonely at night",
+    "no end in sight",
+    "nobody to talk to",
+    "missing him at night"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:pining",
+     "basis": "explicit",
+     "reason": "Alone in the dark with no shore in view: a grief with no end and no comfort.",
+     "quote": "see no shore"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "She swims the fierce flood of desire with no shore in sight.",
+     "quote": "I swim the fierce flood of desire"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "The dead of night is when her aloneness is complete.",
+     "quote": "Even at midnight I alone am here"
+    }
+   ]
+  },
+  {
+   "n": 1168,
+   "gloss": "Night kindly puts every living thing to sleep, and I'm the only one left awake to keep her company.",
+   "keywords": [
+    "awake when everyone sleeps",
+    "lonely night",
+    "can't sleep"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "Night puts all the world to sleep and leaves her as its one companion.",
+     "quote": "has no companion but me"
+    }
+   ]
+  },
+  {
+   "n": 1169,
+   "gloss": "These long nights that drag on are even crueller to me than the cruel man who left me.",
+   "keywords": [
+    "long nights",
+    "time dragging",
+    "nights are the worst",
+    "can't sleep without him"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:pining",
+     "basis": "explicit",
+     "reason": "In her wakeful grief the slow hours hurt more than his desertion.",
+     "quote": "Crueller even than that cruel one’s cruelty"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "Night is given a cruelty of its own, outdoing his.",
+     "quote": "these nights that now drag on"
+    }
+   ]
+  },
+  {
+   "n": 1170,
+   "gloss": "If my eyes could go to him the way my heart does, they wouldn't be drowning in tears right now.",
+   "keywords": [
+    "crying all the time",
+    "wish i could see him",
+    "my heart is with him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tears",
+     "basis": "explicit",
+     "reason": "Her tears have become a flood that her eyes must swim.",
+     "quote": "swimming in this flood of water"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes are pictured as unable to follow where her heart goes.",
+     "quote": "If my eyes could go where he is, as my heart does"
+    }
+   ]
+  },
+  {
+   "n": 1171,
+   "gloss": "Why are my eyes crying to me now, when they're the ones who showed him to me and brought on this endless sorrow?",
+   "keywords": [
+    "regret falling in love",
+    "blaming myself",
+    "if only i hadn't seen him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "She faces her eyes, who weep though they brought the sickness on by showing him to her.",
+     "quote": "Why do my eyes weep now?"
+    }
+   ]
+  },
+  {
+   "n": 1172,
+   "gloss": "My eyes looked at him without thinking that day, so why do they grieve now instead of putting up with what they did?",
+   "keywords": [
+    "acting without thinking",
+    "living with consequences",
+    "regret"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Blames her eyes for one rash look and asks why they suffer now.",
+     "quote": "These kohl-lined eyes looked without knowing what would come"
+    }
+   ]
+  },
+  {
+   "n": 1173,
+   "gloss": "They rushed to look at him by their own choice and now they cry by their own choice: what a joke they are.",
+   "keywords": [
+    "laughing at myself",
+    "feeling ridiculous",
+    "crying over him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Mocks her eyes, which chose to look and now choose to weep.",
+     "quote": "There is something laughable in this"
+    }
+   ]
+  },
+  {
+   "n": 1174,
+   "gloss": "My eyes left me with this pain that can't be cured, and now they have cried themselves dry.",
+   "keywords": [
+    "no tears left",
+    "cried out",
+    "numb",
+    "heartache that won't heal"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes left the sickness fixed in her, then ran dry.",
+     "quote": "they can’t weep, their water gone"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tears",
+     "basis": "explicit",
+     "reason": "The store of tears is spent while the grief stays on.",
+     "quote": "having exhausted their store of tears"
+    }
+   ]
+  },
+  {
+   "n": 1175,
+   "gloss": "My eyes gave me pain bigger than the ocean, and now they suffer too and can't even sleep.",
+   "keywords": [
+    "sleepless grief",
+    "overwhelming pain",
+    "can't sleep"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "The eyes that caused her sickness are themselves now suffering and sleepless.",
+     "quote": "now suffer and can’t close"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "What her eyes brought on is wider than the sea.",
+     "quote": "too great for the sea"
+    }
+   ]
+  },
+  {
+   "n": 1176,
+   "gloss": "It's a satisfying kind of payback that the eyes that brought on my misery are now suffering the very same thing.",
+   "keywords": [
+    "bitter satisfaction",
+    "getting what they deserve",
+    "misery"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Treats her own eyes as a foe and relishes seeing them suffer as she does.",
+     "quote": "have fallen into it themselves"
+    }
+   ]
+  },
+  {
+   "n": 1177,
+   "gloss": "Those eyes stared at him so hungrily that day; let them weep on and on until there is nothing left in them.",
+   "keywords": [
+    "cursing myself",
+    "self-blame",
+    "regret",
+    "cried out"
+   ],
+   "sensitive": "wishes her own eyes wasted away as a punishment",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "She curses her eyes for their longing gaze and wishes them dry.",
+     "quote": "Let them suffer and suffer till their water runs out"
+    }
+   ]
+  },
+  {
+   "n": 1178,
+   "gloss": "So there are people who love without being loved in return: look at my eyes, which can't rest unless they see him.",
+   "keywords": [
+    "he doesn't love me back",
+    "can't stop looking for him",
+    "uneven feelings"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "States the fact of it: he wanted her without cherishing her, and still her eyes want him.",
+     "quote": "There is one who wanted me without cherishing me"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her restless eyes are her proof that one can love unloved.",
+     "quote": "my eyes will not rest until they see him"
+    }
+   ]
+  },
+  {
+   "n": 1179,
+   "gloss": "My eyes can't sleep when he's gone and can't sleep when he's back, so they're in pain either way.",
+   "keywords": [
+    "no peace either way",
+    "anxious all the time",
+    "can't sleep"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Absent or home, he keeps her eyes awake and hurting.",
+     "quote": "When he doesn’t come they don’t sleep"
+    }
+   ]
+  },
+  {
+   "n": 1180,
+   "gloss": "When your own eyes announce everything like a drum, as mine do, outsiders have no trouble working out your secret.",
+   "keywords": [
+    "can't hide my feelings",
+    "everyone can tell",
+    "giving yourself away"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Eyes are drums that beat out the secret they are meant to keep.",
+     "quote": "whose eyes are beaten drums"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "inferred",
+     "reason": "The townsfolk read her secret straight off her eyes.",
+     "quote": "It isn’t hard for the town to find out the secret"
+    }
+   ]
+  },
+  {
+   "n": 1181,
+   "gloss": "I'm the one who agreed to let him go, so who can I complain to now that I've turned pale?",
+   "keywords": [
+    "i agreed to this",
+    "no one to blame",
+    "regretting letting him go"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "She has no one to tell of her paleness, having consented to the parting herself.",
+     "quote": "Who can I tell now that I have turned pale"
+    }
+   ]
+  },
+  {
+   "n": 1182,
+   "gloss": "This paleness is proud to be his offspring, and it creeps all over my body as if I were its mount.",
+   "keywords": [
+    "looking ill",
+    "losing colour",
+    "he did this to me"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Pallor is cast as his child, riding proudly over her body.",
+     "quote": "pallor climbs on my body and rides it"
+    }
+   ]
+  },
+  {
+   "n": 1183,
+   "gloss": "He took my looks and my modesty and gave me only heartache and a sickly colour in return.",
+   "keywords": [
+    "he took everything",
+    "bad bargain",
+    "used and left"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Her pale colour is part of what he paid her with, in exchange for her looks.",
+     "quote": "gave me sickness and pallor"
+    }
+   ]
+  },
+  {
+   "n": 1184,
+   "gloss": "I think only of him and speak only in his praise, yet somehow this paleness has spread over me anyway.",
+   "keywords": [
+    "thinking about him constantly",
+    "why am i still hurting",
+    "devoted but suffering"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Thinking and speaking of him should have kept the pallor off, so she calls it a fraud.",
+     "quote": "is this pallor a fraud"
+    }
+   ]
+  },
+  {
+   "n": 1185,
+   "gloss": "He had only just gone over there, and already the paleness had found me here.",
+   "keywords": [
+    "missing him already",
+    "as soon as he left",
+    "instant reaction"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Paleness tracks her down at once, however short a way he has gone.",
+     "quote": "pallor spreading over my body"
+    }
+   ]
+  },
+  {
+   "n": 1186,
+   "gloss": "Paleness waits for him to let go of me, exactly as the dark waits for a lamp to go out.",
+   "keywords": [
+    "the moment he leaves",
+    "waiting to pounce",
+    "darkness creeping in"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Pallor waits like an enemy for any break in their closeness.",
+     "quote": "pallor waits for my husband’s embrace to slacken"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lamp",
+     "basis": "explicit",
+     "reason": "His embrace is the lamp that alone keeps the pallor back.",
+     "quote": "a lamp to fail"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:darkness",
+     "basis": "explicit",
+     "reason": "Darkness waiting for a light to fail pictures how pallor watches her.",
+     "quote": "As darkness waits for a lamp to fail"
+    }
+   ]
+  },
+  {
+   "n": 1187,
+   "gloss": "I was lying in his arms, shifted away for a moment, and the paleness swallowed me whole.",
+   "keywords": [
+    "can't be apart for a second",
+    "needing constant closeness",
+    "clingy"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "A moment’s shift out of his arms is enough for pallor to engulf her.",
+     "quote": "pallor came on so thick you could scoop it up"
+    }
+   ]
+  },
+  {
+   "n": 1188,
+   "gloss": "People find fault with me for looking pale and thin, but nobody finds fault with him for leaving me.",
+   "keywords": [
+    "double standard",
+    "blamed for being left",
+    "people take his side",
+    "women get judged"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Her pale skin draws the blame, while his desertion goes unremarked.",
+     "quote": "She has turned pale"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "inferred",
+     "reason": "The reproachful people are the neighbours, wrong as ever about where the fault lies.",
+     "quote": "No one says, “He has left her.”"
+    }
+   ]
+  },
+  {
+   "n": 1189,
+   "gloss": "Let my body go deathly pale, as long as the man who won my love comes out of this well.",
+   "keywords": [
+    "making excuses for him",
+    "protecting his reputation",
+    "self-sacrifice"
+   ],
+   "sensitive": "accepts wasting away so long as the man who hurt her is cleared of blame",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Her pale body is the price set against his being cleared.",
+     "quote": "Let my body turn as pale as it will"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:confidante",
+     "basis": "explicit",
+     "reason": "She turns on the maid who would clear him of blame.",
+     "quote": "my maid"
+    }
+   ]
+  },
+  {
+   "n": 1190,
+   "gloss": "Better that people mock me for how pale I've become, as long as they don't call my partner cruel.",
+   "keywords": [
+    "covering for him",
+    "taking the blame",
+    "defending a cruel partner"
+   ],
+   "sensitive": "accepts ridicule to shield a partner from being called cruel",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "She will take the jibes about her colour to keep the blame off him.",
+     "quote": "It is well to be called pallor itself"
+    }
+   ]
+  },
+  {
+   "n": 1191,
+   "gloss": "Only people loved back by the person they love get to enjoy love's sweet fruit, with no hard stone in it.",
+   "keywords": [
+    "mutual love",
+    "being loved back",
+    "happy relationship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Desire tastes wholly sweet only to those whose love is returned.",
+     "quote": "Those whose love is returned by the one they love"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ripe-fruit",
+     "basis": "explicit",
+     "reason": "Returned love is a fruit with no stone to bite on.",
+     "quote": "the stoneless fruit of desire"
+    }
+   ]
+  },
+  {
+   "n": 1192,
+   "gloss": "The kindness of the one you love is to you what rain is to everything that lives.",
+   "keywords": [
+    "needing affection",
+    "kindness from your partner",
+    "love that sustains you"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:rain-cloud",
+     "basis": "explicit",
+     "reason": "A lover’s kindness sustains the one who loves, as rain sustains those who live by it.",
+     "quote": "like rain from the sky to those who live by it"
+    }
+   ]
+  },
+  {
+   "n": 1193,
+   "gloss": "Only people whose love is returned have any right to call themselves happy.",
+   "keywords": [
+    "being loved back",
+    "what makes a couple happy",
+    "feeling lucky in love"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Keeps the pride of happiness for those loved in return.",
+     "quote": "Only those loved by the ones they love can have the pride"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "inferred",
+     "reason": "Reserving happiness for returned love marks out what the unreturned kind lacks.",
+     "quote": "who are loved in return by those whom they love"
+    }
+   ]
+  },
+  {
+   "n": 1194,
+   "gloss": "Being admired by other people means nothing: if a woman isn't loved by the one she loves, she has no happiness.",
+   "keywords": [
+    "loved by others but not by him",
+    "popular but lonely",
+    "only want him"
+   ],
+   "sensitive": "tells an unloved woman she can have no happiness at all",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Being held dear by others counts for nothing beside the one love she lacks.",
+     "quote": "if the one they love doesn’t love them back"
+    }
+   ]
+  },
+  {
+   "n": 1195,
+   "gloss": "What can I expect from the person I love if he doesn't love me the way I love him?",
+   "keywords": [
+    "he doesn't love me",
+    "what can i expect",
+    "uneven relationship"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Hope of any kindness dies when love runs only one way.",
+     "quote": "if he doesn’t love me too"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:love-not-returned",
+     "basis": "inferred",
+     "reason": "Puts the hard question to anyone hoping for something from a person who does not love back.",
+     "quote": "What can the one I love do for me"
+    }
+   ]
+  },
+  {
+   "n": 1196,
+   "gloss": "Love is like a load on a shoulder pole: easy when balanced at both ends, miserable when it hangs from only one.",
+   "keywords": [
+    "one-way relationship",
+    "balance in a relationship",
+    "doing all the work",
+    "mutual effort"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Gives the figure of it: a load hung from one end of the pole alone.",
+     "quote": "Desire on one side only is painful"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:love-not-returned",
+     "basis": "explicit",
+     "reason": "Tells anyone carrying a love alone why it weighs so much: it is only light when shared.",
+     "quote": "it is sweet when it is on both sides"
+    }
+   ]
+  },
+  {
+   "n": 1197,
+   "gloss": "Love's god attacks only me and leaves him alone: can't he see how much I'm suffering?",
+   "keywords": [
+    "why only me",
+    "unfair",
+    "he feels nothing"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "The god of desire stays on one side only, leaving her to suffer alone.",
+     "quote": "stays on one side only"
+    }
+   ]
+  },
+  {
+   "n": 1198,
+   "gloss": "Nobody is harder than a woman who carries on living without one kind word from the man she loves.",
+   "keywords": [
+    "no word from him",
+    "ghosted",
+    "silence from a partner"
+   ],
+   "sensitive": "calls women who go on living without his love hard-hearted, implying they should not",
+   "edges": []
+  },
+  {
+   "n": 1199,
+   "gloss": "Even if the one I long for is unkind to me, any word of him is lovely to hear.",
+   "keywords": [
+    "any message from him",
+    "hanging on every word",
+    "can't stop caring"
+   ],
+   "sensitive": "finds any word from an unkind partner sweet, which could hold someone in a harmful bond",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Even with unkindness in return, a bare word from him stays sweet.",
+     "quote": "any word of him is sweet to my ears"
+    }
+   ]
+  },
+  {
+   "n": 1200,
+   "gloss": "Good luck, my heart: telling your pain to someone who doesn't love you is like trying to empty the ocean.",
+   "keywords": [
+    "pouring your heart out",
+    "talking to someone who doesn't care",
+    "let it go"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "She gives her heart a mocking blessing on its useless errand.",
+     "quote": "Long may you live, my heart"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Filling in the sea would be easier than this telling.",
+     "quote": "Fill in the sea instead"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:love-not-returned",
+     "basis": "explicit",
+     "reason": "Tells anyone pleading with a person who does not love them that the effort is futile.",
+     "quote": "You would tell your sickness to one who isn’t close to you"
+    }
+   ]
+  },
+  {
+   "n": 1201,
+   "gloss": "Just remembering love brings joy that never runs out, which makes love better than any drink.",
+   "keywords": [
+    "sweet memories",
+    "thinking of you makes me happy",
+    "better than alcohol"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "Mere remembering gives a joy that doesn’t fade.",
+     "quote": "even thinking of it brings a great joy that doesn’t fade"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:wine",
+     "basis": "explicit",
+     "reason": "Toddy loses to desire, which delights even when only remembered.",
+     "quote": "Desire is sweeter than toddy"
+    }
+   ]
+  },
+  {
+   "n": 1202,
+   "gloss": "As soon as I picture the one I love, all my sadness lifts: love is lovely in every way.",
+   "keywords": [
+    "thinking of someone cheers me up",
+    "happy memories",
+    "comfort when apart"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "Thinking of the one you love keeps all pain away.",
+     "quote": "When you think of the one you love, no pain comes"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:partner-far-away",
+     "basis": "inferred",
+     "reason": "Offers someone apart from a partner a comfort they can reach for at will: bring them to mind.",
+     "quote": "When you think of the one you love"
+    }
+   ]
+  },
+  {
+   "n": 1203,
+   "gloss": "I nearly sneezed but it went away: did he start to think of me and then stop?",
+   "keywords": [
+    "is he thinking of me",
+    "reading into small things",
+    "superstition",
+    "wondering if he misses me"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sneeze",
+     "basis": "explicit",
+     "reason": "A sneeze that fades becomes proof of a thought of her that he let drop.",
+     "quote": "A sneeze starts to come and then dies away"
+    }
+   ]
+  },
+  {
+   "n": 1204,
+   "gloss": "Do I have any place in his heart at all? He certainly never leaves mine.",
+   "keywords": [
+    "does he still think of me",
+    "am i on his mind",
+    "doubting his love"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "inferred",
+     "reason": "Sure of her own heart, she doubts her place in his, which is the test of this love.",
+     "quote": "Am I too in his heart?"
+    }
+   ]
+  },
+  {
+   "n": 1205,
+   "gloss": "He keeps me shut out of his heart, so how can he not be ashamed to keep turning up in mine all the time?",
+   "keywords": [
+    "can't stop thinking about him",
+    "he's shut me out",
+    "intrusive thoughts"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "He bars her from his heart yet never leaves hers.",
+     "quote": "He has barred me from his heart"
+    }
+   ]
+  },
+  {
+   "n": 1206,
+   "gloss": "Only the memory of the days we spent together keeps me going; what other life do I have?",
+   "keywords": [
+    "living on memories",
+    "nothing else left",
+    "memories keep me going"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "Memory of their union is all that still holds her in life.",
+     "quote": "I live by remembering the days I was with him"
+    }
+   ],
+   "sensitive": "Ties staying alive to an absent lover."
+  },
+  {
+   "n": 1207,
+   "gloss": "Even with him always in my thoughts my heart is on fire; what would become of me if I forgot him?",
+   "keywords": [
+    "memories hurt",
+    "afraid to forget",
+    "painful memories"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "Memory scorches her, yet she fears forgetting more.",
+     "quote": "What would become of me if I forgot?"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Remembering is a burning inside the heart.",
+     "quote": "even remembering burns my heart"
+    }
+   ]
+  },
+  {
+   "n": 1208,
+   "gloss": "However often I think of him he never gets cross with me for it: that's how good he is to me.",
+   "keywords": [
+    "thinking of him all the time",
+    "small mercies",
+    "still devoted"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "That he never minds being thought of, however often, is the kindness she credits him with.",
+     "quote": "However much I think of him, he doesn’t get angry"
+    }
+   ]
+  },
+  {
+   "n": 1209,
+   "gloss": "He once said the two of us were one being; when I think how unkind he has been since, I feel the life drain out of me.",
+   "keywords": [
+    "he promised we were one",
+    "betrayed by a partner",
+    "heartbroken"
+   ],
+   "sensitive": "speaks of her life ebbing away over his cruelty",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:soul-and-body",
+     "basis": "explicit",
+     "reason": "His old claim that they shared one soul is what makes his cruelty so deadly.",
+     "quote": "We are not two but only one life and soul"
+    }
+   ]
+  },
+  {
+   "n": 1210,
+   "gloss": "Moon, please don't set until my eyes can see again the man who left me but has never left my heart.",
+   "keywords": [
+    "looking at the moon",
+    "waiting for him",
+    "wish he was here",
+    "same moon"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "She begs the moon to stay up so that she may yet see him.",
+     "quote": "O Moon! set not in the horizon"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:longing",
+     "basis": "explicit",
+     "reason": "Her one wish is to lay eyes on him again, though he has never left her heart.",
+     "quote": "so that my eyes may see the one who left without leaving me"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "LEADS_TO",
+   "source": "theme:joy-of-love",
+   "target": "quality:passion",
+   "basis": "explicit",
+   "reason": "Each time he holds her close his desire grows, as learning only deepens the sense of ignorance.",
+   "quote": "Desire is like that, each time I hold this woman in red jewels close",
+   "couplets": [
+    1110
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:passion",
+   "target": "quality:reserve",
+   "basis": "explicit",
+   "reason": "The flood of desire sweeps away the shame and strength he trusted, and in K1138 it breaks through her hiding too.",
+   "quote": "The fierce flood of desire carries off the raft",
+   "couplets": [
+    1134,
+    1138,
+    1251,
+    1254,
+    1255
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:gossip",
+   "target": "quality:passion",
+   "basis": "explicit",
+   "reason": "Far from ending desire, the gossip is said outright to make it grow.",
+   "quote": "Gossip is what makes my desire grow",
+   "couplets": [
+    1144,
+    1147,
+    1148
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:dread-of-parting",
+   "target": "theme:joy-of-love",
+   "basis": "explicit",
+   "reason": "Fear of his going takes the delight out of the embrace itself.",
+   "quote": "our union itself holds the pain of fearing he will leave",
+   "couplets": [
+    1152
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:passion",
+   "target": "theme:joy-of-love",
+   "basis": "explicit",
+   "reason": "Says in plain words that desire brings joy, and joy as wide as the sea.",
+   "quote": "The joy of desire is a sea",
+   "couplets": [
+    1166
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:passion",
+   "target": "quality:pining",
+   "basis": "explicit",
+   "reason": "The desire that gives that joy, once it turns on you, brings pain greater than the joy.",
+   "quote": "when it turns on you, the pain is greater than that sea",
+   "couplets": [
+    1166
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:loving-remembrance",
+   "target": "quality:pining",
+   "basis": "explicit",
+   "reason": "Thinking of the absent one keeps the pain of parting away.",
+   "quote": "no pain comes",
+   "couplets": [
+    1202
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "label": "The Watered Plant",
+   "type": "image",
+   "why": "Love as a young plant fed by water and manure is the whole figure of 1093 and 1147, and of 1304 outside this shard. image:seed-and-sowing covers sowing and crop, not tending a growing plant.",
+   "couplets": [
+    1093,
+    1147
+   ]
+  },
+  {
+   "label": "The Carrying Pole",
+   "type": "image",
+   "why": "A shoulder pole with a load at each end is the whole figure of 1163 and 1196, and Aiyar stops to explain it. quality:one-sided-love mentions it, but no image entry holds it.",
+   "couplets": [
+    1163,
+    1196
+   ]
+  }
+ ]
+}

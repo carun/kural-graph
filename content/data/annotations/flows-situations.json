@@ -1,0 +1,707 @@
+{
+  "situations": [
+    {
+      "situation": "situation:friend-let-you-down",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Being let down by someone close can hurt more than the same thing from a stranger." },
+        { "feeling": "quality:distrust", "reason": "Afterwards it can be hard to know how far to believe them." }
+      ],
+      "resolves": [
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [800, 798], "reason": "One side of the book: leave the friendship of those who don’t fit, even at a cost, and don’t take those who cut away your strength.", "quote": "leave the friendship of those who don’t fit" },
+        { "idea": "quality:intimacy", "basis": "explicit", "couplets": [809, 810], "reason": "The other side: the world wants those who don’t give up a friendship that has come down unbroken.", "quote": "don’t give up the friendship" }
+      ],
+      "silent": "The book pulls two ways. Chapter 81 says to bear the faults of old friends. Chapters 82 and 83 say some faults can’t be borne and the friendship must go. It doesn’t say which this is.",
+      "direct": true
+    },
+    {
+      "situation": "situation:friends-vanished",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Being left when things got hard can hurt long after the trouble itself has passed." },
+        { "feeling": "quality:loneliness", "reason": "With people gone from your side, a hard time can also become a lonely one." }
+      ],
+      "resolves": [
+        { "idea": "theme:testing-people", "basis": "explicit", "couplets": [796, 812], "reason": "Says ruin has one benefit: it measures your people, and those who leave when it stops paying were never much to gain or lose.", "quote": "a rod that measures your people to their full length" },
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [814, 815], "reason": "Says being alone is better than calling your own those who fail you when it counts, though Parimelazhagar adds that being alone is bad too.", "quote": "Better to be alone" }
+      ]
+    },
+    {
+      "situation": "situation:trusting-someone-new",
+      "leaveOut": [791],
+      "evokes": [
+        { "feeling": "quality:distrust", "reason": "Opening up to someone new can bring doubt about what they really want." }
+      ],
+      "resolves": [
+        { "idea": "theme:testing-people", "basis": "explicit", "couplets": [509, 793], "reason": "Says to test first, by character, family, faults and the people around them, and then to trust only as far as the test showed.", "quote": "Trust no one without testing them" }
+      ]
+    },
+    {
+      "situation": "situation:bad-influence",
+      "evokes": [
+        { "feeling": "quality:distrust", "reason": "You may start to doubt whether the people around you are good for you." },
+        { "feeling": "quality:loneliness", "reason": "Stepping back from the people you know can feel lonely." }
+      ],
+      "resolves": [
+        { "idea": "theme:company", "basis": "explicit", "couplets": [452, 460], "reason": "Says your understanding takes on the nature of your company, as water takes on the nature of the ground it meets.", "quote": "understanding takes on the nature of their company" },
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [800, 797], "reason": "Says to leave friends who don’t fit, even if it costs you something to get clear of them.", "quote": "leave the friendship of those who don’t fit" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:two-faced-person",
+      "evokes": [
+        { "feeling": "quality:distrust", "reason": "Once smiles and deeds stop matching, it can be hard to believe anything they say." },
+        { "feeling": "quality:fear", "reason": "Not knowing when the blow will come can keep you on your guard." },
+        { "feeling": "quality:hurt", "reason": "Harm can hurt more when it comes from someone acting like a friend." }
+      ],
+      "resolves": [
+        { "idea": "quality:understanding", "basis": "explicit", "couplets": [824, 428], "reason": "Says this is something to be afraid of, and that fearing what should be feared is the way of those who understand.", "quote": "Fear the deceivers who smile sweetly" },
+        { "idea": "theme:testing-people", "basis": "explicit", "couplets": [825, 826], "reason": "Says those who aren’t with you in their minds aren’t to be trusted on what they say alone.", "quote": "on their words alone" },
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [820], "reason": "Says to keep those who are warm in private and blame you in public from coming near you at all.", "quote": "come near you at all" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:hearing-a-hard-truth",
+      "leaveOut": [795],
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Being told what you didn’t want to hear can sting, most of all from someone close." },
+        { "feeling": "quality:anger", "reason": "A first reaction can be anger at the person who said it." }
+      ],
+      "resolves": [
+        { "idea": "quality:openness-to-rebuke", "basis": "explicit", "couplets": [447, 784], "reason": "Says friends are made to step in and rebuke you when you go too far, and that those who do are your protection.", "quote": "companions who will rebuke you" },
+        { "idea": "quality:understanding", "basis": "explicit", "couplets": [423], "reason": "Asks you to look for the reality in what was said, whoever said it.", "quote": "seeing the reality in it" }
+      ],
+      "direct": true,
+      "silent": "These lines are about a friend who rebukes you when you go wrong, to turn you back. They aren’t about being belittled or worn down, and they don’t ask you to take that as the truth."
+    },
+    {
+      "situation": "situation:friend-in-trouble",
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "A friend’s trouble can stay on your mind, and you may not know what would help." }
+      ],
+      "resolves": [
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [788, 787], "reason": "Says friendship moves at once, like a hand to slipping clothes, and shares the pain when ruin comes.", "quote": "friendship takes away trouble on the spot" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:looking-for-a-mentor",
+      "evokes": [
+        { "feeling": "quality:restlessness", "reason": "Not knowing which way to go can keep the mind turning." },
+        { "feeling": "quality:distrust", "reason": "It can be hard to know whose guidance to believe." }
+      ],
+      "resolves": [
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [441, 443], "reason": "Says to choose with care the friendship of the wise, and calls making the great your own the rarest of rare things.", "quote": "choose with care the friendship of the wise" },
+        { "idea": "theme:listening", "basis": "inferred", "couplets": [415, 416], "reason": "Calls the words of people of good conduct a staff on slippery ground, and says even a little listening brings greatness.", "quote": "like a staff on slippery ground" }
+      ]
+    },
+    {
+      "situation": "situation:wanting-revenge",
+      "evokes": [
+        { "feeling": "quality:anger", "reason": "Being hurt or insulted can bring a strong urge to hit back." },
+        { "feeling": "quality:hurt", "reason": "Under the wish to hit back there is often the wound itself." }
+      ],
+      "resolves": [
+        { "idea": "quality:non-injury", "basis": "explicit", "couplets": [204, 319], "reason": "Says not to plot another’s ruin, because the harm you do comes back to you by itself.", "quote": "harm will come to you in the afternoon" },
+        { "idea": "quality:self-control", "basis": "explicit", "couplets": [305, 304], "reason": "Says to guard against anger for your own sake, because it kills your smile and your joy.", "quote": "it is you that anger kills" }
+      ],
+      "silent": "It offers no way to heal what was done to you, and it doesn’t say the wrong was small. What it says is that revenge turns back on the one who takes it.",
+      "direct": true
+    },
+    {
+      "situation": "situation:you-are-furious",
+      "evokes": [
+        { "feeling": "quality:anger", "reason": "Someone’s words or actions can bring anger on fast, before you have chosen it." },
+        { "feeling": "quality:hurt", "reason": "Anger often has a hurt underneath it." }
+      ],
+      "resolves": [
+        { "idea": "quality:self-control", "basis": "explicit", "couplets": [305, 306], "reason": "Says to guard against anger for your own sake: it kills the one who holds it and burns the raft that is your own people.", "quote": "it is you that anger kills" }
+      ],
+      "direct": true,
+      "silent": "It speaks of what anger does to the one who holds it. It doesn’t ask what caused your anger, and it doesn’t say the cause was small."
+    },
+    {
+      "situation": "situation:someone-picks-fights",
+      "evokes": [
+        { "feeling": "quality:anger", "reason": "Being provoked again and again can wear down the calmest temper." },
+        { "feeling": "quality:worry", "reason": "Not knowing when the next clash will come can stay on your mind." }
+      ],
+      "resolves": [
+        { "idea": "quality:self-control", "basis": "inferred", "couplets": [858], "reason": "Says turning aside from strife brings gain, and that if you press on with it, ruin presses on towards you.", "quote": "Turning aside from strife brings gain" }
+      ],
+      "silent": "These lines say to turn aside from strife and stop there. They give no remedy for someone who keeps provoking you, and turning aside isn’t the same as putting up with harm.",
+      "direct": true
+    },
+    {
+      "situation": "situation:jealous-of-success",
+      "evokes": [
+        { "feeling": "quality:envy", "reason": "Seeing someone else do well can bring a pain that is hard to admit." }
+      ],
+      "resolves": [
+        { "idea": "quality:good-conduct", "basis": "explicit", "couplets": [170, 161], "reason": "Says to keep your heart free of envy, since no one has ever grown great through it.", "quote": "No one has grown great through envy" }
+      ]
+    },
+    {
+      "situation": "situation:said-something-hurtful",
+      "leaveOut": [128],
+      "evokes": [
+        { "feeling": "quality:guilt", "reason": "Seeing what your words did can leave your own heart burning." },
+        { "feeling": "quality:regret", "reason": "It is common to go back over the moment and wish it unsaid." }
+      ],
+      "resolves": [
+        { "idea": "quality:restraint-of-speech", "basis": "explicit", "couplets": [129, 127], "reason": "Says a scar burned by the tongue never heals, so whatever else you fail to guard, guard your tongue.", "quote": "A scar burned by the tongue never heals" },
+        { "idea": "quality:purity-of-action", "basis": "explicit", "couplets": [655], "reason": "Once it is done, the words say not to do the like again, and Parimelazhagar reads them as: don’t go on grieving.", "quote": "it is good not to do the like again" },
+        { "idea": "quality:kind-speech", "basis": "inferred", "couplets": [96], "reason": "Says that seeking out what is good and saying it sweetly makes wrongs wear away.", "quote": "wrongs will wear away and righteousness will grow" }
+      ],
+      "silent": "It offers no way to take words back. It says the scar from the tongue never heals, and it doesn’t say the other person will forgive you.",
+      "direct": true
+    },
+    {
+      "situation": "situation:tempted-by-dishonest-gain",
+      "evokes": [
+        { "feeling": "quality:craving", "reason": "Easy money can start to look like something you need." }
+      ],
+      "resolves": [
+        { "idea": "quality:purity-of-action", "basis": "explicit", "couplets": [657, 660], "reason": "Says deep poverty with worth is better than prosperity gained by disgrace, and that such wealth won’t hold, like water in raw clay.", "quote": "Better the deep poverty of the worthy" },
+        { "idea": "quality:impartiality", "basis": "explicit", "couplets": [113], "reason": "Says to let go at once of any gain that comes from leaving the middle, even if it brings only good.", "quote": "let go at once of gain that comes from leaving the middle" },
+        { "idea": "quality:fear-of-sin", "basis": "explicit", "couplets": [205], "reason": "Answers the plea of being short: do evil because you are poor, and you will be poor again.", "quote": "Don’t do evil because you are poor" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:wondering-whether-to-lie",
+      "evokes": [
+        { "feeling": "quality:guilt", "reason": "Even before you have spoken, the thought of lying can sit badly with your own heart." }
+      ],
+      "resolves": [
+        { "idea": "quality:truthfulness", "basis": "explicit", "couplets": [291, 292], "reason": "Its test is harm: truthfulness is speech with no harm in it, and a lie counts as truthfulness only if it brings good with no fault.", "quote": "speech with no harm in it" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:drawn-to-someone-married",
+      "leaveOut": [143],
+      "evokes": [
+        { "feeling": "quality:passion", "reason": "Desire doesn’t always ask first whether it is free to go where it goes." },
+        { "feeling": "quality:guilt", "reason": "Knowing who else would be hurt can weigh on you." }
+      ],
+      "resolves": [
+        { "idea": "quality:good-conduct", "basis": "explicit", "couplets": [150, 148], "reason": "Says that whatever else you do wrong, this is the line to keep, speaking of a man and another man’s wife.", "quote": "it is good not to crave" },
+        { "idea": "theme:fruits-of-action", "basis": "explicit", "couplets": [146, 145], "reason": "Names four things that never leave the one who crosses this line: enmity, sin, fear and blame.", "quote": "these four never leave" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:losing-your-dignity",
+      "evokes": [
+        { "feeling": "quality:humiliation", "reason": "Having to bow to those who scorn you can lower you in your own eyes." },
+        { "feeling": "quality:hurt", "reason": "Scorn can hurt, even when it is passed off as nothing." }
+      ],
+      "resolves": [
+        { "idea": "quality:greatness", "basis": "explicit", "couplets": [973], "reason": "Says where you have been put doesn’t settle what you are.", "quote": "Those who aren’t low aren’t low, even sitting low" },
+        { "idea": "quality:worth", "basis": "inferred", "couplets": [966, 962], "reason": "Asks what following those who despise you has ever won, and says those who want strength of character won’t do what is unworthy.", "quote": "why follow behind those who despise you" }
+      ],
+      "silent": "It doesn’t say how to keep your job and your self-respect when you can’t have both. It asks what following those who scorn you wins, and it sets honour above gain. It doesn’t weigh what leaving would cost you.",
+      "direct": true
+    },
+    {
+      "situation": "situation:ashamed-of-something-you-did",
+      "evokes": [
+        { "feeling": "quality:guilt", "reason": "Knowing what you did can leave your own heart burning, even if no one else knows." },
+        { "feeling": "quality:regret", "reason": "It is common to keep going back over it and asking “What have I done?”" }
+      ],
+      "resolves": [
+        { "idea": "quality:purity-of-action", "basis": "explicit", "couplets": [655], "reason": "Once it is done, the words say not to do the like again, and Parimelazhagar reads them as: don’t go on grieving.", "quote": "it is good not to do the like again" },
+        { "idea": "quality:kind-speech", "basis": "explicit", "couplets": [96], "reason": "Says that seeking out what is good and saying it sweetly makes wrongs wear away.", "quote": "wrongs will wear away" }
+      ],
+      "silent": "It offers no pardon and no way to undo what was done. Its counsel is short: the words say don’t do the like again, and Parimelazhagar reads them as don’t go on grieving.",
+      "direct": true
+    },
+    {
+      "situation": "situation:work-unrecognised",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Doing good work and not being seen can hurt, most of all when others are praised." },
+        { "feeling": "quality:losing-heart", "reason": "With no word of thanks, it can be hard to keep caring about the work." }
+      ],
+      "resolves": [
+        { "idea": "theme:testing-people", "basis": "explicit", "couplets": [505, 667], "reason": "Says a person’s own deeds are the touchstone, and not to scorn anyone for how they look, since some are the axle pin of the chariot.", "quote": "their own deeds are the touchstone" },
+        { "idea": "quality:exertion", "basis": "inferred", "couplets": [619], "reason": "Says effort isn’t wasted: it pays its wages even where the result is denied.", "quote": "effort pays the wages of your body’s toil" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:feels-impossible",
+      "evokes": [
+        { "feeling": "quality:losing-heart", "reason": "A task that looks too big can sink your spirit before you have begun." }
+      ],
+      "resolves": [
+        { "idea": "quality:exertion", "basis": "explicit", "couplets": [611, 612], "reason": "Says not to lose heart and call it too hard, because effort gives greatness, and to take care not to let the work fail.", "quote": "Effort will give you greatness" },
+        { "idea": "quality:knowing-ones-strength", "basis": "explicit", "couplets": [472, 473], "reason": "Says to know what you can do before you go, since many set out on a surge of zeal and broke halfway.", "quote": "know what they can do" },
+        { "idea": "quality:resolve", "basis": "explicit", "couplets": [669], "reason": "Says to stay resolute in work that brings joy, even when great pain comes.", "quote": "be resolute and do the work" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:you-tried-and-failed",
+      "evokes": [
+        { "feeling": "quality:losing-heart", "reason": "After a real effort comes to nothing, it can be hard to believe the next one is worth making." },
+        { "feeling": "quality:regret", "reason": "It is common to go back over what you might have done differently." }
+      ],
+      "resolves": [
+        { "idea": "quality:aspiration", "basis": "explicit", "couplets": [596, 772], "reason": "Says aiming high keeps its worth even when it fails, and that a spear that missed an elephant beats an arrow that hit a hare.", "quote": "Even when it fails, it has the nature of not failing" },
+        { "idea": "quality:exertion", "basis": "explicit", "couplets": [618, 619], "reason": "Says lacking a favouring fate disgraces no one, and that effort pays its wages even where the result is denied.", "quote": "The lack of a favouring fate disgraces no one" },
+        { "idea": "quality:energy", "basis": "explicit", "couplets": [597], "reason": "Offers the picture of an elephant struck by a mass of arrows that still stands its ground.", "quote": "The strong don’t falter when things fall apart" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:putting-things-off",
+      "leaveOut": [605],
+      "evokes": [
+        { "feeling": "quality:restlessness", "reason": "Knowing something needs doing and not doing it can keep the mind from settling." }
+      ],
+      "resolves": [
+        { "idea": "quality:resolve", "basis": "explicit", "couplets": [668, 672], "reason": "Says that once you have settled on a task, don’t waver or delay, and to take your time only over what should go slowly.", "quote": "don’t waver or delay" },
+        { "idea": "quality:righteousness", "basis": "explicit", "couplets": [36, 335], "reason": "Says not to put good off to some other day, and to do it before the tongue is stilled.", "quote": "see to it some other day" }
+      ]
+    },
+    {
+      "situation": "situation:everything-going-wrong",
+      "leaveOut": [621, 622, 597],
+      "evokes": [
+        { "feeling": "quality:losing-heart", "reason": "When trouble comes from every side, it can be hard to keep your spirit up." },
+        { "feeling": "quality:helplessness", "reason": "With so much wrong at once, it can be hard to see a way out." },
+        { "feeling": "quality:worry", "reason": "Each new trouble can leave you waiting for the next one." }
+      ],
+      "resolves": [
+        { "idea": "theme:friendship", "basis": "explicit", "couplets": [442, 787], "reason": "Says to keep close those who can end a suffering that has come, and that friendship shares the pain when ruin comes.", "quote": "those who can end the suffering that has come" },
+        { "idea": "theme:enterprise", "basis": "explicit", "couplets": [673], "reason": "Says to act where you can, and where you can’t, to look for the way that will work.", "quote": "look for the way that will work" },
+        { "idea": "quality:fortitude", "basis": "explicit", "couplets": [625], "reason": "Its own answer is to stay unbroken, so that troubles heaped on one another are the ones in trouble.", "quote": "Even if they come heaped one on another" }
+      ],
+      "silent": "It doesn’t promise things will ease, and it says little to someone with no strength left. Parimelazhagar gives this answer for trouble met at your work, from god, want or bodily strain. It isn’t about harm someone is doing to you.",
+      "direct": true
+    },
+    {
+      "situation": "situation:starting-something-new",
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "Risking money or years on something uncertain can keep you turning it over." },
+        { "feeling": "quality:elation", "reason": "A new plan can bring high spirits that feel like strength." }
+      ],
+      "resolves": [
+        { "idea": "quality:deliberation", "basis": "explicit", "couplets": [461, 463], "reason": "Says to weigh loss, gain and later profit first, and not to start what looks for profit and loses the capital.", "quote": "Weigh what will be lost, what will be gained" },
+        { "idea": "theme:enterprise", "basis": "explicit", "couplets": [676, 675], "reason": "Says to look at the finish, the obstacles and the gain you will reach, and then act.", "quote": "Look at the finish, the obstacles" },
+        { "idea": "quality:knowing-ones-strength", "basis": "explicit", "couplets": [471], "reason": "Says to weigh the task, your own strength and the strength of those for and against you before you act.", "quote": "the strength of the task, your own strength" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:taken-on-too-much",
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "Too many things at once can leave you always thinking of the one you haven’t done." },
+        { "feeling": "quality:losing-heart", "reason": "When the load keeps growing, your spirit can start to give way." }
+      ],
+      "resolves": [
+        { "idea": "quality:knowing-ones-strength", "basis": "inferred", "couplets": [475, 476], "reason": "Says even peacock feathers will break an axle if you pile them too high, and that the tip of a branch is no place to climb further.", "quote": "if you pile them too high" },
+        { "idea": "theme:enterprise", "basis": "inferred", "couplets": [517], "reason": "Says to work out who can finish a task and by what means, and then leave it in their hands.", "quote": "leave it in their hands" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:is-this-the-right-time",
+      "evokes": [
+        { "feeling": "quality:restlessness", "reason": "Not knowing whether to act or wait can keep the mind going back and forth." }
+      ],
+      "resolves": [
+        { "idea": "theme:time", "basis": "explicit", "couplets": [490, 485], "reason": "Says to hold still like the heron, unshaken, and when your moment comes to be like its strike.", "quote": "In the time for holding still, be like the heron" },
+        { "idea": "quality:deliberation", "basis": "explicit", "couplets": [671], "reason": "Says deliberation ends in a decision, and that leaving a decision to sit in delay is wrong.", "quote": "The end of deliberation is to reach a decision" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:hiring-someone",
+      "evokes": [
+        { "feeling": "quality:distrust", "reason": "Choosing someone can bring doubt about whether they will do what they say." }
+      ],
+      "resolves": [
+        { "idea": "theme:testing-people", "basis": "explicit", "couplets": [515, 517], "reason": "Says work goes to one who knows how and can endure to the end, not to a favourite, and once judged, leave it in their hands.", "quote": "Work is not something to hand to a favourite" }
+      ]
+    },
+    {
+      "situation": "situation:power-over-others",
+      "evokes": [
+        { "feeling": "quality:anger", "reason": "Those who answer to you can try your patience, and anger comes easily where it can take effect." },
+        { "feeling": "quality:elation", "reason": "Being obeyed can bring high spirits that feel like strength." }
+      ],
+      "resolves": [
+        { "idea": "quality:compassion", "basis": "explicit", "couplets": [250, 316], "reason": "Says that when you go against those weaker than you, think of yourself before those stronger, and don’t do what you know is painful.", "quote": "think of yourself before those stronger" },
+        { "idea": "quality:self-control", "basis": "explicit", "couplets": [301], "reason": "Says holding back anger only counts where it can take effect, which is where you hold power.", "quote": "holds back anger where it can take effect" },
+        { "idea": "quality:just-rule", "basis": "inferred", "couplets": [561, 567], "reason": "Says of a ruler to look into a wrong fairly first, and that harsh words and punishment past all measure wear away his strength.", "quote": "Harsh words and punishment past all measure" }
+      ]
+    },
+    {
+      "situation": "situation:powerful-boss",
+      "leaveOut": [692, 696],
+      "evokes": [
+        { "feeling": "quality:fear", "reason": "When your living depends on someone’s mood, being near them can be frightening." },
+        { "feeling": "quality:worry", "reason": "It can be hard to stop thinking about what they might do next." }
+      ],
+      "resolves": [
+        { "idea": "quality:vigilance", "basis": "inferred", "couplets": [691, 699], "reason": "A minister’s rule near a quarrelsome ruler: as with a fire, stay neither too far nor too near, and don’t presume on favour.", "quote": "neither too far nor too near" },
+        { "idea": "quality:purity-of-action", "basis": "inferred", "couplets": [654], "reason": "Sets a limit: even when in trouble, those of unshaken vision won’t do anything shameful.", "quote": "won’t do anything shameful" }
+      ],
+      "silent": "Chapter 70 is a minister’s guide to staying safe near a quarrelsome ruler. That chapter doesn’t ask you to bear cruelty, and it doesn’t say how to answer it. Elsewhere the book condemns rulers who torment people.",
+      "direct": true
+    },
+    {
+      "situation": "situation:stronger-rival",
+      "evokes": [
+        { "feeling": "quality:fear", "reason": "Facing someone with more power can bring fear, whatever you tell yourself." },
+        { "feeling": "quality:worry", "reason": "Not knowing what they will do next can stay on your mind." }
+      ],
+      "resolves": [
+        { "idea": "quality:knowing-ones-strength", "basis": "explicit", "couplets": [471], "reason": "Says to weigh the task, your own strength, theirs and your allies’ before you act.", "quote": "the strength of the task, your own strength" },
+        { "idea": "theme:place", "basis": "explicit", "couplets": [493, 498], "reason": "Says even the weak can win if they know the place and guard themselves, and that a great force loses heart on ground that suits the small.", "quote": "Even the weak grow strong and win" }
+      ],
+      "silent": "This is advice for a contest between rivals. If someone stronger is hurting you, it doesn’t say what to do.",
+      "direct": true
+    },
+    {
+      "situation": "situation:speaking-in-public",
+      "evokes": [
+        { "feeling": "quality:fear", "reason": "Standing up in front of people can bring fear, even when you know your subject." }
+      ],
+      "resolves": [
+        { "idea": "quality:audience-courage", "basis": "explicit", "couplets": [725, 722], "reason": "Says to learn well beforehand, so that you can answer without fear.", "quote": "so that you can answer in an assembly without fear" },
+        { "idea": "quality:tact", "basis": "explicit", "couplets": [711, 712], "reason": "Says to know the assembly, weigh it up and judge the moment before you speak.", "quote": "know the assembly, weigh it up, and then speak" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:someone-wont-listen",
+      "evokes": [
+        { "feeling": "quality:anger", "reason": "Saying the same thing to someone who won’t hear it can wear down your temper." }
+      ],
+      "resolves": [
+        { "idea": "quality:understanding", "basis": "inferred", "couplets": [849], "reason": "Says whoever tries to show a man who can’t see ends up seeing nothing himself.", "quote": "ends up seeing nothing himself" },
+        { "idea": "quality:tact", "basis": "inferred", "couplets": [719, 714], "reason": "Says to save your words for those who can take them in, and before the blank to seem as blank as white lime.", "quote": "take on the colour of white lime" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:success-going-to-your-head",
+      "evokes": [
+        { "feeling": "quality:elation", "reason": "When things go well, high spirits can start to feel like strength." }
+      ],
+      "resolves": [
+        { "idea": "quality:humility", "basis": "explicit", "couplets": [963, 125], "reason": "Says plenty is the time to bow low, and that in the rich humility is a further wealth.", "quote": "In plenty, bow low" },
+        { "idea": "quality:vigilance", "basis": "explicit", "couplets": [539], "reason": "Says that when delight makes you feel strong, remember those who were ruined by neglect.", "quote": "remember those who were ruined by neglect" },
+        { "idea": "quality:greatness", "basis": "explicit", "couplets": [431], "reason": "Says prosperity has greatness in it only for those without pride, anger or pettiness.", "quote": "a prosperity with greatness in it" }
+      ]
+    },
+    {
+      "situation": "situation:spending-too-much",
+      "leaveOut": [479],
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "Watching money go faster than it comes can sit at the back of your mind all day." }
+      ],
+      "resolves": [
+        { "idea": "quality:moderation", "basis": "explicit", "couplets": [478, 477], "reason": "Says a narrow way in does no harm as long as the way out is no wider, and that knowing your limit is how to look after wealth as you spend it.", "quote": "as long as the way out is no wider" }
+      ],
+      "direct": true,
+      "silent": "It speaks of keeping what goes out within what comes in. It has nothing on debt you already owe, or on how to get clear of it."
+    },
+    {
+      "situation": "situation:struggling-to-get-by",
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "When money is short, tomorrow’s needs can be hard to put out of your mind, even at night." },
+        { "feeling": "quality:humiliation", "reason": "Having little can bring the feeling of being looked down on, even by people who mean no harm." }
+      ],
+      "resolves": [
+        { "idea": "quality:worth", "basis": "explicit", "couplets": [988, 963], "reason": "Says having nothing is no disgrace if you have the strength called worth, and that when your means shrink you should stand tall.", "quote": "Having nothing is no disgrace" },
+        { "idea": "quality:exertion", "basis": "explicit", "couplets": [1065], "reason": "Says nothing is sweeter than eating what your own labour has brought, even gruel as thin as water.", "quote": "nothing is sweeter than eating what your own labour has brought" },
+        { "idea": "quality:compassion", "basis": "explicit", "couplets": [248], "reason": "Says those who lose wealth may flower again one day, and counts losing compassion as the worse loss.", "quote": "may flower again one day" }
+      ],
+      "silent": "It offers no practical way out. It says only poverty hurts like poverty, that there is no sleep in it, and that many miseries settle there. Some lines on the poor are harsh. Parimelazhagar says a body should be kept, even by begging.",
+      "direct": true
+    },
+    {
+      "situation": "situation:having-to-ask-for-money",
+      "leaveOut": [1060],
+      "evokes": [
+        { "feeling": "quality:humiliation", "reason": "Having to ask can feel like being lowered, even before anyone has answered." },
+        { "feeling": "quality:worry", "reason": "Not knowing what the answer will be, or what you will do without it, can stay with you." }
+      ],
+      "resolves": [
+        { "idea": "theme:begging", "basis": "explicit", "couplets": [1051, 1067], "reason": "Says to ask those it is right to ask, not those who hide what they have, and that if they hide it the blame is theirs, not yours.", "quote": "the blame is theirs, not yours" },
+        { "idea": "quality:worth", "basis": "explicit", "couplets": [988], "reason": "Says having nothing is no disgrace, if you have the strength called worth.", "quote": "Having nothing is no disgrace" }
+      ],
+      "silent": "This is never made easy. Chapter 106 says you may ask those who give gladly. Chapter 107 dreads the asking itself, even from them. Parimelazhagar says a body should be kept, even this way. It offers little for a refusal.",
+      "direct": true
+    },
+    {
+      "situation": "situation:someone-asks-you-for-help",
+      "evokes": [
+        { "feeling": "quality:restlessness", "reason": "Wanting to help and not being sure you can may keep you from settling." }
+      ],
+      "resolves": [
+        { "idea": "quality:charity", "basis": "explicit", "couplets": [224, 1057], "reason": "Says being asked is painful until you see the pleased face of the one who asked, and that those who give without scorn gladden the asker’s heart.", "quote": "until you see the pleased face" },
+        { "idea": "quality:moderation", "basis": "explicit", "couplets": [480, 477], "reason": "Warns too that helping without weighing what you have will quickly destroy your wealth.", "quote": "Helping others without weighing what you have" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:money-feels-empty",
+      "leaveOut": [1005, 1001, 88],
+      "evokes": [
+        { "feeling": "quality:loneliness", "reason": "Having money and no one to share it with can feel lonely." },
+        { "feeling": "quality:restlessness", "reason": "Having enough and still not being at ease can keep the mind turning." }
+      ],
+      "resolves": [
+        { "idea": "quality:charity", "basis": "explicit", "couplets": [228, 226], "reason": "Asks whether those who hoard know the joy of giving and being glad, and says ending hunger is where wealth can be stored.", "quote": "the joy of giving and being glad" },
+        { "idea": "quality:cherishing-kin", "basis": "explicit", "couplets": [524, 523], "reason": "Says the reward of wealth is to live so that your kin gather round you, and that a life with no sharing of hearts is a tank with no bank.", "quote": "so that your kin gather round you" },
+        { "idea": "quality:helpfulness", "basis": "inferred", "couplets": [215], "reason": "Says the wealth of one who loves the world is like the village tank filled with water.", "quote": "like the village tank filled with water" }
+      ],
+      "silent": "It judges a life like this only from outside, and harshly. It doesn’t describe how it feels from within, or say the feeling will lift. What it does offer is giving and sharing, which it calls a joy.",
+      "direct": true
+    },
+    {
+      "situation": "situation:drinking-too-much",
+      "leaveOut": [927],
+      "evokes": [
+        { "feeling": "quality:craving", "reason": "Drink can come to feel needed, even when you can see what it costs." },
+        { "feeling": "quality:guilt", "reason": "Drinking in secret, or after promising not to, can leave your heart sinking." }
+      ],
+      "resolves": [
+        { "idea": "quality:self-examination", "basis": "inferred", "couplets": [930, 928], "reason": "Asks the drinker, sober for a moment, to see a drunk man and think of his own slips, and to give up saying he has never been drunk.", "quote": "doesn’t he think of how he slips" }
+      ],
+      "silent": "It offers no cure and no way of stopping. It condemns: liquor costs you your wealth, your glory and your senses, and those around you see through it. It doesn’t say what to do when you can’t stop.",
+      "direct": true
+    },
+    {
+      "situation": "situation:cant-stop-gambling",
+      "leaveOut": [932],
+      "evokes": [
+        { "feeling": "quality:craving", "reason": "Each loss can make the next bet feel more necessary, not less." },
+        { "feeling": "quality:guilt", "reason": "What has been lost, and who doesn’t know yet, can weigh on you." }
+      ],
+      "resolves": [
+        { "idea": "quality:understanding", "basis": "inferred", "couplets": [931, 933], "reason": "Its one counsel is to see the win for what it is, a hook swallowed by a fish, and to see your wealth and income going to others.", "quote": "a hook swallowed by a fish" }
+      ],
+      "silent": "It offers no cure. It says the win is a hook, that the love of gambling grows with each loss, and that it takes your wealth, your good name and your compassion. It doesn’t say how to stop.",
+      "direct": true
+    },
+    {
+      "situation": "situation:eating-badly",
+      "leaveOut": [947],
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "Seeing your health change can stay on your mind." },
+        { "feeling": "quality:guilt", "reason": "Eating against what you know is good for you can sit badly afterwards." }
+      ],
+      "resolves": [
+        { "idea": "theme:health", "basis": "explicit", "couplets": [943, 941], "reason": "Says to eat knowing the measure once your food is digested, and that too much or too little both bring disease.", "quote": "eat knowing the measure" }
+      ],
+      "silent": "It speaks of measure, and mostly of eating too much. It says too little also brings disease, but it has nothing for someone who can’t control their eating.",
+      "direct": true
+    },
+    {
+      "situation": "situation:wanting-more",
+      "evokes": [
+        { "feeling": "quality:craving", "reason": "Each new thing can leave you already wanting the next." }
+      ],
+      "resolves": [
+        { "idea": "quality:desirelessness", "basis": "explicit", "couplets": [368, 370], "reason": "Says craving’s nature is never to be filled, and that where it exists, suffering comes on and on.", "quote": "whose nature is never to be filled" }
+      ]
+    },
+    {
+      "situation": "situation:thinking-about-meat",
+      "evokes": [
+        { "feeling": "quality:guilt", "reason": "Thinking about what the animal went through can sit uneasily with you." }
+      ],
+      "resolves": [
+        { "idea": "quality:abstaining-from-meat", "basis": "explicit", "couplets": [256, 257], "reason": "Says no one would offer flesh for money if the world didn’t kill to eat, and that flesh is another creature’s wound.", "quote": "Flesh is another creature’s wound" },
+        { "idea": "quality:compassion", "basis": "explicit", "couplets": [251, 254], "reason": "Asks how someone who eats other flesh to swell their own can hold to compassion.", "quote": "hold to compassion" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:raising-children",
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "Wanting to get it right for your children can keep you turning things over." }
+      ],
+      "resolves": [
+        { "idea": "theme:offspring", "basis": "explicit", "couplets": [67, 68], "reason": "Says the good a father does his son is to set him in the front rank, and that children who know more than you are sweet.", "quote": "put him in the front rank of the assembly" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:falling-out-with-a-relative",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "A break with your own family can hurt in a way that is hard to explain to others." },
+        { "feeling": "quality:anger", "reason": "Old grievances can come back along with the new one." }
+      ],
+      "resolves": [
+        { "idea": "quality:cherishing-kin", "basis": "explicit", "couplets": [529, 881], "reason": "Says those who left will come back as kin once the cause of the rift is gone, and that your own people’s ways are bad for you if they do you harm.", "quote": "once the cause of the rift is gone" }
+      ],
+      "direct": true
+    },
+    {
+      "situation": "situation:carrying-the-family",
+      "evokes": [
+        { "feeling": "quality:losing-heart", "reason": "Being the one everyone leans on can wear your spirit down over time." },
+        { "feeling": "quality:worry", "reason": "With others depending on you, it can be hard to stop thinking about what comes next." }
+      ],
+      "resolves": [
+        { "idea": "theme:family-line", "basis": "explicit", "couplets": [1027, 1029], "reason": "Says the load falls on those who can carry it, and asks, for them, whether such a body is only a vessel for suffering.", "quote": "the load falls on those who can carry it" }
+      ],
+      "silent": "It offers no rest, and it doesn’t say how to set the load down. It honours the one who carries and sees what the carrying costs, and it goes no further.",
+      "direct": true
+    },
+    {
+      "situation": "situation:just-fallen-for-someone",
+      "evokes": [
+        { "feeling": "quality:being-smitten", "reason": "Someone can strike you all at once, before you know anything about them." },
+        { "feeling": "quality:passion", "reason": "Thoughts of them can arrive without being asked." }
+      ],
+      "resolves": [
+        { "idea": "theme:signs-of-love", "basis": "explicit", "couplets": [1094], "reason": "Part 3 watches for a look that is returned: she looks at the ground, and looks at him when he looks away.", "quote": "she looks at me and softly smiles" }
+      ],
+      "silent": "It gives no advice here. Part 3 only sings what a lover feels, and the looks of two people who both want this. It isn’t a way of reading someone who hasn’t said so."
+    },
+    {
+      "situation": "situation:gossip-about-your-relationship",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Hearing your private life passed around can hurt, even if it is only talk." },
+        { "feeling": "quality:worry", "reason": "You may keep wondering who knows, and what they will do." }
+      ],
+      "resolves": [
+        { "idea": "theme:gossip", "basis": "explicit", "couplets": [1148, 1147], "reason": "Part 3 says such talk doesn’t end desire but feeds it, as ghee feeds a fire.", "quote": "put out a fire with ghee" }
+      ],
+      "silent": "It doesn’t say how to stop the talk, or what to do if it puts you at risk. Part 3 only shows such talk feeding desire and not ending it.",
+      "direct": true
+    },
+    {
+      "situation": "situation:partner-far-away",
+      "evokes": [
+        { "feeling": "quality:pining", "reason": "A long absence can wear on you, often worst in the evenings." },
+        { "feeling": "quality:longing", "reason": "You may find yourself counting the days until they are back." },
+        { "feeling": "quality:loneliness", "reason": "The nights can feel long with no one there." }
+      ],
+      "resolves": [
+        { "idea": "quality:loving-remembrance", "basis": "explicit", "couplets": [1202], "reason": "Says that when you think of the one you love, no pain comes.", "quote": "When you think of the one you love, no pain comes" }
+      ],
+      "silent": "Its only comfort is memory, and it admits that can hurt too: “even remembering burns my heart.” It doesn’t shorten the wait."
+    },
+    {
+      "situation": "situation:love-not-returned",
+      "evokes": [
+        { "feeling": "quality:one-sided-love", "reason": "Loving someone who doesn’t answer can be a weight you carry alone." },
+        { "feeling": "quality:hurt", "reason": "Not being loved back can hurt, even when no one has done anything wrong." }
+      ],
+      "resolves": [
+        { "idea": "quality:reserve", "basis": "inferred", "couplets": [1200], "reason": "Thinking of sending him word, she tells her heart that telling her pain to one who has drawn away is like trying to fill in the sea.", "quote": "Fill in the sea instead" }
+      ],
+      "silent": "Part 3 speaks in the lover’s own voice. It knows this pain, and that desire on one side only is like a load on one end of a pole. It offers no cure, and it doesn’t say how the pain ends."
+    },
+    {
+      "situation": "situation:cant-let-go",
+      "leaveOut": [1242],
+      "evokes": [
+        { "feeling": "quality:pining", "reason": "Someone gone can stay with you all day, and the mind can keep going back." },
+        { "feeling": "quality:loving-remembrance", "reason": "Memory can keep you going and burn at the same time." }
+      ],
+      "resolves": [
+        { "idea": "quality:reserve", "basis": "inferred", "couplets": [1250, 1248], "reason": "She tells her own heart that keeping in it one who left only costs her more, and that going after him is foolish.", "quote": "we will lose still more of our beauty" }
+      ],
+      "silent": "It doesn’t say how to stop. She tells her heart it is foolish, and in the next chapter her reserve breaks down. This is a woman left by a living lover, and it has no word for someone lost to death."
+    },
+    {
+      "situation": "situation:fight-with-your-partner",
+      "leaveOut": [1303, 1304],
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "A fight with the person closest to you can hurt more than the words alone." },
+        { "feeling": "quality:anger", "reason": "In a fight, anger can feel like the only way to be heard." }
+      ],
+      "resolves": [
+        { "idea": "quality:bouderie", "basis": "explicit", "couplets": [1302, 1309], "reason": "Her friend, come as his go-between, likens a sulk to salt, good in the right amount and spoiled by drawing it out. It is called sweet only with those who love you.", "quote": "sulking is sweet with those who love you" }
+      ],
+      "silent": "All this is about a lovers’ sulk between two people who love each other, and the friend is speaking for him. It says nothing about a partner who frightens or harms you, and it doesn’t ask you to give way to one.",
+      "direct": true
+    },
+    {
+      "situation": "situation:jealous-partner",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Being doubted over small things, when you have done nothing, can hurt." },
+        { "feeling": "quality:fear", "reason": "Being suspected all the time can make a person careful of every word." }
+      ],
+      "resolves": [],
+      "silent": "Chapter 132 shows this only as love play: she has no real cause, and her love runs over. It offers no way through, and nothing for suspicion that frightens or controls you. Don’t take it as a reason to bear that.",
+      "direct": true
+    },
+    {
+      "situation": "situation:thinking-about-death",
+      "evokes": [
+        { "feeling": "quality:fear", "reason": "Thinking about how little time there is can bring fear, at any age." },
+        { "feeling": "quality:restlessness", "reason": "The thought can come back at night and keep the mind from settling." }
+      ],
+      "resolves": [
+        { "idea": "quality:righteousness", "basis": "explicit", "couplets": [335, 36], "reason": "Its answer to how short life is: do good now, for righteousness is the companion that doesn’t die when you die.", "quote": "rush to do good deeds" },
+        { "idea": "theme:impermanence", "basis": "explicit", "couplets": [337, 333], "reason": "Says no one can be sure of one moment more, so do at once the things that stay.", "quote": "do at once the things that stay" }
+      ],
+      "silent": "It doesn’t console. It says life is uncertain and asks you to do good while you can. It has no word for mourning someone, and nothing here is about ending your own life.",
+      "direct": true
+    },
+    {
+      "situation": "situation:wanting-to-walk-away",
+      "leaveOut": [341, 342, 47],
+      "evokes": [
+        { "feeling": "quality:losing-heart", "reason": "Being worn down can make you want to set everything down." },
+        { "feeling": "quality:restlessness", "reason": "The thought of leaving can keep coming back and won’t let the mind settle." }
+      ],
+      "resolves": [
+        { "idea": "theme:friendship", "basis": "inferred", "couplets": [442, 787], "reason": "Says to keep close those who can end a suffering that has come, and that friendship shares the pain when ruin comes.", "quote": "those who can end the suffering that has come" },
+        { "idea": "theme:family-life", "basis": "explicit", "couplets": [46, 45], "reason": "Says a home life lived in righteousness, with loving-kindness in it, has nothing to gain from leaving for a renouncer’s path.", "quote": "what would you gain by going off on some outside path" }
+      ],
+      "silent": "It doesn’t settle this. One chapter praises letting go of attachment, another a home lived rightly, not one where you are hurt. Letting go there means a way of living, not an end to life. It has little for someone simply worn out.",
+      "direct": true
+    },
+    {
+      "situation": "situation:fate-against-you",
+      "leaveOut": [379],
+      "evokes": [
+        { "feeling": "quality:helplessness", "reason": "When one thing after another goes wrong, it can seem that nothing you do will matter." },
+        { "feeling": "quality:losing-heart", "reason": "A long run of bad luck can wear down the will to try again." }
+      ],
+      "resolves": [
+        { "idea": "quality:exertion", "basis": "explicit", "couplets": [619, 620], "reason": "Says effort pays the wages of your toil even where the result is denied, and that those who don’t falter will see the back of fate.", "quote": "effort pays the wages of your body’s toil" },
+        { "idea": "theme:destiny", "basis": "explicit", "couplets": [618, 375], "reason": "Says the lack of a favouring fate disgraces no one, and that in making money what should help can go wrong and what should hurt can turn out well.", "quote": "The lack of a favouring fate disgraces no one" }
+      ],
+      "silent": "It says nothing is stronger than fate, and also that those who don’t falter will see its back, and it leaves the two side by side. It has little for someone worn out. Its fate is about fortune, not about what someone else does to you.",
+      "direct": true
+    },
+    {
+      "situation": "situation:kindness-not-returned",
+      "evokes": [
+        { "feeling": "quality:hurt", "reason": "Giving and getting nothing back can hurt, most of all from those you helped." },
+        { "feeling": "quality:losing-heart", "reason": "After a long time of giving, it can be hard to see why you go on." }
+      ],
+      "resolves": [
+        { "idea": "quality:helpfulness", "basis": "explicit", "couplets": [103, 211], "reason": "Says help given with no thought of return is greater than the sea, and that no one repays the rain.", "quote": "help given with no thought of return" },
+        { "idea": "quality:moderation", "basis": "explicit", "couplets": [480], "reason": "Warns too that helping others without weighing what you have will quickly destroy your wealth.", "quote": "Helping others without weighing what you have" }
+      ],
+      "silent": "It doesn’t promise thanks, and it pulls two ways: help looks for no return, yet helping past what you have ruins you. It doesn’t say when to stop, and it has nothing for being used.",
+      "direct": true
+    },
+    {
+      "situation": "situation:owing-someone-a-kindness",
+      "leaveOut": [106],
+      "evokes": [
+        { "feeling": "quality:worry", "reason": "You may wonder how you could ever repay it." }
+      ],
+      "resolves": [
+        { "idea": "quality:gratitude", "basis": "explicit", "couplets": [102, 104], "reason": "Says a good deed done at the right time, though small, is greater than the world, and that those who know its worth hold it so.", "quote": "A good deed done at the right time" }
+      ],
+      "direct": true,
+      "silent": "These lines are about what you feel you owe. They don’t say what a helper may ask of you, and they aren’t a reason to stay with someone who uses past help to control you."
+    }
+  ]
+}

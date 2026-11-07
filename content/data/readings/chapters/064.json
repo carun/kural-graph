@@ -1,0 +1,169 @@
+{
+  "chapter": 64,
+  "title": "The Minister",
+  "note": "He defines this as the nature of a minister, meaning his qualities and his actions.",
+  "couplets": [
+    {
+      "n": 631,
+      "plain": "A minister is someone who excels in the means, the time, the method and the rare work to be done.",
+      "pm": "A minister is one who can rightly plan the means a task needs, its proper time, the way to do it and the rare task itself. The means are armies and wealth. The time is when to begin. The way covers how to begin, how to clear obstacles and how to finish. A rare task gives great results for little effort.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "dd216a3bebd05c60",
+          "quote": "A minister is someone who excels",
+          "reason": "Sets the test for a minister: excellence in means, time, method and the work itself."
+        }
+      ]
+    },
+    {
+      "n": 632,
+      "plain": "Firmness, guarding the people, learning and knowing, and effort: a minister excels in all five.",
+      "pm": "A minister has firmness in his work, guards the people, studies the books of statecraft and knows what to do and avoid, and makes effort, along with the five parts of the last couplet. He rejects making five of these alone, by splitting guarding the people into good birth and keeping it by conduct, or learning and knowing in two.",
+      "tag": "differs",
+      "note": "The plain reading counts five in this couplet. He adds these four to the five parts of K631.",
+      "links": [
+        {
+          "id": "9c56f99847e91c77",
+          "quote": "a minister excels in all five",
+          "reason": "Counts off the marks that make up a minister’s five qualities."
+        },
+        {
+          "id": "72583ba48fb85fd0",
+          "quote": "learning and knowing",
+          "reason": "Learning is named among the minister’s marks."
+        },
+        {
+          "id": "1800694253a2550f",
+          "quote": "Firmness",
+          "reason": "Firmness in the work opens the list of his marks."
+        },
+        {
+          "id": "d77ca1e21f088e50",
+          "quote": "effort"
+        }
+      ]
+    },
+    {
+      "n": 633,
+      "plain": "A minister is someone who can split others apart, keep friends close, and bring back those who have split away.",
+      "pm": "A minister is one able, when the work demands it, to part his enemies’ allies from them, to keep his own side from leaving through gifts and sweet words, and to bring back those who left earlier. Knowing what each moment needs, and carrying it out unnoticed by a fitting means, is hard, so he says “able”.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "65e08756d700a3f0",
+          "quote": "A minister is someone who can split others apart"
+        }
+      ]
+    },
+    {
+      "n": 634,
+      "plain": "A minister is someone able to see clearly, act after weighing, and speak with certainty.",
+      "pm": "A minister is one able to find, when a task can be done in many ways, the way that will work, to do it after seeing how it can succeed, and, when parting or joining others, to speak so that they are convinced this alone is what they must do.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "fe020abe1a69b9e7",
+          "quote": "speak with certainty"
+        },
+        {
+          "id": "1112a2baae2bcec7",
+          "quote": "see clearly, act after weighing"
+        }
+      ]
+    },
+    {
+      "n": 635,
+      "plain": "Someone who knows righteousness, whose words are full and measured, and who knows at all times how to act, is a companion in counsel.",
+      "pm": "One who knows the righteous acts a ruler should perform, whose words are filled with the learning that suits him, and who knows at all times how work is done, is a help to rulers in planning. “At all times” means when his ruler is reduced, when he flourishes and in between.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "d76c347f013c4d2a",
+          "quote": "a companion in counsel",
+          "reason": "Describes the one to have beside you in counsel: righteous, full in speech, knowing how to act."
+        }
+      ]
+    },
+    {
+      "n": 636,
+      "plain": "What subtlety can stand before those who have sharp wit and book learning too?",
+      "pm": "What plots of great subtlety can stand before ministers who have fine natural wit along with book learning? God must give the wit, so it comes first. They see through their enemies’ plots and destroy them, and devise plots their enemies can’t. He rejects the variant அதினுட்பம், “what is subtler than that”, because nothing has been named for “that” to point to.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "16398ab3e6281ad9",
+          "quote": "sharp wit",
+          "reason": "Sharp wit is one half of the pair that nothing can stand before."
+        },
+        {
+          "id": "553b00ceef8e7541",
+          "quote": "book learning too",
+          "reason": "Book learning added to wit leaves no subtlety able to stand against it."
+        }
+      ]
+    },
+    {
+      "n": 637,
+      "plain": "Even when you know the methods, know the nature of the world and then act.",
+      "pm": "Even when you know from the books how work is done, know how the world runs at that time and act in keeping with it. Even if a thing is by the book, don’t do what doesn’t fit the ways of the world. The world will blame it.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "e34f15114adb278b",
+          "quote": "know the nature of the world",
+          "reason": "Tells those who know the method to know also how the world is."
+        }
+      ]
+    },
+    {
+      "n": 638,
+      "plain": "Even if he kills what others know and knows nothing himself, it is the duty of the one at his side to tell him what is good for him.",
+      "pm": "Even if the ruler destroys the knowledge of those who speak to him and knows nothing himself, a minister mustn’t give up over that fault, but tell him what is good for him. Destroying it means rejecting it and mocking it too. If he stays silent, the world lays the guilt of the ruler’s end on him.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "7bb8f78edbf8907b",
+          "quote": "tell him what is good for him"
+        },
+        {
+          "id": "4a5eb8bce7b0e6a4",
+          "quote": "the duty of the one at his side",
+          "reason": "States the duty of the one at the ruler’s side."
+        }
+      ]
+    },
+    {
+      "n": 639,
+      "plain": "Seven hundred million enemies are better than one minister at your side who plots harm.",
+      "pm": "Better to have seven hundred million enemies facing the ruler than one minister at his side who plans his fall. The number stands for a very great many. Open enemies can be guarded against, but he is an enemy within, so no guard is possible. Some read this as “seven hundred million times better”, and some read a different text.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "40e91088dfe2e68e",
+          "quote": "one minister at your side who plots harm",
+          "reason": "Rates one plotter at your side as worse than a vast enemy host."
+        },
+        {
+          "id": "7b869e4d5b9d85dc",
+          "quote": "one minister at your side",
+          "reason": "Turns on a minister who plots against the ruler he sits beside."
+        }
+      ]
+    },
+    {
+      "n": 640,
+      "plain": "Even when they plan things in good order, those without skill in doing will leave them unfinished.",
+      "pm": "Those who lack what finishing takes, though they have planned the work in good order, do it in such a way that it stays unfinished. What it takes is knowing the fitting remedy for each obstacle as it comes, and being firm themselves. Some can plan without error and still can’t complete anything.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "ba728d1f591a3727",
+          "quote": "will leave them unfinished",
+          "reason": "Even well-ordered plans stay unfinished for those without the skill and firmness to carry them out."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

@@ -1,0 +1,189 @@
+{
+  "chapter": 109,
+  "title": "Struck by Her Beauty",
+  "note": "She has left her companions to play in a grove, and he has left his young men to hunt. He comes on her alone, and tells how her beauty torments him. This happens at first sight, so it comes first.",
+  "couplets": [
+    {
+      "n": 1081,
+      "plain": "This one with the heavy earrings: is she a goddess, a rare peacock or a woman? My heart is lost in doubt.",
+      "pm": "She of the heavy earrings: is she a goddess who lives in this grove, a peacock chosen from all peacocks, or a human woman? My heart is confused. Her form is beyond painting and she pains him, so “goddess”. Her grace and the grove suggest “peacock”. His heart going to her and her look back suggest “woman”.",
+      "tag": "adds",
+      "context": "Her form and all about her surpass anything he has seen, and he can’t tell what she is.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "718e91d35872b0e7",
+          "quote": "My heart is lost in doubt",
+          "reason": "First sight as pure confusion: he cannot say whether she is a goddess, a peacock or a woman."
+        }
+      ]
+    },
+    {
+      "n": 1082,
+      "plain": "When she looks back at my look, it is as if a goddess who strikes had brought an army with her.",
+      "pm": "That one so beautiful should look back at my look is as if a goddess who attacks by herself had brought an army as well. Because she returned it, it is a glance of meaning. On top of the pain of her beauty comes the pain of that glance. Some take “she who looked” as “she whom I looked at”.",
+      "tag": "agrees",
+      "context": "Now sure she is a human woman, he speaks of the pain her glance gives him.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "e7a557c96acef945",
+          "quote": "a goddess who strikes had brought an army with her",
+          "reason": "Her answering look hits him like a goddess with an army at her back."
+        }
+      ]
+    },
+    {
+      "n": 1083,
+      "plain": "I never knew before what they call death. Now I know. It has a woman’s ways and big, battling eyes.",
+      "pm": "I had only heard of what the books call death, and never seen it. Now I have. It has big, warring eyes and womanly qualities, which are modesty, innocence, fear and shyness. Those qualities can give joy, but they mostly give pain, so he calls her death.",
+      "tag": "agrees",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "3548ddf26e089d6b",
+          "quote": "I never knew before what they call death. Now I know"
+        },
+        {
+          "id": "f7a7136b0e2e5d93",
+          "quote": "It has a woman’s ways"
+        },
+        {
+          "id": "8adecabe3730c08e",
+          "quote": "big, battling eyes"
+        }
+      ]
+    },
+    {
+      "n": 1084,
+      "plain": "Her eyes are at odds with this innocent, womanly girl. They look ready to eat the life of anyone who sees them.",
+      "pm": "The eyes of this innocent girl of womanly qualities stand at odds with her, with a look that eats the life of those who see them. They are cruel, which doesn’t fit her qualities or her innocence.",
+      "tag": "agrees",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "c8b9738f02a1146b",
+          "quote": "eat the life of anyone who sees them"
+        },
+        {
+          "id": "d1ec706c00e03031",
+          "quote": "Her eyes are at odds with this innocent, womanly girl",
+          "reason": "Gives an innocent girl a pair of eyes at war with her."
+        }
+      ]
+    },
+    {
+      "n": 1085,
+      "plain": "Is it death? Is it an eye? Is it a doe? This innocent girl’s glance has all three in it.",
+      "pm": "Is it death, since it pains me? An eye, since it runs towards me? A doe, since it shies by nature? I can’t tell. The glance of this innocent girl has the nature of all three. It gives joy and pain together.",
+      "tag": "agrees",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "0b9c69e4db8070e1",
+          "quote": "Is it death?"
+        },
+        {
+          "id": "1db6b3e3c36619cb",
+          "quote": "glance has all three in it",
+          "reason": "One glance holds three things at once: death, an eye and a doe."
+        }
+      ]
+    },
+    {
+      "n": 1086,
+      "plain": "If her curved brows were straight and hid them, her eyes would not cause me this trembling pain.",
+      "pm": "If her curved brows, the close friends of her eyes, grew straight and held them back, her eyes couldn’t get past to give me the pain that makes me tremble. Someone who rebukes a friend must be straight himself. But the brows are bent by nature, so they can’t go and check the eyes.",
+      "tag": "adds",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "0b843e3187aba6b1",
+          "quote": "her eyes would not cause me this trembling pain"
+        }
+      ]
+    },
+    {
+      "n": 1087,
+      "plain": "The cloth over this woman’s firm breasts is like the cover over the eyes of a rutting elephant.",
+      "pm": "The cloth over this woman’s firm breasts is like the face-cover on a rutting elephant, because it keeps them from killing. Modest women naturally cover themselves. Through the cloth he sees their heat and size. The simile means that if they were uncovered even a little, they would kill.",
+      "tag": "adds",
+      "context": "He speaks of the pain her breasts give him.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "d9658bf8f7ef1e6b",
+          "quote": "this woman’s firm breasts"
+        },
+        {
+          "id": "f15a39f6feb21220",
+          "quote": "the cover over the eyes of a rutting elephant",
+          "reason": "Her cloth works like the cover hung over a rutting elephant’s eyes."
+        }
+      ]
+    },
+    {
+      "n": 1088,
+      "plain": "Oh, that bright forehead! My strength, feared in battle even by those who never faced me, has broken before it.",
+      "pm": "My strength, which enemies who never faced me on the field feared from what they heard, has been destroyed by this woman’s one bright forehead. The strength is of mind and of body. “Oh” marks wonder at how great it was and how small the forehead. He is grieving for what is lost, so this isn’t boasting.",
+      "tag": "agrees",
+      "context": "He speaks of the pain her forehead gives him.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "415616f2c0e870e4",
+          "quote": "has broken before it"
+        }
+      ]
+    },
+    {
+      "n": 1089,
+      "plain": "She has the shy look of a doe, and modesty. What is the use of decking her with ornaments that are strangers to her?",
+      "pm": "She has outwardly the shy look of a doe and inwardly modesty. These ornaments are one with her. What use is it to make others, strangers to her, and put them on her? Those who adorned her lacked sense, not seeing that they weigh on her and torment him.",
+      "tag": "adds",
+      "context": "He speaks of the pain the beauty of her ornaments gives him.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "dc4051396e5b496d",
+          "quote": "What is the use of decking her with ornaments",
+          "reason": "Finds her charm so complete that other ornaments are no use."
+        },
+        {
+          "id": "2343eee6c354f259",
+          "quote": "the shy look of a doe, and modesty"
+        },
+        {
+          "id": "42f1a6cde7f437a5",
+          "quote": "ornaments that are strangers to her",
+          "reason": "Takes the jewels away and gives her a look and modesty to wear instead."
+        }
+      ]
+    },
+    {
+      "n": 1090,
+      "plain": "Brewed liquor gives joy only to those who drink it. It can’t delight those who merely see, as desire does.",
+      "pm": "Brewed liquor gives joy only to those who have drunk it. It doesn’t give joy to those who merely see it, as desire does. Desire here means the woman who is its object. Desire gives more joy than liquor, yet I can’t read what she means, so I haven’t had that joy.",
+      "tag": "adds",
+      "context": "He goes on, to himself. He has not yet read what she feels.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "51301bf7cb96073f",
+          "quote": "It can’t delight those who merely see, as desire does",
+          "reason": "Desire outdoes drink: it delights at a mere look."
+        },
+        {
+          "id": "dd39a99437355379",
+          "quote": "Brewed liquor gives joy only to those who drink it",
+          "reason": "Sets liquor, which has to be drunk, against desire, which only has to be seen."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

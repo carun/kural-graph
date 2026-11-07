@@ -1,0 +1,167 @@
+{
+  "chapter": 115,
+  "title": "Telling of the Gossip",
+  "note": "One who wants the secret love to go on tells her friend how the gossip helps. She and her friend, wanting marriage or elopement, tell him of it. It comes once shame has been given up.",
+  "couplets": [
+    {
+      "n": 1141,
+      "plain": "The gossip keeps my precious life going. By good fortune, most people don’t know that.",
+      "pm": "As gossip about her and me rises in the town, my precious life, suffering without her, holds on as if I had her. By a god’s doing, only I know this and the many who talk don’t. The gossip makes a woman so hard to reach seem easy, so it props up his life. If they knew, they would stop, and his life would go.",
+      "tag": "adds",
+      "context": "A false signal kept them apart. When he comes the next day, her friend tells him of the gossip and urges marriage. He answers.",
+      "speaker": "he",
+      "links": []
+    },
+    {
+      "n": 1142,
+      "plain": "Not knowing how rare she is, this woman with eyes like flowers, this town has made me a gift of gossip.",
+      "pm": "The town, not knowing how hard it is to reach this woman with eyes like flowers, makes her seem easy and kindly gives me gossip that links us. False signals and obstacles are what make her hard to reach. He says “gave” because the gossip is his support, and “this town” in thanks for the help.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "b49a10f9f4ddbd38",
+          "quote": "this town has made me a gift of gossip"
+        }
+      ]
+    },
+    {
+      "n": 1143,
+      "plain": "Isn’t the gossip the town knows a good thing for me? It feels as if I have what I haven’t got.",
+      "pm": "The gossip that comes from the town knowing of our union: isn’t it just what suits me? Hearing it, my heart feels the joy of that union without having it.",
+      "tag": "agrees",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "83c86b8b5ab16def",
+          "quote": "It feels as if I have what I haven’t got"
+        }
+      ]
+    },
+    {
+      "n": 1144,
+      "plain": "Gossip is what makes my desire grow. Without it, desire would lose its nature and shrink away.",
+      "pm": "My desire flowers on the gossip the town raises, and grows more and more. Without that gossip it would lose its nature, which is to give joy, and shrink to nothing.",
+      "tag": "agrees",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "ab937f3404beaacb",
+          "quote": "Gossip is what makes my desire grow",
+          "reason": "The gossip is what keeps his desire from shrinking away."
+        }
+      ]
+    },
+    {
+      "n": 1145,
+      "plain": "As getting drunk makes you want more toddy, so desire is sweeter each time it comes out in the open.",
+      "pm": "As drinking grows sweeter to drinkers each time they get drunk, my desire grows sweeter each time it becomes gossip. Such is the strength of my longing that even gossip gives me joy.",
+      "tag": "agrees",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "4110b4a7f3692e94",
+          "quote": "getting drunk makes you want more toddy",
+          "reason": "Coming into the open works on desire as getting drunk works on the thirst for toddy."
+        },
+        {
+          "id": "27557889f8034d3a",
+          "remove": "“The lover” came from the old English. The Tamil speaks only of desire, and he reads it as the speaker’s own."
+        }
+      ]
+    },
+    {
+      "n": 1146,
+      "plain": "We saw each other just one day, yet the gossip is like the snake seizing the moon.",
+      "pm": "I saw my lover only once. The gossip from that hasn’t stopped there. It has spread through the whole world, like word of the snake seizing the moon. A love that spreads gossip even without meetings can’t go on. He must marry me.",
+      "tag": "adds",
+      "context": "Obstacles and false signals keep her from him. With him within earshot, she speaks to her friend of the gossip, to press for marriage.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "c1dc58c9800a1af1",
+          "quote": "the snake seizing the moon",
+          "reason": "The eclipse is a snake seizing the moon, news that spreads through the whole world."
+        }
+      ]
+    },
+    {
+      "n": 1147,
+      "plain": "The town’s gossip is the manure and my mother’s words the water, and this sickness grows on.",
+      "pm": "This sickness of desire is a crop. The gossip raised by the women of the town is its manure, and the harsh words my mother says on hearing it are its water, and it grows. The very things that should shrink it make it spread. The aim is to make him marry her.",
+      "tag": "adds",
+      "context": "Marriage is delayed and she can’t bear it. He is within earshot, and her friend tells her to bear up because of the gossip and her mother’s words. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "4f64835fbfa987e5",
+          "quote": "The town’s gossip is the manure",
+          "reason": "Talk and a mother’s harsh words are manure and water, feeding the very thing they oppose."
+        },
+        {
+          "id": "4bd85da2a43aac7a",
+          "quote": "this sickness grows on"
+        },
+        {
+          "id": "37af005e4aa86e38",
+          "quote": "The town’s gossip is the manure and my mother’s words the water"
+        }
+      ]
+    },
+    {
+      "n": 1148,
+      "plain": "To say you will put out desire with gossip is like saying you will put out a fire with ghee.",
+      "pm": "To think that the gossip strangers raise will put out our desire is like thinking that ghee will put out a fire. What stirs it up can’t put it out.",
+      "tag": "agrees",
+      "context": "She goes on, answering her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "193b2101a91a13c9",
+          "quote": "put out a fire with ghee",
+          "reason": "Desire is a flame, and the gossip is ghee poured on it."
+        },
+        {
+          "id": "7b403e8a529086dd",
+          "quote": "To say you will put out desire with gossip"
+        }
+      ]
+    },
+    {
+      "n": 1149,
+      "plain": "He told me not to be afraid, and then left me, to the shame of many. Can I still be ashamed of gossip?",
+      "pm": "The man who said when we met, “I won’t leave you, don’t be afraid,” has himself left me, so that all who see it are ashamed. Can I then feel shame at strangers’ gossip? I can’t. I am in a state that shames those who see me, so where would my shame come from?",
+      "tag": "agrees",
+      "context": "He has left, promising marriage, and she can’t bear it. He is back within earshot, and she answers her friend, who says to bear up for fear of gossip.",
+      "speaker": "she",
+      "links": []
+    },
+    {
+      "n": 1150,
+      "plain": "This town is raising the gossip we wanted. If he wishes, your lover will be kind.",
+      "pm": "We have long wanted this gossip, because it could lead to going away together, and the town is raising it for us. Now, if we ask, your lover will gladly agree, so the gossip has come as a good thing. She says “lover” to show that he loves us and won’t refuse.",
+      "tag": "adds",
+      "note": "The words say “if he wishes”. He reads it as “if we ask”.",
+      "context": "With him within earshot, her friend speaks to her of the gossip, so that he will want to take her away with him.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "8dee1e3dcce3f071",
+          "quote": "This town is raising the gossip we wanted",
+          "reason": "The town has unwittingly done them a favour with its gossip."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "6e978e6dd3dc1abe",
+      "quote": "Gossip is what makes my desire grow",
+      "reason": "Far from ending desire, the gossip is said outright to make it grow."
+    }
+  ]
+}

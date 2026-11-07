@@ -1,0 +1,156 @@
+{
+  "chapter": 88,
+  "title": "Knowing the Ways of Enmity",
+  "note": "He weighs the fault of making unworthy enmity, which enemies to turn into friends or neutrals, what to do with each, how and when to remove the rest, and the harm of failing to.",
+  "couplets": [
+    {
+      "n": 871,
+      "plain": "Enmity is a graceless thing. No one should want it, even in jest.",
+      "pm": "Enmity, the thing that brings harm, is not to be wanted even in play: that is the teaching of statecraft. Making an unworthy enmity brings only harm. Seek it even for fun, and real hatred grows and makes it true. Not wanting it is the settled view of the ancients.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "dd0d104b99eee0d3",
+          "quote": "No one should want it, even in jest",
+          "reason": "So graceless a thing that no one should want it, even in jest."
+        }
+      ]
+    },
+    {
+      "n": 872,
+      "plain": "Even if you make enemies of ploughmen whose plough is the bow, don’t make enemies of ploughmen whose plough is the word.",
+      "pm": "The word here means statecraft. Of the two powers, valour and counsel, enmity with the merely valiant doesn’t always bring ruin, and if it does it falls on you alone. Enmity with men of counsel surely reaches your descendants too. “Even if” shows that the first is no good either, and enmity with those who have both goes without saying.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "dd5b329459b5b36e",
+          "quote": "ploughmen whose plough is the word",
+          "reason": "Rates the ploughmen of the word as more dangerous to cross than those of the bow."
+        },
+        {
+          "id": "f6e0705787837ed2",
+          "quote": "ploughmen whose plough is the bow"
+        },
+        {
+          "id": "d2aa51db372e99b6",
+          "quote": "whose plough is the word",
+          "reason": "Both are ploughmen here, one with the bow for a plough and one with the word."
+        }
+      ]
+    },
+    {
+      "n": 873,
+      "plain": "A man who stands alone and makes enemies of many is more foolish than the mad.",
+      "pm": "A man who, alone, takes on the enmity of many is worse off than the mad. Alone means without kin, friends or army. The mad are as confused, but they come to no harm by it. He does: even with allies victory is in doubt, and without them he is destroyed, whether they fight him one by one or together.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "0391cb9025e34af6",
+          "quote": "more foolish than the mad"
+        },
+        {
+          "id": "5e4dca3a1ec306bc",
+          "quote": "stands alone and makes enemies of many"
+        }
+      ]
+    },
+    {
+      "n": 874,
+      "plain": "The world rests in the greatness of one whose nature is to make friends of enemies.",
+      "pm": "This world lies within the greatness of the ruler whose way is, when needed, to draw an enemy out of enmity, make him a friend, and live by statecraft. Greatness means power of two kinds, wealth and army. The world never fails to follow that power, so he says “rests” as if it were already done.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "694cb3cf79cc67b3",
+          "quote": "make friends of enemies",
+          "reason": "Praises making friends of enemies as the way to hold the world."
+        }
+      ]
+    },
+    {
+      "n": 875,
+      "plain": "You have no ally, you have two enemies, and you are alone. Make one of the two your good ally.",
+      "pm": "You have no ally to help you and two enemies pressing you. Alone as you are, take the one that suits you and make it a sweet ally for that time. The one that suits is the one fit for defeating the other, and that time is the time of defeating it. “Good” means make sure it doesn’t turn.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "c5272256f7836183",
+          "quote": "Make one of the two your good ally"
+        }
+      ]
+    },
+    {
+      "n": 876,
+      "plain": "Whether you have trusted him or not, in a time of ruin neither join with him nor break from him. Leave him be.",
+      "pm": "Whether or not you trusted an enemy before, when some outside matter has brought you low, don’t join him and don’t part from him. Leave him in between. If you trusted him, don’t join him then, because he could ruin you from within. If you didn’t, don’t break with him then, because he could add to your ruin. This is the enemy to make neutral.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "4eef948be3597c10",
+          "quote": "in a time of ruin",
+          "reason": "A time of ruin is the wrong time to fix anyone as friend or foe."
+        }
+      ]
+    },
+    {
+      "n": 877,
+      "plain": "Don’t tell your pain to those who don’t already know it. Don’t show weakness to your enemies.",
+      "pm": "Don’t speak of your pain to friends who don’t see it for themselves. Don’t let enemies who are watching for your weakness see it. Saying what to avoid with enemies, he also says what to avoid with friends.",
+      "tag": "agrees",
+      "sensitive": "Could deter someone in distress from confiding",
+      "links": [
+        {
+          "id": "8e31ec927d4f8b30",
+          "quote": "Don’t show weakness to your enemies"
+        }
+      ]
+    },
+    {
+      "n": 878,
+      "plain": "Know the way, build yourself up and guard yourself, and your enemies’ pride will die.",
+      "pm": "Know how to act, strengthen yourself to suit the task and guard yourself against neglect, and your enemies’ glee fades. The way means fighting face to face when strong, avoiding battle when weak, and so on. Strengthening means wealth and army. Their glee is the happy thought of victory. Seeing you firm, they subside of themselves.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "a8d391a660af2352",
+          "quote": "Know the way, build yourself up and guard yourself",
+          "reason": "Knowing the way, building yourself up and guarding yourself are what bring a proud enemy down."
+        },
+        {
+          "id": "1279a791fe37f0c0",
+          "quote": "your enemies’ pride will die"
+        }
+      ]
+    },
+    {
+      "n": 879,
+      "plain": "Kill a thorn tree while it is young. Once it has hardened, it will kill the hand that cuts it.",
+      "pm": "Clear a thorn tree that has to go while it is young. Wait till it is old, and it clears the hand of the one clearing it. He means an enemy who must be removed: remove him while he is weak. If you try when he is strong, he will remove you. This is the time for removal.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "3a7b093c13975c52",
+          "quote": "while it is young"
+        },
+        {
+          "id": "e02f4ee27b640233",
+          "quote": "Kill a thorn tree while it is young"
+        }
+      ]
+    },
+    {
+      "n": 880,
+      "plain": "Those who fail to crush the pride of their foes surely won’t live even to draw breath.",
+      "pm": "Rulers who could destroy the arrogance of those who oppose them, yet in contempt don’t do so, surely won’t live later even to breathe. Those foes will grow strong and certainly destroy them, so they are as good as dead. It can also mean that they die the moment those foes breathe.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "4ece816941b43343",
+          "quote": "fail to crush the pride of their foes",
+          "reason": "Gives short life to those who leave the pride of their foes unbroken."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

@@ -1,0 +1,162 @@
+{
+  "chapter": 124,
+  "title": "Her Beauty Wastes Away",
+  "note": "Her eyes, arms, forehead and other features lose their beauty. This happens when grief is at its height, so the chapter follows the one on grieving at evening.",
+  "couplets": [
+    {
+      "n": 1231,
+      "plain": "He went far away and left us this misery. As you think of him, your eyes now shrink in shame before sweet flowers.",
+      "pm": "He went far away and left this misery with us. You think of him and weep, so your eyes have lost their light, and the fragrant flowers that were once ashamed before them now shame them. Anyone who sees this will call him cruel, so you must bear it.",
+      "tag": "adds",
+      "context": "She has changed, because the pain is more than she can bear. Her friend says this to her.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "1895930590f1c951",
+          "quote": "your eyes now shrink in shame",
+          "reason": "Her eyes feel shame as a person would, now that thinking of him has dimmed them."
+        },
+        {
+          "id": "64cdf85ed58ad42e",
+          "quote": "before sweet flowers"
+        }
+      ]
+    },
+    {
+      "n": 1232,
+      "plain": "Your eyes, pale and streaming with tears, seem to be telling of the unkindness of the one you long for.",
+      "pm": "Your eyes have turned pale and now run with tears. They seem to tell others that the man we long for shows us no kindness, because from them people can infer it. So you must bear this. Some have a text in which the eyes tell him.",
+      "tag": "agrees",
+      "context": "Her friend goes on.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "7a6f7bffec04b080",
+          "quote": "streaming with tears",
+          "reason": "Her tears run and tell others what she would rather keep to herself."
+        },
+        {
+          "id": "d2647c16e69167a9",
+          "quote": "seem to be telling of the unkindness"
+        }
+      ]
+    },
+    {
+      "n": 1233,
+      "plain": "Your arms, which swelled on the day he wed you, seem to be proclaiming that he has gone.",
+      "pm": "Your arms, which swelled with joy on the day he wed you, are thinning today as if to make his leaving plain. This is not right. If they swelled then and thin now, anyone who has seen both will soon understand, and will say he has no decency.",
+      "tag": "adds",
+      "context": "Her friend goes on.",
+      "speaker": "maid",
+      "links": []
+    },
+    {
+      "n": 1234,
+      "plain": "With your companion gone, your arms have lost their old beauty. Now they shrink and the gold bangles slip away.",
+      "pm": "When your companion left, these arms lost the beauty he gave them and their old natural beauty too. Now they have lost their fullness as well, and the gold bangles slip off. They shouldn’t do this. Then they showed that he has no loving-kindness, and now that he lied, not coming in the agreed season. Can those who say so be blamed?",
+      "tag": "adds",
+      "context": "Her friend goes on.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "51c9580b42dec6c7",
+          "quote": "the gold bangles slip away",
+          "reason": "Her arms have thinned since he left, until the gold bangles slip away."
+        }
+      ]
+    },
+    {
+      "n": 1235,
+      "plain": "Your arms, their bangles gone and their old beauty withered, tell of the cruelty of a cruel man.",
+      "pm": "You couldn’t bear it even when his embrace loosened, and the cruel man never thought what so long a time would do to you. These arms, their bangles gone and their old beauty lost, tell of his cruelty themselves, so how can we hide it? If the arms that held him say it, what need is there for outsiders to speak?",
+      "tag": "adds",
+      "context": "Her friend goes on.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "b8a6ea92d731446b",
+          "quote": "their bangles gone and their old beauty withered, tell of the cruelty"
+        }
+      ]
+    },
+    {
+      "n": 1236,
+      "plain": "My arms grow thin and my bangles slip, and I ache to hear him called cruel.",
+      "pm": "I do bear it, but beyond my control my arms thin and my bangles slip. You see that and call him cruel, and I can’t stand it, and I ache inside. What I can’t bear isn’t his staying away. It is what you say.",
+      "tag": "adds",
+      "context": "Her friend has blamed him to help her bear it. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "2ddfc4eb2de76cb1",
+          "quote": "my bangles slip",
+          "reason": "Her thin arms and slipping bangles draw the charge that he is cruel, and that charge is what hurts her."
+        }
+      ]
+    },
+    {
+      "n": 1237,
+      "plain": "Will you win glory, my heart, by telling that cruel man about the uproar over my wasting arms?",
+      "pm": "My heart, go to the man she calls cruel, tell him of the uproar over my wasting arms, and can you win some honour? If so, nothing could equal it. “Cruel” implies he isn’t, and the arms waste of themselves. Once he hears you he will come and all this will end, a good deed done in time, and you will have its whole reward.",
+      "tag": "adds",
+      "context": "She can’t bear to hear him blamed, and she says this to her heart.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "a5d5c68b7d816464",
+          "quote": "Will you win glory, my heart"
+        }
+      ]
+    },
+    {
+      "n": 1238,
+      "plain": "When I loosened my arms in our embrace, the forehead of that simple girl in gold bangles turned pale.",
+      "pm": "One day I loosened the arms that held her tight, thinking it would hurt her. She couldn’t bear even that, and the forehead of that simple girl in gold bangles turned pale. What will such a forehead do in this separation? I must go back quickly.",
+      "tag": "adds",
+      "context": "His work is done and he is about to return. He remembers the past and says this to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "f9f9d3e2361444ec",
+          "quote": "the forehead of that simple girl in gold bangles turned pale",
+          "reason": "A moment’s slackening of his arms is parting enough to drain her forehead."
+        }
+      ]
+    },
+    {
+      "n": 1239,
+      "plain": "When a cool breeze cut through our embrace, the simple girl’s great rain-cool eyes turned pale.",
+      "pm": "As I loosened my arms, a small breeze slipped in between us. Her large cool eyes couldn’t bear even that gap and turned pale. How have such eyes borne all that lies between us now, the mountains, forests and lands? “Cut through” shows that the two bodies had become one.",
+      "tag": "adds",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "1526ea90f8f188db",
+          "quote": "a cool breeze cut through our embrace"
+        }
+      ]
+    },
+    {
+      "n": 1240,
+      "plain": "Even the pallor in her eyes suffered when it saw what her bright forehead had done.",
+      "pm": "The pallor in her eyes suffered when it saw the pallor made by her bright forehead. The forehead paled as soon as my arms loosened. The eyes paled only when a breeze came between us, and they were ashamed of their hardness beside its tenderness. So her features race each other to lose their beauty, and I must hurry.",
+      "tag": "adds",
+      "context": "He goes on, to himself.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "375e5b3ac29928e2",
+          "quote": "the pallor in her eyes suffered",
+          "reason": "Pallor is treated as a person: the pallor in her eyes suffers at what her forehead has done."
+        },
+        {
+          "id": "bf6c5e9f57c0f031",
+          "quote": "when it saw what her bright forehead had done",
+          "reason": "Her eyes look on like a person, distressed at what her forehead has done."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

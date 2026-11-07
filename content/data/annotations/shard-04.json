@@ -1,0 +1,3574 @@
+{
+ "shard": "shard-04",
+ "chapters": [
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57
+ ],
+ "couplets": [
+  {
+   "n": 441,
+   "gloss": "Seek out people who have spent a long life doing right, treat them with respect, and work at winning their friendship.",
+   "keywords": [
+    "wise elders",
+    "respecting seniors",
+    "choosing friends carefully",
+    "older role models"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Urges winning the friendship of those whom long right living has matured.",
+     "quote": "the friendship of the wise"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "Its subject is the elder seasoned by years of doing right.",
+     "quote": "who know righteousness and have grown old in it"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:looking-for-a-mentor",
+     "basis": "explicit",
+     "reason": "Points anyone seeking a guide towards those long practised in right living.",
+     "quote": "choose with care the friendship of the wise"
+    }
+   ]
+  },
+  {
+   "n": 442,
+   "gloss": "Make a real effort to stay close to people who can get you out of the trouble you're in and keep the next trouble away.",
+   "keywords": [
+    "trusted advisers",
+    "troubleshooters",
+    "people who protect you",
+    "valuable connections"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Prizes as friends those who can mend today's trouble and head off tomorrow's.",
+     "quote": "cultivate thou their friendship with ardour"
+    }
+   ]
+  },
+  {
+   "n": 443,
+   "gloss": "Few things are harder to come by than having truly great people care about you and treat you as one of their own.",
+   "keywords": [
+    "good fortune",
+    "influential allies",
+    "role models",
+    "finding a mentor"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Ranks making the great your own as the rarest thing of all.",
+     "quote": "to cherish the great and make them your own"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "Concerns the great themselves, and how rare it is to make them your own.",
+     "quote": "cherish the great"
+    }
+   ]
+  },
+  {
+   "n": 444,
+   "gloss": "Having people better than you as your close companions gives you more strength than anything else could.",
+   "keywords": [
+    "surrounding yourself with better people",
+    "smartest person in the room",
+    "power of allies"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Holds that closeness with one's betters outmatches every other kind of strength.",
+     "quote": "the highest of all strengths"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "Speaks of people who stand above oneself in worth.",
+     "quote": "those greater than you"
+    }
+   ]
+  },
+  {
+   "n": 445,
+   "gloss": "A ruler sees his realm through his advisers, so he must look hard at them before he picks them.",
+   "keywords": [
+    "choosing advisers",
+    "cabinet",
+    "leadership team",
+    "who you listen to"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Tells the ruler himself to take care in picking his councillors.",
+     "quote": "he should choose them with care"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:minister",
+     "basis": "explicit",
+     "reason": "Says what his advisers are to a ruler: the eyes he goes forward with.",
+     "quote": "his advisers as his eyes"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "A ruler goes forward with his advisers serving as his eyes.",
+     "quote": "his advisers as his eyes"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "inferred",
+     "reason": "Since a ruler goes by his advisers, they must be weighed before being taken on.",
+     "quote": "choose them with care"
+    }
+   ]
+  },
+  {
+   "n": 446,
+   "gloss": "Someone who can live as one of a circle of good people has nothing to fear from those who wish them harm.",
+   "keywords": [
+    "protected by friends",
+    "strong network",
+    "enemies",
+    "safety in good connections"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Standing among the worthy leaves one's enemies with nothing they can do.",
+     "quote": "keep worthy company"
+    }
+   ]
+  },
+  {
+   "n": 447,
+   "gloss": "Nobody can bring you down if you keep friends who will tell you to your face when you're wrong.",
+   "keywords": [
+    "honest friends",
+    "yes men",
+    "accountability",
+    "candid feedback"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:openness-to-rebuke",
+     "basis": "explicit",
+     "reason": "Puts beyond ruin anyone who keeps companions able to rebuke them.",
+     "quote": "companions who will rebuke you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:hearing-a-hard-truth",
+     "basis": "inferred",
+     "reason": "For anyone stung by criticism: such critics are what keeps a person from ruin.",
+     "quote": "who has the power to ruin you"
+    }
+   ]
+  },
+  {
+   "n": 448,
+   "gloss": "A ruler with nobody around to challenge him will fall without any enemy having to lift a finger.",
+   "keywords": [
+    "echo chamber",
+    "yes men",
+    "leaders without critics",
+    "self-inflicted downfall"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:openness-to-rebuke",
+     "basis": "explicit",
+     "reason": "Shows the price of having no one to rebuke him: ruin with no enemy in sight.",
+     "quote": "will fall even with no one to bring him down"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Turns the point on the ruler who lets himself go unchallenged.",
+     "quote": "A ruler with no one to rebuke him"
+    }
+   ]
+  },
+  {
+   "n": 449,
+   "gloss": "You can't make a profit without capital, and you can't stay steady in life without wise people to lean on.",
+   "keywords": [
+    "support network",
+    "stability",
+    "leaning on others",
+    "investing in relationships"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "As trade needs capital, standing firm needs someone to lean on.",
+     "quote": "a prop to lean on"
+    }
+   ]
+  },
+  {
+   "n": 450,
+   "gloss": "Making lots of enemies is stupid, but walking away from good friends does ten times more damage.",
+   "keywords": [
+    "losing good friends",
+    "burning bridges",
+    "drifting apart",
+    "friendships ending"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Counts dropping good companions as ten times worse than raising a host of foes.",
+     "quote": "ten times worse"
+    }
+   ]
+  },
+  {
+   "n": 451,
+   "gloss": "Truly great people steer clear of a bad crowd, while petty people treat that same crowd as their relatives.",
+   "keywords": [
+    "wrong crowd",
+    "low company",
+    "who you hang out with",
+    "bad friends"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Shows the worthy shrinking from the low crowd that smaller men embrace.",
+     "quote": "Greatness fears petty company"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "A small nature gives itself away by feeling at home among the vulgar.",
+     "quote": "Pettiness treats it as kin"
+    }
+   ]
+  },
+  {
+   "n": 452,
+   "gloss": "Just as water picks up the qualities of the ground it runs through, your mind picks up the qualities of the people around you.",
+   "keywords": [
+    "peer pressure",
+    "you become who you hang out with",
+    "influence of friends",
+    "environment shapes you"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "States how company works: it changes understanding as the ground changes water.",
+     "quote": "People’s understanding takes on the nature of their company"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:bad-influence",
+     "basis": "explicit",
+     "reason": "Warns someone in a bad circle that their understanding will take on its nature.",
+     "quote": "takes on the nature of their company"
+    }
+   ]
+  },
+  {
+   "n": 453,
+   "gloss": "What you perceive comes from your own mind, but what people call you comes from who you are seen with.",
+   "keywords": [
+    "guilt by association",
+    "public image",
+    "judged by your friends",
+    "reputation"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Says a man's name in the world is settled by the people he keeps.",
+     "quote": "What people call them comes from their company"
+    }
+   ]
+  },
+  {
+   "n": 454,
+   "gloss": "Your character looks like it comes from within, but it really sits with the people you spend your time with.",
+   "keywords": [
+    "who you really are",
+    "social conditioning",
+    "character shaped by friends",
+    "self-image"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Moves a person’s understanding out of the mind and into the company they keep.",
+     "quote": "it lies in their company"
+    }
+   ]
+  },
+  {
+   "n": 455,
+   "gloss": "Having a clean mind and doing clean deeds both come from keeping clean company.",
+   "keywords": [
+    "good influences",
+    "staying honest",
+    "integrity",
+    "role of friends"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Makes clean company the ground on which clean thought and clean deeds both stand.",
+     "quote": "both depend on pure company"
+    }
+   ]
+  },
+  {
+   "n": 456,
+   "gloss": "People with a clean mind leave a good line behind them, and those who keep good company find that nothing they do goes wrong.",
+   "keywords": [
+    "leaving a good legacy",
+    "raising good children",
+    "success through good friends"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Promises that what the pure of mind leave behind will be good.",
+     "quote": "What the pure of mind leave behind is good"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Says every undertaking goes well for those among good people.",
+     "quote": "no deed fails to turn out well"
+    }
+   ]
+  },
+  {
+   "n": 457,
+   "gloss": "A good heart is what really enriches a person, and being among good people brings every kind of honour.",
+   "keywords": [
+    "inner wealth",
+    "character over money",
+    "earning respect",
+    "good friends"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Credits goodness of mind with the prosperity it brings.",
+     "quote": "A good mind brings living beings prosperity"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Credits all of a man's honour to the virtuous people around him.",
+     "quote": "Good company brings every kind of glory"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Uses the word treasure for a state of heart, not for goods.",
+     "quote": "a treasure unto a man"
+    }
+   ]
+  },
+  {
+   "n": 458,
+   "gloss": "Even people who are already thoroughly good find that good companions make them far more secure.",
+   "keywords": [
+    "support from peers",
+    "even good people need support",
+    "strength in community",
+    "safety net"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Even the noble, whose minds are good, find protection in good company.",
+     "quote": "find protection in good company"
+    }
+   ]
+  },
+  {
+   "n": 459,
+   "gloss": "Goodness earns you a place in the next world, and good friends are what keep you practising it.",
+   "keywords": [
+    "staying on track",
+    "moral support",
+    "afterlife",
+    "spiritual community"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Even the next world, which comes from a good mind, finds its protection in good company.",
+     "quote": "finds its protection in good company"
+    }
+   ]
+  },
+  {
+   "n": 460,
+   "gloss": "Nothing helps you more than being around good people, and nothing hurts you more than being around bad ones.",
+   "keywords": [
+    "toxic friends",
+    "choosing friends",
+    "supportive people",
+    "bad crowd"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Names good company the best ally a person can have.",
+     "quote": "no help greater than good company"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:bad-influence",
+     "basis": "explicit",
+     "reason": "Anyone weighing up their circle should know that no harm outdoes the wrong people.",
+     "quote": "nothing causes more grief than bad company"
+    }
+   ]
+  },
+  {
+   "n": 461,
+   "gloss": "Before you start anything, work out what it will cost you, what you could lose and what you stand to gain.",
+   "keywords": [
+    "cost benefit analysis",
+    "business plan",
+    "return on investment",
+    "risk assessment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Asks for cost, loss and gain to be reckoned before the first move.",
+     "quote": "Weigh what will be lost, what will be gained"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:starting-something-new",
+     "basis": "explicit",
+     "reason": "Gives anyone planning a venture the first job: weigh loss, gain and later profit.",
+     "quote": "the profit it will bring later, then act"
+    }
+   ]
+  },
+  {
+   "n": 462,
+   "gloss": "A leader who decides only after talking it through with carefully chosen advisers can achieve anything.",
+   "keywords": [
+    "consulting advisers",
+    "taking advice before deciding",
+    "trusted team",
+    "decision making"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Nothing is out of reach for one who decides only after counsel with proven men.",
+     "quote": "examine a task with people they have chosen"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Puts this to a ruler with councillors to draw on.",
+     "quote": "Behold the prince who decideth upon action"
+    }
+   ]
+  },
+  {
+   "n": 463,
+   "gloss": "Sensible people stay away from ventures that dangle big returns but could wipe out everything you put in.",
+   "keywords": [
+    "get rich quick",
+    "risky investment",
+    "too good to be true",
+    "investment scams",
+    "losing your savings"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "inferred",
+     "reason": "The wise look past the promised gain to what the venture could cost them.",
+     "quote": "The wise won’t start a venture"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:starting-something-new",
+     "basis": "explicit",
+     "reason": "Warns off any venture that tempts with profit and risks the capital itself.",
+     "quote": "looks for profit and loses the capital"
+    }
+   ]
+  },
+  {
+   "n": 464,
+   "gloss": "People who don't want to look foolish never begin a thing until they're clear about it.",
+   "keywords": [
+    "fear of embarrassment",
+    "losing face",
+    "thinking it through first",
+    "being laughed at"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Dread of ridicule keeps such men from starting anything they have not thought out.",
+     "quote": "won’t begin what they are not sure of"
+    }
+   ]
+  },
+  {
+   "n": 465,
+   "gloss": "Going to war without a full plan just hands your enemy a well-prepared place to grow strong.",
+   "keywords": [
+    "battle planning",
+    "unprepared for conflict",
+    "helping your rival",
+    "strategy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Demands that every detail be planned before one marches, or the enemy profits.",
+     "quote": "without thinking through every side of it"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Shows what a war begun without planning costs: it strengthens the foe.",
+     "quote": "planting your enemies"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Pictures the rash fighter bedding out his enemy like a seedling in ready soil.",
+     "quote": "planting your enemies in a prepared bed"
+    }
+   ]
+  },
+  {
+   "n": 466,
+   "gloss": "Doing what you shouldn't will ruin you, and so will failing to do what you should.",
+   "keywords": [
+    "sins of omission",
+    "doing nothing",
+    "inaction has consequences",
+    "knowing what to do"
+   ],
+   "edges": []
+  },
+  {
+   "n": 467,
+   "gloss": "Think before you commit: telling yourself you'll think it over once you've begun is a fool's mistake.",
+   "keywords": [
+    "acting on impulse",
+    "rash decisions",
+    "look before you leap",
+    "regret"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Forbids starting first and promising oneself to think it over later.",
+     "quote": "Think, then commit to the task"
+    }
+   ]
+  },
+  {
+   "n": 468,
+   "gloss": "Work done the wrong way fails, however many people pitch in to save it.",
+   "keywords": [
+    "wrong approach",
+    "wasted effort",
+    "working smarter",
+    "too many helpers"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "inferred",
+     "reason": "A wrong method wastes all the labour, whatever numbers are added to the task.",
+     "quote": "Effort not made the right way will crack"
+    }
+   ]
+  },
+  {
+   "n": 469,
+   "gloss": "You can get it wrong even when you mean well, if what you do for someone doesn't suit who they are.",
+   "keywords": [
+    "well-intentioned mistakes",
+    "unwanted help",
+    "knowing the person",
+    "choosing the right gift"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "inferred",
+     "reason": "Even a kindness must be thought out against the nature of the one receiving it.",
+     "quote": "Even doing good can go wrong"
+    }
+   ]
+  },
+  {
+   "n": 470,
+   "gloss": "Only take on what can't be criticised, because people look down on anyone who does something beneath them.",
+   "keywords": [
+    "what people think",
+    "choosing projects",
+    "public opinion",
+    "professional standards"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "The world scorns what doesn’t suit you, so choose only what no one will scorn.",
+     "quote": "do what no one will scorn"
+    }
+   ]
+  },
+  {
+   "n": 471,
+   "gloss": "Before you begin, size up the job, your own power, your opponent's power and the backing each side can call on.",
+   "keywords": [
+    "sizing up the competition",
+    "assessing your chances",
+    "swot analysis",
+    "knowing your limits"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "explicit",
+     "reason": "Lists what to weigh before acting: the task, oneself, the enemy, and both sets of allies.",
+     "quote": "Weigh the strength of the task, your own strength"
+    }
+   ]
+  },
+  {
+   "n": 472,
+   "gloss": "A ruler who knows what he can do, learns what he needs to and stays inside that will never see a campaign fail.",
+   "keywords": [
+    "knowing your capabilities",
+    "staying in your lane",
+    "realistic goals",
+    "military success"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "explicit",
+     "reason": "Promises unfailing success to one who stays inside his own known force.",
+     "quote": "know what they can do"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks of a ruler planning campaigns against other lands.",
+     "quote": "his invasions will never fail"
+    }
+   ]
+  },
+  {
+   "n": 473,
+   "gloss": "Plenty of people have got carried away, misjudged how strong they were, charged in and been destroyed halfway through.",
+   "keywords": [
+    "overconfidence",
+    "overreaching",
+    "failing halfway",
+    "biting off too much"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "explicit",
+     "reason": "Points to the many who misjudged their own force and fell midway.",
+     "quote": "not knowing the strength they have"
+    }
+   ]
+  },
+  {
+   "n": 474,
+   "gloss": "Anyone who won't get along with others, doesn't know their own limits and admires themselves is soon finished.",
+   "keywords": [
+    "big ego",
+    "self-importance",
+    "quarrelsome people",
+    "downfall"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "explicit",
+     "reason": "Not knowing one's measure is one of three faults that bring a swift end.",
+     "quote": "don’t know their measure"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:arrogance",
+     "basis": "explicit",
+     "reason": "Self-admiration joins the list of what ruins a man quickly.",
+     "quote": "admire themselves"
+    }
+   ]
+  },
+  {
+   "n": 475,
+   "gloss": "Even something as light as peacock feathers will snap a cart's axle if you keep piling them on.",
+   "keywords": [
+    "last straw",
+    "too many small tasks",
+    "too many enemies at once",
+    "small burdens add up"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "inferred",
+     "reason": "However light each load, a limit stands beyond which the whole thing breaks.",
+     "quote": "if you pile them too high"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:cart-and-axle",
+     "basis": "explicit",
+     "reason": "A cart’s axle gives way under a mass of peacock feathers.",
+     "quote": "a cart loaded with peacock feathers will break its axle"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:taken-on-too-much",
+     "basis": "explicit",
+     "reason": "Shows someone overcommitted how many light loads, added up, can snap the axle.",
+     "quote": "will break its axle, if you pile them too high"
+    }
+   ]
+  },
+  {
+   "n": 476,
+   "gloss": "Once you've reached the very tip of the branch, trying to go higher will kill you.",
+   "keywords": [
+    "knowing when to stop",
+    "pushing too far",
+    "overextended",
+    "peak"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "inferred",
+     "reason": "One who has reached his limit and presses on throws away his life.",
+     "quote": "try to go further"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "explicit",
+     "reason": "The topmost branch stands for the utmost reach of a person's strength.",
+     "quote": "the top of the tree"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:taken-on-too-much",
+     "basis": "inferred",
+     "reason": "For one already at full stretch, the next step up is the dangerous one.",
+     "quote": "will lose their life"
+    }
+   ]
+  },
+  {
+   "n": 477,
+   "gloss": "Give according to what you can actually afford: that's how you look after your money and still share it.",
+   "keywords": [
+    "how much to give",
+    "donating within your means",
+    "financial planning",
+    "budgeting for gifts"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Ties the size of one's gifts to the size of one's means.",
+     "quote": "Give in the right way, knowing your limit"
+    }
+   ]
+  },
+  {
+   "n": 478,
+   "gloss": "A small income is no disaster as long as what goes out stays smaller than what comes in.",
+   "keywords": [
+    "income versus expenses",
+    "living on a small salary",
+    "cash flow",
+    "saving money"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "inferred",
+     "reason": "A thin inflow does no harm while the outflow is kept from outgrowing it.",
+     "quote": "as long as the way out is no wider"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:village-tank",
+     "basis": "explicit",
+     "reason": "Earning and spending are the channels that fill a tank and drain it.",
+     "quote": "the feeder channel"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:spending-too-much",
+     "basis": "explicit",
+     "reason": "Gives the overspender the whole rule: never let more run out than runs in.",
+     "quote": "the way out is no wider"
+    }
+   ]
+  },
+  {
+   "n": 479,
+   "gloss": "People who don't live within their means can seem to be doing well, then collapse and leave nothing behind.",
+   "keywords": [
+    "debt",
+    "keeping up appearances",
+    "looking rich",
+    "financial ruin"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "A life run past one's means may pass for prosperity until it vanishes.",
+     "quote": "A life not lived within its limit"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:spending-too-much",
+     "basis": "explicit",
+     "reason": "Warns the overspender that the look of prosperity is no proof of safety.",
+     "quote": "seems to be there"
+    }
+   ]
+  },
+  {
+   "n": 480,
+   "gloss": "If you give freely without checking what you really have, your money runs out fast.",
+   "keywords": [
+    "giving too much",
+    "overgenerous",
+    "blowing your savings",
+    "helping beyond your means"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Helping others without weighing what you have soon ruins your wealth.",
+     "quote": "without weighing what you have"
+    }
+   ]
+  },
+  {
+   "n": 481,
+   "gloss": "A crow can beat an owl in daylight, so a ruler who wants to win must pick his moment.",
+   "keywords": [
+    "timing in competition",
+    "competitive advantage",
+    "choosing when to strike",
+    "strategy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "The crow beats the owl only by day, so a ruler must choose his hour.",
+     "quote": "need the right time"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Given to the ruler who means to defeat an enemy.",
+     "quote": "Rulers who would beat their enemies"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:beasts-at-their-hour",
+     "basis": "explicit",
+     "reason": "The crow beats the owl only by day: every creature has its hour, and so has a ruler.",
+     "quote": "By day the crow beats the owl"
+    }
+   ]
+  },
+  {
+   "n": 482,
+   "gloss": "Moving in step with the seasons of things is the rope that keeps prosperity tied to you.",
+   "keywords": [
+    "keeping up with the times",
+    "holding on to success",
+    "good timing",
+    "staying relevant"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Keeping step with the season is the rope that holds prosperity fast.",
+     "quote": "Acting in step with the season"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "inferred",
+     "reason": "திரு, good fortune, is pictured as a restless thing that must be roped to stay.",
+     "quote": "a rope that ties good fortune down"
+    }
+   ]
+  },
+  {
+   "n": 483,
+   "gloss": "Nothing is out of reach if you begin at the right moment and with the right tools.",
+   "keywords": [
+    "right tools for the job",
+    "impossible tasks",
+    "planning a project",
+    "achieving goals"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "With the right season and means, the word impossible loses its meaning.",
+     "quote": "if you have the means and know the time"
+    }
+   ]
+  },
+  {
+   "n": 484,
+   "gloss": "You could win the whole world if you pick the right moment and the right place to act.",
+   "keywords": [
+    "ambition",
+    "right time and place",
+    "big goals",
+    "strategy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "The right hour would put even the whole world within one's grasp.",
+     "quote": "an eye to the time"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "inferred",
+     "reason": "Where you act counts along with when you act.",
+     "quote": "the time and the place"
+    }
+   ]
+  },
+  {
+   "n": 485,
+   "gloss": "People set on winning big wait calmly for their chance, without panicking or rushing.",
+   "keywords": [
+    "patience",
+    "playing the long game",
+    "staying calm under pressure",
+    "not rushing"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Those who aim at the whole world stay still and watch for the time.",
+     "quote": "watch for the time"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:is-this-the-right-time",
+     "basis": "explicit",
+     "reason": "While the moment is unclear, the counsel is to stay still and keep watching, unshaken.",
+     "quote": "stay still, unshaken"
+    }
+   ]
+  },
+  {
+   "n": 486,
+   "gloss": "When a driven person holds back, it's like a ram stepping backwards to gather force for the charge.",
+   "keywords": [
+    "strategic retreat",
+    "stepping back",
+    "holding back to gain strength",
+    "biding your time"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "inferred",
+     "reason": "A pause by the energetic is only the backward step before the blow.",
+     "quote": "When a person of spirit holds back"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:beasts-at-their-hour",
+     "basis": "explicit",
+     "reason": "The ram draws back before its blow, as a strong man waits before he acts.",
+     "quote": "a fighting ram drawing back to charge"
+    }
+   ]
+  },
+  {
+   "n": 487,
+   "gloss": "Smart people don't let their anger show right away; they keep it inside and wait for the right time.",
+   "keywords": [
+    "hiding your anger",
+    "keeping your cool",
+    "poker face",
+    "biding your time"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Even a grievance is held back until the moment comes to act on it.",
+     "quote": "watch for the time and burn within"
+    }
+   ]
+  },
+  {
+   "n": 488,
+   "gloss": "Put up with your opponents while they're strong; when their time of weakness comes, they'll fall easily.",
+   "keywords": [
+    "outlasting a rival",
+    "playing the long game",
+    "when to give way",
+    "waiting out an enemy"
+   ],
+   "sensitive": "counsels submitting to an adversary; could reach someone being abused",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Bows to an adversary only until his hour of decline comes round.",
+     "quote": "When you see their end"
+    }
+   ]
+  },
+  {
+   "n": 489,
+   "gloss": "When a rare opportunity comes along, don't hesitate: go straight for even the hardest thing.",
+   "keywords": [
+    "seizing the moment",
+    "carpe diem",
+    "once in a lifetime chance",
+    "big break"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "A rare opening is to be used at once, even on the hardest task.",
+     "quote": "at that very moment"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:is-this-the-right-time",
+     "basis": "explicit",
+     "reason": "An uncommon chance is the one time not to wait.",
+     "quote": "When what is hard to come by comes your way"
+    }
+   ]
+  },
+  {
+   "n": 490,
+   "gloss": "When conditions are against you, stay still like a waiting heron; when they turn, strike as fast as it does.",
+   "keywords": [
+    "wait and strike",
+    "patience then action",
+    "market timing",
+    "knowing when to act"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Asks for the heron’s stillness while you wait and its strike when your moment comes.",
+     "quote": "be like the heron"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:is-this-the-right-time",
+     "basis": "explicit",
+     "reason": "Gives the whole rule for one torn between acting and waiting: hold still, then strike.",
+     "quote": "be like its strike"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:beasts-at-their-hour",
+     "basis": "explicit",
+     "reason": "The heron stands idle until the moment comes, then strikes at once.",
+     "quote": "In the time for holding still, be like the heron"
+    }
+   ]
+  },
+  {
+   "n": 491,
+   "gloss": "Don't start a fight or any project, and don't write anyone off, until you have fully seen the ground you'd be working on.",
+   "keywords": [
+    "scouting the terrain",
+    "due diligence",
+    "doing your research",
+    "market research"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "Forbids any move until ground for a siege has been found.",
+     "quote": "until you have found the ground for a siege"
+    }
+   ]
+  },
+  {
+   "n": 492,
+   "gloss": "Even the mightiest gain a great deal by working from a fortified base.",
+   "keywords": [
+    "secure base",
+    "home base",
+    "defensive position",
+    "castle"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Even the strong profit by resting their power on strongholds.",
+     "quote": "a gain that rests on a stronghold"
+    }
+   ]
+  },
+  {
+   "n": 493,
+   "gloss": "Even the weaker side can stand firm and beat a stronger one by picking the right ground and moving with care.",
+   "keywords": [
+    "underdog strategy",
+    "david and goliath",
+    "home advantage",
+    "beating a bigger competitor"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "The right ground, used with care, lets the weak bring down the strong.",
+     "quote": "if they know the place"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:stronger-rival",
+     "basis": "explicit",
+     "reason": "Tells the outmatched side to fight only where the field favours it.",
+     "quote": "Even the weak grow strong and win"
+    }
+   ]
+  },
+  {
+   "n": 494,
+   "gloss": "Your opponents' plans come to nothing if you work from a strong position that you know well.",
+   "keywords": [
+    "strong position",
+    "defensive strategy",
+    "foiling opponents",
+    "home turf"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "Ground well chosen and held close undoes whatever the other side has planned.",
+     "quote": "lose their plan"
+    }
+   ]
+  },
+  {
+   "n": 495,
+   "gloss": "A crocodile rules in deep water, but out of it even its enemies can toy with it.",
+   "keywords": [
+    "out of your element",
+    "playing to your strengths",
+    "fish out of water",
+    "home advantage"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "inferred",
+     "reason": "Power belongs to the ground: the crocodile's rule ends at the water's edge.",
+     "quote": "In deep water the crocodile beats everything"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:beasts-at-their-hour",
+     "basis": "explicit",
+     "reason": "In deep water the crocodile rules, and out of it is a plaything: ground decides.",
+     "quote": "Out of the water, everything else beats it"
+    }
+   ]
+  },
+  {
+   "n": 496,
+   "gloss": "A sturdy chariot can't run on the sea and an ocean ship can't sail on land: each works only where it belongs.",
+   "keywords": [
+    "right tool for the job",
+    "playing to your strengths",
+    "staying in your domain",
+    "wrong role"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "inferred",
+     "reason": "Chariot and ship each count for nothing once off their own element.",
+     "quote": "can’t run on the sea"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:cart-and-axle",
+     "basis": "explicit",
+     "reason": "The mighty chariot is useless the moment it leaves the land.",
+     "quote": "Tall chariots with strong wheels"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "The great ship is as helpless ashore as the chariot is afloat.",
+     "quote": "Ships that run on the sea can’t run on land"
+    }
+   ]
+  },
+  {
+   "n": 497,
+   "gloss": "A leader who plans everything in advance and strikes from the right place needs nothing else but courage.",
+   "keywords": [
+    "thorough planning",
+    "self-reliance",
+    "going it alone",
+    "well-chosen target"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courage",
+     "basis": "explicit",
+     "reason": "Once all is planned, fearlessness is the only ally still required.",
+     "quote": "You need no help but fearlessness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "inferred",
+     "reason": "Acting to suit the place is part of what leaves no need for other help.",
+     "quote": "act to suit the place"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Drawn for a ruler deciding how to strike.",
+     "quote": "Behold the prince that hath planned everything beforehand"
+    }
+   ]
+  },
+  {
+   "n": 498,
+   "gloss": "A ruler with a small army can make a big army's efforts useless just by taking up the right ground.",
+   "keywords": [
+    "small team versus big competitor",
+    "outnumbered",
+    "choosing your battleground",
+    "asymmetric advantage"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "Right ground alone can make a strong foe's efforts come to nothing.",
+     "quote": "reaches ground that suits it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks to a ruler whose army is the weaker one.",
+     "quote": "the one with a small army"
+    }
+   ]
+  },
+  {
+   "n": 499,
+   "gloss": "People defending their home ground are hard to beat, even with no fortifications or other advantages.",
+   "keywords": [
+    "home advantage",
+    "defending your home",
+    "local knowledge",
+    "insurgency"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "explicit",
+     "reason": "A people's own soil guards them even where walls and other aids are lacking.",
+     "quote": "it is hard to attack people on the land where they live"
+    }
+   ]
+  },
+  {
+   "n": 500,
+   "gloss": "An elephant that stares down a line of spearmen can be killed by a jackal once it's stuck in a swamp.",
+   "keywords": [
+    "wrong environment",
+    "brought down by something small",
+    "the mighty can fall",
+    "getting stuck"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:place",
+     "basis": "inferred",
+     "reason": "Bad ground hands a jackal what spearmen could not take.",
+     "quote": "in mud where its legs sink"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The fearless war elephant, mired in a marsh, falls to a jackal.",
+     "quote": "A fearless tusker"
+    }
+   ]
+  },
+  {
+   "n": 501,
+   "gloss": "Test someone four ways before you trust them: on principle, money, pleasure and fear for their life.",
+   "keywords": [
+    "vetting candidates",
+    "trust test",
+    "character tests",
+    "temptation"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Names the four trials a person must pass before being trusted.",
+     "quote": "Test someone by these four"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:three-aims",
+     "basis": "explicit",
+     "reason": "Three of its four tests are the aims of life: righteousness, wealth and pleasure.",
+     "quote": "righteousness, wealth, pleasure"
+    }
+   ]
+  },
+  {
+   "n": 502,
+   "gloss": "Pick someone from a decent family, free of faults, who would hate to be disgraced.",
+   "keywords": [
+    "who to trust",
+    "good background",
+    "character references",
+    "integrity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Sums up whom to trust by family, clean record and dread of disgrace.",
+     "quote": "Trust the one who is born of good family"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Good family is the first of its three marks of the trustworthy.",
+     "quote": "born of good family"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Dread of disgrace is its last mark, the shame that restrains a man.",
+     "quote": "the shame that dreads a scar"
+    }
+   ]
+  },
+  {
+   "n": 503,
+   "gloss": "Look closely and you'll find that even the most learned and faultless people have gaps in what they know.",
+   "keywords": [
+    "nobody is perfect",
+    "blind spots",
+    "experts make mistakes",
+    "realistic expectations"
+   ],
+   "edges": []
+  },
+  {
+   "n": 504,
+   "gloss": "Add up someone's good points and bad points, and judge them by whichever is greater.",
+   "keywords": [
+    "judging character",
+    "strengths and weaknesses",
+    "fair assessment",
+    "performance review"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Sets the rule of judgment: a person's nature is whichever side outweighs the other.",
+     "quote": "see which are more, and judge them by that"
+    }
+   ]
+  },
+  {
+   "n": 505,
+   "gloss": "If you want to know whether someone is great or petty, look at what they actually do.",
+   "keywords": [
+    "actions speak louder than words",
+    "judging by behaviour",
+    "true character",
+    "spotting fakes"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Makes a person's own deeds the one test of greatness or pettiness.",
+     "quote": "their own deeds are the touchstone"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:touchstone-and-measuring-rod",
+     "basis": "explicit",
+     "reason": "Deeds are the stone on which a man's metal is assayed.",
+     "quote": "the touchstone"
+    }
+   ]
+  },
+  {
+   "n": 506,
+   "gloss": "Be careful about trusting people with no family or ties: with nothing to hold them, they won't mind disgrace.",
+   "keywords": [
+    "people with no ties",
+    "no roots",
+    "nothing to lose",
+    "loners"
+   ],
+   "sensitive": "treats people without family as untrustworthy",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Warns that one with no kin has nothing to bind him and no shame to lose.",
+     "quote": "Do not trust those who have no one"
+    }
+   ]
+  },
+  {
+   "n": 507,
+   "gloss": "Pick a fool as your confidant because you're fond of them, and you'll be led into one stupid mistake after another.",
+   "keywords": [
+    "nepotism",
+    "hiring a friend",
+    "cronyism",
+    "bad advice from friends",
+    "favouritism"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "inferred",
+     "reason": "Trusting on fondness in place of a proper trial brings every kind of folly.",
+     "quote": "leaning on your fondness for them"
+    }
+   ]
+  },
+  {
+   "n": 508,
+   "gloss": "Trust someone without testing them first and you make trouble that reaches even your descendants.",
+   "keywords": [
+    "blind trust",
+    "due diligence",
+    "trusting strangers",
+    "long-term consequences"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Shows the cost of skipping the trial: evils that run on to one's descendants.",
+     "quote": "even for those who come after you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:trusting-someone-new",
+     "basis": "explicit",
+     "reason": "Before confiding in a newcomer, give them a real trial first.",
+     "quote": "Trust a stranger without testing them"
+    }
+   ]
+  },
+  {
+   "n": 509,
+   "gloss": "Don't trust anyone until you've tested them, and once you have, give each person the job that suits them.",
+   "keywords": [
+    "delegation",
+    "right person for the job",
+    "probation period",
+    "assigning work"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Puts the trial first, and only then the matching of each person to a task.",
+     "quote": "Trust no one without testing them"
+    }
+   ]
+  },
+  {
+   "n": 510,
+   "gloss": "Trusting someone untested and doubting someone already proven are equally sure ways to bring on endless trouble.",
+   "keywords": [
+    "trust issues",
+    "suspicion",
+    "doubting good people",
+    "second-guessing"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Adds that doubting a proven man does as much harm as trusting an unproven one.",
+     "quote": "to doubt someone you have come to trust"
+    }
+   ]
+  },
+  {
+   "n": 511,
+   "gloss": "Hire the person who looks at both the good and bad of things and then goes for what is actually good.",
+   "keywords": [
+    "good judgment at work",
+    "hiring criteria",
+    "employee qualities",
+    "discernment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "inferred",
+     "reason": "Prizes the servant whose eye takes in both good and evil and settles on the good.",
+     "quote": "looks at both the good and the bad"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Describes whom to take into one's service.",
+     "quote": "is the one to employ"
+    }
+   ]
+  },
+  {
+   "n": 512,
+   "gloss": "Put in charge someone who can grow what you have and put right whatever goes wrong.",
+   "keywords": [
+    "promoting a manager",
+    "operations manager",
+    "growing a business",
+    "problem solving",
+    "hiring a leader"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Names what an officer is for: growing resources and curing what ails them.",
+     "quote": "widen the sources of income"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks to one with a kingdom, telling him whom to set over it.",
+     "quote": "the resources of thy kingdom"
+    }
+   ]
+  },
+  {
+   "n": 513,
+   "gloss": "Choose only someone who has warmth, intelligence and decisiveness, and who isn't greedy.",
+   "keywords": [
+    "hiring criteria",
+    "qualities of a good employee",
+    "job requirements",
+    "integrity at work"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Sets out the four marks of one fit for service.",
+     "quote": "truly has these four"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Loving-kindness is the first mark asked of an officer.",
+     "quote": "loving-kindness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Understanding is the second thing looked for in a servant.",
+     "quote": "understanding"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Firmness of mind is the third requirement.",
+     "quote": "firmness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Its fourth mark is freedom from craving, the Tamil’s அவா.",
+     "quote": "freedom from craving"
+    }
+   ]
+  },
+  {
+   "n": 514,
+   "gloss": "Plenty of people pass every test and then turn out differently once they actually do the job.",
+   "keywords": [
+    "good interview bad employee",
+    "people change",
+    "performance after hiring",
+    "probation"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Warns that a servant who passed every trial may change once at the work.",
+     "quote": "many people change with the nature of the work"
+    }
+   ]
+  },
+  {
+   "n": 515,
+   "gloss": "Give work to people for their know-how and staying power, not because they're devoted to you.",
+   "keywords": [
+    "merit over loyalty",
+    "cronyism",
+    "hiring on merit",
+    "favouritism",
+    "competence"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Judges workers by what they know and can endure, not by their devotion.",
+     "quote": "one who knows how and can endure to the end"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:hiring-someone",
+     "basis": "explicit",
+     "reason": "Tells anyone hiring to weigh skill and stamina, and to set fondness aside.",
+     "quote": "not something to hand to a favourite"
+    }
+   ]
+  },
+  {
+   "n": 516,
+   "gloss": "Find the right person and the right job for them, make sure the timing is right, then have them start.",
+   "keywords": [
+    "delegating work",
+    "matching people to tasks",
+    "project timing",
+    "team assignment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "inferred",
+     "reason": "Look closely at the doer before handing over the work.",
+     "quote": "Look closely at the doer"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "explicit",
+     "reason": "Even with the right worker, the work must be matched to the right time.",
+     "quote": "match them to the time"
+    }
+   ]
+  },
+  {
+   "n": 517,
+   "gloss": "Work out what someone can do and which job suits them, then leave it in their hands.",
+   "keywords": [
+    "trusting your team",
+    "micromanaging",
+    "delegation",
+    "giving people ownership"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Concerns the servant, whose capacity is to be judged before he is given charge.",
+     "quote": "this person can finish this task by this means"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:hiring-someone",
+     "basis": "explicit",
+     "reason": "Gives the last step in choosing someone: having judged them, let them run it.",
+     "quote": "leave it in their hands"
+    }
+   ]
+  },
+  {
+   "n": 518,
+   "gloss": "Once you've decided someone is right for a role, give them what they need to do it well.",
+   "keywords": [
+    "onboarding",
+    "empowering staff",
+    "investing in people",
+    "giving authority",
+    "training employees"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Once someone is found right for a task, it must be made theirs.",
+     "quote": "make that task theirs"
+    }
+   ]
+  },
+  {
+   "n": 519,
+   "gloss": "Prosperity walks away from the boss who takes a good worker's closeness the wrong way.",
+   "keywords": [
+    "mistrusting good staff",
+    "resenting hard workers",
+    "boss-employee relationship",
+    "losing good people"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Concerns the able servant whose approaches a master misreads.",
+     "quote": "someone devoted to the work"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:work-unrecognised",
+     "basis": "inferred",
+     "reason": "Assures the resented worker that the loss falls on the one who resents them.",
+     "quote": "good fortune will leave you"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "inferred",
+     "reason": "திரு, which he reads as the goddess, walks out on such a master.",
+     "quote": "good fortune will leave you"
+    }
+   ]
+  },
+  {
+   "n": 520,
+   "gloss": "A ruler should check on things every day, because a country stays straight as long as its officials stay straight.",
+   "keywords": [
+    "oversight",
+    "monitoring staff",
+    "corruption in government",
+    "daily management",
+    "accountability"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:vigilance",
+     "basis": "inferred",
+     "reason": "Asks for a daily watch, since the realm stands or falls with its officers.",
+     "quote": "look into it every day"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "A standing order given to the ruler in so many words.",
+     "quote": "Let the ruler look into it every day"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:officer",
+     "basis": "explicit",
+     "reason": "Makes the officers' soundness the measure of the country's.",
+     "quote": "If the one who does the work doesn’t go crooked, the world won’t"
+    }
+   ]
+  },
+  {
+   "n": 521,
+   "gloss": "Only family keep up their old bond with you even when you've lost everything.",
+   "keywords": [
+    "family sticks by you",
+    "loyalty in hard times",
+    "who stays when you're down",
+    "blood ties"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:kinsman",
+     "basis": "explicit",
+     "reason": "Makes faithfulness through hard times the mark of kin alone.",
+     "quote": "Only kin go on cherishing old ties"
+    }
+   ]
+  },
+  {
+   "n": 522,
+   "gloss": "If your relatives' love for you never fades, your good fortune will keep on growing.",
+   "keywords": [
+    "supportive family",
+    "family as a blessing",
+    "close relatives",
+    "family success"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Sees gains that keep sprouting in the unending fondness of one’s kin.",
+     "quote": "kin whose fondness never ends"
+    }
+   ]
+  },
+  {
+   "n": 523,
+   "gloss": "Someone who doesn't enjoy being close to their relatives is like a reservoir with no banks: what they have simply drains away.",
+   "keywords": [
+    "cut off from family",
+    "isolation",
+    "losing what you have",
+    "family bonds"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Without closeness of heart, a life runs off like water with no bank to hold it.",
+     "quote": "no sharing of hearts"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:village-tank",
+     "basis": "explicit",
+     "reason": "A tank with no banks pictures a life with no kin to hold wealth in.",
+     "quote": "a broad tank filling with water and no bank around it"
+    }
+   ]
+  },
+  {
+   "n": 524,
+   "gloss": "The real point of being well off is to bring your relatives close and keep them there.",
+   "keywords": [
+    "what money is for",
+    "sharing wealth with family",
+    "family reunions",
+    "purpose of wealth"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Names gathering one's relations as the whole purpose of prosperity.",
+     "quote": "live so that your kin gather round you"
+    }
+   ]
+  },
+  {
+   "n": 525,
+   "gloss": "Speak gently and give openly, and your relatives will crowd around you.",
+   "keywords": [
+    "keeping family close",
+    "generosity to relatives",
+    "being liked by family",
+    "family gatherings"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Promises a man ranks of relatives drawn in by how he treats them.",
+     "quote": "surrounded by kin, rank upon rank"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Credits a pleasant tongue with holding a family around one.",
+     "quote": "speak sweetly"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Giving is the other half of what brings relatives near.",
+     "quote": "If you can give"
+    }
+   ]
+  },
+  {
+   "n": 526,
+   "gloss": "Nobody in the world has more devoted relatives than someone who gives freely and doesn't hold on to anger.",
+   "keywords": [
+    "no grudges in the family",
+    "generous relative",
+    "family harmony",
+    "letting go of anger"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Free giving wins the most devoted relatives the world can show.",
+     "quote": "a great giver"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Shunning anger is the other thing that keeps relatives attached.",
+     "quote": "doesn’t cherish anger"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Holds that no one on earth has kin more closely bound to him.",
+     "quote": "No one on this wide earth has more people at their side"
+    }
+   ]
+  },
+  {
+   "n": 527,
+   "gloss": "A crow calls the others over instead of hiding its food; wealth stays only with people who share like that.",
+   "keywords": [
+    "sharing with family",
+    "selfishness",
+    "hoarding",
+    "sharing a meal"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "inferred",
+     "reason": "Holds up the crow that calls its fellows to eat as the pattern for those who would prosper.",
+     "quote": "It calls the others and eats"
+    }
+   ]
+  },
+  {
+   "n": 528,
+   "gloss": "A ruler does well to treat relatives by their merit, not all alike, because many stay close for that recognition.",
+   "keywords": [
+    "rewarding people differently",
+    "family hierarchy",
+    "privilege",
+    "recognition"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "inferred",
+     "reason": "Graded honours, rather than one treatment for all, keep many relatives attached.",
+     "quote": "each by their rank"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Advice for a ruler on how to rank his own relations.",
+     "quote": "If a ruler looks on people not all alike"
+    }
+   ]
+  },
+  {
+   "n": 529,
+   "gloss": "A relative who has drifted away will come back once you deal with whatever caused the rift.",
+   "keywords": [
+    "family rift",
+    "reconciliation",
+    "estranged brother",
+    "healing a family feud"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "A cooled bond is mended by taking away its cause.",
+     "quote": "once the cause of the rift is gone"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:kinsman",
+     "basis": "explicit",
+     "reason": "Treats the estranged relative as someone who can readily be won back.",
+     "quote": "will come back as kin"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:falling-out-with-a-relative",
+     "basis": "explicit",
+     "reason": "Offers a way through a family rift: find the cause, remove it, expect them back.",
+     "quote": "Those who were your own and left you will come back"
+    }
+   ]
+  },
+  {
+   "n": 530,
+   "gloss": "If a relative who broke with you comes back for some reason of their own, take them in, but stay careful.",
+   "keywords": [
+    "relative asking for something",
+    "cautious forgiveness",
+    "reconnecting with a relative",
+    "second chance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Keeps the door open to a relative who returns, though not blindly.",
+     "quote": "take them in"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:kinsman",
+     "basis": "explicit",
+     "reason": "Concerns the relation who left and has returned with a motive.",
+     "quote": "someone who left comes back for a reason"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:falling-out-with-a-relative",
+     "basis": "explicit",
+     "reason": "Says to take back a returning relative while keeping one's eyes open.",
+     "quote": "think it through and take them in"
+    }
+   ]
+  },
+  {
+   "n": 531,
+   "gloss": "Letting your guard down because you're pleased with yourself does more harm than even a terrible rage.",
+   "keywords": [
+    "getting careless when happy",
+    "too comfortable",
+    "celebrating too soon",
+    "overconfidence"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Rates carelessness born of delight as worse than the worst rage.",
+     "quote": "Worse than boundless rage is the carelessness"
+    }
+   ]
+  },
+  {
+   "n": 532,
+   "gloss": "Feeling too safe destroys your good name, the way constant poverty destroys your ability to think.",
+   "keywords": [
+    "false security",
+    "losing your reputation",
+    "poverty and the mind",
+    "taking success for granted"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Sets carelessness beside want: one kills glory as the other kills understanding.",
+     "quote": "Carelessness kills glory"
+    }
+   ],
+   "sensitive": "says daily poverty kills a person’s understanding; could shame someone in want"
+  },
+  {
+   "n": 533,
+   "gloss": "People who aren't careful never earn lasting renown, and every school of thought agrees on that.",
+   "keywords": [
+    "carelessness",
+    "staying focused",
+    "reputation",
+    "expert consensus"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Cites every school of thought for the verdict that the careless win no renown.",
+     "quote": "There is no glory for the careless"
+    }
+   ]
+  },
+  {
+   "n": 534,
+   "gloss": "Forts are no use to the fearful, and being well supplied is no use to the careless.",
+   "keywords": [
+    "wasted resources",
+    "fear",
+    "having everything but losing anyway",
+    "defences"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:cowardice",
+     "basis": "explicit",
+     "reason": "Walls do nothing for one whose nerve has already gone.",
+     "quote": "no fort for those who are afraid"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Nothing good stays with one who has stopped taking care.",
+     "quote": "there is no good for the careless"
+    }
+   ]
+  },
+  {
+   "n": 535,
+   "gloss": "If you don't protect yourself in advance, you'll regret your carelessness when trouble catches you off guard.",
+   "keywords": [
+    "being prepared",
+    "regret",
+    "lack of planning",
+    "caught out"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Urges defence laid down beforehand, ahead of any surprise.",
+     "quote": "fails to guard in advance"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Shows the negligent man lamenting only after disaster has struck.",
+     "quote": "will regret that mistake when the blow lands"
+    }
+   ]
+  },
+  {
+   "n": 536,
+   "gloss": "Nothing compares with never letting your guard down, at any time or with anyone.",
+   "keywords": [
+    "staying alert",
+    "always on guard",
+    "never relax",
+    "paying attention"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:vigilance",
+     "basis": "explicit",
+     "reason": "Nothing, it says, can compare with a guard kept up always and against everyone.",
+     "quote": "with everyone, at all times, without fail"
+    }
+   ]
+  },
+  {
+   "n": 537,
+   "gloss": "There's nothing you can't do if you bring an alert, careful mind to your work.",
+   "keywords": [
+    "focus at work",
+    "mindfulness at work",
+    "attention to detail",
+    "careful work"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:vigilance",
+     "basis": "explicit",
+     "reason": "A mind that never drops its guard makes every task possible.",
+     "quote": "the tool of unbroken attention"
+    }
+   ]
+  },
+  {
+   "n": 538,
+   "gloss": "A ruler must stick to the work the wise approve of; neglect it and he pays through all his lives to come.",
+   "keywords": [
+    "neglecting duty",
+    "doing what is recommended",
+    "long-term consequences",
+    "karma"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "inferred",
+     "reason": "Neglect of what is praised leaves a person with nothing in all seven births.",
+     "quote": "have nothing, in all seven births"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "An order laid on the ruler by name.",
+     "quote": "The prince shall devote himself assiduously"
+    }
+   ]
+  },
+  {
+   "n": 539,
+   "gloss": "When you're feeling pleased with yourself and carried away, think of the people ruined by letting their guard down.",
+   "keywords": [
+    "success going to your head",
+    "staying humble",
+    "cautionary tales",
+    "smugness"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "Bids the elated man recall those whom carelessness destroyed.",
+     "quote": "those who were ruined by neglect"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:success-going-to-your-head",
+     "basis": "explicit",
+     "reason": "Gives a plain remedy for a swelling head: remember who fell that way.",
+     "quote": "When your delight makes you feel strong"
+    }
+   ]
+  },
+  {
+   "n": 540,
+   "gloss": "Getting what you want is easy as long as you keep your goal in mind at all times.",
+   "keywords": [
+    "staying focused on goals",
+    "keeping your eye on the prize",
+    "achieving goals",
+    "concentration"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:vigilance",
+     "basis": "explicit",
+     "reason": "Whatever is wanted comes easily to one who never lets the aim slip from mind.",
+     "quote": "if you can keep your mind on it"
+    }
+   ]
+  },
+  {
+   "n": 541,
+   "gloss": "Real justice means looking into the matter carefully, favouring nobody and taking advice from those who know the law.",
+   "keywords": [
+    "fair trial",
+    "due process",
+    "impartial judge",
+    "legal advice"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Spells out what justice consists of: inquiry, no leaning, and counsel with the law.",
+     "quote": "that is justice"
+    }
+   ]
+  },
+  {
+   "n": 542,
+   "gloss": "Just as all life depends on rain from the sky, people depend on their ruler's justice to protect them.",
+   "keywords": [
+    "people depend on government",
+    "state protection",
+    "leadership responsibility",
+    "welfare"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Makes a ruler's justice as vital to his people as rain to the world.",
+     "quote": "A ruler’s people live looking to his sceptre"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:subject",
+     "basis": "explicit",
+     "reason": "Shows the people looking to their ruler for safety.",
+     "quote": "A ruler’s people"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:rain-cloud",
+     "basis": "explicit",
+     "reason": "The sky everyone looks to for rain stands for a ruler everyone depends on.",
+     "quote": "All the world lives looking to the sky"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The sceptre is what the people watch, as the world watches the sky.",
+     "quote": "looking to his sceptre"
+    }
+   ]
+  },
+  {
+   "n": 543,
+   "gloss": "A ruler's just authority is what holds up both the scriptures of the learned and moral order itself.",
+   "keywords": [
+    "rule of law",
+    "law and morality",
+    "state and religion",
+    "authority underpins order"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Rests both scripture and moral order on the ruler's justice.",
+     "quote": "at the root of the books of the sages and of righteousness"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:brahman",
+     "basis": "explicit",
+     "reason": "Places the books of the sages under the ruler’s protection.",
+     "quote": "the books of the sages"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The sceptre stands as the prop under all learning and right.",
+     "quote": "The ruler’s sceptre stands"
+    }
+   ]
+  },
+  {
+   "n": 544,
+   "gloss": "A ruler who governs his people with real care will never lose his throne.",
+   "keywords": [
+    "caring leadership",
+    "servant leader",
+    "keeping power",
+    "people-first leadership"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Caring rule is repaid by a world that clings to the ruler’s feet.",
+     "quote": "holds his people close and wields the sceptre"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Holds up the good ruler and what his care wins him.",
+     "quote": "the great ruler"
+    }
+   ]
+  },
+  {
+   "n": 545,
+   "gloss": "In a land ruled by law, the rains come on time and the harvests are good.",
+   "keywords": [
+    "good government and prosperity",
+    "rule of law",
+    "national prosperity",
+    "good seasons"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Rain in season and rich crops are promised to a land ruled lawfully.",
+     "quote": "Rain and harvest come together"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Ties the land's fortunes to how its ruler conducts his office.",
+     "quote": "a ruler who wields the sceptre as it should be wielded"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The sceptre held according to law is the sign of the good reign.",
+     "quote": "wields the sceptre as it should be wielded"
+    }
+   ]
+  },
+  {
+   "n": 546,
+   "gloss": "A ruler's victories come from justice rather than weapons, as long as his justice is straight and favours no side.",
+   "keywords": [
+    "justice over force",
+    "winning through fairness",
+    "soft power",
+    "moral authority"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Credits victory to straight justice and not to armed force.",
+     "quote": "that only if it doesn’t bend"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Corrects a ruler's notion of what actually wins his wars.",
+     "quote": "brings a ruler victory"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The unbent sceptre replaces the weapon as the true means of winning.",
+     "quote": "It is the sceptre"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "The spear is named only to be set below the sceptre.",
+     "quote": "It is not the spear"
+    }
+   ]
+  },
+  {
+   "n": 547,
+   "gloss": "A ruler protects everyone under him, and his own even-handed justice protects him in turn.",
+   "keywords": [
+    "justice protects the leader",
+    "integrity protects you",
+    "fair leadership",
+    "public protection"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "The ruler guards the people, and unbending justice guards the ruler.",
+     "quote": "Justice guards him"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Calls the ruler the protector of all who live under him.",
+     "quote": "The ruler guards the whole world"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The sceptre takes up the ruler's own task of guarding, on condition it stays upright.",
+     "quote": "alloweth it not ever to lean to either side"
+    }
+   ]
+  },
+  {
+   "n": 548,
+   "gloss": "A ruler who is hard to reach and careless in judging cases brings himself down, even with no enemies.",
+   "keywords": [
+    "unapproachable boss",
+    "out of touch leader",
+    "ignoring complaints",
+    "leader's downfall"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:accessibility",
+     "basis": "explicit",
+     "reason": "Being out of reach helps bring down a ruler who has no enemy at all.",
+     "quote": "isn’t easy to reach"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Careless hearing of causes is the other half of this ruler's fall.",
+     "quote": "doesn’t look into things and give justice"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "A warning to the ruler who keeps his people at a distance.",
+     "quote": "A ruler who isn’t easy to reach"
+    }
+   ]
+  },
+  {
+   "n": 549,
+   "gloss": "A ruler who protects his people from every threat isn't at fault when he punishes wrongdoers: that's his job.",
+   "keywords": [
+    "punishing offenders",
+    "law enforcement",
+    "duty of leaders",
+    "discipline is not cruelty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Clears a protecting ruler's punishments of reproach: they are his work.",
+     "quote": "no stain on a ruler"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks of the ruler who guards his people from threats within and without.",
+     "quote": "To protect his people from others"
+    }
+   ]
+  },
+  {
+   "n": 550,
+   "gloss": "Executing the worst criminals is like a farmer pulling weeds so the crop can grow.",
+   "keywords": [
+    "death penalty",
+    "capital punishment",
+    "law and order",
+    "removing bad people"
+   ],
+   "sensitive": "approves of putting offenders to death",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "inferred",
+     "reason": "Likens a ruler's execution of the wicked to weeding a crop.",
+     "quote": "pulling weeds from a green crop"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "inferred",
+     "reason": "The Tamil names the ruler as the one who punishes.",
+     "quote": "A ruler who punishes the wicked with death"
+    }
+   ]
+  },
+  {
+   "n": 551,
+   "gloss": "A ruler who oppresses his people and does wrong is worse than a murderer.",
+   "keywords": [
+    "dictators",
+    "abuse of power",
+    "corrupt leaders",
+    "government oppression"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Ranks an oppressing ruler below even those who have taken up killing.",
+     "quote": "crueller than those who have taken up killing"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Turned on the ruler who wrongs those under him.",
+     "quote": "A ruler who takes to tormenting people"
+    }
+   ]
+  },
+  {
+   "n": 552,
+   "gloss": "When someone in power 'asks' you for something, it's really a robber holding you up.",
+   "keywords": [
+    "extortion",
+    "heavy taxes",
+    "corrupt officials",
+    "demands from the powerful",
+    "shakedown"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Unmasks a ruler's polite request as a robbery on the road.",
+     "quote": "one who stands with a spear"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Aimed at the one who holds the office and makes the demand.",
+     "quote": "one who stands with a sceptre"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The sceptre, meant for justice, is made the robber's threat.",
+     "quote": "stands with a sceptre"
+    }
+   ]
+  },
+  {
+   "n": 553,
+   "gloss": "A ruler who doesn't look into things every day and put them right loses his country bit by bit.",
+   "keywords": [
+    "neglected management",
+    "hands-off leadership",
+    "slow decline",
+    "fixing problems daily"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "inferred",
+     "reason": "Failing daily to set wrongs right wears a ruler's power away by the day.",
+     "quote": "doesn’t look into things daily and do justice"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Warns the ruler who will not look into his own government.",
+     "quote": "When a ruler doesn’t look into things daily"
+    }
+   ]
+  },
+  {
+   "n": 554,
+   "gloss": "A ruler who carelessly strays from justice loses his wealth and his people together.",
+   "keywords": [
+    "corrupt leadership",
+    "losing power",
+    "unjust rule",
+    "reckless leader"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "A bent sceptre costs the ruler both his riches and his people.",
+     "quote": "bends the sceptre and acts without thinking"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Points at the unthinking ruler, whom his own course undoes.",
+     "quote": "A ruler who bends the sceptre"
+    }
+   ]
+  },
+  {
+   "n": 555,
+   "gloss": "The tears of people who can't bear their oppression are what grind down a ruler's wealth.",
+   "keywords": [
+    "suffering of the oppressed",
+    "revolution",
+    "public anger",
+    "consequences of cruelty"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Oppression is paid for out of the ruler's own wealth, worn down by his victims' weeping.",
+     "quote": "the weapon that wears away wealth"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:subject",
+     "basis": "explicit",
+     "reason": "Gives the oppressed people the last word against their ruler.",
+     "quote": "those who suffer and can’t bear it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Names the prosperity at stake as the ruler's.",
+     "quote": "the prosperity of the prince"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tears",
+     "basis": "explicit",
+     "reason": "Tears become a weapon that wears down wealth.",
+     "quote": "The tears wept"
+    }
+   ]
+  },
+  {
+   "n": 556,
+   "gloss": "Fair rule is what earns rulers a lasting name, and unfair rule dims it.",
+   "keywords": [
+    "legacy of leaders",
+    "reputation of rulers",
+    "historical reputation",
+    "fair government"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Says what lasts for rulers comes from the straight sceptre.",
+     "quote": "What makes rulers last is the straight sceptre"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Without the straight sceptre a ruler’s light won’t last.",
+     "quote": "their light won’t last"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks of what rulers as a class stand to win or lose.",
+     "quote": "What makes rulers last"
+    }
+   ]
+  },
+  {
+   "n": 557,
+   "gloss": "Life under a heartless ruler is like the land in a drought.",
+   "keywords": [
+    "living under a dictatorship",
+    "uncaring government",
+    "suffering people",
+    "hardship"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Likens a people under a merciless ruler to land left without rain.",
+     "quote": "a ruler with no tenderness"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:subject",
+     "basis": "explicit",
+     "reason": "Asks how the people fare under such a government.",
+     "quote": "to living beings"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Its comparison is aimed at the ruler who withholds his care.",
+     "quote": "a ruler with no tenderness"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:rain-cloud",
+     "basis": "explicit",
+     "reason": "The earth with no rain stands for people under a ruler with no tenderness.",
+     "quote": "What no rain is to the earth"
+    }
+   ]
+  },
+  {
+   "n": 558,
+   "gloss": "Under an unjust ruler, having money is even more painful than having none.",
+   "keywords": [
+    "wealth under oppression",
+    "seizure of property",
+    "being rich under a dictator",
+    "corrupt state"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Under a tyrant, owning things hurts more than owning nothing.",
+     "quote": "having is more painful than having nothing"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Lays the misery of rich and poor alike at the tyrant's door.",
+     "quote": "a ruler who does no justice"
+    }
+   ]
+  },
+  {
+   "n": 559,
+   "gloss": "If a ruler turns away from justice, the rains won't come when they should.",
+   "keywords": [
+    "bad government and drought",
+    "leaders affect everyone",
+    "nature punishes injustice",
+    "failed monsoon"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Says the very rains fail once a ruler leaves the path of justice.",
+     "quote": "acts against justice"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Hangs the weather itself on one ruler's conduct.",
+     "quote": "If the ruler acts against justice"
+    }
+   ]
+  },
+  {
+   "n": 560,
+   "gloss": "If a ruler fails to protect his people, the cows give less milk and even priests forget their scriptures.",
+   "keywords": [
+    "government failure",
+    "decline of learning",
+    "breakdown of society",
+    "failed state"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Unjust rule dries the cows' milk and drives scripture from memory.",
+     "quote": "If the protector doesn’t protect"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:brahman",
+     "basis": "explicit",
+     "reason": "Shows even the learning of those of the six duties lapsing under a bad ruler.",
+     "quote": "those of the six duties forget their books"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Places the blame for this decay on the ruler's failure.",
+     "quote": "If the protector doesn’t protect"
+    }
+   ]
+  },
+  {
+   "n": 561,
+   "gloss": "A ruler should weigh the offence and punish enough to stop it happening again, but never too much.",
+   "keywords": [
+    "proportionate punishment",
+    "discipline at work",
+    "deterrence",
+    "sentencing"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Asks that punishment fit the guilt and deter, and never go past that.",
+     "quote": "punishes to fit it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Lays the duty of measured judgment on the ruler himself.",
+     "quote": "A ruler is one who looks into a wrong fairly"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:power-over-others",
+     "basis": "explicit",
+     "reason": "Tells anyone who disciplines others to weigh the fault and stop at what will correct it.",
+     "quote": "so that it won’t be done again"
+    }
+   ]
+  },
+  {
+   "n": 562,
+   "gloss": "If you want your power to last, raise the stick high but bring it down gently.",
+   "keywords": [
+    "firm but fair",
+    "discipline with mercy",
+    "tough love",
+    "lasting authority"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Lasting gains come from raising the blow sharply and letting it land softly.",
+     "quote": "Raise the blow sharply but let it land softly"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The ruler's rod is raised high in warning but must fall soft.",
+     "quote": "the rod"
+    }
+   ]
+  },
+  {
+   "n": 563,
+   "gloss": "A ruler who terrifies his people with harsh rule ends up with no one on his side and falls fast.",
+   "keywords": [
+    "ruling by fear",
+    "authoritarian boss",
+    "losing support",
+    "toxic leadership"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Rule by terror is sure to bring a ruler down, and soon.",
+     "quote": "lives by what terrifies people"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Addressed to the ruler who governs by fear.",
+     "quote": "A wielder of the cruel sceptre"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sceptre",
+     "basis": "explicit",
+     "reason": "The cruel sceptre pictures a rule that only hurts.",
+     "quote": "the cruel sceptre"
+    }
+   ]
+  },
+  {
+   "n": 564,
+   "gloss": "A ruler known among his people for cruelty has a short reign and falls quickly.",
+   "keywords": [
+    "reputation for cruelty",
+    "hated leader",
+    "what staff say about the boss",
+    "bad name"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Once his people call him cruel, a ruler's days are numbered.",
+     "quote": "Our ruler is harsh"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks of the ruler whose own people talk of his harshness.",
+     "quote": "A ruler of whom people say the bitter words"
+    }
+   ]
+  },
+  {
+   "n": 565,
+   "gloss": "A grim ruler nobody can get to see is like a demon sitting on a hoard: his wealth does no one any good.",
+   "keywords": [
+    "unapproachable leader",
+    "grumpy boss",
+    "out of reach",
+    "useless riches"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:accessibility",
+     "basis": "explicit",
+     "reason": "One who is hard to see holds riches as useless as something a demon has seized.",
+     "quote": "someone hard to see"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "inferred",
+     "reason": "His grim face joins his distance in making his wealth a thing to dread.",
+     "quote": "a sour face"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Draws a portrait of the forbidding ruler.",
+     "quote": "Behold the dour-faced prince"
+    }
+   ]
+  },
+  {
+   "n": 566,
+   "gloss": "However rich a ruler is, being sharp-tongued and unforgiving will bring his wealth to a quick end.",
+   "keywords": [
+    "harsh boss",
+    "verbal abuse at work",
+    "unkind leader",
+    "losing it all"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "A rough tongue ends even the greatest prosperity quickly.",
+     "quote": "a harsh tongue"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Having no kind eye for others hastens the end of all one has.",
+     "quote": "no kind eye"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Makes the ruler's wealth hang on his manner toward others.",
+     "quote": "If the prince is harsh of word"
+    }
+   ]
+  },
+  {
+   "n": 567,
+   "gloss": "Cruel words and over-the-top punishments slowly grind away the strength of those in power.",
+   "keywords": [
+    "harsh management",
+    "losing authority",
+    "undermining your own power",
+    "overpunishing"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:severity",
+     "basis": "explicit",
+     "reason": "Hard words and heavy penalties wear away the strength they seem to show.",
+     "quote": "punishment past all measure"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:file",
+     "basis": "explicit",
+     "reason": "Harshness is the file that wears a ruler’s strength thin.",
+     "quote": "the file that wears away a ruler’s conquering strength"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:power-over-others",
+     "basis": "explicit",
+     "reason": "Warns those in charge that over-punishing eats at their own authority.",
+     "quote": "Harsh words and punishment past all measure"
+    }
+   ]
+  },
+  {
+   "n": 568,
+   "gloss": "A ruler who won't consult his advisers and then loses his temper when things go wrong will see his fortunes shrink.",
+   "keywords": [
+    "refusing advice",
+    "blaming the team",
+    "angry boss",
+    "temper at work"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Raging when his plans fail shrinks a ruler's prosperity.",
+     "quote": "flies into a rage"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:deliberation",
+     "basis": "explicit",
+     "reason": "Refusing to consult his councillors is where this ruler's trouble starts.",
+     "quote": "doesn’t think things through with his circle"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Describes the ruler who acts alone and then storms at the outcome.",
+     "quote": "a ruler who doesn’t think things through"
+    }
+   ]
+  },
+  {
+   "n": 569,
+   "gloss": "A ruler who doesn't build his defences in time will panic and fall fast when war suddenly arrives.",
+   "keywords": [
+    "unprepared for crisis",
+    "disaster planning",
+    "last minute panic",
+    "defence spending"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Neglected defences turn a sudden war into panic and swift ruin.",
+     "quote": "doesn’t build defences before war comes"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Warns the ruler who has built no defences when war comes.",
+     "quote": "A ruler who doesn’t build defences"
+    }
+   ]
+  },
+  {
+   "n": 570,
+   "gloss": "The heaviest load the earth has to carry is a harsh government that binds ignorant people to its service.",
+   "keywords": [
+    "incompetent officials",
+    "corrupt government",
+    "crony rule",
+    "unqualified ministers"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:tyranny",
+     "basis": "explicit",
+     "reason": "Calls harsh rule that binds the unlearned to itself the one true weight on the earth.",
+     "quote": "A harsh sceptre binds the unlearned to itself"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "Pictures the earth as bearing no burden but this one.",
+     "quote": "The earth has no burden but that"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "REQUIRES",
+   "source": "quality:purity-of-heart",
+   "target": "theme:company",
+   "basis": "explicit",
+   "reason": "A clean mind is said to depend on keeping clean company.",
+   "quote": "A pure mind and pure deeds both depend on pure company",
+   "couplets": [
+    455
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:purity-of-action",
+   "target": "theme:company",
+   "basis": "explicit",
+   "reason": "Clean deeds, like a clean mind, rest on the company one keeps.",
+   "quote": "pure deeds both depend on pure company",
+   "couplets": [
+    455
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:company",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Virtuous companions bring a man every honour.",
+   "quote": "Good company brings every kind of glory",
+   "couplets": [
+    457
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:liberality",
+   "target": "quality:cherishing-kin",
+   "basis": "explicit",
+   "reason": "Giving freely draws one's relatives in close.",
+   "quote": "If you can give and speak sweetly, you will be surrounded by kin",
+   "couplets": [
+    525,
+    526
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:kind-speech",
+   "target": "quality:cherishing-kin",
+   "basis": "explicit",
+   "reason": "Sweet words gather relatives round a man.",
+   "quote": "speak sweetly, you will be surrounded by kin",
+   "couplets": [
+    525
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:cherishing-kin",
+   "target": "theme:wealth",
+   "basis": "explicit",
+   "reason": "Unending fondness among kin brings gains that keep on sprouting.",
+   "quote": "many gains that go on sprouting",
+   "couplets": [
+    522,
+    523
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:complacency",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Carelessness is said to kill glory.",
+   "quote": "Carelessness kills glory",
+   "couplets": [
+    532
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "theme:poverty",
+   "target": "quality:understanding",
+   "basis": "explicit",
+   "reason": "Daily want is said to kill understanding.",
+   "quote": "daily want kills understanding",
+   "couplets": [
+    532
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:glory",
+   "target": "quality:vigilance",
+   "basis": "explicit",
+   "reason": "Glory is denied to the careless.",
+   "quote": "There is no glory for the careless",
+   "couplets": [
+    533
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:righteousness",
+   "target": "quality:just-rule",
+   "basis": "explicit",
+   "reason": "The ruler’s sceptre is named the root of righteousness.",
+   "quote": "The ruler’s sceptre stands at the root of the books of the sages and of righteousness",
+   "couplets": [
+    543
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:learning",
+   "target": "quality:just-rule",
+   "basis": "explicit",
+   "reason": "The books of the sages rest on the sceptre and lapse when the ruler fails at justice.",
+   "quote": "the books of the sages",
+   "couplets": [
+    543,
+    560
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:rain",
+   "target": "quality:just-rule",
+   "basis": "explicit",
+   "reason": "The rains keep their season only while the ruler keeps to justice.",
+   "quote": "Rain and harvest come together in the land of a ruler",
+   "couplets": [
+    545,
+    559
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:just-rule",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Just rule is what brings rulers renown.",
+   "quote": "What makes rulers last is the straight sceptre",
+   "couplets": [
+    556
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:tyranny",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Unjust government darkens a ruler's name.",
+   "quote": "their light won’t last",
+   "couplets": [
+    556
+   ]
+  },
+  {
+   "type": "OPPOSES",
+   "source": "quality:just-rule",
+   "target": "quality:tyranny",
+   "basis": "explicit",
+   "reason": "Sets just rule and unjust government side by side as opposite ways of governing.",
+   "quote": "What makes rulers last is the straight sceptre. Without it, their light won’t last",
+   "couplets": [
+    556
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:tyranny",
+   "target": "theme:wealth",
+   "basis": "explicit",
+   "reason": "A ruler who bends the sceptre loses his riches along with his people.",
+   "quote": "will lose his riches and his people together",
+   "couplets": [
+    554
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "label": "Beasts at Their Hour and Ground",
+   "type": "image",
+   "why": "Chapters 49 and 50 argue through animals that win only at their moment or on their ground (crow and owl, ram, stork, crocodile). No image entry covers them, so these couplets carry no USES_IMAGE edge.",
+   "couplets": [
+    481,
+    486,
+    490,
+    495
+   ]
+  }
+ ]
+}

@@ -28,7 +28,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-/** What this site is and how it was made. The disclosures are the owner's words: change them in tirukkural-kb first. */
+/** What this site is and how it was made. The disclosures are the owner's words. */
 export default function About() {
   const strong = "font-semibold text-text";
   return (

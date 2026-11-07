@@ -1,0 +1,3161 @@
+{
+ "shard": "shard-06",
+ "chapters": [
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83
+ ],
+ "couplets": [
+  {
+   "n": 701,
+   "gloss": "Someone who can tell what you are thinking before you say a word is a gift to the whole world.",
+   "keywords": [
+    "mind reading",
+    "perceptive people",
+    "intuition about others"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "Calls the man who knows a thought before it is voiced an ornament to all the world.",
+     "quote": "look and know what is meant, with nothing said"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Such a reader of minds is worn by the whole world like a jewel.",
+     "quote": "an ornament to the world"
+    }
+   ]
+  },
+  {
+   "n": 702,
+   "gloss": "Treat anyone who can see into another person's heart, without any doubt, as if they were a god.",
+   "keywords": [
+    "seeing through people",
+    "uncanny insight",
+    "empathy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "Rates certainty about another’s heart so high that its owner is held the equal of a god.",
+     "quote": "knows without doubt what is in another’s heart"
+    }
+   ]
+  },
+  {
+   "n": 703,
+   "gloss": "People who can work out someone's intentions from their expression are worth bringing on board at any price.",
+   "keywords": [
+    "hiring advisers",
+    "body language",
+    "trusted adviser"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "Says those who can read a thought from its signs are worth having at any cost.",
+     "quote": "gain those who can read a thought from its signs"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "inferred",
+     "reason": "Speaks to someone with a council to fill, which makes this a ruler's advice.",
+     "quote": "take them into thy council"
+    }
+   ]
+  },
+  {
+   "n": 704,
+   "gloss": "People who grasp things without being told may look like everyone else, but they are a different breed.",
+   "keywords": [
+    "reading between the lines",
+    "emotional intelligence",
+    "rare talent"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "Though they look like anyone else, those who understand without words are counted a kind apart.",
+     "quote": "Those who grasp a thought unspoken"
+    }
+   ]
+  },
+  {
+   "n": 705,
+   "gloss": "If the eye cannot pick up from a glance what is in someone's heart, what good is it among the senses?",
+   "keywords": [
+    "noticing how people feel",
+    "paying attention to people",
+    "observation"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "Holds that eyes unable to read a thought have no use among the parts of the body.",
+     "quote": "eyes can’t read a thought from its signs"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Measures the eye by what it can understand and not by what it can see.",
+     "quote": "what use are they among the body’s parts"
+    }
+   ]
+  },
+  {
+   "n": 706,
+   "gloss": "A face shows what someone feels inside, just as clear crystal picks up the colour of whatever sits beside it.",
+   "keywords": [
+    "facial expressions",
+    "poker face",
+    "hiding feelings"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:reading-intentions",
+     "basis": "inferred",
+     "reason": "Gives the ground of the art: the face takes the heart's colour as crystal takes a neighbour's.",
+     "quote": "the face shows what is strongest in the heart"
+    }
+   ]
+  },
+  {
+   "n": 707,
+   "gloss": "Nothing gives you away like your face: whether you are pleased or furious, it shows there before anywhere else.",
+   "keywords": [
+    "micro-expressions",
+    "reading emotions",
+    "can't hide my anger"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:reading-intentions",
+     "basis": "inferred",
+     "reason": "Anger and gladness reach the face first, which makes it the first place to read a heart.",
+     "quote": "In gladness or in anger, it gets there first"
+    }
+   ]
+  },
+  {
+   "n": 708,
+   "gloss": "If you find someone who understands what is going on inside you without being told, you only have to stand before them.",
+   "keywords": [
+    "being understood",
+    "someone who gets you",
+    "no need to explain"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "With someone who can read your heart, you need say nothing: standing before them is enough.",
+     "quote": "look within and know what has happened to you"
+    }
+   ]
+  },
+  {
+   "n": 709,
+   "gloss": "To someone who knows how eyes work, the eyes alone reveal whether a person feels hatred or friendship.",
+   "keywords": [
+    "spotting hostility",
+    "eye contact",
+    "sizing people up"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reading-intentions",
+     "basis": "explicit",
+     "reason": "For those who know its ways, the eye alone tells enmity from friendship.",
+     "quote": "The eyes themselves will tell enmity and friendship"
+    }
+   ]
+  },
+  {
+   "n": 710,
+   "gloss": "Ask what truly perceptive people use to size someone up, and it turns out to be nothing but their own eyes.",
+   "keywords": [
+    "judging character",
+    "gut feeling",
+    "people skills"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:reading-intentions",
+     "basis": "inferred",
+     "reason": "Whoever claims subtlety has only his eye to gauge another's mind.",
+     "quote": "no measuring rod but the eye"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:touchstone-and-measuring-rod",
+     "basis": "explicit",
+     "reason": "The eye becomes a rod held up against other men's minds.",
+     "quote": "measuring rod"
+    }
+   ]
+  },
+  {
+   "n": 711,
+   "gloss": "If you know the value of words, find out who you are talking to and fit what you say to them.",
+   "keywords": [
+    "know your audience",
+    "presentation tips",
+    "giving a talk"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Tells the skilled speaker to study the assembly and weigh it before saying anything.",
+     "quote": "know the assembly, weigh it up, and then speak"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Calls directly on those who know the range of words and must stand before a gathering.",
+     "quote": "who know the range of words"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:speaking-in-public",
+     "basis": "explicit",
+     "reason": "Gives anyone facing a room a first step: learn who is in it before deciding what to say.",
+     "quote": "know the assembly"
+    }
+   ]
+  },
+  {
+   "n": 712,
+   "gloss": "If you speak well, check the mood of the room first and think it through before you open your mouth.",
+   "keywords": [
+    "reading the room",
+    "timing your words",
+    "speech preparation"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Puts judging the moment ahead of any speech, however good the speaker.",
+     "quote": "judge the moment"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Calls directly on those who have studied the ways of words.",
+     "quote": "good at the ways of words"
+    }
+   ]
+  },
+  {
+   "n": 713,
+   "gloss": "People who stand up to speak without sizing up the crowd do not understand speaking and are not much use at anything else.",
+   "keywords": [
+    "bad speakers",
+    "unprepared presentation",
+    "misjudging the crowd"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Those who speak without weighing the assembly know nothing of speech and are fit for little else.",
+     "quote": "without knowing the assembly"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Passes judgment on anyone who takes it on himself to speak to a gathering.",
+     "quote": "take on speaking without knowing the assembly"
+    }
+   ]
+  },
+  {
+   "n": 714,
+   "gloss": "Be brilliant among the brilliant, but with fools answer only at the level they can follow.",
+   "keywords": [
+    "dealing with idiots",
+    "don't argue with fools",
+    "talking down to people"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Fits you to the hearers: bright before the bright, and blank as white lime before the blank.",
+     "quote": "Be bright before the bright"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:someone-wont-listen",
+     "basis": "inferred",
+     "reason": "Advises not spending your brightness on those who can’t take it in, only going as blank as they are.",
+     "quote": "Before the blank, take on the colour of white lime"
+    }
+   ]
+  },
+  {
+   "n": 715,
+   "gloss": "Holding back from speaking first among your elders is a discipline that beats even other good qualities.",
+   "keywords": [
+    "respecting elders",
+    "letting seniors lead",
+    "speaking out of turn"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Ranks the restraint of not speaking first among elders above other virtues.",
+     "quote": "the restraint of not speaking first among elders"
+    }
+   ]
+  },
+  {
+   "n": 716,
+   "gloss": "Slipping up in front of wise, well-read people is as bad as straying from the right path.",
+   "keywords": [
+    "embarrassing mistake",
+    "expert audience",
+    "losing face"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "inferred",
+     "reason": "A slip before the discerning is as grave as leaving the right road, so such hearers call for care.",
+     "quote": "A failure before men of understanding"
+    }
+   ]
+  },
+  {
+   "n": 717,
+   "gloss": "A scholar's learning only really shows when it is put before people who can spot every flaw.",
+   "keywords": [
+    "peer review",
+    "expert critics",
+    "feedback from experts"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "inferred",
+     "reason": "Learning shines out before hearers able to weigh words without fault.",
+     "quote": "shines among those who can weigh words without fault"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Concerns the scholar, whose learning shines among those who can weigh words.",
+     "quote": "The learning of the well-read"
+    }
+   ]
+  },
+  {
+   "n": 718,
+   "gloss": "Explaining something to people able to understand it is like watering plants that are already growing.",
+   "keywords": [
+    "teaching receptive people",
+    "willing listeners",
+    "advice that lands"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "inferred",
+     "reason": "Speech given to those who can take it in feeds them, as water feeds what is already growing.",
+     "quote": "To speak before those with understanding"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:watered-plant",
+     "basis": "explicit",
+     "reason": "Speaking to people of understanding is water poured on a bed of growing plants.",
+     "quote": "pouring water on a bed where something is already growing"
+    }
+   ]
+  },
+  {
+   "n": 719,
+   "gloss": "If you want your words to please wise people, take care never to speak to a crowd of fools, even by accident.",
+   "keywords": [
+    "wrong audience",
+    "wasted words",
+    "choosing your crowd"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "explicit",
+     "reason": "Warns those who speak well before a good assembly not to speak in a petty one, even by forgetting.",
+     "quote": "don’t speak in a petty one, even by forgetting"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Calls directly on those who can make a good assembly take in what they say.",
+     "quote": "speak so that a good assembly takes it in"
+    }
+   ]
+  },
+  {
+   "n": 720,
+   "gloss": "Giving a talk to people who are not your kind is like spilling the food of the gods down a drain.",
+   "keywords": [
+    "pearls before swine",
+    "unappreciative audience",
+    "wasted effort"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:tact",
+     "basis": "inferred",
+     "reason": "Speaking before those not of your own kind is pure waste, so a speaker must pick the hearers.",
+     "quote": "before those not of your own kind"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "Talk before those not of your own kind is the sweetest thing there is, lost in a filthy yard.",
+     "quote": "ambrosia spilled in a filthy yard"
+    }
+   ]
+  },
+  {
+   "n": 721,
+   "gloss": "People who know the weight of words can arrange what they say and will not slip up in front of a sharp audience.",
+   "keywords": [
+    "confident speaker",
+    "preparing a speech",
+    "not fumbling words"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "inferred",
+     "reason": "Those who know their words stand firm and don’t slip before an able gathering.",
+     "quote": "don’t slip before an able one"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Describes speakers who know the range of words and stand before an able assembly.",
+     "quote": "who know the range of words"
+    }
+   ]
+  },
+  {
+   "n": 722,
+   "gloss": "Whoever can make what they have learned land with other learned people earns the name of the scholar's scholar.",
+   "keywords": [
+    "defending your thesis",
+    "academic reputation",
+    "convincing experts"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "inferred",
+     "reason": "Making the learned take in what you have learned earns the name of learned among the learned.",
+     "quote": "say what they have learned so that the learned take it in"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Concerns those who stand up before a learned gathering and say what they have learned.",
+     "quote": "so that the learned take it in"
+    }
+   ]
+  },
+  {
+   "n": 723,
+   "gloss": "Plenty of people will die in battle, but very few can stand before an audience without shaking.",
+   "keywords": [
+    "stage fright",
+    "nerves before a talk",
+    "fear of public speaking"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Rates calm before an assembly as rarer than the bravery that faces death in war.",
+     "quote": "Those who have no fear in an assembly are rare"
+    }
+   ]
+  },
+  {
+   "n": 724,
+   "gloss": "Share what you have mastered with those who know, and learn what you lack from those better than you.",
+   "keywords": [
+    "learning from experts",
+    "asking questions",
+    "intellectual honesty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Tells the speaker to take what he lacks from those who excel in it.",
+     "quote": "from those who have learned more, take that more"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "inferred",
+     "reason": "Directs one who lays his knowledge before a learned company.",
+     "quote": "Say what you have learned so that the learned take it in"
+    }
+   ]
+  },
+  {
+   "n": 725,
+   "gloss": "Study logic properly so that you can answer back without fear in any gathering.",
+   "keywords": [
+    "debate skills",
+    "critical thinking",
+    "handling tough questions"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Fearless answering is the stated goal, and right learning is the training for it.",
+     "quote": "answer in an assembly without fear"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "inferred",
+     "reason": "Tells the would-be speaker to learn by the right path before facing a gathering.",
+     "quote": "so that you can answer in an assembly without fear"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:speaking-in-public",
+     "basis": "explicit",
+     "reason": "Tells a nervous speaker that learning by the right path is what takes the fear away.",
+     "quote": "Learn by the right path and know the measure"
+    }
+   ]
+  },
+  {
+   "n": 726,
+   "gloss": "What use is a sword to someone with no courage, or books to someone scared of a sharp audience?",
+   "keywords": [
+    "afraid to speak up",
+    "wasted education",
+    "losing your nerve"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:cowardice",
+     "basis": "explicit",
+     "reason": "Asks what someone without courage wants with a sword at all.",
+     "quote": "those who lack hard courage"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Books are nothing to one who fears an assembly of subtle minds.",
+     "quote": "those who fear a subtle assembly"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "Pairs a coward's sword with a timid scholar's books, each useless in its owner's hands.",
+     "quote": "What has a sword to do with those"
+    }
+   ]
+  },
+  {
+   "n": 727,
+   "gloss": "The learning of someone scared of an audience is as useless as a fine sword held by someone who will never fight.",
+   "keywords": [
+    "useless knowledge",
+    "wasted talent",
+    "fear of speaking"
+   ],
+   "sensitive": "uses eunuchs as a byword for uselessness",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Learning with no nerve behind it can never be put to use.",
+     "quote": "The learning of a man who fears the assembly"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "The sword in a eunuch's hand is the emblem of a weapon that will never strike.",
+     "quote": "a bright sword in a eunuch’s hand"
+    }
+   ]
+  },
+  {
+   "n": 728,
+   "gloss": "However much someone has studied, it is no use if they cannot get their point across to a good audience.",
+   "keywords": [
+    "communication skills",
+    "knowing but can't explain",
+    "presenting your research"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:eloquence",
+     "basis": "explicit",
+     "reason": "Wide learning counts for nothing in one who can’t make a good assembly take in what is said.",
+     "quote": "can’t speak so that a good assembly takes it in"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Aimed at men of wide study who fail when they have to speak.",
+     "quote": "however much they have learned"
+    }
+   ]
+  },
+  {
+   "n": 729,
+   "gloss": "Well-read people who are afraid of a learned crowd are thought even less of than people with no education.",
+   "keywords": [
+    "imposter syndrome",
+    "afraid of experts",
+    "academic nerves"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Fear of an assembly of the good drops the learned below even the unlearned.",
+     "quote": "fear an assembly of the good"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Speaks of those who have learning yet fear an assembly of the good.",
+     "quote": "those who have learned and understood"
+    }
+   ]
+  },
+  {
+   "n": 730,
+   "gloss": "People too frightened of a crowd to share what they have learned are alive, but might as well not be.",
+   "keywords": [
+    "too scared to speak",
+    "silent in meetings",
+    "wasted knowledge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:audience-courage",
+     "basis": "explicit",
+     "reason": "Fear that keeps learning unspoken leaves a man nothing to show for being alive.",
+     "quote": "fear the assembly and can’t get across what they have learned"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "Still alive, those who can’t speak before others are counted among those who are not.",
+     "quote": "are alive, yet they are like those who are not"
+    }
+   ]
+  },
+  {
+   "n": 731,
+   "gloss": "A great country has harvests that never fail, and is where wise people and decent wealthy people choose to settle.",
+   "keywords": [
+    "food security",
+    "what makes a nation great",
+    "good place to live"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Measures a land by harvests that never fail and by the worthy and the rich who settle there.",
+     "quote": "unfailing harvests, worthy people and the rich who never decline"
+    }
+   ]
+  },
+  {
+   "n": 732,
+   "gloss": "A great country draws people in with its riches and grows plenty because nothing blights its crops.",
+   "keywords": [
+    "immigration",
+    "national wealth",
+    "thriving economy"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Great wealth makes it desired, and freedom from ruin keeps its fields yielding.",
+     "quote": "desired for its great wealth"
+    }
+   ]
+  },
+  {
+   "n": 733,
+   "gloss": "A great nation takes on load after load, bears it all and still pays everything it owes to its ruler.",
+   "keywords": [
+    "paying taxes",
+    "national resilience",
+    "civic duty"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Its greatness shows when every burden falls at once and it still holds up.",
+     "quote": "bears every burden that falls on it at once"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:subject",
+     "basis": "inferred",
+     "reason": "The country here is its people, who bear the load and still pay the ruler in full.",
+     "quote": "gives its ruler his whole tax"
+    }
+   ]
+  },
+  {
+   "n": 734,
+   "gloss": "A great country has no famine, no epidemics and no enemies breaking in.",
+   "keywords": [
+    "national security",
+    "public health",
+    "hunger"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Names three things a country is spared: deep hunger, endless sickness and destroying enemies.",
+     "quote": "free of deep hunger, endless sickness and destroying enemies"
+    }
+   ]
+  },
+  {
+   "n": 735,
+   "gloss": "A great nation is not split into feuding factions and has no violent gangs or traitors tearing it apart from inside.",
+   "keywords": [
+    "national unity",
+    "civil war",
+    "political factions"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Greatness here is unity: no rival factions and no murderous rebels loose inside the realm.",
+     "quote": "no rival factions"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Counts enemies inside the country among what would ruin it.",
+     "quote": "no ruinous enemies within"
+    }
+   ]
+  },
+  {
+   "n": 736,
+   "gloss": "The best country is one enemies have never wrecked, and which would lose none of its productivity even if they did.",
+   "keywords": [
+    "economic resilience",
+    "recovering from war",
+    "best country in the world"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Crowns the land that escapes ruin and whose riches hold even if ruin comes.",
+     "quote": "knows no ruin, and whose riches hold even when it is ruined"
+    }
+   ]
+  },
+  {
+   "n": 737,
+   "gloss": "Every country needs water from above and below ground, well-placed hills and strong defences.",
+   "keywords": [
+    "natural resources",
+    "water supply",
+    "infrastructure"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Names the limbs of a country: its waters, its hill and its strong fortress.",
+     "quote": "are the limbs of a country"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Lists rainwater among the waters no land can do without.",
+     "quote": "rainwater"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Closes the list of a country’s limbs with a strong fortress.",
+     "quote": "a strong fortress"
+    }
+   ]
+  },
+  {
+   "n": 738,
+   "gloss": "Five things make a country shine: riches, plentiful harvests, happiness, good health and security.",
+   "keywords": [
+    "quality of life",
+    "national wellbeing",
+    "prosperity"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Gives five marks of a fine country, from health and wealth to happiness and safety.",
+     "quote": "five things are a country’s ornament"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Wealth is one of the five things named.",
+     "quote": "wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "A country wears its health, plenty and safety as an ornament.",
+     "quote": "a country’s ornament"
+    }
+   ]
+  },
+  {
+   "n": 739,
+   "gloss": "A real country produces plenty without wearing its people out; one that gives only to endless toil hardly deserves the name.",
+   "keywords": [
+    "natural abundance",
+    "overworked population",
+    "fertile land"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Withholds the name of country from land that gives riches only when they are sought.",
+     "quote": "whose riches come without seeking"
+    }
+   ]
+  },
+  {
+   "n": 740,
+   "gloss": "Even with all those blessings, a country is worth nothing without a good ruler.",
+   "keywords": [
+    "bad government",
+    "poor leadership",
+    "why leaders matter"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:country",
+     "basis": "explicit",
+     "reason": "Makes accord with the ruler the last test: without it, all a country’s gifts are of no use.",
+     "quote": "isn’t well matched with its ruler"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Everything a land has is made to wait on the one who rules it.",
+     "quote": "its ruler"
+    }
+   ]
+  },
+  {
+   "n": 741,
+   "gloss": "A fort is useful to those only trying to defend themselves, and just as useful to those strong enough to attack.",
+   "keywords": [
+    "having a safe base",
+    "protection",
+    "defensive position"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Says a fortress serves the strong and those who fear alike.",
+     "quote": "of value to those who are strong"
+    }
+   ]
+  },
+  {
+   "n": 742,
+   "gloss": "Natural defences come in several forms: water, empty ground, hills and dense forest.",
+   "keywords": [
+    "natural barriers",
+    "terrain",
+    "geography of defence"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Counts water, open ground, hill and forest as the makings of a fortress.",
+     "quote": "water bright as a gem, open ground, a hill, and a forest of fine shade"
+    }
+   ]
+  },
+  {
+   "n": 743,
+   "gloss": "The textbooks say a fort must be high, wide, solid and impossible to scale.",
+   "keywords": [
+    "military engineering",
+    "walls",
+    "building standards"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Cites the books for four tests of a fortress: height, breadth, strength and being hard to reach.",
+     "quote": "the books say a fortress is what has all four"
+    }
+   ]
+  },
+  {
+   "n": 744,
+   "gloss": "The best fort has few weak spots to guard, plenty of room inside, and breaks the spirit of attackers.",
+   "keywords": [
+    "weak points",
+    "defensive design",
+    "demoralising attackers"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Prefers little to guard and ample room, so that it breaks the spirit of whoever comes.",
+     "quote": "needs little guarding, has ample room"
+    }
+   ]
+  },
+  {
+   "n": 745,
+   "gloss": "A fort must be hard to take, easy for its defenders to hold and well stocked with food.",
+   "keywords": [
+    "stockpiling food",
+    "siege supplies",
+    "easy to hold"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Adds the garrison's side: easy to hold from within and full of food.",
+     "quote": "holds stores of food, and is easy for those inside to hold"
+    }
+   ]
+  },
+  {
+   "n": 746,
+   "gloss": "A true fort holds everything it needs and has good people who will fight when it counts.",
+   "keywords": [
+    "well supplied",
+    "brave defenders",
+    "being prepared"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Wants full stores and good people who will help when the moment comes.",
+     "quote": "good people who help when the moment comes"
+    }
+   ]
+  },
+  {
+   "n": 747,
+   "gloss": "A real fort cannot be taken by surrounding it, by storming it or by tunnelling under it.",
+   "keywords": [
+    "impregnable",
+    "siege tactics",
+    "attack methods"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Tests a fortress against three ways of taking it: encircling, attack and treachery within.",
+     "quote": "hard to take, whether by encircling it, by attacking without encircling, or by working treachery within"
+    }
+   ]
+  },
+  {
+   "n": 748,
+   "gloss": "A true fort lets those inside beat the attackers, however hard they press.",
+   "keywords": [
+    "holding out",
+    "outlasting attackers",
+    "winning from a defensive position"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Judges a fort by whether those inside can still win when the besiegers give everything.",
+     "quote": "hold fast and beat even those strong enough to surround it"
+    }
+   ]
+  },
+  {
+   "n": 749,
+   "gloss": "A true fort is so well built that its defenders can bring enemies down right at the outer walls.",
+   "keywords": [
+    "outer defences",
+    "layered security",
+    "stopping attackers early"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Looks for a fortress whose action fells the enemy at the very front of the fight.",
+     "quote": "the enemy falls at the very front of the fight"
+    }
+   ]
+  },
+  {
+   "n": 750,
+   "gloss": "However good a fort is, it is no use if the people defending it do not act with spirit.",
+   "keywords": [
+    "security depends on people",
+    "defenders",
+    "strong walls weak men"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Even the finest fortress comes to nothing when those in it have no excellence in action.",
+     "quote": "with those who have no excellence in action it is no fortress"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Treats vigour in the defenders as the thing that gives stone its worth.",
+     "quote": "vigour in action"
+    }
+   ]
+  },
+  {
+   "n": 751,
+   "gloss": "Nothing else can turn a nobody into somebody the way money can.",
+   "keywords": [
+    "status",
+    "money talks",
+    "social climbing"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Wealth alone can make someone of no account count for something.",
+     "quote": "makes people who don’t count into people who do"
+    }
+   ]
+  },
+  {
+   "n": 752,
+   "gloss": "Everyone looks down on the poor, and everyone looks up to the rich.",
+   "keywords": [
+    "class prejudice",
+    "social status",
+    "money and respect"
+   ],
+   "sensitive": "says everyone despises the poor",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Shows the honour wealth commands from everyone.",
+     "quote": "Everyone honours the rich"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Shows what want costs a man: scorn from every side.",
+     "quote": "Everyone scorns those who have nothing"
+    }
+   ]
+  },
+  {
+   "n": 753,
+   "gloss": "Money is a lamp that never lets you down: it lights up every dark corner wherever you take it.",
+   "keywords": [
+    "money solves problems",
+    "financial security",
+    "power of money"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Credits wealth with clearing the dark from wherever its owner goes.",
+     "quote": "goes to whatever land you think of and cuts through the dark"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lamp",
+     "basis": "explicit",
+     "reason": "Pictures wealth as a lamp that never fails.",
+     "quote": "The unfailing lamp called wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:darkness",
+     "basis": "explicit",
+     "reason": "Whatever wealth's light reaches stops being a dark place.",
+     "quote": "cuts through the dark"
+    }
+   ]
+  },
+  {
+   "n": 754,
+   "gloss": "Money earned the right way, without doing wrong, brings both goodness and happiness.",
+   "keywords": [
+    "ethical earning",
+    "honest income",
+    "clean money"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Says both righteousness and happiness are born of wealth gained without wrong.",
+     "quote": "gives birth to righteousness and to happiness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "explicit",
+     "reason": "Keeps its blessing for wealth that comes without wrong.",
+     "quote": "comes by knowing how, and without wrong"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:three-aims",
+     "basis": "explicit",
+     "reason": "Names all three aims together, with honest wealth as the spring of the other two.",
+     "quote": "Wealth that comes by knowing how, and without wrong, gives birth to righteousness and to happiness"
+    }
+   ]
+  },
+  {
+   "n": 755,
+   "gloss": "Do not go after money that comes without mercy or kindness; do not even touch it.",
+   "keywords": [
+    "blood money",
+    "ruthless business",
+    "profiting from suffering"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:compassion",
+     "basis": "explicit",
+     "reason": "Makes compassion the condition wealth must meet before you embrace it.",
+     "quote": "Wealth that comes without compassion and loving-kindness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-action",
+     "basis": "inferred",
+     "reason": "Bars a gain for how it comes, however great it may be.",
+     "quote": "don’t embrace it, let it roll away"
+    }
+   ]
+  },
+  {
+   "n": 756,
+   "gloss": "A ruler's income comes from unclaimed estates, customs duties and what is taken from enemies.",
+   "keywords": [
+    "government revenue",
+    "public finance",
+    "spoils of war"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Sets out where a ruler’s wealth comes from: what comes unbidden, customs dues and what he takes from enemies.",
+     "quote": "these are a ruler’s wealth"
+    }
+   ]
+  },
+  {
+   "n": 757,
+   "gloss": "Compassion is love's child, and it needs money as a foster-mother to raise it.",
+   "keywords": [
+    "giving needs money",
+    "funding charity",
+    "money and kindness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Gives wealth a gentle task, tending compassion as a foster-mother tends a child.",
+     "quote": "the rich foster-mother called wealth"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:compassion",
+     "basis": "explicit",
+     "reason": "Places compassion in a family, born of loving-kindness and brought up by wealth.",
+     "quote": "Compassion, the child that loving-kindness bears"
+    }
+   ]
+  },
+  {
+   "n": 758,
+   "gloss": "Starting a project with money behind you is like watching an elephant fight from a safe hilltop.",
+   "keywords": [
+    "having capital",
+    "financial cushion",
+    "safety net"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Wealth lets you take up a task as calmly as a spectator on a height.",
+     "quote": "Taking on a task with wealth in your hands"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:mountain",
+     "basis": "explicit",
+     "reason": "The hilltop is the safe place that wealth gives anyone who takes on a task.",
+     "quote": "from the top of a hill"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The dangers of a task become a battle of elephants fought far below.",
+     "quote": "watching elephants fight"
+    }
+   ]
+  },
+  {
+   "n": 759,
+   "gloss": "Build up your money: no blade is sharper for cutting an enemy's pride down to size.",
+   "keywords": [
+    "financial power",
+    "beating rivals",
+    "success as revenge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Urges making wealth as the surest weapon against an enemy’s pride.",
+     "quote": "Make wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "Wealth is steel, honed to cut through pride.",
+     "quote": "no steel sharper"
+    }
+   ]
+  },
+  {
+   "n": 760,
+   "gloss": "Once you have built up plenty of wealth, the other two goals of life are easy to reach.",
+   "keywords": [
+    "financial freedom",
+    "goals in life",
+    "what money makes possible"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "With bright wealth made in plenty, the other aims of life stay within easy reach.",
+     "quote": "made bright wealth in plenty"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:three-aims",
+     "basis": "explicit",
+     "reason": "Counts wealth as the way to the other two aims of life.",
+     "quote": "the other two come easily, and together"
+    }
+   ]
+  },
+  {
+   "n": 761,
+   "gloss": "A well-equipped, fearless, winning army is the most valuable thing a ruler owns.",
+   "keywords": [
+    "national defence",
+    "military strength",
+    "strong team"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "Ranks a complete, winning army first among all a ruler owns.",
+     "quote": "the first of all a ruler’s riches"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:courage",
+     "basis": "explicit",
+     "reason": "Asks of that army above all that it fear no wound.",
+     "quote": "fears no wound"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Tells a ruler which of his riches counts for most.",
+     "quote": "a ruler’s riches"
+    }
+   ]
+  },
+  {
+   "n": 762,
+   "gloss": "Only seasoned troops can stand firm in a desperate fight, whatever losses they take.",
+   "keywords": [
+    "experience under pressure",
+    "seasoned team",
+    "holding the line"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Prizes the hard courage that holds on when the fight goes badly.",
+     "quote": "hard courage that fears no wound"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:soldier",
+     "basis": "explicit",
+     "reason": "Singles out the old army as the only one that can do it.",
+     "quote": "rare except in an old army"
+    }
+   ]
+  },
+  {
+   "n": 763,
+   "gloss": "However loudly a horde of rats squeals, one breath from a cobra finishes them.",
+   "keywords": [
+    "quality over quantity",
+    "numbers don't matter",
+    "noisy opposition"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:army",
+     "basis": "inferred",
+     "reason": "Numbers and noise count for little: one cobra ends a whole host of rats.",
+     "quote": "A cobra breathes, and they are gone"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:serpent",
+     "basis": "explicit",
+     "reason": "One breath of the cobra stands for true force set against a weak crowd.",
+     "quote": "A cobra breathes"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Gives the rats the roar of the ocean, only to show how little noise is worth.",
+     "quote": "roars like the sea"
+    }
+   ]
+  },
+  {
+   "n": 764,
+   "gloss": "An army worthy of the name never breaks, cannot be bought and has courage in its history.",
+   "keywords": [
+    "military tradition",
+    "incorruptible",
+    "team culture"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "Keeps the name for a force undefeated, incorruptible and heir to a long tradition.",
+     "quote": "doesn’t fall, can’t be turned by treachery, and has hard courage handed down"
+    }
+   ]
+  },
+  {
+   "n": 765,
+   "gloss": "A real army will stand together and face Death himself if he comes at it in a rage.",
+   "keywords": [
+    "facing death",
+    "standing together",
+    "team courage"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "The test of an army is whether it would stand even against Death in his fury.",
+     "quote": "stand together and face even Death"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:god-of-death",
+     "basis": "explicit",
+     "reason": "Death comes on as a raging enemy for the ranks to meet.",
+     "quote": "Death, coming on in rage"
+    }
+   ]
+  },
+  {
+   "n": 766,
+   "gloss": "Four things protect an army: bravery, honour, a clear mind and knowledge of the great wars before it.",
+   "keywords": [
+    "military history",
+    "learning from the past",
+    "troop morale"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "Names what protects an army: valour, honour, the noble path and clarity of mind.",
+     "quote": "these four alone protect an army"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Valour comes first among the four protections of an army.",
+     "quote": "Valour"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Honour stands beside valour among the four protections of an army.",
+     "quote": "honour"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Clarity of mind is counted among the four things that protect an army.",
+     "quote": "clarity of mind"
+    }
+   ]
+  },
+  {
+   "n": 767,
+   "gloss": "A true army charges at the enemy, confident it can withstand whatever comes when battle is joined.",
+   "keywords": [
+    "going on the offensive",
+    "taking the initiative",
+    "confidence"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "Makes going forward the mark of an army, since it knows how to bear the fight that comes.",
+     "quote": "holds back the vanguard and goes forward"
+    }
+   ]
+  },
+  {
+   "n": 768,
+   "gloss": "Even an army short on fighting spirit and staying power can make up for it with superior equipment.",
+   "keywords": [
+    "better equipment",
+    "technology advantage",
+    "making up for weakness"
+   ],
+   "edges": []
+  },
+  {
+   "n": 769,
+   "gloss": "An army wins as long as it is not too small, is not eaten up by feuds and is not left unpaid.",
+   "keywords": [
+    "paying your people",
+    "internal conflict",
+    "team morale"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "Victory rests on three things: no shrinking, no lasting grudge and no poverty.",
+     "quote": "no shrinking, no grudge that won’t go, and no poverty"
+    }
+   ]
+  },
+  {
+   "n": 770,
+   "gloss": "Plenty of troops does not make an army if there are no leaders to command them.",
+   "keywords": [
+    "leadership",
+    "team without a leader",
+    "management"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "However many men stand in line, it takes leaders to make them an army.",
+     "quote": "without leaders it is no army"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:commander",
+     "basis": "explicit",
+     "reason": "Makes the leader the one person an army can’t do without.",
+     "quote": "without leaders"
+    }
+   ]
+  },
+  {
+   "n": 771,
+   "gloss": "Enemies, do not stand against my chief: many who did are memorial stones now.",
+   "keywords": [
+    "war boast",
+    "warrior pride",
+    "hero stones"
+   ],
+   "sensitive": "boasts of men killed in battle",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Boasts that those who stood before this lord now stand in stone.",
+     "quote": "Many have stood before him, and now they stand in stone"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:loyalty",
+     "basis": "inferred",
+     "reason": "A soldier's boast on his master's behalf shows where his devotion lies.",
+     "quote": "don’t stand before my lord"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Shouts its warning straight at the foe.",
+     "quote": "Enemies"
+    }
+   ]
+  },
+  {
+   "n": 772,
+   "gloss": "A spear thrown at an elephant that misses is more glorious than an arrow that hits a rabbit.",
+   "keywords": [
+    "aim high",
+    "big goals",
+    "failing at something worthwhile"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:aspiration",
+     "basis": "inferred",
+     "reason": "A throw at a great target that misses outranks a hit on a small one.",
+     "quote": "Better to hold a spear that missed an elephant"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The elephant is the great target worth failing at.",
+     "quote": "a spear that missed an elephant"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "The spear is a bold effort, measured by its aim and not by its success.",
+     "quote": "hold a spear"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-tried-and-failed",
+     "basis": "inferred",
+     "reason": "Tells someone who aimed high and missed that the miss still beats a small success.",
+     "quote": "a spear that missed an elephant"
+    }
+   ]
+  },
+  {
+   "n": 773,
+   "gloss": "Fierce courage is what people call bravery, but being generous to someone who is down is what gives it its cutting edge.",
+   "keywords": [
+    "chivalry",
+    "gracious winner",
+    "sportsmanship"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Says what great manhood is, then what sharpens it: generosity when someone falls on hard times.",
+     "quote": "They call fierce courage great manhood"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:compassion",
+     "basis": "inferred",
+     "reason": "Praises generosity to someone in trouble as what gives courage its edge.",
+     "quote": "generosity is the sharp edge of it"
+    }
+   ]
+  },
+  {
+   "n": 774,
+   "gloss": "A warrior who has thrown his spear at an elephant finds another in his own body and pulls it out with a smile.",
+   "keywords": [
+    "ignoring pain",
+    "battle joy",
+    "warrior spirit"
+   ],
+   "sensitive": "delights in being wounded in battle",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "The wound is forgotten, and the spear in his body is only a welcome new weapon.",
+     "quote": "pulls it out and laughs"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:soldier",
+     "basis": "explicit",
+     "reason": "Tells the story of one fighting man in the thick of battle.",
+     "quote": "He lets the spear in his hand go with an elephant"
+    }
+   ]
+  },
+  {
+   "n": 775,
+   "gloss": "Isn't it a disgrace to a brave man if he so much as blinks when a spear is thrown at him?",
+   "keywords": [
+    "not flinching",
+    "staying steady under threat",
+    "warrior code"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Even a blink at a thrown spear counts as running away.",
+     "quote": "a glaring eye blinks"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:soldier",
+     "basis": "explicit",
+     "reason": "Sets the fighting man's own standard of disgrace.",
+     "quote": "for those with hard courage"
+    }
+   ]
+  },
+  {
+   "n": 776,
+   "gloss": "A brave fighter counts any day without a serious wound as a day wasted.",
+   "keywords": [
+    "battle scars",
+    "proving yourself",
+    "warrior pride"
+   ],
+   "sensitive": "praises being wounded; could reach someone who self-harms",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "A day without a noble wound is written off as lost.",
+     "quote": "every day with no noble wound"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:soldier",
+     "basis": "explicit",
+     "reason": "Gives the fighting man's own reckoning of a day well spent.",
+     "quote": "He counts over his days"
+    }
+   ]
+  },
+  {
+   "n": 777,
+   "gloss": "Men who do not care for their lives and want fame that spreads across the world wear the warrior's anklet beautifully.",
+   "keywords": [
+    "dying for fame",
+    "hero's honour",
+    "war decorations"
+   ],
+   "sensitive": "praises giving up one’s life for fame",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Those who don’t want life make even their anklet an ornament.",
+     "quote": "don’t want life"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:glory",
+     "basis": "explicit",
+     "reason": "Fame that circles the world is what these warriors give their lives to earn.",
+     "quote": "fame that circles the world"
+    }
+   ]
+  },
+  {
+   "n": 778,
+   "gloss": "Brave soldiers who do not fear for their lives keep their discipline even when their commander turns harsh on them.",
+   "keywords": [
+    "military discipline",
+    "harsh commander",
+    "obedience"
+   ],
+   "sensitive": "praises bearing a superior’s harshness",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:loyalty",
+     "basis": "inferred",
+     "reason": "Good soldiers hold to their duty even when their chief turns severe.",
+     "quote": "they forget not their discipline even when their chief is severe upon them"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:soldier",
+     "basis": "explicit",
+     "reason": "Speaks of warriors who don’t fear for their lives.",
+     "quote": "Warriors who don’t fear for their lives"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:commander",
+     "basis": "explicit",
+     "reason": "Names the anger of the ruler who leads them as the trial of these warriors.",
+     "quote": "even if the ruler is angry with them"
+    }
+   ]
+  },
+  {
+   "n": 779,
+   "gloss": "Who could blame people who die trying to do what they vowed to do?",
+   "keywords": [
+    "keeping your vow",
+    "dying for a cause",
+    "sacrifice"
+   ],
+   "sensitive": "could read as approving of dying for a cause",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Holds those who die rather than break their vow to be beyond all blame.",
+     "quote": "die rather than go back on their vow"
+    }
+   ]
+  },
+  {
+   "n": 780,
+   "gloss": "A death that brings tears to your leader's eyes is worth begging for.",
+   "keywords": [
+    "dying for your leader",
+    "ultimate sacrifice",
+    "a good death"
+   ],
+   "sensitive": "praises seeking one’s own death",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:loyalty",
+     "basis": "explicit",
+     "reason": "A death that fills the eyes of those who cared for you is worth begging for.",
+     "quote": "that death is worth begging for"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:commander",
+     "basis": "explicit",
+     "reason": "Measures the warrior’s death by what it makes those who cared for him feel.",
+     "quote": "those who cared for you"
+    }
+   ]
+  },
+  {
+   "n": 781,
+   "gloss": "Nothing is harder to gain than real friendship, and nothing protects you better from those working against you.",
+   "keywords": [
+    "value of friends",
+    "allies",
+    "having people on your side"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Calls friendship the hardest thing to make and the hardest guard to get past.",
+     "quote": "What is as hard to make as friendship"
+    }
+   ]
+  },
+  {
+   "n": 782,
+   "gloss": "Friendship with good people grows like the waxing moon; friendship with fools shrinks like the waning one.",
+   "keywords": [
+    "friends worth keeping",
+    "friendships fading",
+    "growing closer"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Gives the bond with worthy men the steady growth of the moon.",
+     "quote": "The friendship of the worthy fills out like the new moon"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "Sets the moon's waxing and waning side by side to sort good bonds from bad.",
+     "quote": "fills out like the new moon"
+    }
+   ]
+  },
+  {
+   "n": 783,
+   "gloss": "The company of good people is like a great book: the more you go back to it, the more you enjoy it.",
+   "keywords": [
+    "deepening friendship",
+    "rereading books",
+    "getting to know someone"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Good friends, like great books, keep showing fresh charm the closer one comes.",
+     "quote": "each time you return to it, it delights you more"
+    }
+   ]
+  },
+  {
+   "n": 784,
+   "gloss": "Friendship is not there for the laughs; it is there to pull you up sharply when you go wrong.",
+   "keywords": [
+    "tough love",
+    "honest friends",
+    "calling out a friend"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Says its purpose is not fun but the checking of one who strays.",
+     "quote": "not to laugh together"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:frank-counsel",
+     "basis": "explicit",
+     "reason": "Makes reproof of a straying friend the very point of the bond.",
+     "quote": "to step in and rebuke when someone goes too far"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:hearing-a-hard-truth",
+     "basis": "inferred",
+     "reason": "Someone stung by a friend's rebuke is told that this is what friendship is for.",
+     "quote": "step in and rebuke"
+    }
+   ]
+  },
+  {
+   "n": 785,
+   "gloss": "You do not need to see each other all the time: shared feeling is what makes friends close.",
+   "keywords": [
+    "long distance friendship",
+    "friends you rarely see",
+    "staying in touch"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Puts the strength of friendship in shared feeling, not in hours spent together.",
+     "quote": "Feeling alone gives the bond of friendship"
+    }
+   ]
+  },
+  {
+   "n": 786,
+   "gloss": "Smiling at someone does not make you their friend; real friendship is gladness deep in the heart.",
+   "keywords": [
+    "fake smiles",
+    "superficial friends",
+    "real connection"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Separates the smile on the face from the smile deep in the heart.",
+     "quote": "Friendship that makes the face smile is not friendship"
+    }
+   ]
+  },
+  {
+   "n": 787,
+   "gloss": "A real friend steers you away from doing wrong, points you to what is right and shares your troubles when things fall apart.",
+   "keywords": [
+    "what makes a good friend",
+    "loyal friend",
+    "support"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Gives three marks of friendship: it turns you from ruin, sets you on the path and shares the pain.",
+     "quote": "Friendship turns you from what would ruin you"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:frank-counsel",
+     "basis": "explicit",
+     "reason": "Credits friendship with turning you from ruin and setting you on the path.",
+     "quote": "turns you from what would ruin you, sets you on the path"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:friend",
+     "basis": "explicit",
+     "reason": "Sets out what anyone called a friend must do for you.",
+     "quote": "shares the pain when ruin comes"
+    }
+   ]
+  },
+  {
+   "n": 788,
+   "gloss": "A true friend rushes to help you in trouble, as quickly as your hand grabs at clothing that is slipping off.",
+   "keywords": [
+    "instant help",
+    "being there",
+    "friend in need"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Friendship is a reflex here, as quick as a hand saving a slipping garment.",
+     "quote": "friendship takes away trouble on the spot"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:friend",
+     "basis": "explicit",
+     "reason": "Pictures what the true friend does without stopping to think.",
+     "quote": "takes away trouble on the spot"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friend-in-trouble",
+     "basis": "explicit",
+     "reason": "Gives the rule for a friend's crisis: move at once, as a hand moves to a slipping cloth.",
+     "quote": "Like the hand of someone whose clothes slip"
+    }
+   ]
+  },
+  {
+   "n": 789,
+   "gloss": "Friendship is at its best when two people stay steady with each other and prop each other up however they can.",
+   "keywords": [
+    "mutual support",
+    "best friends",
+    "being on the same page"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Places friendship’s throne in unwavering support, given in every way it can.",
+     "quote": "Where does friendship sit enthroned"
+    }
+   ]
+  },
+  {
+   "n": 790,
+   "gloss": "A friendship that keeps score of who loves whom and how much is a poor thing, however proudly it is described.",
+   "keywords": [
+    "keeping score",
+    "transactional friends",
+    "boasting about friends"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:friendship",
+     "basis": "inferred",
+     "reason": "A bond that is spelled out and praised looks poor for all the praise.",
+     "quote": "Say it, however finely, and the friendship looks poor"
+    }
+   ]
+  },
+  {
+   "n": 791,
+   "gloss": "Nothing is worse than making a friend without checking them out first, because a good person cannot walk away afterwards.",
+   "keywords": [
+    "choosing friends",
+    "vetting people",
+    "red flags"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Calls friendship without trial the worst ill, since the loyal man cannot undo it.",
+     "quote": "Nothing ruins you like making friends without looking into them"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:trusting-someone-new",
+     "basis": "explicit",
+     "reason": "Warns anyone opening up to a new person to test first, because the tie is hard to undo.",
+     "quote": "once made there is no leaving it"
+    }
+   ]
+  },
+  {
+   "n": 792,
+   "gloss": "If you keep making friends without looking into them carefully, you will end up with sorrow that lasts until you die.",
+   "keywords": [
+    "trusting too easily",
+    "bad friends",
+    "lifelong regret"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Friends taken on without trial bring trouble that lasts to the grave.",
+     "quote": "makes a friend without looking and looking again"
+    }
+   ]
+  },
+  {
+   "n": 793,
+   "gloss": "Before you become someone's friend, look at their family, their good and bad points and the people they mix with.",
+   "keywords": [
+    "background check",
+    "judging character",
+    "who to trust"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Lays out what to weigh: character, family, faults and the kin around them.",
+     "quote": "Know a person’s character, family, faults and the unfailing kin around them"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:trusting-someone-new",
+     "basis": "explicit",
+     "reason": "Gives a checklist for anyone deciding whether a new person deserves their trust.",
+     "quote": "then make them your friend"
+    }
+   ]
+  },
+  {
+   "n": 794,
+   "gloss": "It is worth paying to make a friend of someone from a decent family who would be ashamed to do wrong.",
+   "keywords": [
+    "worthwhile friends",
+    "good upbringing",
+    "friends with integrity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Good family is one of the two marks of a friend worth paying for.",
+     "quote": "Someone well-born"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Shrinking from blame is what makes such a friend worth paying for.",
+     "quote": "shrinks from blame upon himself"
+    }
+   ]
+  },
+  {
+   "n": 795,
+   "gloss": "Look for friends who know what is right and who will tell you off, even to tears, when you go wrong.",
+   "keywords": [
+    "mentors",
+    "friends who challenge you",
+    "accountability"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:openness-to-rebuke",
+     "basis": "explicit",
+     "reason": "Tells you to seek out as friends the very people who will rebuke you.",
+     "quote": "can speak until you weep, rebuke you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:hearing-a-hard-truth",
+     "basis": "inferred",
+     "reason": "Tells someone smarting from correction that such correctors are the friends to keep.",
+     "quote": "Choose with care friends who, when you go wrong, can speak until you weep"
+    }
+   ]
+  },
+  {
+   "n": 796,
+   "gloss": "There is one good thing about disaster: it shows you exactly how far your friends will go.",
+   "keywords": [
+    "true friends",
+    "who stays",
+    "silver lining"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:testing-people",
+     "basis": "explicit",
+     "reason": "Finds one gain in ruin: it measures who your own people are.",
+     "quote": "Even in ruin there is one benefit"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:touchstone-and-measuring-rod",
+     "basis": "explicit",
+     "reason": "Ruin is the rod laid against each of your people to take their true length.",
+     "quote": "a rod that measures your people to their full length"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friends-vanished",
+     "basis": "explicit",
+     "reason": "Turns the loss of friends in bad times into a measure of what they ever were.",
+     "quote": "a rod that measures your people"
+    }
+   ]
+  },
+  {
+   "n": 797,
+   "gloss": "Getting rid of a foolish friend is a real gain.",
+   "keywords": [
+    "cutting people off",
+    "toxic friends",
+    "dropping a friend"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "inferred",
+     "reason": "Counts giving up a fool's friendship as clear profit.",
+     "quote": "give up the friendship of fools"
+    }
+   ]
+  },
+  {
+   "n": 798,
+   "gloss": "Do not dwell on things that shrink your spirit, and do not befriend people who would leave you when you are in trouble.",
+   "keywords": [
+    "negative thinking",
+    "avoiding users",
+    "staying positive"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Warns off those who cut away your strength the moment you are in trouble.",
+     "quote": "those who cut away your strength in trouble"
+    }
+   ]
+  },
+  {
+   "n": 799,
+   "gloss": "Even on your deathbed, the memory of friends who deserted you in disaster will burn.",
+   "keywords": [
+    "betrayal by friends",
+    "lasting hurt",
+    "regret at the end"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "The memory of friends who failed in disaster still burns at the hour of death.",
+     "quote": "burns the heart, even if you think of it when death is upon you"
+    }
+   ]
+  },
+  {
+   "n": 800,
+   "gloss": "Seek out the friendship of good people, and shake off unworthy ones even if you have to give them something to go away.",
+   "keywords": [
+    "toxic friends",
+    "ending a friendship",
+    "paying someone off"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:company",
+     "basis": "explicit",
+     "reason": "Urges holding to the spotless and leaving those who don’t fit, whatever that costs.",
+     "quote": "Cling to the friendship of the spotless"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:bad-influence",
+     "basis": "explicit",
+     "reason": "Says to get clear of unworthy friends even if it takes a parting gift.",
+     "quote": "Give something if you must, and leave the friendship of those who don’t fit"
+    }
+   ]
+  },
+  {
+   "n": 801,
+   "gloss": "Old friendship means accepting whatever liberties the other takes, without any resentment.",
+   "keywords": [
+    "old friends",
+    "boundaries with friends",
+    "being comfortable together"
+   ],
+   "sensitive": "urges submitting without resentment to a loved one’s liberties",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Defines old friendship as the kind that in no way cuts back the rights of closeness.",
+     "quote": "friendship that in no way cuts back the rights of closeness"
+    }
+   ]
+  },
+  {
+   "n": 802,
+   "gloss": "Being relaxed and informal with each other is the core of friendship, and good people never take offence at it.",
+   "keywords": [
+    "relaxed friendships",
+    "friends teasing",
+    "being yourself"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Makes the rights of closeness a limb of friendship itself.",
+     "quote": "The rights of closeness are a limb of friendship"
+    }
+   ]
+  },
+  {
+   "n": 803,
+   "gloss": "What is a long friendship worth if it cannot go along with the liberties friends take?",
+   "keywords": [
+    "friends overstepping",
+    "taking liberties",
+    "tolerance between friends"
+   ],
+   "sensitive": "presses one to accept whatever liberties a friend takes",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Asks what years of friendship are for if they will not allow such liberties.",
+     "quote": "What use is long friendship"
+    }
+   ]
+  },
+  {
+   "n": 804,
+   "gloss": "When friends use their closeness to do something without asking, people with warm hearts remember the love and take it well.",
+   "keywords": [
+    "friend overstepped",
+    "friend didn't ask",
+    "borrowing without asking"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "A friend’s unasked act, done out of closeness, is welcomed as something to wish for.",
+     "quote": "act without asking, people welcome it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:friend",
+     "basis": "explicit",
+     "reason": "Concerns how one friend should take what another does unasked.",
+     "quote": "When friends, out of closeness, act without asking"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friend-let-you-down",
+     "basis": "inferred",
+     "reason": "For a friend who overstepped: recall the love and let the act pass.",
+     "quote": "take it in good part"
+    }
+   ]
+  },
+  {
+   "n": 805,
+   "gloss": "When a friend does something that hurts you, put it down either to how close you are or to plain ignorance.",
+   "keywords": [
+    "friend hurt me",
+    "benefit of the doubt",
+    "giving them a chance"
+   ],
+   "sensitive": "tells the hurt to explain away a friend’s harm",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Would have a friend's hurtful act read as closeness as much as ignorance.",
+     "quote": "foolishness or to great closeness"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:friend",
+     "basis": "explicit",
+     "reason": "Tells one friend how to read the pain another has caused.",
+     "quote": "If friends do something that hurts"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friend-let-you-down",
+     "basis": "explicit",
+     "reason": "Offers someone wounded by a friend two gentler readings of what happened.",
+     "quote": "put it down to foolishness or to great closeness"
+    }
+   ]
+  },
+  {
+   "n": 806,
+   "gloss": "A true friend will not give up a long friendship even when that friend has brought them to ruin.",
+   "keywords": [
+    "standing by a friend",
+    "loyal to the end",
+    "forgiving a friend"
+   ],
+   "sensitive": "praises staying with someone who ruined you",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Even ruin does not end the bond for those who keep to the bounds of friendship.",
+     "quote": "don’t leave those who have stood by them from of old, even in ruin"
+    }
+   ]
+  },
+  {
+   "n": 807,
+   "gloss": "People whose love goes back a long way keep loving a friend even when that friend keeps doing them harm.",
+   "keywords": [
+    "unconditional love",
+    "repeated hurt",
+    "long friendship"
+   ],
+   "sensitive": "praises loving on through repeated harm",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Long loving-kindness does not slacken, even when a friend does ruinous things.",
+     "quote": "don’t lose their loving-kindness"
+    }
+   ]
+  },
+  {
+   "n": 808,
+   "gloss": "For those who will not hear a word against a friend, the day that friend wrongs them is a day to celebrate.",
+   "keywords": [
+    "defending a friend",
+    "refusing to hear gossip",
+    "blind loyalty"
+   ],
+   "sensitive": "calls a friend’s injury a cause for celebration",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "So deep is the closeness that the day a friend does wrong becomes a good day.",
+     "quote": "the day the friend does wrong is a good day"
+    }
+   ]
+  },
+  {
+   "n": 809,
+   "gloss": "People who never let go of a friendship that has lasted are loved by everyone.",
+   "keywords": [
+    "lifelong friends",
+    "being well liked",
+    "reputation for loyalty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Not giving up an old friend wins the desire of the whole world.",
+     "quote": "The world desires those who don’t give up"
+    }
+   ]
+  },
+  {
+   "n": 810,
+   "gloss": "Those who do not change towards their old friends earn warmth even from their enemies.",
+   "keywords": [
+    "staying loyal",
+    "winning over enemies",
+    "keeping old friends"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:intimacy",
+     "basis": "explicit",
+     "reason": "Constancy to old friends softens even those who wish one harm.",
+     "quote": "desired even by those who don’t desire them"
+    }
+   ]
+  },
+  {
+   "n": 811,
+   "gloss": "Worthless people may act as if they cannot get enough of you, but it is better when such a friendship fades than when it grows.",
+   "keywords": [
+    "clingy fake friends",
+    "love bombing",
+    "friendships worth losing"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "A show of devouring fondness from those without character is best seen shrinking.",
+     "quote": "better shrinking than growing"
+    }
+   ]
+  },
+  {
+   "n": 812,
+   "gloss": "Why care whether you keep or lose people who stick around when it pays and leave when it does not?",
+   "keywords": [
+    "users",
+    "only call when they need something",
+    "opportunists"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Describes friends who fawn while it pays and leave when the profit stops.",
+     "quote": "make friends when it pays and leave when it doesn’t"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friends-vanished",
+     "basis": "explicit",
+     "reason": "Asks someone deserted what such a friendship was ever worth.",
+     "quote": "what does it matter if you gain or lose them"
+    }
+   ]
+  },
+  {
+   "n": 813,
+   "gloss": "People who are friends only for what they can get are in the same class as thieves and those who take money for love.",
+   "keywords": [
+    "using people",
+    "transactional friendship",
+    "self-interest"
+   ],
+   "sensitive": "classes sex workers with thieves",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Ranks the friend who weighs the gain with thieves and those who take what they are paid.",
+     "quote": "Friends who weigh what they stand to gain"
+    }
+   ]
+  },
+  {
+   "n": 814,
+   "gloss": "Some people are like an untrained horse that throws you in battle and bolts: better to be alone than have them as friends.",
+   "keywords": [
+    "unreliable friends",
+    "better off alone",
+    "abandoned when it counts"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Prefers being alone to friends who fail you in the fight like an untaught horse.",
+     "quote": "Better to be alone"
+    }
+   ]
+  },
+  {
+   "n": 815,
+   "gloss": "Better to have no friendship at all with low people who leave you when you need them.",
+   "keywords": [
+    "let down in a crisis",
+    "no friends better than bad friends",
+    "trust betrayed"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Says friends who forsake one at the moment of need are better never had.",
+     "quote": "give no protection even when you have made it"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:friends-vanished",
+     "basis": "explicit",
+     "reason": "Reassures the one forsaken that not having such friends is the better state.",
+     "quote": "better not had than had"
+    }
+   ]
+  },
+  {
+   "n": 816,
+   "gloss": "Being on bad terms with wise people is ten million times better than being close to a fool.",
+   "keywords": [
+    "wise enemies",
+    "foolish friends",
+    "choosing your rivals"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "inferred",
+     "reason": "Rates a fool's closeness so low that the hostility of the wise beats it ten million times.",
+     "quote": "the deepest friendship of a fool"
+    }
+   ]
+  },
+  {
+   "n": 817,
+   "gloss": "An enemy's hatred is worth far more than the friendship of people who only want to laugh and flatter.",
+   "keywords": [
+    "flatterers",
+    "yes men",
+    "party friends"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "explicit",
+     "reason": "Puts friends who are only for laughter below enemies by a hundred million times.",
+     "quote": "a friendship that is only laughter"
+    }
+   ]
+  },
+  {
+   "n": 818,
+   "gloss": "Say nothing to friends who get in the way of what you are doing; just let the friendship slowly drop.",
+   "keywords": [
+    "quietly ending a friendship",
+    "ghosting",
+    "drifting apart"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "inferred",
+     "reason": "A friend who spoils your work earns only a slow and silent letting go.",
+     "quote": "say nothing, and let the friendship slowly slip away"
+    }
+   ]
+  },
+  {
+   "n": 819,
+   "gloss": "Keeping company with people whose actions do not match their words is bitter, even in a dream.",
+   "keywords": [
+    "empty promises",
+    "all talk",
+    "saying one thing and doing another"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:fair-weather-friendship",
+     "basis": "inferred",
+     "reason": "A friend whose deeds belie his words is bitter even to remember in sleep.",
+     "quote": "whose acts are one thing and words another"
+    }
+   ]
+  },
+  {
+   "n": 820,
+   "gloss": "Keep well away from those who are nice to you in private but run you down in public.",
+   "keywords": [
+    "talks behind my back",
+    "public humiliation",
+    "nice to my face"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:slander",
+     "basis": "explicit",
+     "reason": "Sets warmth at home against blame in the assembly.",
+     "quote": "warm at home and blame you in the assembly"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:two-faced-person",
+     "basis": "explicit",
+     "reason": "Gives one flat rule for those who are warm in private and blame you in public: keep away.",
+     "quote": "come near you at all"
+    }
+   ]
+  },
+  {
+   "n": 821,
+   "gloss": "An enemy's pretended friendship is just the anvil they will use to strike you when the chance comes.",
+   "keywords": [
+    "frenemy",
+    "betrayal",
+    "hidden motives"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Turns the friendship of those not with you at heart into an anvil on which you will be struck.",
+     "quote": "is an anvil"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Looks at what friendship means in the hands of someone who is an enemy at heart.",
+     "quote": "those who keep company without agreeing at heart"
+    }
+   ]
+  },
+  {
+   "n": 822,
+   "gloss": "Those who act like friends while being enemies at heart will turn on you without warning.",
+   "keywords": [
+    "fake friends",
+    "sudden betrayal",
+    "people who change"
+   ],
+   "sensitive": "demeans women as fickle",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Seems your own, is not, and will change when the chance comes.",
+     "quote": "those who seem your own but are not"
+    }
+   ]
+  },
+  {
+   "n": 823,
+   "gloss": "However much good study an enemy does, it is very hard for them to become good-hearted.",
+   "keywords": [
+    "people don't change",
+    "education doesn't fix character",
+    "lasting hatred"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:enmity",
+     "basis": "explicit",
+     "reason": "Hate in an enemy’s heart outlasts even much good learning.",
+     "quote": "hard for enemies to become good at heart"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Warns that a learned foe is still a foe.",
+     "quote": "Even after learning many good things"
+    }
+   ]
+  },
+  {
+   "n": 824,
+   "gloss": "Be afraid of deceitful people who smile at you while their heart is full of spite.",
+   "keywords": [
+    "backstabbers",
+    "fake smiles",
+    "two-faced coworker"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Warns to fear the smile that covers bitterness within.",
+     "quote": "smile sweetly with the face and are bitter within"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:two-faced-person",
+     "basis": "explicit",
+     "reason": "Tells someone facing a smiling opponent plainly to be afraid of him.",
+     "quote": "Fear the deceivers"
+    }
+   ]
+  },
+  {
+   "n": 825,
+   "gloss": "Do not rely in any way on the words of people who are not with you at heart.",
+   "keywords": [
+    "sweet talk",
+    "mixed messages",
+    "manipulation"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Words from those whose minds are not with you deserve no trust at all.",
+     "quote": "not to be trusted in anything, on their words alone"
+    }
+   ]
+  },
+  {
+   "n": 826,
+   "gloss": "Even when an enemy talks kindly like a friend, it soon becomes clear what they really are.",
+   "keywords": [
+    "spotting a fake",
+    "true colours",
+    "kind words from a rival"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Good words, spoken as friends speak, can’t hide the hostile speaker for long.",
+     "quote": "soon seen for what they are"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Says how quickly the foe shows through his words.",
+     "quote": "the words of those who aren’t with you"
+    }
+   ]
+  },
+  {
+   "n": 827,
+   "gloss": "Do not trust an enemy's humble words: a bow bends only to do harm.",
+   "keywords": [
+    "false humility",
+    "flattery from rivals",
+    "suspicious apology"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Bowing speech from an enemy is a threat and not a courtesy.",
+     "quote": "the bowing words of enemies"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bow-and-arrow",
+     "basis": "explicit",
+     "reason": "The bowing of his speech is compared to a bow bending to shoot.",
+     "quote": "The bowing of a bow means harm"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Concerns the enemy who comes with bowing speech.",
+     "quote": "Don’t trust the bowing words of enemies"
+    }
+   ]
+  },
+  {
+   "n": 828,
+   "gloss": "An enemy may hide a weapon in hands folded in respect, and their tears are no more to be trusted.",
+   "keywords": [
+    "crocodile tears",
+    "fake apology",
+    "manipulative crying"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Even a gesture of reverence may have a weapon inside it.",
+     "quote": "A weapon hides in the joined hands of enemies"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tears",
+     "basis": "explicit",
+     "reason": "An enemy’s weeping is one more disguise for a hidden weapon.",
+     "quote": "in their tears too"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Watches an enemy’s hands and tears for what they hide.",
+     "quote": "the joined hands of enemies"
+    }
+   ]
+  },
+  {
+   "n": 829,
+   "gloss": "With people who praise you in public and mock you in private, keep them happy to their face while destroying them from within the friendship.",
+   "keywords": [
+    "secret contempt",
+    "getting back at fakes",
+    "playing along"
+   ],
+   "sensitive": "urges secretly crushing those who mock you",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Describes those who make much of you outwardly and despise you all the same.",
+     "quote": "make much of you and despise you"
+    }
+   ]
+  },
+  {
+   "n": 830,
+   "gloss": "When you cannot yet break with an enemy, act friendly on the surface but keep them out of your heart.",
+   "keywords": [
+    "keeping up appearances",
+    "office politics",
+    "professional distance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Counsels a false front towards an enemy who turns friend, until you can drop it.",
+     "quote": "be friends with the face, and put friendship out of the heart"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "LEADS_TO",
+   "source": "theme:learning",
+   "target": "quality:audience-courage",
+   "basis": "explicit",
+   "reason": "Learning by the right path is given as the way to answer unafraid in any assembly.",
+   "quote": "Learn by the right path and know the measure, so that you can answer in an assembly without fear",
+   "couplets": [
+    725
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:country",
+   "target": "theme:fortress",
+   "basis": "explicit",
+   "reason": "A strong fortress is named among the limbs of a country.",
+   "quote": "a strong fortress are the limbs of a country",
+   "couplets": [
+    737
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:country",
+   "target": "theme:rain",
+   "basis": "explicit",
+   "reason": "Rainwater is named among the things no country can do without.",
+   "quote": "rainwater, well-situated mountains, and strong fortifications, these are indispensable to every country",
+   "couplets": [
+    737
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:country",
+   "target": "theme:kingship",
+   "basis": "explicit",
+   "reason": "All of a country’s gifts come to nothing unless it is well matched with its ruler.",
+   "quote": "a country is of no use if it isn’t well matched with its ruler",
+   "couplets": [
+    740
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:fortress",
+   "target": "quality:energy",
+   "basis": "explicit",
+   "reason": "However strong the walls, they avail nothing without vigour in those who hold them.",
+   "quote": "it will avail nothing if the defenders show not vigour in action",
+   "couplets": [
+    750
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:wealth",
+   "target": "quality:righteousness",
+   "basis": "explicit",
+   "reason": "Wealth gained without wrong gives birth to righteousness.",
+   "quote": "gives birth to righteousness",
+   "couplets": [
+    754
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:compassion",
+   "target": "theme:wealth",
+   "basis": "explicit",
+   "reason": "Compassion needs wealth as a child needs a foster-mother to raise it.",
+   "quote": "thrives with the rich foster-mother called wealth",
+   "couplets": [
+    757
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:affection",
+   "target": "quality:compassion",
+   "basis": "explicit",
+   "reason": "Compassion is called the child of loving-kindness.",
+   "quote": "the child that loving-kindness bears",
+   "couplets": [
+    757
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "theme:wealth",
+   "target": "quality:arrogance",
+   "basis": "explicit",
+   "reason": "No steel cuts a foe's pride as sharply as wealth does.",
+   "quote": "no sharper steel to cleave thy foeman’s pride",
+   "couplets": [
+    759
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:army",
+   "target": "role:commander",
+   "basis": "explicit",
+   "reason": "Without leaders, steadfast men however many are no army.",
+   "quote": "without leaders it is no army",
+   "couplets": [
+    770
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "label": "The Watered Plant",
+   "type": "image",
+   "why": "Water at the root of a growing plant recurs as a figure for what nourishes or starves; the guide itself cites 1304, but no image entry covers it.",
+   "couplets": [
+    595,
+    718,
+    1093,
+    1147,
+    1304
+   ]
+  }
+ ]
+}

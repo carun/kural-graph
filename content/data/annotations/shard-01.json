@@ -1,0 +1,3537 @@
+{
+ "shard": "shard-01",
+ "chapters": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "couplets": [
+  {
+   "n": 1,
+   "gloss": "Just as the letter A comes first among all sounds, God comes first: everything that exists begins with him.",
+   "keywords": [
+    "creator of the universe",
+    "first cause",
+    "where everything came from",
+    "origin of life"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:the-lord",
+     "basis": "explicit",
+     "reason": "Names the First Lord as the source of the world, as A stands first among all letters.",
+     "quote": "the world begins with the First Lord"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "gloss": "What good is all your education if you never bow before the one whose knowledge is complete?",
+   "keywords": [
+    "purpose of education",
+    "faith and knowledge",
+    "educated but godless",
+    "spiritual life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Says all study is wasted unless it ends in worship.",
+     "quote": "worship the good feet"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:the-lord",
+     "basis": "explicit",
+     "reason": "Calls him the one whose knowledge is pure, which is why a student’s learning should bow to him.",
+     "quote": "the one whose knowledge is pure"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "Worship at the feet stands for all devotion, the only real return on learning.",
+     "quote": "the good feet"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "gloss": "Whoever takes shelter with God, who is said to tread on a flower, will live long on the earth.",
+   "keywords": [
+    "long life",
+    "refuge in god",
+    "finding safety in faith"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Promises long life on earth to those who reach the feet of the one who walked on the flower.",
+     "quote": "will live long on the earth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "The feet of the one who walked on the flower are the place to reach.",
+     "quote": "the noble feet"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "gloss": "Those who hold on to the one who has no likes or dislikes are never touched by life's troubles.",
+   "keywords": [
+    "free from suffering",
+    "god without favourites",
+    "protection from hardship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Says those who reach his feet will never suffer.",
+     "quote": "will have no suffering, ever"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:the-lord",
+     "basis": "explicit",
+     "reason": "Praises him as one who wants nothing and rejects nothing.",
+     "quote": "the one who wants nothing and rejects nothing"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "Reaching the feet is what puts people beyond suffering.",
+     "quote": "reach the feet"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "gloss": "People who sincerely praise God are released from the painful results of their deeds, good and bad alike.",
+   "keywords": [
+    "karma",
+    "singing hymns",
+    "release from consequences",
+    "prayer"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Devotion to the Lord’s true praise is what keeps both kinds of deeds away.",
+     "quote": "devoted to the true praise of the Lord"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "theme:fruits-of-action",
+     "basis": "inferred",
+     "reason": "Counts both kinds of deeds as bound up with darkness, and being free of them as the gain.",
+     "quote": "The two kinds of deeds, which go with darkness"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "gloss": "Those who keep to the true path of the one who conquered the five senses will live long.",
+   "keywords": [
+    "self-mastery",
+    "following god's way",
+    "overcoming temptation"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Long life goes to those who stay on the true path of the one who quenched the senses.",
+     "quote": "stay on the true path"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "inferred",
+     "reason": "The one they follow is praised for quenching the five senses, the pattern for his followers.",
+     "quote": "quenched the five senses"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "gloss": "Only those who take refuge with the one beyond compare can get free of the worry in their minds.",
+   "keywords": [
+    "anxiety",
+    "mental distress",
+    "finding peace",
+    "comfort in faith"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Makes reaching his feet the way to lift sorrow from the mind.",
+     "quote": "the sorrow in your mind is hard to remove"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:the-lord",
+     "basis": "explicit",
+     "reason": "Calls him the one who has no equal, which is why nothing else lifts the sorrow.",
+     "quote": "the one who has no equal"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "Names his feet as the one place where sorrow of the mind can be lifted.",
+     "quote": "reach the feet"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "gloss": "The rough waters of money and pleasure can only be crossed by holding on to God, whose goodness is as wide as an ocean.",
+   "keywords": [
+    "materialism",
+    "temptation of wealth",
+    "pleasure seeking",
+    "staying afloat"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Only by reaching the sage’s feet can anyone swim the other seas.",
+     "quote": "reach the feet of the sage"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Uses seas twice: the sage is a sea of righteousness, and what lies before everyone else are seas to be swum.",
+     "quote": "the other seas are hard to swim"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "The feet are what a swimmer in those seas must reach.",
+     "quote": "the feet of the sage"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "gloss": "A head that doesn't bow to God is as useless as an eye that can't see or an ear that can't hear.",
+   "keywords": [
+    "pride before god",
+    "refusing to worship",
+    "eight attributes of god"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "A head that will not bow is as worthless as a sense organ that perceives nothing.",
+     "quote": "A head that won’t bow"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "The feet are where a head proves it is good for anything.",
+     "quote": "the feet of the one with eight qualities"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "gloss": "Only those who hold on to God get across the vast sea of repeated births; everyone else stays in it.",
+   "keywords": [
+    "moksha",
+    "salvation",
+    "end of reincarnation",
+    "breaking the cycle"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Allows no other way across: those who do not reach the Lord’s feet will not swim the sea.",
+     "quote": "Those who do not reach them will not"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:liberation",
+     "basis": "inferred",
+     "reason": "Swimming the sea of births is the end of being born, the prize held out here.",
+     "quote": "swim the great sea of births"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Birth after birth is one great sea that has to be swum.",
+     "quote": "the great sea of births"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lords-feet",
+     "basis": "explicit",
+     "reason": "The Lord's feet are the only hold that brings anyone across.",
+     "quote": "the Lord’s feet"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "gloss": "The world stays alive because the rain keeps falling, so rain deserves to be thought of as the nectar of life.",
+   "keywords": [
+    "water is life",
+    "why rain matters",
+    "nature sustains us"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Credits the world’s going on to rain that keeps coming.",
+     "quote": "the world keeps going"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "Rain earns the name of the drink that gives immortality.",
+     "quote": "rain should be known as ambrosia"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "gloss": "Rain produces all the good food we eat, and as drinking water it is food in its own right.",
+   "keywords": [
+    "food and water",
+    "where food comes from",
+    "clean water"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Gives rain the credit for good food, and counts it a food as well.",
+     "quote": "Rain makes good food"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "gloss": "If the rains fail, hunger will grip the whole world, even with the ocean lying all around it.",
+   "keywords": [
+    "drought",
+    "famine",
+    "food shortage",
+    "water crisis"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Pictures hunger gripping the whole wide world once the sky fails.",
+     "quote": "hunger will settle in the wide world"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "gloss": "When the sky's supply of water runs out, farmers have no reason to go out and work the land.",
+   "keywords": [
+    "crop failure",
+    "farming depends on weather",
+    "drought"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Calls rain riches, and shows ploughing stopping when it runs short.",
+     "quote": "If the riches called rain run short"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "Farmers are the people named as laying down their work when the rain fails.",
+     "quote": "farmers will not plough"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "gloss": "Rain can destroy people, and the same rain can lift those it destroyed back up again.",
+   "keywords": [
+    "floods",
+    "ruin and recovery",
+    "power of nature"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Credits rain with both powers at once: to ruin people and to restore them.",
+     "quote": "it is rain again that setteth up those that it hath ruined"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "gloss": "Not even a blade of grass will come up unless water falls from the sky.",
+   "keywords": [
+    "no rain no life",
+    "dry land",
+    "barren ground"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Takes the humblest growth of all to show that nothing comes up without rain.",
+     "quote": "the head of green grass"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "gloss": "Even the vast sea would go foul if clouds stopped drawing up its water and giving it back.",
+   "keywords": [
+    "water cycle",
+    "evaporation",
+    "ocean health",
+    "stagnant water"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Even the sea needs the round of rain, and would lose its nature if the clouds took and gave nothing back.",
+     "quote": "Even the vast sea would lose its nature"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "gloss": "If the sky dries up, there will be no offerings to the gods and no festivals here on earth.",
+   "keywords": [
+    "religious festivals",
+    "temple worship",
+    "public celebrations"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Even worship of the gods and festivals come to a stop under a dry sky.",
+     "quote": "festivals and worship will cease here, even for the gods"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "gloss": "If the sky holds back the rain, giving to others and spiritual discipline will both vanish from the world.",
+   "keywords": [
+    "hard times",
+    "generosity in scarcity",
+    "religious life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Ties both giving and ascetic practice to the falling of the showers.",
+     "quote": "neither giving nor austerity will remain"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "gloss": "The world can't function without water, which means that even human morality comes down to rainfall.",
+   "keywords": [
+    "water and civilisation",
+    "morality and scarcity",
+    "environment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:rain",
+     "basis": "explicit",
+     "reason": "Reasons from the need for water to the claim that right conduct itself rests on rain.",
+     "quote": "conduct can’t go on without rain"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "gloss": "Holy texts rank the greatness of those who give up worldly pleasure and live by discipline higher than anything else.",
+   "keywords": [
+    "monks",
+    "spiritual life",
+    "monastic life"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "Speaks of those who renounce while holding to right conduct.",
+     "quote": "those who renounce while holding to right conduct"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "The books put the greatness of those who renounce above all else.",
+     "quote": "stands above all else"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "gloss": "Trying to measure how great the renouncers are is like trying to count everyone who has ever died.",
+   "keywords": [
+    "holy people",
+    "saints",
+    "beyond measure"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "Those who renounce are named outright and declared beyond all counting.",
+     "quote": "the greatness of those who renounce"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "inferred",
+     "reason": "Sets the worth of those who gave up the world past counting, like the number of the dead.",
+     "quote": "like counting all who have died on earth"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "gloss": "People who compare what this world and the next can offer, then choose to give this one up, fill the earth with their light.",
+   "keywords": [
+    "choosing a spiritual path",
+    "this life and the next",
+    "saints"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "These are people who made their choice after weighing the two.",
+     "quote": "those who have weighed the two"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "The greatness of those who chose this path is what shines out in the world.",
+     "quote": "shines out in the world"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "gloss": "A strong will that keeps the five senses in check, the way a hook steers an elephant, is what gets a person into heaven.",
+   "keywords": [
+    "willpower",
+    "resisting temptation",
+    "discipline",
+    "controlling desires"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "explicit",
+     "reason": "Praises the firmness that drives the five senses as a goad drives a beast.",
+     "quote": "guards the five senses"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "The goad is an elephant’s hook, so the five senses are driven like elephants and firmness steers them.",
+     "quote": "the goad called firmness"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Such a person is a seed that will come up in the land called the highest.",
+     "quote": "a seed for the land called the highest"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "gloss": "Indra, ruler of heaven, is himself the proof of how powerful a person is who has conquered the five senses.",
+   "keywords": [
+    "power of self-restraint",
+    "resisting desire",
+    "mastering desire"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "explicit",
+     "reason": "Calls Indra as witness to the strength of one who has quenched the five senses.",
+     "quote": "the strength of one who quenched the five senses"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "gloss": "Great people do what seems impossible; small people are the ones who can't.",
+   "keywords": [
+    "what makes someone great",
+    "doing hard things",
+    "rising to a challenge"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Draws the line between the great and the small at doing what is hard to do.",
+     "quote": "Those who do what is hard to do are great"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "gloss": "Someone who truly understands taste, sight, touch, sound and smell for what they are has the world in his hands.",
+   "keywords": [
+    "seeing through pleasure",
+    "sensory desire",
+    "mindfulness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "inferred",
+     "reason": "One who judges touch, taste, sight, sound and smell at their true worth is promised command of the world.",
+     "quote": "appreciateth at their true value the sensations"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "gloss": "The sacred writings of the world are themselves the proof of how great are those whose word always comes true.",
+   "keywords": [
+    "holy men",
+    "power of words",
+    "scripture"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "inferred",
+     "reason": "Those whose speech comes true are, in this chapter, those who renounce.",
+     "quote": "people whose speech comes true"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "gloss": "No one can withstand, even for a moment, the anger of those who have climbed the peak of virtue.",
+   "keywords": [
+    "wrath of a saint",
+    "curse of a holy man",
+    "holy anger"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "Warns that the anger of those on the hill of virtue is hard to withstand, even for a moment.",
+     "quote": "The anger of those who stand on the hill called virtue"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:mountain",
+     "basis": "inferred",
+     "reason": "Virtue is a hill that they have climbed and stand on.",
+     "quote": "the hill called virtue"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "gloss": "The true Brahmans are the holy people, because they show kindness to every living thing.",
+   "keywords": [
+    "caste",
+    "true priest",
+    "what makes someone holy",
+    "kindness to animals"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:brahman",
+     "basis": "explicit",
+     "reason": "Takes the title of sage and gives it to those who have earned it by tenderness.",
+     "quote": "Those called sages"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "inferred",
+     "reason": "The saintly of this chapter, who have left the world, are named as the ones who deserve that title.",
+     "quote": "It is saintly men"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:compassion",
+     "basis": "explicit",
+     "reason": "Makes tenderness towards all life the reason anyone deserves the name.",
+     "quote": "tenderness towards every living thing"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "gloss": "Doing right takes you to heaven and brings prosperity too, so what could profit you more?",
+   "keywords": [
+    "does being good pay",
+    "benefits of ethics",
+    "success and morals"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Asks what could pay better than the one thing that brings both distinction and wealth.",
+     "quote": "What gain could be greater for a living being?"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "gloss": "Nothing does you more good than doing right, and nothing does you more harm than neglecting it.",
+   "keywords": [
+    "moral compass",
+    "losing your way",
+    "forgetting your values"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Ranks it the highest good and its neglect the worst harm.",
+     "quote": "no ruin greater than forgetting it"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "gloss": "Keep doing good without a break, as much as you can and in every way open to you.",
+   "keywords": [
+    "doing good every day",
+    "making a difference",
+    "consistency"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Asks for righteous deeds without pause, as far as one can and wherever they can be done.",
+     "quote": "never stopping, do righteous deeds"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "gloss": "Keep your mind free of stain: that is the whole of being good, and everything else is just noise.",
+   "keywords": [
+    "sincerity",
+    "motives",
+    "empty ritual",
+    "showing off piety"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Reduces the whole of righteousness to one thing, a mind without stain.",
+     "quote": "is all of righteousness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Asks for a mind without stain and writes off all else as noise.",
+     "quote": "To be without stain in your mind"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "gloss": "Being good means steering clear of four things: envy, wanting more, anger and cruel words.",
+   "keywords": [
+    "bad habits",
+    "what to avoid",
+    "four vices"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Defines righteousness as the shunning of four named faults.",
+     "quote": "righteousness is a life free of these four"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:envy",
+     "basis": "explicit",
+     "reason": "First of the four that righteousness must be free of.",
+     "quote": "Envy"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:craving",
+     "basis": "inferred",
+     "reason": "அவா is the wanting itself, second on the list.",
+     "quote": "craving"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Third of the four, set beside envy and craving.",
+     "quote": "anger"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "The list ends with the fault of the tongue, the words that wound.",
+     "quote": "harsh words"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "gloss": "Don't say you'll be good later: start now, because goodness is the friend that stays with you when you die.",
+   "keywords": [
+    "someday",
+    "starting now",
+    "legacy",
+    "end of life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Calls it the companion that does not die when you die.",
+     "quote": "the companion that doesn’t die when you die"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:putting-things-off",
+     "basis": "explicit",
+     "reason": "Speaks straight to the person promising to do better later: begin now.",
+     "quote": "I’ll see to it some other day"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "gloss": "Don't ask what good comes from doing right: compare the one carrying the palanquin with the one riding in it.",
+   "keywords": [
+    "why some are rich and some poor",
+    "inequality",
+    "past life karma",
+    "privilege"
+   ],
+   "sensitive": "implies a labourer's low station is earned by past wrongs",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Answers the doubter by pointing at the rider and the man who carries him.",
+     "quote": "the one who bears the palanquin and the one who rides in it"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:fruits-of-action",
+     "basis": "inferred",
+     "reason": "Reads the gap between rider and bearer as what past deeds have earned each of them.",
+     "quote": "the bearer of the palanquin and him that rideth on it"
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "gloss": "If you do good every single day, that good becomes the stone that closes the road to being born again.",
+   "keywords": [
+    "every day counts",
+    "not wasting a day",
+    "ending rebirth"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Asks for a whole life of good with not one day lost.",
+     "quote": "let no day fall away"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "gloss": "The only real happiness comes from doing right; everything else ends up as pain and disgrace.",
+   "keywords": [
+    "true happiness",
+    "guilty pleasure",
+    "lasting joy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Allows no joy but the one that comes of it, and puts all the rest outside and without praise.",
+     "quote": "Only what comes from righteousness is joy"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "gloss": "What's worth doing is what's right, and what must be avoided is whatever brings blame.",
+   "keywords": [
+    "moral rule of thumb",
+    "what should i do",
+    "telling right from wrong"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Gives the whole rule of action: do what is righteous and avoid what brings blame.",
+     "quote": "What you ought to do is righteousness"
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "gloss": "Someone running a home is the support of people in the other stages of life, such as students and ascetics.",
+   "keywords": [
+    "family provides",
+    "supporting others",
+    "breadwinner"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Opens the chapter by naming the householder as a support for others.",
+     "quote": "The one called a householder"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Makes the one at home the firm support of the three others.",
+     "quote": "a steady support on the good path"
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "gloss": "Someone with a home stands by those who have no one: those who have renounced, the destitute, and the dead who need their rites.",
+   "keywords": [
+    "caring for the vulnerable",
+    "helping the poor",
+    "funeral duty"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Lists those who have the householder to turn to.",
+     "quote": "The one called a householder is the support"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Praises home life for standing by those who renounce, the poor and even the dead.",
+     "quote": "those who have nothing, and the dead"
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "gloss": "A person with a home has five duties: to the dead, to the gods, to guests, to relatives and to himself.",
+   "keywords": [
+    "family obligations",
+    "ancestors",
+    "self-care",
+    "responsibilities"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Sets out what the head of a home owes.",
+     "quote": "the chief duty"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Reduces the life of the home to five named duties.",
+     "quote": "looking after these five"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Third of the five: guests, set between the gods and kin.",
+     "quote": "guests"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:cherishing-kin",
+     "basis": "explicit",
+     "reason": "Fourth of the five: what is owed to kin.",
+     "quote": "kin"
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "gloss": "A home that fears blame and shares its food before eating will never run out of heirs.",
+   "keywords": [
+    "sharing food",
+    "honest living",
+    "family continuity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:fear-of-sin",
+     "basis": "explicit",
+     "reason": "Promises a lasting line to the one who fears blame.",
+     "quote": "fears blame"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:charity",
+     "basis": "explicit",
+     "reason": "Sharing food is the second condition of a line that never dies out.",
+     "quote": "shares its food"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "gloss": "A home filled with love and doing what is right has everything it needs: that is both its character and its reward.",
+   "keywords": [
+    "happy family",
+    "healthy marriage",
+    "what makes a good home"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Gives the test of home life: loving-kindness and righteousness are its quality and its fruit.",
+     "quote": "that is its quality and its fruit"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "Loving-kindness is one of the two things that make a home complete.",
+     "quote": "loving-kindness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Beside loving-kindness, righteousness is named as what gives home life its worth.",
+     "quote": "righteousness"
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "gloss": "If you live your home life rightly, what more would you gain by leaving it for another path?",
+   "keywords": [
+    "leaving family for religion",
+    "is a monk better",
+    "spiritual life at home"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Speaks to someone who already keeps a home, and asks what more they could gain.",
+     "quote": "If you live your home life in the way of righteousness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Holds that a rightly kept home leaves nothing to gain from another path.",
+     "quote": "what would you gain"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-to-walk-away",
+     "basis": "inferred",
+     "reason": "Tells someone drawn away from home that a home life lived rightly leaves nothing to seek elsewhere.",
+     "quote": "going off on some outside path"
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "gloss": "Of all who strive for spiritual freedom, the best are those who live a good family life.",
+   "keywords": [
+    "spirituality and family",
+    "salvation for ordinary people",
+    "no need to be a monk"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "The people raised so high here are simply those who keep a good home.",
+     "quote": "The one who lives home life as it should be lived"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Ranks home life first among all who strive.",
+     "quote": "first among all who strive"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-to-walk-away",
+     "basis": "inferred",
+     "reason": "For someone weighing striving elsewhere against home life, puts home life first.",
+     "quote": "is first among all who strive"
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "gloss": "A person with a home who helps others keep their spiritual vows and lives well has more holiness than those doing penance.",
+   "keywords": [
+    "supporting others' faith",
+    "everyday holiness",
+    "ordinary goodness"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Draws the model householder: keeping others on their path and not slipping from righteousness.",
+     "quote": "A home life that keeps others on their path"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Rates such a home life above those who do penance, for endurance.",
+     "quote": "has more endurance than those who do penance"
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "gloss": "Family life is what doing right really means, and it's best when no one can find fault with it.",
+   "keywords": [
+    "good reputation",
+    "marriage and morality",
+    "family name"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Says that what is called righteousness is home life.",
+     "quote": "What is called righteousness is home life"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "A good name is the jewel that married life wears.",
+     "quote": "a good name is its ornament"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "gloss": "Someone who lives in the world the way a person ought to will be counted among the gods.",
+   "keywords": [
+    "living well",
+    "role model",
+    "ideal person"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "The promise is made to the one who lives as a life should be lived.",
+     "quote": "One who lives in this world as a life should be lived"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-life",
+     "basis": "explicit",
+     "reason": "Raises a life rightly lived to a place among the gods in the sky.",
+     "quote": "counted among the gods who dwell in the sky"
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "gloss": "A good life partner has all the virtues a home needs and lives within her husband's income.",
+   "keywords": [
+    "good wife",
+    "running a household",
+    "family budget"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:wifely-virtue",
+     "basis": "explicit",
+     "reason": "Gives the marks of a life’s companion: the worth a home needs, and living within his means.",
+     "quote": "the worth a home needs"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "explicit",
+     "reason": "Concerns the wife in particular, down to how she handles the household's money.",
+     "quote": "lives within the means of the man who took her"
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "gloss": "If a wife lacks the virtues of the home, no other blessing in life is worth anything.",
+   "keywords": [
+    "marriage problems",
+    "what matters in a marriage",
+    "home life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:wifely-virtue",
+     "basis": "explicit",
+     "reason": "Without her worth, a life comes to nothing, however fine.",
+     "quote": "that life is nothing"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "explicit",
+     "reason": "Names the wife as the one on whom the whole home turns.",
+     "quote": "If a wife lacks the worth a home needs"
+    }
+   ],
+   "sensitive": "Blames a wife for the failure of all other blessings."
+  },
+  {
+   "n": 53,
+   "gloss": "With a good wife, what can be lacking? Without one, what do you really have?",
+   "keywords": [
+    "good marriage",
+    "money is not everything",
+    "partner matters"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:wifely-virtue",
+     "basis": "explicit",
+     "reason": "Says nothing is lacking where the wife has worth.",
+     "quote": "What is lacking if the wife has worth?"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "explicit",
+     "reason": "Hangs both having and lacking on the worth of the wife.",
+     "quote": "the wife has worth"
+    }
+   ],
+   "sensitive": "Ties a household’s fortune to a wife’s worth."
+  },
+  {
+   "n": 54,
+   "gloss": "Nothing in the world is greater than a woman who holds firm in her faithfulness.",
+   "keywords": [
+    "faithfulness in marriage",
+    "strength of women",
+    "loyalty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:chastity",
+     "basis": "explicit",
+     "reason": "Knows of nothing greater than a woman with the strength of chastity.",
+     "quote": "the strength called chastity"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "inferred",
+     "reason": "In a chapter on the wife, the woman praised here is the chaste wife.",
+     "quote": "What is greater than a woman"
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "gloss": "A wife who worships no god but her husband, first thing on waking, can command even the rain.",
+   "keywords": [
+    "devoted wife",
+    "traditional marriage",
+    "wife's faith"
+   ],
+   "sensitive": "tells a wife to worship her husband; could reach someone abused",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:wifely-virtue",
+     "basis": "explicit",
+     "reason": "Praises a wife who puts her husband in the place of the gods.",
+     "quote": "wakes worshipping her husband"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "explicit",
+     "reason": "Holds up a wife whose devotion is so great that the rain answers to her.",
+     "quote": "A woman who worships no god"
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "gloss": "A good wife protects herself, looks after her husband and keeps up the family's good name without tiring.",
+   "keywords": [
+    "caring for a spouse",
+    "family reputation",
+    "marriage roles"
+   ],
+   "sensitive": "measures a wife by tending her husband; could reach someone abused",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:wifely-virtue",
+     "basis": "explicit",
+     "reason": "Spells out a true woman: guarding herself and their good name, and caring for him.",
+     "quote": "A woman is one who guards herself"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "explicit",
+     "reason": "Speaks only of the woman of the house and what she owes her husband.",
+     "quote": "cares for the man who took her"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "gloss": "Locking a woman up protects nothing: her own resolve is the only guard worth having.",
+   "keywords": [
+    "controlling partner",
+    "trust in marriage",
+    "jealous husband",
+    "women's freedom"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:chastity",
+     "basis": "explicit",
+     "reason": "Sets a woman's own firmness above any watch kept over her.",
+     "quote": "by their own restraint"
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "gloss": "Women who hold fast to the husband who took them win great honour where the gods live.",
+   "keywords": [
+    "faithful wife",
+    "honoured in heaven",
+    "honour for a wife"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:wife",
+     "basis": "inferred",
+     "reason": "Promises great honour in the world of the gods to a woman as a wife.",
+     "quote": "they gain great honour"
+    }
+   ],
+   "sensitive": "Ties a woman’s honour to her husband."
+  },
+  {
+   "n": 59,
+   "gloss": "A man whose home has no good name cannot hold his head high in front of those who mock him.",
+   "keywords": [
+    "family reputation",
+    "walking tall",
+    "public shame",
+    "critics"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:wifely-virtue",
+     "basis": "inferred",
+     "reason": "What they lack is a wife who cares for a good name, and so they cannot walk proudly.",
+     "quote": "a wife who cares for a good name"
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "gloss": "The real blessing of a home is a good wife, and good children are the jewel on top.",
+   "keywords": [
+    "family blessings",
+    "happy home",
+    "good kids"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:wifely-virtue",
+     "basis": "inferred",
+     "reason": "மனைமாட்சி is the excellence of the home, and so of the wife, named as a blessing.",
+     "quote": "the excellence of a home"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Makes good children the fine ornament of the home’s excellence.",
+     "quote": "having good children"
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "gloss": "Of all the good things you can have, we know of none better than children with good sense.",
+   "keywords": [
+    "having kids",
+    "greatest blessing",
+    "family happiness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Puts children with understanding above every other gain.",
+     "quote": "children with understanding"
+    }
+   ],
+   "sensitive": "Could hurt someone who is childless."
+  },
+  {
+   "n": 62,
+   "gloss": "If your children have good characters, no evil will reach you in all your seven births.",
+   "keywords": [
+    "children's character",
+    "proud parent",
+    "good kids"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Promises protection through seven births to the parent of spotless children.",
+     "quote": "children of good character, free of blame"
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "gloss": "Your children are your real wealth, since what they earn through their own deeds comes to you.",
+   "keywords": [
+    "children as blessing",
+    "legacy",
+    "family merit"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Calls children wealth, and ties that wealth to their own deeds.",
+     "quote": "People say their children are their wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Calls children a person’s wealth.",
+     "quote": "their children are their wealth"
+    }
+   ]
+  },
+  {
+   "n": 64,
+   "gloss": "Plain porridge stirred by your own child's little hands tastes sweeter than the food of the gods.",
+   "keywords": [
+    "toddler",
+    "messy mealtimes",
+    "joy of parenting",
+    "family meals"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "A child’s mess in a bowl of porridge beats ambrosia itself.",
+     "quote": "your own children have stirred with their small hands"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "Uses ambrosia as the sweetness that simple porridge outdoes.",
+     "quote": "Sweeter by far than ambrosia"
+    }
+   ]
+  },
+  {
+   "n": 65,
+   "gloss": "Touching your children is the body's great pleasure, and hearing them talk is the ear's.",
+   "keywords": [
+    "hugging your kids",
+    "physical affection",
+    "children's voices"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Gives children to two senses at once, the body by their touch and the ear by their voice.",
+     "quote": "Touching your children’s bodies is joy to the body"
+    }
+   ]
+  },
+  {
+   "n": 66,
+   "gloss": "Only people who have never heard their own baby's babble call the flute and the lute sweet.",
+   "keywords": [
+    "baby talk",
+    "first words",
+    "sweetest sound",
+    "music"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Says music sounds sweet only to those who have not heard their own little ones.",
+     "quote": "the babble of their own children"
+    }
+   ]
+  },
+  {
+   "n": 67,
+   "gloss": "The best thing a father can do for his son is to prepare him to take the leading seat among the learned.",
+   "keywords": [
+    "good education",
+    "a father's duty",
+    "children's future"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Sets the goal of raising a son: to see him at the front of the assembly.",
+     "quote": "in the front rank of the assembly"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:parent",
+     "basis": "explicit",
+     "reason": "Put as a father's duty: this is what he owes his son.",
+     "quote": "The good a father does his son"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:raising-children",
+     "basis": "explicit",
+     "reason": "Tells a parent plainly what the debt to a child is: to equip him to stand at the front.",
+     "quote": "to put him in the front rank"
+    }
+   ]
+  },
+  {
+   "n": 68,
+   "gloss": "When children turn out cleverer than their parents, the whole world is delighted, the parents above all.",
+   "keywords": [
+    "next generation",
+    "proud of kids",
+    "my child is smarter than me"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Calls children’s greater understanding a joy to every living being.",
+     "quote": "is sweet to every living being"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:parent",
+     "basis": "explicit",
+     "reason": "The parent is the one outshone, and is told to find it sweet.",
+     "quote": "your children know more than you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:raising-children",
+     "basis": "explicit",
+     "reason": "Tells a parent being overtaken by a child that this is the joy to wish for.",
+     "quote": "That your children know more than you"
+    }
+   ]
+  },
+  {
+   "n": 69,
+   "gloss": "A mother is overjoyed when her son is born, but happier still when she hears him praised as a good man.",
+   "keywords": [
+    "proud mother",
+    "son's reputation",
+    "mother's joy"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Ranks hearing a son called worthy above the joy of his birth.",
+     "quote": "hears her son called a man of worth"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:parent",
+     "basis": "explicit",
+     "reason": "Speaks of the mother and her two joys.",
+     "quote": "A mother who hears her son"
+    }
+   ]
+  },
+  {
+   "n": 70,
+   "gloss": "A son repays his father by making people ask what the father did to deserve such a child.",
+   "keywords": [
+    "making parents proud",
+    "repaying your parents",
+    "being a good son"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:offspring",
+     "basis": "explicit",
+     "reason": "Holds up the son so good that people wonder what penance earned him.",
+     "quote": "What penance did his father do to have him?"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:child",
+     "basis": "explicit",
+     "reason": "Turns the father's question round and asks what the son owes in return.",
+     "quote": "What a son does in return for his father"
+    }
+   ]
+  },
+  {
+   "n": 81,
+   "gloss": "The whole reason the wise work hard and keep a home is to feed guests and help people passing through.",
+   "keywords": [
+    "having people over",
+    "opening your home",
+    "why we keep a home",
+    "welcoming strangers"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Makes caring for the guest the very reason for keeping a home.",
+     "quote": "to care for guests and do them good"
+    }
+   ]
+  },
+  {
+   "n": 82,
+   "gloss": "Even if it were the nectar of immortality, you shouldn't eat it alone while a guest is waiting.",
+   "keywords": [
+    "sharing food",
+    "guests first",
+    "eating alone",
+    "good manners"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Forbids tasting even the best thing there is by oneself.",
+     "quote": "To eat while your guest stays outside"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "Picks the medicine against death to show what one should still not eat alone.",
+     "quote": "the medicine against death"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:guest",
+     "basis": "explicit",
+     "reason": "The guest left outside decides what the host may eat.",
+     "quote": "your guest stays outside"
+    }
+   ]
+  },
+  {
+   "n": 83,
+   "gloss": "Someone who looks after visitors every day will never be brought down by hardship.",
+   "keywords": [
+    "regular visitors",
+    "generosity protects you",
+    "kindness pays"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Promises freedom from ruin to the one who cares for guests each day.",
+     "quote": "will not suffer and fall to ruin"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:guest",
+     "basis": "explicit",
+     "reason": "Concerns the guests who come each day, who must always be cared for.",
+     "quote": "the guests who come each day"
+    }
+   ]
+  },
+  {
+   "n": 84,
+   "gloss": "Good fortune is happy to live in the home of someone who greets a deserving guest with a warm smile.",
+   "keywords": [
+    "warm welcome",
+    "good luck at home",
+    "friendly face"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "A glad face for guests is what brings fortune in to stay.",
+     "quote": "cares for good guests with a glad face"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "explicit",
+     "reason": "The goddess of fortune herself moves in with such a host.",
+     "quote": "the goddess of fortune lives in the home"
+    }
+   ]
+  },
+  {
+   "n": 85,
+   "gloss": "If you feed your guests first and eat what's left, your land will hardly need planting.",
+   "keywords": [
+    "feeding others first",
+    "abundance",
+    "generosity pays off"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Holds up the host who eats only after his guest has been fed.",
+     "quote": "feeds guests and eats what is left"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Asks whether such a host's field needs seed at all.",
+     "quote": "sow seed in the field"
+    }
+   ]
+  },
+  {
+   "n": 86,
+   "gloss": "Someone who sees one visitor off and then watches for the next will be a welcome visitor in heaven.",
+   "keywords": [
+    "constant generosity",
+    "open house",
+    "heavenly reward"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "The host who never stops receiving will be received in his turn by those in the sky.",
+     "quote": "a good guest to those in the sky"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:guest",
+     "basis": "explicit",
+     "reason": "Pictures a host always between the guest leaving and the guest still to come.",
+     "quote": "the guest who is leaving"
+    }
+   ]
+  },
+  {
+   "n": 87,
+   "gloss": "You can't put a fixed value on an act of hospitality: it counts for as much as the person you host is worth.",
+   "keywords": [
+    "who you host",
+    "value of generosity",
+    "giving to the right person"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Refuses to price a hospitable act, and makes the guest's worth its only measure.",
+     "quote": "It is measured by the worth of the guest"
+    }
+   ]
+  },
+  {
+   "n": 88,
+   "gloss": "Someone who guards his wealth and never hosts anyone will end up saying he worked hard and has no one to lean on.",
+   "keywords": [
+    "wealthy and lonely",
+    "regret in old age",
+    "no one to turn to",
+    "hoarding"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Shows the cost of never caring for guests: anxious guarding and nothing left to hold.",
+     "quote": "never took up the sacrifice of caring for guests"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:money-feels-empty",
+     "basis": "inferred",
+     "reason": "Speaks in the voice of one who guarded what they had and ended with nothing to hold.",
+     "quote": "We have nothing to hold on to"
+    }
+   ]
+  },
+  {
+   "n": 89,
+   "gloss": "Having plenty and still not looking after visitors is the real poverty, and only a fool does it.",
+   "keywords": [
+    "stingy host",
+    "rich but rude",
+    "poor in spirit"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "explicit",
+     "reason": "Calls neglecting guests a poverty that no amount of plenty can cover.",
+     "quote": "the folly of neglecting guests"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Turns the word for poverty on a man who has goods but no welcome to give.",
+     "quote": "Poverty amid plenty"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Says this kind of poverty is found nowhere but among fools.",
+     "quote": "It is found among fools"
+    }
+   ]
+  },
+  {
+   "n": 90,
+   "gloss": "The delicate anicham flower wilts when you smell it, but a guest wilts at a single cold look.",
+   "keywords": [
+    "cold shoulder",
+    "making someone feel unwelcome",
+    "body language"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:hospitality",
+     "basis": "inferred",
+     "reason": "A look alone can undo a welcome, so the warmth has to be in the face.",
+     "quote": "A guest wilts when you look at them with a changed face"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:anicham-flower",
+     "basis": "explicit",
+     "reason": "The flower that wilts at a sniff is the measure of a guest.",
+     "quote": "flower wilts when you smell it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:guest",
+     "basis": "explicit",
+     "reason": "Describes the guest and how little it takes to make them wilt.",
+     "quote": "A guest wilts"
+    }
+   ]
+  },
+  {
+   "n": 91,
+   "gloss": "Truly kind words are those of good people who have seen what matters: warm, loving and without deceit.",
+   "keywords": [
+    "sincerity",
+    "genuine kindness",
+    "honest compliments"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Gives its two marks: full of tenderness and free of deceit.",
+     "quote": "steeped in tenderness and free of deceit"
+    }
+   ]
+  },
+  {
+   "n": 92,
+   "gloss": "A nice word and a friendly face are worth more than a big present.",
+   "keywords": [
+    "being nice",
+    "gifts",
+    "smile",
+    "warmth over money"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Rates sweet words and a gracious look above even a generous gift.",
+     "quote": "to have a glad face and sweet words"
+    }
+   ]
+  },
+  {
+   "n": 93,
+   "gloss": "Goodness lives in a warm look and in gentle words that are truly meant.",
+   "keywords": [
+    "meaning what you say",
+    "kind eyes",
+    "goodness in small things"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Finds righteousness itself in a sweet word from the heart.",
+     "quote": "sweet words that come from the heart"
+    }
+   ]
+  },
+  {
+   "n": 94,
+   "gloss": "People whose words bring joy to everyone will never know the misery of being in need.",
+   "keywords": [
+    "making people happy",
+    "positive words",
+    "avoiding hardship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Promises that poverty will not reach those whose sweet words bring everyone joy.",
+     "quote": "sweet words bring joy to everyone"
+    }
+   ]
+  },
+  {
+   "n": 95,
+   "gloss": "Humility and gentle words are the only real jewellery a person can wear.",
+   "keywords": [
+    "real beauty",
+    "character over looks",
+    "modest and kind"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:humility",
+     "basis": "explicit",
+     "reason": "Puts humility first of the only two things that truly adorn a person.",
+     "quote": "Humility"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Pairs sweet words with humility as a person’s whole finery.",
+     "quote": "sweet words"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Allows no other jewels to a person but these two virtues.",
+     "quote": "a person’s ornaments"
+    }
+   ]
+  },
+  {
+   "n": 96,
+   "gloss": "If you look for what's good in what you think and speak gently, wrong shrinks and right grows.",
+   "keywords": [
+    "positive thinking",
+    "watching your words",
+    "becoming a better person"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Says sweet words, joined with seeking the good, make wrongs wear away.",
+     "quote": "wrongs will wear away"
+    }
+   ]
+  },
+  {
+   "n": 97,
+   "gloss": "Gentle words that are also useful do good to the person who says them as well as to the hearer.",
+   "keywords": [
+    "useful advice",
+    "constructive words",
+    "helpful talk"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Asks for words both useful and gentle, and says such words pay.",
+     "quote": "Words that are useful and never part from courtesy"
+    }
+   ]
+  },
+  {
+   "n": 98,
+   "gloss": "Gentle words with no pettiness in them bring happiness now and after death.",
+   "keywords": [
+    "kind words pay",
+    "life after death",
+    "small-minded remarks"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Promises a return on such words in both this life and the next.",
+     "quote": "bring joy in the next life and in this one"
+    }
+   ]
+  },
+  {
+   "n": 99,
+   "gloss": "Why would anyone who has felt how good gentle words are keep on using cruel ones?",
+   "keywords": [
+    "snapping at people",
+    "rude to family",
+    "why be mean"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "Asks why anyone who knows the better way would still use hard words.",
+     "quote": "why use hard words?"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Appeals to how good such words feel to anyone who has known them.",
+     "quote": "what joy sweet words bring"
+    }
+   ]
+  },
+  {
+   "n": 100,
+   "gloss": "Using hurtful words when gentle ones would do is like picking sour fruit when the sweet is right there.",
+   "keywords": [
+    "choosing your words",
+    "mean comments",
+    "harsh tone"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "Treats a hard word as a plain bad choice when a sweet one was at hand.",
+     "quote": "To speak harsh words when sweet ones are there"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Sweet words are what the harsh speaker leaves hanging on the tree.",
+     "quote": "sweet ones are there"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ripe-fruit",
+     "basis": "explicit",
+     "reason": "Sweet words are ripe fruit and hard words unripe, and one chooses between them.",
+     "quote": "picking unripe fruit when ripe fruit is there"
+    }
+   ]
+  },
+  {
+   "n": 101,
+   "gloss": "Help given when nothing was owed is more than heaven and earth together could pay back.",
+   "keywords": [
+    "unexpected kindness",
+    "selfless help",
+    "debt of thanks"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Sets an unowed kindness beyond what earth and heaven could repay.",
+     "quote": "even earth and sky are hardly a fair return"
+    }
+   ]
+  },
+  {
+   "n": 102,
+   "gloss": "Help given at the moment you need it may be small, but it is worth more than the whole world.",
+   "keywords": [
+    "help in a crisis",
+    "being there at the right time",
+    "thankful"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Measures a good deed by its timing, not by its size.",
+     "quote": "A good deed done at the right time"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:owing-someone-a-kindness",
+     "basis": "explicit",
+     "reason": "Tells the one who was helped in need not to judge the help by how small it looks.",
+     "quote": "though small, is far greater than the world"
+    }
+   ]
+  },
+  {
+   "n": 103,
+   "gloss": "Help given with no thought of what you'll get back is, when weighed, bigger than the ocean.",
+   "keywords": [
+    "no strings attached",
+    "selfless giving",
+    "expecting nothing in return"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:helpfulness",
+     "basis": "explicit",
+     "reason": "Praises help that never looks for anything back.",
+     "quote": "help given with no thought of return"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sea",
+     "basis": "explicit",
+     "reason": "Needs the sea as the only thing big enough to compare with such help.",
+     "quote": "greater than the sea"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:kindness-not-returned",
+     "basis": "inferred",
+     "reason": "Tells one who gets nothing back that help is greatest when it looks for no return.",
+     "quote": "no thought of return"
+    }
+   ]
+  },
+  {
+   "n": 104,
+   "gloss": "Even if the help was as small as a grain of millet, people who understand its value treat it as big as a palm tree.",
+   "keywords": [
+    "small favours",
+    "appreciation",
+    "thankfulness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Those who know its worth see a small good as something towering.",
+     "quote": "those who know its worth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:millet-and-palmyra",
+     "basis": "explicit",
+     "reason": "Sets the tiny seed against the tall palm to show the distance between the help and the debt.",
+     "quote": "the size of a millet seed"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:owing-someone-a-kindness",
+     "basis": "explicit",
+     "reason": "Shows the one who received small help how to hold it: as a palm tree, not a seed.",
+     "quote": "take it as the size of a palmyra"
+    }
+   ]
+  },
+  {
+   "n": 105,
+   "gloss": "The worth of a favour doesn't lie in the favour itself but in the character of the person who received it.",
+   "keywords": [
+    "how to say thank you",
+    "measuring favours",
+    "being thankful"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Says the measure is set by the worth of the receiver and not by the size of the help.",
+     "quote": "the worth of those who received it"
+    }
+   ]
+  },
+  {
+   "n": 106,
+   "gloss": "Never forget the friendship of good people, and never abandon those who stood by you in hard times.",
+   "keywords": [
+    "old friends",
+    "loyalty",
+    "standing by people"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Forbids turning away from those who helped one through trouble.",
+     "quote": "Don’t give up the friendship of those who stood by you in trouble"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:friendship",
+     "basis": "explicit",
+     "reason": "Asks that the bond with the stainless never be forgotten.",
+     "quote": "Don’t forget the bond of the stainless"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:owing-someone-a-kindness",
+     "basis": "explicit",
+     "reason": "Gives the plain rule to anyone who was rescued: do not drop the one who helped.",
+     "quote": "those who stood by you in trouble"
+    }
+   ]
+  },
+  {
+   "n": 107,
+   "gloss": "People remember for all their lives to come the friends who wiped away their pain.",
+   "keywords": [
+    "lifelong thanks",
+    "who helped you",
+    "never forget"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "Makes the memory of a rescuer last through every birth.",
+     "quote": "people remember the friendship"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:owing-someone-a-kindness",
+     "basis": "explicit",
+     "reason": "Tells the one who was rescued how long the debt runs.",
+     "quote": "those who wiped away their sorrow"
+    }
+   ]
+  },
+  {
+   "n": 108,
+   "gloss": "It's wrong to forget a good turn, and right to forget a bad one straight away.",
+   "keywords": [
+    "letting go",
+    "don't hold a grudge",
+    "remember the good"
+   ],
+   "sensitive": "counsels forgetting an injury at once; could reach someone being mistreated",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ingratitude",
+     "basis": "explicit",
+     "reason": "Says forgetting a good deed is not good.",
+     "quote": "It is not good to forget a good deed"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:forgiveness",
+     "basis": "explicit",
+     "reason": "Asks for an ill turn to be forgotten the day it happens.",
+     "quote": "forget what is not good, that very day"
+    }
+   ]
+  },
+  {
+   "n": 109,
+   "gloss": "Even a deadly hurt fades away the moment you recall one good thing the person did for you.",
+   "keywords": [
+    "forgiving someone who hurt you",
+    "remembering the good",
+    "making peace"
+   ],
+   "sensitive": "asks the gravely injured to forgive for one past kindness; could reach someone abused",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:gratitude",
+     "basis": "explicit",
+     "reason": "One remembered kindness outweighs the worst injury the same person has done.",
+     "quote": "when you recall one good thing they did"
+    }
+   ]
+  },
+  {
+   "n": 110,
+   "gloss": "There's a way out for someone who has done every other wrong, but none for someone who destroys a kindness.",
+   "keywords": [
+    "ungrateful people",
+    "unforgivable",
+    "biting the hand that feeds"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ingratitude",
+     "basis": "explicit",
+     "reason": "Rates it the one crime with no way back.",
+     "quote": "There is no escape for the man who killed the good done to him"
+    }
+   ]
+  },
+  {
+   "n": 111,
+   "gloss": "Fairness is the only real good: treating everyone as they deserve, friend or enemy alike.",
+   "keywords": [
+    "fair treatment",
+    "no favouritism",
+    "treating enemies fairly"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Says what it is: each side its due.",
+     "quote": "give each side its due"
+    }
+   ]
+  },
+  {
+   "n": 112,
+   "gloss": "The wealth of a fair person doesn't shrink and stays a protection for their descendants.",
+   "keywords": [
+    "honest wealth",
+    "inheritance",
+    "lasting prosperity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Promises the upright gains that last and strengthen those who come after.",
+     "quote": "a strength to those who come after"
+    }
+   ]
+  },
+  {
+   "n": 113,
+   "gloss": "Even if it brings nothing but gain, drop at once any profit that comes from being unfair.",
+   "keywords": [
+    "dirty money",
+    "conflict of interest",
+    "unethical profit",
+    "corruption"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Refuses gain won by leaving the middle, even where it promises nothing but good.",
+     "quote": "gain that comes from leaving the middle"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:tempted-by-dishonest-gain",
+     "basis": "explicit",
+     "reason": "Speaks straight to anyone offered a profit for bending the rules: do not touch it.",
+     "quote": "let go at once"
+    }
+   ]
+  },
+  {
+   "n": 114,
+   "gloss": "Whether someone was fair or not can be seen from what they leave behind them.",
+   "keywords": [
+    "legacy",
+    "how you will be remembered",
+    "family judged by children"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:impartiality",
+     "basis": "inferred",
+     "reason": "Gives a test of the fair and the unfair: what they leave behind shows which they were.",
+     "quote": "are known by their offspring"
+    }
+   ]
+  },
+  {
+   "n": 115,
+   "gloss": "Ups and downs come to everyone, but wise people are marked by a heart that doesn't bend.",
+   "keywords": [
+    "integrity",
+    "staying honest",
+    "bad times"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Whatever loss or gain comes, the heart that doesn’t lean is what the worthy are known by.",
+     "quote": "A heart that doesn’t lean"
+    }
+   ]
+  },
+  {
+   "n": 116,
+   "gloss": "When your heart leaves fairness behind and leans to wrong, know that you are about to be ruined.",
+   "keywords": [
+    "warning signs",
+    "moral slide",
+    "temptation to cheat"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Reads the first step from the middle as a sign that ruin is close.",
+     "quote": "If your heart leaves the middle"
+    }
+   ]
+  },
+  {
+   "n": 117,
+   "gloss": "People don't look down on someone who has become poor through staying fair and honest.",
+   "keywords": [
+    "honest and poor",
+    "losing money for doing right",
+    "integrity over wealth"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Says the world does not count the fall of one who stayed in the middle as ruin.",
+     "quote": "The world does not count it ruin"
+    }
+   ]
+  },
+  {
+   "n": 118,
+   "gloss": "A fair-minded person should be like a level weighing scale, tilting to neither side.",
+   "keywords": [
+    "neutrality",
+    "balanced judgement",
+    "mediator"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Asks the worthy to lean to neither side.",
+     "quote": "leaning to neither side"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:touchstone-and-measuring-rod",
+     "basis": "explicit",
+     "reason": "The straight beam that weighs justly is what a fair mind should resemble.",
+     "quote": "the balance that rests level and then weighs true"
+    }
+   ]
+  },
+  {
+   "n": 119,
+   "gloss": "Speaking straight is only real fairness if there's no bend in your heart behind it.",
+   "keywords": [
+    "honest opinion",
+    "fair judge",
+    "speaking without bias"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Grants uprightness to the words of one with no bend within.",
+     "quote": "speech that does not bend"
+    }
+   ]
+  },
+  {
+   "n": 120,
+   "gloss": "A trader prospers when he treats other people's interests as carefully as his own.",
+   "keywords": [
+    "ethical business",
+    "fair trade",
+    "customer first",
+    "win-win"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:impartiality",
+     "basis": "explicit",
+     "reason": "Calls it good trade to care for others’ goods as one’s own.",
+     "quote": "care for others’ goods as their own"
+    }
+   ]
+  },
+  {
+   "n": 121,
+   "gloss": "Self-restraint takes you to the gods; letting yourself go drops you into deep darkness.",
+   "keywords": [
+    "self-discipline",
+    "addiction",
+    "losing control"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Sets the immortals against deep darkness as the two ends of the road.",
+     "quote": "Restraint will carry you among the immortals"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:darkness",
+     "basis": "explicit",
+     "reason": "Lack of restraint ends in a dark that is hard to bear.",
+     "quote": "deep darkness"
+    }
+   ]
+  },
+  {
+   "n": 122,
+   "gloss": "Protect your ability to hold yourself back as you would your money: nothing in life is worth more.",
+   "keywords": [
+    "self-discipline",
+    "staying composed",
+    "what matters most"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Ranks it above everything else life has to offer.",
+     "quote": "no greater gain for a life"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Asks that it be guarded the way one would guard riches.",
+     "quote": "Guard restraint as wealth"
+    }
+   ]
+  },
+  {
+   "n": 123,
+   "gloss": "If you practise restraint knowingly and in the right way, it will bring you distinction.",
+   "keywords": [
+    "wise restraint",
+    "self-improvement",
+    "mastering yourself"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Says that restraint, rightly practised, is noticed and brings honour.",
+     "quote": "hold yourself in by the right way"
+    }
+   ]
+  },
+  {
+   "n": 124,
+   "gloss": "Someone who stays steady in their duty and keeps themselves in check stands taller than a mountain.",
+   "keywords": [
+    "integrity",
+    "composure",
+    "standing firm"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Gives one who stays in their place and keeps restraint a stature past a mountain’s.",
+     "quote": "holds steady in their place and keeps restraint"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:mountain",
+     "basis": "explicit",
+     "reason": "A mountain is what he is measured against, and it comes up short.",
+     "quote": "taller than a mountain"
+    }
+   ]
+  },
+  {
+   "n": 125,
+   "gloss": "Being modest is good in everyone, but in the wealthy it is a kind of wealth in itself.",
+   "keywords": [
+    "rich and humble",
+    "staying grounded",
+    "successful but modest"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:humility",
+     "basis": "explicit",
+     "reason": "Finds it good in everyone, and a further wealth in the rich.",
+     "quote": "Humility is good in everyone"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:success-going-to-your-head",
+     "basis": "inferred",
+     "reason": "Tells the person riding high that humility is a further wealth.",
+     "quote": "in the rich it is a further wealth"
+    }
+   ]
+  },
+  {
+   "n": 126,
+   "gloss": "If you can pull in your five senses like a tortoise pulling in its limbs, you're protected through all your lives.",
+   "keywords": [
+    "withdrawing from temptation",
+    "meditation",
+    "sensory restraint"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "explicit",
+     "reason": "Praises drawing the senses in as a tortoise draws in its limbs.",
+     "quote": "draw in the five senses"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Such restraint is a saving that outlasts this life.",
+     "quote": "a treasure for all his future births"
+    }
+   ]
+  },
+  {
+   "n": 127,
+   "gloss": "Whatever else you fail to control, control your mouth, or what you say will bring you misery.",
+   "keywords": [
+    "watch your mouth",
+    "thinking before speaking",
+    "saying the wrong thing"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "Puts the tongue ahead of everything else one might need to hold back.",
+     "quote": "guard your tongue"
+    }
+   ]
+  },
+  {
+   "n": 128,
+   "gloss": "A single hurtful word can undo all the good you have done.",
+   "keywords": [
+    "one bad word",
+    "hurtful comment",
+    "undoing good deeds"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "One evil word is enough to turn all one’s good to bad.",
+     "quote": "the good you have done turns bad"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:said-something-hurtful",
+     "basis": "explicit",
+     "reason": "Tells the speaker what a single painful word has cost him.",
+     "quote": "If a single evil word does its harm"
+    }
+   ]
+  },
+  {
+   "n": 129,
+   "gloss": "A burn from fire heals with time, but the burn left by a cruel word never does.",
+   "keywords": [
+    "words hurt",
+    "emotional wound",
+    "verbal abuse",
+    "lasting hurt"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "Shows why the tongue must be held: its wound never closes.",
+     "quote": "never heals"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Measures the tongue against fire and finds fire the milder of the two.",
+     "quote": "A wound burned by fire heals within"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:said-something-hurtful",
+     "basis": "explicit",
+     "reason": "Tells someone who wounded with words that this hurt will outlast any burn.",
+     "quote": "A scar burned by the tongue"
+    }
+   ]
+  },
+  {
+   "n": 130,
+   "gloss": "Goodness itself comes looking for the person who has learned, held back their anger and mastered themselves.",
+   "keywords": [
+    "calm mind",
+    "controlling anger",
+    "inner peace",
+    "patience"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Has righteousness find the path and wait for a moment with one who keeps restraint.",
+     "quote": "holds back anger, learns and keeps restraint"
+    }
+   ]
+  },
+  {
+   "n": 131,
+   "gloss": "Behaving well is what earns you honour, so protect it more carefully than your own life.",
+   "keywords": [
+    "integrity",
+    "reputation",
+    "principles first"
+   ],
+   "sensitive": "ranks conduct above one's own life; could reach someone in shame",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Because it earns honour from all, it is to be valued above life.",
+     "quote": "guard your conduct more closely than your life"
+    }
+   ]
+  },
+  {
+   "n": 132,
+   "gloss": "Look after how you behave with care: however hard you search, you'll find no better support.",
+   "keywords": [
+    "good habits",
+    "what you can rely on",
+    "moral support"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Finds no firmer ally anywhere, wherever one looks.",
+     "quote": "it alone is your companion"
+    }
+   ]
+  },
+  {
+   "n": 133,
+   "gloss": "Behaving well is what good family really means; behaving badly drops you to the lowest rank.",
+   "keywords": [
+    "family background",
+    "class and behaviour",
+    "snobbery"
+   ],
+   "sensitive": "uses low birth as a term of disgrace, plainly so in the Tamil",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Takes conduct as noble family, and a lapse in it as low birth.",
+     "quote": "Good conduct is noble family"
+    }
+   ]
+  },
+  {
+   "n": 134,
+   "gloss": "A priest can relearn scripture he has forgotten, but once his behaviour slips he loses his standing for good.",
+   "keywords": [
+    "clergy scandal",
+    "moral failure",
+    "character over knowledge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Sets it above scripture: what is forgotten can be learned again, a fall cannot.",
+     "quote": "If his conduct falls, his birth is ruined"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:brahman",
+     "basis": "explicit",
+     "reason": "The Brahmin is named, and his birth is what is at stake.",
+     "quote": "A Brahmin"
+    }
+   ]
+  },
+  {
+   "n": 135,
+   "gloss": "Just as wealth doesn't come to the jealous, high standing doesn't come to those who behave badly.",
+   "keywords": [
+    "jealous people",
+    "bad behaviour",
+    "losing respect"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Denies any standing to those who lack it.",
+     "quote": "those without good conduct have no standing"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:envy",
+     "basis": "explicit",
+     "reason": "Takes it as settled that the envious do not prosper, and argues from there.",
+     "quote": "the envious have no gain"
+    }
+   ]
+  },
+  {
+   "n": 136,
+   "gloss": "Strong-minded people don't slip from good behaviour, because they know the harm that slipping does.",
+   "keywords": [
+    "strong character",
+    "temptation",
+    "thinking of consequences"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Credits the firm-minded with holding to it because they know what a fall brings.",
+     "quote": "The strong-minded don’t slacken in their conduct"
+    }
+   ]
+  },
+  {
+   "n": 137,
+   "gloss": "Behaving well lifts you up in the world; falling away from it brings disgrace you never sought.",
+   "keywords": [
+    "respect",
+    "social standing",
+    "reputation"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Sets greatness against the blame that comes to those who lapse.",
+     "quote": "By a lapse they reach blame they didn’t deserve"
+    }
+   ]
+  },
+  {
+   "n": 138,
+   "gloss": "Behaving well is the root of everything good; behaving badly brings endless trouble.",
+   "keywords": [
+    "good habits pay off",
+    "bad habits",
+    "long-term consequences"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Sets it against bad conduct as the seed of good against the source of suffering.",
+     "quote": "Bad conduct brings suffering always"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Conduct is a seed, with good as its crop.",
+     "quote": "the seed of good"
+    }
+   ]
+  },
+  {
+   "n": 139,
+   "gloss": "People of good character can't bring themselves to say anything foul, even by accident.",
+   "keywords": [
+    "swearing",
+    "slip of the tongue",
+    "clean language"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "inferred",
+     "reason": "Those of good conduct can’t bring themselves to say evil things.",
+     "quote": "Those with good conduct"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:restraint-of-speech",
+     "basis": "explicit",
+     "reason": "Evil words do not pass their lips even by a slip.",
+     "quote": "can’t say evil things with their mouths"
+    }
+   ]
+  },
+  {
+   "n": 140,
+   "gloss": "People who can't get along with how the world works are fools, however much they have studied.",
+   "keywords": [
+    "book smart but no common sense",
+    "social skills",
+    "street smarts",
+    "fitting in"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Says that no amount of learning gives understanding to those out of step with the world.",
+     "quote": "they are still without understanding"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:worldly-wisdom",
+     "basis": "inferred",
+     "reason": "The failing is not moving in step with the world, which no book learning makes up for.",
+     "quote": "move in step with the world"
+    }
+   ]
+  },
+  {
+   "n": 141,
+   "gloss": "Those who have understood right living and wealth never make the foolish mistake of wanting someone else's wife.",
+   "keywords": [
+    "having an affair",
+    "temptation",
+    "lusting after a married woman"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Calls the pursuit a folly that anyone who knows righteousness and wealth avoids.",
+     "quote": "The folly of chasing a woman who is another man’s property"
+    }
+   ],
+   "sensitive": "speaks of a wife as her husband’s property"
+  },
+  {
+   "n": 142,
+   "gloss": "Of all who have left the right path, none is a bigger fool than someone who hangs around another man's door.",
+   "keywords": [
+    "affair",
+    "stupid mistakes",
+    "sneaking around"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "inferred",
+     "reason": "Ranks the man waiting at another’s door the greatest fool among all wrongdoers.",
+     "quote": "those who stand at another man’s door"
+    }
+   ]
+  },
+  {
+   "n": 143,
+   "gloss": "Someone who wrongs the home of a friend who trusts him is no better than a dead man.",
+   "keywords": [
+    "sleeping with a friend's wife",
+    "betraying a friend",
+    "abusing trust"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "inferred",
+     "reason": "Makes it a betrayal of trust as well, since the one wronged suspects nothing.",
+     "quote": "do evil in the home of someone who trusts them"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "inferred",
+     "reason": "Counts such a man as good as dead, which the Tamil says outright.",
+     "quote": "no different from the dead"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drawn-to-someone-married",
+     "basis": "inferred",
+     "reason": "For anyone drawn to the spouse of someone who trusts them: this makes them no better than dead.",
+     "quote": "are surely no different from the dead"
+    }
+   ]
+  },
+  {
+   "n": 144,
+   "gloss": "However important you are, what's it worth if you go into another man's home without a moment's thought for the shame?",
+   "keywords": [
+    "powerful men and affairs",
+    "scandal",
+    "throwing it all away"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "However great a man is, this one act empties it all.",
+     "quote": "what good is it, if you enter another man’s home"
+    }
+   ]
+  },
+  {
+   "n": 145,
+   "gloss": "A man who goes after another's wife because it seems easy earns a disgrace that never goes away.",
+   "keywords": [
+    "easy affair",
+    "permanent stain",
+    "reputation ruined"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "She may be within easy reach, but the stain on his name is permanent.",
+     "quote": "earns blame that will never die"
+    }
+   ]
+  },
+  {
+   "n": 146,
+   "gloss": "Four things never leave someone who goes after another's wife: being hated, guilt, dread and disgrace.",
+   "keywords": [
+    "cost of an affair",
+    "remorse",
+    "fear of being found out"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Names four companions that give the adulterer no rest.",
+     "quote": "these four never leave"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:enmity",
+     "basis": "explicit",
+     "reason": "Enmity heads the four things that will not leave him.",
+     "quote": "Enmity"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drawn-to-someone-married",
+     "basis": "explicit",
+     "reason": "Lays out in advance, for anyone tempted, what will stay with him if he yields.",
+     "quote": "never leave the one who trespasses on a home"
+    }
+   ]
+  },
+  {
+   "n": 147,
+   "gloss": "A real family man is one who does not desire another man's wife.",
+   "keywords": [
+    "faithful husband",
+    "loyalty in marriage",
+    "good family man"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Makes not craving another’s wife the test of a good man at home.",
+     "quote": "doesn’t crave the womanhood of a woman who is another’s"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:householder",
+     "basis": "explicit",
+     "reason": "Asks what makes a householder a righteous one, and gives a single answer.",
+     "quote": "called a householder who lives by righteousness"
+    }
+   ]
+  },
+  {
+   "n": 148,
+   "gloss": "Refusing even to look at another man's wife takes real strength; it is more than virtue, it is the conduct of the noble.",
+   "keywords": [
+    "not looking",
+    "wandering eye",
+    "respect for marriage"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Not so much as looking at her is both righteousness and full conduct.",
+     "quote": "The great manhood that won’t look at another’s wife"
+    }
+   ]
+  },
+  {
+   "n": 149,
+   "gloss": "Those with a right to the world's blessings are the ones who don't embrace another man's wife.",
+   "keywords": [
+    "faithfulness",
+    "who deserves happiness",
+    "staying faithful"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Reserves every good thing for those who keep from her embrace.",
+     "quote": "Those who don’t embrace the shoulders of a woman who is another’s"
+    }
+   ]
+  },
+  {
+   "n": 150,
+   "gloss": "Even if you break every other rule and do wrong, it's still good if you don't want someone else's wife.",
+   "keywords": [
+    "line you never cross",
+    "moral limits",
+    "worst sin"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:adultery",
+     "basis": "explicit",
+     "reason": "Holds it the one wrong to avoid even if all the rest are committed.",
+     "quote": "it is good not to crave the womanhood of one within another’s bounds"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drawn-to-someone-married",
+     "basis": "explicit",
+     "reason": "For someone near the line: of all the wrongs one might do, this one must stay undone.",
+     "quote": "Even if you keep no bounds of righteousness and do wrong"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "REQUIRES",
+   "source": "theme:learning",
+   "target": "quality:devotion",
+   "basis": "explicit",
+   "reason": "All learning is useless unless it ends in worship.",
+   "quote": "What use is learning to those who won’t worship",
+   "couplets": [
+    2
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:devotion",
+   "target": "theme:fruits-of-action",
+   "basis": "explicit",
+   "reason": "Devotion to the Lord’s true praise keeps both kinds of deeds from touching a person.",
+   "quote": "do not touch those devoted to the true praise of the Lord",
+   "couplets": [
+    5
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:devotion",
+   "target": "quality:grief",
+   "basis": "explicit",
+   "reason": "Reaching the feet of the one with no equal is what lifts sorrow from the mind.",
+   "quote": "the sorrow in your mind is hard to remove",
+   "couplets": [
+    7
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:devotion",
+   "target": "theme:liberation",
+   "basis": "explicit",
+   "reason": "Reaching the Lord’s feet is what lets a person swim the great sea of births.",
+   "quote": "Those who reach the Lord’s feet swim the great sea of births",
+   "couplets": [
+    10
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:agriculture",
+   "target": "theme:rain",
+   "basis": "explicit",
+   "reason": "Farmers stop ploughing when rain runs short.",
+   "quote": "If the riches called rain run short, farmers will not plough",
+   "couplets": [
+    14
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:charity",
+   "target": "theme:rain",
+   "basis": "explicit",
+   "reason": "Giving will not last in the world once the sky holds back.",
+   "quote": "If the sky does not give, neither giving",
+   "couplets": [
+    19
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:austerity",
+   "target": "theme:rain",
+   "basis": "explicit",
+   "reason": "Ascetic practice, like giving, fails with the rain.",
+   "quote": "neither giving nor austerity will remain in the wide world",
+   "couplets": [
+    19
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:good-conduct",
+   "target": "theme:rain",
+   "basis": "explicit",
+   "reason": "Since nothing goes on without water, conduct itself finally rests on rain.",
+   "quote": "conduct can’t go on without rain",
+   "couplets": [
+    20
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:righteousness",
+   "target": "theme:wealth",
+   "basis": "explicit",
+   "reason": "Righteousness brings wealth along with distinction.",
+   "quote": "it brings wealth",
+   "couplets": [
+    31
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:righteousness",
+   "target": "quality:purity-of-heart",
+   "basis": "explicit",
+   "reason": "All righteousness is held in a mind without stain, and the rest is noise.",
+   "quote": "To be without stain in your mind is all of righteousness",
+   "couplets": [
+    34
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:righteousness",
+   "target": "theme:liberation",
+   "basis": "explicit",
+   "reason": "A life of good with no day wasted closes the road to further births.",
+   "quote": "thou wallest up the road to future births",
+   "couplets": [
+    38
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:family-life",
+   "target": "quality:affection",
+   "basis": "explicit",
+   "reason": "Home life has its quality only if it has loving-kindness.",
+   "quote": "If home life has loving-kindness",
+   "couplets": [
+    45
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:family-life",
+   "target": "quality:righteousness",
+   "basis": "explicit",
+   "reason": "Beside loving-kindness, home life needs righteousness for its fruit.",
+   "quote": "loving-kindness and righteousness",
+   "couplets": [
+    45
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:kind-speech",
+   "target": "theme:poverty",
+   "basis": "explicit",
+   "reason": "Poverty never comes to those whose sweet words bring everyone joy.",
+   "quote": "The poverty that brings sorrow will not come",
+   "couplets": [
+    94
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:kind-speech",
+   "target": "quality:righteousness",
+   "basis": "explicit",
+   "reason": "Sweet words, with a search for the good behind them, make righteousness grow.",
+   "quote": "righteousness will grow",
+   "couplets": [
+    96
+   ]
+  },
+  {
+   "type": "OPPOSES",
+   "source": "quality:harsh-speech",
+   "target": "quality:kind-speech",
+   "basis": "explicit",
+   "reason": "Hard words and sweet ones are set side by side as unripe fruit and ripe.",
+   "quote": "To speak harsh words when sweet ones are there",
+   "couplets": [
+    100
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:gratitude",
+   "target": "quality:forgiveness",
+   "basis": "explicit",
+   "reason": "Recalling one good deed is enough to end even the worst hurt.",
+   "quote": "it all dies when you recall one good thing they did",
+   "couplets": [
+    109
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:adultery",
+   "target": "quality:enmity",
+   "basis": "explicit",
+   "reason": "Enmity is one of the four things that never leave the one who trespasses.",
+   "quote": "Enmity, sin, fear and blame",
+   "couplets": [
+    146
+   ]
+  }
+ ],
+ "proposals": []
+}

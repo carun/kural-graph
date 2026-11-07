@@ -1,0 +1,2463 @@
+{
+ "shard": "shard-10",
+ "chapters": [
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129,
+  130,
+  131,
+  132,
+  133
+ ],
+ "couplets": [
+  {
+   "n": 1211,
+   "gloss": "A dream has brought me word from the one I love: how can I possibly thank it enough?",
+   "keywords": [
+    "dreaming of someone you miss",
+    "news from a loved one",
+    "comfort in sleep"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "The dream arrives like a guest bearing his message, and she wonders how to honour it.",
+     "quote": "the dream that came with a message from my lover"
+    }
+   ]
+  },
+  {
+   "n": 1212,
+   "gloss": "If only I could get my eyes to sleep, I could go to him in a dream and tell him how I'm still somehow surviving.",
+   "keywords": [
+    "insomnia",
+    "can't sleep without him",
+    "wanting to reach someone"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Sleep is the only road left to him, and it is shut until she can fall asleep.",
+     "quote": "I could tell the one who held me"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Treats her wakeful eyes as someone she has to talk round before she can reach him.",
+     "quote": "would sleep when I beg them"
+    }
+   ]
+  },
+  {
+   "n": 1213,
+   "gloss": "He won't come near me when I'm awake, so seeing him while I sleep is the one thing that keeps me going.",
+   "keywords": [
+    "what keeps me going",
+    "absent partner",
+    "seeing someone in your sleep"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Seeing him in dreams is all that holds her to life while he stays away.",
+     "quote": "I see him in dreams, and that is what keeps me alive"
+    }
+   ],
+   "sensitive": "Ties staying alive to an absent lover."
+  },
+  {
+   "n": 1214,
+   "gloss": "Dreaming gives me the love I'm missing, because it finds him and brings him back when, awake, he shows me no pity.",
+   "keywords": [
+    "escaping into fantasy",
+    "love in dreams",
+    "unkind partner"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "The dream does what he will not: it seeks him out, brings him to her and gives her the joy of desire.",
+     "quote": "a dream seeks out the man"
+    }
+   ]
+  },
+  {
+   "n": 1215,
+   "gloss": "A dream is only sweet while it lasts, but then so was seeing him in real life: both are over the moment they end.",
+   "keywords": [
+    "fleeting happiness",
+    "good times ending",
+    "memories fading"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Puts dream and waking on one level, since each is sweet only while he is in view.",
+     "quote": "The dream too is sweet only while I am seeing it"
+    }
+   ]
+  },
+  {
+   "n": 1216,
+   "gloss": "If only there were no such thing as being awake: the dream wouldn't stop and he would never leave me.",
+   "keywords": [
+    "wanting a dream to last",
+    "mornings without him",
+    "waking up alone"
+   ],
+   "sensitive": "wishes never to wake, as an escape from pain",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Waking is cast as the enemy that breaks off the dream and takes him from her again.",
+     "quote": "If there were no such thing as waking"
+    }
+   ]
+  },
+  {
+   "n": 1217,
+   "gloss": "He's heartless enough to ignore me when I'm awake, so why does he come and torment me when I'm asleep?",
+   "keywords": [
+    "can't stop dreaming about my ex",
+    "mood swings in grief",
+    "resenting someone you love"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Here the comfort sours: the man who shows no kindness when she is awake won’t leave her alone in her dreams.",
+     "quote": "Why does he torment me in my dreams?"
+    }
+   ]
+  },
+  {
+   "n": 1218,
+   "gloss": "While I sleep he is in my arms, and the second I wake he rushes straight back into my heart.",
+   "keywords": [
+    "first thought on waking",
+    "thinking of him all the time",
+    "dreaming of an embrace"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "inferred",
+     "reason": "Asleep he holds her, as in a dream; awake he darts into her heart, so she is never without him.",
+     "quote": "When I sleep, he is on my shoulders."
+    }
+   ]
+  },
+  {
+   "n": 1219,
+   "gloss": "People blame him for never turning up, but that's only because they don't get to see him in their dreams as I do.",
+   "keywords": [
+    "people judging my partner",
+    "others don't understand",
+    "defending someone absent"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Answers those who fault his absence: they have not met him in sleep as she has.",
+     "quote": "never see a lover in their dreams"
+    }
+   ]
+  },
+  {
+   "n": 1220,
+   "gloss": "The neighbours say he has left me. Can it be that they just don't see him in their sleep the way I do?",
+   "keywords": [
+    "neighbours talking",
+    "people say he left me",
+    "denial"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:dream",
+     "basis": "explicit",
+     "reason": "Her retort to the talk: how can he have gone, when she meets him in sleep?",
+     "quote": "not see him in their dreams"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:village-folk",
+     "basis": "explicit",
+     "reason": "Turns on the neighbours who announce he has gone, and asks what they can know of it.",
+     "quote": "They say he left me in waking life"
+    }
+   ]
+  },
+  {
+   "n": 1221,
+   "gloss": "You're no mere evening: you are the time of day that eats away the life of anyone whose partner has gone.",
+   "keywords": [
+    "hate evenings",
+    "lonely at dusk",
+    "worst time of day"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Refuses the hour its gentle name and calls it a devourer of lives.",
+     "quote": "the time that eats the lives"
+    }
+   ]
+  },
+  {
+   "n": 1222,
+   "gloss": "Evening, you look as sad and washed out as I feel: is your partner as hard-hearted as mine?",
+   "keywords": [
+    "projecting your feelings",
+    "sadness in nature",
+    "talking to yourself"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Sees her own sorrow in the dusk and asks it whether it too has a hard-hearted mate.",
+     "quote": "Is your mate as hard-hearted as mine?"
+    }
+   ]
+  },
+  {
+   "n": 1223,
+   "gloss": "Evening used to arrive shy and gentle; now it walks right up to me and brings nothing but misery.",
+   "keywords": [
+    "dreading the evening",
+    "grief getting worse",
+    "loneliness after dark"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Evening buds with cold and turns pale, and as it comes her own despair buds and her pain grows.",
+     "quote": "despair buds in me and pain grows"
+    }
+   ]
+  },
+  {
+   "n": 1224,
+   "gloss": "When the one you love is away, evening comes towards you like the man sent to carry out a death sentence.",
+   "keywords": [
+    "dread of nightfall",
+    "evenings alone",
+    "partner away"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Dusk comes to the woman left alone as strangers come to a killing ground.",
+     "quote": "evening comes like strangers to a killing ground"
+    }
+   ]
+  },
+  {
+   "n": 1225,
+   "gloss": "What did I ever do for the morning that it treats me so kindly, and what did I do to the evening that it hurts me so?",
+   "keywords": [
+    "mornings easier than evenings",
+    "why me",
+    "mood changing through the day"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Puzzles over the two hours as if they were people, one she had helped and one she had wronged.",
+     "quote": "what harm did I do the evening?"
+    }
+   ]
+  },
+  {
+   "n": 1226,
+   "gloss": "As long as my love was beside me, I had no idea how much an evening could hurt.",
+   "keywords": [
+    "taking someone for granted",
+    "didn't know until they left",
+    "missing someone at night"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Evening brought no pain until he left: its cruelty is the work of his absence.",
+     "quote": "I never knew that evening brings pain"
+    }
+   ]
+  },
+  {
+   "n": 1227,
+   "gloss": "This love-sickness starts small at dawn, grows all through the day, and is at its very worst by evening.",
+   "keywords": [
+    "feeling worse at night",
+    "grief building through the day",
+    "lovesick"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:pining",
+     "basis": "explicit",
+     "reason": "Charts the whole course of her grief in one day, from first stirring at dawn to its height at dusk.",
+     "quote": "buds in the morning, fills out all day and flowers in the evening"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "Pain opens as a flower opens, petal by petal through the daylight hours.",
+     "quote": "goeth on opening its petals the livelong day"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Evening is the hour at which the bloom of suffering stands fully open.",
+     "quote": "flowers in the evening"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Names what she feels as an illness, with its own regular daily course.",
+     "quote": "This sickness"
+    }
+   ]
+  },
+  {
+   "n": 1228,
+   "gloss": "They call it a shepherd's flute, but to me it's a deadly weapon, because its sound announces the evening that burns me.",
+   "keywords": [
+    "sounds that trigger memories",
+    "triggers",
+    "music that hurts"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Even a cowherd’s flute is dreaded, because it is the messenger of this hour.",
+     "quote": "The cowherd’s flute is a messenger for the evening"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Dusk scorches her, a fire that comes in on the sound of a flute.",
+     "quote": "the evening that burns like fire"
+    }
+   ]
+  },
+  {
+   "n": 1229,
+   "gloss": "If this evening that has already unhinged me comes on any further, I will die and the whole town will be left in mourning.",
+   "keywords": [
+    "evening despair",
+    "love driving me mad",
+    "grief taking over"
+   ],
+   "sensitive": "speaks of dying of grief and the town mourning",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "As evening spreads it takes reason with it, until the town itself reels and suffers.",
+     "quote": "When evening spreads and reason reels"
+    }
+   ]
+  },
+  {
+   "n": 1230,
+   "gloss": "My life has hung on so far but it will give out now, as evening makes me think of the man who cares only about money.",
+   "keywords": [
+    "partner chooses work over me",
+    "workaholic husband",
+    "neglected for money"
+   ],
+   "sensitive": "speaks of life ebbing away from grief",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:evening",
+     "basis": "explicit",
+     "reason": "Evening wounds here through memory, calling up the man whose way is wealth.",
+     "quote": "as I think of the man whose way is wealth"
+    }
+   ]
+  },
+  {
+   "n": 1231,
+   "gloss": "Thinking of the man who claimed he was leaving for my happiness, my faded eyes can't face the flowers for shame.",
+   "keywords": [
+    "believing an excuse",
+    "empty promises",
+    "losing your looks"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes feel shame as a person would, now that thinking of him has dimmed them.",
+     "quote": "your eyes now shrink in shame"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "Flowers are the standard of beauty that her faded eyes can no longer stand beside.",
+     "quote": "before sweet flowers"
+    }
+   ]
+  },
+  {
+   "n": 1232,
+   "gloss": "My dull, streaming eyes seem to be telling everyone how unkind he has been to me.",
+   "keywords": [
+    "can't hide that i've been crying",
+    "people can tell",
+    "red eyes"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tears",
+     "basis": "explicit",
+     "reason": "Her tears run and tell others what she would rather keep to herself.",
+     "quote": "streaming with tears"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Turned informer, her eyes give away the very man they love.",
+     "quote": "seem to be telling of the unkindness"
+    }
+   ]
+  },
+  {
+   "n": 1233,
+   "gloss": "These arms that filled out with happiness on my wedding day now seem to be announcing to everyone that he has gone.",
+   "keywords": [
+    "stress weight loss",
+    "body shows what you feel",
+    "wedding day memories"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1234,
+   "gloss": "My arms lost their old beauty when he left, and now they've grown so thin that my bangles drop off on their own.",
+   "keywords": [
+    "losing weight after a breakup",
+    "not eating from heartache",
+    "wasting away"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Her arms have thinned since he left, until the gold bangles slip away.",
+     "quote": "the gold bangles slip away"
+    }
+   ]
+  },
+  {
+   "n": 1235,
+   "gloss": "My arms, robbed of their beauty and their bangles, tell the whole world how cruel he has been.",
+   "keywords": [
+    "neglected wife",
+    "public proof of hurt",
+    "body gives you away"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Bare arms and lost bangles together become a public charge against him.",
+     "quote": "their bangles gone and their old beauty withered, tell of the cruelty"
+    }
+   ]
+  },
+  {
+   "n": 1236,
+   "gloss": "I scold my arms for getting thin and losing my bangles, because now people are calling him cruel.",
+   "keywords": [
+    "protecting a partner's reputation",
+    "hiding how you feel",
+    "what people say about him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Her thin arms and slipping bangles draw the charge that he is cruel, and that charge is what hurts her.",
+     "quote": "my bangles slip"
+    }
+   ]
+  },
+  {
+   "n": 1237,
+   "gloss": "Heart, if you want to earn some credit, go to that cruel man and tell him of the talk my thinning arm has started.",
+   "keywords": [
+    "want him to know how i feel",
+    "sending a message",
+    "telling him what he's done"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Dispatches her heart as a messenger to him, and offers it glory for the errand.",
+     "quote": "Will you win glory, my heart"
+    }
+   ]
+  },
+  {
+   "n": 1238,
+   "gloss": "We were holding each other once and I let my arms go a little slack, and at once her forehead lost its colour.",
+   "keywords": [
+    "sensitive partner",
+    "she feels every distance",
+    "tender moment"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "A moment’s slackening of his arms is parting enough to drain her forehead.",
+     "quote": "the forehead of that simple girl in gold bangles turned pale"
+    }
+   ]
+  },
+  {
+   "n": 1239,
+   "gloss": "Just one breath of air slipped between us as we held each other, and the colour left her big eyes straight away.",
+   "keywords": [
+    "can't bear any distance",
+    "closeness",
+    "wanting no space between us"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "A thin draught through their embrace is enough to blanch her eyes.",
+     "quote": "a cool breeze cut through our embrace"
+    }
+   ]
+  },
+  {
+   "n": 1240,
+   "gloss": "Her eyes didn't only lose their colour: they cried as well, seeing what had happened to her forehead.",
+   "keywords": [
+    "pain spreading",
+    "fragile love",
+    "sympathy"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "Pallor is treated as a person: the pallor in her eyes suffers at what her forehead has done.",
+     "quote": "the pallor in her eyes suffered"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes look on like a person, distressed at what her forehead has done.",
+     "quote": "when it saw what her bright forehead had done"
+    }
+   ]
+  },
+  {
+   "n": 1241,
+   "gloss": "Heart, can't you think of something, anything at all, that would cure me of this sickness nothing seems to cure?",
+   "keywords": [
+    "how to get over someone",
+    "cure for heartbreak",
+    "asking yourself what to do"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Begs her heart to work out what she herself cannot.",
+     "quote": "Won’t you think of something, heart"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Her suffering is a sickness that won’t end, and she goes looking for a cure anyway.",
+     "quote": "this unending sickness"
+    }
+   ]
+  },
+  {
+   "n": 1242,
+   "gloss": "Good luck to you, heart, but it's stupid to go on suffering over someone who has no love for you.",
+   "keywords": [
+    "he doesn't love me anymore",
+    "stop crying over him",
+    "wasting tears"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Calls it plain folly to keep grieving for a man who has no love to give.",
+     "quote": "That is foolishness"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Scolds the heart to its face, closing on a mocking blessing.",
+     "quote": "my heart, long may you live"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-let-go",
+     "basis": "explicit",
+     "reason": "Says to the grieving self what a blunt friend would: he does not love you, so stop suffering for him.",
+     "quote": "He has no love for you, yet you go on suffering"
+    }
+   ]
+  },
+  {
+   "n": 1243,
+   "gloss": "Heart, what's the point of sitting here wasting away over him? The man who did this to us isn't thinking of us at all.",
+   "keywords": [
+    "he's moved on",
+    "stop overthinking",
+    "they don't think about me"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Asks what good it does to sit aching for a man who has no tender thought for her.",
+     "quote": "Why sit here thinking of him and aching"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Speaks to the heart as a partner in a useless vigil she now wants to end.",
+     "quote": "Why sit here thinking of him and aching, heart?"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-let-go",
+     "basis": "explicit",
+     "reason": "A plain argument for anyone stuck: the one who gave you this sickness has no tender thought for you.",
+     "quote": "has no tender thought for us"
+    }
+   ]
+  },
+  {
+   "n": 1244,
+   "gloss": "Heart, if you're going to him, take my eyes along too, because they're eating me alive with wanting to see him.",
+   "keywords": [
+    "desperate to see someone",
+    "obsessing",
+    "can't stop wanting to see him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Sends the heart off to him and hands it the eyes as extra baggage.",
+     "quote": "Take my eyes with you too when you go, heart"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Starved of the sight of him, the eyes gnaw at her like tormentors.",
+     "quote": "Wanting to see him, they are eating me"
+    }
+   ]
+  },
+  {
+   "n": 1245,
+   "gloss": "He pushes me away however hard I hold on, yet can I really write him off as an enemy, heart?",
+   "keywords": [
+    "can't hate him",
+    "still loyal to someone who rejected me",
+    "ex treats me badly"
+   ],
+   "sensitive": "treats clinging to someone who spurns you as the only course",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Puts the hard question to her heart rather than answering it herself.",
+     "quote": "Can we give him up as an enemy, heart?"
+    }
+   ]
+  },
+  {
+   "n": 1246,
+   "gloss": "Heart, you drop your grudge and run to him the moment you see him, so I suspect even this anger of yours is just an act.",
+   "keywords": [
+    "can't stay mad at him",
+    "faking anger",
+    "giving in too easily"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Catches her heart bluffing: it scolds him now but will melt at first sight of him.",
+     "quote": "Your anger now is a pretence, my heart"
+    }
+   ]
+  },
+  {
+   "n": 1247,
+   "gloss": "Heart, let go of either the love or the shyness: I can't carry the two of them at once.",
+   "keywords": [
+    "too shy to tell him",
+    "pride or love",
+    "swallowing your pride"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Hands her heart an ultimatum, since she herself can no longer hold both.",
+     "quote": "give up desire or give up modesty"
+    }
+   ]
+  },
+  {
+   "n": 1248,
+   "gloss": "You moan that he won't come back out of pity, and you'd chase him even though he left on purpose. Heart, you're an idiot.",
+   "keywords": [
+    "chasing an ex",
+    "stop running after him",
+    "begging him to come back"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reserve",
+     "basis": "inferred",
+     "reason": "By mocking the heart for going after a man who left, she sides with holding back.",
+     "quote": "you go after the one who left"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Ends her quarrel with the heart on a flat insult.",
+     "quote": "You are a fool, my heart."
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-let-go",
+     "basis": "explicit",
+     "reason": "Tells anyone tempted to go after someone who left that pining and pursuit are a fool’s way.",
+     "quote": "you go after the one who left"
+    }
+   ]
+  },
+  {
+   "n": 1249,
+   "gloss": "Who exactly are you trying to reach, heart, when the one you love is already living inside you?",
+   "keywords": [
+    "keeping someone in your heart",
+    "he's always with me",
+    "no need to chase"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Points out to the restless heart that what it runs after is already within it.",
+     "quote": "Your lover is within you, my heart."
+    }
+   ]
+  },
+  {
+   "n": 1250,
+   "gloss": "As long as we keep holding in our heart the man who walked out on us, we'll go on losing more of ourselves.",
+   "keywords": [
+    "moving on",
+    "letting go of an ex",
+    "holding on hurts"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:loving-remembrance",
+     "basis": "explicit",
+     "reason": "Warns that cherishing the man who left will only wear her down further.",
+     "quote": "we will lose still more of our beauty"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-let-go",
+     "basis": "explicit",
+     "reason": "States the cost outright: keeping someone who left in your heart costs you more of your beauty.",
+     "quote": "If we keep in our heart the one who left us"
+    }
+   ]
+  },
+  {
+   "n": 1251,
+   "gloss": "However firmly shyness has locked the door of self-possession, strong love will simply break it down.",
+   "keywords": [
+    "can't hide my feelings",
+    "losing control",
+    "love breaks all the rules"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Desire is the axe no door of reserve withstands, even one bolted with modesty.",
+     "quote": "The axe of desire breaks down the door"
+    }
+   ]
+  },
+  {
+   "n": 1252,
+   "gloss": "Love has no mercy: it keeps its grip on my heart even in the middle of the night.",
+   "keywords": [
+    "can't sleep for thinking of him",
+    "merciless feelings",
+    "awake at 3am"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Sums up desire in one word, merciless, for the hold it keeps on her heart.",
+     "quote": "This thing called desire has no mercy."
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "The dead of night, when all else rests, brings her no relief from it.",
+     "quote": "even in the dead of night"
+    }
+   ]
+  },
+  {
+   "n": 1253,
+   "gloss": "I really do try to keep my love hidden, but it bursts out by itself with no warning, the way a sneeze does.",
+   "keywords": [
+    "blurting out your feelings",
+    "can't keep a secret",
+    "involuntary"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Desire does not ask leave to show itself, however she tries to keep it in.",
+     "quote": "it comes out without warning"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sneeze",
+     "basis": "explicit",
+     "reason": "A sneeze measures how little the will has to do with desire coming out.",
+     "quote": "like a sneeze"
+    }
+   ]
+  },
+  {
+   "n": 1254,
+   "gloss": "I used to pride myself on my composure, but love has torn through all that and put itself on public display.",
+   "keywords": [
+    "making a fool of yourself",
+    "everyone can see i'm in love",
+    "losing your cool"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1255,
+   "gloss": "The proud self-respect that won't go after someone who hurt you is simply unknown to people sick with love.",
+   "keywords": [
+    "chasing someone who hurt you",
+    "no self-respect in love",
+    "running back to him"
+   ],
+   "sensitive": "treats running after one who hurt you as natural",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:reserve",
+     "basis": "explicit",
+     "reason": "Names the dignity that won’t go after those who hurt you, then says the sickness of desire has none of it.",
+     "quote": "The great dignity of not going after those who hurt you"
+    }
+   ]
+  },
+  {
+   "n": 1256,
+   "gloss": "Thanks a lot, sorrow! You care for me so much that you want me to run after the man who cruelly left me.",
+   "keywords": [
+    "bitter sarcasm",
+    "can't stop following him",
+    "misery"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1257,
+   "gloss": "The moment the one I love shows me affection, I forget I ever had any shyness.",
+   "keywords": [
+    "melting when he's nice",
+    "forgetting your pride",
+    "losing inhibitions"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1258,
+   "gloss": "It's the soft-spoken pleading of that charming liar that breaks down all my womanly defences.",
+   "keywords": [
+    "sweet talk",
+    "smooth talker",
+    "falling for his words"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1259,
+   "gloss": "I set out meaning to sulk and stay away, but I ended up holding him, because I could see my heart had already gone over.",
+   "keywords": [
+    "can't stay angry",
+    "giving in to him",
+    "heart over head"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1260,
+   "gloss": "People whose hearts melt like fat on a flame can't possibly claim they will hold out and refuse to make up.",
+   "keywords": [
+    "making up too soon",
+    "soft-hearted",
+    "can't hold a grudge"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "A heart yields as surely as fat in a fire when the lover draws close.",
+     "quote": "hearts are like fat in a fire"
+    }
+   ]
+  },
+  {
+   "n": 1261,
+   "gloss": "My eyes have gone dull from watching for him and my fingertips are worn down from counting the days marked on the wall.",
+   "keywords": [
+    "tally marks",
+    "waiting for someone",
+    "deployment countdown"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:longing",
+     "basis": "explicit",
+     "reason": "Gives longing its mark: eyes gone dull and fingers worn from counting the days.",
+     "quote": "my fingers have worn down"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "The wait has cost her eyes their shine.",
+     "quote": "My eyes have lost their lustre"
+    }
+   ]
+  },
+  {
+   "n": 1262,
+   "gloss": "What if I did forget him today, my friend? My looks have already gone and my bangle has already dropped from my arm.",
+   "keywords": [
+    "too late to forget him",
+    "friend says move on",
+    "the damage is done"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Forgetting him, she says, would only send her bangles sliding from her arms.",
+     "quote": "the bangles will slip from my arms"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:confidante",
+     "basis": "explicit",
+     "reason": "Put to her maid, as if answering a friend’s advice to forget him.",
+     "quote": "You in your bright jewels, if I forget him today"
+    }
+   ]
+  },
+  {
+   "n": 1263,
+   "gloss": "He left because he wanted victories; the only reason I'm still alive is that I want him back.",
+   "keywords": [
+    "partner away for work",
+    "ambition over love",
+    "waiting for a soldier"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:longing",
+     "basis": "explicit",
+     "reason": "Sets his wanting of victory beside hers for his return, the one thing that keeps her alive.",
+     "quote": "Wanting his return, I am still alive."
+    }
+   ],
+   "sensitive": "Ties staying alive to an absent lover."
+  },
+  {
+   "n": 1264,
+   "gloss": "He went off with no thought for my feelings, and yet just imagining him coming home makes my heart leap.",
+   "keywords": [
+    "excited for his return",
+    "hope",
+    "can't stay angry"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1265,
+   "gloss": "Just let me look at my husband until I've seen enough of him: the sickly colour will leave my thin arm for good.",
+   "keywords": [
+    "seeing him again",
+    "reunion",
+    "feeling better when he's back"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "explicit",
+     "reason": "One full sight of him, she says, and the pallor will be gone from her shoulders.",
+     "quote": "the pallor will leave my soft shoulders"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "All she asks is for her eyes to gorge on the sight of him.",
+     "quote": "let my eyes take their fill of the sight of my beloved"
+    }
+   ]
+  },
+  {
+   "n": 1266,
+   "gloss": "Just let him come home: in a single day I'll take in all of him, and everything that's been wearing me down will be gone.",
+   "keywords": [
+    "he's coming home",
+    "love as medicine",
+    "healing"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ambrosia",
+     "basis": "explicit",
+     "reason": "His presence is a divine drink she plans to swallow in one day.",
+     "quote": "drink the nectar of his presence"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "His return is the one remedy for the illness of waiting.",
+     "quote": "until all this sickness of grief is gone"
+    }
+   ]
+  },
+  {
+   "n": 1267,
+   "gloss": "When my darling finally gets home, will I sulk at him, throw my arms round him, or somehow do both?",
+   "keywords": [
+    "mixed feelings at a reunion",
+    "angry and happy to see him",
+    "welcoming him back"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1268,
+   "gloss": "May the king start the fight and win it today, so I can get home by evening and sit down to a meal with my wife.",
+   "keywords": [
+    "soldier missing home",
+    "deployed",
+    "wanting to finish work and get home"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1269,
+   "gloss": "For someone waiting on a loved one far away and marking off the calendar, a single day drags like a whole week.",
+   "keywords": [
+    "time going slowly",
+    "long distance",
+    "waiting for his return"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:longing",
+     "basis": "explicit",
+     "reason": "Gives longing its own clock, on which one day passes at the pace of seven.",
+     "quote": "one day passes like seven"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Speaks of everyone who waits for someone far away, not of one speaker alone.",
+     "quote": "For those who pine, counting on the day"
+    }
+   ]
+  },
+  {
+   "n": 1270,
+   "gloss": "What good will it do to get back, to see her, even to hold her, if her heart has already broken by then?",
+   "keywords": [
+    "coming back too late",
+    "too late to fix it",
+    "time away from family"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1271,
+   "gloss": "You can try to hide it, love, but your eyes won't be held back: they tell me there's something on your mind.",
+   "keywords": [
+    "what's wrong",
+    "something she isn't saying",
+    "reading your partner"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eye acts on its own, slipping her control to tell him what she keeps back.",
+     "quote": "your kohl-dark eyes slip your control"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Said straight to her, coaxing out what she will not say.",
+     "quote": "Though you hide it"
+    }
+   ]
+  },
+  {
+   "n": 1272,
+   "gloss": "My innocent girl, lovely to look at and slender-armed, holds herself back with more restraint than any other woman.",
+   "keywords": [
+    "admiring your partner",
+    "she keeps her feelings to herself",
+    "quiet strength"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reserve",
+     "basis": "explicit",
+     "reason": "Admires her for holding back even beyond what a woman's composure usually asks.",
+     "quote": "More than a woman’s reserve hath my artless one"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Praises looks that fill his whole sight, down to arms like bamboo.",
+     "quote": "beauty that fills my eyes and arms like bamboo"
+    }
+   ]
+  },
+  {
+   "n": 1273,
+   "gloss": "I can make out a thought in her, plain to see however she hides it, like a string running through a clear bead.",
+   "keywords": [
+    "seeing through someone",
+    "transparent feelings",
+    "unspoken worry"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "A concealed thought shows through her as thread shows through a bead, hidden and seen at once.",
+     "quote": "Like the thread that shows through a bead"
+    }
+   ]
+  },
+  {
+   "n": 1274,
+   "gloss": "Like the scent shut up in a flower that hasn't opened, her half smile is holding something back.",
+   "keywords": [
+    "what does her smile mean",
+    "mysterious smile",
+    "hidden meaning"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "A budding smile carries a meaning without yet giving it, which is how lovers speak.",
+     "quote": "something lies inside the budding smile"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "The closed bud keeps its fragrance as her smile keeps her thought.",
+     "quote": "As fragrance lies inside a closed bud"
+    }
+   ]
+  },
+  {
+   "n": 1275,
+   "gloss": "The sly way she hid what she was feeling and walked off has something in it that cures my pain.",
+   "keywords": [
+    "charmed by her",
+    "playful secrecy",
+    "her little tricks"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Delights in the very slyness with which she kept her thought from him.",
+     "quote": "The stealth of the woman in close-set bangles"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "His pain finds its medicine in the one who gave it to him.",
+     "quote": "holds a medicine"
+    }
+   ]
+  },
+  {
+   "n": 1276,
+   "gloss": "He's being unusually sweet to me. I'm afraid he's hiding something, and that it means he's about to leave me again.",
+   "keywords": [
+    "partner suddenly being extra nice",
+    "he's hiding something",
+    "gut feeling"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "His extra sweetness is the very thing that frightens her: she reads in it another leaving.",
+     "quote": "in it I see myself bearing pain again"
+    }
+   ]
+  },
+  {
+   "n": 1277,
+   "gloss": "My bangle sensed the chill in my husband's heart even before I did.",
+   "keywords": [
+    "sensing he's pulling away",
+    "body knows first",
+    "intuition in a relationship"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "explicit",
+     "reason": "Her bangles know he has drawn away before she does.",
+     "quote": "My bangles knew before we did"
+    }
+   ]
+  },
+  {
+   "n": 1278,
+   "gloss": "He only left yesterday, yet I feel as if I've been fading for a week already.",
+   "keywords": [
+    "missing him already",
+    "first day apart",
+    "time apart feels long"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:pallor",
+     "basis": "inferred",
+     "reason": "Her body has been pale for seven days, over a man gone for one.",
+     "quote": "pale in body for seven days"
+    }
+   ]
+  },
+  {
+   "n": 1279,
+   "gloss": "She looked at her bangle, then at her soft arm, then down at her feet, and that was her whole message to me.",
+   "keywords": [
+    "silent plea",
+    "body language",
+    "non-verbal message"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "A whole plea is made in three glances, with not one word spoken.",
+     "quote": "She looked at her bangles, looked at her soft arms, looked at her feet."
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:slipping-bracelets",
+     "basis": "inferred",
+     "reason": "Her look at the bangle warns what will become of it if he goes.",
+     "quote": "She looked at her bangles"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:confidante",
+     "basis": "explicit",
+     "reason": "The maid acts as go-between, passing her mistress’s silent signs on to him.",
+     "quote": "That is what she did there."
+    }
+   ]
+  },
+  {
+   "n": 1280,
+   "gloss": "She tells me what parting would do to her and asks to come with me, all with a look: no woman could be more delicate.",
+   "keywords": [
+    "asking without words",
+    "unspoken request",
+    "subtle"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bashfulness",
+     "basis": "explicit",
+     "reason": "Admires a woman who will plead the sickness of desire with her eyes but won’t say it aloud.",
+     "quote": "womanhood on top of womanhood"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:signs-of-love",
+     "basis": "explicit",
+     "reason": "Her eyes alone carry a whole request, and he marvels at it.",
+     "quote": "To tell the sickness of desire with the eyes and beg"
+    }
+   ]
+  },
+  {
+   "n": 1281,
+   "gloss": "Getting high just from thinking of someone and happy just from seeing them: drink can't do that, only love can.",
+   "keywords": [
+    "natural high",
+    "butterflies",
+    "love versus alcohol"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Claims for desire alone a joy that comes at a thought and at a glance.",
+     "quote": "toddy can’t do this, but desire can"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:wine",
+     "basis": "explicit",
+     "reason": "Toddy is the rival that fails the test, since it delights only when actually drunk.",
+     "quote": "toddy can’t do this"
+    }
+   ]
+  },
+  {
+   "n": 1282,
+   "gloss": "When love has grown as tall as a palm tree, there can't be room for even a grain's worth of sulking.",
+   "keywords": [
+    "too in love to fight",
+    "no room for grudges",
+    "big love small quarrels"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:millet-and-palmyra",
+     "basis": "explicit",
+     "reason": "A palmyra’s height of desire leaves no space for a millet seed’s worth of sulk.",
+     "quote": "as tall as a palmyra"
+    }
+   ]
+  },
+  {
+   "n": 1283,
+   "gloss": "Even though he ignores me and does whatever he likes, my eyes can't settle until they've seen him.",
+   "keywords": [
+    "wanting someone who ignores me",
+    "he does what he wants",
+    "addicted to him"
+   ],
+   "sensitive": "presents needing one who neglects her as natural",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "However little he cares, her eyes go on demanding the sight of him.",
+     "quote": "my eyes can’t rest without seeing my husband"
+    }
+   ]
+  },
+  {
+   "n": 1284,
+   "gloss": "I set out to give him the cold shoulder, my friend, but my heart forgot all about that and ran to be with him.",
+   "keywords": [
+    "can't stay angry with him",
+    "giving in",
+    "change of heart"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:confidante",
+     "basis": "explicit",
+     "reason": "Owns up to her friend that the plan to sulk fell apart.",
+     "quote": "I went there to sulk, my friend"
+    }
+   ]
+  },
+  {
+   "n": 1285,
+   "gloss": "An eye can't see the make-up stick while it's being lined; in the same way I can't see his faults when he's close.",
+   "keywords": [
+    "love is blind",
+    "rose-tinted glasses",
+    "overlooking flaws"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "The eye that cannot see the pencil touching it pictures her blindness to him up close.",
+     "quote": "the eye seeth not the blackness of the pencil"
+    }
+   ]
+  },
+  {
+   "n": 1286,
+   "gloss": "When he's in front of me I can't find anything wrong with him; when he's away, faults are all I can find.",
+   "keywords": [
+    "angry only when he's away",
+    "changing how you see someone",
+    "distance and resentment"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1287,
+   "gloss": "Nobody leaps into a river knowing it will sweep them off; so why start a sulk I know I can't keep up once he is near?",
+   "keywords": [
+    "pointless grudge",
+    "can't stay mad",
+    "knowing your own weakness"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1288,
+   "gloss": "A drunk still wants drink even though it shames him; your chest is the same to me, you deceiver, whatever you've done.",
+   "keywords": [
+    "going back to someone who hurts you",
+    "toxic relationship",
+    "addicted to him"
+   ],
+   "sensitive": "welcomes back one who hurts and shames her",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:wine",
+     "basis": "explicit",
+     "reason": "She is the drinker who keeps going back to the toddy that disgraces her.",
+     "quote": "is like toddy to those drunk on it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Said to his face, with a name that is half reproach and half endearment.",
+     "quote": "you thief"
+    }
+   ]
+  },
+  {
+   "n": 1289,
+   "gloss": "Love is more delicate than any blossom, and only a few people know how to handle it gently enough.",
+   "keywords": [
+    "fragile relationship",
+    "handle with care",
+    "being gentle with your partner"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Says what desire is: so soft that few ever find it at its peak.",
+     "quote": "Few ever find it at its peak"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:flower",
+     "basis": "explicit",
+     "reason": "The flower sets the measure of softness, and desire goes beyond it.",
+     "quote": "Desire is softer than a flower."
+    }
+   ]
+  },
+  {
+   "n": 1290,
+   "gloss": "She was glaring at me when she saw me, but when I came near she rushed to hold me even faster than I went to her.",
+   "keywords": [
+    "she ran to me",
+    "fight melting away",
+    "reunion after a quarrel"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1291,
+   "gloss": "You can see how his heart does exactly what he wants. So why, my heart, won't you stand with me?",
+   "keywords": [
+    "arguing with yourself",
+    "why can't i stop",
+    "feelings won't obey"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Envies him a heart that obeys and demands the same loyalty from her own.",
+     "quote": "won’t you stand by me?"
+    }
+   ]
+  },
+  {
+   "n": 1292,
+   "gloss": "You can see he doesn't care about me, heart, and still you go to him as if he were on our side.",
+   "keywords": [
+    "ignoring red flags",
+    "he neglects me",
+    "going back to him"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Accuses her heart of going to the man who isn’t drawn to her.",
+     "quote": "you go to him"
+    }
+   ]
+  },
+  {
+   "n": 1293,
+   "gloss": "You trail after him whenever you feel like it, heart. Is that because people who are down have no friends, even their own hearts?",
+   "keywords": [
+    "no one on my side",
+    "betrayed by my own feelings",
+    "abandoned when down"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Charges her heart with deserting her, as friends desert the ruined.",
+     "quote": "the ruined have no friends"
+    }
+   ]
+  },
+  {
+   "n": 1294,
+   "gloss": "You won't even sulk a little first, heart, before showing how happy you are with him. Who will plot anything with you after this?",
+   "keywords": [
+    "playing hard to get",
+    "giving in too fast",
+    "no backbone"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Rebukes her heart as a useless accomplice that rushes to him without the agreed sulk.",
+     "quote": "You won’t sulk first and enjoy him after."
+    }
+   ]
+  },
+  {
+   "n": 1295,
+   "gloss": "My heart is afraid of not having him, and once it has him it's afraid of losing him: the worry never stops.",
+   "keywords": [
+    "relationship anxiety",
+    "fear of abandonment",
+    "anxious attachment"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:dread-of-parting",
+     "basis": "explicit",
+     "reason": "Shows the fear outlasting success: to have him at last is only to start dreading his loss.",
+     "quote": "when it has him it fears parting"
+    }
+   ]
+  },
+  {
+   "n": 1296,
+   "gloss": "What use is my heart? When I sit thinking on my own, all it does is eat away at me.",
+   "keywords": [
+    "overthinking alone",
+    "rumination",
+    "lonely thoughts"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Turns on her heart as a worthless thing whose only skill is gnawing at her.",
+     "quote": "only to eat me up"
+    }
+   ]
+  },
+  {
+   "n": 1297,
+   "gloss": "Stuck with this silly heart that can't forget him and keep its pride, I've lost sight of my own dignity too.",
+   "keywords": [
+    "lost my dignity",
+    "can't forget him",
+    "embarrassed by my feelings"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:heart-addressed",
+     "basis": "explicit",
+     "reason": "Blames her fall on bad company, and the company is her own heart.",
+     "quote": "Caught up with this worthless, foolish heart"
+    }
+   ]
+  },
+  {
+   "n": 1298,
+   "gloss": "My heart, which loves him as much as life, thinks it beneath us to run him down, so it always takes his side.",
+   "keywords": [
+    "making excuses for him",
+    "always defending him",
+    "can't criticise him"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1299,
+   "gloss": "Who will stand by you in your sorrow if your own heart won't help you?",
+   "keywords": [
+    "no support",
+    "alone in grief",
+    "feeling unsupported"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1300,
+   "gloss": "If my own heart isn't on my side, why should I be surprised that strangers don't care about me?",
+   "keywords": [
+    "self-doubt",
+    "no one on my side",
+    "when you don't back yourself"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1301,
+   "gloss": "Don't hug him yet, dear. Pretend to be cross, and let's have a bit of fun watching him squirm.",
+   "keywords": [
+    "playing hard to get",
+    "teasing your partner",
+    "making him work for it"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "The maid urges a sulk for the sport of seeing him suffer a little.",
+     "quote": "Sulk, and let us see"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Playful counsel to the woman herself on how to receive him.",
+     "quote": "Don’t embrace him."
+    }
+   ]
+  },
+  {
+   "n": 1302,
+   "gloss": "A little sulking gives love its flavour, but if it drags on it spoils things, the way over-seasoning ruins a meal.",
+   "keywords": [
+    "how long to stay mad",
+    "silent treatment",
+    "healthy arguments"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Says what the sulk is: the seasoning of union, good only in small measure.",
+     "quote": "A sulk is like the right amount of salt."
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fight-with-your-partner",
+     "basis": "explicit",
+     "reason": "Gives a working rule for any tiff: a little does no harm, so do not drag it out.",
+     "quote": "Drawing it out is like a little too much."
+    }
+   ]
+  },
+  {
+   "n": 1303,
+   "gloss": "Leaving without holding the person you've upset is like hurting someone who is already hurt.",
+   "keywords": [
+    "walking out during an argument",
+    "don't go to bed angry",
+    "leaving after a fight"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Said to the man’s face: leaving a sulking woman unembraced adds to her pain.",
+     "quote": "Not to embrace those who sulk with you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:fight-with-your-partner",
+     "basis": "explicit",
+     "reason": "Warns against leaving a quarrel open: it hurts someone who is hurting already.",
+     "quote": "like bringing fresh pain to people already in distress"
+    }
+   ]
+  },
+  {
+   "n": 1304,
+   "gloss": "Refusing to make peace with someone who's sulking is like hacking at the roots of a plant that's already dying.",
+   "keywords": [
+    "reconciliation",
+    "refusing to apologise",
+    "stonewalling"
+   ],
+   "edges": [
+    {
+     "type": "GUIDES",
+     "target": "situation:fight-with-your-partner",
+     "basis": "explicit",
+     "reason": "Shows what refusing to make up does: it cuts at the root of something already withering.",
+     "quote": "cutting a withered creeper at the root"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:watered-plant",
+     "basis": "explicit",
+     "reason": "Leaving someone’s sulk unsoothed cuts at the root a creeper already withered.",
+     "quote": "cutting a withered creeper at the root"
+    }
+   ]
+  },
+  {
+   "n": 1305,
+   "gloss": "A sulk from the woman you love has a pull even on people of perfect goodness.",
+   "keywords": [
+    "cute when she's angry",
+    "attractive moods",
+    "irresistible"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Grants the sulk a grace that adorns even those of fine character.",
+     "quote": "What graces those of fine character"
+    }
+   ]
+  },
+  {
+   "n": 1306,
+   "gloss": "Without the odd quarrel and sulk, love would be like fruit that never reaches its proper ripeness.",
+   "keywords": [
+    "relationships need conflict",
+    "never fighting is bad",
+    "spice in a relationship"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Treats deep and light sulks as what desire can’t do without.",
+     "quote": "Without the deep sulk and the light one"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ripe-fruit",
+     "basis": "explicit",
+     "reason": "Desire without sulking is fruit gone past its best, or fruit too green to eat.",
+     "quote": "a fruit too ripe and a fruit too green"
+    }
+   ]
+  },
+  {
+   "n": 1307,
+   "gloss": "Even sulking hurts in one way: you keep wondering how long it will be before you make up.",
+   "keywords": [
+    "anxious after a fight",
+    "will we make up",
+    "who texts first"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Finds the one true pain inside the game: not knowing how far off the making-up is.",
+     "quote": "There is a pain even in sulking"
+    }
+   ]
+  },
+  {
+   "n": 1308,
+   "gloss": "What's the point of suffering when there's no one who loves me around to see how much it hurts?",
+   "keywords": [
+    "no one notices my pain",
+    "suffering in silence",
+    "wanting attention"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1309,
+   "gloss": "Water is only nice in the shade, and a sulk is only sweet coming from someone who truly loves you.",
+   "keywords": [
+    "arguing with someone who cares",
+    "test of love",
+    "fights only work with love"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Sets its test: a sulk is sweet only with those who love you.",
+     "quote": "sulking is sweet with those who love you"
+    }
+   ]
+  },
+  {
+   "n": 1310,
+   "gloss": "If my heart still wants someone who leaves me to sulk alone and won't make peace, that's nothing but silly craving.",
+   "keywords": [
+    "she never makes the first move",
+    "wanting someone who doesn't try",
+    "foolish desire"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:one-sided-love",
+     "basis": "explicit",
+     "reason": "Brands his own yearning for a woman who leaves a sulk to wither as mere craving.",
+     "quote": "That is only craving."
+    }
+   ]
+  },
+  {
+   "n": 1311,
+   "gloss": "Every woman feasts her eyes on you, you flirt. I'm not coming anywhere near you.",
+   "keywords": [
+    "partner gets attention from others",
+    "jealous of how people look at him",
+    "playboy"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "Refuses his embrace because, she says, every woman’s eyes have already had their share of him.",
+     "quote": "eat you up with their eyes"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:lover",
+     "basis": "explicit",
+     "reason": "Flung directly at him, with “philanderer” as the taunt.",
+     "quote": "you philanderer"
+    }
+   ]
+  },
+  {
+   "n": 1312,
+   "gloss": "I was sulking and he sneezed, knowing I'd be bound to say 'bless you' and so break my silence.",
+   "keywords": [
+    "trick to end a silent treatment",
+    "breaking the silence",
+    "cute tactics"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sneeze",
+     "basis": "explicit",
+     "reason": "His sneeze is a ruse to force a blessing from a woman refusing to speak.",
+     "quote": "He knew I would say, “Live long.”"
+    }
+   ]
+  },
+  {
+   "n": 1313,
+   "gloss": "Even if I put a flower in my hair she gets annoyed and says I'm dressing up for some other woman's benefit.",
+   "keywords": [
+    "accused of dressing up for someone else",
+    "suspicious partner",
+    "jealous for no reason"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "A flower is enough: her suspicion turns it into proof of another woman.",
+     "quote": "You wear it to show some woman"
+    }
+   ]
+  },
+  {
+   "n": 1314,
+   "gloss": "I told her I loved her more than anyone, and she frowned and demanded: more than who? more than who?",
+   "keywords": [
+    "can't say anything right",
+    "twisting your words",
+    "compliment backfires"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "A vow of love is heard as an admission that there are others to compare her with.",
+     "quote": "Than who? Than who?"
+    }
+   ]
+  },
+  {
+   "n": 1315,
+   "gloss": "I told her we'd never part in this life, and straight away her eyes filled with tears at the thought of the next one.",
+   "keywords": [
+    "saying the wrong thing",
+    "misunderstood reassurance",
+    "overthinking a promise"
+   ],
+   "edges": []
+  },
+  {
+   "n": 1316,
+   "gloss": "I told her I'd thought of her while I was away, and she pulled back from hugging me: so you had forgotten me, then!",
+   "keywords": [
+    "reading too much into words",
+    "picking a fight over nothing",
+    "innocent remark taken badly"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Finds a sulk in a tender remark: to have remembered her, she says, is to have forgotten her.",
+     "quote": "So why did you forget me?"
+    }
+   ]
+  },
+  {
+   "n": 1317,
+   "gloss": "I sneezed and she said 'bless you', then took it back and cried: who was thinking of you, to make you sneeze?",
+   "keywords": [
+    "suspicious of everything",
+    "accused over nothing",
+    "superstition"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "Her blessing turns to tears the moment she wonders who else has him in mind.",
+     "quote": "Who was thinking of you, that you sneezed?"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sneeze",
+     "basis": "explicit",
+     "reason": "A sneeze, the sign of being remembered, becomes evidence of a rival.",
+     "quote": "I sneezed and she blessed me."
+    }
+   ]
+  },
+  {
+   "n": 1318,
+   "gloss": "So I held in a sneeze, and she cried anyway: you're hiding from me that someone of yours is thinking about you!",
+   "keywords": [
+    "no way to win",
+    "damned if you do",
+    "accused of hiding something"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "Now it is the concealing that offends, so nothing he does can clear him.",
+     "quote": "Are you hiding from me"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sneeze",
+     "basis": "explicit",
+     "reason": "The stifled sneeze springs the trap that the open one had set.",
+     "quote": "I held back a sneeze"
+    }
+   ]
+  },
+  {
+   "n": 1319,
+   "gloss": "However hard I try to calm her, she only gets angrier: you've obviously had plenty of practice on other women!",
+   "keywords": [
+    "apologies make it worse",
+    "can't calm her down",
+    "accused of experience"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "His very skill at soothing her is taken as proof that there have been others.",
+     "quote": "So this is how you are with others too."
+    }
+   ]
+  },
+  {
+   "n": 1320,
+   "gloss": "Even when I'm simply gazing at her in admiration she snaps: whose body are you comparing mine with?",
+   "keywords": [
+    "partner insecure about looks",
+    "compliments backfire",
+    "being compared"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:jealousy-of-affection",
+     "basis": "explicit",
+     "reason": "Even rapt admiration of her own beauty is suspected of a hidden comparison.",
+     "quote": "Who are you thinking of, looking at all of me like that?"
+    }
+   ]
+  },
+  {
+   "n": 1321,
+   "gloss": "Even when he's done nothing wrong, sulking is how I get to enjoy him coaxing me round.",
+   "keywords": [
+    "picking a fight for attention",
+    "wanting to be wooed",
+    "testing him"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "She sulks at a faultless man for the tenderness it draws out of him.",
+     "quote": "sulking is what draws out his tenderness"
+    }
+   ]
+  },
+  {
+   "n": 1322,
+   "gloss": "His kindness may be held up for a little while, but there's real pleasure in the small sting of being cross.",
+   "keywords": [
+    "enjoying a small argument",
+    "good kind of hurt",
+    "playing cross"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Counts the small hurt of sulking as worth it, since his tenderness comes back greater.",
+     "quote": "The small hurt of sulking"
+    }
+   ]
+  },
+  {
+   "n": 1323,
+   "gloss": "Is any paradise better than a lovers' sulk, when the two of you are as blended as water and the ground it runs on?",
+   "keywords": [
+    "soulmates",
+    "perfect closeness",
+    "oneness with your partner"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Asks whether heaven itself can beat it, so long as the pair are truly one.",
+     "quote": "Is there any heaven better than a lovers’ quarrel"
+    }
+   ]
+  },
+  {
+   "n": 1324,
+   "gloss": "Right inside my quarrel with the one I love is the very thing that breaks down my resistance.",
+   "keywords": [
+    "weak for him",
+    "melting mid argument",
+    "quarrel ends in a hug"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "The quarrel carries its own undoing: inside it is the weapon that breaks her resolve.",
+     "quote": "is the weapon that breaks my resolve"
+    }
+   ]
+  },
+  {
+   "n": 1325,
+   "gloss": "Even when you've done nothing wrong, there's a certain pleasure in the one you love pulling her arms away from you.",
+   "keywords": [
+    "playful rejection",
+    "sweet pain",
+    "wanting what pulls away"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "inferred",
+     "reason": "Being kept from her soft shoulders is the sulk’s gesture, and even the innocent party finds pleasure in it.",
+     "quote": "being kept from the soft shoulders of the one you love has a pleasure of its own"
+    }
+   ]
+  },
+  {
+   "n": 1326,
+   "gloss": "A meal feels better once it has settled than while you eat it; in the same way a lovers' tiff is sweeter than their embrace.",
+   "keywords": [
+    "arguments make us closer",
+    "after the fight",
+    "why couples bicker"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Ranks the quarrel above the embrace, as a meal well settled above the eating of it.",
+     "quote": "a quarrel is sweeter than making love"
+    }
+   ]
+  },
+  {
+   "n": 1327,
+   "gloss": "In a lovers' quarrel the one who gives in first has really won, as you find out when you make up.",
+   "keywords": [
+    "who should apologise first",
+    "backing down",
+    "losing to win"
+   ],
+   "sensitive": "counsel to yield first could reach someone pressured to give in",
+   "edges": [
+    {
+     "type": "GUIDES",
+     "target": "situation:fight-with-your-partner",
+     "basis": "explicit",
+     "reason": "Settles who comes out ahead in a lovers’ quarrel: the one who loses has won.",
+     "quote": "the one who loses has won"
+    }
+   ]
+  },
+  {
+   "n": 1328,
+   "gloss": "Will she put on a little quarrel for a while, and so give our lovemaking some extra spice?",
+   "keywords": [
+    "keeping the spark alive",
+    "spicing up a relationship",
+    "make-up sex"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "Hopes another quarrel will bring back the sweetness of their lovemaking.",
+     "quote": "Will a quarrel bring back the sweetness of our lovemaking"
+    }
+   ]
+  },
+  {
+   "n": 1329,
+   "gloss": "Let her go on frowning and pouting a bit longer, and let the night last as long as I ask it to.",
+   "keywords": [
+    "enjoying her moods",
+    "wanting the night to last",
+    "playful tension"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "He wants more of her sulking, and is in no hurry for it to end.",
+     "quote": "Let her go on sulking"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:night",
+     "basis": "explicit",
+     "reason": "Night is begged to stay, so that the sweet quarrel can run on.",
+     "quote": "let the night run on while I plead"
+    }
+   ]
+  },
+  {
+   "n": 1330,
+   "gloss": "Sulking is what makes love delightful, and what makes sulking delightful is the hug at the end of it.",
+   "keywords": [
+    "making up after a fight",
+    "kiss and make up",
+    "why fights end well"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:bouderie",
+     "basis": "explicit",
+     "reason": "The book’s last word on the sulk: it is the joy of desire.",
+     "quote": "Sulking is the joy of desire"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:joy-of-love",
+     "basis": "explicit",
+     "reason": "Sets the embrace of reconciliation above even the sweetness of the quarrel.",
+     "quote": "the joy of sulking is the embrace that ends it"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "OPPOSES",
+   "source": "quality:passion",
+   "target": "quality:bashfulness",
+   "basis": "explicit",
+   "reason": "She tells her heart that desire and modesty can’t both be borne: one has to go.",
+   "quote": "give up desire or give up modesty",
+   "couplets": [
+    1247
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:passion",
+   "target": "quality:reserve",
+   "basis": "explicit",
+   "reason": "The flood of desire sweeps away the shame and strength he trusted, and in K1138 it breaks through her hiding too.",
+   "quote": "The fierce flood of desire carries off the raft",
+   "couplets": [
+    1134,
+    1138,
+    1251,
+    1254,
+    1255
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:passion",
+   "target": "quality:bashfulness",
+   "basis": "explicit",
+   "reason": "Desire’s axe breaks the door, and modesty’s bolt gives way with it.",
+   "quote": "The axe of desire breaks down the door of reserve, bolted with modesty",
+   "couplets": [
+    1251,
+    1257
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:passion",
+   "target": "quality:bouderie",
+   "basis": "explicit",
+   "reason": "Desire leaves no room to sulk: every attempt at it collapses the moment he is near.",
+   "quote": "I went off meaning to sulk. I saw my heart was ready to join him",
+   "couplets": [
+    1259,
+    1282,
+    1284,
+    1287,
+    1290
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:bouderie",
+   "target": "quality:passion",
+   "basis": "explicit",
+   "reason": "A sulk has its sweetness only with those who love you, as water has its sweetness in the shade.",
+   "quote": "sulking is sweet with those who love you",
+   "couplets": [
+    1309
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:passion",
+   "target": "quality:bouderie",
+   "basis": "explicit",
+   "reason": "Without sulks deep and light, desire is fruit too ripe or too green.",
+   "quote": "Without the deep sulk and the light one, desire is like a fruit too ripe and a fruit too green.",
+   "couplets": [
+    1306
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:bouderie",
+   "target": "theme:joy-of-love",
+   "basis": "explicit",
+   "reason": "The sulk closes in an embrace, and that embrace is its whole sweetness.",
+   "quote": "the joy of sulking is the embrace that ends it",
+   "couplets": [
+    1328,
+    1330
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "label": "The Plant and Its Roots",
+   "type": "image",
+   "why": "Kural 1304, the guide's own example of an image, cuts the roots of a starving plant, but the vocabulary covers only trees. Watered and rooted plants recur in 595, 718, 1093 and 1147.",
+   "couplets": [
+    595,
+    718,
+    1093,
+    1147,
+    1304
+   ]
+  }
+ ]
+}

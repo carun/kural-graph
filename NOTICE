@@ -7,8 +7,9 @@ project's digital copy starts from:
   tk120404/thirukkural (https://github.com/tk120404/thirukkural)
   Licensed under the Apache License, Version 2.0.
 
-Lines from that dataset have been corrected: see data/clean/tamil-fixes.yaml in
-the tirukkural-kb content repository for every change. Only the Tamil lines,
+Lines from that dataset have been corrected: see
+content/data/clean/tamil-fixes.yaml in https://github.com/carun/kural-graph for
+every change. Only the Tamil lines,
 their numbering, chapter names and its romanisation (for search only) are used.
 Its commentaries and translations are not included.
 
@@ -33,7 +34,7 @@ https://archive.org/details/kuraloftiruvallu00tirurich, and Kurals 604 and 761 t
 765 from a later reprint at
 https://archive.org/details/xkae-thirukkural-w.-h.-drew-john-lazarus. Both are in
 the public domain. Plain printing errors have been corrected; see
-data/clean/pope.json and data/clean/drew-lazarus.json in the tirukkural-kb content
+content/data/clean/pope.json and content/data/clean/drew-lazarus.json in the same
 repository for every change.
 
 mu. varaḍarāsaṉār's திருக்குறள் தெளிவுரை and mayilai civamuṭṭu's திருக்குறள், இனிய

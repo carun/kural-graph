@@ -1,0 +1,170 @@
+{
+  "chapter": 119,
+  "title": "The Pain of Pallor",
+  "note": "பசப்பு is the change of colour that comes from being unable to bear parting, and this is the pain of it. It comes when she can’t see him.",
+  "couplets": [
+    {
+      "n": 1181,
+      "plain": "I agreed to go without the kindness of the one who loved me. Who can I tell now that I have turned pale?",
+      "pm": "I agreed to the parting for the one who loves me. Now I can’t bear it and have turned pale. Whom can I tell? She calls him loving because he told her first, ready to stay if she refused. Her consent means he will leave again, so union will be hard. She brought this on herself, so telling anyone would be a reproach.",
+      "tag": "adds",
+      "context": "She agreed to the parting earlier. Now she can’t bear it and has turned pale, and she says this to herself.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "7ad279e77ca294c9",
+          "quote": "Who can I tell now that I have turned pale"
+        }
+      ]
+    },
+    {
+      "n": 1182,
+      "plain": "Proud to say “He gave me,” pallor climbs on my body and rides it.",
+      "pm": "I am bearing up, but this pallor, proud that he gave birth to it, has mounted my body and drives it on. It rides by right, so you needn’t worry.",
+      "tag": "adds",
+      "context": "Her friend worries that she can’t bear it. She answers, to say that she can.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "9ceae8095b894885",
+          "quote": "pallor climbs on my body and rides it"
+        }
+      ]
+    },
+    {
+      "n": 1183,
+      "plain": "He took my beauty and my shame, and in exchange gave me sickness and pallor.",
+      "pm": "When he left he gave me this sickness of desire and this pallor, and in exchange took away my beauty and my shame. Sickness takes the place of shame because it grows the more she holds it down. Unless he gives them back, those won’t return and these won’t go.",
+      "tag": "adds",
+      "context": "Her friend says she must bear up, so that her beauty and her shame aren’t lost. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "f7d47a42df4a769b",
+          "quote": "gave me sickness and pallor"
+        }
+      ]
+    },
+    {
+      "n": 1184,
+      "plain": "I think of him, and what I talk of is his worth. So is this pallor a fraud?",
+      "pm": "I keep his words in my mind, and all I speak of is his goodness. Yet pallor has come, and this is treachery. The body follows mind and speech, so it shouldn’t have come there either. She says this to show that she is bearing up.",
+      "tag": "agrees",
+      "context": "Her friend says she knows his reassuring words and his goodness, so he won’t be long. She answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "182ba6534f2ecc78",
+          "quote": "is this pallor a fraud",
+          "reason": "Thinking and speaking of him should have kept the pallor off, so she calls it a fraud."
+        }
+      ]
+    },
+    {
+      "n": 1185,
+      "plain": "Look there, my lover going away. Look here, pallor spreading over my body.",
+      "pm": "Before too, as my lover was going over there, my body was turning pale over here. Is it any different today? His going and the coming of pallor are like day going and night coming. You know this, so why do you speak as if you don’t?",
+      "tag": "adds",
+      "context": "Her friend says he has gone only a little way, and still she can’t bear it. She tells what happened before.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "42842b1e3bab0860",
+          "quote": "pallor spreading over my body"
+        }
+      ]
+    },
+    {
+      "n": 1186,
+      "plain": "As darkness waits for a lamp to fail, pallor waits for my husband’s embrace to slacken.",
+      "pm": "As darkness watches for a lamp to weaken and closes in, this pallor watches for my husband’s embrace to weaken and closes in. If it looks for its chance even while he stays, what won’t it do once he has left?",
+      "tag": "agrees",
+      "context": "She goes on, telling her friend what happened before.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "d27b9bad24fd3973",
+          "quote": "pallor waits for my husband’s embrace to slacken"
+        },
+        {
+          "id": "7aa1c7a8a3e77586",
+          "quote": "a lamp to fail",
+          "reason": "His embrace is the lamp that alone keeps the pallor back."
+        },
+        {
+          "id": "02682da8dfdd8119",
+          "quote": "As darkness waits for a lamp to fail"
+        }
+      ]
+    },
+    {
+      "n": 1187,
+      "plain": "I lay holding him and shifted a little. That was enough: pallor came on so thick you could scoop it up.",
+      "pm": "Once, lying in my lover’s arms, I moved aside without knowing it. At just that, pallor closed in so thick it could be scooped up. If a mere shift did that, need I say what this parting does?",
+      "tag": "adds",
+      "context": "She goes on, telling her friend what happened before.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "1bee85a1c2e568a1",
+          "quote": "pallor came on so thick you could scoop it up",
+          "reason": "A moment’s shift out of his arms is enough for pallor to engulf her."
+        }
+      ]
+    },
+    {
+      "n": 1188,
+      "plain": "People say, “She has turned pale.” No one says, “He has left her.”",
+      "pm": "They blame me, saying she couldn’t bear up and has turned pale. No one says that he has left her and gone. She says “they” to set her friend apart, hurt that her friend presses only her.",
+      "tag": "agrees",
+      "context": "Her friend says she shouldn’t turn pale like this. Hurt, she answers.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "4fe66ff52818a20c",
+          "quote": "She has turned pale"
+        },
+        {
+          "id": "d594c11c67492a9c",
+          "quote": "No one says, “He has left her.”"
+        }
+      ]
+    },
+    {
+      "n": 1189,
+      "plain": "Let my body turn as pale as it will, if the one who talked me into this is then in the right.",
+      "pm": "In your view the man who talked me into this parting stands on good ground. Then let my body turn pale as it may. I didn’t know how cruel this parting would be, and he talked me into it and left. He must be found blameless, so what does it matter what happens to my body and its pallor?",
+      "tag": "adds",
+      "context": "She goes on, hurt, to her friend.",
+      "speaker": "she",
+      "sensitive": "accepts wasting away so long as the man who hurt her is cleared of blame",
+      "links": [
+        {
+          "id": "02b37da83982f076",
+          "quote": "Let my body turn as pale as it will",
+          "reason": "Her pale body is the price set against his being cleared."
+        },
+        {
+          "id": "5f071292ecdb0860",
+          "remove": "The Tamil never addresses her friend. “My maid” was the old English, and only his context line brings her in."
+        }
+      ]
+    },
+    {
+      "n": 1190,
+      "plain": "It is well to be called pallor itself, if people don’t spread it about that the one who won me is unkind.",
+      "pm": "He pressed his suit and won me, and now isn’t kind. If his friends don’t spread word of that, it is well for me to be named Pallor, as if I were pallor itself. She can’t stand his being blamed and says this in scorn. Let them not say he has no compassion. Let them go on saying she has turned pale. That is how she can bear it.",
+      "tag": "adds",
+      "context": "To help her bear the parting her friend speaks ill of him, and she takes his side.",
+      "speaker": "she",
+      "sensitive": "accepts ridicule to shield a partner from being called cruel",
+      "links": [
+        {
+          "id": "fe8a8fa247fff219",
+          "quote": "It is well to be called pallor itself"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

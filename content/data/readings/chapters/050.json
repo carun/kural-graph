@@ -1,0 +1,165 @@
+{
+  "chapter": 50,
+  "title": "Knowing the Ground",
+  "note": "A ruler who knows his strength and the time, setting out against his enemy, learns the ground on which he can win.",
+  "couplets": [
+    {
+      "n": 491,
+      "plain": "Start nothing and scorn no one until you have found the ground for a siege.",
+      "pm": "Until you have found ground from which to besiege your enemies, start no work against them and don’t scorn them as small. Such ground lets many camps, safe and supporting each other, ring the fort so that no one gets in or out by gate or postern, and it has the land and water for a royal camp with wall and moat. Once you have it, do both.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "0cdb27d3e11b025a",
+          "quote": "until you have found the ground for a siege",
+          "reason": "Forbids any move until ground for a siege has been found."
+        }
+      ]
+    },
+    {
+      "n": 492,
+      "plain": "Even to the strong and warlike, a gain that rests on a stronghold brings many benefits.",
+      "pm": "Even for those whose strength goes with hostility, the gain made from a stronghold yields many results. Hostility is what rulers feel who can’t bear to share the world, so he means rulers marching on an enemy. The gain is the siege that brings it. Its results are that the enemy can’t harm you, and that you can stand firm and wear him down.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "9d94d8f53aeda875",
+          "quote": "a gain that rests on a stronghold"
+        }
+      ]
+    },
+    {
+      "n": 493,
+      "plain": "Even the weak grow strong and win, if they know the place, guard themselves and act against their enemies.",
+      "pm": "Even those without strength become strong and win, if they find the ground that suits, guard themselves and act against their enemies. Guarding means using forts and armies so that the enemy can’t hurt them. If they act this way, they win even without the strength named before.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "a468cc9bf10640d5",
+          "quote": "if they know the place"
+        },
+        {
+          "id": "e124d94547c8100d",
+          "quote": "Even the weak grow strong and win"
+        }
+      ]
+    },
+    {
+      "n": 494,
+      "plain": "Those who had it all planned lose their plan, when the other side learns the place, closes in and acts.",
+      "pm": "When rulers have chosen the ground that suits their work, gone there and acted from a stronghold, the enemies who expected to beat them lose that expected victory, because those rulers have kept themselves safe. So the enemies are beaten. These four couplets are about finding ground from which to camp outside an enemy’s fort.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "88bb1e264816bb1c",
+          "quote": "lose their plan",
+          "reason": "Ground well chosen and held close undoes whatever the other side has planned."
+        }
+      ]
+    },
+    {
+      "n": 495,
+      "plain": "In deep water the crocodile beats everything. Out of the water, everything else beats it.",
+      "pm": "In deep water the crocodile beats all others, and out of it all others beat it. So everyone is strong on their own ground. It says something else by this: rulers who march to ground where the enemy can’t stand find him easy, and if they go where they can’t stand, they are easy for him. So go and beat him where he can’t stand.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "96b37eb28d71b44c",
+          "quote": "In deep water the crocodile beats everything"
+        },
+        {
+          "id": "b351ac6d98fe9ed8",
+          "quote": "Out of the water, everything else beats it"
+        }
+      ]
+    },
+    {
+      "n": 496,
+      "plain": "Tall chariots with strong wheels can’t run on the sea. Ships that run on the sea can’t run on land.",
+      "pm": "Tall chariots that run on land can’t run on the sea, for all their strong wheels and size, and ships that run on the sea can’t run on land. It says something else by this: rulers on the march should learn the enemy’s ground and act with the means that suit it.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "45200f4535ea738e",
+          "quote": "can’t run on the sea"
+        },
+        {
+          "id": "aaeb3bdf780a4399",
+          "quote": "Tall chariots with strong wheels"
+        },
+        {
+          "id": "9966b55411d8e435",
+          "quote": "Ships that run on the sea can’t run on land"
+        }
+      ]
+    },
+    {
+      "n": 497,
+      "plain": "You need no help but fearlessness, if you think everything through and act to suit the place.",
+      "pm": "If rulers think through every way of acting in the enemy’s ground, leaving nothing out, and act to suit the place, they need no helper but their own firmness. All that is needed is to stand firm and finish, because nothing is left to make the work go wrong.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "07aa0795323cbc08",
+          "quote": "You need no help but fearlessness"
+        },
+        {
+          "id": "e084281afb31d5a6",
+          "quote": "act to suit the place",
+          "reason": "Acting to suit the place is part of what leaves no need for other help."
+        },
+        {
+          "id": "81c35529e003634e",
+          "remove": "The ruler is his reading and the old English’s. The Tamil names no one."
+        }
+      ]
+    },
+    {
+      "n": 498,
+      "plain": "When the one with a small army reaches ground that suits it, the one with a great army loses heart.",
+      "pm": "If a ruler with a great army, meaning to destroy one with a small army, goes to the place where the small army takes refuge, he loses his greatness. If he looks at the size of his army and not at the ground, the army can’t move together there or isn’t trained for it, so its size is useless and he is destroyed.",
+      "tag": "differs",
+      "note": "Who reaches the ground can go either way. The plain reading has the small force reach it. He has the great force go in after the small one.",
+      "links": [
+        {
+          "id": "8cbdaf20a0ee301c",
+          "quote": "reaches ground that suits it"
+        },
+        {
+          "id": "946d76939f9f70bc",
+          "quote": "the one with a small army"
+        }
+      ]
+    },
+    {
+      "n": 499,
+      "plain": "Even if they lack good defences and renown, it is hard to attack people on the land where they live.",
+      "pm": "Even if they lack a strong fort and great power, it is hard to go and attack people in the land where they live. Attack brave men in their home because they look small, and they won’t leave it. They resolve to die there instead, and so a great army breaks against them.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "1ab83b46f1caca10",
+          "quote": "it is hard to attack people on the land where they live"
+        }
+      ]
+    },
+    {
+      "n": 500,
+      "plain": "A fearless tusker with spearmen on its tusks can be killed by a jackal, in mud where its legs sink.",
+      "pm": "A bull elephant that obeys no driver and has spearmen impaled on its tusks is killed by a jackal once it is caught in mud where its legs sink. Even the brave and great, on ground that doesn’t suit them, are destroyed by the very weak. He rejects the reading “spears sunk in its face”, because those wounds would then be what let the jackal kill it.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "95b952b1cca08277",
+          "quote": "in mud where its legs sink",
+          "reason": "Bad ground hands a jackal what spearmen could not take."
+        },
+        {
+          "id": "4aba51731cad2b7c",
+          "quote": "A fearless tusker"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

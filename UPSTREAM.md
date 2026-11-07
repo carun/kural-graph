@@ -22,7 +22,7 @@ Read his commits first. His code changes are what we want, and his Gita content 
 
 ## When his data conflicts: keep ours
 
-Everything in `public/data/` is generated from tirukkural-kb. Never merge his data into it, and never hand-edit it.
+Everything in `public/data/` is generated from `content/`. Never merge his data into it, and never hand-edit it.
 
 His data files have different names from ours (`gita-verses.json`, `commentary/BG_2.47.json`), and we deleted his. When he changes one, Git reports a modify/delete conflict. Keep them deleted:
 
@@ -37,10 +37,10 @@ git checkout --ours -- public/images/home public/og.jpg public/favicon.svg
 git add public/images/home public/og.jpg public/favicon.svg
 ```
 
-If he renames a field in the data, the app and our data will no longer agree. Change `pipeline/export-fork.ts` in tirukkural-kb to write the new shape, then regenerate:
+If he renames a field in the data, the app and our data will no longer agree. Change `content/pipeline/export-fork.ts` to write the new shape, then regenerate:
 
 ```sh
-cd ../tirukkural-kb && node pipeline/export-fork.ts && cd ../kural-graph && node scripts/build-layout.mjs
+npm run data
 ```
 
 ## When his code conflicts

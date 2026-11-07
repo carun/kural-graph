@@ -36,10 +36,10 @@ npm run preview      # that build on a local Cloudflare server
 
 ## Where the content comes from
 
-Everything readers see in the book comes from the content repository, `tirukkural-kb`, which sits beside this one. Its `pipeline/export-fork.ts` writes `public/data/`. **Never edit `public/data/` by hand:** change the content there and regenerate.
+Everything readers see in the book comes from [`content/`](content/README.md), which turns the sources and annotations into `public/data/`. **Never edit `public/data/` by hand:** change the content there and regenerate.
 
 ```sh
-cd ../tirukkural-kb && node pipeline/export-fork.ts && cd ../kural-graph && node scripts/build-layout.mjs
+npm run data
 ```
 
 Run `npm test` afterwards. `tests/home-content.test.ts` checks that the couplets and counts quoted on the home page still match the data, and it tells you what to update in `src/components/home/homeContent.ts`.
@@ -53,11 +53,11 @@ Run `npm test` afterwards. `tests/home-content.test.ts` checks that the couplets
 5. **Offline first.** No analytics and no third-party requests. Only model answers need a network.
 6. **Model safety.** Invented citations are dropped, keys go only to the chosen provider, and nothing goes to a model unless one is connected and the person asks.
 7. **No trace of the Gita in anything a reader sees.** "Verse" becomes "couplet". Credit to him stays in `NOTICE`, the licence and the About page.
-8. **Words.** Part 3 is Desire, never Love. அன்பு is loving-kindness. The table of key words is in `annotation/READINGS.md` in the content repository. Copy is plain and short, with no dashes as punctuation.
+8. **Words.** Part 3 is Desire, never Love. அன்பு is loving-kindness. The table of key words is in `content/annotation/READINGS.md`. Copy is plain and short, with no dashes as punctuation.
 
 ## The pictures
 
-The pictures on the home page are painted by a program: `scripts/home-art/scenes.js`, run by `paint.mjs`, which needs Playwright and fonts from `tirukkural-kb`. The night sky is the real graph, drawn from `public/data/`.
+The pictures on the home page are painted by a program: `scripts/home-art/scenes.js`, run by `paint.mjs`, which needs a browser: run `npx playwright install chromium` once. The night sky is the real graph, drawn from `public/data/`.
 
 They are stand-ins, and they sit where his paintings sat. To use a real painting:
 

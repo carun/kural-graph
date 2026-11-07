@@ -1,0 +1,22 @@
+{
+  "tamilKural": {
+    "url": "https://raw.githubusercontent.com/tk120404/thirukkural/cf3ff6c5a73c23b4092913156830457caab65fd4/thirukkural.json",
+    "sha256": "e793099d6f300787329cf22bc0a144292d4af11b9dc3ca9595f1928692f4caee"
+  },
+  "tamilDetail": {
+    "url": "https://raw.githubusercontent.com/tk120404/thirukkural/cf3ff6c5a73c23b4092913156830457caab65fd4/detail.json",
+    "sha256": "ab584e616e01a97d138a99d836a7de7ca1b5ce5a343c5a4c24bc672e1d1a7f2e"
+  },
+  "madurai": {
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html",
+    "sha256": "1d1704d1f2e6dd649d40f29253bb6cb1ac8a0e316841601e3b3223feac548f18"
+  },
+  "wikisource": {
+    "url": "https://ta.wikisource.org/w/api.php (revisions pinned in pipeline/wikisource-revisions.json)",
+    "sha256": "dec70499f5b1cfe0921cc9148e67c23ddd2c8c0db3743ec2f6ab761ea84ff33c"
+  },
+  "parimelazhagar": {
+    "url": "https://ta.wikisource.org/w/api.php (revisions pinned in pipeline/parimelazhagar-revisions.json)",
+    "sha256": "c1a3744cabf0a0e14a1c611c86fd120486bc0ad105f36b79d1b937d367bdefdc"
+  }
+}

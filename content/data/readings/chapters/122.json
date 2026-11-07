@@ -1,0 +1,161 @@
+{
+  "chapter": 122,
+  "title": "Telling the Dream",
+  "note": "She tells her friend about the dream she saw. She dreamed it because she thought of him so much while awake, so this chapter follows the one on lamenting in memory.",
+  "couplets": [
+    {
+      "n": 1211,
+      "plain": "What feast can I give the dream that came with a message from my lover?",
+      "pm": "Knowing I suffer, my lover sent a message to end it, and the dream came to me carrying it. What can I do for it as my guest? A feast means the courtesies due to a guest, and she asks because she can see nothing that could be offered to a dream.",
+      "tag": "adds",
+      "context": "She has seen a message from him come to her in a dream, and she says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "8d70de1354917929",
+          "quote": "the dream that came with a message from my lover"
+        }
+      ]
+    },
+    {
+      "n": 1212,
+      "plain": "If my eyes, carp-shaped and dark with kohl, would sleep when I beg them, I could tell the one who held me that I have survived.",
+      "pm": "My carp-like eyes won’t sleep. If they would sleep when I begged them, I would see my lover in a dream and tell him myself how I have endured the sickness of desire, in full, with all that a messenger would leave out or shorten. But the eyes won’t sleep, so it can’t be said. She calls them carp-like in grief for the beauty she has lost.",
+      "tag": "adds",
+      "context": "She has been thinking of sending him a message, and she says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "2a5c9a8b8d231b93",
+          "quote": "I could tell the one who held me"
+        },
+        {
+          "id": "b02d84f4a9c3ac7b",
+          "quote": "would sleep when I beg them"
+        }
+      ]
+    },
+    {
+      "n": 1213,
+      "plain": "He shows me no kindness when I am awake, but I see him in dreams, and that is what keeps me alive.",
+      "pm": "He won’t come and show me kindness while I am awake, but seeing him in a dream keeps the life in me. With that sight I can bear this, so you needn’t worry.",
+      "tag": "agrees",
+      "context": "Her friend fears she can’t bear the separation. She answers that she can.",
+      "speaker": "she",
+      "sensitive": "Ties staying alive to an absent lover.",
+      "links": [
+        {
+          "id": "7e74d5c9e963d321",
+          "quote": "I see him in dreams, and that is what keeps me alive",
+          "reason": "Seeing him in dreams is all that holds her to life while he stays away."
+        }
+      ]
+    },
+    {
+      "n": 1214,
+      "plain": "In dreams I have the joy of desire, because a dream seeks out the man who shows no kindness when I am awake and brings him to me.",
+      "pm": "A dream finds the place he went to and brings back the man who won’t come to me in waking life, and so I have joy in it. By nature he shows no kindness, yet the dream finds him, fetches him and makes him kind. With that dream I can bear this.",
+      "tag": "agrees",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "d437c11e0e04650a",
+          "quote": "a dream seeks out the man",
+          "reason": "The dream does what he will not: it seeks him out, brings him to her and gives her the joy of desire."
+        }
+      ]
+    },
+    {
+      "n": 1215,
+      "plain": "Even seeing him awake was sweet only at that moment. The dream too is sweet only while I am seeing it.",
+      "pm": "The joy I had when I saw him awake was sweet at that time. The joy I have today from seeing him in a dream is sweet at that time too. So the two are equal to me. That was all I ever had before, and with this I can bear it now.",
+      "tag": "agrees",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "fb3852efc62f10f6",
+          "quote": "The dream too is sweet only while I am seeing it"
+        }
+      ]
+    },
+    {
+      "n": 1216,
+      "plain": "If there were no such thing as waking, my lover would never leave me in my dreams.",
+      "pm": "If there were none of this wretch called waking, the lover who comes and joins me in a dream wouldn’t leave me. Waking breaks in, ends the dream and parts him from me, and the word “thing” shows how cruel it is. She is telling how she gets through by having him in dreams.",
+      "tag": "agrees",
+      "context": "She goes on, to her friend.",
+      "speaker": "she",
+      "sensitive": "wishes never to wake, as an escape from pain",
+      "links": [
+        {
+          "id": "250da5168f5dcc37",
+          "quote": "If there were no such thing as waking"
+        }
+      ]
+    },
+    {
+      "n": 1217,
+      "plain": "He is cruel, giving me no kindness when I am awake. Why does he torment me in my dreams?",
+      "pm": "This cruel man never once comes to show me kindness when I am awake. By what right does he come every day in dreams and torment me? He is cruel because he left and doesn’t think of coming back. In a dream he is on my shoulders, and when I wake he hides, and that hurts too. People say what isn’t there awake isn’t there in dreams, but we haven’t found it so.",
+      "tag": "adds",
+      "context": "She wakes and he is gone. Remembering their union in the dream, she can’t bear it, and says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "ac8333153049e4f0",
+          "quote": "Why does he torment me in my dreams?",
+          "reason": "Here the comfort sours: the man who shows no kindness when she is awake won’t leave her alone in her dreams."
+        }
+      ]
+    },
+    {
+      "n": 1218,
+      "plain": "When I sleep, he is on my shoulders. When I wake, he rushes into my heart.",
+      "pm": "My lover never leaves my heart. When I sleep he comes and lies on my shoulders, and when I wake he hurries back into my heart, where he was before. She says he hurries because it is so harsh that he breaks off their union and vanishes. He has never once left me, so you have no cause to blame him.",
+      "tag": "adds",
+      "context": "Her friend has spoken ill of him to help her bear it. She defends him.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "2f9dfcd239107245",
+          "quote": "When I sleep, he is on my shoulders."
+        }
+      ]
+    },
+    {
+      "n": 1219,
+      "plain": "Those who never see a lover in their dreams blame him for showing no kindness in waking life.",
+      "pm": "Women who have no lover of their own, and so have never seen one in a dream, blame my lover as lacking loving-kindness because he doesn’t come to me in waking life. She can’t bear the blame, and speaks as if of strangers. If they had lovers and saw them in dreams, they would know how he comforts me there, and wouldn’t blame him.",
+      "tag": "adds",
+      "context": "She goes on defending him to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "a44dc4be794aa91b",
+          "quote": "never see a lover in their dreams"
+        }
+      ]
+    },
+    {
+      "n": 1220,
+      "plain": "They say he left me in waking life. Do the people of this village not see him in their dreams?",
+      "pm": "The women of this village call my lover cruel, saying he has left me in waking life. Do they not know he comes to me in dreams and doesn’t leave? She says “of this village” to mark her friend as an outsider. If there were no difference between them, her friend would see what she sees and be content. Instead she calls him cruel.",
+      "tag": "adds",
+      "context": "She goes on defending him to her friend.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "d19b8c11134edfe3",
+          "quote": "not see him in their dreams"
+        },
+        {
+          "id": "7c8b956130cce95c",
+          "quote": "They say he left me in waking life"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

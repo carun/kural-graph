@@ -1,0 +1,746 @@
+# Decisions on the Tamil text, one entry per changed or disputed line.
+#
+# The dataset (tk120404/thirukkural) is the base text. Every entry here was checked
+# against Project Madurai, the Wikisource print edition and, where available, the
+# Wikisource Parimelazhagar edition. See data/eval/tamil-review.md for the evidence.
+#
+# kind:   corrupted  the dataset is damaged and is repaired
+#         reading    a real choice between readings
+#         keep       the dataset stands against a disagreeing witness
+#         metre      only the spacing changes, to restore 4+3 feet
+# status: proposed until reviewed, then approved. The pipeline refuses "proposed".
+- n: 34
+  line: 1
+  kind: keep
+  status: approved
+  dataset: மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன்
+  text: மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன்
+  basis: Same reading; Madurai and Wikisource only split அனைத்து அறன்.
+- n: 42
+  line: 1
+  kind: metre
+  status: approved
+  dataset: துறந்தார்க்கும் துவ்வாதவர்க்கும் இறந்தார்க்கும்
+  text: துறந்தார்க்கும் துவ்வா தவர்க்கும் இறந்தார்க்கும்
+  basis: "Spacing only: restores the 4 feet this line must have."
+- n: 49
+  line: 1
+  kind: keep
+  status: approved
+  dataset: அறனெனப் பட்டதே இல்வாழ்க்கை அஃதும்
+  text: அறனெனப் பட்டதே இல்வாழ்க்கை அஃதும்
+  basis: Same reading; Parimelazhagar has this joined form.
+- n: 50
+  line: 1
+  kind: keep
+  status: approved
+  dataset: வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும்
+  text: வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும்
+  basis: Same reading; Wikisource only joins the words.
+- n: 51
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: மனைக்தக்க மாண்புடையள் ஆகித்தற் கொண்டான்
+  text: மனைத்தக்க மாண்புடையள் ஆகித்தற் கொண்டான்
+  basis: க்த is impossible in Tamil, and all three copies share it. Parimelazhagar has மனைத்தக்க.
+- n: 60
+  line: 1
+  kind: metre
+  status: approved
+  dataset: மங்கலம் என்ப மனைமாட்சி மற்று அதன்
+  text: மங்கலம் என்ப மனைமாட்சி மற்றுஅதன்
+  basis: "Spacing only: restores the 4 feet this line must have."
+- n: 67
+  line: 1
+  kind: reading
+  status: approved
+  dataset: தந்தை மகற்காற்றும் நன்றி அவையத்து
+  text: தந்தை மகற்காற்று நன்றி அவையத்து
+  basis: மகற்காற்றும் vs மகற்காற்று. Madurai, Wikisource and Parimelazhagar all have மகற்காற்று.
+- n: 70
+  line: 2
+  kind: metre
+  status: approved
+  dataset: என்நோற்றான் கொல் எனும் சொல்.
+  text: என்நோற்றான் கொல்எனும் சொல்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 74
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நண்பு என்னும் நாடாச் சிறப்பு.
+  text: நண்பென்னும் நாடாச் சிறப்பு.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 82
+  line: 2
+  kind: metre
+  status: approved
+  dataset: மருந்தெனினும் வேண் டற்பாற் றன்று.
+  text: மருந்தெனினும் வேண்டற்பாற் றன்று.
+  basis: Stray space. Parimelazhagar confirms வேண்டற்பாற், so Wikisource's வேண்டாற்பாற் is a typo.
+- n: 86
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நல்வருந்து வானத் தவர்க்கு.
+  text: நல்விருந்து வானத் தவர்க்கு.
+  basis: All three copies share this. Parimelazhagar has நல்விருந்து, the subject of the chapter.
+- n: 90
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நோக்கக் குநழ்யும் விருந்து.
+  text: நோக்கக் குழையும் விருந்து.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 98
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: சிறுமையுவு நீங்கிய இன்சொல் மறுமையும்
+  text: சிறுமையுள் நீங்கிய இன்சொல் மறுமையும்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 143
+  line: 2
+  kind: metre
+  status: approved
+  dataset: தீமை புரிந்து ஒழுகு வார்.
+  text: தீமை புரிந்துஒழுகு வார்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 154
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நிறையுடைமை நீங்காமை வேண்டின் பொற்யுடைமை
+  text: நிறையுடைமை நீங்காமை வேண்டின் பொறையுடைமை
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 165
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வழுக்காயும் கேடீன் பது.
+  text: வழுக்கியும் கேடீன் பது.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 183
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: அறங்கூற்றும் ஆக்கத் தரும்.
+  text: அறங்கூறும் ஆக்கந் தரும்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 204
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: அறஞ்சூழம் சூழ்ந்தவன் கேடு.
+  text: அறஞ்சூழும் சூழ்ந்தவன் கேடு.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 208
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வீயாது அஇஉறைந் தற்று.
+  text: வீயாது அடிஉறைந் தற்று.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 211
+  line: 2
+  kind: metre
+  status: approved
+  dataset: என் ஆற்றுங் கொல்லோ உலகு.
+  text: என்ஆற்றுங் கொல்லோ உலகு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 214
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: ஒத்த தறவோன் உயிர்வாழ்வான் மற்றையான்
+  text: ஒத்த தறிவான் உயிர்வாழ்வான் மற்றையான்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 242
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நல்லாற்றாள் நாடி அருளாள்க பல்லாற்றால்
+  text: நல்லாற்றால் நாடி அருளாள்க பல்லாற்றால்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 250
+  line: 2
+  kind: keep
+  status: approved
+  dataset: மெலியார்மேல் செல்லு மிடத்து.
+  text: மெலியார்மேல் செல்லு மிடத்து.
+  basis: Parimelazhagar agrees with the dataset; Wikisource only splits the words.
+- n: 253
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: படைகொண்டார் நெஞ்சம்போல் நன்னூக்காது ஒன்றன்
+  text: படைகொண்டார் நெஞ்சம்போல் நன்றூக்காது ஒன்றன்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 254
+  line: 1
+  kind: keep
+  status: approved
+  dataset: அருளல்ல தியாதெனிற் கொல்லாமை கோறல்
+  text: அருளல்ல தியாதெனிற் கொல்லாமை கோறல்
+  basis: Parimelazhagar has exactly this form; the others are respellings.
+- n: 262
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: தவமும் தவமுடையார்க்கு ஆகும் அதனை
+  text: தவமும் தவமுடையார்க்கு ஆகும் அவமதனை
+  basis: All three copies lost அவம். Parimelazhagar's verse has அவமதனை, and his gloss turns on it ("மேற்கொள்வது அவம்"). Found while writing the readings.
+- n: 269
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: ஆற்றல் தலைப்பட் டவர்க்குல்.
+  text: ஆற்றல் தலைப்பட் டவர்க்கு.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 276
+  line: 1
+  kind: reading
+  status: approved
+  dataset: நெஞ்சின் துறவார் துறந்தார்போல் வஞ்சித்து
+  text: நெஞ்சின் துறவார் துறந்தார்போல் வஞ்சித்து
+  basis: "Reviewer's decision: நெஞ்சின், the dataset's reading. Wikisource has நெஞ்சில், and Parimelazhagar's நெஞ்சிற் றுறவார் points the same way."
+- n: 277
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: முக்கிற் கரியார் உடைத்து.
+  text: மூக்கிற் கரியார் உடைத்து.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 287
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: ஆற்றல் புரிந்தார்கண்ட இல்.
+  text: ஆற்றல் புரிந்தார்கண் இல்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 290
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: கள்வார்க்குத் தள்ளும் உயிர்நிலை கள்வார்க்குத்
+  text: கள்வார்க்குத் தள்ளும் உயிர்நிலை கள்ளார்க்குத்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 290
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: தள்ளாது புத்தே ளுளகு.
+  text: தள்ளாது புத்தே ளுலகு.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 298
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: புறள்தூய்மை நீரான் அமையும் அகந்தூய்மை
+  text: புறந்தூய்மை நீரான் அமையும் அகந்தூய்மை
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 318
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: தன்னுயிர்ககு ஏன்னாமை தானறிவான் என்கொலோ
+  text: தன்னுயிர்க்கு இன்னாமை தானறிவான் என்கொலோ
+  basis: Dataset is corrupt and Wikisource has its own typo (தன்னயிர்க்கு). Parimelazhagar confirms தன்னுயிர்க்.
+- n: 330
+  line: 1
+  kind: keep
+  status: approved
+  dataset: உயிருடம்பின் நீக்கியா ரென்ப செயிருடம்பின்
+  text: உயிருடம்பின் நீக்கியா ரென்ப செயிருடம்பின்
+  basis: Same reading; Madurai and Wikisource only split the words.
+- n: 347
+  line: 2
+  kind: metre
+  status: approved
+  dataset: பற்றி விடாஅ தவர் க்கு.
+  text: பற்றி விடாஅ தவர்க்கு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 360
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: காமம் வெகுளி மயக்கம் இவ்மூன்றன்
+  text: காமம் வெகுளி மயக்கம் இவைமூன்றன்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 383
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நீங்கா நிலனான் பவர்க்கு.
+  text: நீங்கா நிலனாள் பவர்க்கு.
+  basis: Wikisource.
+- n: 408
+  line: 2
+  kind: metre
+  status: approved
+  dataset: கல்லார்கண் பட் ட திரு.
+  text: கல்லார்கண் பட்ட திரு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 412
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: செவுக்குண வில்லாத போழ்து சிறிது
+  text: செவிக்குண வில்லாத போழ்து சிறிது
+  basis: All three copies share this. Parimelazhagar has செவிக்குண.
+- n: 434
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: அற்றந் த்ரூஉம் பகை.
+  text: அற்றந் தரூஉம் பகை.
+  basis: த்ரூ is impossible in Tamil, and all three copies share it. Parimelazhagar has தரூஉம்.
+- n: 450
+  line: 1
+  kind: keep
+  status: approved
+  dataset: பல்லார் பகைகொளலிற் பத்தடுத்த தீமைத்தே
+  text: பல்லார் பகைகொளலிற் பத்தடுத்த தீமைத்தே
+  basis: கொளலிற் is right; Wikisource's கொளவிற் is a typo.
+- n: 469
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நன்றாற்ற லுள்ளுந் தவுறுண்டு அவரவர்
+  text: நன்றாற்ற லுள்ளுந் தவறுண்டு அவரவர்
+  basis: All three copies share this; தவுறு is not a word. The chapter's sense and Parimelazhagar's தவறு support it.
+- n: 477
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: ஆற்றின் அறவறிந்து ஈக அதுபொருள்
+  text: ஆற்றின் அளவறிந்து ஈக அதுபொருள்
+  basis: All three copies share this. Parimelazhagar has அளவறிந், split as அளவு அறிந்து.
+- n: 483
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: காலம் அற஧ந்து செயின்.
+  text: காலம் அறிந்து செயின்.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 530
+  line: 2
+  kind: metre
+  status: approved
+  dataset: இழைத் திருந்து எண்ணிக் கொளல்.
+  text: இழைத்திருந்து எண்ணிக் கொளல்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 532
+  line: 2
+  kind: metre
+  status: approved
+  dataset: நிச்ச நிரப்புக் கொன் றாங்கு.
+  text: நிச்ச நிரப்புக்கொன் றாங்கு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 542
+  line: 2
+  kind: metre
+  status: approved
+  dataset: கோல் நோக்கி வாழுங் குடி.
+  text: கோல்நோக்கி வாழுங் குடி.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 589
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: ஒற்றெற் றுணராமை ஆள்க உடன்மூவர்
+  text: ஒற்றொற் றுணராமை ஆள்க உடன்மூவர்
+  basis: All three copies share this. Parimelazhagar has ஒற்றொற்.
+- n: 599
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: ஦வ்ருஉம் புலிதாக் குறின்.
+  text: வெரூஉம் புலிதாக் குறின்.
+  basis: Invalid code point. Wikisource; Parimelazhagar supports it.
+- n: 639
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: பழுதெண்ணும் மந்திரியின் பக்கததுள் தெவ்வோர்
+  text: பழுதெண்ணும் மந்திரியின் பக்கத்துள் தெவ்வோர்
+  basis: All three copies share this. Parimelazhagar has பக்கத்துள்.
+- n: 650
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: இணருழ்த்தும் நாறா மலரனையர் கற்றது
+  text: இணர்ஊழ்த்தும் நாறா மலரனையர் கற்றது
+  basis: Wikisource.
+- n: 651
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: துணைநலம் ஆக்கம் த்ருஉம் வினைநலம்
+  text: துணைநலம் ஆக்கம் தரூஉம் வினைநலம்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 653
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: ஒஓதல் வேண்டும் ஒளிமாழ்கும் செய்வினை
+  text: ஓஒதல் வேண்டும் ஒளிமாழ்கும் செய்வினை
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 689
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வாய்சேரா வன்கணவன்.
+  text: வாய்சோரா வன்க ணவன்.
+  basis: "All three copies have வாய்சேரா. Parimelazhagar's verse and gloss have வாய்சோரா, words of blame that don't slip from the mouth. Spacing also restores the 3 feet this line must have."
+- n: 701
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: கூறாமை நோக்கக் குறிப்பறிவான் எஞ்ஞான்றும்
+  text: கூறாமை நோக்கிக் குறிப்பறிவான் எஞ்ஞான்றும்
+  basis: Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 711
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: அவையறிநது ஆராய்ந்து சொல்லுக சொல்லின்
+  text: அவையறிந்து ஆராய்ந்து சொல்லுக சொல்லின்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 719
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நன்குசலச் சொல்லு வார்.
+  text: நன்குசெலச் சொல்லு வார்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 775
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: விழித்தகண் வேல்கொண டெறிய அழித்திமைப்பின்
+  text: விழித்தகண் வேல்கொண் டெறிய அழித்திமைப்பின்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 784
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: மேற்செனறு இடித்தற் பொருட்டு.
+  text: மேற்சென்று இடித்தற் பொருட்டு.
+  basis: Missing pulli (செனறு).
+- n: 795
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வல்லார்நடபு ஆய்ந்து கொளல்.
+  text: வல்லார்நட்பு ஆய்ந்து கொளல்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 812
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: உறின்நட்டு அறினொருஉம் ஒப்பிலார் கேண்மை
+  text: உறின்நட்டு அறின்ஒரூஉம் ஒப்பிலார் கேண்மை
+  basis: The extension needs a long vowel. Parimelazhagar has ஒரூஉம்; both Tamil copies have ஒருஉம்.
+- n: 851
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: பண்பின்மை பார஧க்கும் நோய்.
+  text: பண்பின்மை பாரிக்கும் நோய்.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 855
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: மிக்லூக்கும் தன்மை யவர்.
+  text: மிகலூக்கும் தன்மை யவர்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 858
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: மிக்லூக்கின் ஊக்குமாம் கேடு.
+  text: மிகலூக்கின் ஊக்குமாம் கேடு.
+  basis: க்ல is impossible in Tamil, and all three copies share it. Parimelazhagar has மிகலூக்கி னூக்குமாங்.
+- n: 895
+  line: 1
+  kind: keep
+  status: approved
+  dataset: யாண்டுச்சென்று யாண்டும் உளராகார் வெந்துப்பின்
+  text: யாண்டுச்சென்று யாண்டும் உளராகார் வெந்துப்பின்
+  basis: Wikisource moves வெந்துப்பின் to line 2; Parimelazhagar and Madurai agree with the dataset.
+- n: 895
+  line: 2
+  kind: keep
+  status: approved
+  dataset: வேந்து செறப்பட் டவர்.
+  text: வேந்து செறப்பட் டவர்.
+  basis: "As line 1: Wikisource's line break is wrong."
+- n: 901
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: மனைவிழைவார் மாண்பயன் எய்தார் வினைவிழையார்
+  text: மனைவிழைவார் மாண்பயன் எய்தார் வினைவிழைவார்
+  basis: All three copies share this. Parimelazhagar has வினைவிழைவார், which also pairs with மனைவிழைவார்.
+- n: 908
+  line: 2
+  kind: metre
+  status: approved
+  dataset: பெட் டாங்கு ஒழுகு பவர்.
+  text: பெட்டாங்கு ஒழுகு பவர்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 913
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: ஏத஧ல் பிணந்தழீஇ அற்று.
+  text: ஏதில் பிணந்தழீஇ அற்று.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 917
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நிறைநெஞ்சம் இல்லவர் தோய்வார் பிறநெஞ்சிற்
+  text: நிறைநெஞ்சம் இல்லவர் தோய்வர் பிறநெஞ்சிற்
+  basis: All three copies share this. Parimelazhagar has தோய்வர்.
+- n: 934
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: சிறுமை பலசெய்து சீரழக்கும் சூதின்
+  text: சிறுமை பலசெய்து சீரழிக்கும் சூதின்
+  basis: Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 943
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: அற்றால் அறவறிந்து உண்க அஃதுடம்பு
+  text: அற்றால் அளவறிந்து உண்க அஃதுடம்பு
+  basis: All three copies share this. Parimelazhagar has அளவறிந்து.
+- n: 950
+  line: 2
+  kind: metre
+  status: approved
+  dataset: அப்பால் நாற் கூற்றே மருந்து.
+  text: அப்பால்நாற் கூற்றே மருந்து.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 956
+  line: 2
+  kind: metre
+  status: approved
+  dataset: குலம்பற்றி வாழ்தும் என் பார்.
+  text: குலம்பற்றி வாழ்தும்என் பார்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 957
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: மத஧க்கண் மறுப்போல் உயர்ந்து.
+  text: மதிக்கண் மறுப்போல் உயர்ந்து.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 976
+  line: 2
+  kind: metre
+  status: approved
+  dataset: பேணிக் கொள் வேம் என்னும் நோக்கு.
+  text: பேணிக்கொள் வேம்என்னும் நோக்கு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 988
+  line: 2
+  kind: metre
+  status: approved
+  dataset: திண்மை உண் டாகப் பெறின்.
+  text: திண்மைஉண் டாகப் பெறின்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1020
+  line: 2
+  kind: keep
+  status: approved
+  dataset: நாணால் உயிர்மருட்டி அற்று.
+  text: நாணால் உயிர்மருட்டி அற்று.
+  basis: Same reading; Wikisource and Parimelazhagar spell the join as யற்று.
+- n: 1081
+  line: 2
+  kind: metre
+  status: approved
+  dataset: மாதர்கொல் மாலும் என் நெஞ்சு.
+  text: மாதர்கொல் மாலும்என் நெஞ்சு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1117
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: அறுவாய் நிறைந்த அவிர்மதிக்குப் க்குப் போல
+  text: அறுவாய் நிறைந்த அவிர்மதிக்குப் போல
+  basis: Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 1118
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: காதலை வாழி மத஧.
+  text: காதலை வாழி மதி.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 1126
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: கண்ணுள்ளின் போகார் இமைப்பின் பருகுவரா
+  text: கண்ணுள்ளின் போகார் இமைப்பின் பருவரார்
+  basis: All three copies share this. Parimelazhagar has பருவரார்.
+- n: 1129
+  line: 2
+  kind: metre
+  status: approved
+  dataset: ஏதிலர் என்னும் இவ் வூர்.
+  text: ஏதிலர் என்னும்இவ் வூர்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1130
+  line: 2
+  kind: metre
+  status: approved
+  dataset: ஏதிலர் என்னும் இவ் வூர்.
+  text: ஏதிலர் என்னும்இவ் வூர்.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1143
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: உறாஅதோ ஊரறிந்த கெளவை அதனைப்
+  text: உறாஅதோ ஊரறிந்த கௌவை அதனைப்
+  basis: "Encoding: typed as ெ + ள instead of the vowel ௌ, which would romanise wrongly."
+- n: 1147
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: ஊரவர் கெளவை எருவாக அன்னைசொல்
+  text: ஊரவர் கௌவை எருவாக அன்னைசொல்
+  basis: "Encoding: typed as ெ + ள instead of the vowel ௌ, which would romanise wrongly."
+- n: 1148
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நெய்யால் எரிநுதுப்பேம் என்றற்றால் கெளவையால்
+  text: நெய்யால் எரிநுதுப்பேம் என்றற்றால் கௌவையால்
+  basis: "Encoding: typed as ெ + ள instead of the vowel ௌ, which would romanise wrongly."
+- n: 1150
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: கெளவை எடுக்கும்இவ் வூர்.
+  text: கௌவை எடுக்கும்இவ் வூர்.
+  basis: "Encoding: typed as ெ + ள instead of the vowel ௌ, which would romanise wrongly."
+- n: 1192
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வீழ்வார் அள஧ க்கும் அளி.
+  text: வீழ்வார் அளிக்கும் அளி.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 1202
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: எனைத்தொனறு இனிதேகாண் காமம்தாம் வீழ்வார்
+  text: எனைத்தொன்று இனிதேகாண் காமம்தாம் வீழ்வார்
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 1202
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: நினைப்ப வருவதொன்று ஏல்.
+  text: நினைப்ப வருவதொன்று இல்.
+  basis: Wikisource; Parimelazhagar supports it.
+- n: 1206
+  line: 1
+  kind: keep
+  status: approved
+  dataset: மற்றியான் என்னுளேன் மன்னோ அவரொடியான்
+  text: மற்றியான் என்னுளேன் மன்னோ அவரொடியான்
+  basis: Parimelazhagar agrees (அவரொடியான்); Wikisource modernises it.
+- n: 1217
+  line: 1
+  kind: corrupted
+  status: approved
+  dataset: நனவினால் நல்காக் கொடியார் கனவனால்
+  text: நனவினால் நல்காக் கொடியார் கனவினால்
+  basis: All three copies share this. Parimelazhagar has கனவினால்.
+- n: 1284
+  line: 2
+  kind: metre
+  status: approved
+  dataset: கூடற்கண் சென்றது என் னெஞ்சு.
+  text: கூடற்கண் சென்றதுஎன் னெஞ்சு.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1307
+  line: 2
+  kind: metre
+  status: approved
+  dataset: நீடுவ தன்று கொல் என்று.
+  text: நீடுவ தன்றுகொல் என்று.
+  basis: "Spacing only: restores the 3 feet this line must have."
+- n: 1321
+  line: 2
+  kind: corrupted
+  status: approved
+  dataset: வல்லது அவர்அள஧க்கு மாறு.
+  text: வல்லது அவர்அளிக்கு மாறு.
+  basis: Invalid code point. Madurai and Wikisource agree; Parimelazhagar supports it.
+- n: 1322
+  line: 1
+  kind: keep
+  status: approved
+  dataset: ஊடலின் தோன்றும் சிறுதுனி நல்லளி
+  text: ஊடலின் தோன்றும் சிறுதுனி நல்லளி
+  basis: Parimelazhagar agrees (சிறுதுனி); Wikisource's சிறுதுணி is a typo.
+- n: 1323
+  line: 2
+  kind: keep
+  status: approved
+  dataset: நீரியைந் தன்னார் அகத்து.
+  text: நீரியைந் தன்னார் அகத்து.
+  basis: Same reading; Wikisource only divides the feet differently.
+- n: 1325
+  line: 1
+  kind: keep
+  status: approved
+  dataset: தவறிலர் ஆயினும் தாம்வீழ்வார் மென்றோள்
+  text: தவறிலர் ஆயினும் தாம்வீழ்வார் மென்றோள்
+  basis: Same reading; Wikisource only divides the feet differently.
+- n: 1325
+  line: 2
+  kind: keep
+  status: approved
+  dataset: அகறலின் ஆங்கொன் றுடைத்து.
+  text: அகறலின் ஆங்கொன் றுடைத்து.
+  basis: Same reading; Wikisource only divides the words differently.
+- n: 1327
+  line: 1
+  kind: keep
+  status: approved
+  dataset: ஊடலில் தோற்றவர் வென்றார் அதுமன்னும்
+  text: ஊடலில் தோற்றவர் வென்றார் அதுமன்னும்
+  basis: Parimelazhagar agrees (அதுமன்னும்); Wikisource's அதுமுன்னும் is a typo.
+- n: 1327
+  line: 2
+  kind: keep
+  status: approved
+  dataset: கூடலிற் காணப் படும்.
+  text: கூடலிற் காணப் படும்.
+  basis: Parimelazhagar agrees (கூடலிற்); Wikisource's கூடிலில் is a typo.
+- n: 1328
+  line: 1
+  kind: keep
+  status: approved
+  dataset: ஊடிப் பெறுகுவம் கொல்லோ நுதல்வெயர்ப்பக்
+  text: ஊடிப் பெறுகுவம் கொல்லோ நுதல்வெயர்ப்பக்
+  basis: Same reading; ங் is only the sandhi spelling of ம்.
+- n: 1329
+  line: 1
+  kind: keep
+  status: approved
+  dataset: ஊடுக மன்னோ ஒளியிழை யாமிரப்ப
+  text: ஊடுக மன்னோ ஒளியிழை யாமிரப்ப
+  basis: Same reading; Wikisource only splits the word and adds punctuation.

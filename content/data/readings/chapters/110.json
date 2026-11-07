@@ -1,0 +1,181 @@
+{
+  "chapter": 110,
+  "title": "Reading the Signs",
+  "note": "He says this is the man reading the woman’s signs and her friend’s, and the friend reading both of theirs. The man struck by her beauty needs it if he is to reach her.",
+  "couplets": [
+    {
+      "n": 1091,
+      "plain": "Her kohl-lined eyes hold two looks. One look brings sickness and the other is the medicine for it.",
+      "pm": "Her kohl-lined eyes now give me two looks. One makes me sick, because it shows the desire in her heart. The other is her look of tender affection, the medicine for that sickness. So there is a way out of this pain. He rejects the view that the first is a neutral glance, because that would make this one-sided love.",
+      "tag": "adds",
+      "context": "He reads the consent in her heart from the way she looks at him.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "29da5d12178b9262",
+          "quote": "Her kohl-lined eyes hold two looks",
+          "reason": "Her eyes act on him twice over, bringing sickness with one look and curing it with the other."
+        },
+        {
+          "id": "b8ad1d1e1e2d8543",
+          "quote": "the other is the medicine for it"
+        }
+      ]
+    },
+    {
+      "n": 1092,
+      "plain": "That small glance her eyes steal at me isn’t just half of desire. It is far more.",
+      "pm": "The brief looks her eyes give me when I’m not watching aren’t an equal half of bodily union. They are more. She bows her head when I look and gazes when I don’t, so they are stolen. They last a moment, so they are small. They come only from a willing heart, so union is now certain.",
+      "tag": "adds",
+      "context": "He goes on, reading her look.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "a70c54ee64f70ea1",
+          "quote": "That small glance her eyes steal at me",
+          "reason": "Rates one stolen glance at more than half of desire."
+        }
+      ]
+    },
+    {
+      "n": 1093,
+      "plain": "She looked, and having looked she bowed her head. That was water she poured on the bond between us.",
+      "pm": "While I wasn’t looking she looked at me with affection. Having looked, she took something to heart and bowed her head in shyness. That sign was the water she poured so that the crop of love sprung up between us would grow.",
+      "tag": "adds",
+      "context": "He reads her sign from her look and her shyness.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "e82dcd55dd45d755",
+          "quote": "having looked she bowed her head",
+          "reason": "A look and a bowed head are credited with feeding the bond between them."
+        },
+        {
+          "id": "c0aebb566077fde9",
+          "quote": "water she poured on the bond between us",
+          "reason": "Her look and her bowed head are water poured on their bond, as on a growing plant."
+        }
+      ]
+    },
+    {
+      "n": 1094,
+      "plain": "When I look at her, she looks at the ground. When I don’t, she looks at me and softly smiles.",
+      "pm": "When I look at her she doesn’t look back, but bows her head and looks at the ground. Knowing this, I look away, and then she looks at me and is glad inside, without showing it. Her gladness makes the sign of coming union clear. Some take the words to mean only that she smiles.",
+      "tag": "adds",
+      "context": "He reads her sign from her shyness and her gladness.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "befe538ffb8de3ba",
+          "quote": "When I look at her, she looks at the ground"
+        },
+        {
+          "id": "f19e42124d89f0be",
+          "quote": "When I don’t, she looks at me and softly smiles",
+          "reason": "Shows someone newly in love what to watch for: the look that comes only when yours turns away."
+        }
+      ]
+    },
+    {
+      "n": 1095,
+      "plain": "She won’t look straight at me, but that is all. As if narrowing one eye, she smiles.",
+      "pm": "She doesn’t fix her eyes on me directly, but that is all. She looks at me as if narrowing one eye, then is glad inside. Even the narrowing doesn’t quite show, which is why he says “as if”. The unspoken point is that he is now sure to win her.",
+      "tag": "adds",
+      "context": "He goes on, reading her shyness and her gladness.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "27ec00a0312ef850",
+          "quote": "As if narrowing one eye, she smiles",
+          "reason": "A smile with one eye narrowed says what her averted eyes will not."
+        }
+      ]
+    },
+    {
+      "n": 1096,
+      "plain": "They may talk like strangers, but the words of those who aren’t truly hostile are soon seen through.",
+      "pm": "Those with no hostility inside may speak harshly, like strangers, saying this place is closely guarded and you shouldn’t come. Someone in need soon sees where such words lead. Having no hostility means they are kind. He has seen that her friend turns him away only to help him, and he puts it as a general truth.",
+      "tag": "adds",
+      "context": "Her friend has turned him away. He reads what she really means and says this to himself.",
+      "speaker": "he",
+      "sensitive": "reads a rebuff as hidden goodwill, which could excuse ignoring a no",
+      "links": [
+        {
+          "id": "31f8bb1883d19252",
+          "quote": "are soon seen through",
+          "reason": "Talking like a stranger is itself a sign: the words of those with no real hostility are soon seen through."
+        },
+        {
+          "id": "ce98211f4c717b75",
+          "remove": "செறாஅர் means those who aren’t hostile, here her friend. “The loving” came from the old English."
+        }
+      ]
+    },
+    {
+      "n": 1097,
+      "plain": "Small harsh words with no anger behind them, looks that seem hostile: these are the signs of people who are close but act like strangers.",
+      "pm": "Words that hurt at first and turn sweet later, and angry looks from someone with no anger inside: these come from friends acting like strangers, for a purpose. They are done with an end in view and aren’t what those friends are really like, so there is no need to fear them.",
+      "tag": "adds",
+      "context": "He goes on, to himself, after her friend has turned him away.",
+      "speaker": "he",
+      "sensitive": "reads a rebuff as hidden love, which could excuse ignoring a no",
+      "links": [
+        {
+          "id": "6211d69201cf5549",
+          "quote": "the signs of people who are close but act like strangers",
+          "reason": "Names small harsh words and cross looks as the signs of those who only act like strangers."
+        }
+      ]
+    },
+    {
+      "n": 1098,
+      "plain": "When I look, she softens and slowly smiles. There is a beauty then in this woman of swaying grace.",
+      "pm": "I can’t bear the words that send me away, so I look at her, pleading. She sees it, softens and smiles gently to herself. In that smile of the swaying girl there is a good sign, and it won’t fail me now.",
+      "tag": "differs",
+      "note": "ஏர் is beauty. He takes it as a good sign: her smile shows that things will go well for him.",
+      "context": "She has looked at him and been glad. He sees it and says this.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "54f805d8f155217a",
+          "quote": "There is a beauty then in this woman of swaying grace",
+          "reason": "Her slow smile when he looks at her brings out a beauty in her."
+        }
+      ]
+    },
+    {
+      "n": 1099,
+      "plain": "Looking at each other with a blank look, as strangers do, is found only among lovers.",
+      "pm": "To look at each other with the general look you give anyone, as if you had never met, is found only in those who have this love. Both are glad inside, so she calls them lovers. None of it shows, so she says “like strangers”.",
+      "tag": "agrees",
+      "context": "Her friend, working out what lies between the two of them, says this to herself.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "ede8f9f7c204967a",
+          "quote": "Looking at each other with a blank look, as strangers do",
+          "reason": "Makes a stranger’s blank look, turned on each other, a mark found only among lovers."
+        },
+        {
+          "id": "97afcc82fa14fee0",
+          "quote": "found only among lovers"
+        }
+      ]
+    },
+    {
+      "n": 1100,
+      "plain": "When eyes and eyes agree in their look, the words of the mouth are no use at all.",
+      "pm": "When the eyes of two people in love meet in a look of love, the words they say to sound truthful are of no use. Such words come from the mouth, not the heart. She has heard both, hers about guarding the field and his about the hunt, and she puts it as a general truth. Empty words can’t be believed.",
+      "tag": "adds",
+      "context": "Her friend goes on, to herself.",
+      "speaker": "maid",
+      "links": [
+        {
+          "id": "3efac4bb95490ce7",
+          "quote": "the words of the mouth are no use at all"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

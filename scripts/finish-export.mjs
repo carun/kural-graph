@@ -26,7 +26,7 @@ const files = (dir = OUT) => fs.readdirSync(dir, { withFileTypes: true }).flatMa
 const rel = (file) => path.relative(OUT, file).split(path.sep).join("/");
 
 if (!fs.existsSync(path.join(OUT, "index.html"))) fail("out/index.html is missing. Run `next build` first.");
-for (const file of MODEL_FILES) if (!fs.existsSync(path.join(OUT, file))) fail(`out/${file} is missing. Run pipeline/export-fork.ts in tirukkural-kb.`);
+for (const file of MODEL_FILES) if (!fs.existsSync(path.join(OUT, file))) fail(`out/${file} is missing. Run \`npm run build\`, which fetches it first.`);
 
 // 1. Next writes each page's data as inline scripts. They only queue data, and it is read by DOMContentLoaded, so they
 // can run from one file at the end of the body. This keeps them in order, and script-src free of 'unsafe-inline'.

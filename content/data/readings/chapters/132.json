@@ -1,0 +1,159 @@
+{
+  "chapter": 132,
+  "title": "Subtle Sulking",
+  "note": "When he and she are together in bed she has no cause to sulk, but her love runs so high that she imagines a fine cause, lays it on him and sulks. That also explains the chapter’s place here.",
+  "couplets": [
+    {
+      "n": 1311,
+      "plain": "All those who are women eat you up with their eyes, as common property. I won’t go near your chest, you philanderer.",
+      "pm": "You philanderer, all those with a woman’s nature feast on you with their eyes in common. So I won’t touch your chest, which is their leavings. She says “a woman’s nature” because courtesans lack chastity, modesty and other virtues, and are women by nature alone. She fears they enjoy looking at him as she does, and this jealousy is what makes it subtle.",
+      "tag": "adds",
+      "context": "He has come back from a procession and is in bed with her, and she says this.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "ccce59cedfea61c7",
+          "quote": "eat you up with their eyes",
+          "reason": "Refuses his embrace because, she says, every woman’s eyes have already had their share of him."
+        },
+        {
+          "id": "64c779d3408760f8",
+          "quote": "you philanderer",
+          "reason": "Flung directly at him, with “philanderer” as the taunt."
+        }
+      ]
+    },
+    {
+      "n": 1312,
+      "plain": "I was sulking when he sneezed. He knew I would say, “Live long.”",
+      "pm": "I was sulking and not speaking when my lover sneezed. He thought I would stop and say “Live long”. A sneeze calls for a blessing by custom, so I would have had to speak. She takes a natural sneeze as something done on purpose, and that is what makes it subtle.",
+      "tag": "agrees",
+      "context": "While he is away from the bed, she tells her friend what happened there.",
+      "speaker": "she",
+      "links": [
+        {
+          "id": "9695c25e88b16aa9",
+          "quote": "He knew I would say, “Live long.”"
+        }
+      ]
+    },
+    {
+      "n": 1313,
+      "plain": "Even if I wear a flower from the branch she is angry. “You wear it to show some woman,” she says.",
+      "pm": "Even if I wear a garland bent in a ring, she flares up and says I wore it to show it to some woman I love. Does such a woman need a reason? It can also mean: if I wear a flower from another region, she says I wore that strange flower to show some other woman.",
+      "tag": "adds",
+      "note": "கோட்டுப்பூ can be a flower from a branch. He takes கோடு as bending, a garland worn in a ring, and also allows a flower from another region.",
+      "context": "Her friend sees signs of sulking and asks him why, when they are together. He answers.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "1eab949e5a35ef10",
+          "quote": "You wear it to show some woman",
+          "reason": "A flower is enough: her suspicion turns it into proof of another woman."
+        }
+      ]
+    },
+    {
+      "n": 1314,
+      "plain": "“We love more than anyone,” I said, and she sulked: “Than who? Than who?”",
+      "pm": "I meant that we two love more than any pair who enjoy desire, so I said we love more than anyone. Your friend took it that I love her most among the many women I love, and she sulked, saying: than whom, than whom? I said it out of loving-kindness and she took it another way. There was no other cause.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "7505e6d8a8d3ad1e",
+          "quote": "Than who? Than who?"
+        }
+      ]
+    },
+    {
+      "n": 1315,
+      "plain": "“We will not part in this life,” I said, and her eyes filled with tears.",
+      "pm": "In my great love I said we would not part in this birth. She took it to mean I would part from her in the next, and her eyes filled with tears. She takes plain words as a hint, and I am not at fault.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": []
+    },
+    {
+      "n": 1316,
+      "plain": "“I thought of you,” I said. “So why did you forget me?” she said, and she didn’t embrace me but got ready to sulk.",
+      "pm": "I meant that I thought of her without a break while we were apart, so I said I had thought of her. She took it that I forgot and then remembered, and said I had forgotten her in between. She had been ready to embrace me, and now she was ready to sulk. She inferred the forgetting from the remembering.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "e3f86850578539e1",
+          "quote": "So why did you forget me?"
+        }
+      ]
+    },
+    {
+      "n": 1317,
+      "plain": "I sneezed and she blessed me. Then she took it back and wept: “Who was thinking of you, that you sneezed?”",
+      "pm": "I sneezed, and she blessed me from habit. Then she reversed herself and wept in a sulk, asking which of the women pining for me had thought of me and made me sneeze. Women say that you sneeze when someone with loving-kindness thinks of you. She treated an empty saying as fact, and sulked.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "9d5dbb8a28d5a11c",
+          "quote": "Who was thinking of you, that you sneezed?"
+        },
+        {
+          "id": "8331845173f08dd2",
+          "quote": "I sneezed and she blessed me."
+        }
+      ]
+    },
+    {
+      "n": 1318,
+      "plain": "I held back a sneeze and she wept: “Are you hiding from me that your own people are thinking of you?”",
+      "pm": "Fearing she would sulk and ask who was thinking of me, I held back a sneeze. Even so she wept in a sulk: are you hiding from us that your people think of you? “Us” implies she has no tie to him at all. If sneezing is a fault and not sneezing is a fault, what can be done?",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "fe5f882556f7e9b0",
+          "quote": "Are you hiding from me"
+        },
+        {
+          "id": "fee5691c59cd5893",
+          "quote": "I held back a sneeze"
+        }
+      ]
+    },
+    {
+      "n": 1319,
+      "plain": "Even when I soothe her sulk she flares up: “So this is how you are with others too.”",
+      "pm": "Even when I bow and soothe her in her sulk, she flares up and says I must soothe other women this way when they sulk. She wouldn’t be reassured, so I accepted the fault laid on me and bowed. Even that became a reason to sulk. What can be done with her now?",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "fd7b48815f09776e",
+          "quote": "So this is how you are with others too."
+        }
+      ]
+    },
+    {
+      "n": 1320,
+      "plain": "Even if I just sit thinking and gazing at her, she flares up: “Who are you thinking of, looking at all of me like that?”",
+      "pm": "She is angry at what I say and do, so I stop both and gaze at her limbs, thinking how matchless they are. She flares up: you looked at all of me, thinking of which women? I can’t match one woman in every limb, so you must be thinking of many, so name them all. Even keeping quiet has become a fault.",
+      "tag": "adds",
+      "context": "He goes on, to her friend.",
+      "speaker": "he",
+      "links": [
+        {
+          "id": "c74e2f6547abfb5b",
+          "quote": "Who are you thinking of, looking at all of me like that?"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

@@ -1,0 +1,201 @@
+{
+  "chapter": 78,
+  "title": "The Fierce Pride of an Army",
+  "note": "He defines this as an army’s surplus of valour.",
+  "couplets": [
+    {
+      "n": 771,
+      "plain": "Enemies, don’t stand before my lord. Many have stood before him, and now they stand in stone.",
+      "pm": "Enemies, many warriors have faced my lord in battle, fallen to his spear and now stand in memorial stones. If you want to stand in your bodies and not in a stone, don’t face him. This is a warrior speaking, who places his own valour in his ruler.",
+      "tag": "adds",
+      "sensitive": "boasts of men killed in battle",
+      "links": [
+        {
+          "id": "b32ce21515e5d196",
+          "quote": "Many have stood before him, and now they stand in stone",
+          "reason": "Boasts that those who stood before this lord now stand in stone."
+        },
+        {
+          "id": "3391c9595d04bcf4",
+          "quote": "don’t stand before my lord"
+        },
+        {
+          "id": "75b9508c6ec346b9",
+          "quote": "Enemies"
+        }
+      ]
+    },
+    {
+      "n": 772,
+      "plain": "Better to hold a spear that missed an elephant than an arrow that hit a hare in the woods.",
+      "pm": "Better than holding the arrow that surely hit a hare running in the forest is holding a spear thrown at an elephant in the open that missed. These are the words of a warrior who fought the rival ruler’s army, felt shame when it fled, and now goes against the ruler himself.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "746013a9a0756f65",
+          "quote": "Better to hold a spear that missed an elephant"
+        },
+        {
+          "id": "48b635891e135599",
+          "quote": "a spear that missed an elephant",
+          "reason": "The elephant is the great target worth failing at."
+        },
+        {
+          "id": "b3da25c1e03434b5",
+          "quote": "hold a spear",
+          "reason": "The spear is a bold effort, measured by its aim and not by its success."
+        },
+        {
+          "id": "d00aa7da5e7f19b9",
+          "quote": "a spear that missed an elephant"
+        }
+      ]
+    },
+    {
+      "n": 773,
+      "plain": "They call fierce courage great manhood. When someone falls on hard times, generosity is the sharp edge of it.",
+      "pm": "The learned call pitiless fierceness towards enemies great manhood. If an enemy falls on hard times, they call the kindness that helps him out of them its sharp edge. So the ruler of Ayodhya, finding the ruler of Lanka alone with his whole army dead, didn’t press on but said, “Go now, and come tomorrow with your army.”",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "6e663e3eeaef4a09",
+          "quote": "They call fierce courage great manhood",
+          "reason": "Says what great manhood is, then what sharpens it: generosity when someone falls on hard times."
+        },
+        {
+          "id": "35b7d42ac7869669",
+          "quote": "generosity is the sharp edge of it",
+          "reason": "Praises generosity to someone in trouble as what gives courage its edge."
+        }
+      ]
+    },
+    {
+      "n": 774,
+      "plain": "He lets the spear in his hand go with an elephant and comes on. He sees one in his own body, pulls it out and laughs.",
+      "pm": "A warrior lets his spear go with the elephant that charged him, killing it, and looks about for a spear for the next. He sees the one standing in his own chest, pulls it out and rejoices, having found what he sought. So he throws only at elephants, was too enraged to feel the spear go in, and still wants to fight.",
+      "tag": "adds",
+      "sensitive": "delights in being wounded in battle",
+      "links": [
+        {
+          "id": "a6370b9d676e6544",
+          "quote": "pulls it out and laughs"
+        },
+        {
+          "id": "7808209cadb59fde",
+          "quote": "He lets the spear in his hand go with an elephant"
+        }
+      ]
+    },
+    {
+      "n": 775,
+      "plain": "If a glaring eye blinks when a spear is thrown at it, isn’t that running away, for those with hard courage?",
+      "pm": "If the eye that glares at the enemy can’t bear it when they throw a spear, breaks that look and blinks, then for warriors it is the same as turning their backs. To take back an angry look would be a retreat in battle, so they don’t do even that.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "192c86f33930c6a5",
+          "quote": "a glaring eye blinks",
+          "reason": "Even a blink at a thrown spear counts as running away."
+        },
+        {
+          "id": "da34420eb0e0aa37",
+          "quote": "for those with hard courage"
+        }
+      ]
+    },
+    {
+      "n": 776,
+      "plain": "He counts over his days and sets down every day with no noble wound as a day that slipped away.",
+      "pm": "A warrior counts up his past days and puts every day without a noble wound among the days gone to waste. A noble wound is one on the face or chest. A day he had battle but no such wound, he adds to the days he had no battle at all.",
+      "tag": "agrees",
+      "sensitive": "praises being wounded; could reach someone who self-harms",
+      "links": [
+        {
+          "id": "bbb757e69d27a85c",
+          "quote": "every day with no noble wound",
+          "reason": "A day without a noble wound is written off as lost."
+        },
+        {
+          "id": "00d8750d6754d32f",
+          "quote": "He counts over his days"
+        }
+      ]
+    },
+    {
+      "n": 777,
+      "plain": "Those who want fame that circles the world and don’t want life: on them the warrior’s anklet has the grace of an ornament.",
+      "pm": "Fame doesn’t go with warriors to heaven but stays circling the earth. For those who want it and don’t want to go on living, tying on the warrior’s anklet is an adornment. They easily gain both heaven and fame, so this alone is their jewel.",
+      "tag": "adds",
+      "sensitive": "praises giving up one’s life for fame",
+      "links": [
+        {
+          "id": "a7afae1a01bb055d",
+          "quote": "don’t want life",
+          "reason": "Those who don’t want life make even their anklet an ornament."
+        },
+        {
+          "id": "56ea20a288163826",
+          "quote": "fame that circles the world",
+          "reason": "Fame that circles the world is what these warriors give their lives to earn."
+        }
+      ]
+    },
+    {
+      "n": 778,
+      "plain": "Warriors who don’t fear for their lives when the fight comes keep their excellence, even if the ruler is angry with them.",
+      "pm": "Warriors who, offered a battle, go to it with no fear for their lives don’t lose that great valour even if their ruler says no and is angry. They have long had no battle, so when they get one they won’t stop, even if he forbids it.",
+      "tag": "adds",
+      "sensitive": "praises bearing a superior’s harshness",
+      "links": [
+        {
+          "id": "2ea449ea79adf7fb",
+          "remove": "Discipline is the old English. The Tamil says they keep their excellence, and he reads it as fighting on against the ruler’s will."
+        },
+        {
+          "id": "0f8cf30989f50423",
+          "quote": "Warriors who don’t fear for their lives",
+          "reason": "Speaks of warriors who don’t fear for their lives."
+        },
+        {
+          "id": "ab616213ea73e59a",
+          "quote": "even if the ruler is angry with them",
+          "reason": "Names the anger of the ruler who leads them as the trial of these warriors."
+        }
+      ]
+    },
+    {
+      "n": 779,
+      "plain": "Those who die rather than go back on their vow: who can punish them for having failed?",
+      "pm": "Who has the right to mock, for failing, those warriors who go and die so that their vow won’t be broken? The vow is saying, “If I don’t do this, may such a thing befall me.” Even if they die before they finish it, they aren’t beaten, so they count as having done it. This is the glory of such a death.",
+      "tag": "adds",
+      "sensitive": "could read as approving of dying for a cause",
+      "links": [
+        {
+          "id": "cac469ee1bcd09ee",
+          "quote": "die rather than go back on their vow",
+          "reason": "Holds those who die rather than break their vow to be beyond all blame."
+        }
+      ]
+    },
+    {
+      "n": 780,
+      "plain": "If you can die so that the eyes of those who cared for you fill with tears, that death is worth begging for.",
+      "pm": "To die in battle so that the rulers who cared for you, remembering what you did, fill their eyes with tears: such a death is worth getting even by begging. Those who die of illness at home with their kin weeping get only the fruit of old deeds. This death, by a present act, wins heaven.",
+      "tag": "adds",
+      "sensitive": "praises seeking one’s own death",
+      "links": [
+        {
+          "id": "ff9eaebdf635dbc1",
+          "quote": "that death is worth begging for",
+          "reason": "A death that fills the eyes of those who cared for you is worth begging for."
+        },
+        {
+          "id": "dc6e9eeef48eb5bb",
+          "quote": "those who cared for you",
+          "reason": "Measures the warrior’s death by what it makes those who cared for him feel."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

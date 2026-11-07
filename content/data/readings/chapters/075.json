@@ -1,0 +1,101 @@
+{
+  "chapter": 75,
+  "title": "The Fortress",
+  "note": "The fortress belongs to the country, yet it is named as a part of the state on its own, because when enemies threaten ruin it protects both the country and the ruler.",
+  "couplets": [
+    {
+      "n": 741,
+      "plain": "A fortress is of value to those who are strong, and of value to those who fear and look after themselves.",
+      "pm": "A fortress matters to those with the three kinds of strength who march on others, because they must leave family and wealth safe behind them. It matters to those without strength who shelter in it from attackers. When power is gone, they would find no safety, like the shipwrecked in mid-ocean. He names the strong first, because even they perish without one.",
+      "tag": "adds",
+      "links": [
+        { "id": "4f12efea091038f8", "quote": "of value to those who are strong", "reason": "Says a fortress serves the strong and those who fear alike." }
+      ]
+    },
+    {
+      "n": 742,
+      "plain": "A fortress has water bright as a gem, open ground, a hill, and a forest of fine shade.",
+      "pm": "A fortress has gem-coloured water that never dries up, bare land with no water or shade so that enemies can’t settle outside the wall, a hill, and a dense forest of cool shade. It is a place ringed by these four defences of water, land, hill and forest, natural and built.",
+      "tag": "adds",
+      "links": [
+        { "id": "a533ba5954e4fba3", "quote": "water bright as a gem, open ground, a hill, and a forest of fine shade", "reason": "Counts water, open ground, hill and forest as the makings of a fortress." }
+      ]
+    },
+    {
+      "n": 743,
+      "plain": "Height, breadth, strength and being hard to reach: the books say a fortress is what has all four.",
+      "pm": "The learned call a wall a fortress when it has these four in plenty. Height beyond any ladder. Breadth at the base so that outsiders can’t dig through, and at the top so that defenders can stand and work. Strength, from good bricks that can’t be pierced. And being hard to approach, because of the machines on it.",
+      "tag": "adds",
+      "links": [
+        { "id": "3ddbb5d60d10db39", "quote": "the books say a fortress is what has all four", "reason": "Cites the books for four tests of a fortress: height, breadth, strength and being hard to reach." }
+      ]
+    },
+    {
+      "n": 744,
+      "plain": "A fortress needs little guarding, has ample room, and crushes the spirit of the enemy that reaches it.",
+      "pm": "A fortress has only a small part to guard, but great space, and it destroys the spirit of the enemy who come to besiege it. Apart from gates and paths, its sides are hill, forest or water. Enemies who come trusting in their strength, saying they will take it now, lose that spirit when they see it.",
+      "tag": "adds",
+      "links": [
+        { "id": "7289c72901fdf913", "quote": "needs little guarding, has ample room", "reason": "Prefers little to guard and ample room, so that it breaks the spirit of whoever comes." }
+      ]
+    },
+    {
+      "n": 745,
+      "plain": "A fortress is hard to take, holds stores of food, and is easy for those inside to hold.",
+      "pm": "A fortress is hard for outsiders to take, because hedges, moats and machines keep them from gaining a footing. It holds food of many kinds, and all else that people consume. It is easy for those inside to fight from: their weapons reach the attackers easily, the attackers’ weapons don’t reach them, and the ramparts are wide.",
+      "tag": "adds",
+      "links": [
+        { "id": "97c48f12e632ca4e", "quote": "holds stores of food, and is easy for those inside to hold" }
+      ]
+    },
+    {
+      "n": 746,
+      "plain": "A fortress has everything it needs, and good people who help when the moment comes.",
+      "pm": "A fortress has within it everything those inside need, and good warriors who step in and save it when outsiders are about to destroy it. They are good because of their loving-kindness for the ruler, their honour, their valour and their tirelessness.",
+      "tag": "adds",
+      "links": [
+        { "id": "5c4c2f0340d9d708", "quote": "good people who help when the moment comes", "reason": "Wants full stores and good people who will help when the moment comes." }
+      ]
+    },
+    {
+      "n": 747,
+      "plain": "A fortress is hard to take, whether by encircling it, by attacking without encircling, or by working treachery within.",
+      "pm": "A fortress is hard for outsiders to take, whether they close in around it so that no one can come or go, or attack in one place where it looks weak, or send trusted men to subvert those inside and have it opened. Its full stores defeat the first of these, and its good men the other two.",
+      "tag": "agrees",
+      "links": [
+        { "id": "ea77650f404fce62", "quote": "hard to take, whether by encircling it, by attacking without encircling, or by working treachery within", "reason": "Tests a fortress against three ways of taking it: encircling, attack and treachery within." }
+      ]
+    },
+    {
+      "n": 748,
+      "plain": "A fortress is one where those holding it can hold fast and beat even those strong enough to surround it.",
+      "pm": "A fortress is one where those inside hold their ground, never leave it, and fight and beat even outsiders whose great armies can encircle them. There a small force doesn’t merely stand up to a great one, it beats it. Others read this differently.",
+      "tag": "agrees",
+      "links": [
+        { "id": "a3eed15cd7c2a764", "quote": "hold fast and beat even those strong enough to surround it" }
+      ]
+    },
+    {
+      "n": 749,
+      "plain": "An excellent fortress wins glory in action, and the enemy falls at the very front of the fight.",
+      "pm": "A fortress wins distinction through what those inside do, so that the enemy is ruined as soon as battle begins, and has every other excellence it needs. Those ruined at the start can’t regroup. The actions are shooting, throwing, stabbing and cutting, whichever counters the attack. The other excellences include secret tunnels for going in and out unseen.",
+      "tag": "adds",
+      "links": [
+        { "id": "c0b42793f035f647", "quote": "the enemy falls at the very front of the fight", "reason": "Looks for a fortress whose action fells the enemy at the very front of the fight." }
+      ]
+    },
+    {
+      "n": 750,
+      "plain": "However excellent a fortress may be, with those who have no excellence in action it is no fortress.",
+      "pm": "Though a fortress has every excellence described above, it has none of them in the hands of those without excellence in action, who sit idle, act without measure or do what doesn’t suit. If they don’t guard it by doing the right work in the right measure, it falls and its excellences are no use. A fortress can’t do without its guards.",
+      "tag": "agrees",
+      "links": [
+        { "id": "aad0f301697237f1", "quote": "with those who have no excellence in action it is no fortress", "reason": "Even the finest fortress comes to nothing when those in it have no excellence in action." },
+        { "id": "768f88bfbb751152", "remove": "Vigour is the old English. The Tamil says excellence in action, and he reads it as doing the right work in the right measure, not drive." }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    { "id": "e9570f9713dcb517", "remove": "Vigour is the old English. The Tamil says excellence in action, and he reads it as doing the right work in the right measure, not drive." }
+  ]
+}

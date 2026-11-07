@@ -1,0 +1,2779 @@
+# Qualities: the moral core and the inner life
+
+- id: quality:righteousness
+  type: quality
+  label: Righteousness
+  tamil: அறம்
+  polarity: virtue
+  definition: The moral good as a whole, first of the three aims of life, which the Kural calls the surest profit and the only source of real delight.
+  boundary: Not quality:good-conduct, which is the steady behaviour of a person's daily life; righteousness is the good itself, praised as the highest thing to pursue (chapter 4).
+  synonyms: [doing the right thing, morality, ethics, being a good person, moral duty, living rightly]
+  evidence: [31, 32, 35, 39]
+
+- id: quality:purity-of-heart
+  type: quality
+  label: Purity of Heart
+  tamil: மனந்தூய்மை
+  polarity: virtue
+  definition: A mind without stain, which 34 calls the whole of righteousness, all else being empty sound, and which one's company can keep or spoil.
+  boundary: Not quality:purity-of-action, which concerns the means used in an undertaking; this is the state of the mind itself. Not quality:truthfulness, though 298 makes truth the proof of it.
+  synonyms: [clean conscience, pure motives, good intentions, inner goodness, sincere heart]
+  evidence: [34, 298, 455, 457]
+
+- id: quality:devotion
+  type: quality
+  label: Devotion
+  polarity: virtue
+  definition: Taking refuge at the feet of the Lord and praising him, which the opening chapter makes the only way across the sea of births and the only real use of learning.
+  boundary: Not theme:the-lord, which is God as the subject; this is the worshipper's act of clinging to him. Not quality:reverence-for-the-great, which is caution before powerful men, not worship.
+  synonyms: [faith, prayer, worship, trust in god, spirituality, surrender to god]
+  evidence: [2, 5, 7, 10]
+
+- id: quality:affection
+  type: quality
+  label: Loving-kindness
+  tamil: அன்பு
+  polarity: virtue
+  definition: The warm goodwill of the heart towards others, the mēttā of Buddhism, which gives even one's bones for them, grows into friendship, and which the Kural calls the seat of life.
+  boundary: Not quality:compassion (அருள்), its child by 757, which is care for every creature. Not quality:passion (காமம்), the desire between lovers.
+  synonyms: [love, affection, metta, mēttā, caring, warmth, tenderness, loving your family, devotion to loved ones, love for others]
+  evidence: [72, 74, 76, 80]
+
+- id: quality:compassion
+  type: quality
+  label: Compassion
+  tamil: அருள்
+  polarity: virtue
+  definition: Care for every living thing, stranger and creature alike, which the Kural calls the wealth of wealths and the one true help, born of loving-kindness and nursed by wealth.
+  boundary: Not quality:affection (அன்பு), the goodwill it is born from. Not quality:considerateness, which indulges the person before one's eyes; compassion is for all life, unasked, and shows in sparing it.
+  synonyms: [mercy, pity, empathy, kindness to all living things, soft-heartedness, feeling for others]
+  evidence: [241, 242, 243, 757]
+
+- id: quality:cruelty
+  type: quality
+  label: Cruelty
+  polarity: vice
+  definition: Hardness of heart that feels nothing for other lives, so that a man oppresses the weak and forgets how he would tremble in their place.
+  boundary: Not quality:tyranny, a ruler's abuse of his office; cruelty is a private hardness of heart. Not quality:anger, which flares and passes.
+  synonyms: [heartlessness, callousness, bullying, being mean to the weak, ruthlessness, no empathy]
+  evidence: [246, 249, 250]
+
+- id: quality:fear-of-sin
+  type: quality
+  label: Fear of Evil Deeds
+  tamil: தீவினையச்சம்
+  polarity: virtue
+  definition: Dread of doing evil, to be feared more than fire, because ill deeds follow their author like his shadow and destroy him.
+  boundary: Not quality:cowardice, which fears danger to oneself. Not theme:fruits-of-action, the law by which deeds return; this is the person's fear of incurring it.
+  synonyms: [having a conscience, moral caution, afraid of doing wrong, thinking twice before doing wrong, fear of consequences, fear of sin]
+  evidence: [201, 202, 208, 209]
+
+- id: quality:self-control
+  type: quality
+  label: Self-Control
+  tamil: அடக்கம்
+  polarity: virtue
+  definition: Mastery of one's passions, temper and whole bearing, to be guarded as a treasure, which leads to heaven as its lack leads to endless darkness.
+  boundary: Not quality:sense-control, the withdrawal of the five senses. Couplets 125 and 127-129 in this chapter belong to quality:humility and quality:restraint-of-speech; this is the general discipline of the passions.
+  synonyms: [self-discipline, willpower, keeping calm, staying composed, impulse control, keeping your temper]
+  evidence: [121, 122, 124, 130]
+
+- id: quality:sense-control
+  type: quality
+  label: Control of the Five Senses
+  tamil: ஐந்தவித்தான்
+  polarity: virtue
+  definition: Holding in the five senses as the goad holds the elephant or the tortoise draws in its limbs, the mark of the ascetic's might.
+  boundary: Not quality:self-control, which governs conduct among people; this is the inward drawing back from touch, taste, sight, sound and smell. Not quality:desirelessness, the end of wanting rather than mastery of the senses.
+  synonyms: [resisting temptation, mastering your senses, not giving in to pleasure, sensory discipline, abstinence, mind over body]
+  evidence: [6, 24, 25, 126]
+
+- id: quality:humility
+  type: quality
+  label: Humility
+  tamil: பணிவு
+  polarity: virtue
+  definition: Bending before others, which suits everyone, shines brightest in the rich, and is called the strength of the strong.
+  boundary: Not quality:courtesy, which is manners towards all; humility is the lowering of oneself. Not quality:servility, which bends for gain and loses dignity.
+  synonyms: [modesty, being humble, staying grounded, not showing off, down to earth, keeping a low profile]
+  evidence: [95, 125, 963, 985]
+
+- id: quality:good-conduct
+  type: quality
+  label: Good Conduct
+  tamil: ஒழுக்கம்
+  polarity: virtue
+  definition: The steady behaviour proper to one's place, to be guarded above life itself, by which a man's family and standing are known.
+  boundary: Not quality:righteousness, the good as such; good conduct is how a life is actually lived day by day. Not quality:purity-of-action, which tests the means used in one undertaking.
+  synonyms: [good behaviour, decent habits, living decently, moral discipline, behaving well, keeping to your principles]
+  evidence: [131, 133, 137, 138]
+
+- id: quality:forgiveness
+  type: quality
+  label: Forgiveness
+  tamil: பொறை
+  polarity: virtue
+  definition: Bearing injury and insult as the earth bears those who dig it, and better still forgetting them, which the Kural sets above fasting and above renunciation.
+  boundary: Not quality:non-injury, which is refraining from harm in general; forgiveness answers a wrong already suffered. Not quality:considerateness, which gives way out of regard for the person; forgiveness is strength that absorbs an injury.
+  synonyms: [letting it go, not holding a grudge, moving on, turning the other cheek, patience with people, pardoning someone]
+  evidence: [151, 152, 156, 159]
+
+- id: quality:revenge
+  type: quality
+  label: Revenge
+  tamil: ஒறுத்தல்
+  polarity: vice
+  definition: Paying back an injury, whose joy lasts only a day and which brings further evils down on the one who takes it.
+  boundary: Not quality:anger, the heat of the moment; revenge is the deliberate return of harm. Not quality:enmity, which needs no particular injury to answer.
+  synonyms: [getting even, payback, retaliation, settling scores, an eye for an eye, getting back at someone]
+  evidence: [155, 156, 314, 852]
+
+- id: quality:anger
+  type: quality
+  label: Anger
+  tamil: வெகுளி
+  polarity: vice
+  feeling: true
+  definition: Hot displeasure that seeks to hurt, and that the Kural treats as the enemy of the one who feels it.
+  boundary: Not hatred (quality:enmity), which is a settled ill will rather than a flare of temper. Not quality:defiance, a standing habit of quarrelling; anger is the fit itself.
+  synonyms: [rage, fury, losing your temper, wrath, resentment]
+  evidence: [301, 303, 305]
+
+- id: quality:enmity
+  type: quality
+  label: Enmity
+  tamil: பகை
+  polarity: vice
+  definition: Settled hatred between persons or powers, not to be invited even in jest, which no study can remove from an enemy's heart.
+  boundary: Not quality:anger, a flare of temper. Not quality:defiance, the disposition to quarrel with anyone. Not theme:war, the handling of enemies as a matter of policy.
+  synonyms: [hatred, hostility, ill will, a long-running feud, bad blood, deep grudge]
+  evidence: [709, 823, 871]
+
+- id: quality:defiance
+  type: quality
+  label: Strife
+  tamil: இகல்
+  polarity: vice
+  definition: A quarrelsome spirit that delights in opposing others, the disease from which hate grows and from which all that is bitter springs.
+  boundary: Not quality:anger; strife is a habit of quarrelling, not a fit of temper. Not quality:enmity, which is aimed at a particular foe.
+  synonyms: [picking fights, being argumentative, combative attitude, looking for trouble, stubborn opposition, contrarian, defiance]
+  evidence: [851, 853, 856, 860]
+
+- id: quality:non-injury
+  type: quality
+  label: Non-Injury
+  tamil: இன்னா செய்யாமை
+  polarity: virtue
+  definition: Causing no pain to anyone, even for great gain or in return for malice, because one's own pain shows what it is to inflict it.
+  boundary: Not quality:forgiveness, which bears a wrong; this refrains from inflicting one, and answers injury with a good turn (314). Not quality:non-killing, which is only about taking life.
+  synonyms: [doing no harm, not hurting people, being harmless, treating others as you would like to be treated, golden rule, not causing pain]
+  evidence: [311, 312, 316, 318]
+
+- id: quality:non-killing
+  type: quality
+  label: Non-Killing
+  tamil: கொல்லாமை
+  polarity: virtue
+  definition: Never taking life, ranked as the first of all righteous acts, above truthfulness, and binding even to save one’s own life.
+  boundary: Not quality:non-injury, which covers all lesser hurts. Not quality:abstaining-from-meat, which concerns the eater rather than the killer.
+  synonyms: [nonviolence, reverence for life, not harming animals, respect for all creatures, ahimsa, pacifism]
+  evidence: [321, 323, 325, 327]
+
+- id: quality:abstaining-from-meat
+  type: quality
+  label: Abstaining from Meat
+  tamil: புலால் மறுத்தல்
+  polarity: virtue
+  definition: Refusing to eat flesh, because no one who fattens himself on another body can feel pity, and because the eater's demand is what keeps the killing going.
+  boundary: Not quality:non-killing, which forbids taking life; this concerns the one who never kills but makes killing pay (256).
+  synonyms: [vegetarianism, giving up meat, not eating animals, plant-based diet, meat-free living]
+  evidence: [251, 255, 256, 260]
+
+- id: quality:austerity
+  type: quality
+  label: Austerity
+  tamil: தவம்
+  polarity: virtue
+  definition: Bearing suffering patiently and hurting no life, which 261 calls the whole of austerity, and by which, like gold in the fire, the austere shine the brighter.
+  boundary: Not quality:renunciation, which is the giving up; austerity is the discipline endured. Not quality:fortitude, which meets misfortune that comes unbidden.
+  synonyms: [tapas, self-denial, fasting, spiritual discipline, hard spiritual practice, penance]
+  evidence: [261, 262, 267, 269]
+
+- id: quality:renunciation
+  type: quality
+  label: Renunciation
+  tamil: துறவு
+  polarity: virtue
+  definition: Giving up possessions and ties, since each thing let go is a grief escaped, and owning nothing is the law of those under vows.
+  boundary: Not quality:desirelessness, the inner end of wanting; this is the outward letting go. Not quality:austerity, the bearing of hardship. Not role:ascetic, the person who has done it.
+  synonyms: [giving it all up, walking away from the world, minimalism, letting go of possessions, becoming a monk, leaving worldly life]
+  evidence: [341, 342, 344, 348]
+
+- id: quality:attachment
+  type: quality
+  label: Attachment
+  tamil: பற்று
+  polarity: vice
+  feeling: true
+  definition: Clinging to things and bonds, which grief in turn clings to, and which keeps the round of births turning until it is broken.
+  boundary: Not quality:craving, the wanting of what one lacks; attachment holds on to what one has. Not quality:affection, which the Kural praises; attachment is bondage to the world.
+  synonyms: [clinging, being unable to let go, possessiveness, materialism, emotional baggage, holding on]
+  evidence: [345, 347, 349, 350]
+
+- id: quality:craving
+  type: quality
+  label: Craving
+  tamil: அவா
+  polarity: vice
+  feeling: true
+  definition: Wanting itself, the seed of every birth, never filled, a trap that cheats a person, called here the greatest misery of all.
+  boundary: Not quality:passion, the desire that Part 3 sings rather than condemns. Not quality:covetousness, whose object is another’s wealth. Craving has no particular object; it is the wanting itself (chapter 37). The word காமம் in 360 also belongs here.
+  synonyms: [never being satisfied, wanting more and more, insatiable desire, hunger for things, the rat race, restless wanting]
+  evidence: [361, 366, 368, 370]
+
+- id: quality:desirelessness
+  type: quality
+  label: Desirelessness
+  tamil: வேண்டாமை
+  polarity: virtue
+  definition: Wanting nothing, called the greatest wealth and a greatness that triumphs over all, which is freedom here and now.
+  boundary: Not quality:renunciation, the outward giving up of goods and ties. Not quality:sense-control, which masters the senses while desire may remain.
+  synonyms: [contentment, having enough, being satisfied with little, inner peace, wanting nothing, simple living]
+  evidence: [180, 363, 365, 369]
+
+- id: quality:realisation-of-truth
+  type: quality
+  label: Realisation of the Truth
+  tamil: மெய்யுணர்தல்
+  polarity: virtue
+  definition: Seeing through appearances to the real, the liberating insight of chapter 36 that ends delusion and the need to be born again.
+  boundary: Not quality:understanding, which serves practical life and the state; this is spiritual insight. Not theme:liberation, the state it leads to.
+  synonyms: [enlightenment, spiritual awakening, seeing things as they are, finding the truth, self-realisation, deep insight]
+  evidence: [353, 354, 355, 357]
+
+- id: quality:delusion
+  type: quality
+  label: Delusion
+  tamil: மயக்கம்
+  polarity: vice
+  definition: Taking the unreal for the real and the passing for the lasting, named with desire and anger as the root of all ills.
+  boundary: Not quality:folly, practical stupidity in everyday choices; delusion is error about what is real. Not quality:conceited-folly, which is a false opinion of oneself.
+  synonyms: [illusion, being fooled by appearances, living in denial, false beliefs, self-deception, confusion about what matters]
+  evidence: [331, 351, 352, 360]
+
+- id: quality:grief
+  type: quality
+  label: Grief
+  tamil: துன்பம்
+  polarity: state
+  feeling: true
+  definition: Sorrow as the common lot of those who hold on to the world, which the Kural traces to attachment and desire.
+  boundary: Not quality:pining, which is love's own sorrow in Part 3. Not theme:poverty, which is a condition of life rather than a feeling.
+  synonyms: [sadness, sorrow, suffering, misery, unhappiness, feeling down]
+  evidence: [341, 347, 368]
+
+# Qualities: giving and receiving
+
+- id: quality:hospitality
+  type: quality
+  label: Hospitality
+  tamil: விருந்தோம்பல்
+  polarity: virtue
+  definition: Receiving and feeding the guest before oneself, with a glad face, which the Kural makes the very purpose of setting up a home.
+  boundary: Not quality:charity, which gives to the destitute; hospitality honours whoever comes to the door, and a cold look alone undoes it (90).
+  synonyms: [welcoming guests, having people over, being a good host, feeding visitors, making people feel at home, open house]
+  evidence: [81, 82, 85, 90]
+
+- id: quality:charity
+  type: quality
+  label: Charity
+  tamil: ஈகை
+  polarity: virtue
+  definition: Giving to those who have nothing and sharing one's food with them, with no hope of return, all other giving being only a kind of loan.
+  boundary: Not quality:liberality, open-handedness towards anyone as a mark of rank. Not quality:hospitality, which serves the guest. The test is 221, the receiver is poor and cannot repay.
+  synonyms: [giving to the poor, donating, feeding the hungry, sharing what you have, alms, helping those in need]
+  evidence: [221, 222, 226, 227]
+
+- id: quality:liberality
+  type: quality
+  label: Generosity
+  tamil: கொடை
+  polarity: virtue
+  definition: An open hand as a standing trait of a ruler or a man of good family, which draws kin and followers to him and which survives even shrinking means.
+  boundary: Not quality:charity, whose test is the need of the receiver; generosity is a trait of the giver and his rank. Its opposite is quality:miserliness.
+  synonyms: [generosity, being generous, open-handedness, big-heartedness, treating people, giving freely, liberality]
+  evidence: [387, 390, 526, 955]
+
+- id: quality:helpfulness
+  type: quality
+  label: Helpfulness
+  tamil: ஒப்புரவு
+  polarity: virtue
+  definition: Keeping one’s means open to the whole community as a village tank or a fruit tree serves all, expecting no return, even at the cost of ruin.
+  boundary: Not quality:charity, which gives to the destitute who ask; this is a standing service to all around one. Not quality:liberality, the open hand of rank.
+  synonyms: [public spirit, community service, being useful, giving back, neighbourliness, volunteering]
+  evidence: [211, 215, 216, 220]
+
+- id: quality:gratitude
+  type: quality
+  label: Gratitude
+  tamil: செய்ந்நன்றி
+  polarity: virtue
+  definition: Holding a kindness far larger than it looks, weighing it by the need it met, and remembering the helper for life and in every birth.
+  boundary: Not quality:helpfulness, the doer's side of a good deed; gratitude is the receiver's. Not quality:forgiveness, though 109 uses a remembered kindness to cancel a wrong. Its opposite is quality:ingratitude.
+  synonyms: [being thankful, appreciation, returning a favour, remembering who helped you, thankfulness, owing someone]
+  evidence: [102, 104, 105, 107]
+
+- id: quality:ingratitude
+  type: quality
+  label: Ingratitude
+  tamil: நன்றி மறப்பது
+  polarity: vice
+  definition: Forgetting or destroying a kindness received, the one crime for which the Kural allows no redemption.
+  boundary: Not quality:fair-weather-friendship, which deserts a friend in need; ingratitude forgets a benefit already received. Its opposite is quality:gratitude.
+  synonyms: [being ungrateful, biting the hand that feeds you, thankless, not saying thank you, forgetting favours]
+  evidence: [108, 110]
+
+- id: quality:miserliness
+  type: quality
+  label: Miserliness
+  tamil: இவறல்
+  polarity: vice
+  definition: Hoarding wealth without spending, giving or even enjoying it, which the Kural sets apart as a class of vice by itself.
+  boundary: Not quality:covetousness, which reaches for another's goods; the miser clings to his own. Not quality:moderation, which spends within measure but does spend.
+  synonyms: [stinginess, being tight with money, cheapskate, penny-pinching, hoarding money, refusing to share]
+  evidence: [437, 438, 1002, 1005]
+
+- id: quality:moderation
+  type: quality
+  label: Moderation
+  tamil: அளவறிந்து
+  polarity: virtue
+  definition: Knowing the measure of things, so that giving and spending stay within one's wealth and eating stays within one's appetite.
+  boundary: Not quality:knowing-ones-strength, which measures force before a contest; this measures consumption. Not quality:miserliness, which refuses to spend at all.
+  synonyms: [living within your means, budgeting, not overdoing it, eating sensibly, sensible with money, balance]
+  evidence: [477, 480, 943, 945]
+
+# Qualities: greed, envy and deceit
+
+- id: quality:envy
+  type: quality
+  label: Envy
+  tamil: அழுக்காறு
+  polarity: vice
+  feeling: true
+  definition: Pain at another’s good fortune, which needs no enemy to ruin the envious man and which drives the goddess of fortune from him.
+  boundary: Not quality:covetousness, which wants the other's goods for oneself; envy only cannot bear that he has them. Not quality:jealousy-of-affection, the lover's fear of a rival.
+  synonyms: [jealousy of success, resenting others, begrudging, green with envy, comparing yourself with others, can't be happy for others]
+  evidence: [161, 165, 167, 170]
+
+- id: quality:covetousness
+  type: quality
+  label: Covetousness
+  tamil: வெஃகுதல்
+  polarity: vice
+  definition: Reaching for wealth that belongs to another, which ruins the family, undoes a subtle mind and turns bitter in the enjoyment.
+  boundary: Not quality:envy, which is pain at his having it. Not quality:craving, the hunger for anything at all. Not quality:fraud, which acts on the wanting. Covetousness looks at what is in a neighbour's hands.
+  synonyms: [greed for what others have, wanting someone else's money, grabbing, acquisitiveness, eyeing someone's property, greed]
+  evidence: [171, 174, 175, 177]
+
+- id: quality:fraud
+  type: quality
+  label: Fraud
+  tamil: களவு
+  polarity: vice
+  definition: Scheming to cheat others of their property, a sin even as a thought, whose gains perish however fast they seem to grow.
+  boundary: Not quality:covetousness, the wanting before any act. Not quality:hypocrisy, which fakes holiness rather than takes goods. Not quality:falsehood, which is wrong speech with or without gain.
+  synonyms: [cheating, stealing, scamming, theft, swindling, ripping people off]
+  evidence: [282, 283, 288, 290]
+
+- id: quality:hypocrisy
+  type: quality
+  label: Hypocrisy
+  tamil: கூடா ஒழுக்கம்
+  polarity: vice
+  definition: Wearing the look of holiness over an unrenounced heart, like a cow in a tiger's skin, a pretence at which the hypocrite's own body laughs.
+  boundary: Not quality:fraud, which takes goods by cunning; the hypocrite lies with his whole appearance. Not quality:false-friendship, where an enemy pretends to be a friend rather than a saint.
+  synonyms: [being fake, pretending to be holy, virtue signalling, double standards, phoney piety, not practising what you preach]
+  evidence: [273, 274, 276, 277]
+
+# Qualities: speech
+
+- id: quality:kind-speech
+  type: quality
+  label: Kind Speech
+  tamil: இன்சொல்
+  polarity: virtue
+  definition: Pleasant words from a sincere heart with a gracious look, rated above a generous gift and set beside harsh words as ripe fruit beside unripe.
+  boundary: Not quality:eloquence, which is power to move hearers; kind speech is judged by tenderness, not force. Not quality:restraint-of-speech, which keeps hurtful words in, where this puts sweet ones out.
+  synonyms: [gentle words, being nice to people, speaking kindly, saying something kind, encouraging words, warm tone]
+  evidence: [91, 92, 99, 100]
+
+- id: quality:harsh-speech
+  type: quality
+  label: Harsh Speech
+  tamil: வன்சொல்
+  polarity: vice
+  definition: Hard and wounding words said to a person’s face, which is choosing the unripe fruit, and which bring even a ruler’s prosperity to an end.
+  boundary: Not quality:slander, which is said behind the back. The wise may sometimes speak hard words (197), so the fault is needless harshness. A ruler’s harsh rule as a whole is quality:severity.
+  synonyms: [rude remarks, blunt and hurtful, snapping at people, verbal abuse, mean comments, sharp tongue]
+  evidence: [99, 100, 566]
+
+- id: quality:restraint-of-speech
+  type: quality
+  label: Restraint of Speech
+  tamil: நாகாக்க
+  polarity: virtue
+  definition: Guarding the tongue above all else, since a single wounding word cancels a person's virtue and the burn of the tongue never heals.
+  boundary: Not quality:self-control, the wider restraint of the whole person. Not quality:vain-speech, which condemns empty words rather than wounding ones. Not quality:discretion, which guards information rather than feelings.
+  synonyms: [holding your tongue, thinking before you speak, keeping quiet when angry, not saying hurtful things, biting your tongue, minding your words]
+  evidence: [127, 128, 129, 642]
+
+- id: quality:vain-speech
+  type: quality
+  label: Useless Words
+  tamil: பயனில சொல்
+  polarity: vice
+  definition: Words that bring no profit to anyone, which reveal a man's own emptiness and make him chaff among men.
+  boundary: Not quality:slander, which harms a particular person; useless words harm only by being empty. Not quality:falsehood, since useless words may still be true.
+  synonyms: [idle chatter, small talk, talking nonsense, rambling, waffling, pointless talk, vain speech]
+  evidence: [191, 193, 196, 200]
+
+- id: quality:slander
+  type: quality
+  label: Slander
+  tamil: புறங்கூறி
+  polarity: vice
+  definition: Speaking ill of someone behind his back, worse than open wrongdoing because it smiles in front and vilifies behind.
+  boundary: Not quality:harsh-speech, which is said to one's face. Not quality:false-friendship, where the whole relationship is a trap; the fault of slander lies in the act of speech. Not theme:gossip, the village talk of Part 3.
+  synonyms: [backbiting, gossiping about someone, trash talking, bad-mouthing, talking behind someone's back, spreading rumours]
+  evidence: [182, 183, 184, 185]
+
+- id: quality:truthfulness
+  type: quality
+  label: Truthfulness
+  tamil: வாய்மை
+  polarity: virtue
+  definition: Speech free of any taint of harm, so that even an untruth bringing pure good counts as truth, and the highest thing the poet has seen in this world.
+  boundary: Not quality:falsehood, its opposite, where the wrong of the lie is the point. Not quality:purity-of-heart; truthfulness lives in what is said, though 298 takes it as the test of a pure heart.
+  synonyms: [honesty, telling the truth, being straight with people, integrity in speech, not lying, being truthful]
+  evidence: [291, 292, 297, 300]
+
+- id: quality:falsehood
+  type: quality
+  label: Falsehood
+  tamil: பொய்
+  polarity: vice
+  definition: Telling lies, which burns one's own conscience, is worse than dying, and adds one more wrong to any other.
+  boundary: Not quality:fraud, which takes another's goods by trickery. Not quality:hypocrisy, which is a false life rather than a false statement. Its opposite is quality:truthfulness.
+  synonyms: [lying, white lies, perjury, false statements, making things up, dishonesty]
+  evidence: [183, 293, 294, 928]
+
+- id: quality:eloquence
+  type: quality
+  label: Eloquence
+  tamil: சொல்வன்மை
+  polarity: virtue
+  definition: Power in speech that binds friends, charms enemies and cannot be answered, used in few and well chosen words.
+  boundary: Not quality:kind-speech, judged by tenderness. Not quality:tact, the fitting of words to hearers. Not theme:speech, the general subject of the word.
+  synonyms: [persuasive speaking, being articulate, way with words, public speaking skill, convincing people, communication skills]
+  evidence: [643, 645, 648, 649]
+
+- id: quality:tact
+  type: quality
+  label: Tact
+  tamil: அவை அறிதல்
+  polarity: virtue
+  definition: Weighing the hearers and the occasion before speaking, so that wisdom goes to the wise and fools are answered at their own level.
+  boundary: Not quality:reading-intentions, which reads one person's mind; tact fits speech to an audience. Not quality:eloquence, force of speech. Not quality:worldly-wisdom, the general sense of how the world goes.
+  synonyms: [reading the room, knowing your audience, diplomacy, saying the right thing, choosing your words, timing your words]
+  evidence: [644, 711, 712, 714]
+
+- id: quality:audience-courage
+  type: quality
+  label: Courage Before an Audience
+  tamil: அவை அஞ்சாமை
+  polarity: virtue
+  definition: Facing a learned assembly without trembling, a rarer thing than courage in battle, without which learning is a sword in a eunuch's hand.
+  boundary: Not quality:eloquence, which is skill; this is nerve. Not quality:tact, which studies the audience. Not quality:courage, which is fearlessness in general.
+  synonyms: [stage fright, confidence in public speaking, nerves before a talk, speaking up in meetings, presentation anxiety, fear of public speaking]
+  evidence: [723, 725, 727, 730]
+
+- id: quality:discretion
+  type: quality
+  label: Discretion
+  polarity: virtue
+  definition: Keeping one's plans and pleasures and other people's secrets to oneself until the work is done, a failure of which ruins the shallow and marks the base.
+  boundary: Not quality:restraint-of-speech, which keeps back hurtful words; discretion keeps back information. Not quality:hypocrisy, which hides a bad heart rather than a plan.
+  synonyms: [keeping secrets, not oversharing, confidentiality, keeping your plans quiet, playing your cards close, being tight-lipped]
+  evidence: [440, 663, 847, 1076]
+
+- id: quality:frank-counsel
+  type: quality
+  label: Frank Counsel
+  polarity: virtue
+  definition: Telling those in one’s care what is right though they resist, the minister’s duty to a foolish ruler and the true friend’s purpose.
+  boundary: Not quality:openness-to-rebuke, which is the hearer's part; this is the speaker's. Not quality:harsh-speech, which wounds for no purpose.
+  synonyms: [speaking truth to power, tough love, honest feedback, telling it like it is, calling someone out, constructive criticism]
+  evidence: [638, 784, 787]
+
+- id: quality:openness-to-rebuke
+  type: quality
+  label: Openness to Rebuke
+  tamil: சொற்பொறுக்கும்
+  polarity: virtue
+  definition: Keeping close those who can reprove one and bearing words bitter to the ear, without which a ruler falls even with no enemy at all.
+  boundary: Not quality:frank-counsel, which is the speaker's part. Not quality:forgiveness, which bears injury; this accepts correction as a benefit. Not quality:self-examination, where the fault is found by oneself.
+  synonyms: [taking criticism well, accepting feedback, listening to people who disagree, being coachable, being open to correction, hearing hard truths]
+  evidence: [389, 447, 448]
+
+# Qualities: mind and judgment
+
+- id: quality:understanding
+  type: quality
+  label: Understanding
+  tamil: அறிவு
+  polarity: virtue
+  definition: Clear practical intelligence that curbs the senses, sifts the true from the false in every saying, and guards a man like a fortress.
+  boundary: Not theme:learning, which is what is studied; one can be learned without this (834). Not quality:foresight, which is only the seeing ahead. Not quality:realisation-of-truth, which is spiritual insight.
+  synonyms: [wisdom, good sense, intelligence, clear thinking, good judgment, common sense]
+  evidence: [421, 422, 423, 430]
+
+- id: quality:foresight
+  type: quality
+  label: Foresight
+  polarity: virtue
+  definition: Knowing what is coming and being armed for it beforehand, set against the fool's rush into what ought to be feared.
+  boundary: Not quality:vigilance, watchfulness that does not slacken in the present; foresight looks to what will happen. Not quality:deliberation, which weighs one particular decision before acting.
+  synonyms: [planning ahead, seeing it coming, anticipating problems, thinking ahead, being prepared, long-term thinking]
+  evidence: [427, 428, 429, 435]
+
+- id: quality:worldly-wisdom
+  type: quality
+  label: Worldly Wisdom
+  tamil: உலகத்தோடு ஒட்ட ஒழுகல்
+  polarity: virtue
+  definition: Moving in step with the ways of the world, a part of wisdom without which book learning still leaves a man a fool.
+  boundary: Not quality:good-conduct, which is morally fixed; this is the sense of living as the world lives. Not quality:tact, which suits one speech to one audience.
+  synonyms: [street smarts, knowing how the world works, fitting in, social sense, being practical, adapting to people around you]
+  evidence: [140, 426, 637]
+
+- id: quality:self-examination
+  type: quality
+  label: Self-Examination
+  tamil: குற்றங்கடிதல்
+  polarity: virtue
+  definition: Looking at one's own faults as one looks at others', treating a small failing as huge, and correcting oneself before judging anyone else.
+  boundary: Not quality:sense-of-shame, the feeling that recoils from a wrong; this is the deliberate search for one's own faults. Not quality:openness-to-rebuke, where the correction comes from another.
+  synonyms: [self-reflection, owning your mistakes, looking in the mirror, working on yourself, self-awareness, self-improvement]
+  evidence: [190, 433, 434, 436]
+
+- id: quality:deliberation
+  type: quality
+  label: Deliberation
+  tamil: தெரிந்து செயல்வகை
+  polarity: virtue
+  definition: Reckoning cost, gain and method with trusted men before undertaking anything, since a fool is one who acts first and thinks afterwards.
+  boundary: Not quality:resolve, which begins once the decision is made. Not quality:knowing-ones-strength, which weighs only power against power. Not quality:foresight, the general seeing ahead.
+  synonyms: [thinking it through, weighing pros and cons, looking before you leap, doing your homework, careful planning, not rushing into things]
+  evidence: [461, 462, 467]
+
+- id: quality:knowing-ones-strength
+  type: quality
+  label: Knowing One's Strength
+  tamil: வலியறிதல்
+  polarity: virtue
+  definition: Weighing the task, one's own force and the force of enemy and allies before acting, and not overstepping that limit.
+  boundary: Not quality:moderation, which measures spending and food, as in 477-480 of the same chapter; this measures power. Not quality:arrogance, the vice that overestimates it.
+  synonyms: [knowing your limits, not overreaching, realistic self-assessment, picking your battles, not biting off more than you can chew, sizing up the opposition]
+  evidence: [471, 473, 474, 476]
+
+- id: quality:vigilance
+  type: quality
+  label: Vigilance
+  tamil: பொச்சாவாமை
+  polarity: virtue
+  definition: Never relaxing one's guard or forgetting one's purpose, the one thing that puts everything else within reach.
+  boundary: Not quality:foresight, which looks ahead; vigilance is unbroken attention now. Its opposite is quality:complacency.
+  synonyms: [staying alert, keeping your guard up, being careful, staying focused, paying attention, not slacking]
+  evidence: [536, 537, 540]
+
+- id: quality:complacency
+  type: quality
+  label: Complacency
+  tamil: பொச்சாப்பு
+  polarity: vice
+  definition: Forgetful unguardedness born of elation at success, worse than rage, which kills glory as poverty kills the understanding.
+  boundary: Not quality:sloth, which avoids effort; complacency has stopped watching because things are going well. Not quality:arrogance, which looks down on others. Its opposite is quality:vigilance.
+  synonyms: [overconfidence, resting on your laurels, getting careless, taking things for granted, dropping your guard, getting too comfortable]
+  evidence: [531, 532, 535, 539]
+
+- id: quality:folly
+  type: quality
+  label: Folly
+  tamil: பேதைமை
+  polarity: vice
+  definition: Throwing away what profits and holding to what harms, and inclining to what is unbecoming, a fault that can sit with great learning.
+  boundary: Not quality:ignorance, lack of study; the fool may be learned (834). Not quality:conceited-folly, which adds the belief that one is wise. Not the innocent girl of Part 3, called பேதை without any blame.
+  synonyms: [stupidity, foolishness, bad decisions, acting against your own interest, being an idiot, self-sabotage]
+  evidence: [831, 832, 834, 836]
+
+- id: quality:conceited-folly
+  type: quality
+  label: Conceited Folly
+  tamil: புல்லறிவாண்மை
+  polarity: vice
+  definition: The shallow man's belief that he is wise, which refuses advice, pretends to what it lacks and brings on troubles no enemy could devise.
+  boundary: Not quality:folly, which need not think well of itself. Not quality:arrogance, which may have real gifts to be proud of. The test is 844, the conceit that says I am wise.
+  synonyms: [know-it-all, overestimating yourself, refusing advice, being opinionated, stubbornly wrong, thinking you know best]
+  evidence: [844, 845, 848, 849]
+
+- id: quality:ignorance
+  type: quality
+  label: Ignorance
+  tamil: கல்லாமை
+  polarity: vice
+  definition: Never having studied, which leaves a man a wasteland, shamed before the wise, and no better than beasts beside the learned.
+  boundary: Not quality:folly, a failure of judgment; the fault here is the lack of instruction. Not theme:learning, the positive subject.
+  synonyms: [lack of education, not reading, being uneducated, refusing to learn, illiteracy, knowing nothing]
+  evidence: [401, 404, 406, 410]
+
+- id: quality:reading-intentions
+  type: quality
+  label: Reading Intentions
+  tamil: குறிப்பறிதல்
+  polarity: virtue
+  definition: Divining from face and eye what is in another's heart before it is spoken, a gift rated as godlike in a man at one's side.
+  boundary: Not theme:signs-of-love, where the same Tamil word in Part 3 is the private language of lovers. Not quality:tact, which adjusts one's own speech to an audience.
+  synonyms: [reading people, reading body language, picking up on unspoken feelings, emotional intelligence, intuition about people, seeing through someone]
+  evidence: [701, 703, 706, 709]
+
+- id: quality:arrogance
+  type: quality
+  label: Arrogance
+  tamil: செருக்கு
+  polarity: vice
+  definition: Haughty self-regard and the pride of I and mine, the admiring of oneself that the wise cut away.
+  boundary: Not quality:conceited-folly, a fool's pride in his wisdom. Not quality:littleness, whose insolence shows a small nature. Not quality:honour, which is dignity rather than pride. The செருக்கு of chapter 78 is battle-pride and belongs to quality:valour.
+  synonyms: [big ego, pride, being full of yourself, vanity, thinking you are better than others, showing off]
+  evidence: [346, 431, 439]
+
+# Qualities: effort and steadiness
+
+- id: quality:energy
+  type: quality
+  label: Energy
+  tamil: ஊக்கம்
+  polarity: virtue
+  definition: Inward spirit and drive, the one real possession, which measures a man's fortunes as the water measures the flower.
+  boundary: Not quality:exertion, labour actually done; energy is the spirit before and behind the work. Not quality:aspiration, which is how high one aims.
+  synonyms: [drive, enthusiasm, motivation, get-up-and-go, high spirits, zeal]
+  evidence: [591, 592, 595, 600]
+
+- id: quality:sloth
+  type: quality
+  label: Sloth
+  tamil: மடி
+  polarity: vice
+  definition: Laziness with its companions, procrastination, forgetfulness and sleep, which puts out the light of a family and brings it under its foes.
+  boundary: Not quality:complacency, which has stopped watching rather than stopped working. Sloth is the refusal of effort, and its opposite is quality:exertion.
+  synonyms: [laziness, procrastinating, can't be bothered, oversleeping, couch potato, idleness]
+  evidence: [601, 603, 605, 608]
+
+- id: quality:exertion
+  type: quality
+  label: Exertion
+  tamil: ஆள்வினை
+  polarity: virtue
+  definition: Sustained personal labour that finishes what it starts, the mother of prosperity, which pays its wages even when god and fate stand against it.
+  boundary: Not quality:energy, the spirit behind it. Not quality:resolve, firmness of will at the point of action. Exertion asks whether the work is being done; it is set against theme:destiny in 619-620.
+  synonyms: [hard work, effort, putting in the hours, persistence, grit, elbow grease]
+  evidence: [611, 612, 616, 619]
+
+- id: quality:resolve
+  type: quality
+  label: Resolve
+  tamil: வினைத்திட்பம்
+  polarity: virtue
+  definition: Firmness of will in carrying a decision through, the only real measure of achievement, which does not waver once the matter is settled.
+  boundary: Not quality:deliberation, which comes first. Not quality:exertion, the labour itself. Not quality:fortitude, which is firmness when misfortune arrives rather than in carrying out a purpose.
+  synonyms: [determination, following through, sticking to your decision, commitment, strength of will, seeing it through]
+  evidence: [661, 664, 666, 668]
+
+- id: quality:fortitude
+  type: quality
+  label: Fortitude
+  tamil: இடுக்கண் அழியாமை
+  polarity: virtue
+  definition: Keeping heart when trouble comes, meeting it with a smile and taking it as part of the law of things, so that the troubles themselves give way.
+  boundary: Not quality:equanimity, the even keel through good and ill alike; fortitude is the stand once ill has struck. Not quality:resolve, firmness in a chosen purpose.
+  synonyms: [resilience, staying strong, bouncing back, keeping your chin up, pulling yourself together, not falling apart]
+  evidence: [621, 623, 625, 627]
+
+- id: quality:equanimity
+  type: quality
+  label: Equanimity
+  polarity: virtue
+  definition: An even temper that neither swells at good fortune nor sinks at bad, because the wise take both as they come.
+  boundary: Not quality:fortitude, which stands up to a present trouble. Not quality:desirelessness, the end of wanting; equanimity is evenness of mood.
+  synonyms: [staying calm, being even-keeled, not getting carried away, inner balance, unflappable, taking things in your stride]
+  evidence: [379, 425, 626, 629]
+
+- id: quality:aspiration
+  type: quality
+  label: Aspiration
+  tamil: உயர்வுள்ளல்
+  polarity: virtue
+  definition: Setting one's aims high, so that even failure keeps its glory, which the Kural makes a test of greatness.
+  boundary: Not quality:energy, the spirit one brings. Not quality:covetousness or quality:craving, which want to have; aspiration wants to achieve what is noble.
+  synonyms: [ambition, aiming high, big goals, dreaming big, striving for excellence, high standards]
+  evidence: [596, 670, 772, 971]
+
+- id: quality:courage
+  type: quality
+  label: Courage
+  tamil: அஞ்சாமை
+  polarity: virtue
+  definition: Fearlessness as one of a ruler's four essentials, which does not extend to failing to fear what should be feared (428).
+  boundary: Not quality:valour, the soldier's contempt of death in actual combat. Not quality:audience-courage, nerve before an assembly only. Its opposite is quality:cowardice.
+  synonyms: [bravery, being brave, standing your ground, nerve, facing your fears, guts]
+  evidence: [382, 761, 863]
+
+- id: quality:valour
+  type: quality
+  label: Valour
+  tamil: மறம்
+  polarity: virtue
+  definition: The warrior's fierce courage that delights in wounds and gives life for fame, and that is sharpened, says 773, by generosity to the fallen.
+  boundary: Not quality:courage, the wider fearlessness; this is courage in battle. Not quality:loyalty, which is devotion to one's chief.
+  synonyms: [heroism, battlefield courage, military bravery, fighting spirit, daring in combat, dying for a cause]
+  evidence: [766, 773, 776, 777]
+
+- id: quality:cowardice
+  type: quality
+  label: Cowardice
+  tamil: அச்சம்
+  polarity: vice
+  definition: Fear that fails a person at the moment of need, which makes fortresses useless and is a joy to his enemies.
+  boundary: Not quality:fear-of-sin, a fear the Kural commends. Fear of an assembly in particular belongs to quality:audience-courage.
+  synonyms: [being scared, losing your nerve, running away from things, chickening out, timidity, weakness]
+  evidence: [534, 726, 869]
+
+# Qualities: rule and service
+
+- id: quality:impartiality
+  type: quality
+  label: Impartiality
+  tamil: நடுவு நிலைமை
+  polarity: virtue
+  definition: Giving each his due, friend or foe, and inclining to neither side in one's own mind, like the straight beam of a balance.
+  boundary: Not quality:just-rule, the same evenness exercised by a ruler through his sceptre. Not quality:righteousness, of which this is the narrower refusal to lean. All of chapter 12 belongs here.
+  synonyms: [fairness, being even-handed, no favouritism, treating people equally, objectivity, unbiased judgment]
+  evidence: [111, 113, 118, 119]
+
+- id: quality:just-rule
+  type: quality
+  label: Just Rule
+  tamil: செங்கோன்மை
+  polarity: virtue
+  definition: A sceptre that leans to neither side, protecting the people and punishing wrong after careful inquiry, on which rains and all learning depend.
+  boundary: Not quality:impartiality, the same evenness in a private person. Not theme:kingship, the wider subject. Its opposite is quality:tyranny.
+  synonyms: [good government, rule of law, fair leadership, justice, good governance, ruling fairly]
+  evidence: [541, 544, 546, 547]
+
+- id: quality:tyranny
+  type: quality
+  label: Tyranny
+  tamil: கொடுங்கோன்மை
+  polarity: vice
+  definition: A ruler's oppression of his people and abuse of office, called worse than murder and like highway robbery, which the tears of the oppressed wear away.
+  boundary: Not quality:severity, terror of manner and punishment; tyranny is injustice and plunder itself. Not quality:cruelty, the private vice.
+  synonyms: [oppression, dictatorship, abuse of power, corrupt government, authoritarian rule, exploiting people]
+  evidence: [551, 552, 554, 555]
+
+- id: quality:severity
+  type: quality
+  label: Severity
+  tamil: வெருவந்த
+  polarity: vice
+  definition: Ruling by fear with excessive punishment and harsh words, which files away the iron of power; the rod should be raised sharply but brought down gently (562).
+  boundary: Not quality:tyranny, which is injustice; severity is excess in a ruler's manner and penalties. Not quality:harsh-speech, any person's wounding words.
+  synonyms: [being a harsh boss, ruling by fear, excessive punishment, intimidation, disproportionate discipline, heavy-handedness]
+  evidence: [561, 562, 563, 567]
+
+- id: quality:accessibility
+  type: quality
+  label: Accessibility
+  tamil: காட்சிக் கெளியன்
+  polarity: virtue
+  definition: A ruler’s being easy to approach and see, the mark of a good one, whose lack ruins him even with no enemy.
+  boundary: Not quality:courtesy, general good manners; this is a leader's openness to those he rules. Not quality:severity, though 565 shows the two faults together.
+  synonyms: [approachable leader, open-door policy, being available, easy to talk to, a boss you can talk to, hearing people out]
+  evidence: [386, 548, 565]
+
+- id: quality:loyalty
+  type: quality
+  label: Loyalty
+  polarity: virtue
+  definition: Standing by one's master at any cost, as the envoy who does his duty under threat of death or the soldier who would die to bring tears to his chief's eyes.
+  boundary: Not quality:valour, fierce courage in battle. Not quality:intimacy, constancy between old friends. Its opposite is quality:treachery.
+  synonyms: [being faithful to your boss, standing by someone, dedication to a leader, commitment to the team, allegiance, devotion to duty]
+  evidence: [690, 771, 780]
+
+- id: quality:purity-of-action
+  type: quality
+  label: Purity of Action
+  tamil: வினைத் தூய்மை
+  polarity: virtue
+  definition: Using only clean means in any undertaking, refusing what good men condemn even to save one's mother from starving, since gain by guile is water in an unbaked pot.
+  boundary: Not quality:good-conduct, the general tenor of a life; this tests what is done in pursuit of a particular end. Not quality:purity-of-heart, the state of the mind.
+  synonyms: [clean hands, ethical business, doing things the right way, no shortcuts, not compromising your principles, honest dealing]
+  evidence: [652, 656, 658, 660]
+
+- id: quality:reverence-for-the-great
+  type: quality
+  label: Reverence for the Great
+  tamil: பெரியாரைப் பிழையாமை
+  polarity: virtue
+  definition: Taking care never to slight men of power or holy strength, whose displeasure destroys even rulers and gods.
+  boundary: Not quality:devotion, which is worship of the Lord. Not quality:humility, a general lowering of oneself; this is prudent respect for another's power.
+  synonyms: [respect for elders, not crossing powerful people, respect for authority, knowing your place, showing deference, not provoking important people]
+  evidence: [891, 892, 894, 899]
+
+# Qualities: kin and friends
+
+- id: quality:cherishing-kin
+  type: quality
+  label: Cherishing Kin
+  tamil: சுற்றந் தழால்
+  polarity: virtue
+  definition: Keeping one's relations close by shared wealth, sweet words and freedom from anger, which the Kural calls the very use of prosperity.
+  boundary: Not role:kinsman, the person. Not theme:family-line, the honour of the house through the generations. Not quality:liberality, the open hand towards all comers.
+  synonyms: [being close to your relatives, family ties, looking after relatives, family loyalty, staying in touch with family, keeping the family together]
+  evidence: [522, 524, 525, 527]
+
+- id: quality:intimacy
+  type: quality
+  label: Intimacy
+  tamil: பழைமை
+  polarity: virtue
+  definition: The ease of long friendship, taking a friend’s liberties and even real damage in good part, out of loving-kindness that does not change.
+  boundary: Not theme:friendship, the general subject. Not quality:forgiveness, which bears any injury; here the ground is the old bond. Not quality:loyalty, which is owed to a master.
+  synonyms: [old friends, close friendship, being comfortable with someone, lifelong friendship, friends who can say anything, best friends]
+  evidence: [801, 802, 804, 806]
+
+- id: quality:fair-weather-friendship
+  type: quality
+  label: Fair-Weather Friendship
+  tamil: தீ நட்பு
+  polarity: vice
+  definition: Friendship kept only for what it yields, fawning when useful and leaving when not, compared with prostitutes and thieves and a horse that throws its rider in battle.
+  boundary: Not quality:false-friendship, where an enemy pretends from the start; this friend is merely worthless and deserts. Not quality:treachery, which actively harms from within.
+  synonyms: [using people, fake friends, friends with an agenda, users, disloyal friends, friends who only call when they need something]
+  evidence: [812, 813, 814, 815]
+
+- id: quality:false-friendship
+  type: quality
+  label: False Friendship
+  tamil: கூடா நட்பு
+  polarity: vice
+  definition: An enemy's show of friendship, smiling, bending and weeping while hate waits in the heart, a weapon hidden in joined hands.
+  boundary: Not quality:fair-weather-friendship, which is shallow rather than hostile. Not quality:treachery, the enemy inside one's own house. Not quality:slander, a single act of speech.
+  synonyms: [frenemy, someone secretly against you, two-faced person, backstabber, wolf in sheep's clothing, pretending to be a friend]
+  evidence: [821, 824, 827, 828]
+
+- id: quality:treachery
+  type: quality
+  label: Treachery
+  tamil: உட்பகை
+  polarity: vice
+  definition: Enmity inside one’s own house or circle, which splits what looks whole and strikes at the moment of weakness.
+  boundary: Not quality:false-friendship, whose enemy comes from outside and pretends; here the traitor already belongs. Not quality:enmity, open hatred between foes.
+  synonyms: [betrayal, stabbed in the back, family feud, a traitor, internal sabotage, inside job]
+  evidence: [883, 885, 887, 889]
+
+# Qualities: character and standing
+
+- id: quality:greatness
+  type: quality
+  label: Greatness
+  tamil: பெருமை
+  polarity: virtue
+  definition: Doing what others cannot, joined with modesty, humility towards all and the screening of others' failings.
+  boundary: Not quality:worth, the full moral character of chapter 99. Not theme:glory, which is renown. Not quality:aspiration, the aim alone. Its opposite is quality:littleness.
+  synonyms: [nobility of spirit, being big about things, magnanimity, class, rising above, high-mindedness]
+  evidence: [975, 978, 979, 980]
+
+- id: quality:littleness
+  type: quality
+  label: Littleness
+  tamil: சிறுமை
+  polarity: vice
+  definition: A small nature that cannot honour the great, turns insolent in good fortune, boasts of its merits and talks scandal.
+  boundary: Not quality:baseness, the complete lack of conscience; littleness is pettiness. Not quality:arrogance, which may be proud of something real.
+  synonyms: [pettiness, small-mindedness, being petty, mean-spirited, narrow-minded, bragging]
+  evidence: [976, 977, 978, 980]
+
+- id: quality:baseness
+  type: quality
+  label: Baseness
+  tamil: கயமை
+  polarity: vice
+  definition: The degraded state of those who look human but have no conscience, moved only by fear and appetite, who give only under blows.
+  boundary: Not quality:littleness, which is merely petty. Not quality:folly, which is a failure of judgment. Not quality:servility, one of the things the base do (1080).
+  synonyms: [being a lowlife, no conscience, moral degeneracy, scumbag, shamelessness, rotten character]
+  evidence: [1071, 1072, 1075, 1078]
+
+- id: quality:worth
+  type: quality
+  label: Worth
+  tamil: சான்றாண்மை
+  polarity: virtue
+  definition: Complete moral character, resting on five pillars of loving-kindness, shame, helpfulness, considerateness and truthfulness, whose loss the earth itself could not bear.
+  boundary: Not quality:greatness, which is measured against littleness. Not quality:righteousness, the good itself; worth is the settled character of one who has become reliably good.
+  synonyms: [good character, moral integrity, a person of substance, strength of character, decency, principled person]
+  evidence: [981, 983, 986, 989]
+
+- id: quality:courtesy
+  type: quality
+  label: Courtesy
+  tamil: பண்புடைமை
+  polarity: virtue
+  definition: Good manners shown to everyone, friend or foe, never discourteous even in jest, by which the world goes smoothly.
+  boundary: Not quality:kind-speech, which is the words alone. Not quality:considerateness, which indulges a person's faults. Not quality:humility, the lowering of oneself.
+  synonyms: [good manners, politeness, being civil, respect for everyone, treating people decently, etiquette]
+  evidence: [991, 992, 995, 998]
+
+- id: quality:considerateness
+  type: quality
+  label: Considerateness
+  tamil: கண்ணோட்டம்
+  polarity: virtue
+  definition: The kindly eye that indulges those before it and puts up with their faults, without which eyes are mere sores, and which must not override duty.
+  boundary: Not quality:compassion, which is for all life; this is a grace between people face to face. Not quality:forgiveness, which bears injury; this gives way out of regard. Not quality:courtesy, which is manners.
+  synonyms: [thoughtfulness, being understanding, making allowances, going easy on people, tolerance, seeing the other person's side]
+  evidence: [571, 574, 578, 579]
+
+- id: quality:noble-birth
+  type: quality
+  label: Nobility of Birth
+  tamil: குடிமை
+  polarity: virtue
+  definition: The good conduct, truthfulness, sense of shame and open hand expected of those born in a good family, whose smallest fault shows like the spot on the moon.
+  boundary: Not theme:family-line, the house and its fortunes; this is the character that birth is expected to bring. Not quality:worth, which owes nothing to birth.
+  synonyms: [good upbringing, coming from a good family, family values, family background, well brought up, respectable background]
+  evidence: [951, 952, 956, 957]
+
+- id: quality:honour
+  type: quality
+  label: Honour
+  tamil: மானம்
+  polarity: virtue
+  definition: Refusal to sink below oneself, even to preserve one's life, so that those who lose it are like hair shaven from the head.
+  boundary: Not quality:sense-of-shame, which feels that a deed is wrong; honour guards one's own standing. Not theme:glory, which is what others say. Not quality:arrogance, which is pride without the cost.
+  synonyms: [self-respect, dignity, having your pride, standing up for yourself, keeping your head high, not selling out]
+  evidence: [961, 964, 968, 969]
+
+- id: quality:sense-of-shame
+  type: quality
+  label: Sense of Shame
+  tamil: நாணுடைமை
+  polarity: virtue
+  definition: Shrinking from what is unworthy, the mark that sets one person above another and is held dearer than life, quite apart from the shyness of good women (1011).
+  boundary: Not quality:bashfulness, a woman's shrinking in love, as 1011 itself says. Not quality:honour, which guards standing; shame recoils from the deed. Not quality:self-examination, the deliberate search for faults.
+  synonyms: [conscience, moral shame, being ashamed of wrongdoing, embarrassment over bad behaviour, moral sensitivity, knowing when to feel bad]
+  evidence: [1011, 1013, 1017, 1020]
+
+- id: quality:servility
+  type: quality
+  label: Servility
+  polarity: vice
+  definition: Fawning on those who despise one for the sake of a living, counted worse than death, which poverty can force even on the well born.
+  boundary: Not quality:humility, which bends without losing dignity. Not quality:refusal-to-beg, its opposite, which is about asking at all.
+  synonyms: [sucking up, being a doormat, grovelling, flattering the boss, bootlicking, kissing up]
+  evidence: [966, 967, 1044, 1080]
+
+- id: quality:refusal-to-beg
+  type: quality
+  label: Refusal to Beg
+  tamil: இரவச்சம்
+  polarity: virtue
+  definition: Dread of asking for anything, preferring thin gruel earned by one's own hands, a dignity the whole universe is too small to hold.
+  boundary: Not theme:begging, the subject of chapter 106, which allows asking of generous givers. Not quality:honour, which is wider than the matter of asking.
+  synonyms: [self-reliance, hating to ask for help, financial independence, standing on your own feet, too proud to ask, earning your own way]
+  evidence: [1061, 1064, 1065, 1066]
+
+# Qualities: appetites
+
+- id: quality:chastity
+  type: quality
+  label: Chastity
+  tamil: கற்பு
+  polarity: virtue
+  definition: A woman's firmness of fidelity, guarded from within rather than by confinement, which the Kural calls her greatest strength.
+  boundary: Not quality:wifely-virtue, the wider care of home and husband. Not quality:adultery, the man's offence of chapter 15. Not quality:bashfulness, the shyness of Part 3.
+  synonyms: [marital fidelity, faithful to your husband, faithfulness, sexual fidelity, loyalty in marriage, staying true]
+  evidence: [54, 57, 974]
+
+- id: quality:wifely-virtue
+  type: quality
+  label: Wifely Virtue
+  tamil: மனைமாட்சி
+  polarity: virtue
+  definition: The excellence of a good wife, spending within her husband's means and tending him and their name, without which all other blessings come to nothing.
+  boundary: Not quality:chastity, her fidelity in particular. Not role:wife, the position itself.
+  synonyms: [being a good wife, running the home well, a good partner, homemaking, supporting your husband, household management]
+  evidence: [51, 52, 53, 56]
+
+- id: quality:adultery
+  type: quality
+  label: Adultery
+  tamil: பிறன்மனை
+  polarity: vice
+  definition: Desiring or going to another man's wife, which the Kural calls the worst folly, bringing hatred, sin, fear and shame that never leave the adulterer.
+  boundary: Not quality:lust, the wider vice that includes going to prostitutes. Not quality:covetousness, whose object is goods; the object here is a neighbour’s wife.
+  synonyms: [having an affair, cheating on your spouse, infidelity, sleeping with a married woman, extramarital affair, being unfaithful]
+  evidence: [141, 143, 146, 148]
+
+- id: quality:lust
+  type: quality
+  label: Lust
+  polarity: vice
+  definition: Bodily appetite as a vice of unguarded men, whether it makes a ruler its slave or drowns fools in the arms of prostitutes.
+  boundary: Not quality:passion, the same Tamil word காமம் in Part 3, where desire is not condemned. Not quality:adultery, which is specifically another man's wife.
+  synonyms: [sexual desire, sleeping around, paying for sex, sex addiction, promiscuity, chasing women]
+  evidence: [866, 916, 919]
+
+- id: quality:submission-to-wife
+  type: quality
+  label: Submission to One's Wife
+  tamil: பெண்வழிச் சேறல்
+  polarity: vice
+  definition: A man's abject doting on or fear of his wife, which the Kural says costs him esteem, duty to friends and great deeds.
+  boundary: Not quality:affection or quality:passion, which are praised; the fault here is giving up one's judgment and duties. Not role:husband, the position.
+  synonyms: [henpecked husband, wife makes all the decisions, under your wife's thumb, afraid of your wife, pushover husband, whipped]
+  evidence: [901, 903, 905, 908]
+
+- id: quality:drunkenness
+  type: quality
+  label: Drunkenness
+  tamil: கட்காதல்
+  polarity: vice
+  definition: Addiction to toddy, which forfeits honour and even a mother's regard and makes the drinker as one asleep or dead.
+  boundary: Not image:wine, where Part 3 uses drink only as a comparison for desire. Not quality:gambling, the sister vice of chapter 94.
+  synonyms: [alcoholism, drinking too much, drinking problem, getting drunk, being a drunk, substance abuse]
+  evidence: [921, 923, 926, 930]
+
+- id: quality:gambling
+  type: quality
+  label: Gambling
+  tamil: சூது
+  polarity: vice
+  definition: The passion for dice, a baited hook that loses a hundred for each gained, consuming wealth, name and honesty, and growing with its losses.
+  boundary: Not quality:covetousness, which wants another's goods; the gambler is held by the game itself. Not quality:drunkenness.
+  synonyms: [betting, casino, gambling addiction, poker, lottery, losing money on bets]
+  evidence: [931, 932, 934, 940]
+
+# Qualities: the states of love in Part 3
+
+- id: quality:passion
+  type: quality
+  label: Desire
+  tamil: காமம்
+  polarity: state
+  feeling: true
+  definition: The consuming desire between man and woman, vast as the sea and tender as a flower, which Part 3 treats as the supreme joy and the deepest pain.
+  boundary: Not quality:affection (அன்பு), goodwill towards others. Not quality:lust, which is a vice. Not quality:craving, though 360 uses the same word for desire as a fault.
+  synonyms: [love, passion, romantic love, being in love, desire for your partner, falling in love, sexual love, burning for someone]
+  evidence: [1137, 1166, 1251, 1289]
+
+- id: quality:being-smitten
+  type: quality
+  label: Being Smitten
+  tamil: தகை அணங்குறுத்தல்
+  polarity: state
+  feeling: true
+  definition: The first blow of a woman's beauty on the man who sees her, felt as a goddess, a war and death itself.
+  boundary: Not theme:beauty, the praise of her charms once he loves her. Not quality:passion, the lasting state; this is the shock of the first sight (chapter 109).
+  synonyms: [love at first sight, instantly attracted, blown away by someone, having a crush, head over heels, lovestruck]
+  evidence: [1081, 1083, 1084, 1088]
+
+- id: quality:dread-of-parting
+  type: quality
+  label: Dread of Parting
+  tamil: பிரிவு ஆற்றாமை
+  polarity: state
+  feeling: true
+  definition: The inability to bear the thought of parting, felt before he has gone, so that even his embrace saddens her.
+  boundary: Not quality:pining, which comes after he has gone. Not theme:separation, the fact of being apart.
+  synonyms: [fear of being left, dreading goodbye, separation anxiety, afraid they will leave, not wanting them to go, clinging before a trip]
+  evidence: [1152, 1155, 1156, 1158]
+
+- id: quality:pining
+  type: quality
+  label: Pining
+  tamil: படர்
+  polarity: state
+  feeling: true
+  definition: Wasting grief in the absence of the beloved, hidden at first and then beyond hiding, that wells up like a spring and keeps her awake all night.
+  boundary: Not quality:longing, which leans forward to the return; pining is the suffering of absence. Not quality:grief, general sorrow. Not quality:dread-of-parting, which comes before he goes.
+  synonyms: [heartache, missing someone terribly, lovesick, wasting away, crying yourself to sleep, broken-hearted]
+  evidence: [1161, 1162, 1167, 1169]
+
+- id: quality:longing
+  type: quality
+  label: Longing to Meet
+  tamil: விதும்பல்
+  polarity: state
+  feeling: true
+  definition: Eager impatience for the beloved's return and for reunion, counting the days and living on the hope of meeting.
+  boundary: Not quality:pining, which is the suffering; longing looks ahead. Not quality:loving-remembrance, which looks back.
+  synonyms: [can't wait to see you, counting the days, looking forward to a reunion, yearning, eager to be together, homesick for someone]
+  evidence: [1261, 1263, 1265, 1269]
+
+- id: quality:one-sided-love
+  type: quality
+  label: One-Sided Love
+  tamil: தனிப்படர்
+  polarity: state
+  feeling: true
+  definition: The anguish of loving one who does not love back, when desire is a load on one end of the carrying pole alone.
+  boundary: Not quality:pining, where the absent one is still held to love her. The test is doubt whether the love is returned.
+  synonyms: [unrequited love, unreturned feelings, loving someone who doesn't love you, friend-zoned, one-way relationship, they don't feel the same way]
+  evidence: [1193, 1195, 1196, 1200]
+
+- id: quality:loving-remembrance
+  type: quality
+  label: Loving Remembrance
+  tamil: நினைந்தவர் புலம்பல்
+  polarity: state
+  feeling: true
+  definition: Keeping the beloved in mind, a memory that both sustains life and burns, and is sweeter than toddy.
+  boundary: Not quality:longing, which looks to the meeting ahead. Not image:dream, the sleeping meeting of chapter 122.
+  synonyms: [thinking about them all the time, remembering good times, memories of someone, can't stop thinking about someone, cherished memories, nostalgia for a lover]
+  evidence: [1201, 1202, 1206, 1207]
+
+- id: quality:bashfulness
+  type: quality
+  label: Bashfulness
+  tamil: நாண்
+  polarity: state
+  feeling: true
+  definition: A woman’s shrinking modesty in love, the ornament of her look, which desire strains to breaking point.
+  boundary: Not quality:sense-of-shame, the moral shame of the worthy (1011). Not quality:reserve; in 1251 reserve is the door and bashfulness is its bolt.
+  synonyms: [shyness, being coy, blushing, too shy to say it, modesty in love, embarrassed about your feelings]
+  evidence: [1089, 1162, 1163, 1247]
+
+- id: quality:reserve
+  type: quality
+  label: Reserve
+  tamil: நிறை
+  polarity: state
+  definition: Composed self-possession in love, which keeps feeling hidden and refuses to run after a deserter, and which the axe of desire breaks down.
+  boundary: Not quality:bashfulness; in 1251 this is the door and that is its bolt. Not quality:honour, which is standing in the world; this is dignity within a love.
+  synonyms: [playing it cool, keeping your dignity in love, not chasing someone, hiding your feelings, self-respect in a relationship, acting unbothered]
+  evidence: [1138, 1251, 1254, 1255]
+
+- id: quality:bouderie
+  type: quality
+  label: Sulking
+  tamil: புலவி
+  polarity: state
+  feeling: true
+  definition: The sulk or quarrel between lovers (also ஊடல்), feigned or half meant, called the salt of love, whose sweetness lies in the embrace that ends it.
+  boundary: Not quality:jealousy-of-affection, where the sulk is provoked by a suspected rival. Not quality:anger, which seeks to hurt; sulking seeks to be soothed.
+  synonyms: [sulking, lovers' tiff, pouting, giving the cold shoulder, playing hard to get, making up after a fight, bouderie]
+  evidence: [1302, 1306, 1326, 1330]
+
+- id: quality:jealousy-of-affection
+  type: quality
+  label: Jealous Sulking
+  tamil: புலவி நுணுக்கம்
+  polarity: state
+  feeling: true
+  definition: A lover's quick suspicion that the other's heart is shared, which finds a rival in a garland, a sneeze or an innocent compliment.
+  boundary: Not quality:envy, pain at another's fortune. Not quality:bouderie, the sulk that needs no rival.
+  synonyms: [jealous partner, possessive lover, suspecting your partner, insecure in a relationship, reading too much into things, accusing your partner, jealousy of affection]
+  evidence: [1311, 1313, 1314, 1320]
+
+# Qualities: feelings the Kural portrays or answers
+
+- id: quality:worry
+  type: quality
+  label: Worry
+  tamil: கவலை
+  polarity: state
+  feeling: true
+  definition: A mind that runs ahead to what may come and won’t settle, which 7 says is hard to remove and which 1072 says only the base are free of.
+  boundary: Not quality:fear, which has something before it now; worry looks ahead. Not quality:grief, sorrow at what has already come. Not quality:dread-of-parting, the lover’s own fear before he goes.
+  synonyms: [anxiety, anxious, stressed, sick with worry, overthinking, what if, can't stop worrying, worried about the future]
+  evidence: [7, 593, 1072, 1307]
+
+- id: quality:fear
+  type: quality
+  label: Fear
+  tamil: அஞ்சல்
+  polarity: state
+  feeling: true
+  definition: Being afraid, whether of people, of harm or of speaking up. The book sorts it rather than bans it. Fearing what should be feared is wisdom (428), yet there is no fort for those who are afraid (534).
+  boundary: Not quality:cowardice, which is giving way to it when it counts. Not quality:fear-of-sin, the dread of doing evil, which the book commends. Not quality:worry, which looks ahead to what may come.
+  synonyms: [scared, afraid, frightened, terrified, panicking, too scared to act, in fear of someone]
+  evidence: [428, 534, 569, 599]
+
+- id: quality:guilt
+  type: quality
+  label: Guilt
+  polarity: state
+  feeling: true
+  definition: Your own heart knowing what you did and burning you for it (293). No outward show helps when the heart sinks into a fault it knows (272).
+  boundary: Not quality:sense-of-shame, the virtue that recoils from the deed; guilt is what comes after it. Not quality:regret, which can follow an honest mistake; guilt knows the wrong. Not quality:humiliation, which comes from others.
+  synonyms: [guilty, eaten up by guilt, can't live with myself, ashamed of myself, bad conscience, hate what i did, can't forgive myself]
+  evidence: [244, 272, 293]
+
+- id: quality:humiliation
+  type: quality
+  label: Humiliation
+  tamil: இளி
+  polarity: state
+  feeling: true
+  definition: Being brought low in someone’s sight, by scorn, by having to ask or by having nothing. Scorn hurts even in fun (995), yet having nothing is no disgrace where worth holds (988).
+  boundary: Not quality:honour, the refusal that guards against it. Not quality:servility, which accepts it for a living. Not quality:guilt, which comes from within; this comes from how others treat you.
+  synonyms: [humiliated, belittled, put down, looked down on, made to feel small, mocked, lost face, treated like nothing]
+  evidence: [988, 995, 1070]
+
+- id: quality:regret
+  type: quality
+  label: Regret
+  tamil: இரங்கு
+  polarity: state
+  feeling: true
+  definition: Looking back and crying “What have I done?”, the word 655 uses and 535 gives to one who failed to guard in advance, when the blow lands and it is too late.
+  boundary: Not quality:guilt, which knows a wrong; regret can follow an honest mistake. Not quality:grief, sorrow at what has come, whoever’s doing it was.
+  synonyms: [regretting it, wish i hadn't, if only, kicking myself, can't undo it, remorse, what have i done, wish i could go back]
+  evidence: [275, 535, 655]
+
+- id: quality:loneliness
+  type: quality
+  label: Loneliness
+  tamil: தனிமை
+  polarity: state
+  feeling: true
+  definition: Having no one with you. Part 3 knows it at midnight when all else sleeps (1167, 1168), and 1158 calls a town without your own people painful. Yet 814 says it is better than false company.
+  boundary: Not quality:pining, the ache for one absent person; this is having no one by you. Not quality:one-sided-love, where someone is there and doesn’t answer.
+  synonyms: [lonely, all alone, nobody to talk to, no one to turn to, isolated, left out, no friends, on my own]
+  evidence: [814, 1158, 1167, 1168]
+
+- id: quality:hurt
+  type: quality
+  label: Hurt
+  polarity: state
+  feeling: true
+  definition: The wound left by what someone said or did, worst when they were close. A word’s scar never heals (129), and being deserted in your ruin burns the heart even at the hour of death (799).
+  boundary: Not quality:anger, which strikes back; hurt stays with the pain. Not quality:humiliation, which is being lowered in someone’s sight. Not quality:grief, sorrow with no one to answer for it.
+  synonyms: [hurt feelings, wounded, gutted, stung, let down, can't get over what they said, taken for granted, unappreciated]
+  evidence: [129, 799, 819, 1165]
+
+- id: quality:distrust
+  type: quality
+  label: Distrust
+  tamil: ஐயம்
+  polarity: state
+  feeling: true
+  definition: Not being able to believe in someone. The book counts it a suffering in itself. Doubting someone you have come to trust brings pain that doesn’t end (510), and suspicion once in place is hard to clear (693).
+  boundary: Not quality:jealousy-of-affection, a lover’s suspicion of a rival. Not quality:fear, which needs no question about anyone’s good faith. Not theme:testing-people, the way through it.
+  synonyms: [can't trust anyone, suspicious, trust issues, always on guard, second-guessing people, waiting to be let down, wary of people]
+  evidence: [509, 510, 693, 1153]
+
+- id: quality:losing-heart
+  type: quality
+  label: Losing Heart
+  polarity: state
+  feeling: true
+  definition: The sinking of spirit when trouble comes or a task looks too hard, which 611 warns against by name and chapter 63 meets head on. It isn’t failing, since aiming high holds its worth even then (596).
+  boundary: Not quality:helplessness, where no way out is in sight; here the spirit goes first. Not quality:sloth, which never tried. Its opposite is quality:fortitude.
+  synonyms: [discouraged, disheartened, demoralised, ready to quit, disappointed, knocked back, can't face it, what's the point of trying]
+  evidence: [611, 621, 625, 1029]
+
+- id: quality:helplessness
+  type: quality
+  label: Helplessness
+  tamil: கையாறு
+  polarity: state
+  feeling: true
+  definition: Seeing no way out, no shore and no raft. Those who suffer and can’t bear it have their tears (555), and fate gets there before your plan (380). The book’s reply is effort, without promising the result (619).
+  boundary: Not quality:losing-heart, where the spirit fails though a way may exist; here no way is in sight. Not theme:destiny, the power itself; this is how it feels to be under it.
+  synonyms: [helpless, powerless, trapped, stuck, nothing i can do, no way out, out of options, at someone's mercy]
+  evidence: [380, 555, 627, 1164]
+
+- id: quality:restlessness
+  type: quality
+  label: Restlessness
+  polarity: state
+  feeling: true
+  definition: A mind that won’t settle or sleep. Part 3 knows it through the night (1179, 1252), and 337 sees it in those who think ten million thoughts with no promise of the next moment.
+  boundary: Not quality:worry, which has a named fear; this is the mind itself refusing to lie down. Not quality:pining, the grief of absence, though sleeplessness is part of it. Not quality:craving, the wanting behind it.
+  synonyms: [can't sleep, can't settle, on edge, mind racing, can't switch off, tossing and turning, can't sit still, agitated]
+  evidence: [337, 422, 1179, 1252]
+
+- id: quality:elation
+  type: quality
+  label: Elation
+  tamil: உவகை
+  polarity: state
+  feeling: true
+  definition: The high spirits of great delight, which feel like strength (539). The book fears them for what they stop you watching, and calls that carelessness worse than boundless rage (531).
+  boundary: Not quality:complacency, the carelessness it leads to. Not quality:arrogance, which looks down on others. Not theme:joy-of-love, the happiness of lovers together.
+  synonyms: [riding high, on top of the world, flying high, feeling unstoppable, drunk on success, over the moon]
+  evidence: [432, 531, 539]
+
+# Themes
+
+- id: theme:the-lord
+  type: theme
+  label: The Lord
+  tamil: இறைவன்
+  definition: The First Lord from whom the world begins, whose knowledge is pure, who wants nothing and rejects nothing, praised in the opening chapter without any sectarian name.
+  boundary: Not quality:devotion, the worshipper’s act. Not image:goddess-of-fortune or the gods of heaven. The same word இறைவன் means a ruler in 690, which is theme:kingship.
+  synonyms: [god, the divine, the creator, higher power, supreme being, the almighty]
+  evidence: [1, 2, 4, 5]
+
+- id: theme:rain
+  type: theme
+  label: Rain
+  tamil: மழை
+  definition: Rain as the sustainer of the world, on which food, the sea, sacrifice, charity and right conduct itself all depend.
+  boundary: Not image:rain-cloud, where rain stands in a comparison for something else. Here rain itself is the subject (chapter 2).
+  synonyms: [water, the climate, drought, the monsoon, weather, water scarcity]
+  evidence: [11, 12, 13, 20]
+
+- id: theme:three-aims
+  type: theme
+  label: The Three Aims of Life
+  tamil: அறம்பொருள் இன்பம்
+  definition: The scheme of three ends of life, righteousness, wealth and desire, which the Kural's three Parts follow and which some couplets name together.
+  boundary: Only where two or more of the three are named together. One alone is quality:righteousness, theme:wealth or theme:joy-of-love.
+  synonyms: [purpose of life, goals in life, what to live for, work-life balance, money and morals, priorities in life]
+  evidence: [501, 754, 760, 909]
+
+- id: theme:family-life
+  type: theme
+  label: Family Life
+  tamil: இல்வாழ்க்கை
+  definition: Life in the home as the ground of all other paths, with its five duties, held to be no lesser road than asceticism.
+  boundary: Not role:householder, the person. Not theme:family-line, the line of descent.
+  synonyms: [home life, married life, running a household, family responsibilities, domestic life, settling down]
+  evidence: [41, 43, 46, 49]
+
+- id: theme:offspring
+  type: theme
+  label: Offspring
+  tamil: மக்கட்பேறு
+  definition: Children as the highest blessing, in the sweetness of their touch and speech and in the worth that parents and children owe one another.
+  boundary: Not role:parent or role:child, the persons. Not theme:family-line, which looks to the whole house through time.
+  synonyms: [having children, parenthood, kids, babies, being a parent, joy of children]
+  evidence: [61, 64, 66, 67]
+
+- id: theme:speech
+  type: theme
+  label: Speech
+  tamil: சொல்
+  definition: The word as a power in itself, in which rise and ruin lie, and by which a person's birth and nature are known.
+  boundary: Only for speech in general. A named kind belongs to its quality, such as quality:kind-speech, quality:slander, quality:vain-speech, quality:eloquence or quality:restraint-of-speech.
+  synonyms: [talking, words, communication, conversation, language, what you say]
+  evidence: [641, 642, 959]
+
+- id: theme:learning
+  type: theme
+  label: Learning
+  tamil: கல்வி
+  definition: Study as the eyes of the mind, an imperishable treasure that travels with one through every land and birth, and that must be lived by.
+  boundary: Not quality:understanding, the faculty. Not theme:listening, learning by ear. Its lack is quality:ignorance.
+  synonyms: [education, studying, reading books, knowledge, going to school, lifelong learning]
+  evidence: [391, 392, 396, 400]
+
+- id: theme:listening
+  type: theme
+  label: Listening to the Wise
+  tamil: கேள்வி
+  definition: Learning by ear from the wise, the first of all riches, a staff to the unschooled and a support in trouble.
+  boundary: Not theme:learning, one's own study. Not quality:openness-to-rebuke, which accepts correction of one's own faults.
+  synonyms: [listening to experts, learning from others, attending lectures, being a good listener, taking good advice, hearing wise people]
+  evidence: [411, 414, 415, 418]
+
+- id: theme:wealth
+  type: theme
+  label: Wealth
+  tamil: பொருள்
+  definition: Money and property, the second aim of life, which lights every dark place and cuts down pride, provided it is gained without evil.
+  boundary: Not image:true-treasure, where the word is used of something that is not money. Not quality:covetousness or quality:miserliness, the vices about it.
+  synonyms: [money, being rich, earning a living, savings, financial success, getting rich]
+  evidence: [751, 753, 754, 759]
+
+- id: theme:poverty
+  type: theme
+  label: Poverty
+  tamil: நல்குரவு
+  definition: Having nothing, a curse that kills dignity, silences wisdom and robs sleep, so that the poor man’s truest words carry no weight.
+  boundary: Not theme:begging, one response to it. Not image:true-treasure, where the poverty named is of something other than money.
+  synonyms: [being poor, having no money, struggling financially, financial hardship, going hungry, living in want]
+  evidence: [1041, 1043, 1045, 1046]
+
+- id: theme:begging
+  type: theme
+  label: Begging
+  tamil: இரவு
+  definition: Asking help of others, which chapter 106 allows of those who give without humbling, and without which the glory of the generous would not exist.
+  boundary: Not quality:refusal-to-beg, the opposed stance of chapter 107. Not role:beggar, the person.
+  synonyms: [asking for money, panhandling, asking for a handout, asking for a favour, asking people for help, living on donations]
+  evidence: [1051, 1053, 1057, 1059]
+
+- id: theme:glory
+  type: theme
+  label: Glory
+  tamil: புகழ்
+  definition: Lasting renown earned chiefly by giving, the one thing that does not die, without which it would be better not to have been born.
+  boundary: Not quality:honour, inner regard for oneself. Not quality:greatness, a character. Glory is what others say and remember.
+  synonyms: [fame, reputation, being remembered, legacy, recognition, making a name for yourself]
+  evidence: [231, 233, 236, 238]
+
+- id: theme:impermanence
+  type: theme
+  label: Impermanence
+  tamil: நிலையாமை
+  definition: The passing of wealth, body and life, which should be seen early so that good is done before the tongue fails.
+  boundary: Not theme:rebirth, what comes after. Not theme:time, the right moment for action.
+  synonyms: [death, mortality, life is short, nothing lasts, getting old, transience]
+  evidence: [331, 332, 334, 336]
+
+- id: theme:rebirth
+  type: theme
+  label: Rebirth
+  tamil: பிறப்பு
+  definition: The round of births and the next world that await the soul, in which merit, learning and guilt are carried forward and of which desire is the seed.
+  boundary: Not theme:liberation, the escape from it. Not theme:fruits-of-action, the return of a particular deed.
+  synonyms: [reincarnation, past lives, next life, afterlife, heaven and hell, what happens after death]
+  evidence: [62, 107, 361, 398]
+
+- id: theme:liberation
+  type: theme
+  label: Liberation
+  tamil: பிறவாமை
+  definition: Freedom from birth, the end of the ascetic path, reached by breaking all attachment and realising the truth.
+  boundary: Not theme:rebirth, the round itself. Not quality:realisation-of-truth, the means.
+  synonyms: [salvation, moksha, nirvana, spiritual freedom, breaking the cycle, ultimate peace]
+  evidence: [10, 349, 356, 362]
+
+- id: theme:destiny
+  type: theme
+  label: Fate
+  tamil: ஊழ்
+  definition: The mighty power that allots and withholds, gets ahead of every plan, and makes even resolve and intelligence rise and fall with it.
+  boundary: Not theme:fruits-of-action, where a specific deed returns on its author; fate is the fixed power over one’s fortune. Set against quality:exertion in 619-620. All of chapter 38 belongs here, including the fate that brings gain and the fate that takes it away (371-372).
+  synonyms: [fate, luck, what is meant to be, bad luck, written in the stars, it wasn't meant to be, destiny]
+  evidence: [371, 376, 377, 380]
+
+- id: theme:fruits-of-action
+  type: theme
+  label: The Fruits of Action
+  tamil: இருவினை
+  definition: The return of good and evil deeds upon their doer, the shadow that follows him through this life and others.
+  boundary: Not theme:destiny, the power that allots and withholds. Not quality:fear-of-sin, the person’s dread of it. Not theme:enterprise, where வினை means a worldly undertaking.
+  synonyms: [karma, what goes around comes around, you reap what you sow, consequences of your actions, getting what you deserve, moral cause and effect]
+  evidence: [5, 37, 208, 319]
+
+- id: theme:kingship
+  type: theme
+  label: Rulership
+  tamil: இறைமாட்சி
+  definition: The office of the ruler and its marks, the six possessions and the qualities that make a ruler a lion among rulers.
+  boundary: Not role:prince, the person. Not quality:just-rule or quality:tyranny, the named virtue and vice of ruling.
+  synonyms: [leadership, government, running a country, politics, being in charge, the state, kingship]
+  evidence: [381, 382, 383, 385]
+
+- id: theme:country
+  type: theme
+  label: The Country
+  tamil: நாடு
+  definition: What makes a land great, abundant harvests, freedom from plague and invasion, unity within and a worthy ruler.
+  boundary: Not theme:kingship, the office of the one who rules it. Not theme:fortress, one of its defences.
+  synonyms: [nation, homeland, patriotism, national prosperity, a good place to live, the economy]
+  evidence: [731, 734, 735, 738]
+
+- id: theme:fortress
+  type: theme
+  label: Fortresses
+  tamil: அரண்
+  definition: Defensive works and strong places, natural and built, with their needs of height, stores and brave defenders.
+  boundary: Not theme:place, the choice of ground. Not theme:army, the men. Where அரண் is a figure for understanding (421), it is quality:understanding.
+  synonyms: [defence, security, castle, stronghold, military fortification, protection]
+  evidence: [742, 743, 745, 750]
+
+- id: theme:army
+  type: theme
+  label: The Army
+  tamil: படை
+  definition: The fighting force as a possession of the ruler, with its tradition, discipline, pay and leaders.
+  boundary: Not theme:war, the conduct of conflict. Not quality:valour, the courage. Not role:soldier, the person.
+  synonyms: [military, troops, soldiers, armed forces, the defence forces, team morale]
+  evidence: [761, 764, 769, 770]
+
+- id: theme:war
+  type: theme
+  label: War and Enemies
+  tamil: பகைத்திறம்
+  definition: The handling of enemies and the making of war, when to fight, whom to avoid, how to divide foes and how to subdue them in time.
+  boundary: Not quality:enmity, the feeling. Not theme:army, the force. Where the point is timing or ground, use theme:time or theme:place.
+  synonyms: [conflict, competition, strategy, rivals, dealing with opponents, military strategy]
+  evidence: [465, 861, 875, 879]
+
+- id: theme:espionage
+  type: theme
+  label: Using Spies
+  tamil: ஒற்று
+  definition: The ruler’s use of spies, one of his two eyes, with its checking of one report against another.
+  boundary: Not role:spy, the agent and his qualifications. Not quality:discretion, a general virtue.
+  synonyms: [spying, intelligence gathering, surveillance, undercover work, gathering information, secret agents, espionage]
+  evidence: [581, 583, 588, 589]
+
+- id: theme:enterprise
+  type: theme
+  label: Enterprise
+  tamil: வினை செயல்வகை
+  definition: Carrying a chosen undertaking through, what to weigh, whom to learn from, how to use one task for another, and when to hurry.
+  boundary: Not quality:deliberation or quality:resolve, the dispositions behind it. Not theme:fruits-of-action, where the same word வினை means a moral deed.
+  synonyms: [projects, running a business, getting things done, project management, work, execution]
+  evidence: [672, 673, 675, 678]
+
+- id: theme:time
+  type: theme
+  label: Time
+  tamil: காலம்
+  definition: The right moment as a strategic force, by which the weak can conquer, and for which the wise wait without hurry before they strike.
+  boundary: Not theme:impermanence, time as what wears life away. Not theme:place, the choice of ground.
+  synonyms: [timing, the right moment, opportunity, patience, when to act, waiting for your chance]
+  evidence: [481, 484, 485, 490]
+
+- id: theme:place
+  type: theme
+  label: Place
+  tamil: இடனறிதல்
+  definition: The choice of ground, on which the weak may beat the strong, as the crocodile rules in deep water and nowhere else.
+  boundary: Not theme:fortress, the built defence. Not theme:time, the right moment.
+  synonyms: [location, home advantage, choosing your ground, the right environment, being in your element, strategic position]
+  evidence: [491, 493, 495, 500]
+
+- id: theme:testing-people
+  type: theme
+  label: Testing People
+  tamil: தெரிந்து தெளிதல்
+  definition: Proving a person's character before giving trust, office or friendship, by acts rather than appearances, and then not doubting the one who has passed.
+  boundary: Not quality:deliberation, which weighs actions rather than persons. Not quality:reading-intentions, which reads a passing thought. Not theme:friendship, the bond once made.
+  synonyms: [hiring, judging character, background checks, vetting someone, interviewing, checking references]
+  evidence: [501, 504, 509, 793]
+
+- id: theme:friendship
+  type: theme
+  label: Friendship
+  tamil: நட்பு
+  definition: The bond between friends as the rarest protection, waxing like the moon, built on the union of hearts and existing to restrain and uplift.
+  boundary: Not quality:intimacy, quality:fair-weather-friendship or quality:false-friendship, which name particular kinds. Not theme:company, the circle one moves in.
+  synonyms: [friends, mates, true friends, social life, having people you can rely on, making friends]
+  evidence: [781, 782, 784, 785]
+
+- id: theme:company
+  type: theme
+  label: Company
+  tamil: இனம்
+  definition: The people one moves among, who colour the mind as soil colours water, so that the worthy are to be sought and the petty avoided.
+  boundary: Not theme:friendship, a bond with a person; this is the circle or class one keeps. Not quality:reverence-for-the-great, which is care not to offend.
+  synonyms: [peer pressure, who you hang out with, social circle, influence of others, the crowd you run with, surrounding yourself with good people]
+  evidence: [444, 452, 454, 460]
+
+- id: theme:family-line
+  type: theme
+  label: The Family Line
+  tamil: குடி
+  definition: The family as a line to be kept up and raised by a man's labour, which falls through sloth and whose burden falls on those who can bear it.
+  boundary: Not theme:family-life, daily life at home. Not quality:noble-birth, the character expected of the well born.
+  synonyms: [family name, family honour, ancestors, family business, providing for your family, descendants]
+  evidence: [602, 1021, 1026, 1030]
+
+- id: theme:agriculture
+  type: theme
+  label: Agriculture
+  tamil: உழவு
+  definition: Farming as the chief of all work, the linchpin of society, which alone is free of dependence and feeds even those who have renounced.
+  boundary: Not role:farmer, the person. Not image:plough, the implement as a figure.
+  synonyms: [farming, growing food, working the land, gardening, rural life, the food supply]
+  evidence: [1031, 1032, 1033, 1036]
+
+- id: theme:health
+  type: theme
+  label: Health
+  tamil: மருந்து
+  definition: The care of the body by eating only after digestion and in measure, and the physician's measured cure of disease.
+  boundary: Not image:disease, where sickness is a figure for something else. Not quality:moderation, which also covers spending.
+  synonyms: [diet, doctors, medicine, illness, staying healthy, nutrition]
+  evidence: [941, 942, 944, 948]
+
+- id: theme:joy-of-love
+  type: theme
+  label: The Joy of Love
+  tamil: இன்பம்
+  definition: The happiness of lovers together, the third aim of life, in which all five senses are filled and which outdoes even the world of the lotus-eyed one.
+  boundary: Not quality:passion, the feeling that drives them; this is its joy in union. Not theme:separation, love apart.
+  synonyms: [happy relationship, intimacy with your partner, being together, sex, romance, making love]
+  evidence: [1101, 1107, 1108, 1166]
+
+- id: theme:separation
+  type: theme
+  label: Separation of Lovers
+  tamil: பிரிவு
+  definition: The parting of lovers, usually his going away for conquest or wealth, which is the setting of most of the later chapters of Part 3.
+  boundary: Not quality:pining or quality:dread-of-parting, the feelings. Applies where the fact of being apart is what is named.
+  synonyms: [long-distance relationship, being apart, spouse working away, breaking up, partner travelling, time apart]
+  evidence: [1158, 1160, 1226, 1263]
+
+- id: theme:gossip
+  type: theme
+  label: Gossip About Lovers
+  tamil: அலர்
+  definition: The village’s talk about two lovers, which feeds the desire it would shame, as manure and water feed a plant.
+  boundary: Not quality:slander, which the Kural condemns; in Part 3 the talk is not judged but savoured or borne.
+  synonyms: [people talking about your relationship, rumours about you, public opinion, nosy neighbours, scandal, what will people think]
+  evidence: [1143, 1146, 1147, 1148]
+
+- id: theme:beauty
+  type: theme
+  label: The Beloved's Beauty
+  tamil: நலம்
+  definition: The lover’s praise of the woman’s charms, beyond flowers and moon, and tender past the aṉiccam and the swan’s down.
+  boundary: Not quality:being-smitten, the first shock. The images image:moon or image:anicham-flower may also apply to the same couplet.
+  synonyms: [physical attraction, good looks, appearance, how beautiful she is, admiring your partner, compliments]
+  evidence: [1111, 1113, 1118, 1120]
+
+- id: theme:signs-of-love
+  type: theme
+  label: The Signs of Love
+  tamil: குறிப்பு
+  definition: The silent language of lovers, the stolen glance, the look at the ground and the half-smile, by which they say what the mouth need not.
+  boundary: Not quality:reading-intentions, the statesman's art of chapter 71. Not image:lovers-eyes, the eyes as actors in their own right.
+  synonyms: [flirting, body language in love, mixed signals, does she like me, eye contact, unspoken attraction]
+  evidence: [1094, 1097, 1100, 1274]
+
+# Roles
+
+- id: role:householder
+  type: role
+  label: Householder
+  tamil: இல்வாழ்வான்
+  definition: The married head of a home, who supports those on the other paths of life and is held to be the equal of any ascetic.
+  boundary: Not role:husband, the relation to a wife. Not role:ascetic, the other way of life.
+  synonyms: [head of household, family man, breadwinner, homeowner, married person, working parent]
+  evidence: [41, 42, 48, 50]
+
+- id: role:ascetic
+  type: role
+  label: Ascetic
+  tamil: துறந்தார்
+  definition: One who has left home and the senses behind for a life of vows, whose greatness cannot be measured and whose wrath cannot be borne.
+  boundary: Not role:brahman, the keeper of scripture. Where his power over others is the point, as in chapter 90, use role:great-one.
+  synonyms: [monk, renunciant, sage, holy man, hermit, nun]
+  evidence: [21, 22, 29, 263]
+
+- id: role:brahman
+  type: role
+  label: Sage
+  tamil: அந்தணர்
+  definition: The keeper of scripture, whom 30 defines by tenderness towards all life, and whose place rests on his conduct and on the ruler’s protection. The Brahmin (பார்ப்பான்) of 134 comes under this entry.
+  boundary: Not role:ascetic, though 30 says that only the righteous are truly called sages.
+  synonyms: [priest, clergy, religious scholar, pastor, temple priest, man of god, brahman, brahmin]
+  evidence: [30, 134, 543, 560]
+
+- id: role:prince
+  type: role
+  label: The Ruler
+  tamil: வேந்தன்
+  definition: The one who rules a realm, to whom the greater part of Part 2 is addressed.
+  boundary: Not theme:kingship, the subject. Not role:minister, who advises him.
+  synonyms: [king, ruler, president, prime minister, leader, head of state, prince]
+  evidence: [381, 388, 542, 549]
+
+- id: role:minister
+  type: role
+  label: Minister
+  tamil: அமைச்சு
+  definition: The ruler’s adviser, skilled in planning, in dividing allies and reuniting enemies, and bound to tell him what is right.
+  boundary: Not role:courtier, who is concerned with his own standing before the ruler. Not role:officer, who carries out a task.
+  synonyms: [adviser, consultant, counsellor, cabinet member, right-hand person, chief of staff]
+  evidence: [631, 632, 634, 638]
+
+- id: role:envoy
+  type: role
+  label: Envoy
+  tamil: தூதுரைப்பான்
+  definition: The ambassador who carries a ruler’s message abroad, and who must have loving-kindness, learning and few words, and stay true to his master even under threat of death.
+  boundary: Not role:spy, who works in secret.
+  synonyms: [ambassador, diplomat, representative, negotiator, spokesperson, messenger]
+  evidence: [681, 685, 687, 690]
+
+- id: role:spy
+  type: role
+  label: Spy
+  tamil: ஒற்று
+  definition: The ruler’s secret agent, disguised and unsuspected, who keeps his secret whatever is done to him.
+  boundary: Not theme:espionage, the service as a whole; this is where the man himself and his qualifications are described.
+  synonyms: [secret agent, undercover agent, informant, scout, intelligence officer, detective]
+  evidence: [585, 586, 587]
+
+- id: role:commander
+  type: role
+  label: Commander
+  tamil: தலைமக்கள்
+  definition: The chief who leads soldiers, without whom there is no army, and whose tears are what the soldier would die for.
+  boundary: Not role:prince, the ruler. Not role:soldier, who serves under him.
+  synonyms: [general, military leader, team leader, captain, officer in charge, head of the troops]
+  evidence: [770, 778, 780]
+
+- id: role:soldier
+  type: role
+  label: Soldier
+  tamil: மறவர்
+  definition: The fighting man, veteran or hero, who counts a day without wounds as wasted.
+  boundary: Not role:commander, who leads. Not theme:army, the force as a whole.
+  synonyms: [warrior, fighter, infantryman, war veteran, military personnel, hero]
+  evidence: [762, 774, 776, 778]
+
+- id: role:courtier
+  type: role
+  label: Courtier
+  definition: One who lives close to a ruler and depends on his favour, and who must stand neither too near nor too far, as at a fire.
+  boundary: Not role:minister, whose work is counsel; this is about keeping one's place.
+  synonyms: [employee of a powerful person, senior aide, palace staff, insider, someone in the inner circle, someone working for a powerful boss]
+  evidence: [691, 692, 698, 700]
+
+- id: role:officer
+  type: role
+  label: Officer of State
+  tamil: வினைசெய்வான்
+  definition: The servant of the state entrusted with a task, chosen by testing and overseen daily by the ruler.
+  boundary: Not role:minister, who advises. Not role:courtier, who attends the ruler.
+  synonyms: [employee, civil servant, staff member, manager, government official, appointee]
+  evidence: [514, 517, 520, 584]
+
+- id: role:subject
+  type: role
+  label: Subject
+  definition: The people under a ruler, who look to his sceptre, pay his taxes and whose tears wear away his wealth.
+  boundary: Not role:village-folk, the neighbours of the lovers in Part 3.
+  synonyms: [citizen, the public, taxpayer, ordinary people, voter, the governed]
+  evidence: [542, 555, 557, 733]
+
+- id: role:friend
+  type: role
+  label: Friend
+  tamil: நட்டார்
+  definition: One bound to another by friendship, who turns him from wrong and stands by him in misfortune.
+  boundary: Not role:kinsman, tied by blood. Not theme:friendship, the subject in general.
+  synonyms: [buddy, pal, mate, bestie, companion, close friend]
+  evidence: [787, 788, 804, 805]
+
+- id: role:enemy
+  type: role
+  label: Enemy
+  tamil: பகைவர்
+  definition: The foe, in war or at heart, to be weighed, avoided, divided or overcome in due time.
+  boundary: Not quality:enmity, the feeling. An enemy disguised as a friend still counts here, with quality:false-friendship.
+  synonyms: [rival, opponent, adversary, competitor, foe, nemesis]
+  evidence: [861, 869, 874, 878]
+
+- id: role:kinsman
+  type: role
+  label: Kinsman
+  tamil: சுற்றம்
+  definition: A relation, whose constancy in adversity is the mark of kin and whose quarrels can be healed.
+  boundary: Not role:friend, tied by choice. Not role:parent or role:child, who have their own entries.
+  synonyms: [relative, cousin, in-laws, extended family, uncle, sibling]
+  evidence: [521, 525, 529, 530]
+
+- id: role:great-one
+  type: role
+  label: The Great Ones
+  tamil: பெரியார்
+  definition: Persons of spiritual or worldly might set above others, whose friendship is a strength and whose offence is a death warrant.
+  boundary: Not role:ascetic or role:prince as such; this applies where one's relation to a superior power is the point (chapters 45 and 90).
+  synonyms: [mentor, elder, important person, person of influence, senior figure, powerful person]
+  evidence: [441, 444, 892, 899]
+
+- id: role:scholar
+  type: role
+  label: Scholar
+  tamil: கற்றார்
+  definition: The learned man, whose coming brings joy, for whom every land is home, and who is rated above the unlearned of any birth.
+  boundary: Not role:orator, who is defined by addressing an assembly.
+  synonyms: [student, academic, teacher, professor, educated person, expert]
+  evidence: [394, 395, 397, 409]
+
+- id: role:orator
+  type: role
+  label: Orator
+  definition: One who addresses an assembly, whom chapters 72 and 73 instruct to weigh his words and to hold his nerve.
+  boundary: Not role:scholar, who need not speak in public. Not role:envoy, who speaks for another.
+  synonyms: [public speaker, presenter, lecturer, debater, speaker at a meeting, preacher]
+  evidence: [711, 713, 721, 722]
+
+- id: role:physician
+  type: role
+  label: Physician
+  tamil: தீர்ப்பான்
+  definition: The healer who measures patient, disease and season before he treats, one of the four on whom all cure depends.
+  boundary: Not theme:health, which also covers diet without any healer present.
+  synonyms: [doctor, nurse, healer, medic, gp, surgeon]
+  evidence: [948, 949, 950]
+
+- id: role:farmer
+  type: role
+  label: Farmer
+  tamil: உழவர்
+  definition: The ploughman, the linchpin of society, who alone lives by his own bread and gives to others without refusing.
+  boundary: Not theme:agriculture, the subject. The உழவர் of 872 are figures of speech, which is image:plough.
+  synonyms: [grower, peasant, agricultural worker, smallholder, food producer, rancher]
+  evidence: [14, 1032, 1033, 1035]
+
+- id: role:beggar
+  type: role
+  label: Beggar
+  tamil: இரப்பான்
+  definition: One who lives by asking, whose lot the Kural pities and whose scowl at a refusal it forbids.
+  boundary: Not theme:begging, the practice. Not role:guest, who is honoured rather than relieved.
+  synonyms: [homeless person, person asking for money, someone on the street, a person in need, charity recipient, rough sleeper]
+  evidence: [1057, 1060, 1069, 1070]
+
+- id: role:guest
+  type: role
+  label: Guest
+  tamil: விருந்து
+  definition: The visitor who comes to the home, whose honour is the householder’s duty and whose heart a cold look can break.
+  boundary: Not role:beggar. Not quality:hospitality, the host's virtue.
+  synonyms: [visitor, houseguest, someone staying with you, traveller, stranger at the door, dinner guest]
+  evidence: [82, 83, 86, 90]
+
+- id: role:husband
+  type: role
+  label: Husband
+  tamil: கொழுநன்
+  definition: A man in relation to his wife, tended by the good wife, and warned in chapter 91 against submission to her.
+  boundary: Not role:householder, his wider station. Not role:lover, which covers the man of Part 3 even when wed.
+  synonyms: [married man, spouse, man of the house, hubby, male partner, partner]
+  evidence: [55, 56, 901, 903]
+
+- id: role:wife
+  type: role
+  label: Wife
+  tamil: இல்லாள்
+  definition: The woman of the house, the life partner of chapter 6, on whose virtue the home’s worth rests.
+  boundary: Not role:lover, which covers the woman of Part 3 even when wed.
+  synonyms: [married woman, housewife, female partner, missus, homemaker, better half]
+  evidence: [51, 52, 54, 906]
+
+- id: role:parent
+  type: role
+  label: Parent
+  definition: Father or mother in what they owe a child and gain from one, to fit him for the front rank and to hear him called worthy.
+  boundary: Not role:child. Not theme:offspring, the subject of children as a blessing.
+  synonyms: [father, mother, mum, dad, raising kids, stepparent]
+  evidence: [67, 69, 923]
+
+- id: role:child
+  type: role
+  label: Child
+  tamil: மக்கள்
+  definition: A son or child, whose worth is the joy of parents, and who repays a father by making the world ask what he did to deserve him.
+  boundary: Not role:parent. Not theme:offspring, the subject of children as a blessing.
+  synonyms: [son, daughter, kid, toddler, teenager, grown-up child]
+  evidence: [64, 68, 70]
+
+- id: role:prostitute
+  type: role
+  label: Prostitute
+  tamil: வரைவின் மகளிர்
+  definition: The woman who sells her embrace for gold, shown in chapter 92 only as a danger to the man who seeks her.
+  boundary: Not role:lover. The fault of the man who goes to her is quality:lust.
+  synonyms: [sex worker, escort, call girl, paid companion, courtesan, gold digger]
+  evidence: [911, 913, 916, 919]
+
+- id: role:lover
+  type: role
+  label: Lover
+  tamil: காதலர்
+  definition: Man or woman in love, before or after marriage, who speaks through all of Part 3 or is spoken of there.
+  boundary: Not role:husband or role:wife, which serve for Parts 1 and 2. Both partners of Part 3 count here, including the absent one.
+  synonyms: [boyfriend, girlfriend, partner in a relationship, sweetheart, someone in love, couple]
+  evidence: [1122, 1127, 1211, 1269]
+
+- id: role:confidante
+  type: role
+  label: Confidante
+  tamil: தோழி
+  definition: The woman's maid and intimate friend in Part 3, to whom she speaks and who sometimes speaks for her or gives counsel.
+  boundary: Not role:friend in the sense of Part 2.
+  synonyms: [someone to confide in, trusted friend, female friend, sidekick, girl friend who knows everything, go-between]
+  evidence: [1155, 1279, 1284, 1302]
+
+- id: role:village-folk
+  type: role
+  label: Village Folk
+  tamil: ஊரவர்
+  definition: The neighbours of Part 3 whose talk, blame and pity surround the lovers, and who are always a little wrong about them.
+  boundary: Not role:subject. Not theme:gossip, the talk itself.
+  synonyms: [neighbours, the community, onlookers, people in town, nosy people, busybodies]
+  evidence: [1130, 1147, 1180, 1220]
+
+# Situations
+
+- id: situation:friend-let-you-down
+  type: situation
+  label: A friend has let you down
+  definition: A friend of long standing has hurt or damaged you, and the Kural pulls two ways, between bearing with old friends and dropping false ones.
+  boundary: Not situation:friends-vanished, where the friend was never true and deserts you in need, and the Kural says to let go.
+  synonyms: [betrayed by a friend, my best friend hurt me, a friend disappointed me, should i forgive my friend, friend broke my trust, falling out with a friend]
+  evidence: [804, 805, 806, 807]
+
+- id: situation:friends-vanished
+  type: situation
+  label: Your friends vanished when things got hard
+  definition: You have hit trouble and those you counted on have gone, which the Kural treats as a useful rod for measuring who your friends really were.
+  boundary: Not situation:friend-let-you-down, where a true friend has failed you once and the bond is worth keeping.
+  synonyms: [fair-weather friends, nobody called when i lost everything, everyone left me when i needed them, friends only around when things are good, finding out who my real friends are, abandoned in a crisis]
+  evidence: [796, 798, 812, 815]
+
+- id: situation:trusting-someone-new
+  type: situation
+  label: Deciding whether to trust someone new
+  definition: Someone new wants your confidence, and the Kural says to weigh family, character and associates first, since trust without testing brings endless ills.
+  boundary: Not situation:hiring-someone, which is about fitness for a task rather than trust in a person.
+  synonyms: [can i trust this person, new business partner, how to know if someone is trustworthy, new friend seems too good to be true, should i open up to them, checking someone out]
+  evidence: [508, 510, 791, 793]
+
+- id: situation:bad-influence
+  type: situation
+  label: The people around you are a bad influence
+  definition: Your circle is pulling you down, and the Kural says the mind takes the colour of its company as water takes the character of its soil.
+  synonyms: [wrong crowd, my friends are a bad influence, toxic friends, pressure from friends, hanging out with the wrong people, friends who drag me down]
+  evidence: [452, 454, 460, 800]
+
+- id: situation:two-faced-person
+  type: situation
+  label: Someone is friendly to your face but working against you
+  definition: Someone smiles at you and means you harm, whether a rival or one of your own, and the Kural fears this more than an open enemy, like a cobra in the hut.
+  boundary: Not situation:friends-vanished, where the fault is desertion rather than hidden hostility.
+  synonyms: [two-faced coworker, fake nice, talks about me behind my back, frenemy at work, a relative plotting against me, someone undermining me]
+  evidence: [824, 829, 882, 890]
+
+- id: situation:hearing-a-hard-truth
+  type: situation
+  label: Someone close tells you a hard truth
+  definition: A friend or adviser has told you what you did not want to hear, and the Kural says such people are your protection and that without them you fall.
+  synonyms: [friend criticised me, got harsh feedback, my mentor told me off, hurt by honest advice, someone called me out, told i was wrong]
+  evidence: [447, 448, 784, 795]
+
+- id: situation:friend-in-trouble
+  type: situation
+  label: A friend is in trouble and needs you
+  definition: A friend has hit misfortune, and the Kural says true friendship moves as fast as a hand to a slipping garment.
+  synonyms: [how to help a friend, my friend is going through a hard time, being there for someone, supporting a friend in crisis, should i drop everything for a friend, friend asked for help]
+  evidence: [787, 788, 789]
+
+- id: situation:looking-for-a-mentor
+  type: situation
+  label: You need someone wiser to guide you
+  definition: You want an older or wiser person beside you, and the Kural calls finding one the rarest good fortune and a strength above all others.
+  synonyms: [looking for a mentor, need advice from someone older, finding a role model, who should i go to for advice, no one to guide me, want a wise friend]
+  evidence: [441, 442, 443, 444]
+
+- id: situation:wanting-revenge
+  type: situation
+  label: Someone hurt or insulted you and you want to hit back
+  definition: You have been wronged or run down and want payback, and the Kural says the joy of it lasts a day.
+  boundary: Not situation:you-are-furious, which is the heat of the moment rather than the wish to repay a particular wrong.
+  synonyms: [how to get revenge, want payback, can't forgive them, someone insulted me, people saying bad things about me, should i get even]
+  evidence: [151, 156, 159, 314]
+
+- id: situation:you-are-furious
+  type: situation
+  label: You are furious with someone
+  definition: Anger has you in its grip, and the Kural says that whoever the offender is, the anger will burn you and your own first.
+  synonyms: [losing my temper, so angry right now, can't control my anger, anger issues, want to shout at someone, rage at work]
+  evidence: [303, 305, 306, 308]
+
+- id: situation:someone-picks-fights
+  type: situation
+  label: Someone keeps picking a fight with you
+  definition: A neighbour or colleague keeps provoking you, and the Kural says not to return it, and that a talent for avoiding strife leaves no one wishing your fall.
+  boundary: Not situation:wanting-revenge, where a wrong has been done and you are deciding what to do; here the quarrel itself is the trouble.
+  synonyms: [neighbour dispute, constant arguments, someone trying to provoke me, a colleague looking for a fight, being baited, should i respond to provocation]
+  evidence: [852, 855, 858, 859]
+
+- id: situation:jealous-of-success
+  type: situation
+  label: Someone else's success is eating at you
+  definition: Another's good fortune pains you, and the Kural says that pain needs no enemy's help to ruin you.
+  synonyms: [jealous of my friend's success, comparing myself on social media, everyone is doing better than me, can't be happy for them, colleague got promoted instead of me, resentful of others]
+  evidence: [161, 163, 165, 170]
+
+- id: situation:said-something-hurtful
+  type: situation
+  label: You said something hurtful and can't take it back
+  definition: Your words have wounded someone, and the Kural says that a burn heals in time but the wound from the tongue stays raw.
+  synonyms: [i said something awful, regret what i said, hurt someone with my words, apologising for what i said, shouldn't have said that, words i can't take back]
+  evidence: [127, 128, 129]
+
+- id: situation:tempted-by-dishonest-gain
+  type: situation
+  label: You are tempted to cut a corner for money
+  definition: There is easy money in bending the rules, and the Kural says not to touch it, since such gain perishes and honest poverty is better.
+  synonyms: [tempted to cheat on taxes, shady deal, should i take the money, bribery, bending the rules at work, unethical business offer]
+  evidence: [113, 283, 657, 660]
+
+- id: situation:wondering-whether-to-lie
+  type: situation
+  label: Wondering whether a lie would do less harm
+  definition: You are weighing a lie against the truth, and the Kural's test is harm, truth being speech free of evil, and only a falsehood bringing pure good passing as truth.
+  synonyms: [is it ok to lie, white lie to protect someone, should i tell the truth, covering for someone, lying to spare feelings, hiding the truth]
+  evidence: [291, 292, 293, 297]
+
+- id: situation:drawn-to-someone-married
+  type: situation
+  label: You are drawn to someone who is married
+  definition: You are tempted by another's spouse, and the Kural names four things that will never leave you if you yield, hatred, sin, fear and shame.
+  synonyms: [attracted to a married woman, thinking about having an affair, in love with my friend's wife, tempted to cheat, crush on a married colleague, office affair]
+  evidence: [141, 143, 146, 150]
+
+- id: situation:losing-your-dignity
+  type: situation
+  label: Getting ahead means losing your self-respect
+  definition: Keeping your place means bowing to those who scorn you, and the Kural asks what anyone gains by following those who scorn them.
+  synonyms: [humiliating job, sucking up to keep my job, selling out, compromising my principles, being treated like dirt at work, do i quit or swallow my pride]
+  evidence: [961, 962, 963, 966]
+
+- id: situation:ashamed-of-something-you-did
+  type: situation
+  label: You did something you are ashamed of
+  definition: You have done what you now regret, and the Kural's counsel is plain, avoid what makes you cry out what have I done, and if you did it, do not do it again.
+  synonyms: [i made a terrible mistake, guilty conscience, can't forgive myself, regret what i did, feeling ashamed, how to live with what i did]
+  evidence: [275, 293, 655]
+
+- id: situation:work-unrecognised
+  type: situation
+  label: Your work goes unrecognised
+  definition: You are overlooked for your looks or your standing, or your diligence is resented, and the Kural says the one who slights such a worker is the one who loses.
+  synonyms: [boss doesn't appreciate me, passed over for promotion, nobody notices my work, underappreciated at work, no credit for my work, ignored in meetings]
+  evidence: [519, 667, 1046]
+
+- id: situation:feels-impossible
+  type: situation
+  label: Something you want to do feels impossible
+  definition: A task looks beyond you and you are tempted to drop it, and the Kural says labour gives the strength and that unfinished work is what the world does not forgive.
+  synonyms: [thinking of giving up, too hard for me, want to quit, can't finish my degree, overwhelmed by a big goal, lost motivation]
+  evidence: [611, 612, 620, 669]
+
+- id: situation:you-tried-and-failed
+  type: situation
+  label: You tried hard and failed
+  definition: Your effort did not pay off, and the Kural says the lack of a favouring fate is no shame, and that high aims keep their glory even when they fail.
+  boundary: Not situation:feels-impossible, which is before the attempt; this is after it.
+  synonyms: [failed my exam, business went under, didn't get the job, all that work for nothing, rejected again, my project failed]
+  evidence: [596, 597, 618, 619]
+
+- id: situation:putting-things-off
+  type: situation
+  label: You keep putting things off
+  definition: You are leaving for tomorrow what matters, and the Kural counts delay among the pleasure boats of those bound to perish and urges good works before the tongue fails.
+  synonyms: [procrastination, can't get started, leaving things to the last minute, i'll do it tomorrow, wasting time, meaning to change someday]
+  evidence: [36, 335, 605, 672]
+
+- id: situation:everything-going-wrong
+  type: situation
+  label: Everything is going wrong at once
+  definition: Trouble has come from every side, and the Kural speaks of holding steady through what work and want bring.
+  synonyms: [one thing after another, worst year of my life, lost my job and everything fell apart, can't cope, life is falling apart, so many problems at once]
+  evidence: [621, 622, 623, 625]
+
+- id: situation:starting-something-new
+  type: situation
+  label: Deciding whether to start a business or big project
+  definition: You are thinking of taking on a venture, and the Kural says to reckon cost, loss and profit first, and to avoid what risks the capital itself.
+  synonyms: [should i start a business, quit my job to start a company, big investment decision, launching a startup, is this a good investment, taking a big risk]
+  evidence: [461, 463, 467, 676]
+
+- id: situation:taken-on-too-much
+  type: situation
+  label: You have taken on more than you can handle
+  definition: You have overreached, and the Kural warns that even peacock feathers will break the axle if the load is great, and that the one at the treetop must not climb on.
+  synonyms: [overcommitted, spread too thin, too many projects, burnt out from taking on too much, can't say no, in over my head]
+  evidence: [471, 473, 475, 476]
+
+- id: situation:is-this-the-right-time
+  type: situation
+  label: You are not sure whether now is the right time
+  definition: You are choosing between acting and waiting, and the Kural says to hold still like the stork and then strike without hesitating when the moment comes.
+  synonyms: [when should i make my move, waiting for the right moment, timing a big decision, should i wait or act now, is it too early, missed opportunity]
+  evidence: [485, 486, 489, 490]
+
+- id: situation:hiring-someone
+  type: situation
+  label: Choosing the right person for a job
+  definition: You must pick someone for a task, and the Kural says to choose for knowledge and staying power rather than fondness, and then to leave them in charge.
+  synonyms: [who should i hire, promoting someone at work, hiring a friend, picking a team member, delegating to someone, giving a job to a relative]
+  evidence: [507, 515, 516, 517]
+
+- id: situation:power-over-others
+  type: situation
+  label: You have power over other people
+  definition: You manage, judge or discipline others, and the Kural says to make any penalty fit, to stay approachable, and to imagine yourself trembling before someone stronger.
+  synonyms: [new manager, how to discipline staff, being a good boss, in charge of a team, how to lead people, abusing my position]
+  evidence: [250, 386, 561, 567]
+
+- id: situation:powerful-boss
+  type: situation
+  label: You depend on a powerful boss
+  definition: Your living hangs on someone above you, and the Kural says to stay near but not too near, as with a fire, and to speak to their mood without presuming on favour.
+  synonyms: [difficult boss, moody manager, managing up, how to handle my boss, working for a powerful person, keeping on the right side of my boss]
+  evidence: [691, 692, 696, 699]
+
+- id: situation:stronger-rival
+  type: situation
+  label: You are up against someone stronger
+  definition: A stronger rival stands against you, and the Kural says not to strive with the powerful, and to fight only on ground that favours you.
+  synonyms: [competing with a bigger company, bullied by someone powerful, outgunned, david and goliath, taking on a giant, fighting a losing battle]
+  evidence: [488, 493, 498, 861]
+
+- id: situation:speaking-in-public
+  type: situation
+  label: You have to speak in front of people
+  definition: You must address a room and you are afraid, and the Kural says to study the audience, master the matter and not let your learning die of fear.
+  synonyms: [nervous about my presentation, scared of public speaking, giving a speech, stage nerves, scared to speak up at work, wedding speech]
+  evidence: [711, 723, 725, 730]
+
+- id: situation:someone-wont-listen
+  type: situation
+  label: You are arguing with someone who will not listen
+  definition: You are trying to reason with a person sure he is right, and the Kural says the one who tries to open a fool's eyes is a fool himself.
+  synonyms: [can't reason with them, my father won't listen, arguing with a know-it-all, someone who won't take advice, pointless argument, stubborn relative]
+  evidence: [714, 848, 849]
+
+- id: situation:success-going-to-your-head
+  type: situation
+  label: Success is going to your head
+  definition: Things are going well and you feel above it all, and the Kural says to stay modest in prosperity and to remember those who fell through carelessness.
+  synonyms: [letting success go to my head, got promoted and feel superior, getting cocky, new money, feeling invincible, becoming arrogant]
+  evidence: [431, 539, 963, 978]
+
+- id: situation:spending-too-much
+  type: situation
+  label: You are spending more than you earn
+  definition: Money is going out faster than it comes in, and the Kural says a narrow inflow does no harm so long as the outflow is not wider.
+  synonyms: [living beyond my means, credit card bills, overspending, can't save money, need a budget, blowing my salary]
+  evidence: [477, 478, 479, 480]
+
+- id: situation:struggling-to-get-by
+  type: situation
+  label: You are struggling to make ends meet
+  definition: Poverty is wearing you down, and the Kural does not soften it, saying it kills dignity, robs sleep and brings many other miseries.
+  synonyms: [can't pay the rent, broke, living paycheck to paycheck, lost my income, no money for food, ashamed of being poor]
+  evidence: [1043, 1044, 1045, 1049]
+
+- id: situation:having-to-ask-for-money
+  type: situation
+  label: You have to ask someone for money
+  definition: Need has driven you to ask, and the Kural says to ask only of those who give gladly, never of those who dodge.
+  synonyms: [asking family for a loan, borrowing money from a friend, too proud to ask for help, begging for help, need a favour, embarrassed to ask for money]
+  evidence: [1051, 1060, 1066, 1067]
+
+- id: situation:someone-asks-you-for-help
+  type: situation
+  label: Someone in need asks you for help
+  definition: Someone in need is at your door, and the Kural says the noble never say “I have nothing”, and that a giver’s heart is not glad until the asker smiles.
+  synonyms: [should i lend money, a friend asked me for money, giving to a homeless person, relative keeps asking for money, how much should i give, someone needs my help]
+  evidence: [218, 219, 223, 224]
+
+- id: situation:money-feels-empty
+  type: situation
+  label: You have money and it brings you nothing
+  definition: You have saved plenty but neither enjoy nor share it, and the Kural says wealth kept this way is of use to no one.
+  synonyms: [rich but unhappy, working only to save, can't enjoy my money, wealthy and lonely, what's the point of all this money, hoarding for no reason]
+  evidence: [228, 1001, 1005, 1009]
+
+- id: situation:drinking-too-much
+  type: situation
+  label: Your drinking is getting out of hand
+  definition: Drink is taking over, and the Kural says you are spending your money to lose your senses and that you cannot hide it from those around you.
+  synonyms: [i drink too much, alcohol problem, hiding my drinking, my husband drinks, should i stop drinking, hungover at work]
+  evidence: [925, 926, 927, 930]
+
+- id: situation:cant-stop-gambling
+  type: situation
+  label: You cannot stop gambling
+  definition: You keep going back to the table, and the Kural says the win itself is the baited hook and that the passion grows with the losses.
+  synonyms: [online betting addiction, chasing losses, lost my savings gambling, can't stop betting, sports betting problem, casino debts]
+  evidence: [931, 932, 933, 940]
+
+- id: situation:eating-badly
+  type: situation
+  label: Your eating is harming your health
+  definition: Your eating habits are making you unwell, and the Kural says to eat moderately and only after the last meal is digested, for disease seeks the glutton.
+  synonyms: [overeating, unhealthy diet, binge eating, weight problems, indigestion, how to eat better]
+  evidence: [942, 943, 946, 947]
+
+- id: situation:wanting-more
+  type: situation
+  label: However much you have, you want more
+  definition: Each thing gained leaves you wanting the next, and the Kural says desire is never filled and that only giving it up brings peace.
+  synonyms: [never satisfied, always chasing the next thing, keeping up with the joneses, nothing is ever enough, constant craving, want a bigger house]
+  evidence: [363, 368, 369, 370]
+
+- id: situation:thinking-about-meat
+  type: situation
+  label: Wondering whether to stop eating meat
+  definition: You are uneasy about eating animals, and the Kural says that if no one bought flesh none would sell it, and that feeling the creature's pain ends the appetite.
+  synonyms: [should i become vegetarian, guilt about eating animals, is eating meat wrong, animal welfare, thinking about going vegan, ethics of eating meat]
+  evidence: [251, 256, 257, 260]
+
+- id: situation:raising-children
+  type: situation
+  label: Wanting to do right by your children
+  definition: You are trying to raise your children well, and the Kural says a father's debt is to fit his son for the front rank, and that to be outshone by him is a joy.
+  synonyms: [how to be a good parent, giving my kids a good education, proud of my child, worried about my child's future, what do i owe my kids, my child is smarter than me]
+  evidence: [67, 68, 69, 70]
+
+- id: situation:falling-out-with-a-relative
+  type: situation
+  label: You have fallen out with a relative
+  definition: Someone in your family has broken with you, and the Kural says to remove the cause and he will return, and to accept him back, but with caution.
+  synonyms: [not speaking to my brother, family rift, estranged from family, reconnecting with a relative, family argument, fell out with my sister]
+  evidence: [523, 529, 530]
+
+- id: situation:carrying-the-family
+  type: situation
+  label: You are carrying the whole family on your shoulders
+  definition: Everyone leans on you, and the Kural says the burden falls on those who can bear it, that they have no off season, and pities the body that takes the strain.
+  synonyms: [sole breadwinner, looking after everyone, supporting my parents and kids, exhausted from family responsibilities, sandwich generation, nobody else helps]
+  evidence: [1027, 1028, 1029, 1030]
+
+- id: situation:just-fallen-for-someone
+  type: situation
+  label: You have just fallen for someone
+  definition: Someone has caught your heart and you cannot read them yet, and the Kural's lovers live on glances and on eyes that agree before any word.
+  synonyms: [new crush, does she like me back, can't stop looking at her, nervous around someone i like, is he interested in me, what does that look mean]
+  evidence: [1081, 1091, 1094, 1100]
+
+- id: situation:gossip-about-your-relationship
+  type: situation
+  label: People are gossiping about your relationship
+  definition: Your love has become public talk, and Part 3 shows such talk only feeding desire, as manure and water feed a plant.
+  synonyms: [everyone is talking about us, parents disapprove of my partner, family found out about us, rumours about my relationship, village gossip, people judging my relationship]
+  evidence: [1143, 1146, 1147, 1149]
+
+- id: situation:partner-far-away
+  type: situation
+  label: Your partner is away for a long time
+  definition: Your partner has gone for work or duty, and Part 3 knows the counted days, the evening that comes like an executioner, and the day that passes like seven.
+  synonyms: [long distance relationship, husband works abroad, missing my partner, deployed spouse, can't sleep without him, counting down until he's back]
+  evidence: [1167, 1224, 1261, 1269]
+
+- id: situation:love-not-returned
+  type: situation
+  label: You love someone who doesn't love you back
+  definition: You love and are not loved in return, and the Kural says desire is sweet only on both sides, like a load balanced on a pole.
+  boundary: Not situation:cant-let-go, where the relationship was real and has ended.
+  synonyms: [in love with someone who doesn't care, they just see me as a friend, one-sided relationship, my feelings are not returned, loving someone who ignores me, why doesn't she love me]
+  evidence: [1193, 1195, 1196, 1200]
+
+- id: situation:cant-let-go
+  type: situation
+  label: You can't let go of someone who has left you
+  definition: Someone has gone and your heart will not accept it, and the woman of chapter 125 argues with her heart that keeping him there only wastes her further.
+  synonyms: [can't get over my ex, still in love with my ex, how to move on from a breakup, he left me, heartbroken after a breakup, she doesn't remember me]
+  evidence: [1242, 1243, 1245, 1250]
+
+- id: situation:fight-with-your-partner
+  type: situation
+  label: You have had a fight with your partner
+  definition: You and your partner are not speaking, and the Kural says a quarrel is the salt of love, not to be overdone.
+  synonyms: [argument with my wife, not talking after a fight, how to make up, we keep bickering, who should apologise first, silent treatment]
+  evidence: [1302, 1304, 1327, 1330]
+
+- id: situation:jealous-partner
+  type: situation
+  label: Your partner reads betrayal into everything
+  definition: Every innocent word or act is taken as a sign of someone else. Chapter 132 shows this only as a game between lovers.
+  synonyms: [my girlfriend is jealous for no reason, accused of cheating when i didn't, partner checks my phone, controlling partner, constant suspicion, can't say anything right]
+  evidence: [1313, 1314, 1316, 1320]
+
+- id: situation:thinking-about-death
+  type: situation
+  label: Thinking about how short life is
+  definition: Death has come to mind, and the Kural says people can’t be sure of one moment more yet make ten million plans, so do good while you can.
+  synonyms: [fear of dying, midlife crisis, someone my age died, life is going too fast, am i wasting my life, how long do i have left]
+  evidence: [334, 335, 336, 337]
+
+- id: situation:wanting-to-walk-away
+  type: situation
+  label: You want to walk away from it all
+  definition: You feel the pull to drop everything, and the Kural speaks both of letting go of attachment and of a home life rightly lived.
+  synonyms: [quit everything and leave, thinking of becoming a monk, tired of the daily grind, moving off the grid, sick of worldly life, should i leave my family for a spiritual life]
+  evidence: [46, 47, 341, 342]
+
+- id: situation:fate-against-you
+  type: situation
+  label: It feels as if fate is against you
+  definition: Whatever you do seems to turn out badly, and the Kural holds two truths together, that nothing is stronger than fate and that those who strive without faltering will see its back.
+  synonyms: [bad luck follows me, nothing ever works out, is it my karma, born unlucky, the universe is against me, why does this always happen to me]
+  evidence: [375, 380, 619, 620]
+
+- id: situation:kindness-not-returned
+  type: situation
+  label: Your kindness is not being returned
+  definition: You keep giving and get nothing back, and the Kural says help looks for no return, as no one repays the rain-cloud.
+  synonyms: [always giving and getting nothing back, taken for granted by people i help, nobody thanks me, people only use me, doing favours for ungrateful people, should i stop helping]
+  evidence: [103, 211, 987]
+
+- id: situation:owing-someone-a-kindness
+  type: situation
+  label: Someone helped you when you most needed it
+  definition: You owe a debt of help you can never repay, and the Kural says to hold it as huge however small it looks, and to remember it always.
+  synonyms: [how to thank someone, owe someone a lot, repaying a kindness, someone saved me, a teacher who changed my life, never forgot who helped me]
+  evidence: [102, 104, 107]
+
+# Images
+
+- id: image:fire
+  type: image
+  label: Fire
+  tamil: தீ
+  definition: Fire as what burns and spreads, the measure of evil, of the tongue’s wound and of desire, from a spark in a straw stack to flames one can still sleep among.
+  boundary: Not image:lamp, which gives light rather than burning.
+  synonyms: [flames, burning, blaze, sparks, inferno, on fire]
+  evidence: [129, 202, 435, 1159]
+
+- id: image:rain-cloud
+  type: image
+  label: The Rain-Cloud
+  tamil: மாரி
+  definition: The cloud and its rain as the model of giving without return and of what all the world looks up to for life.
+  boundary: Not theme:rain, where rain itself is the subject (chapter 2).
+  synonyms: [storm cloud, monsoon rain, rainfall, showers, downpour, cloud]
+  evidence: [211, 542, 557, 1192]
+
+- id: image:plough
+  type: image
+  label: The Plough
+  tamil: ஏர்
+  definition: The plough and its work, standing for the labour all others rest on, and in the Tamil of 872 used of bow and word as well.
+  boundary: Not theme:agriculture, the subject of chapter 104; here the implement itself is named.
+  synonyms: [ploughing, tilling, tractor, turning the soil, furrow, farm tools]
+  evidence: [14, 1031, 1032, 1038]
+
+- id: image:elephant
+  type: image
+  label: The Elephant
+  tamil: யானை
+  definition: The great beast as strength under test, goaded, wounded, frightened by the tiger, mired in mud or decoyed by its own kind.
+  synonyms: [tusker, war elephant, bull elephant, pachyderm, jumbo, mahout]
+  evidence: [24, 500, 597, 678]
+
+- id: image:lamp
+  type: image
+  label: The Lamp
+  tamil: விளக்கு
+  definition: The lamp or unfailing light that drives out dark, used of truth, wealth and family.
+  boundary: Not image:fire, which burns. Not image:darkness, though the two meet in 753 and 1186.
+  synonyms: [light, oil lamp, torch, candle, lantern, illumination]
+  evidence: [299, 601, 753, 1186]
+
+- id: image:sea
+  type: image
+  label: The Sea
+  tamil: கடல்
+  definition: The sea as vastness, the ocean of births to be crossed and the depth of desire and grief.
+  boundary: Not image:boat, though they meet in 1164.
+  synonyms: [ocean, the waves, deep water, drowning, vast waters, the shore]
+  evidence: [10, 1137, 1164, 1200]
+
+- id: image:boat
+  type: image
+  label: The Boat
+  tamil: புணை
+  definition: The raft, boat or ship that carries one across or fails to, in Part 3 mostly the firmness that desire sweeps away.
+  boundary: Not image:sea, the water itself. Not image:cart-and-axle, its counterpart on land in 496.
+  synonyms: [raft, ship, vessel, canoe, sailing, lifeboat]
+  evidence: [496, 1068, 1134, 1164]
+
+- id: image:moon
+  type: image
+  label: The Moon
+  tamil: மதி
+  definition: The moon waxing and waning as friendship, spotted as a noble man's fault, and rivalled by the beloved's face.
+  synonyms: [full moon, moonlight, lunar, crescent moon, moonrise, phases of the moon]
+  evidence: [782, 957, 1116, 1119]
+
+- id: image:anicham-flower
+  type: image
+  label: The aṉiccam flower
+  tamil: அனிச்சம்
+  definition: The tender aṉiccam, which fades at a breath, the Kural’s own measure of a guest’s heart and of the beloved’s softness.
+  boundary: Not image:flower, which is any other bloom.
+  synonyms: [delicate flower, most fragile flower, wilts at a touch, tender bloom, sensitive flower, anitcha]
+  evidence: [90, 1111, 1115, 1120]
+
+- id: image:flower
+  type: image
+  label: Flowers
+  tamil: மலர்
+  definition: Flowers as the beauty of eyes and face, and as what is delicate or unfulfilled, like learning that cannot be expounded.
+  boundary: Not image:anicham-flower, the one flower named for its tenderness.
+  synonyms: [blossom, lotus, bloom, petals, bud, garland]
+  evidence: [650, 1112, 1114, 1289]
+
+- id: image:tree
+  type: image
+  label: The Tree
+  tamil: மரம்
+  definition: Trees as what a person is to others, the fruit tree in the village, the medicine tree, the poison tree, the sapless tree, the thorn to fell while young.
+  boundary: Not image:ripe-fruit, which is the fruit alone as sweetness.
+  synonyms: [fruit tree, wood, branches, forest, dead tree, stump]
+  evidence: [78, 216, 879, 1008]
+
+- id: image:ripe-fruit
+  type: image
+  label: Ripe Fruit
+  tamil: கனி
+  definition: Fruit ripe and unripe as the sweet and the harsh in speech and in love.
+  boundary: Not image:tree, the bearer of fruit.
+  synonyms: [unripe fruit, sour fruit, sweet fruit, mango, fruit of love]
+  evidence: [100, 1191, 1306]
+
+- id: image:seed-and-sowing
+  type: image
+  label: Seed and Sowing
+  tamil: வித்து
+  definition: The seed and the sowing, by which deeds, desire and conduct bring their crop.
+  boundary: Not image:plough, the work of breaking the ground.
+  synonyms: [planting, harvest, crop, germination, reaping, sowing seeds]
+  evidence: [24, 85, 138, 361]
+
+- id: image:village-tank
+  type: image
+  label: The Village Tank
+  tamil: ஊருணி
+  definition: The tank and its channels as held wealth, full for all to draw on, or with its bunds gone and the water flowing away.
+  synonyms: [reservoir, pond, water tank, well, dam, irrigation channel]
+  evidence: [215, 478, 523]
+
+- id: image:serpent
+  type: image
+  label: The Serpent
+  tamil: பாம்பு
+  definition: The snake as deadly power close by, the cobra whose breath ends an army of rats and the cobra sharing one's hut.
+  synonyms: [snake, cobra, viper, king cobra, venom, snake in the grass]
+  evidence: [763, 890, 1146]
+
+- id: image:eye
+  type: image
+  label: The Eye
+  tamil: கண்
+  definition: The eye as what learning, spies and kindness are, so that one without them has only two sores in his head.
+  boundary: Not image:lovers-eyes, the eyes of Part 3 that wound, weep and are scolded.
+  synonyms: [seeing, sight, vision, blindness, looking, eyesight]
+  evidence: [393, 575, 581, 705]
+
+- id: image:lovers-eyes
+  type: image
+  label: The Lover's Eyes
+  tamil: கண் விதுப்பழிதல்
+  definition: The eyes in love as separate actors, battling, wounding, weeping and drying up, blamed for the pain they brought on.
+  boundary: Not image:eye, the organ of understanding. Not theme:signs-of-love, which is what passes between two people's looks.
+  synonyms: [eyes full of tears, beautiful eyes, love in her eyes, eyes that kill, gazing at someone, looks that could kill]
+  evidence: [1083, 1171, 1177, 1180]
+
+- id: image:ear
+  type: image
+  label: The Ear
+  tamil: செவி
+  definition: The ear as a mouth to be fed and a treasure house, in which instruction is its food and its taste.
+  synonyms: [hearing, ears, deafness, feeding the ears, what you hear, sound]
+  evidence: [411, 412, 418, 420]
+
+- id: image:wine
+  type: image
+  label: Toddy
+  tamil: கள்
+  definition: Toddy as desire’s rival and comparison, delighting only when drunk, where desire delights at a glance or a memory.
+  boundary: Not quality:drunkenness, which is about drink itself and not a comparison.
+  synonyms: [alcohol, liquor, toddy, getting tipsy, intoxication, palm wine, wine]
+  evidence: [1090, 1145, 1201, 1281]
+
+- id: image:ambrosia
+  type: image
+  label: Ambrosia
+  tamil: அமிழ்தம்
+  definition: The food of immortality as the measure of what is sweetest, rain, a child's soup, the beloved's arms.
+  synonyms: [nectar, elixir of life, food of the gods, divine drink, sweetest thing, amrit]
+  evidence: [11, 64, 720, 1106]
+
+- id: image:cart-and-axle
+  type: image
+  label: Cart and Axle
+  tamil: அச்சாணி
+  definition: The cart, the chariot and the axle pin, small things that bear or break under the load.
+  synonyms: [wagon, wheel, axle, linchpin, cart, chariot]
+  evidence: [475, 496, 667]
+
+- id: image:mountain
+  type: image
+  label: The Mountain
+  tamil: குன்று
+  definition: The hill or mountain as stature and firmness, and as the safe height from which to watch a fight.
+  synonyms: [hill, peak, summit, rock, high ground, mountain range]
+  evidence: [124, 758, 898, 965]
+
+- id: image:earth-the-bearer
+  type: image
+  label: Earth the Bearer
+  tamil: நிலம்
+  definition: The earth as a patient woman who bears those who dig her, is burdened by the worthless and laughs at the idle.
+  boundary: Not theme:country, the land as a realm.
+  synonyms: [mother earth, the ground, the soil, the planet, burden on the earth, the land]
+  evidence: [151, 572, 990, 1040]
+
+- id: image:sceptre
+  type: image
+  label: The Sceptre
+  tamil: கோல்
+  definition: The ruler's rod, straight or leaning, the visible sign of justice, to which the people look as to the rain-cloud.
+  boundary: Not quality:just-rule, the virtue it stands for. Not image:touchstone-and-measuring-rod, the same word used of what weighs and tests.
+  synonyms: [staff of office, royal rod, rod of power, mace, symbol of power, crown]
+  evidence: [542, 543, 546, 547]
+
+- id: image:touchstone-and-measuring-rod
+  type: image
+  label: Touchstone and Measuring Rod
+  tamil: கட்டளை
+  definition: The touchstone, the rod and the balance by which worth, friends and minds are assayed.
+  boundary: Not image:sceptre, the rod of rule.
+  synonyms: [litmus test, yardstick, weighing scale, benchmark, test of character, the acid test]
+  evidence: [118, 505, 796, 986]
+
+- id: image:darkness
+  type: image
+  label: Darkness
+  tamil: இருள்
+  definition: Darkness as ignorance, the world of pain and the world seen without a smile, the state that light and insight end.
+  boundary: Not image:night, the hours of the lover's vigil.
+  synonyms: [the dark, blackness, gloom, shadow, pitch dark, unlit]
+  evidence: [121, 243, 352, 999]
+
+- id: image:file
+  type: image
+  label: The File
+  tamil: அரம்
+  definition: The iron file, that wears away power and a divided house, and that gives sharpness to wits with nothing behind them.
+  synonyms: [metal file, rasp, grinding down, wearing away, sharp tool, abrasive]
+  evidence: [567, 888, 997]
+
+- id: image:living-dead
+  type: image
+  label: The Living Dead
+  tamil: செத்தார்
+  definition: The one who breathes but is counted as a corpse, the Kural's verdict on those who lack what makes a life.
+  boundary: Not theme:impermanence, actual death.
+  synonyms: [dead inside, walking corpse, zombie, as good as dead, just existing, not really alive]
+  evidence: [214, 730, 926, 1001]
+
+- id: image:bones
+  type: image
+  label: Bones
+  tamil: என்பு
+  definition: Bone and skin as the bare body without loving-kindness, and the giving of one’s very bones to others.
+  boundary: Not image:soul-and-body, where the soul's lodging is the point.
+  synonyms: [skeleton, skin and bones, skin, flesh, body frame, bare bones]
+  evidence: [72, 77, 80]
+
+- id: image:soul-and-body
+  type: image
+  label: Soul and Body
+  definition: The soul lodged in the body like a bird in a shell or a lodger in a borrowed room, used for life's frailty and for the closeness of lovers.
+  synonyms: [body and soul, soul leaving the body, spirit, life force, bird leaving the nest, borrowed room]
+  evidence: [73, 338, 340, 1122]
+
+- id: image:disease
+  type: image
+  label: Disease
+  tamil: நோய்
+  definition: Sickness as a figure, hunger as the evil disease, the spirit of strife as a malady, and love as what no other medicine cures.
+  boundary: Not theme:health, real illness and diet in chapter 95.
+  synonyms: [illness metaphor, sickness, plague, infection, cure, remedy]
+  evidence: [227, 853, 1102, 1241]
+
+- id: image:ornament
+  type: image
+  label: The Ornament
+  tamil: அணி
+  definition: The jewel or ornament, a title the Kural gives to the virtue in question, modesty, sweet speech, considerateness or shame, over any real adornment.
+  synonyms: [jewellery, adornment, decoration, jewel, necklace, bling]
+  evidence: [95, 575, 1014, 1089]
+
+- id: image:true-treasure
+  type: image
+  label: The True Treasure
+  tamil: செல்வத்துள் செல்வம்
+  definition: The real wealth, the Kural’s recurrent claim that compassion, learning, desirelessness or listening is the treasure and that money is not.
+  boundary: Not theme:wealth, which is actual money.
+  synonyms: [what is truly valuable, riches of the heart, real wealth, priceless, true riches, a treasure]
+  evidence: [241, 363, 400, 411]
+
+- id: image:sneeze
+  type: image
+  label: The Sneeze
+  tamil: தும்மல்
+  definition: The sneeze, taken to mean that someone is thinking of you, which Part 3 makes a comic proof of love and a cause of jealousy.
+  synonyms: [sneezing, bless you, tickle in the nose, achoo, superstition about sneezing, someone is thinking of you]
+  evidence: [1203, 1312, 1317, 1318]
+
+- id: image:palmyra-stalk
+  type: image
+  label: The Palmyra Stalk
+  tamil: மடல்
+  definition: The palmyra stalk ridden in public by the lovelorn, a last resort of those torn from love that tramples all shame.
+  boundary: Not image:millet-and-palmyra, where the palmyra tree is a measure of size.
+  synonyms: [public declaration of love, desperate gesture, grand gesture, riding the palm, making a scene for love, lovesick spectacle]
+  evidence: [1131, 1132, 1133, 1137]
+
+- id: image:millet-and-palmyra
+  type: image
+  label: Millet and Palmyra
+  tamil: தினை
+  definition: The millet seed set against the palmyra tree, the Kural's pair for how small a thing may count as large.
+  boundary: Not image:palmyra-stalk, the lover's ride.
+  synonyms: [tiny seed, tall palm tree, small versus big, mustard seed, grain, palm tree]
+  evidence: [104, 433, 1282]
+
+- id: image:pallor
+  type: image
+  label: Pallor
+  tamil: பசப்பு
+  definition: The pale sallow colour that spreads over a woman parted from her lover, treated as an enemy, as his child and as a public proof.
+  boundary: Not quality:pining, the feeling; this is the visible sign on the body.
+  synonyms: [turning pale, looking ill, losing colour, pale skin, sickly look, washed out]
+  evidence: [1182, 1185, 1186, 1187]
+
+- id: image:slipping-bracelets
+  type: image
+  label: Slipping Bracelets
+  tamil: தொடி
+  definition: Bracelets slipping from an arm thinned by grief, which tell the world of the parting.
+  boundary: Not image:pallor, the other bodily sign of parting.
+  synonyms: [bangles, loose bangles, bracelet falling off, weight loss from grief, thin arms, jewellery slipping off]
+  evidence: [1157, 1234, 1236, 1277]
+
+- id: image:dream
+  type: image
+  label: The Dream
+  tamil: கனவு
+  definition: Dream as where absent lovers still meet, a comfort or a spite, which the waking state cuts short.
+  boundary: Not quality:loving-remembrance, which is waking memory. The dream of 1054 and 819 is only a turn of phrase.
+  synonyms: [dreaming, in my dreams, seeing someone in your sleep, dreamt of him, sleeping vision, dream lover]
+  evidence: [1213, 1215, 1216, 1217]
+
+- id: image:evening
+  type: image
+  label: Evening
+  tamil: மாலை
+  definition: Evening as the hour when love's grief peaks, advancing like an executioner on the woman left alone.
+  boundary: Not image:night, the hours that follow.
+  synonyms: [sunset, dusk, twilight, sundown, end of the day, nightfall]
+  evidence: [1221, 1224, 1225, 1227]
+
+- id: image:night
+  type: image
+  label: Night
+  tamil: இரா
+  definition: The long night of lovers, in which she alone is awake and which he wishes would last through the quarrel.
+  boundary: Not image:evening. Not image:darkness, a figure for ignorance.
+  synonyms: [late at night, sleepless night, lying awake, the small hours, midnight, insomnia]
+  evidence: [1167, 1168, 1169, 1329]
+
+- id: image:tears
+  type: image
+  label: Tears
+  tamil: கண்ணீர்
+  definition: Tears that proclaim love, that wear away a tyrant's wealth and that, in an enemy's eyes, cannot be trusted.
+  synonyms: [crying, weeping, teardrops, sobbing, tearful, in tears]
+  evidence: [71, 555, 828, 1232]
+
+- id: image:heart-addressed
+  type: image
+  label: The Heart Addressed
+  tamil: நெஞ்சு
+  definition: The heart spoken to as a second person, scolded, begged and sent as a messenger by one parted from love.
+  synonyms: [talking to yourself, oh my heart, my heart won't listen, inner voice, arguing with yourself, head versus heart]
+  evidence: [1200, 1242, 1244, 1291]
+
+- id: image:lords-feet
+  type: image
+  label: The Lord's Feet
+  tamil: தாள்
+  definition: The holy feet to which one clings, the opening chapter's one image of refuge.
+  boundary: Not quality:devotion, the act; this is the image it is expressed in.
+  synonyms: [feet of god, bowing down, at his feet, kneeling, touching feet, taking refuge]
+  evidence: [2, 3, 7, 10]
+
+- id: image:goddess-of-fortune
+  type: image
+  label: The Goddess of Fortune
+  tamil: செய்யவள்
+  definition: Lakshmi, who dwells with the hospitable and the diligent and leaves the envious to her elder sister Misfortune.
+  boundary: Not theme:destiny. ஊழ் in 371-372 is fate, not this goddess.
+  synonyms: [lady luck, goddess of wealth, lakshmi, misfortune, good fortune personified, lucky charm]
+  evidence: [84, 167, 179, 617]
+
+- id: image:god-of-death
+  type: image
+  label: The God of Death
+  tamil: கூற்று
+  definition: Death as a person, who eats life, is beckoned by fools and faced by armies, and whom the lover meets in a woman's eyes.
+  boundary: Not theme:impermanence, the fact of dying.
+  synonyms: [grim reaper, god of death, yama, angel of death, death personified, face of death]
+  evidence: [326, 765, 894, 1083]
+
+- id: image:sword-and-spear
+  type: image
+  label: Sword and Spear
+  tamil: வேல்
+  definition: The blade and lance of the hero and the ruler, and the sword in a eunuch’s hand as the emblem of what cannot be used.
+  boundary: Not image:bow-and-arrow, the weapon that works from afar.
+  synonyms: [sword, spear, lance, javelin, knife, blade]
+  evidence: [546, 727, 774, 882]
+
+- id: image:bow-and-arrow
+  type: image
+  label: Bow and Arrow
+  tamil: வில்
+  definition: The bow and arrow, by whose shape a man's straightness is not to be judged and whose bending is a threat.
+  boundary: Not image:sword-and-spear, the weapons of close fighting.
+  synonyms: [arrow, archer, archery, crossbow, quiver, shooting arrows]
+  evidence: [279, 597, 827, 872]
+- id: image:watered-plant
+  type: image
+  label: The watered plant
+  definition: A plant fed or starved at its root, the figure for what nourishes or kills spirit, counsel and love.
+  boundary: Not image:tree, which pictures what a person is to others rather than what feeds them.
+  synonyms: [watering a plant, roots, nourishing, growth]
+  evidence: [595, 718, 1093, 1147, 1304]
+- id: image:beasts-at-their-hour
+  type: image
+  label: Beasts at their hour
+  definition: Birds and animals that win only at their moment or on their own ground, the figure for timing and place in strategy.
+  boundary: Not image:elephant, which pictures strength itself rather than the right time or ground for it.
+  synonyms: [crow and owl, crocodile, right moment, home ground]
+  evidence: [481, 486, 490, 495]

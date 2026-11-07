@@ -1,6 +1,6 @@
 // From a situation, through what it can feel like, to what the Kural sets against that, to the couplets that say so.
-// The rules are the Kural site's own, and each was earned by a real failure (see data/eval/flows-review.md in
-// tirukkural-kb). Works on his graph's plain data and has no runtime imports, so every walk runs under `node --test`.
+// The rules are the Kural site's own, and each was earned by a real failure. Works on his graph's plain data and has
+// no runtime imports, so every walk runs under `node --test`.
 
 export interface WalkNode {
   id: string;

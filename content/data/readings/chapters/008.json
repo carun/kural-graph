@@ -1,0 +1,165 @@
+{
+  "chapter": 8,
+  "title": "Loving-kindness",
+  "note": "He defines அன்பு as fondness for your wife, children and others connected to you, and says compassion for all beings grows from it.",
+  "couplets": [
+    {
+      "n": 71,
+      "plain": "Can any lock keep loving-kindness hidden? The tears of those who have it will give it away.",
+      "pm": "Can loving-kindness be locked away so that no one knows? When people who have it see those dear to them suffer, their tears tell everyone. It can’t be seen, but it can be inferred.",
+      "tag": "adds",
+      "links": []
+    },
+    {
+      "n": 72,
+      "plain": "People without loving-kindness keep everything for themselves. People with it would give even their bones for others.",
+      "pm": "Those without it are of no use to others, so all they own stays theirs alone. Those who have it belong to others with their bodies too, not only with what they own. “Bones” stands for the body.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "9e63952d2c84987b",
+          "quote": "People with it would give even their bones for others"
+        },
+        {
+          "id": "0186336bf091f189",
+          "quote": "even their bones"
+        }
+      ]
+    },
+    {
+      "n": 73,
+      "plain": "They say the precious soul is joined to a body of bone so that it can practise loving-kindness.",
+      "pm": "Human life is hard to obtain. Its bond with the body exists for loving-kindness, because it can’t be practised without a body. So the purpose of being embodied is loving-kindness.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "f668377947fdd854",
+          "quote": "joined to a body of bone so that it can practise loving-kindness",
+          "reason": "Makes loving-kindness the very reason a soul is joined to a body."
+        }
+      ]
+    },
+    {
+      "n": 74,
+      "plain": "Loving-kindness makes you warm towards people, and that warmth brings friendship, a gift beyond measure.",
+      "pm": "Loving-kindness shown to your own people grows into goodwill towards others. That goodwill leaves you with no enemies and no strangers, so that everyone is your friend, and this is a distinction beyond measure.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "d3c5ff3fa8a201e3",
+          "quote": "Loving-kindness makes you warm towards people",
+          "reason": "Credits loving-kindness with making you warm towards people."
+        },
+        {
+          "id": "e4f61b3a23ba8b51",
+          "quote": "friendship, a gift beyond measure",
+          "reason": "Calls friendship a gift beyond measure, the fruit of warmth towards people."
+        }
+      ]
+    },
+    {
+      "n": 75,
+      "plain": "They say the happiness of those who are happy in this world comes from a life settled in loving-kindness.",
+      "pm": "The reward is heaven. People who are happy in household life with wife, children and kin become gods through the sacrifices they performed, and are happy there too. Ascetics suffer to reach that heaven. Only loving-kindness lets you reach it through happiness.",
+      "tag": "differs",
+      "note": "Parimelazhagar moves the reward from this world to the next.",
+      "links": [
+        {
+          "id": "92a688de1af24ddd",
+          "quote": "comes from a life settled in loving-kindness",
+          "reason": "Traces the happiness of the happy back to a life settled in loving-kindness."
+        }
+      ]
+    },
+    {
+      "n": 76,
+      "plain": "Only the ignorant say loving-kindness helps righteousness alone. It helps against hostility too.",
+      "pm": "Some say loving-kindness supports righteousness only, and they are ignorant. When someone wrongs you and hostility rises in your heart, treat that person as a friend and show them loving-kindness, and the hostility goes.",
+      "tag": "adds",
+      "note": "He reads the hostility as your own, not someone else’s.",
+      "links": [
+        {
+          "id": "93de83c816d90728",
+          "quote": "It helps against hostility too",
+          "reason": "Says loving-kindness helps against hostility as well as serving righteousness."
+        }
+      ]
+    },
+    {
+      "n": 77,
+      "plain": "As the sun scorches a creature with no bones, righteousness scorches a person with no loving-kindness.",
+      "pm": "The god of righteousness burns the soul without loving-kindness, as the sun burns a body without bones. The sun has no malice: the boneless thing perishes before it by its own nature, and so does such a soul before righteousness.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "15364223725148f0",
+          "quote": "righteousness scorches a person with no loving-kindness",
+          "reason": "Shows the cost of lacking loving-kindness: righteousness itself scorches such a person."
+        }
+      ]
+    },
+    {
+      "n": 78,
+      "plain": "A life with no loving-kindness inside is like a dead tree trying to sprout on barren ground.",
+      "pm": "For someone with no loving-kindness in the heart, living a household life is like a dried tree sprouting on hard ground. It can’t happen.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "a3df118447033a1b",
+          "quote": "A life with no loving-kindness inside",
+          "reason": "A life without loving-kindness is as unlikely as new leaves on a dead tree."
+        },
+        {
+          "id": "f2db5fc2fc4fdae8",
+          "quote": "a dead tree trying to sprout on barren ground",
+          "reason": "The dead tree on barren ground pictures a life without loving-kindness."
+        }
+      ]
+    },
+    {
+      "n": 79,
+      "plain": "What use is everything on the outside to someone who lacks loving-kindness, the part within?",
+      "pm": "The outer parts of a household are place, wealth and servants. What use are they without loving-kindness, the inner part? He rejects the reading that this means eyes and other parts of the body, because that has nothing to do with household life.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "ccab645da656a1ff",
+          "quote": "loving-kindness, the part within",
+          "reason": "Ranks loving-kindness, the part within, above everything on the outside."
+        },
+        {
+          "id": "51f0b7d76c3a8a64",
+          "remove": "The ornament isn’t in the Tamil. உறுப்பு means a part, not a jewel."
+        }
+      ]
+    },
+    {
+      "n": 80,
+      "plain": "A living body is one that loving-kindness moves. Without it, a body is just bones wrapped in skin.",
+      "pm": "Only a body led by loving-kindness is one with life in it. The bodies of those without it are bones covered in skin, because they yield none of the righteousness of household life.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "b704c79693d4d071",
+          "quote": "A living body is one that loving-kindness moves",
+          "reason": "Says outright that a living body is one that loving-kindness moves."
+        },
+        {
+          "id": "109b45f340216643",
+          "quote": "bones wrapped in skin"
+        },
+        {
+          "id": "c1d84cd6b1ec82c6",
+          "quote": "Without it, a body is just bones wrapped in skin"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "1df6b67768ddff1c",
+      "quote": "Loving-kindness makes you warm towards people, and that warmth brings friendship",
+      "reason": "Loving-kindness makes you warm towards people, and that warmth brings friendship."
+    }
+  ]
+}

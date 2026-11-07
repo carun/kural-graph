@@ -1,0 +1,151 @@
+{
+  "chapter": 38,
+  "title": "Fate",
+  "note": "He treats ஊழ் as the rule that the fruit of your deeds comes back to you, and says wealth and joy both turn on it.",
+  "couplets": [
+    {
+      "n": 371,
+      "plain": "The fate that brings you wealth also brings the drive to work. The fate that takes it away brings laziness.",
+      "pm": "The fate that causes wealth to come produces effort, and the fate that causes it to go produces laziness. So fate creates even the effort and laziness that seem to win or lose wealth.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "af00b60c1797eeaf",
+          "quote": "The fate that takes it away brings laziness",
+          "reason": "Shows fate at work inside a person, sending the drive to work or laziness."
+        }
+      ]
+    },
+    {
+      "n": 372,
+      "plain": "Fate that is taking things from you makes you foolish. Fate that is bringing you gain widens your mind.",
+      "pm": "However much you know, the fate of loss makes you a fool when it arrives. However little you know, the fate of gain widens your mind. Fate changes even natural intelligence.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "bbc6014a1d27c607",
+          "quote": "Fate that is taking things from you makes you foolish",
+          "reason": "Fate decides even how sharp your mind is."
+        }
+      ]
+    },
+    {
+      "n": 373,
+      "plain": "You may study many subtle books, yet the understanding you were born with still wins out.",
+      "pm": "Take someone fated to be foolish. Though they study many books on subtle matters, the foolish understanding their fate gave them still comes out on top. Fate overrides even learned intelligence.",
+      "tag": "differs",
+      "note": "The words say only “your own true understanding”. He reads உண்மை as fate, one of the words he lists for it in his chapter introduction, and so finds fated foolishness here.",
+      "links": []
+    },
+    {
+      "n": 374,
+      "plain": "The world runs two separate ways: being rich is one thing, being wise is another.",
+      "pm": "By fate the world is of two kinds, so being wealthy and being wise are separate. We see the wise stay poor and others grow rich, so the fate that makes you wise doesn’t make you rich.",
+      "tag": "adds",
+      "links": []
+    },
+    {
+      "n": 375,
+      "plain": "When making money, everything that should help can go wrong, and everything that should hurt can turn out well.",
+      "pm": "In making wealth, the good and bad things are time, place, means and action. By fate the favourable ones ruin you and the unfavourable ones build you up.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "7d5c1b40cea5e725",
+          "quote": "everything that should help can go wrong, and everything that should hurt can turn out well",
+          "reason": "Under the chapter’s subject, fate can make what should help go wrong and what should hurt turn out well."
+        },
+        {
+          "id": "95a5480d7dac1076",
+          "quote": "everything that should hurt can turn out well",
+          "reason": "Says things can go wrong despite everything, and that they can also turn out well."
+        }
+      ]
+    },
+    {
+      "n": 376,
+      "plain": "What isn’t yours by fate won’t stay, however hard you guard it. What is yours won’t leave, even if you throw it out.",
+      "pm": "What fate hasn’t made yours won’t stay though you guard it painfully. What fate has made yours won’t leave though you carry it out and scatter it. Keeping and losing are fate’s work, not care’s or neglect’s.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "903205e04ea81497",
+          "quote": "What isn’t yours by fate won’t stay, however hard you guard it",
+          "reason": "Care cannot keep what fate denies, nor carelessness lose what it grants."
+        }
+      ]
+    },
+    {
+      "n": 377,
+      "plain": "Even someone who has piled up millions can enjoy only what fate has allotted.",
+      "pm": "Though you gather ten million things to enjoy, you can enjoy them only as the deity allotted. He is called the Allotter because the fruit of one being’s deeds goes to that being and no other. Effort can create wealth, but enjoying it takes fate.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "701c9e2dfde77122",
+          "quote": "can enjoy only what fate has allotted",
+          "reason": "Even vast riches are enjoyed only as far as fate has allotted."
+        }
+      ]
+    },
+    {
+      "n": 378,
+      "plain": "The poor would renounce the world, if only fate didn’t make them live out the suffering still due to them.",
+      "pm": "Those too poor to enjoy anything would think of renouncing, if fate let them skip the pain that is due. Poverty has already taken what renunciation would give up, yet they still suffer. That is the strength of fate.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "0261c27b68774cb8",
+          "quote": "if only fate didn’t make them live out the suffering still due to them",
+          "reason": "Even the escape of the poor into renunciation is closed off by fate."
+        }
+      ]
+    },
+    {
+      "n": 379,
+      "plain": "If you welcome good times as good, why be distressed when the bad ones come?",
+      "pm": "When good deeds ripen, people enjoy the pleasures without trying to end them. When bad deeds ripen, why struggle to end the pains? You made both yourself and neither passes unlived, so accept both alike.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "dfba8e20372a06b6",
+          "quote": "why be distressed when the bad ones come",
+          "reason": "Asks why someone who welcomes good times should be distressed by bad ones."
+        },
+        {
+          "id": "04f8c80062eb3a4a",
+          "quote": "If you welcome good times as good"
+        }
+      ]
+    },
+    {
+      "n": 380,
+      "plain": "What is stronger than fate? Even as you plan a way around it, it gets there first.",
+      "pm": "Think up a way to stop it, and fate arrives by that very way or by another, ahead of your plan. Nothing is as strong. It leaves no time even for planning, let alone acting.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "c26cd046a51e6706",
+          "quote": "What is stronger than fate?"
+        }
+      ]
+    }
+  ],
+  "ideaLinks": [
+    {
+      "id": "5a15a2bb52f4f93a",
+      "quote": "The fate that brings you wealth also brings the drive to work",
+      "reason": "The fate that brings wealth also brings the drive to work."
+    },
+    {
+      "id": "bb50dcf864114d37",
+      "quote": "The fate that takes it away brings laziness",
+      "reason": "The fate that takes wealth away brings laziness."
+    },
+    {
+      "id": "e64ca1d47702e6b6",
+      "quote": "Fate that is bringing you gain widens your mind",
+      "reason": "Fate that is bringing gain widens the mind."
+    }
+  ]
+}

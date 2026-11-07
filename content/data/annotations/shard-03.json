@@ -1,0 +1,3490 @@
+{
+ "shard": "shard-03",
+ "chapters": [
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44
+ ],
+ "couplets": [
+  {
+   "n": 291,
+   "gloss": "Being truthful means saying only what does no harm to anyone, not merely what is factually accurate.",
+   "keywords": [
+    "definition of honesty",
+    "harm in words",
+    "ethics of speech"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Answers its own question: truth is speech with no trace of harm in it.",
+     "quote": "speech with no harm in it at all"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wondering-whether-to-lie",
+     "basis": "inferred",
+     "reason": "Gives someone weighing their words a single test: would saying this do any harm?",
+     "quote": "no harm in it at all"
+    }
+   ]
+  },
+  {
+   "n": 292,
+   "gloss": "A lie can count as truth if it does nothing but good, as when it saves an innocent person from harm.",
+   "keywords": [
+    "white lies",
+    "lying to protect someone",
+    "when lying is justified"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Stretches truthfulness to cover even a lie, so long as the good it brings has no fault in it.",
+     "quote": "Even a lie counts as truthfulness"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wondering-whether-to-lie",
+     "basis": "explicit",
+     "reason": "Sets the bar for a lie very high: the good it brings must be free of all fault.",
+     "quote": "if it brings good with no fault in it"
+    }
+   ]
+  },
+  {
+   "n": 293,
+   "gloss": "Never lie about what you know in your heart to be so: once you have, your own mind will torment you.",
+   "keywords": [
+    "guilty conscience",
+    "perjury",
+    "lying under oath",
+    "regret after lying"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:falsehood",
+     "basis": "explicit",
+     "reason": "Makes the liar their own punisher, burned from within once the lie is told.",
+     "quote": "your own heart will burn you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wondering-whether-to-lie",
+     "basis": "explicit",
+     "reason": "Warns anyone about to lie that their own heart will burn them for it afterwards.",
+     "quote": "Don’t lie about what your own heart knows"
+    }
+   ]
+  },
+  {
+   "n": 294,
+   "gloss": "Someone who is honest right through, not just in words, earns a place in everyone's heart.",
+   "keywords": [
+    "being trusted",
+    "sincerity",
+    "earning respect",
+    "integrity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Promises anyone who lives without lying a place in every heart.",
+     "quote": "you will live in the hearts of all the world"
+    }
+   ]
+  },
+  {
+   "n": 295,
+   "gloss": "A person who speaks the truth from the heart outranks both those who fast and those who give to charity.",
+   "keywords": [
+    "honesty over piety",
+    "sincere speech",
+    "religious practice"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Ranks a heart set on truth above both penance and almsgiving.",
+     "quote": "you stand above those who practise penance and give alms"
+    }
+   ]
+  },
+  {
+   "n": 296,
+   "gloss": "No reputation beats being known as someone who never lies, and that brings every good thing without any hardship.",
+   "keywords": [
+    "reputation for honesty",
+    "being known as honest",
+    "trustworthiness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Its reward needs no toil: not lying is enough to bring all righteousness.",
+     "quote": "Without any toil, it gives you all righteousness"
+    }
+   ]
+  },
+  {
+   "n": 297,
+   "gloss": "If you can go through life without ever lying, you hardly need any other virtue.",
+   "keywords": [
+    "one rule to live by",
+    "never lying",
+    "honesty above all"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Treats a life with no lie in it as enough, leaving other righteous deeds nothing to add.",
+     "quote": "leave other righteous deeds undone"
+    }
+   ]
+  },
+  {
+   "n": 298,
+   "gloss": "Water cleans the outside of you, but only honesty shows that you are clean on the inside.",
+   "keywords": [
+    "inner purity",
+    "clean conscience",
+    "ritual washing",
+    "outward appearance"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Gives the test of an inner purity that water can’t reach: is this person truthful?",
+     "quote": "Inner purity is seen through truthfulness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Sets truthfulness to do for the inside what water does for the outside.",
+     "quote": "seen through truthfulness"
+    }
+   ]
+  },
+  {
+   "n": 299,
+   "gloss": "Good people don't count ordinary lamps as real light: honesty is the one lamp that deserves the name.",
+   "keywords": [
+    "guiding light",
+    "truth as light",
+    "moral clarity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Among all lamps, the worthy give the name of lamp to not lying and nothing else.",
+     "quote": "To the worthy, the only lamp is the lamp of not lying"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lamp",
+     "basis": "explicit",
+     "reason": "Sets not lying beside every other lamp and finds it the only true one.",
+     "quote": "the lamp of not lying"
+    }
+   ]
+  },
+  {
+   "n": 300,
+   "gloss": "Of everything the poet has witnessed in life, nothing is better than truth.",
+   "keywords": [
+    "highest value",
+    "life experience",
+    "best thing in the world"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Of all the poet has seen to be true, nothing stands higher than truthfulness.",
+     "quote": "nothing at all is better than truthfulness"
+    }
+   ]
+  },
+  {
+   "n": 301,
+   "gloss": "Restraining your temper only means something when you could really do harm; if you can't, it proves nothing.",
+   "keywords": [
+    "holding your temper",
+    "power to retaliate",
+    "real restraint"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:self-control",
+     "basis": "explicit",
+     "reason": "Holding back only means something where your anger could take effect.",
+     "quote": "holds back anger where it can take effect"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "inferred",
+     "reason": "Anger held in where it could do damage is the only restraint that counts.",
+     "quote": "what does it matter if you hold it back or not"
+    }
+   ]
+  },
+  {
+   "n": 302,
+   "gloss": "Anger is wrong even when you can't act on it, and when you can act on it nothing is worse.",
+   "keywords": [
+    "anger at the boss",
+    "abusing power",
+    "powerless rage",
+    "temper with subordinates"
+   ],
+   "sensitive": "calls anger wrong even in someone helpless",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Leaves anger no excuse: bad where it can’t take effect, and at its worst where it can.",
+     "quote": "Anger is bad where it can’t take effect"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:power-over-others",
+     "basis": "inferred",
+     "reason": "Someone whose anger can take effect on others is told that nothing is worse.",
+     "quote": "Where it can, nothing is worse"
+    }
+   ]
+  },
+  {
+   "n": 303,
+   "gloss": "Let go of your anger at anyone at all, whoever they are, because it only breeds more harm.",
+   "keywords": [
+    "letting go of anger",
+    "anger management",
+    "resentment"
+   ],
+   "sensitive": "tells the wronged to drop anger at any offender",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Allows no exception for anyone, since evil things are born of anger.",
+     "quote": "Evil things are born of it"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-are-furious",
+     "basis": "explicit",
+     "reason": "Speaks straight to the person with a grievance: whoever did it, put the anger down.",
+     "quote": "Forget your anger, whoever it is against"
+    }
+   ]
+  },
+  {
+   "n": 304,
+   "gloss": "Anger kills laughter and joy: no enemy does you more damage.",
+   "keywords": [
+    "bad mood",
+    "losing your joy",
+    "anger and happiness"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Counts what it kills, the smile and the joy, and finds no other enemy to match it.",
+     "quote": "What other enemy is there"
+    }
+   ]
+  },
+  {
+   "n": 305,
+   "gloss": "If you care about yourself, stay away from rage, because left unchecked it will destroy you first.",
+   "keywords": [
+    "self-destructive anger",
+    "anger harms you",
+    "looking after yourself"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Turns anger back on its owner: left unguarded, the one it kills is you.",
+     "quote": "it is you that anger kills"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-are-furious",
+     "basis": "explicit",
+     "reason": "Asks the angry person to put their own safety first and step back from the rage.",
+     "quote": "If you would guard yourself, guard against anger"
+    }
+   ]
+  },
+  {
+   "n": 306,
+   "gloss": "Anger destroys anyone who goes near it and burns up the family that could have been their lifeline.",
+   "keywords": [
+    "anger hurting family",
+    "temper at home",
+    "family breakdown",
+    "losing loved ones"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Says the damage spreads past the angry person to the people who keep them safe.",
+     "quote": "burns the raft of safety that is your own people"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Anger acts as a fire here, killing whoever comes near it and burning your own people too.",
+     "quote": "the killer of those who come near it, burns"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "inferred",
+     "reason": "Calls your own people a raft of safety, and anger is what burns it.",
+     "quote": "the raft of safety"
+    }
+   ]
+  },
+  {
+   "n": 307,
+   "gloss": "Treating your rage as something to treasure is like punching the floor: you are certain to get hurt.",
+   "keywords": [
+    "holding a grudge",
+    "clinging to anger",
+    "backfiring"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Pictures prized anger as a blow struck on the ground, with ruin as certain for the one who strikes.",
+     "quote": "a hand that strikes the ground can’t escape"
+    }
+   ]
+  },
+  {
+   "n": 308,
+   "gloss": "Even when people hurt you as badly as being plunged into fire, it is best if you can keep from getting angry.",
+   "keywords": [
+    "extreme provocation",
+    "being wronged",
+    "keeping your cool"
+   ],
+   "sensitive": "urges no anger even under severe mistreatment",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Holds the ideal at its limit: no anger, though the wrongs are past bearing.",
+     "quote": "it is good not to be angry, if you can"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:you-are-furious",
+     "basis": "explicit",
+     "reason": "Meets a person at the height of their hurt and still asks them to hold off.",
+     "quote": "Even if someone hurts you as a mass of flame would"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Measures the pain of being wronged against standing in a mass of flames.",
+     "quote": "as a mass of flame would"
+    }
+   ]
+  },
+  {
+   "n": 309,
+   "gloss": "Drive anger out of your mind completely and everything you hope for will come to you at once.",
+   "keywords": [
+    "getting what you want",
+    "peace of mind",
+    "inner calm"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Promises every wish, at once, to the person who has cleared anger from the heart.",
+     "quote": "never even think of anger in your heart"
+    }
+   ]
+  },
+  {
+   "n": 310,
+   "gloss": "People consumed by rage are as good as dead, while those who give it up are equal to those who have renounced the world.",
+   "keywords": [
+    "giving up anger",
+    "saintliness",
+    "hot-headed"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Divides people by it: those far gone in anger are like the dead, and those who renounce it equal the renouncers.",
+     "quote": "Those who renounce anger are the equals of renouncers"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "Someone far gone in anger still breathes but is counted among the dead.",
+     "quote": "Those far gone in anger are like the dead"
+    }
+   ]
+  },
+  {
+   "n": 311,
+   "gloss": "Good people won't hurt anyone, even if doing so would make them rich and honoured.",
+   "keywords": [
+    "getting ahead at others' expense",
+    "ethics over money",
+    "harming others for profit"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Keeps the rule even with wealth and high standing as the prize for breaking it.",
+     "quote": "Doing no harm to others, even for wealth that brings high standing"
+    }
+   ]
+  },
+  {
+   "n": 312,
+   "gloss": "Even when someone hurts them out of hatred, good people do not hurt them back.",
+   "keywords": [
+    "not retaliating",
+    "taking the high road",
+    "responding to hate"
+   ],
+   "sensitive": "counsels not answering injury done in hate",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Holds the rule against the hardest case, harm done in hatred.",
+     "quote": "even when someone has harmed you in hatred"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:revenge",
+     "basis": "explicit",
+     "reason": "Makes refusing to harm in return the settled rule of the stainless, whatever was done to them.",
+     "quote": "Not harming in return"
+    }
+   ]
+  },
+  {
+   "n": 313,
+   "gloss": "Hurting someone, even a person who attacked you for no reason, brings you trouble you will never recover from.",
+   "keywords": [
+    "retaliation backfires",
+    "unprovoked attack",
+    "consequences of hitting back"
+   ],
+   "sensitive": "warns an unprovoked victim against hitting back",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Extends the ban to one who hated you without cause.",
+     "quote": "those who hated you when you had done nothing to them"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:revenge",
+     "basis": "explicit",
+     "reason": "Puts the cost of paying back on the one who does it: misery that can’t be escaped.",
+     "quote": "misery you can’t escape"
+    }
+   ]
+  },
+  {
+   "n": 314,
+   "gloss": "The best way to punish people who hurt you is to treat them well and leave them ashamed.",
+   "keywords": [
+    "killing with kindness",
+    "turning the other cheek",
+    "repaying evil with good"
+   ],
+   "sensitive": "tells the injured to repay harm with kindness",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Turns the question of punishment into an instruction to do the offender a good turn.",
+     "quote": "do them such good that they are ashamed"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:revenge",
+     "basis": "inferred",
+     "reason": "Replaces payback with a kindness, so that shame is the only penalty left.",
+     "quote": "such good that they are ashamed"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-revenge",
+     "basis": "explicit",
+     "reason": "Answers someone asking how to get back at an offender: do them good and let them feel it.",
+     "quote": "The way to punish those who harm you"
+    }
+   ]
+  },
+  {
+   "n": 315,
+   "gloss": "What good is being clever if you don't treat another creature's pain as your own and avoid causing it?",
+   "keywords": [
+    "empathy",
+    "intelligence without heart",
+    "putting yourself in their shoes"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Rates understanding as useless unless it guards against another’s pain as its own.",
+     "quote": "guard against another’s pain as you would your own"
+    }
+   ]
+  },
+  {
+   "n": 316,
+   "gloss": "Once you know how something hurts, make sure you never do it to anyone else.",
+   "keywords": [
+    "golden rule",
+    "learning from your own pain",
+    "breaking the cycle"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Turns what you know of pain into a rule: don’t do it to anyone else.",
+     "quote": "you must not do to anyone else"
+    }
+   ]
+  },
+  {
+   "n": 317,
+   "gloss": "The highest thing is never to hurt anyone deliberately, at any time or to any degree.",
+   "keywords": [
+    "deliberate harm",
+    "doing no harm",
+    "intentional cruelty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Leaves no gap in the rule: no person, no moment and no degree of harm is excepted.",
+     "quote": "Doing no wilful harm, in any measure, at any time, to anyone"
+    }
+   ]
+  },
+  {
+   "n": 318,
+   "gloss": "How can anyone who knows what suffering feels like go on making other creatures suffer?",
+   "keywords": [
+    "cruelty to others",
+    "knowing pain",
+    "treating others badly"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Asks in disbelief how anyone who knows harm firsthand can do it to others.",
+     "quote": "Why, then, do you harm other lives"
+    }
+   ]
+  },
+  {
+   "n": 319,
+   "gloss": "Harm someone in the morning and by the afternoon the harm will come back to you by itself.",
+   "keywords": [
+    "karma",
+    "instant karma",
+    "what goes around comes around"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fruits-of-action",
+     "basis": "explicit",
+     "reason": "Compresses the return of a deed into one day: harm in the morning, harm in the afternoon.",
+     "quote": "harm will come to you in the afternoon, by itself"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Gives a blunt reason to hurt no one: the harm needs no help to come home.",
+     "quote": "Harm others in the morning"
+    }
+   ]
+  },
+  {
+   "n": 320,
+   "gloss": "All the harm people do ends up falling on them, so those who want a life free of pain avoid doing harm.",
+   "keywords": [
+    "consequences",
+    "avoiding trouble",
+    "harm returns"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fruits-of-action",
+     "basis": "explicit",
+     "reason": "States the law at its widest: all pain falls back on the one who caused it.",
+     "quote": "All pain falls on those who cause pain"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Argues from self-interest: refrain from harm if you would live untouched by it.",
+     "quote": "Those who want to be free of pain cause none"
+    }
+   ]
+  },
+  {
+   "n": 321,
+   "gloss": "Not killing is the highest virtue, because killing brings every other wrong along with it.",
+   "keywords": [
+    "sanctity of life",
+    "nonviolence",
+    "worst sin"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Names not killing as righteous action itself, because killing brings every action of the other kind.",
+     "quote": "What is righteous action? Not killing"
+    }
+   ]
+  },
+  {
+   "n": 322,
+   "gloss": "Sharing your food and protecting living creatures is the highest of all the duties religious teachers have laid down.",
+   "keywords": [
+    "feeding the hungry",
+    "religious teaching",
+    "core of all religions"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:charity",
+     "basis": "explicit",
+     "reason": "Makes sharing your food one half of the highest thing the learned have gathered.",
+     "quote": "Sharing your food"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Places caring for living things beside sharing food, first among all the learned have gathered.",
+     "quote": "caring for many living things"
+    }
+   ]
+  },
+  {
+   "n": 323,
+   "gloss": "Not killing comes first among all goods, and not lying comes right after it.",
+   "keywords": [
+    "ranking virtues",
+    "most important value"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Gives it first place outright, with no rival beside it.",
+     "quote": "Not killing stands alone as good"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Honours not lying with the only place left, next after not killing.",
+     "quote": "Next after it, not lying is good"
+    }
+   ]
+  },
+  {
+   "n": 324,
+   "gloss": "The right path is the one that always asks how to avoid killing anything, even the smallest creature.",
+   "keywords": [
+    "animal welfare",
+    "insects",
+    "respect for small creatures"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Measures the good path by its care to kill nothing at all.",
+     "quote": "takes care to kill nothing at all"
+    }
+   ]
+  },
+  {
+   "n": 325,
+   "gloss": "Of all who have renounced the world, the greatest is the one who shrinks from killing and honours all life.",
+   "keywords": [
+    "monks and nonviolence",
+    "spiritual ranking",
+    "reverence for life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Ranks highest the renouncer who dreads killing and keeps to not killing.",
+     "quote": "the highest is the one who dreads killing"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "Judges among those who have already given up the world and ranks one of them first.",
+     "quote": "Among all who dread the state they are in and renounce"
+    }
+   ]
+  },
+  {
+   "n": 326,
+   "gloss": "Death, which devours every life, stays away from the days of someone who lives by a vow not to kill.",
+   "keywords": [
+    "long life",
+    "vow of nonviolence",
+    "protected from death"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Holds out the rarest reward for not killing: days that death leaves alone.",
+     "quote": "someone who holds to not killing"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:god-of-death",
+     "basis": "explicit",
+     "reason": "Death is an eater of lives who won’t come upon this person’s days.",
+     "quote": "Death, which eats lives"
+    }
+   ]
+  },
+  {
+   "n": 327,
+   "gloss": "Never take another creature's life, which is as sweet to it as yours is to you, even to save your own.",
+   "keywords": [
+    "self-sacrifice",
+    "killing in self-defence",
+    "value of every life"
+   ],
+   "sensitive": "counsels dying rather than killing, even to survive",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Binds the rule even where the price of keeping it is one's own life.",
+     "quote": "Even if you lose your own life for it"
+    }
+   ]
+  },
+  {
+   "n": 328,
+   "gloss": "However great the gains from killing may be, good people regard them as the lowest kind of gain.",
+   "keywords": [
+    "blood money",
+    "animal sacrifice",
+    "profit from violence"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Rejects any gain won by killing, however great it may be.",
+     "quote": "gain that comes from killing is the lowest thing"
+    }
+   ]
+  },
+  {
+   "n": 329,
+   "gloss": "Those who make a living by killing are held by people of judgement to be as low as those who feed on rotting flesh.",
+   "keywords": [
+    "butchers",
+    "hunters",
+    "killing for a living",
+    "moral contempt"
+   ],
+   "sensitive": "the Tamil ranks killers with low-caste work",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Shows the contempt a living made by killing earns from those who can see baseness.",
+     "quote": "People who live by killing"
+    }
+   ]
+  },
+  {
+   "n": 330,
+   "gloss": "The wise say that people living with terrible sores and misery must have taken lives in a previous existence.",
+   "keywords": [
+    "illness as punishment",
+    "past lives",
+    "sin and sickness"
+   ],
+   "sensitive": "blames the sick for their disease",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:fruits-of-action",
+     "basis": "explicit",
+     "reason": "Has people trace a diseased body to lives taken before, a deed coming home in the flesh.",
+     "quote": "are those who took life from bodies"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "inferred",
+     "reason": "Reads a diseased body as the price of taking life, which warns against it.",
+     "quote": "took life from bodies"
+    }
+   ]
+  },
+  {
+   "n": 331,
+   "gloss": "The worst kind of stupidity is mistaking what passes away for something that will last.",
+   "keywords": [
+    "nothing lasts",
+    "taking things for granted",
+    "false security",
+    "living in denial"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:delusion",
+     "basis": "explicit",
+     "reason": "Ranks taking the passing for the lasting as the lowest error of all.",
+     "quote": "takes what doesn’t last for what lasts"
+    }
+   ]
+  },
+  {
+   "n": 332,
+   "gloss": "Great wealth arrives like a crowd gathering for a show and leaves the same way when the show ends.",
+   "keywords": [
+    "sudden wealth",
+    "losing money",
+    "fleeting success"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "explicit",
+     "reason": "Wealth gathers and scatters as a crowd at a dance does, with nothing to hold it.",
+     "quote": "It goes the way that crowd goes when the dance is over"
+    }
+   ]
+  },
+  {
+   "n": 333,
+   "gloss": "Wealth never stays, so when you have it, use it at once for something that lasts.",
+   "keywords": [
+    "using money well",
+    "doing good while you can",
+    "money and legacy"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "explicit",
+     "reason": "Opens on the plain fact that wealth doesn’t stay.",
+     "quote": "It is the nature of wealth not to stay"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "inferred",
+     "reason": "The things that stay, which it says to do at once, can only be good deeds, since wealth won’t wait.",
+     "quote": "do at once the things that stay"
+    }
+   ]
+  },
+  {
+   "n": 334,
+   "gloss": "A day seems harmless, but to those who understand, it is a blade cutting steadily through your life.",
+   "keywords": [
+    "getting older",
+    "time passing",
+    "life slipping away"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "explicit",
+     "reason": "Unmasks the harmless-looking passage of days as a blade that never stops cutting.",
+     "quote": "a blade sawing through life"
+    }
+   ]
+  },
+  {
+   "n": 335,
+   "gloss": "Hurry to do good before your tongue locks and the death rattle starts.",
+   "keywords": [
+    "last chance to do good",
+    "deathbed",
+    "not waiting"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Presses for good deeds now, with the stilled tongue as the deadline.",
+     "quote": "rush to do good deeds"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:putting-things-off",
+     "basis": "explicit",
+     "reason": "Whoever keeps postponing the good they mean to do is shown the last deadline there is.",
+     "quote": "Before your tongue is stilled and the hiccup rises"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:thinking-about-death",
+     "basis": "explicit",
+     "reason": "Turns the thought of dying into a plain instruction: do good while you still can.",
+     "quote": "rush to do good deeds"
+    }
+   ]
+  },
+  {
+   "n": 336,
+   "gloss": "Someone is here yesterday and gone today: that is the strange marvel of this world.",
+   "keywords": [
+    "sudden death",
+    "shock of losing someone",
+    "here today gone tomorrow"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "explicit",
+     "reason": "With grim irony, names as the world’s greatness that a man here yesterday is gone today.",
+     "quote": "a man was here yesterday and is gone today"
+    }
+   ]
+  },
+  {
+   "n": 337,
+   "gloss": "People can't be sure of the next minute, yet they carry around millions of plans.",
+   "keywords": [
+    "making plans",
+    "uncertainty of life",
+    "overthinking",
+    "future worries"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "explicit",
+     "reason": "Life's hold is so thin that no one can vouch for the coming minute.",
+     "quote": "can’t be sure of living one moment more"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:thinking-about-death",
+     "basis": "explicit",
+     "reason": "Puts all one's schemes in proportion for anyone shaken by how uncertain life is.",
+     "quote": "they think thoughts by the ten million"
+    }
+   ]
+  },
+  {
+   "n": 338,
+   "gloss": "The bond between soul and body is like a chick leaving its broken shell behind and flying off.",
+   "keywords": [
+    "leaving the body",
+    "dying",
+    "what death is"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:soul-and-body",
+     "basis": "explicit",
+     "reason": "The soul is the bird that flies, and the body the egg left lying alone.",
+     "quote": "a bird that flies off and leaves the egg lying alone"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:impermanence",
+     "basis": "inferred",
+     "reason": "Aiyar's love of soul for body lasts only until the bird flies, so the tie is a passing one.",
+     "quote": "the love between the soul and the body"
+    }
+   ]
+  },
+  {
+   "n": 339,
+   "gloss": "Death is like falling asleep, and being born again is like waking up afterwards.",
+   "keywords": [
+    "what happens after death",
+    "afterlife",
+    "reincarnation"
+   ],
+   "sensitive": "likens death to sleep, which a despairing reader may take as comfort",
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:rebirth",
+     "basis": "inferred",
+     "reason": "Each birth is a waking from the sleep of death.",
+     "quote": "Birth is like waking after sleep"
+    }
+   ]
+  },
+  {
+   "n": 340,
+   "gloss": "Does the soul have no real home, that it has to take shelter in this poor body?",
+   "keywords": [
+    "the body as temporary",
+    "where the soul belongs",
+    "spiritual home"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:soul-and-body",
+     "basis": "explicit",
+     "reason": "Treats the body as a makeshift shelter for a soul with no house of its own.",
+     "quote": "Has it still found no home of its own"
+    }
+   ]
+  },
+  {
+   "n": 341,
+   "gloss": "Whatever you let go of can no longer cause you pain.",
+   "keywords": [
+    "freedom from possessions",
+    "less stress",
+    "simplifying life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "Promises relief item by item: each thing given up takes its own pain with it.",
+     "quote": "From each thing you have let go of, you suffer no more pain"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-to-walk-away",
+     "basis": "explicit",
+     "reason": "Tells someone drawn to letting go that every single thing dropped is a sorrow escaped.",
+     "quote": "each thing you have let go of"
+    }
+   ]
+  },
+  {
+   "n": 342,
+   "gloss": "If you want happiness, give things up while you still have them: many joys come after you do.",
+   "keywords": [
+    "simple life",
+    "quitting the rat race",
+    "leaving early"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "Reverses the expected loss: renouncing brings many things here, rather than taking them away.",
+     "quote": "Once you have renounced, many things are yours here"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-to-walk-away",
+     "basis": "explicit",
+     "reason": "Adds urgency for one already feeling the pull: if you want what it brings, go while you can.",
+     "quote": "renounce while you can"
+    }
+   ]
+  },
+  {
+   "n": 343,
+   "gloss": "Subdue all five senses and give up, all at once, everything you enjoy.",
+   "keywords": [
+    "giving up pleasure",
+    "total abstinence",
+    "strict discipline"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-control",
+     "basis": "explicit",
+     "reason": "Demands in so many words that the five senses be crushed.",
+     "quote": "crush the hold of the five senses"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "Asks for more than the senses: everything you wanted is to go, all together.",
+     "quote": "give up, all together, everything you wanted"
+    }
+   ]
+  },
+  {
+   "n": 344,
+   "gloss": "Owning nothing is the natural rule for someone under vows: keeping even one thing draws them back into the trap.",
+   "keywords": [
+    "monastic poverty",
+    "vow of poverty",
+    "minimalism"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "States the rule of the renouncer in one line: to have nothing at all.",
+     "quote": "Having nothing at all is the way of penance"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:ascetic",
+     "basis": "explicit",
+     "reason": "Speaks of one doing penance, warning that owning a single thing brings back delusion.",
+     "quote": "Owning even one thing brings back delusion"
+    }
+   ]
+  },
+  {
+   "n": 345,
+   "gloss": "For someone trying to end the cycle of rebirth your own flesh is excess baggage, so why keep any other ties?",
+   "keywords": [
+    "cutting ties",
+    "ending rebirth",
+    "spiritual seeker"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:attachment",
+     "basis": "explicit",
+     "reason": "Argues up from the body itself: if that is too much, every lesser tie is worse.",
+     "quote": "even the body is too much"
+    }
+   ]
+  },
+  {
+   "n": 346,
+   "gloss": "The ego's sense of me and my things is pure pride: whoever cuts it away reaches a world above the gods.",
+   "keywords": [
+    "self-centredness",
+    "possessiveness",
+    "selfishness",
+    "letting go of self"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:arrogance",
+     "basis": "explicit",
+     "reason": "Traces pride to the very words “I” and “mine”, and promises a higher world for cutting it away.",
+     "quote": "the pride that says “I” and “mine”"
+    }
+   ]
+  },
+  {
+   "n": 347,
+   "gloss": "Those who cling to things and won't let go are themselves gripped by suffering that won't let go.",
+   "keywords": [
+    "clinging",
+    "can't let go",
+    "possessive"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:attachment",
+     "basis": "explicit",
+     "reason": "Mirrors clinging with its punishment: they won’t let go, and suffering won’t let go of them.",
+     "quote": "hold on to attachment and won’t let go"
+    }
+   ]
+  },
+  {
+   "n": 348,
+   "gloss": "Those who give up everything are on their way to freedom; everyone else is confused and caught in a net.",
+   "keywords": [
+    "half measures",
+    "all or nothing",
+    "trapped by life"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:renunciation",
+     "basis": "explicit",
+     "reason": "Allows no middle ground: complete renouncing arrives, and all others sit in a net.",
+     "quote": "Those who renounce completely have arrived"
+    }
+   ]
+  },
+  {
+   "n": 349,
+   "gloss": "The moment you are free of attachment, rebirth ends; until then you only go on in what cannot last.",
+   "keywords": [
+    "breaking free",
+    "cycle of rebirth",
+    "moksha"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:attachment",
+     "basis": "explicit",
+     "reason": "Says that without ending attachment you go on seeing impermanence.",
+     "quote": "Otherwise you will see impermanence"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:liberation",
+     "basis": "explicit",
+     "reason": "Fixes the exact moment of freedom: birth is cut off the instant attachment ends.",
+     "quote": "The moment attachment ends, birth is cut off"
+    }
+   ]
+  },
+  {
+   "n": 350,
+   "gloss": "Hold on to God, who has no attachments; hold on to that so that you can let go of everything else.",
+   "keywords": [
+    "faith",
+    "clinging to god",
+    "spiritual refuge",
+    "letting go through prayer"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:devotion",
+     "basis": "explicit",
+     "reason": "Bids the seeker hold to the one who has no attachment.",
+     "quote": "Hold to the attachment of the one who has no attachment"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:attachment",
+     "basis": "explicit",
+     "reason": "Makes letting go of attachment the reason for holding to that one.",
+     "quote": "so that you can let go of attachment"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "Aiyar's ark is the refuge one grips to be carried free, though the Tamil only says cling.",
+     "quote": "hold fast to that ark"
+    }
+   ]
+  },
+  {
+   "n": 351,
+   "gloss": "Taking worthless things for what truly matters is the mistake that gives you a wretched life.",
+   "keywords": [
+    "wrong priorities",
+    "chasing illusions",
+    "misplaced values"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:delusion",
+     "basis": "explicit",
+     "reason": "Blames a wretched birth on one error, taking what isn’t real for what is.",
+     "quote": "the delusion that takes what isn’t real for what is"
+    }
+   ]
+  },
+  {
+   "n": 352,
+   "gloss": "Once confusion lifts and you see clearly, the darkness is gone and joy takes its place.",
+   "keywords": [
+    "clarity",
+    "seeing clearly",
+    "mental fog lifting",
+    "happiness"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:delusion",
+     "basis": "explicit",
+     "reason": "Shows what its removal yields: those rid of it get joy in place of darkness.",
+     "quote": "have left delusion behind"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Credits stainless seeing with bringing joy to the one who has it.",
+     "quote": "see without stain"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:darkness",
+     "basis": "explicit",
+     "reason": "Error is a darkness here, and it lifts for the one who sees clearly.",
+     "quote": "darkness goes and joy comes"
+    }
+   ]
+  },
+  {
+   "n": 353,
+   "gloss": "Someone who has moved past doubt and found what is real stands closer to heaven than to the ground under their feet.",
+   "keywords": [
+    "overcoming doubt",
+    "certainty",
+    "spiritual clarity"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Puts heaven nearer than earth for those whose doubts have ended.",
+     "quote": "heaven is nearer than the earth"
+    }
+   ]
+  },
+  {
+   "n": 354,
+   "gloss": "Even with all your human faculties, nothing is gained if you never grasp what is real.",
+   "keywords": [
+    "meaning of life",
+    "wasted life",
+    "human potential"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Counts even mastery of the senses as no gain without knowledge of the truth.",
+     "quote": "no gain in it without knowledge of the truth"
+    }
+   ]
+  },
+  {
+   "n": 355,
+   "gloss": "Real wisdom means seeing what a thing truly is, whatever it appears to be.",
+   "keywords": [
+    "seeing through appearances",
+    "looks can be deceiving",
+    "essence of things"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Names the work of understanding as finding the true in every thing, whatever form it takes.",
+     "quote": "understanding is seeing the reality in it"
+    }
+   ]
+  },
+  {
+   "n": 356,
+   "gloss": "Those who study deeply and find the truth here set out on the road that does not lead back to this world.",
+   "keywords": [
+    "study and enlightenment",
+    "no more rebirth",
+    "end of the cycle"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Joins learning to insight and rewards the pair with a path that doesn’t come back.",
+     "quote": "Those who learn here and see the truth"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:liberation",
+     "basis": "explicit",
+     "reason": "Makes the path with no return to this world the prize held out.",
+     "quote": "the path that doesn’t come back here"
+    }
+   ]
+  },
+  {
+   "n": 357,
+   "gloss": "Once your mind has reflected and truly grasped what is real, you need no longer think about being born again.",
+   "keywords": [
+    "meditation",
+    "afterlife worries",
+    "certainty"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Relieves the one who has reasoned their way to what truly is of all thought of another birth.",
+     "quote": "you need not think of being born again"
+    }
+   ]
+  },
+  {
+   "n": 358,
+   "gloss": "Wisdom is seeing the highest good, so that you are rid of the foolishness of being born.",
+   "keywords": [
+    "purpose of wisdom",
+    "why seek wisdom",
+    "spiritual goal"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "explicit",
+     "reason": "Gives understanding its aim: to see the pure reality called excellence.",
+     "quote": "see the pure reality called excellence"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:liberation",
+     "basis": "explicit",
+     "reason": "Birth itself is the folly here, and ending it is what understanding aims at.",
+     "quote": "the folly called birth"
+    }
+   ]
+  },
+  {
+   "n": 359,
+   "gloss": "If you know what your freedom rests on and live so as to break your attachments, the troubles ahead of you will leave.",
+   "keywords": [
+    "avoiding future suffering",
+    "spiritual practice",
+    "detachment"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:attachment",
+     "basis": "explicit",
+     "reason": "Treats living so that attachment dies as what sends future ills away.",
+     "quote": "live so that attachment dies"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:realisation-of-truth",
+     "basis": "inferred",
+     "reason": "Knowing what to rest on is this insight, and it comes before the living.",
+     "quote": "If you know what to rest on"
+    }
+   ]
+  },
+  {
+   "n": 360,
+   "gloss": "When desire, anger and confusion fade, even their very names, your troubles fade away with them.",
+   "keywords": [
+    "root causes of suffering",
+    "three poisons",
+    "inner peace"
+   ],
+   "edges": [
+    {
+     "type": "ENUMERATES",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Heads the three whose going takes pain along with it.",
+     "quote": "desire"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Stands between desire and delusion among the three whose names must go for pain to go.",
+     "quote": "anger"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:delusion",
+     "basis": "explicit",
+     "reason": "Closes the list of three, the mistaking of things that goes with wanting and rage.",
+     "quote": "delusion"
+    }
+   ]
+  },
+  {
+   "n": 361,
+   "gloss": "Desire is what every living being's endless births grow from, at all times.",
+   "keywords": [
+    "root of suffering",
+    "cycle of rebirth",
+    "reincarnation"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Says what craving is at bottom: the seed from which every life’s births are grown.",
+     "quote": "craving is the seed"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Birth is what never ends, and craving is the seed it grows from.",
+     "quote": "the seed that yields"
+    }
+   ]
+  },
+  {
+   "n": 362,
+   "gloss": "If you must want something, want never to be reborn, and you will get that by wanting to stop wanting.",
+   "keywords": [
+    "what to wish for",
+    "paradox of wanting",
+    "freedom from rebirth"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:liberation",
+     "basis": "explicit",
+     "reason": "Names it the one longing worth having, if one must long at all.",
+     "quote": "want not to be born"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:desirelessness",
+     "basis": "explicit",
+     "reason": "Gives the paradox: what opens the way is wanting to want nothing.",
+     "quote": "wanting to want nothing"
+    }
+   ]
+  },
+  {
+   "n": 363,
+   "gloss": "Nothing here or anywhere else is as valuable as wanting nothing.",
+   "keywords": [
+    "contentment",
+    "real wealth",
+    "satisfied with what you have"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:desirelessness",
+     "basis": "explicit",
+     "reason": "No wealth here, and nothing anywhere else, comes up to it.",
+     "quote": "no great wealth here to match wanting nothing"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Takes the word wealth from money and hands it to the state of wanting nothing.",
+     "quote": "no great wealth here"
+    }
+   ]
+  },
+  {
+   "n": 364,
+   "gloss": "Being pure just means being free of desire, and you get there by wanting truth above everything.",
+   "keywords": [
+    "what purity means",
+    "spiritual cleanliness",
+    "seeking truth"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:purity-of-heart",
+     "basis": "explicit",
+     "reason": "Reduces purity to one thing, having no craving left.",
+     "quote": "Purity is having no craving"
+    }
+   ]
+  },
+  {
+   "n": 365,
+   "gloss": "The truly free are those who have lost their desires; anyone else may look free but is still tied down.",
+   "keywords": [
+    "true freedom",
+    "appearing free",
+    "being trapped by wants"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:liberation",
+     "basis": "explicit",
+     "reason": "Keeps the name of free for those rid of craving and denies it to the rest.",
+     "quote": "Those who are called free are the ones free of craving"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:desirelessness",
+     "basis": "explicit",
+     "reason": "Shows everyone else as not free in the same way, for lack of it.",
+     "quote": "The others are not free in the same way"
+    }
+   ]
+  },
+  {
+   "n": 366,
+   "gloss": "If you care about doing right, run from desire, because desire is what tricks you.",
+   "keywords": [
+    "temptation",
+    "moral danger",
+    "being deceived by wants"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Warns that craving is what deceives you.",
+     "quote": "Craving is what deceives you"
+    }
+   ]
+  },
+  {
+   "n": 367,
+   "gloss": "Cut out your desires completely and liberation will come however you choose to seek it.",
+   "keywords": [
+    "path to salvation",
+    "complete detachment"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:desirelessness",
+     "basis": "explicit",
+     "reason": "Says that with craving wholly cut away, deeds that never fail come as you want them.",
+     "quote": "cut off craving completely"
+    }
+   ]
+  },
+  {
+   "n": 368,
+   "gloss": "With no desires you have no sorrow; if you do have them, one misery follows another.",
+   "keywords": [
+    "unhappiness",
+    "wanting things",
+    "consumerism",
+    "endless problems"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Piles suffering on suffering upon whoever goes on craving.",
+     "quote": "suffering comes on and on, without end"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-more",
+     "basis": "explicit",
+     "reason": "Shows a person always after the next thing that the wanting itself feeds the misery.",
+     "quote": "Those without craving have no suffering"
+    }
+   ]
+  },
+  {
+   "n": 369,
+   "gloss": "Get rid of desire, the worst misery there is, and you will have unbroken joy even in this life.",
+   "keywords": [
+    "happiness in this life",
+    "ending misery"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Calls it outright the worst suffering of all.",
+     "quote": "craving, the worst suffering of all"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:desirelessness",
+     "basis": "explicit",
+     "reason": "Offers unbroken joy, and not later but here, to whoever destroys craving.",
+     "quote": "joy goes on unbroken, even here"
+    }
+   ]
+  },
+  {
+   "n": 370,
+   "gloss": "Desire can never be satisfied, but the moment you give it up you reach a state that never changes.",
+   "keywords": [
+    "never enough",
+    "insatiable",
+    "instant peace"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:craving",
+     "basis": "explicit",
+     "reason": "Declares it a hunger that no getting can ever fill.",
+     "quote": "whose nature is never to be filled"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:wanting-more",
+     "basis": "explicit",
+     "reason": "Tells someone stuck chasing more that satisfaction lies in stopping, not in the next gain.",
+     "quote": "If you give up craving"
+    }
+   ]
+  },
+  {
+   "n": 381,
+   "gloss": "The best ruler is one who has all six: an army, a people, resources, advisers, allies and defences.",
+   "keywords": [
+    "elements of a state",
+    "what a country needs",
+    "national strength"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Measures rulers against each other and says who stands as the bull among them.",
+     "quote": "a bull among rulers"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:kingship",
+     "basis": "explicit",
+     "reason": "Sets out the six possessions by which a ruler's standing is judged.",
+     "quote": "whoever has all six"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:army",
+     "basis": "explicit",
+     "reason": "The army stands first in the list of six.",
+     "quote": "An army"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Food, the crop that is the realm’s wealth, comes third.",
+     "quote": "food"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:friendship",
+     "basis": "inferred",
+     "reason": "Friends, the Tamil’s நட்பு, come fifth.",
+     "quote": "friends"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:fortress",
+     "basis": "explicit",
+     "reason": "Forts close the list of what such a ruler must hold.",
+     "quote": "forts"
+    }
+   ]
+  },
+  {
+   "n": 382,
+   "gloss": "A ruler must never run short of these four: courage, generosity, good sense and drive.",
+   "keywords": [
+    "leadership traits",
+    "qualities of a leader",
+    "what makes a good leader"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Lays down what must never be missing in the ruler himself.",
+     "quote": "a ruler’s nature is never to lack these four"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:kingship",
+     "basis": "explicit",
+     "reason": "Names the marks of the office in what a ruler is, not in what he owns.",
+     "quote": "never to lack these four"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:courage",
+     "basis": "explicit",
+     "reason": "Leads the four things a ruler may never lack.",
+     "quote": "Fearlessness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "A ruler’s giving is second among the four that must not fail.",
+     "quote": "giving"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Understanding, the Tamil’s அறிவு, is the good sense a ruler needs third.",
+     "quote": "understanding"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:energy",
+     "basis": "explicit",
+     "reason": "Drive closes the list of what no ruler can go without.",
+     "quote": "drive"
+    }
+   ]
+  },
+  {
+   "n": 383,
+   "gloss": "People fit to govern a land never lose these three: alertness, education and decisiveness.",
+   "keywords": [
+    "strong leadership",
+    "leaders who read",
+    "qualities of leadership"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Speaks of those who rule the land, not of people in general.",
+     "quote": "those who rule the land"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:kingship",
+     "basis": "explicit",
+     "reason": "Marks a ruler by three things that must stay with him for good.",
+     "quote": "these three never leave"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:vigilance",
+     "basis": "explicit",
+     "reason": "Wakefulness, the Tamil’s not sleeping, opens the three.",
+     "quote": "Wakefulness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Study is the second thing that may never leave one who rules.",
+     "quote": "learning"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:resolve",
+     "basis": "explicit",
+     "reason": "Resolve completes the three: the firmness to settle a matter and hold to it.",
+     "quote": "resolve"
+    }
+   ]
+  },
+  {
+   "n": 384,
+   "gloss": "A good ruler keeps to what is right, gets rid of wrong, and guards his honour without failing in courage.",
+   "keywords": [
+    "ethical leadership",
+    "honour in office",
+    "standing firm"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Written as a charge, setting out what the ruler shall and shall not do.",
+     "quote": "A ruler keeps to righteousness"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:righteousness",
+     "basis": "explicit",
+     "reason": "Requires of him first that righteousness never fail and that wrong be removed.",
+     "quote": "keeps to righteousness, removes what is wrong"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Charges him with an honour that never slips.",
+     "quote": "an honour that never slips from valour"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:valour",
+     "basis": "explicit",
+     "reason": "Forbids any lapse in valour, the Tamil's மறன், even as he guards his name.",
+     "quote": "never slips from valour"
+    }
+   ]
+  },
+  {
+   "n": 385,
+   "gloss": "A competent ruler knows how to build up resources, raise revenue, protect it, and spend it well.",
+   "keywords": [
+    "public finance",
+    "government budget",
+    "managing a country's money"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Holds the ruler himself to these four tasks.",
+     "quote": "A ruler is one who can"
+    },
+    {
+     "type": "DEFINES",
+     "target": "theme:kingship",
+     "basis": "explicit",
+     "reason": "Describes the office as four tasks: to create, gather, guard and share out.",
+     "quote": "create, gather and guard, and share out what is guarded"
+    }
+   ]
+  },
+  {
+   "n": 386,
+   "gloss": "A ruler who is easy to reach and never speaks harshly makes his country respected above all others.",
+   "keywords": [
+    "approachable boss",
+    "open door",
+    "respected leader"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Ties the land’s standing to two habits of its ruler.",
+     "quote": "his land will be praised above all others"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:accessibility",
+     "basis": "explicit",
+     "reason": "Asks that a ruler be easy for people to see.",
+     "quote": "easy to see"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "Names a sharp tongue as the other thing an esteemed ruler must not have.",
+     "quote": "not harsh in speech"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:power-over-others",
+     "basis": "inferred",
+     "reason": "Anyone leading others gets two plain rules: let people reach you, and do not snap at them.",
+     "quote": "easy to see and not harsh in speech"
+    }
+   ]
+  },
+  {
+   "n": 387,
+   "gloss": "A ruler who gives generously and protects his people with kind words finds the world goes as he says.",
+   "keywords": [
+    "generous leader",
+    "gracious giving",
+    "influence",
+    "popularity"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Promises one who gives and protects with sweet words a world that follows their word.",
+     "quote": "the world is just as their own word would have it"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Praises giving when it is done with sweet words.",
+     "quote": "give and protect with sweet words"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:kind-speech",
+     "basis": "inferred",
+     "reason": "The gift is to come with sweet words, the Tamil’s இன்சொல்.",
+     "quote": "with sweet words"
+    }
+   ]
+  },
+  {
+   "n": 388,
+   "gloss": "A ruler who gives fair judgement and protects his people will be treated as a god by them.",
+   "keywords": [
+    "fair leader",
+    "justice system",
+    "protecting citizens"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Raises the ruler who does justice and protects to the rank of lord of the people.",
+     "quote": "the lord of his people"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "Joins the two halves of good rule, even justice and the guarding of the people.",
+     "quote": "does justice and protects"
+    }
+   ]
+  },
+  {
+   "n": 389,
+   "gloss": "The world happily stays under the rule of a leader who can put up with words that sting.",
+   "keywords": [
+    "accepting criticism",
+    "leader who listens",
+    "bitter truths",
+    "feedback"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Says the world will rest under the umbrella of the ruler who can bear this.",
+     "quote": "The world rests under the umbrella"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:openness-to-rebuke",
+     "basis": "explicit",
+     "reason": "Calls it a virtue in a ruler to sit still under what is bitter to hear.",
+     "quote": "bear words bitter to his ears"
+    }
+   ]
+  },
+  {
+   "n": 390,
+   "gloss": "A ruler who is generous, gracious, just and cares for his people shines among rulers.",
+   "keywords": [
+    "best leader",
+    "caring leadership",
+    "role model"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Holds up the ruler with all these gifts as the brightest of his kind.",
+     "quote": "a light among rulers"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Giving leads the list of what makes a light among rulers.",
+     "quote": "Giving"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:just-rule",
+     "basis": "explicit",
+     "reason": "The straight sceptre, the Tamil’s செங்கோல், is third of the four.",
+     "quote": "a straight sceptre"
+    }
+   ]
+  },
+  {
+   "n": 391,
+   "gloss": "Learn thoroughly what is worth learning, and then live by what you have learned.",
+   "keywords": [
+    "applying knowledge",
+    "practice what you learn",
+    "study habits"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Is not satisfied with study alone: what is learned must be lived up to.",
+     "quote": "Once you have learned it, live up to it"
+    }
+   ]
+  },
+  {
+   "n": 392,
+   "gloss": "Mathematics and reading are the two eyes that every living person needs.",
+   "keywords": [
+    "literacy",
+    "numeracy",
+    "basic education"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Makes numbers and letters the sight of every living person, not a luxury.",
+     "quote": "What they call numbers and what they call letters"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Two branches of knowledge are counted as the pair of eyes one sees the world with.",
+     "quote": "these two, they say, are the eyes of those who live"
+    }
+   ]
+  },
+  {
+   "n": 393,
+   "gloss": "Only educated people truly have eyes: the uneducated just have two open wounds on their face.",
+   "keywords": [
+    "value of education",
+    "illiteracy",
+    "seeing clearly"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Grants the power of seeing to the learned and no one else.",
+     "quote": "Those said to have eyes are the learned"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Reduces the eyes of the unlearned to a pair of sores.",
+     "quote": "The unlearned have two sores on their faces"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Sets working eyes against sores in the face to show what learning does for a person.",
+     "quote": "two sores on their faces"
+    }
+   ]
+  },
+  {
+   "n": 394,
+   "gloss": "Scholars make people glad when they arrive and leave people thinking of them when they go.",
+   "keywords": [
+    "good company",
+    "being missed",
+    "teachers",
+    "memorable people"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Describes the way of the learned among others, welcomed and then missed.",
+     "quote": "that is the way of the learned"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Shows its charm in company, where those left behind regret the parting.",
+     "quote": "to part so that they long to meet again"
+    }
+   ]
+  },
+  {
+   "n": 395,
+   "gloss": "Even if you must stand humbly before a teacher like a pauper before the rich, learn: those who won't are the lowest people.",
+   "keywords": [
+    "respect for teachers",
+    "swallowing pride to learn",
+    "being a student"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Finds it worth the humbling of yearning like the poor before the rich.",
+     "quote": "yearning like the poor before the rich"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Ranks those who don’t learn lowest of all.",
+     "quote": "Those who don’t learn are the lowest"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "inferred",
+     "reason": "Speaks of the one who learns, who may have to stoop like the poor before the rich.",
+     "quote": "Some learn, though it means yearning"
+    }
+   ]
+  },
+  {
+   "n": 396,
+   "gloss": "Knowledge is like a spring dug in sand: the more you draw from it, the more it flows.",
+   "keywords": [
+    "lifelong learning",
+    "curiosity",
+    "keep studying"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Promises that understanding, like a well dug in sand, flows as far as you go.",
+     "quote": "People’s understanding flows as far as they learn"
+    }
+   ]
+  },
+  {
+   "n": 397,
+   "gloss": "An educated person is at home in any town or country, so why would anyone stay unlearned until they die?",
+   "keywords": [
+    "moving abroad",
+    "education travels",
+    "belonging anywhere"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Says of the learned alone that no town is foreign to them.",
+     "quote": "To the learned, every country is their country"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Asks why anyone would go to the grave still untaught when the reward is so plain.",
+     "quote": "Why then does anyone go without learning until they die"
+    }
+   ]
+  },
+  {
+   "n": 398,
+   "gloss": "What you learn in one life keeps lifting you up through all the lives that follow.",
+   "keywords": [
+    "lasting value of education",
+    "next life",
+    "reincarnation"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Claims for learning a reward that outlives the body and serves through seven births.",
+     "quote": "shelters you for seven"
+    }
+   ]
+  },
+  {
+   "n": 399,
+   "gloss": "Learned people see that what delights them also delights others, and that makes them love learning even more.",
+   "keywords": [
+    "joy of teaching",
+    "sharing knowledge",
+    "love of learning"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Shows a delight that grows by being shared with the world.",
+     "quote": "the world delights in what delights them"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Looks into the hearts of the learned to find why they keep at it.",
+     "quote": "the learned desire it all the more"
+    }
+   ]
+  },
+  {
+   "n": 400,
+   "gloss": "Education is the one wealth that never decays or runs out: everything else you own is nothing beside it.",
+   "keywords": [
+    "investing in education",
+    "best investment",
+    "can't be taken away"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Holds it beyond destruction, where all else counts as no wealth at all.",
+     "quote": "All else is not wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Applies the word wealth to learning and strips it from all else.",
+     "quote": "Learning is the great wealth that can’t be destroyed"
+    }
+   ]
+  },
+  {
+   "n": 401,
+   "gloss": "Getting up to address a gathering without deep knowledge is like playing a board game with no board.",
+   "keywords": [
+    "unprepared speaker",
+    "talking without knowing",
+    "winging it"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Without study a speaker has no ground to move on, as counters have none without a board.",
+     "quote": "without having studied fully"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:orator",
+     "basis": "explicit",
+     "reason": "Speaks of the one who holds forth in an assembly, and of what they lack if unread.",
+     "quote": "Speaking in an assembly"
+    }
+   ]
+  },
+  {
+   "n": 402,
+   "gloss": "An unlearned person wanting to be admired as a speaker wants what he simply doesn't have the means for.",
+   "keywords": [
+    "all talk",
+    "no substance",
+    "wanting praise without work"
+   ],
+   "sensitive": "mocks a woman's body to make its point",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Ridicules the unlearned man’s wish to speak when he has nothing to speak with.",
+     "quote": "An unlearned man’s desire to speak"
+    }
+   ]
+  },
+  {
+   "n": 403,
+   "gloss": "Even the uneducated can be thought well of, provided they keep quiet in front of the educated.",
+   "keywords": [
+    "knowing when to shut up",
+    "staying silent",
+    "out of your depth"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "inferred",
+     "reason": "Its backhanded praise leaves silence as the only credit open to the unlearned.",
+     "quote": "if they can keep from speaking in front of the learned"
+    }
+   ]
+  },
+  {
+   "n": 404,
+   "gloss": "Even if an uneducated person says something sensible, knowledgeable people won't accept it.",
+   "keywords": [
+    "credibility",
+    "not being taken seriously",
+    "lack of credentials"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Shows its cost: without study even a sound view finds no hearing among the wise.",
+     "quote": "the wise don’t accept it"
+    }
+   ]
+  },
+  {
+   "n": 405,
+   "gloss": "An uneducated person with a high opinion of himself is exposed the moment he speaks in front of others.",
+   "keywords": [
+    "embarrassing yourself",
+    "overconfidence",
+    "dunning-kruger",
+    "public humiliation"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Has the unlearned man shamed as soon as he opens his lips in company.",
+     "quote": "falls away when he comes face to face with others and speaks"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "The trouble is his belief in his own wisdom, which one speech undoes.",
+     "quote": "An unlearned man’s standing falls away"
+    }
+   ]
+  },
+  {
+   "n": 406,
+   "gloss": "People who never studied are like barren land: about all you can say for them is that they exist.",
+   "keywords": [
+    "wasted potential",
+    "unproductive life",
+    "uneducated"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Pictures the unlearned as salt land that yields nothing.",
+     "quote": "salt land that yields nothing"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "inferred",
+     "reason": "Leaves them nothing but bare existence, alive in name and no more.",
+     "quote": "All you can say of the unlearned is that they exist"
+    }
+   ]
+  },
+  {
+   "n": 407,
+   "gloss": "Without a sharp, deep mind, good looks are no better than a nicely painted clay doll.",
+   "keywords": [
+    "looks versus brains",
+    "good-looking but empty",
+    "superficial"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Strips a handsome body of value when the mind behind it has taken in nothing deep.",
+     "quote": "like those of a well-made clay doll"
+    }
+   ]
+  },
+  {
+   "n": 408,
+   "gloss": "Money owned by the uneducated does more harm than poverty suffered by good people.",
+   "keywords": [
+    "undeserved wealth",
+    "rich but ignorant",
+    "money in the wrong hands"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "inferred",
+     "reason": "Puts wealth with the unlearned below poverty with the good.",
+     "quote": "Wealth in the hands of the unlearned"
+    }
+   ]
+  },
+  {
+   "n": 409,
+   "gloss": "An uneducated person of high birth counts for less than an educated person of humble birth.",
+   "keywords": [
+    "social class",
+    "education over status",
+    "caste",
+    "family background"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "inferred",
+     "reason": "Denies the unlearned any shelter in a high birth.",
+     "quote": "The unlearned, though born high"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Lets learning lift those born low above those born high.",
+     "quote": "the standing of the learned, though born low"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:scholar",
+     "basis": "explicit",
+     "reason": "Places the learned by their learning alone, however low their birth.",
+     "quote": "the learned, though born low"
+    }
+   ]
+  },
+  {
+   "n": 410,
+   "gloss": "The educated are as far above the uneducated as people are above animals.",
+   "keywords": [
+    "education gap",
+    "value of study"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:ignorance",
+     "basis": "explicit",
+     "reason": "Sets the distance between learned and unlearned equal to that between humans and beasts.",
+     "quote": "As beasts are to humans"
+    }
+   ]
+  },
+  {
+   "n": 411,
+   "gloss": "What you gain through listening is the greatest of all riches, above every other kind.",
+   "keywords": [
+    "learning by ear",
+    "listening skills",
+    "value of advice"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Crowns what is learned by ear above every other kind of wealth.",
+     "quote": "first among all wealth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ear",
+     "basis": "explicit",
+     "reason": "Gives the ear a wealth of its own, filled by what it hears.",
+     "quote": "the wealth of the ear"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Takes the highest name for wealth and gives it to the ear.",
+     "quote": "The wealth of wealth"
+    }
+   ]
+  },
+  {
+   "n": 412,
+   "gloss": "Only when there is nothing left to feed your ears should you give a little to your stomach.",
+   "keywords": [
+    "hunger for knowledge",
+    "priorities",
+    "learning before eating"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Puts food for the ear ahead of a meal, leaving the stomach to wait its turn.",
+     "quote": "give the stomach a little too"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ear",
+     "basis": "explicit",
+     "reason": "Treats the ear as a second mouth, served first, with hearing as its food.",
+     "quote": "food for the ear"
+    }
+   ]
+  },
+  {
+   "n": 413,
+   "gloss": "People who have taken in a great deal of wise teaching are like gods walking the earth.",
+   "keywords": [
+    "well-informed people",
+    "wise mentors",
+    "respect for knowledge"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Makes anyone fed by listening the equal of the gods, here on earth.",
+     "quote": "the equals of the gods"
+    }
+   ]
+  },
+  {
+   "n": 414,
+   "gloss": "Listen to wise teaching even if you never studied, because it will hold you up when things go badly.",
+   "keywords": [
+    "no formal education",
+    "support in hard times",
+    "getting advice"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Opens this road even to someone with no learning, as a prop when they falter.",
+     "quote": "Even if you have no learning, listen"
+    }
+   ]
+  },
+  {
+   "n": 415,
+   "gloss": "Advice from good people is like a strong walking stick: it keeps you upright on slippery ground.",
+   "keywords": [
+    "good advice",
+    "moral support",
+    "avoiding mistakes",
+    "trusted advisers"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Likens the words of the upright to a firm staff in the hand of one who might slip.",
+     "quote": "like a staff on slippery ground"
+    }
+   ]
+  },
+  {
+   "n": 416,
+   "gloss": "Listen to good advice even if it's only a little: even a little will raise you by that much.",
+   "keywords": [
+    "small lessons",
+    "every bit helps",
+    "self-improvement"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Assures that no amount is too small, since even that little brings greatness.",
+     "quote": "Listen to good things, however little"
+    }
+   ]
+  },
+  {
+   "n": 417,
+   "gloss": "People who have listened closely and thought things through don't talk foolishly, even when they've got something wrong.",
+   "keywords": [
+    "thinking before speaking",
+    "well-read",
+    "making mistakes gracefully"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Credits gathered listening with keeping someone from folly even when mistaken.",
+     "quote": "Even when they have misunderstood"
+    }
+   ]
+  },
+  {
+   "n": 418,
+   "gloss": "An ear that has never been trained by instruction is deaf, even though it can hear.",
+   "keywords": [
+    "selective hearing",
+    "not really listening",
+    "hearing versus understanding"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Declares hearing without listening to be a kind of deafness.",
+     "quote": "are deaf, even though they hear"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ear",
+     "basis": "explicit",
+     "reason": "Pictures the ear as something bored through, opened only by listening.",
+     "quote": "Ears not pierced by listening"
+    }
+   ]
+  },
+  {
+   "n": 419,
+   "gloss": "It is hard for anyone who hasn't listened to subtle teaching to speak with humility.",
+   "keywords": [
+    "speaking modestly",
+    "arrogant talk",
+    "respectful language"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Makes humble speech a thing out of reach for those who never sat and listened.",
+     "quote": "Those without subtle listening"
+    }
+   ]
+  },
+  {
+   "n": 420,
+   "gloss": "People who relish food but have no appetite for what the ear can learn make no real difference to anyone.",
+   "keywords": [
+    "living for pleasure",
+    "no interest in learning",
+    "shallow life"
+   ],
+   "sensitive": "says some lives make no difference to the world",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "explicit",
+     "reason": "Says someone with no taste for listening is one the world would hardly notice losing.",
+     "quote": "what does it matter if they die or live"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ear",
+     "basis": "explicit",
+     "reason": "Gives the ear a palate of its own, set against the tongue that knows only food.",
+     "quote": "the tastes of the ear"
+    }
+   ]
+  },
+  {
+   "n": 421,
+   "gloss": "Good sense protects you from sudden harm and is a fortress that no enemy can break into.",
+   "keywords": [
+    "mental defence",
+    "not being caught off guard",
+    "thinking clearly under attack"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Gives understanding as a tool against ruin and a fort that no enemy can destroy.",
+     "quote": "a fort inside that even enemies can’t destroy"
+    }
+   ]
+  },
+  {
+   "n": 422,
+   "gloss": "Good sense stops your mind going wherever it likes, keeps it from harm and steers it toward what's right.",
+   "keywords": [
+    "self-discipline",
+    "impulse control",
+    "moral compass"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Says what understanding does: it reins in the mind and turns it to the good.",
+     "quote": "It turns it from evil and guides it to good"
+    }
+   ]
+  },
+  {
+   "n": 423,
+   "gloss": "Wisdom means finding the truth in what is said, no matter who says it.",
+   "keywords": [
+    "critical thinking",
+    "fact-checking",
+    "don't believe everything",
+    "source of information"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Its test is sifting any statement on its merits, paying no regard to the speaker.",
+     "quote": "Whatever you hear, from whoever’s mouth"
+    }
+   ]
+  },
+  {
+   "n": 424,
+   "gloss": "A wise person says hard things in a way everyone can follow, and catches the fine points in what others say.",
+   "keywords": [
+    "clear communication",
+    "explaining simply",
+    "active listening"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Credits the wise with two skills of tongue and ear: speaking plainly and catching subtleties.",
+     "quote": "seeing the subtle meaning in what others say"
+    }
+   ]
+  },
+  {
+   "n": 425,
+   "gloss": "A wise person gets on with everyone and stays level-headed, neither overjoyed nor crushed.",
+   "keywords": [
+    "emotional balance",
+    "social skills",
+    "mood swings",
+    "mature temperament"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:equanimity",
+     "basis": "explicit",
+     "reason": "Gives understanding an even temper that neither blooms nor closes.",
+     "quote": "Not to bloom and then close is understanding"
+    }
+   ]
+  },
+  {
+   "n": 426,
+   "gloss": "Part of being wise is living the way the world around you lives.",
+   "keywords": [
+    "fitting in",
+    "adapting to society",
+    "going with the flow",
+    "social norms"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worldly-wisdom",
+     "basis": "explicit",
+     "reason": "Counts moving in step with the world as part of understanding itself.",
+     "quote": "understanding is living that way with the world"
+    }
+   ]
+  },
+  {
+   "n": 427,
+   "gloss": "Sensible people can tell what's coming; foolish ones can't see what's right in front of them.",
+   "keywords": [
+    "anticipating problems",
+    "seeing it coming",
+    "planning ahead"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Sets those who know what will be against those who can’t.",
+     "quote": "know what will be"
+    }
+   ]
+  },
+  {
+   "n": 428,
+   "gloss": "Not being afraid of what deserves fear is stupid: wise people are afraid of what they should be.",
+   "keywords": [
+    "healthy fear",
+    "reckless behaviour",
+    "risk awareness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Praises the fear that stops you before the danger, not after.",
+     "quote": "To fear what should be feared is the way of those who understand"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Puts not fearing what should be feared down as plain folly.",
+     "quote": "Not to fear what should be feared is folly"
+    }
+   ]
+  },
+  {
+   "n": 429,
+   "gloss": "Someone who prepares for what might happen won't be shaken when disaster arrives.",
+   "keywords": [
+    "preparedness",
+    "contingency plan",
+    "emergency planning"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Promises those who guard against what is to come that no suffering will shake them.",
+     "quote": "guard against what is to come"
+    }
+   ]
+  },
+  {
+   "n": 430,
+   "gloss": "Sensible people have everything; those without sense have nothing, whatever they own.",
+   "keywords": [
+    "what really matters",
+    "wisdom over wealth",
+    "rich but foolish"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Lets understanding outweigh every possession, and leaves all possessions empty without it.",
+     "quote": "Those with understanding have everything"
+    }
+   ]
+  },
+  {
+   "n": 431,
+   "gloss": "Someone free of arrogance, rage and lust has a dignity that makes their success look well on them.",
+   "keywords": [
+    "staying grounded",
+    "dignified success",
+    "humble success"
+   ],
+   "edges": [
+    {
+     "type": "ENUMERATES",
+     "target": "quality:arrogance",
+     "basis": "explicit",
+     "reason": "Pride is the first of three faults whose absence gives prosperity its greatness.",
+     "quote": "pride"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Named second of the three that must be gone for prosperity to have greatness.",
+     "quote": "anger"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Aiyar's own note reads the vulgar passion as lust, third of the faults.",
+     "quote": "the vulgar passion"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:success-going-to-your-head",
+     "basis": "explicit",
+     "reason": "Someone on the rise hears what actually dignifies success: freedom from pride and temper.",
+     "quote": "a prosperity with greatness in it"
+    }
+   ]
+  },
+  {
+   "n": 432,
+   "gloss": "Stinginess, excessive pride and unseemly self-satisfaction are failings in a ruler.",
+   "keywords": [
+    "leadership flaws",
+    "bad leaders",
+    "faults of a boss"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Lists these failings specifically as faults in a ruler.",
+     "quote": "are faults in a ruler"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "First of the ruler’s three faults, the hand that will not open.",
+     "quote": "Miserliness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:complacency",
+     "basis": "explicit",
+     "reason": "His third fault is joy with no measure, being too pleased with how things stand.",
+     "quote": "joy with no measure"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:arrogance",
+     "basis": "explicit",
+     "reason": "Honour that has lost its nobility is really pride, and it stands second of the three.",
+     "quote": "honour that has lost its nobility"
+    }
+   ]
+  },
+  {
+   "n": 433,
+   "gloss": "People who care about their good name treat a fault as small as a grain as if it were as big as a tree.",
+   "keywords": [
+    "high standards for yourself",
+    "owning mistakes",
+    "self-criticism"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-examination",
+     "basis": "explicit",
+     "reason": "Praises those who take a tiny fault of their own as seriously as a huge one.",
+     "quote": "as if it were as big as a palmyra tree"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:millet-and-palmyra",
+     "basis": "explicit",
+     "reason": "A millet seed grows into a palmyra tree in the eyes of those who fear blame.",
+     "quote": "the size of a millet seed"
+    }
+   ]
+  },
+  {
+   "n": 434,
+   "gloss": "Watch out for your own faults above all, because they are the real enemies that bring you down.",
+   "keywords": [
+    "self-sabotage",
+    "weak spots",
+    "personal flaws"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-examination",
+     "basis": "explicit",
+     "reason": "Makes guarding against your own faults the first charge, since they are the real enemy.",
+     "quote": "Guard against fault as your one aim"
+    }
+   ]
+  },
+  {
+   "n": 435,
+   "gloss": "A person who doesn't prepare before trouble arrives will go up like straw in front of a flame.",
+   "keywords": [
+    "no backup plan",
+    "preventive action",
+    "sudden disaster"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:foresight",
+     "basis": "explicit",
+     "reason": "Shows the cost of not guarding in advance: sudden and total ruin.",
+     "quote": "doesn’t guard in advance"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Someone unguarded is a stack of straw before a fire.",
+     "quote": "a stack of straw before a fire"
+    }
+   ]
+  },
+  {
+   "n": 436,
+   "gloss": "If a ruler fixes his own faults before looking at others', what fault could be left in him?",
+   "keywords": [
+    "leading by example",
+    "judging others",
+    "practising what you preach"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-examination",
+     "basis": "explicit",
+     "reason": "Puts the order of work plainly: one's own faults first, then other people's.",
+     "quote": "removes his own faults first, and then looks at those of others"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prince",
+     "basis": "explicit",
+     "reason": "Frames this as the safeguard of a ruler, who then has no fault left.",
+     "quote": "If a ruler removes his own faults first"
+    }
+   ]
+  },
+  {
+   "n": 437,
+   "gloss": "The wealth of a miser who won't spend on what should be spent is destined to be lost, not kept.",
+   "keywords": [
+    "stinginess",
+    "false economy",
+    "hoarding money",
+    "refusing to invest"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Turns thrift against itself: wealth kept from what should be done with it perishes.",
+     "quote": "It will perish"
+    }
+   ]
+  },
+  {
+   "n": 438,
+   "gloss": "Stinginess can't be counted with ordinary faults: it is in a worse class of its own.",
+   "keywords": [
+    "worst character flaw",
+    "greed with money",
+    "cheapskate"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Refuses even to count it with anything else, as a thing apart.",
+     "quote": "is not to be counted with anything else"
+    }
+   ]
+  },
+  {
+   "n": 439,
+   "gloss": "Never be full of yourself, and never be drawn to actions that do no good.",
+   "keywords": [
+    "self-admiration",
+    "bragging",
+    "pointless projects"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:arrogance",
+     "basis": "inferred",
+     "reason": "Forbids admiring yourself at any time.",
+     "quote": "Never admire yourself"
+    }
+   ]
+  },
+  {
+   "n": 440,
+   "gloss": "If you can keep what you most want hidden from others, your enemies' schemes will get nowhere.",
+   "keywords": [
+    "poker face",
+    "hiding your plans",
+    "office politics"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Makes a hidden love the defence that leaves an enemy’s schemes with nothing to work on.",
+     "quote": "without letting your love be known"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "LEADS_TO",
+   "source": "quality:attachment",
+   "target": "quality:grief",
+   "basis": "explicit",
+   "reason": "Suffering seizes whoever won’t give up attachment, and it doesn’t let go.",
+   "quote": "Suffering holds on and won’t let go",
+   "couplets": [
+    347
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:renunciation",
+   "target": "quality:grief",
+   "basis": "explicit",
+   "reason": "Each thing you give up ends the pain that came from it.",
+   "quote": "you suffer no more pain",
+   "couplets": [
+    341
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:renunciation",
+   "target": "theme:liberation",
+   "basis": "explicit",
+   "reason": "Those who renounce completely have reached the goal, while the rest stay in the net.",
+   "quote": "Those who renounce completely have arrived",
+   "couplets": [
+    348
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:attachment",
+   "target": "theme:rebirth",
+   "basis": "inferred",
+   "reason": "Birth is cut off the moment attachment ends, so it is attachment that keeps births coming.",
+   "quote": "The moment attachment ends, birth is cut off",
+   "couplets": [
+    349
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:devotion",
+   "target": "quality:attachment",
+   "basis": "explicit",
+   "reason": "Holding to the one who has no attachment is how you let go of your own.",
+   "quote": "so that you can let go of attachment",
+   "couplets": [
+    350
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:delusion",
+   "target": "theme:rebirth",
+   "basis": "explicit",
+   "reason": "Taking what isn’t real for what is brings a wretched birth.",
+   "quote": "A wretched birth comes from the delusion",
+   "couplets": [
+    351
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:realisation-of-truth",
+   "target": "theme:liberation",
+   "basis": "explicit",
+   "reason": "Whoever has seen the truth reaches the path that doesn’t come back here.",
+   "quote": "reach the path that doesn’t come back here",
+   "couplets": [
+    356,
+    357
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:craving",
+   "target": "theme:rebirth",
+   "basis": "explicit",
+   "reason": "Craving is the seed, and birth that never ends is what it yields.",
+   "quote": "craving is the seed that yields",
+   "couplets": [
+    361
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:desirelessness",
+   "target": "theme:liberation",
+   "basis": "explicit",
+   "reason": "Not being born comes to the one who wants to want nothing.",
+   "quote": "That comes from wanting to want nothing",
+   "couplets": [
+    362,
+    367
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:truthfulness",
+   "target": "quality:desirelessness",
+   "basis": "explicit",
+   "reason": "Wanting truthfulness is how freedom from craving comes.",
+   "quote": "That comes from wanting truthfulness",
+   "couplets": [
+    364
+   ]
+  },
+  {
+   "type": "OPPOSES",
+   "source": "quality:righteousness",
+   "target": "quality:craving",
+   "basis": "explicit",
+   "reason": "Righteousness means fearing craving.",
+   "quote": "To fear it is righteousness",
+   "couplets": [
+    366
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:craving",
+   "target": "quality:grief",
+   "basis": "explicit",
+   "reason": "Only those without craving are without suffering, while for the rest it comes on without end.",
+   "quote": "Those without craving have no suffering",
+   "couplets": [
+    368
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:truthfulness",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "The highest renown anyone can win comes from never lying.",
+   "quote": "There is no renown like never lying",
+   "couplets": [
+    296
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:humility",
+   "target": "theme:listening",
+   "basis": "explicit",
+   "reason": "Humble speech is hard to come by without subtle listening.",
+   "quote": "can hardly have humble mouths",
+   "couplets": [
+    419
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:understanding",
+   "target": "quality:sense-control",
+   "basis": "explicit",
+   "reason": "Understanding is what keeps the mind from going wherever it goes.",
+   "quote": "doesn’t let the mind go wherever it goes",
+   "couplets": [
+    422
+   ]
+  }
+ ],
+ "proposals": []
+}

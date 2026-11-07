@@ -1,0 +1,129 @@
+{
+  "chapter": 112,
+  "title": "Praising Her Beauty",
+  "note": "The man dresses her beauty in words of praise. It follows the delight in union, because that is when such praise arises.",
+  "couplets": [
+    {
+      "n": 1111,
+      "plain": "Long may you live, aṉiccam flower, you are the best of them. But the one I love is softer than you.",
+      "pm": "Long may you live, aṉiccam flower. In softness you are the finest of all flowers, but the woman I love is softer than you. So give up your pride at being the softest. He has just touched her, which is why he praises how sweet she is to touch.",
+      "tag": "adds",
+      "context": "He says this at the end of their first union.",
+      "speaker": "he",
+      "links": [
+        { "id": "e62acfcb13afc906", "quote": "the one I love is softer than you" },
+        { "id": "0034906b10d3db23", "quote": "aṉiccam flower", "reason": "The aṉiccam, byword for softness, is the standard she passes." }
+      ]
+    },
+    {
+      "n": 1112,
+      "plain": "My heart, when you see flowers you lose your wits, thinking her eyes are like blooms that everyone can see.",
+      "pm": "Heart, I alone have seen her eyes, yet you think flowers that everyone sees are like them, and you lose your wits at lotuses and lilies. What sense is that! Kept from her eyes since their first union, he had loved every flower that resembled them. Now, meeting her alone, he has seen them fully and scorns the comparison.",
+      "tag": "adds",
+      "context": "He says this when he meets her again at the same place.",
+      "speaker": "he",
+      "links": [
+        { "id": "7b74964fc725550c", "quote": "blooms that everyone can see" },
+        { "id": "22ed3b490f06802f", "quote": "when you see flowers you lose your wits" },
+        { "id": "3de7f33ef0e430d0", "quote": "My heart" }
+      ]
+    },
+    {
+      "n": 1113,
+      "plain": "This woman with bamboo shoulders: her skin is a young leaf, her smile is pearl, her scent is perfume, her kohl-lined eyes are spears.",
+      "pm": "She has shoulders like bamboo. Her skin has the colour of young leaves, her teeth are pearls, her natural scent is a rich fragrance, and her kohl-lined eyes are spears. He praises her in metaphors. He may also be saying this to her friend, who has put him off by claiming not to know whom he means.",
+      "tag": "agrees",
+      "context": "His companion is about to bring them together, and he describes her to him.",
+      "speaker": "he",
+      "links": [
+        { "id": "a1dde12a06378156", "quote": "her smile is pearl", "reason": "Goes over her from shoulder to eye, matching each part to something fine." },
+        { "id": "0977bc4f4085adcf", "quote": "her kohl-lined eyes are spears", "reason": "Gives her eyes the piercing edge of a spear." }
+      ]
+    },
+    {
+      "n": 1114,
+      "plain": "If the blue lily could see, it would bow its head and look at the ground, saying, “We can’t match the eyes of this woman in fine jewels.”",
+      "pm": "If blue lilies had sight, they would think, “We can’t match the eyes of this woman of fine jewels,” and from shame bow down and look at the ground. They fall short in what they do as well as in what they are. Having neither sight nor shame, they stand proud and look at the sky.",
+      "tag": "adds",
+      "context": "He says this on his way to the meeting his companion has arranged.",
+      "speaker": "he",
+      "links": [
+        { "id": "35622a8c0e520240", "quote": "We can’t match the eyes of this woman in fine jewels" },
+        { "id": "f2bc10abd6a5c7e3", "quote": "it would bow its head and look at the ground", "reason": "The blue lily bows its head before her eyes like a beaten rival." }
+      ]
+    },
+    {
+      "n": 1115,
+      "plain": "She has put on aṉiccam flowers without pinching off the stems. No good drums will sound for her waist now.",
+      "pm": "Forgetting how delicate she is, she wore aṉiccam flowers without removing the stems. Now no auspicious drums will sound for her waist. It can’t bear the weight of the stems and will snap, and then only the drum beaten for the dead will sound for it.",
+      "tag": "adds",
+      "context": "At their daytime meeting place he sees the flowers she is wearing and says this.",
+      "speaker": "he",
+      "links": [
+        { "id": "53133c6066e1865b", "quote": "No good drums will sound for her waist now" },
+        { "id": "ea147cffa61d37fa", "quote": "aṉiccam flowers without pinching off the stems" }
+      ]
+    },
+    {
+      "n": 1116,
+      "plain": "Unable to tell the moon from this woman’s face, the stars have been thrown from their places.",
+      "pm": "The stars in the sky can’t tell their moon from my woman’s face, though the two are very different, and they wander confused from their places. He says this because stars never stay still. It can also mean that only stars who keep their places can tell the two apart, and those who stray can’t.",
+      "tag": "agrees",
+      "context": "At their night meeting place he sees the moon and says this.",
+      "speaker": "he",
+      "links": [
+        { "id": "ad6fd175bdb2d9fb", "quote": "the stars have been thrown from their places" },
+        { "id": "497b0dc3d4032b8f", "quote": "Unable to tell the moon from this woman’s face" }
+      ]
+    },
+    {
+      "n": 1117,
+      "plain": "Is there a spot on this woman’s face, as there is on the bright moon, filled again where it had wasted away?",
+      "pm": "Why are the stars so confused? The bright moon fills out again where it had wasted. Is there a spot on her face, as there is on the moon? Waning, waxing and the spot should let them tell the two apart, yet they can’t. He is mocking the stars.",
+      "tag": "adds",
+      "context": "He goes on, looking at the moon.",
+      "speaker": "he",
+      "links": [
+        { "id": "981382fe97725ce6", "quote": "Is there a spot on this woman’s face" },
+        { "id": "91dd0b7b3463e1b9", "quote": "as there is on the bright moon" }
+      ]
+    },
+    {
+      "n": 1118,
+      "plain": "Long may you live, moon. If you can shine like this woman’s face, you too can have my love.",
+      "pm": "Long may you live, moon! If you can shine like her face and make me glad, you too will have my love. You have a spot, so you can’t, and so I can’t love you. “Long may you live” is said in scorn.",
+      "tag": "adds",
+      "context": "He goes on, to the moon.",
+      "speaker": "he",
+      "links": [
+        { "id": "c65a1b1186695698", "quote": "If you can shine like this woman’s face" },
+        { "id": "432ea6a8c167a622", "quote": "you too can have my love" }
+      ]
+    },
+    {
+      "n": 1119,
+      "plain": "Moon, if you want to match the face of this woman with eyes like flowers, don’t appear for all to see.",
+      "pm": "Moon, if you want to be like the face of this woman with eyes like flowers, appear as it does, for me alone, and don’t appear for many to see. He alone has seen and enjoyed all the beauty of her face, so he scorns being seen by many. If you do appear, you can’t be her equal.",
+      "tag": "agrees",
+      "context": "He goes on, to the moon.",
+      "speaker": "he",
+      "links": [
+        { "id": "42d261b3db276f88", "quote": "the face of this woman with eyes like flowers" },
+        { "id": "aa33fb566d3ff34a", "quote": "don’t appear for all to see" }
+      ]
+    },
+    {
+      "n": 1120,
+      "plain": "The aṉiccam flower and the swan’s down feel like thorny caltrop fruit to this woman’s feet.",
+      "pm": "The aṉiccam flower and the swan’s down, the world’s measures of softness, hurt her feet like caltrop fruit, whose thorns are hard. The hint is: how could such feet cross the hot wasteland with its sharp stones? Stated meaning and hint both praise her feet, so it belongs in this chapter.",
+      "tag": "adds",
+      "context": "Her friend has proposed that he take her away with him. He refuses, saying how hard that would be.",
+      "speaker": "he",
+      "links": [
+        { "id": "595f962ac7cb4073", "quote": "to this woman’s feet" },
+        { "id": "3c26ed3405decd18", "quote": "The aṉiccam flower and the swan’s down", "reason": "Even the aṉiccam, softest of things, would prick her like a thorny fruit." }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

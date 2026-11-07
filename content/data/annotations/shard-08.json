@@ -1,0 +1,3121 @@
+{
+ "shard": "shard-08",
+ "chapters": [
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109
+ ],
+ "couplets": [
+  {
+   "n": 961,
+   "gloss": "Walk away from anything that would degrade you, even something you feel you cannot live without.",
+   "keywords": [
+    "self-respect",
+    "integrity",
+    "red lines"
+   ],
+   "sensitive": "puts honour above staying alive",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Says to drop whatever would lower you, even what you can’t do without.",
+     "quote": "give them up if they would lower you"
+    }
+   ]
+  },
+  {
+   "n": 962,
+   "gloss": "People who want to be remembered well won't do anything shameful, even when it would make them famous.",
+   "keywords": [
+    "reputation",
+    "ethics over fame",
+    "legacy",
+    "principles"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Those who care for their name refuse wrong even when wrong would bring them glory.",
+     "quote": "won’t do anything unworthy, even for glory"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:losing-your-dignity",
+     "basis": "inferred",
+     "reason": "For someone asked to stoop in order to rise: a name worth keeping is not traded for advancement.",
+     "quote": "won’t do anything unworthy"
+    }
+   ]
+  },
+  {
+   "n": 963,
+   "gloss": "Stay humble while things go well, and keep your head up when they go badly.",
+   "keywords": [
+    "success",
+    "hard times",
+    "pride",
+    "staying grounded"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:humility",
+     "basis": "explicit",
+     "reason": "Asks for bending low at exactly the moment you have the most.",
+     "quote": "In plenty, bow low"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "When your means shrink, that is the time to stand straightest.",
+     "quote": "When your means shrink, stand tall"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:success-going-to-your-head",
+     "basis": "explicit",
+     "reason": "A plain instruction to anyone riding high: plenty is the time to bow.",
+     "quote": "In plenty, bow low"
+    }
+   ]
+  },
+  {
+   "n": 964,
+   "gloss": "People who fall from their good standing become like hair cut off the head: once part of you, now swept out as rubbish.",
+   "keywords": [
+    "disgrace",
+    "lost reputation",
+    "fall from grace",
+    "scandal"
+   ],
+   "sensitive": "calls the disgraced discarded refuse",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Shows the price of losing your standing: to be like hair that has dropped from the head.",
+     "quote": "like hair fallen from the head"
+    }
+   ]
+  },
+  {
+   "n": 965,
+   "gloss": "Even the most towering figures shrink if they do one mean thing, however tiny it is.",
+   "keywords": [
+    "one mistake ruins reputation",
+    "small lapses",
+    "public figures",
+    "stature"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "A lapse no bigger than a crab’s-eye seed is enough to bring such a person down.",
+     "quote": "will still fall if they do something low"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:mountain",
+     "basis": "explicit",
+     "reason": "Measures a person’s stature as a hill, then sets a tiny seed against it.",
+     "quote": "as high as a hill"
+    }
+   ]
+  },
+  {
+   "n": 966,
+   "gloss": "It wins you no fame and no heaven, so why make a living by trailing after people who look down on you?",
+   "keywords": [
+    "chasing approval",
+    "people who disrespect you",
+    "toxic workplace",
+    "being looked down on"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:servility",
+     "basis": "explicit",
+     "reason": "Asks what trailing after those who despise you could ever gain, since it brings neither fame nor the land of the gods.",
+     "quote": "why follow behind those who despise you?"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:losing-your-dignity",
+     "basis": "explicit",
+     "reason": "Puts the question straight to someone staying close to those who scorn them: what does it win you?",
+     "quote": "why follow behind those who despise you?"
+    }
+   ]
+  },
+  {
+   "n": 967,
+   "gloss": "Better to be counted as finished on the spot than to get by clinging to people who hold you in contempt.",
+   "keywords": [
+    "being despised",
+    "dependence on others",
+    "dignity"
+   ],
+   "sensitive": "prefers death to living under scorn",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:servility",
+     "basis": "explicit",
+     "reason": "Ranks living off the people who scorn you as worse than ruin itself.",
+     "quote": "to live by trailing after those who spurn you"
+    }
+   ]
+  },
+  {
+   "n": 968,
+   "gloss": "Is the body going to last forever, that people protect it even when the price is their honour?",
+   "keywords": [
+    "self-preservation",
+    "integrity under pressure",
+    "mortality",
+    "selling out"
+   ],
+   "sensitive": "scorns staying alive at the cost of honour",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Mocks saving your flesh at the cost of your dignity by asking whether that is any medicine.",
+     "quote": "is a life of tending your flesh any medicine?"
+    }
+   ]
+  },
+  {
+   "n": 969,
+   "gloss": "Like the yak said to die once it loses its hair, some people cannot go on after they lose their honour.",
+   "keywords": [
+    "kavarima",
+    "public shame",
+    "disgrace"
+   ],
+   "sensitive": "presents ending one's life as the answer to lost honour",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Likens those who cannot bear lost honour to the yak that won’t live without its hair.",
+     "quote": "Like the yak that won’t live if it loses its hair"
+    }
+   ]
+  },
+  {
+   "n": 970,
+   "gloss": "The whole world bows in admiration to people so honourable that they will not go on living in disgrace.",
+   "keywords": [
+    "public reverence",
+    "heroes",
+    "good name"
+   ],
+   "sensitive": "praises refusing to outlive disgrace",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "explicit",
+     "reason": "Has the whole world joining its hands before those who put their name above their life.",
+     "quote": "The world bows down and praises the radiance"
+    }
+   ]
+  },
+  {
+   "n": 971,
+   "gloss": "Greatness is the drive to do something worthy; smallness is telling yourself you can get by without it.",
+   "keywords": [
+    "ambition",
+    "settling for less",
+    "purpose",
+    "mediocrity"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Makes a wealth of spirit the light a person has, which is what this chapter calls greatness.",
+     "quote": "A person’s light is a wealth of spirit"
+    },
+    {
+     "type": "DEFINES",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Names disgrace as a single thought: that you can live without such spirit.",
+     "quote": "A person’s disgrace is to say, “I can live without that.”"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:aspiration",
+     "basis": "explicit",
+     "reason": "Makes a wealth of spirit the very thing that gives a person their light.",
+     "quote": "a wealth of spirit"
+    }
+   ]
+  },
+  {
+   "n": 972,
+   "gloss": "Everyone comes into the world the same way; what separates people is the life they go on to live.",
+   "keywords": [
+    "born equal",
+    "equality",
+    "earned respect"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:good-conduct",
+     "basis": "inferred",
+     "reason": "Birth makes no difference between living beings. What each one does decides their distinction.",
+     "quote": "because what they do is different"
+    }
+   ]
+  },
+  {
+   "n": 973,
+   "gloss": "High rank doesn't make a mean person high, and low rank doesn't make a fine person low.",
+   "keywords": [
+    "class",
+    "social status",
+    "snobbery",
+    "true nobility"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:greatness",
+     "basis": "inferred",
+     "reason": "Takes rank out of the test: high and low are settled by what one is, not where one stands.",
+     "quote": "even if they are lowborn, those that are not low are not low"
+    }
+   ]
+  },
+  {
+   "n": 974,
+   "gloss": "Like a faithful woman's fidelity, greatness lasts only if you hold yourself to it from within.",
+   "keywords": [
+    "self-discipline",
+    "integrity",
+    "inner standards",
+    "staying true"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Gives its one condition: greatness is there only if you guard yourself.",
+     "quote": "greatness too comes only if you guard yourself"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:chastity",
+     "basis": "inferred",
+     "reason": "Holds up women of undivided heart, who guard themselves, as the model for keeping greatness.",
+     "quote": "women of undivided heart"
+    }
+   ]
+  },
+  {
+   "n": 975,
+   "gloss": "Truly great people know how to go about things and pull off what others can't.",
+   "keywords": [
+    "high achievers",
+    "doing the impossible",
+    "capability"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Marks the great by the hard deeds they can finish, by the right means.",
+     "quote": "The great will carry out hard deeds"
+    }
+   ]
+  },
+  {
+   "n": 976,
+   "gloss": "Small-minded people simply never think of respecting great people and earning their goodwill.",
+   "keywords": [
+    "disrespect",
+    "role models",
+    "ungracious"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Says respect for those above them is simply not in small natures.",
+     "quote": "It never enters the minds of the small"
+    }
+   ]
+  },
+  {
+   "n": 977,
+   "gloss": "When good fortune lands on small-minded people, their arrogance goes completely out of control.",
+   "keywords": [
+    "new money",
+    "power goes to their head",
+    "sudden wealth",
+    "obnoxious"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Distinction in unworthy hands turns to nothing but excess.",
+     "quote": "when it falls to the unworthy, turns to nothing but excess"
+    }
+   ]
+  },
+  {
+   "n": 978,
+   "gloss": "Really great people stay humble; small people boast about themselves to everyone.",
+   "keywords": [
+    "bragging",
+    "showing off",
+    "self-promotion"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Greatness never puts itself forward, and that is how it is known.",
+     "quote": "Greatness always bends low"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Smallness has to admire itself and dress itself up.",
+     "quote": "Smallness admires itself and dresses itself up"
+    }
+   ]
+  },
+  {
+   "n": 979,
+   "gloss": "A great person has no airs and is gracious to everyone; a small person rides high on pride and insolence.",
+   "keywords": [
+    "arrogance",
+    "treating people well",
+    "superiority complex"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "Measures greatness by having no pride at all.",
+     "quote": "Greatness is having no pride"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Shows smallness riding on pride, all the way to its limit.",
+     "quote": "Smallness is riding on pride, all the way to its limit"
+    }
+   ]
+  },
+  {
+   "n": 980,
+   "gloss": "Great people cover for others' weaknesses; small people talk about nothing but other people's faults.",
+   "keywords": [
+    "gossip",
+    "fault-finding",
+    "exposing people"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:greatness",
+     "basis": "explicit",
+     "reason": "The great keep other people's failings out of sight.",
+     "quote": "Greatness hides another’s shame"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:littleness",
+     "basis": "explicit",
+     "reason": "Smallness has only faults to talk about.",
+     "quote": "Smallness speaks of nothing but faults"
+    }
+   ]
+  },
+  {
+   "n": 981,
+   "gloss": "People set on building real character treat every good act as simply their duty.",
+   "keywords": [
+    "sense of duty",
+    "moral character",
+    "doing the right thing"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Once someone takes up worth, every good thing becomes a duty.",
+     "quote": "every good thing is a duty"
+    }
+   ]
+  },
+  {
+   "n": 982,
+   "gloss": "What makes good people beautiful is their character; physical looks add nothing to it.",
+   "keywords": [
+    "inner beauty",
+    "looks do not matter",
+    "appearance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Finds the only real goodness of the worthy in their character and none anywhere else.",
+     "quote": "The goodness of the worthy is goodness of character"
+    }
+   ]
+  },
+  {
+   "n": 983,
+   "gloss": "Five things hold up a good character: love, a sense of shame, helpfulness, tolerance of others' failings and honesty.",
+   "keywords": [
+    "core values",
+    "what makes a good person",
+    "foundations of character"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Names the five pillars that hold up worth.",
+     "quote": "the five pillars that hold up worth"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:affection",
+     "basis": "explicit",
+     "reason": "First of the five is loving-kindness.",
+     "quote": "Loving-kindness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Second comes being able to feel shame.",
+     "quote": "a sense of shame"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:helpfulness",
+     "basis": "explicit",
+     "reason": "Helpfulness, the readiness to be of use, stands third.",
+     "quote": "helpfulness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:considerateness",
+     "basis": "explicit",
+     "reason": "Fourth is considerateness, the kindly eye towards other people.",
+     "quote": "considerateness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Truthfulness closes the list as the fifth pillar.",
+     "quote": "truthfulness"
+    }
+   ]
+  },
+  {
+   "n": 984,
+   "gloss": "A holy person's goodness lies in not killing; a person of character's goodness lies in not speaking of others' faults.",
+   "keywords": [
+    "speaking ill",
+    "ahimsa",
+    "holding your tongue about others"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Makes not speaking of others’ wrongs the mark of worth, as not killing marks penance.",
+     "quote": "The good of worth lies in not speaking of others’ wrongs"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:slander",
+     "basis": "explicit",
+     "reason": "Others’ wrongs are the one thing a person of worth above all won’t talk about.",
+     "quote": "not speaking of others’ wrongs"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-killing",
+     "basis": "explicit",
+     "reason": "Gives penance a single defining good, that of not killing.",
+     "quote": "The good of penance lies in not killing"
+    }
+   ]
+  },
+  {
+   "n": 985,
+   "gloss": "Real power shows itself in being humble, and humility is also how a good person holds off opponents.",
+   "keywords": [
+    "strength in humility",
+    "handling enemies",
+    "disarming critics"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:humility",
+     "basis": "explicit",
+     "reason": "Turns the usual idea round: bowing is what strength consists of, and a weapon against enemies.",
+     "quote": "The strength of the capable is bowing"
+    }
+   ]
+  },
+  {
+   "n": 986,
+   "gloss": "The real test of character is admitting someone is better than you, even someone you rank beneath you.",
+   "keywords": [
+    "accepting defeat",
+    "admitting you are wrong",
+    "losing gracefully",
+    "ego"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Sets the test: accepting defeat even from those who are not your equals.",
+     "quote": "Accepting defeat, even from those who are not your equals"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:touchstone-and-measuring-rod",
+     "basis": "explicit",
+     "reason": "Asks for the stone on which worth can be rubbed and proved, like gold.",
+     "quote": "What is the touchstone of worth?"
+    }
+   ]
+  },
+  {
+   "n": 987,
+   "gloss": "What is your goodness worth if you won't do good even to the people who hurt you?",
+   "keywords": [
+    "kindness to enemies",
+    "returning good for evil",
+    "turning the other cheek"
+   ],
+   "sensitive": "urges doing good to those who harm you",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Expects good to be returned for injury, not merely injury to be withheld.",
+     "quote": "do kindness even to those who have done you harm"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Asks what use worth has if kindness stops at those who hurt you.",
+     "quote": "What use is worth"
+    }
+   ]
+  },
+  {
+   "n": 988,
+   "gloss": "Being poor is no shame for someone who has the solid strength of good character.",
+   "keywords": [
+    "ashamed of being poor",
+    "dignity in hardship",
+    "money is not everything"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "The strength of worth is enough to lift the shame from having nothing.",
+     "quote": "if you have the strength called worth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Calls character the riches a man with empty pockets can still own.",
+     "quote": "the wealth that is called character"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:struggling-to-get-by",
+     "basis": "explicit",
+     "reason": "Tells someone ashamed of having little that the lack itself is no disgrace.",
+     "quote": "Having nothing is no disgrace"
+    }
+   ]
+  },
+  {
+   "n": 989,
+   "gloss": "People who won't stray from what's right even if the whole world turns upside down are the anchor of good character.",
+   "keywords": [
+    "steadfast",
+    "standing firm",
+    "moral compass",
+    "upheaval"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Those called the ocean of worth hold firm even when the age itself shifts.",
+     "quote": "those called the ocean of worth will not shift"
+    }
+   ]
+  },
+  {
+   "n": 990,
+   "gloss": "If good people ever gave up their goodness, even the earth couldn't carry the weight of humanity.",
+   "keywords": [
+    "good people matter",
+    "what holds society together",
+    "moral collapse"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:worth",
+     "basis": "explicit",
+     "reason": "Makes the worth of the worthy what the earth’s bearing of its load depends on.",
+     "quote": "If the worthy fall from their worth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "Pictures the earth as a carrier who could not take the load without the worthy.",
+     "quote": "even the great earth can’t bear its load"
+    }
+   ]
+  },
+  {
+   "n": 991,
+   "gloss": "They say good manners come easily to people who are approachable and welcome everyone.",
+   "keywords": [
+    "being approachable",
+    "welcoming people",
+    "friendliness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Traces courtesy to an open welcome given to all comers.",
+     "quote": "being easy to approach, for anyone at all"
+    }
+   ]
+  },
+  {
+   "n": 992,
+   "gloss": "True courtesy comes from two things together: a loving nature and a good family upbringing.",
+   "keywords": [
+    "manners",
+    "being well brought up",
+    "where politeness comes from"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "States what courtesy is made of: exactly two things together.",
+     "quote": "these two are the way of courtesy"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:affection",
+     "basis": "inferred",
+     "reason": "Loving-kindness is the first of the two.",
+     "quote": "Having loving-kindness"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Birth in a good family is the second.",
+     "quote": "being born into a good family"
+    }
+   ]
+  },
+  {
+   "n": 993,
+   "gloss": "People aren't really alike because their bodies look alike; the likeness that counts is in how they behave.",
+   "keywords": [
+    "judging by looks",
+    "shared values",
+    "character over looks"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "inferred",
+     "reason": "Refuses the body as the measure of a person: courtesy is the only true likeness.",
+     "quote": "True likeness is likeness in the courtesy that draws people close"
+    }
+   ]
+  },
+  {
+   "n": 994,
+   "gloss": "The world values the manners of people who are fair, decent and useful to others.",
+   "keywords": [
+    "respected people",
+    "social reputation",
+    "being useful"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "The world prizes the bearing of those who are just and of use to others.",
+     "quote": "The world praises the courtesy"
+    }
+   ]
+  },
+  {
+   "n": 995,
+   "gloss": "Put-downs hurt even as a joke, so well-mannered people stay polite even to their enemies.",
+   "keywords": [
+    "teasing",
+    "banter",
+    "hurtful jokes",
+    "sarcasm"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Those who know what others feel stay courteous even towards an enemy.",
+     "quote": "stay courteous, even in enmity"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:harsh-speech",
+     "basis": "explicit",
+     "reason": "A sneer wounds even when it is only meant as a joke.",
+     "quote": "Scorn hurts, even in fun"
+    }
+   ]
+  },
+  {
+   "n": 996,
+   "gloss": "The world keeps running because of decent, well-mannered people; without them all harmony would be gone.",
+   "keywords": [
+    "civility",
+    "social harmony",
+    "what keeps society going"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Credits the courteous with keeping the world going at all.",
+     "quote": "The world goes on because of the courteous"
+    }
+   ]
+  },
+  {
+   "n": 997,
+   "gloss": "However keen their minds, people without basic human decency are just blocks of timber.",
+   "keywords": [
+    "brilliant but rude",
+    "smart jerk",
+    "emotional intelligence"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Sharp wits count for nothing once human courtesy is missing.",
+     "quote": "Those without human courtesy"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:file",
+     "basis": "explicit",
+     "reason": "Gives clever people the keen edge of a file, an edge with nothing human behind it.",
+     "quote": "as sharp as a file"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "inferred",
+     "reason": "Makes those without courtesy trees: dull timber set against the file’s bite.",
+     "quote": "are like trees"
+    }
+   ]
+  },
+  {
+   "n": 998,
+   "gloss": "Being rude is a low thing to do, even to people who act coldly and treat you unfairly.",
+   "keywords": [
+    "rude people",
+    "taking the high road",
+    "staying polite"
+   ],
+   "sensitive": "asks courtesy towards those who mistreat you",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Holds that discourtesy lowers you even when the other person has been unkind.",
+     "quote": "it is low to fail in courtesy"
+    }
+   ]
+  },
+  {
+   "n": 999,
+   "gloss": "For people who can't laugh or be cheerful, the whole vast world is dark even in broad daylight.",
+   "keywords": [
+    "joyless",
+    "cheerfulness",
+    "gloomy outlook"
+   ],
+   "sensitive": "can read as condemning the depressed",
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:darkness",
+     "basis": "explicit",
+     "reason": "To those who can’t laugh the whole world lies in darkness, though it is day.",
+     "quote": "lies in darkness, even by day"
+    }
+   ]
+  },
+  {
+   "n": 1000,
+   "gloss": "A big fortune owned by an ungracious person goes bad, like good milk spoiled by a dirty pot.",
+   "keywords": [
+    "rich and rude",
+    "wealth wasted",
+    "bad character"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:courtesy",
+     "basis": "explicit",
+     "reason": "Someone without courtesy spoils great wealth the way a bad pot spoils good milk.",
+     "quote": "like good milk gone sour from a bad pot"
+    }
+   ]
+  },
+  {
+   "n": 1001,
+   "gloss": "Someone who piles up riches at home and never touches them has, in effect, already died.",
+   "keywords": [
+    "hoarding",
+    "saving too much",
+    "wealthy but miserable"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Riches neither spent nor enjoyed do their owner no more good than a corpse.",
+     "quote": "stores up great heaps of wealth and doesn’t eat from it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "Pronounces the unspending rich man dead while he still breathes.",
+     "quote": "He is a dead man"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:money-feels-empty",
+     "basis": "explicit",
+     "reason": "Speaks to anyone with a full store and no use of it: the unused pile gives no life.",
+     "quote": "there is nothing he can do with it"
+    }
+   ]
+  },
+  {
+   "n": 1002,
+   "gloss": "A person who thinks money is everything and hoards it without giving will be reborn as something wretched.",
+   "keywords": [
+    "greed",
+    "money obsession",
+    "karma",
+    "next life"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Promises a wretched birth to anyone who takes wealth for everything and gives nothing.",
+     "quote": "That delusion brings a wretched birth"
+    }
+   ]
+  },
+  {
+   "n": 1003,
+   "gloss": "People who only care about piling up money and have no wish to be well thought of just weigh down the earth.",
+   "keywords": [
+    "hoarders",
+    "wasted life",
+    "reputation"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Sees nothing in a life of pure accumulation, with no care for a good name, but dead weight.",
+     "quote": "crave piling up wealth and don’t want fame"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "The earth has to carry such people, and they are only a load on her.",
+     "quote": "only a load on the earth"
+    }
+   ]
+  },
+  {
+   "n": 1004,
+   "gloss": "If nobody has any fondness for you, what exactly do you think you will leave behind when you die?",
+   "keywords": [
+    "legacy",
+    "being remembered",
+    "neighbours"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:glory",
+     "basis": "inferred",
+     "reason": "A man nobody cares for leaves nothing behind, so being remembered is the only thing that outlasts him.",
+     "quote": "What does he think he will leave behind"
+    }
+   ]
+  },
+  {
+   "n": 1005,
+   "gloss": "People who neither share their money nor spend it on themselves have nothing, even with millions in the bank.",
+   "keywords": [
+    "rich but poor",
+    "stingy millionaire",
+    "point of money"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Whoever neither gives nor enjoys has nothing, however high the heap.",
+     "quote": "have nothing, even with ten million heaped on ten million"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:money-feels-empty",
+     "basis": "explicit",
+     "reason": "Names the trap exactly: money you won't share or enjoy is money you do not have.",
+     "quote": "neither give nor enjoy have nothing"
+    }
+   ]
+  },
+  {
+   "n": 1006,
+   "gloss": "A person who neither enjoys his wealth nor gives to those who deserve it is a sickness in a great fortune.",
+   "keywords": [
+    "rich and selfish",
+    "wasted inheritance"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Such an owner harms the wealth he holds, neither tasting it nor sharing it.",
+     "quote": "won’t enjoy it himself and has no habit of giving to the deserving"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Makes the man himself an illness that great wealth has caught.",
+     "quote": "a sickness to great wealth"
+    }
+   ]
+  },
+  {
+   "n": 1007,
+   "gloss": "Money held by someone who gives nothing to the needy is like a beautiful woman growing old alone: a waste.",
+   "keywords": [
+    "wasted potential",
+    "not helping the poor",
+    "unused wealth"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Wealth that never reaches the needy withers unused, as beauty does when it grows old alone.",
+     "quote": "gives nothing to those who have nothing"
+    }
+   ],
+   "sensitive": "likens a woman who ages unmarried to wasted wealth"
+  },
+  {
+   "n": 1008,
+   "gloss": "The wealth of someone nobody likes is like a poison tree fruiting in the middle of town: there, but no use to anyone.",
+   "keywords": [
+    "unpopular rich person",
+    "wealth no one benefits from"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "explicit",
+     "reason": "Plants a poison tree where the village's fruit tree should stand: ripe, central and useless.",
+     "quote": "a poison tree bearing fruit in the middle of the village"
+    }
+   ]
+  },
+  {
+   "n": 1009,
+   "gloss": "Money piled up by shutting out love, ignoring what's right and going without yourself only ends up with strangers.",
+   "keywords": [
+    "workaholic",
+    "inheritance",
+    "sacrificing everything for money",
+    "self-denial"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "explicit",
+     "reason": "Punishing yourself and ignoring loving-kindness and righteousness only gathers wealth for others to take.",
+     "quote": "to gather bright wealth, and others take it"
+    }
+   ]
+  },
+  {
+   "n": 1010,
+   "gloss": "When a generous rich person runs short after giving so much, it passes quickly, like a cloud that has rained itself out.",
+   "keywords": [
+    "running out of money",
+    "temporary setback",
+    "giving too much"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Sets the rich of good name beside the rain cloud, the great giver, whose shortage doesn’t last.",
+     "quote": "A short spell of hardship for the wealthy of good name"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:rain-cloud",
+     "basis": "explicit",
+     "reason": "A person of good name run dry is only a rain cloud that will fill again.",
+     "quote": "like a rain cloud running dry"
+    }
+   ]
+  },
+  {
+   "n": 1011,
+   "gloss": "Good people feel shame about wrong actions, which is a very different thing from a pretty girl's shy blush.",
+   "keywords": [
+    "conscience",
+    "moral embarrassment",
+    "guilt"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Separates real shame, felt at an act, from the shyness of women.",
+     "quote": "Real shame is shrinking from an act"
+    }
+   ]
+  },
+  {
+   "n": 1012,
+   "gloss": "Everyone shares food, clothing and children; what really sets people apart is a sense of shame.",
+   "keywords": [
+    "what makes us human",
+    "what sets people apart",
+    "conscience"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Food, clothing and the rest are common to all. A sense of shame alone marks a person out.",
+     "quote": "What marks out a person is a sense of shame"
+    }
+   ]
+  },
+  {
+   "n": 1013,
+   "gloss": "As all life is lodged in a body, goodness of character is lodged in the sense of shame.",
+   "keywords": [
+    "foundation of character",
+    "integrity",
+    "conscience"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Worth is bound to shame, as life is to flesh.",
+     "quote": "Worth is bound to the good called shame"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:soul-and-body",
+     "basis": "explicit",
+     "reason": "Life lodged in the body gives the pattern for worth lodged in shame.",
+     "quote": "All life is bound to flesh"
+    }
+   ]
+  },
+  {
+   "n": 1014,
+   "gloss": "A sense of shame is what really adorns good people; without it, a person's proud strut is painful to watch.",
+   "keywords": [
+    "swagger",
+    "shameless people",
+    "arrogance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Without shame, a proud walk is only a disease.",
+     "quote": "Without it, isn’t a proud walk a disease?"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Hangs shame on the worthy as their ornament.",
+     "quote": "shame the ornament of the worthy"
+    }
+   ]
+  },
+  {
+   "n": 1015,
+   "gloss": "People who feel as ashamed of others' disgrace as of their own are, the world says, where shame truly lives.",
+   "keywords": [
+    "second-hand embarrassment",
+    "feeling for others",
+    "collective shame"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Praises those who feel the same shame at another’s blame as at their own.",
+     "quote": "ashamed of others’ blame as well as their own"
+    }
+   ]
+  },
+  {
+   "n": 1016,
+   "gloss": "The best people wouldn't take even a whole kingdom if they had to give up their sense of shame to get it.",
+   "keywords": [
+    "unethical success",
+    "integrity over power",
+    "no shortcuts"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Even the wide world isn’t wanted without the fence of shame.",
+     "quote": "won’t want the wide world unless they have shame as their fence"
+    }
+   ]
+  },
+  {
+   "n": 1017,
+   "gloss": "People with a real sense of shame would give up life for it, but would never give it up to stay alive.",
+   "keywords": [
+    "integrity above life",
+    "moral absolutes",
+    "conscience"
+   ],
+   "sensitive": "praises giving up one's life to escape disgrace",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Holds shame dearer than life, which is surrendered sooner than shame is.",
+     "quote": "They won’t give up shame for life"
+    }
+   ]
+  },
+  {
+   "n": 1018,
+   "gloss": "If you don't feel ashamed of what would make others ashamed, virtue itself has reason to be ashamed of you.",
+   "keywords": [
+    "shamelessness",
+    "no conscience",
+    "moral standards"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Someone unmoved where others feel shame gives righteousness itself reason to feel shame.",
+     "quote": "righteousness has reason to feel shame"
+    }
+   ]
+  },
+  {
+   "n": 1019,
+   "gloss": "Breaking with custom costs you your family's standing, but losing your sense of shame costs you everything good.",
+   "keywords": [
+    "tradition",
+    "reputation",
+    "losing everything"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Ranks lasting shamelessness above any lapse of principle: it burns all your good.",
+     "quote": "Shamelessness, once it stays, burns all your good"
+    }
+   ]
+  },
+  {
+   "n": 1020,
+   "gloss": "People with no sense of shame aren't really alive: they are like wooden puppets pretending to live.",
+   "keywords": [
+    "shameless",
+    "empty people",
+    "going through the motions"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Without it, a person's living is only an act.",
+     "quote": "fools you into thinking it is alive"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "The shameless walk about like puppets, moved but not alive.",
+     "quote": "move like a wooden puppet"
+    }
+   ],
+   "sensitive": "Says people without shame are not really alive."
+  },
+  {
+   "n": 1021,
+   "gloss": "Nothing lifts a family higher than one member's resolve never to stop working for it.",
+   "keywords": [
+    "working hard for your family",
+    "providing",
+    "dedication"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Sets the refusal to rest your hands from the work above everything else.",
+     "quote": "I won’t rest my hands from the work"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Holds up advancing one's family as the thing such labour is for.",
+     "quote": "Nothing advanceth a man’s family so much"
+    }
+   ]
+  },
+  {
+   "n": 1022,
+   "gloss": "Hard work and sound judgment, practised fully and steadily, are what raise a family.",
+   "keywords": [
+    "family success",
+    "effort and intelligence",
+    "getting ahead"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Effort is one of just two things that raise a family.",
+     "quote": "effort"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "A clear head has to go with the hard work if a house is to rise.",
+     "quote": "full understanding"
+    }
+   ]
+  },
+  {
+   "n": 1023,
+   "gloss": "When someone commits to lifting up their family, even the gods tuck up their clothes and go ahead of them.",
+   "keywords": [
+    "divine help",
+    "commitment to family",
+    "fortune favours"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "The mere vow to raise your family sends god on ahead.",
+     "quote": "I will raise my family"
+    }
+   ]
+  },
+  {
+   "n": 1024,
+   "gloss": "For those who never let up in raising their family, things work out on their own, even without grand plans.",
+   "keywords": [
+    "persistence",
+    "things falling into place",
+    "no plan"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:exertion",
+     "basis": "explicit",
+     "reason": "Unbroken effort for one's family succeeds even with no elaborate plan behind it.",
+     "quote": "strive without delay for their family"
+    }
+   ]
+  },
+  {
+   "n": 1025,
+   "gloss": "Whoever raises their family honestly will find the whole world treating them as one of its own.",
+   "keywords": [
+    "honest success",
+    "community",
+    "being respected"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "A house raised without wrongdoing wins its builder the whole world as kin.",
+     "quote": "The world gathers round a man who raises his family"
+    }
+   ]
+  },
+  {
+   "n": 1026,
+   "gloss": "Being a real man means making the family you were born into great.",
+   "keywords": [
+    "what it means to be a man",
+    "family pride",
+    "duty to family"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Calls being master of the family you were born into the good kind of manliness.",
+     "quote": "master of the family you were born into"
+    }
+   ]
+  },
+  {
+   "n": 1027,
+   "gloss": "As the brave take the worst of a battle, the weight of a family falls on the ones able to carry it.",
+   "keywords": [
+    "sole breadwinner",
+    "responsibility",
+    "the capable one"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Ranks those who hold a family up with the brave at the front of a battle.",
+     "quote": "among your own people too the load falls on those who can carry it"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:carrying-the-family",
+     "basis": "explicit",
+     "reason": "Tells the one who carries everyone that the load came to them because they can bear it.",
+     "quote": "the load falls on those who can carry it"
+    }
+   ]
+  },
+  {
+   "n": 1028,
+   "gloss": "People building up a family get no time off; if they get lazy or too proud, the family goes under.",
+   "keywords": [
+    "no days off",
+    "too proud to work",
+    "family decline"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Taking things easy is named as what brings a house down.",
+     "quote": "Be idle and think of your pride, and it is ruined"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Lifting a family is work with no off season at all.",
+     "quote": "Those raising a family have no season"
+    }
+   ]
+  },
+  {
+   "n": 1029,
+   "gloss": "Must the person who shields their family from every trouble live in a body made for nothing but hardship?",
+   "keywords": [
+    "caregiver burnout",
+    "self-sacrifice",
+    "tired parent"
+   ],
+   "edges": [
+    {
+     "type": "GUIDES",
+     "target": "situation:carrying-the-family",
+     "basis": "explicit",
+     "reason": "Looks with pity at the worn body of the one who shields a whole family.",
+     "quote": "only a vessel for suffering"
+    }
+   ]
+  },
+  {
+   "n": 1030,
+   "gloss": "A family with no one good to hold it up will collapse when trouble eats away at its base.",
+   "keywords": [
+    "family crisis",
+    "head of the family",
+    "falling apart"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:family-line",
+     "basis": "explicit",
+     "reason": "Without one good person as its prop, a family falls once trouble reaches its roots.",
+     "quote": "no good person to stand by and prop it up"
+    }
+   ]
+  },
+  {
+   "n": 1031,
+   "gloss": "However far people wander, they still depend on farming for food, so farming, hard as it is, comes first.",
+   "keywords": [
+    "food security",
+    "where food comes from",
+    "most important job"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "For all its toil, ploughing is ranked first among the ways of earning a living.",
+     "quote": "for all its toil, ploughing comes first"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:plough",
+     "basis": "explicit",
+     "reason": "All roaming humanity ends up, in the end, standing behind one implement.",
+     "quote": "it still follows the plough"
+    }
+   ]
+  },
+  {
+   "n": 1032,
+   "gloss": "Farmers hold society together, because they feed everyone who isn't able to do that work.",
+   "keywords": [
+    "essential workers",
+    "backbone of society",
+    "feeding everyone"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Every other trade lives on what those who till the land provide.",
+     "quote": "they carry all who can’t and go off to other work"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "Speaks of those who plough by name and of the place they hold in the world.",
+     "quote": "Those who plough are the linchpin of the world"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:cart-and-axle",
+     "basis": "explicit",
+     "reason": "The world is a cart, and those who plough the small pin that keeps it together.",
+     "quote": "the linchpin of the world"
+    }
+   ]
+  },
+  {
+   "n": 1033,
+   "gloss": "Only those who live by farming really live; everyone else eats by depending on someone else.",
+   "keywords": [
+    "independence",
+    "self-sufficiency",
+    "working the land"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Calls tilling the one independent living, every other trade being dependence.",
+     "quote": "All the rest bow to eat"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "Reserves real life for those who work the ground.",
+     "quote": "Only those who plough and eat really live"
+    }
+   ]
+  },
+  {
+   "n": 1034,
+   "gloss": "People whose fields lie heavy with grain will see other kings' power bow to their own king's.",
+   "keywords": [
+    "food power",
+    "national strength",
+    "harvest"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Ripe grain brings the parasols of many rulers under the farmers’ own.",
+     "quote": "the shade of ripe grain"
+    }
+   ]
+  },
+  {
+   "n": 1035,
+   "gloss": "People who eat what they grow never need to ask anyone, and they give to those who ask without holding back.",
+   "keywords": [
+    "self-reliance",
+    "generosity",
+    "earning your food"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Living by your own hands frees you from asking and leaves you able to give.",
+     "quote": "won’t beg"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "Describes those who eat by the work of their own hands.",
+     "quote": "eat by the work of their own hands"
+    }
+   ]
+  },
+  {
+   "n": 1036,
+   "gloss": "If farmers stopped working, even people who claim to have given up all desire would be in trouble.",
+   "keywords": [
+    "dependence on farmers",
+    "monks need food",
+    "farmers on strike"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Even those past all wanting cannot do without the crop.",
+     "quote": "even those who say they have given up all desire can’t stand firm"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "Everything turns on the hands of those who plough: what happens if they fold them.",
+     "quote": "If those who plough fold their hands"
+    }
+   ]
+  },
+  {
+   "n": 1037,
+   "gloss": "Dry the ploughed earth until it shrinks to a quarter of its weight and the crop will flourish with no manure at all.",
+   "keywords": [
+    "soil preparation",
+    "gardening tips",
+    "fertiliser",
+    "tilling"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Hands down the farmer's craft in figures: dry the soil right and manure can be saved.",
+     "quote": "the crop will thrive with not a handful of manure"
+    }
+   ]
+  },
+  {
+   "n": 1038,
+   "gloss": "Fertilising matters more than ploughing, and once the weeds are out, protecting the crop matters more than watering.",
+   "keywords": [
+    "crop care",
+    "weeding",
+    "gardening tips"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:agriculture",
+     "basis": "explicit",
+     "reason": "Orders the farmer's tasks: manure above ploughing, and watchful guarding above water.",
+     "quote": "Manuring profiteth more than the ploughing"
+    }
+   ]
+  },
+  {
+   "n": 1039,
+   "gloss": "If the owner stops visiting his land and stays home, it sulks at him like a neglected wife.",
+   "keywords": [
+    "ignoring your property",
+    "absentee owner",
+    "being hands-on"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "inferred",
+     "reason": "Staying put instead of going out to the land is the neglect the land resents.",
+     "quote": "doesn’t go to it and just stays put"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:farmer",
+     "basis": "explicit",
+     "reason": "A word to the owner who leaves his fields unvisited.",
+     "quote": "If the owner doesn’t go to it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "Gives the ground a wife’s sulk at being left alone.",
+     "quote": "sulk like a wife"
+    }
+   ]
+  },
+  {
+   "n": 1040,
+   "gloss": "The earth laughs when she sees idle people sit and moan that they've no food.",
+   "keywords": [
+    "laziness",
+    "excuses",
+    "complaining"
+   ],
+   "sensitive": "mocks those who say they have nothing to eat",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:sloth",
+     "basis": "explicit",
+     "reason": "Laughs at the idle who say they have nothing, since the ground was there to be worked.",
+     "quote": "sitting idle"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:earth-the-bearer",
+     "basis": "explicit",
+     "reason": "Earth becomes a woman amused at those who cry out instead of tilling.",
+     "quote": "the good woman called earth laughs"
+    }
+   ]
+  },
+  {
+   "n": 1041,
+   "gloss": "What is more painful than being poor? Nothing but being poor.",
+   "keywords": [
+    "worst thing in life",
+    "financial stress",
+    "hardship"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Looks for a worse pain than poverty and can only name poverty again.",
+     "quote": "Only poverty hurts like poverty"
+    }
+   ]
+  },
+  {
+   "n": 1042,
+   "gloss": "Poverty is a wicked thing that takes away your happiness both now and in whatever comes after.",
+   "keywords": [
+    "joyless life",
+    "hardship",
+    "afterlife"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Makes want a villain who robs this world and the next alike.",
+     "quote": "The sinner called poverty"
+    }
+   ]
+  },
+  {
+   "n": 1043,
+   "gloss": "The gnawing need of poverty wears away even inherited refinement and gracious speech.",
+   "keywords": [
+    "fallen family",
+    "loss of status",
+    "effects of hardship"
+   ],
+   "sensitive": "says poverty strips the poor of dignity",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Poverty can destroy even the standing and speech a family has handed down.",
+     "quote": "destroys, all at once, your old family standing and your fine speech"
+    }
+   ]
+  },
+  {
+   "n": 1044,
+   "gloss": "Being poor can push even people from good families into talking in ways that humiliate them.",
+   "keywords": [
+    "loss of pride",
+    "fallen family",
+    "humbling"
+   ],
+   "sensitive": "says want reduces people to grovelling",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Not even high birth protects a person from what need does to their speech.",
+     "quote": "Even in those of good family, poverty brings a weakness"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:servility",
+     "basis": "explicit",
+     "reason": "Grovelling words are shown as the humiliation need wrings out of a person.",
+     "quote": "shameful words"
+    }
+   ]
+  },
+  {
+   "n": 1045,
+   "gloss": "The one misfortune of being poor has a thousand smaller miseries hidden inside it.",
+   "keywords": [
+    "daily humiliations",
+    "struggles of being poor",
+    "hidden costs"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Opens the one misery called poverty and finds many miseries packed inside.",
+     "quote": "many miseries come and settle"
+    }
+   ]
+  },
+  {
+   "n": 1046,
+   "gloss": "A poor person's words are ignored, even when what they say is true and brilliantly put.",
+   "keywords": [
+    "not being listened to",
+    "class bias",
+    "credibility"
+   ],
+   "sensitive": "tells the poor their words count for nothing",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Even the grandest truth falls flat when the speaker has no money.",
+     "quote": "the words of the poor lose their meaning"
+    }
+   ]
+  },
+  {
+   "n": 1047,
+   "gloss": "Poverty with no virtue to support it can make even your own mother treat you like a stranger.",
+   "keywords": [
+    "rejected by family",
+    "estrangement"
+   ],
+   "sensitive": "calls the poor wretches even a mother would disown",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Poverty without righteousness can part a man from the very mother who bore him.",
+     "quote": "even by the mother who bore him"
+    }
+   ]
+  },
+  {
+   "n": 1048,
+   "gloss": "Will the poverty that nearly killed me yesterday come back again today?",
+   "keywords": [
+    "dread of another day",
+    "ongoing hardship"
+   ],
+   "sensitive": "voices despair at poverty as daily near-death",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Gives the poor man's own voice, dreading a new day after yesterday's torment.",
+     "quote": "the poverty that all but killed me yesterday"
+    }
+   ]
+  },
+  {
+   "n": 1049,
+   "gloss": "You could even fall asleep in a fire, but you can't get any rest at all when you are poor.",
+   "keywords": [
+    "insomnia",
+    "money worries",
+    "lying awake"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "explicit",
+     "reason": "Sleep, possible even in a blaze, is denied altogether to those in want.",
+     "quote": "In poverty there is no sleep at all"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Makes flames gentler than want: a person can at least sleep among them.",
+     "quote": "sleep even in the middle of a fire"
+    }
+   ]
+  },
+  {
+   "n": 1050,
+   "gloss": "With no means left, the destitute should give up the world entirely; staying in it only eats up other people's salt and gruel.",
+   "keywords": [
+    "destitution",
+    "renouncing the world",
+    "leaving worldly life"
+   ],
+   "sensitive": "reads as telling the destitute to give up life",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:poverty",
+     "basis": "inferred",
+     "reason": "Paints having nothing as a dead end: give up everything, or be the death of salt and gruel.",
+     "quote": "If those who have nothing don’t give up everything"
+    }
+   ]
+  },
+  {
+   "n": 1051,
+   "gloss": "It's fine to ask if you find people who can afford to help; if they pretend they can't, the fault is theirs, not yours.",
+   "keywords": [
+    "no shame in asking",
+    "borrowing",
+    "asking for a loan"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Allows begging outright, given someone it is right to ask.",
+     "quote": "If you see someone it is right to beg from, beg"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:having-to-ask-for-money",
+     "basis": "explicit",
+     "reason": "Takes the blame off the asker: a false refusal shames the one who refuses.",
+     "quote": "the blame is theirs, not yours"
+    }
+   ]
+  },
+  {
+   "n": 1052,
+   "gloss": "Even asking for help can be a pleasure, when you get what you need without being made to feel small.",
+   "keywords": [
+    "receiving help gracefully",
+    "help without humiliation",
+    "asking a favour"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Begging can turn pleasant, so long as what is asked for arrives without pain.",
+     "quote": "Begging itself is a pleasure"
+    }
+   ]
+  },
+  {
+   "n": 1053,
+   "gloss": "There's even some grace in asking from people who know their duty and don't pretend they can't help.",
+   "keywords": [
+    "generous people",
+    "dignified asking",
+    "honest givers"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Grants begging a beauty of its own, but only before those with no hiding in their hearts.",
+     "quote": "There is a beauty even in begging"
+    }
+   ]
+  },
+  {
+   "n": 1054,
+   "gloss": "Asking from someone who would never refuse, even while dreaming, is every bit as dignified as giving.",
+   "keywords": [
+    "generous friend",
+    "no shame",
+    "receiving from the generous"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Before such a giver, receiving loses all shame and ranks with giving itself.",
+     "quote": "Begging is like giving"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Praises givers who don’t know how to hide what they have, even in a dream.",
+     "quote": "those who don’t know how to hide even in a dream"
+    }
+   ]
+  },
+  {
+   "n": 1055,
+   "gloss": "People are able to live by asking only because the world has people who do not refuse.",
+   "keywords": [
+    "kind strangers",
+    "why people ask",
+    "living on donations"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:charity",
+     "basis": "inferred",
+     "reason": "Credits those who never turn the needy away with making such a living possible at all.",
+     "quote": "there are men in the world that refuse not alms"
+    }
+   ]
+  },
+  {
+   "n": 1056,
+   "gloss": "Just seeing people who are free of the meanness of refusing is enough to take away the pain of being poor.",
+   "keywords": [
+    "relief",
+    "kindness to the poor",
+    "hope"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:charity",
+     "basis": "explicit",
+     "reason": "Such givers end the ache of want simply by appearing.",
+     "quote": "all the misery of poverty ends at once"
+    }
+   ]
+  },
+  {
+   "n": 1057,
+   "gloss": "A person in need feels a deep inner gladness on meeting someone who gives without sneering or looking down.",
+   "keywords": [
+    "giving with respect",
+    "dignity of recipients",
+    "not patronising"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:charity",
+     "basis": "explicit",
+     "reason": "Prizes the gift that comes without scorn or insult.",
+     "quote": "give without scorn or insult"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:beggar",
+     "basis": "explicit",
+     "reason": "Looks into the beggar's own heart and finds gladness at such a meeting.",
+     "quote": "the heart is glad and rejoices deep within"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:someone-asks-you-for-help",
+     "basis": "inferred",
+     "reason": "Shows someone being asked how to give: with no sneer, so that the asker's heart lifts.",
+     "quote": "give without scorn or insult"
+    }
+   ]
+  },
+  {
+   "n": 1058,
+   "gloss": "If no one ever asked for help, the world would be as lifeless as puppets going back and forth.",
+   "keywords": [
+    "need for one another",
+    "meaning of giving",
+    "human connection"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "inferred",
+     "reason": "With no one asking there would be no giving, and human life would shrink to a puppet show.",
+     "quote": "Without people who beg"
+    }
+   ]
+  },
+  {
+   "n": 1059,
+   "gloss": "What would generous people have to show for themselves if no one ever came asking?",
+   "keywords": [
+    "why givers need askers",
+    "reputation for giving",
+    "purpose of giving"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Gives askers their due: they are what a giver's renown depends on.",
+     "quote": "if there were none who want to beg and receive"
+    }
+   ]
+  },
+  {
+   "n": 1060,
+   "gloss": "Someone asking shouldn't get angry at a refusal: their own need proves another person can be short too.",
+   "keywords": [
+    "being turned down",
+    "handling rejection",
+    "refused a loan"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:beggar",
+     "basis": "explicit",
+     "reason": "A direct instruction to the one who asks.",
+     "quote": "A beggar should not get angry"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "inferred",
+     "reason": "Forbids bitterness at a refusal: the one who begs must not be angry.",
+     "quote": "A beggar should not get angry"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:having-to-ask-for-money",
+     "basis": "explicit",
+     "reason": "For anyone turned down: your own shortage shows that the other person may be short too.",
+     "quote": "The misery of his own poverty is witness enough"
+    }
+   ]
+  },
+  {
+   "n": 1061,
+   "gloss": "Never asking at all is worth ten million times more than asking, even from those who give gladly.",
+   "keywords": [
+    "self-reliance",
+    "too proud to ask",
+    "independence"
+   ],
+   "sensitive": "ranks those who beg far below those who don't",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:refusal-to-beg",
+     "basis": "explicit",
+     "reason": "Even a loving giver does not change the sum: not asking is worth ten million times more.",
+     "quote": "not begging is worth ten million times more"
+    }
+   ]
+  },
+  {
+   "n": 1062,
+   "gloss": "If the Creator meant people to stay alive by begging, let that Creator wander homeless and be destroyed.",
+   "keywords": [
+    "injustice",
+    "anger at god",
+    "unfair world",
+    "social justice"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:begging",
+     "basis": "inferred",
+     "reason": "Curses the maker of the world to say no one should have to beg to live: the target is the injustice.",
+     "quote": "let him wander far and perish"
+    }
+   ]
+  },
+  {
+   "n": 1063,
+   "gloss": "Nothing is more hard-hearted than telling yourself you will cure your poverty by asking others for money.",
+   "keywords": [
+    "getting out of debt",
+    "easy way out",
+    "relying on handouts"
+   ],
+   "sensitive": "calls the decision to beg the hardest of hearts",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:begging",
+     "basis": "inferred",
+     "reason": "No hardness is worse than planning to beg your way out of poverty.",
+     "quote": "I will end the misery of poverty by begging"
+    }
+   ]
+  },
+  {
+   "n": 1064,
+   "gloss": "The nobility of someone who won't ask even when they have nothing left is too great for the whole world to contain.",
+   "keywords": [
+    "pride in hardship",
+    "self-respect",
+    "noble poverty"
+   ],
+   "sensitive": "praises refusing help even when destitute",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:refusal-to-beg",
+     "basis": "explicit",
+     "reason": "Having nothing at all still can’t make this worth beg, and all the space there is can’t hold it.",
+     "quote": "the worth that won’t consent to beg"
+    }
+   ]
+  },
+  {
+   "n": 1065,
+   "gloss": "Even the thinnest porridge tastes better than anything if you earned it yourself.",
+   "keywords": [
+    "earning your own way",
+    "pride in work",
+    "simple food",
+    "self-sufficiency"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:refusal-to-beg",
+     "basis": "inferred",
+     "reason": "Finds watery gruel sweeter than all else once it is one's own earning, owed to no giver.",
+     "quote": "what your own labour has brought"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:struggling-to-get-by",
+     "basis": "inferred",
+     "reason": "For someone getting by on very little: what you earn yourself has a taste nothing else has.",
+     "quote": "Even if it is gruel as thin as water"
+    }
+   ]
+  },
+  {
+   "n": 1066,
+   "gloss": "Even if you're only asking for water for a cow, nothing shames the tongue more than asking.",
+   "keywords": [
+    "embarrassed to ask",
+    "asking for small favours",
+    "humiliation"
+   ],
+   "sensitive": "calls any asking deeply humiliating",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "Puts a request for help at the very bottom of what a tongue can say.",
+     "quote": "nothing more shaming to the tongue than begging"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:refusal-to-beg",
+     "basis": "inferred",
+     "reason": "The dread covers any request at all, even one made for a thirsty cow.",
+     "quote": "Even if you beg water for a cow"
+    }
+   ]
+  },
+  {
+   "n": 1067,
+   "gloss": "I ask just one thing of all who must ask: if you have to, don't go to people who dodge and hide what they have.",
+   "keywords": [
+    "who to ask for help",
+    "asking the wrong person",
+    "people who avoid you"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:beggar",
+     "basis": "explicit",
+     "reason": "Speaks to all who beg, and begs of them in turn.",
+     "quote": "I beg of everyone who begs"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:having-to-ask-for-money",
+     "basis": "explicit",
+     "reason": "Direct advice for choosing whom to ask: stay away from those who hide what they have.",
+     "quote": "don’t beg from those who hide what they have"
+    }
+   ]
+  },
+  {
+   "n": 1068,
+   "gloss": "Asking is a frail boat that breaks apart the moment it hits the rock of someone's evasion.",
+   "keywords": [
+    "rejection",
+    "being turned down",
+    "fragile hope"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "theme:begging",
+     "basis": "explicit",
+     "reason": "One meeting with hiding is enough to wreck it, so unsafe is this way of living.",
+     "quote": "The unsafe boat called begging"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:boat",
+     "basis": "explicit",
+     "reason": "Sends begging out as a boat and makes hiding the rock that splits it.",
+     "quote": "split apart when it strikes the rock called hiding"
+    }
+   ]
+  },
+  {
+   "n": 1069,
+   "gloss": "Thinking about asking makes the heart melt; thinking about being turned away destroys it completely.",
+   "keywords": [
+    "empathy for people in need",
+    "pain of rejection",
+    "rebuffed"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:beggar",
+     "basis": "explicit",
+     "reason": "Feels the beggar’s lot enough to melt the heart, and the hiding enough to kill it.",
+     "quote": "The heart melts at the thought of begging"
+    }
+   ]
+  },
+  {
+   "n": 1070,
+   "gloss": "A beggar's spirit drains away at a refusal, so where does the refuser's own life hide when saying no?",
+   "keywords": [
+    "cold refusal",
+    "turning someone away",
+    "heartless"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:beggar",
+     "basis": "explicit",
+     "reason": "Measures a rebuff by what it does to the one refused.",
+     "quote": "At a mere word, the life goes out of those who beg"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:miserliness",
+     "basis": "inferred",
+     "reason": "Wonders how the man who withholds can survive the very no that fells the asker.",
+     "quote": "Where then does the life of those who hide go to hide?"
+    }
+   ]
+  },
+  {
+   "n": 1071,
+   "gloss": "The vile look just like people: I've never seen such a perfect imitation.",
+   "keywords": [
+    "human in name only",
+    "bad people",
+    "sarcasm"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Marvels sourly that such creatures can pass so exactly for human.",
+     "quote": "We have never seen a likeness like it"
+    }
+   ]
+  },
+  {
+   "n": 1072,
+   "gloss": "Bad people are luckier than those who know right from wrong, because nothing ever troubles their conscience.",
+   "keywords": [
+    "no guilt",
+    "sociopath",
+    "no remorse"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Calls them happier, bitterly, because they have no inner pain to feel.",
+     "quote": "their hearts have no worries"
+    }
+   ]
+  },
+  {
+   "n": 1073,
+   "gloss": "The vile are just like gods, because they too do exactly as they please.",
+   "keywords": [
+    "above the law",
+    "entitled people",
+    "no accountability"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Mock praise: like the gods, they do whatever they please.",
+     "quote": "like the gods, for they too do whatever they please"
+    }
+   ]
+  },
+  {
+   "n": 1074,
+   "gloss": "When a lowlife meets someone equally wicked, he tries to outdo them and feels proud of it.",
+   "keywords": [
+    "one-upmanship",
+    "competing in bad behaviour",
+    "bad crowd"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Meeting a rogue only spurs them to be worse and to boast of it.",
+     "quote": "they outdo him and swagger"
+    }
+   ]
+  },
+  {
+   "n": 1075,
+   "gloss": "Bad people behave only out of fear, and if anything else moves them at all, it's a little greed.",
+   "keywords": [
+    "fear of punishment",
+    "why people behave",
+    "no moral compass"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Reduces all their conduct to fear, with a little appetite left over.",
+     "quote": "Fear is all the good conduct of the low"
+    }
+   ]
+  },
+  {
+   "n": 1076,
+   "gloss": "Lowlifes are like a drum: they can't rest until they've broadcast every secret they've been told.",
+   "keywords": [
+    "can't keep a secret",
+    "blabbermouth",
+    "betraying confidences"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Likens them to a drum, beating out loud whatever was told in trust.",
+     "quote": "like a drum being beaten"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Shows by its opposite the value of guarding what has been entrusted.",
+     "quote": "they carry the secrets they hear to others and tell them"
+    }
+   ]
+  },
+  {
+   "n": 1077,
+   "gloss": "A mean person won't even shake the food off his wet hand for anyone, unless they can smash his jaw.",
+   "keywords": [
+    "stingy people",
+    "giving only under threat",
+    "bully"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "So grudging that only a fist at the jaw can get a crumb from them.",
+     "quote": "clenched fists can break their jaws"
+    }
+   ]
+  },
+  {
+   "n": 1078,
+   "gloss": "Good people respond to a word; like sugarcane, which must be crushed, the vile only give under force.",
+   "keywords": [
+    "forcing people to help",
+    "reasoning with bad people",
+    "forced generosity"
+   ],
+   "sensitive": "says the low must be beaten to yield",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "Like cane in the press, they yield nothing until force is used on them.",
+     "quote": "like sugarcane, are of use only when crushed"
+    }
+   ]
+  },
+  {
+   "n": 1079,
+   "gloss": "It's enough for a vile person to see someone decently clothed and fed, and he starts digging for their faults.",
+   "keywords": [
+    "resenting neighbours",
+    "finding fault",
+    "smear"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "The mere sight of what others wear and eat sets the low hunting for faults.",
+     "quote": "they can always find a fault in them"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:envy",
+     "basis": "inferred",
+     "reason": "It is another's plain comfort, clothing and food, that sets the fault-finding off.",
+     "quote": "When the low see what others wear and eat"
+    }
+   ]
+  },
+  {
+   "n": 1080,
+   "gloss": "What are lowlifes good for when trouble strikes? Only for selling themselves as fast as they can.",
+   "keywords": [
+    "selling out",
+    "no loyalty",
+    "under pressure"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:baseness",
+     "basis": "explicit",
+     "reason": "At the first trouble they have just one resource, and it is to put themselves up for sale.",
+     "quote": "sell themselves, quickly"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:servility",
+     "basis": "inferred",
+     "reason": "Selling oneself to escape misfortune is the servile end of a base life.",
+     "quote": "fit to sell themselves"
+    }
+   ]
+  },
+  {
+   "n": 1081,
+   "gloss": "Is she a goddess, a rare peacock, or just a woman in heavy earrings? I'm too bewildered to know.",
+   "keywords": [
+    "love at first sight",
+    "speechless",
+    "stunned by beauty"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:being-smitten",
+     "basis": "explicit",
+     "reason": "First sight as pure confusion: he cannot say whether she is a goddess, a peacock or a woman.",
+     "quote": "My heart is lost in doubt"
+    }
+   ]
+  },
+  {
+   "n": 1082,
+   "gloss": "When she looks back at me, it is like a seductive spirit attacking with a whole army behind her.",
+   "keywords": [
+    "eye contact",
+    "overwhelming attraction",
+    "she looked at me"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:being-smitten",
+     "basis": "explicit",
+     "reason": "Her answering look hits him like a goddess with an army at her back.",
+     "quote": "a goddess who strikes had brought an army with her"
+    }
+   ]
+  },
+  {
+   "n": 1083,
+   "gloss": "I'd never known what death was until now: it's a woman with great, fighting eyes.",
+   "keywords": [
+    "femme fatale",
+    "killer looks",
+    "falling hard"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:being-smitten",
+     "basis": "explicit",
+     "reason": "Only now, at the sight of her, does he learn what dying is.",
+     "quote": "I never knew before what they call death. Now I know"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:god-of-death",
+     "basis": "explicit",
+     "reason": "Death takes a shape at last, and the shape is a woman.",
+     "quote": "It has a woman’s ways"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes are large, and they fight.",
+     "quote": "big, battling eyes"
+    }
+   ]
+  },
+  {
+   "n": 1084,
+   "gloss": "She seems such an innocent girl, but those warlike eyes consume the life of whoever looks at them.",
+   "keywords": [
+    "innocent but deadly",
+    "mesmerising eyes",
+    "heartbreaker"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:being-smitten",
+     "basis": "explicit",
+     "reason": "Simplicity and slaughter together: the blow falls on whoever so much as looks.",
+     "quote": "eat the life of anyone who sees them"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Gives an innocent girl a pair of eyes at war with her.",
+     "quote": "Her eyes are at odds with this innocent, womanly girl"
+    }
+   ]
+  },
+  {
+   "n": 1085,
+   "gloss": "Is that death, or eyes, or a doe's look? This innocent girl's gaze has all three in it.",
+   "keywords": [
+    "deer eyes",
+    "captivating gaze",
+    "dangerous beauty"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:god-of-death",
+     "basis": "explicit",
+     "reason": "Cannot decide whether what is looking at him is Death itself.",
+     "quote": "Is it death?"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "One glance holds three things at once: death, an eye and a doe.",
+     "quote": "glance has all three in it"
+    }
+   ]
+  },
+  {
+   "n": 1086,
+   "gloss": "Only if her curved eyebrows hid them would her eyes stop making me tremble.",
+   "keywords": [
+    "arched brows",
+    "nervous around someone",
+    "trembling"
+   ],
+   "edges": [
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lovers-eyes",
+     "basis": "explicit",
+     "reason": "Her eyes go on hurting him unless her own brows shut them away.",
+     "quote": "her eyes would not cause me this trembling pain"
+    }
+   ]
+  },
+  {
+   "n": 1087,
+   "gloss": "The cloth over her breasts is like the cover on a raging elephant's eyes: it holds back something dangerous.",
+   "keywords": [
+    "physical attraction",
+    "modest clothing",
+    "desire"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Praises a body so dangerous to look at that it has to be kept covered.",
+     "quote": "this woman’s firm breasts"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:elephant",
+     "basis": "explicit",
+     "reason": "Her cloth works like the cover hung over a rutting elephant’s eyes.",
+     "quote": "the cover over the eyes of a rutting elephant"
+    }
+   ]
+  },
+  {
+   "n": 1088,
+   "gloss": "Has my courage, which frightens even enemies who've never met me, been defeated by her lovely forehead?",
+   "keywords": [
+    "brave man undone",
+    "tough guy in love",
+    "weak at the knees"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:being-smitten",
+     "basis": "explicit",
+     "reason": "A warrior whose name shakes his enemies is beaten by a forehead.",
+     "quote": "has broken before it"
+    }
+   ]
+  },
+  {
+   "n": 1089,
+   "gloss": "Why add jewellery to someone with a doe's innocent look and shyness? It only takes away from her.",
+   "keywords": [
+    "natural beauty",
+    "no makeup",
+    "simple elegance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:beauty",
+     "basis": "explicit",
+     "reason": "Finds her charm so complete that other ornaments are no use.",
+     "quote": "What is the use of decking her with ornaments"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:bashfulness",
+     "basis": "explicit",
+     "reason": "Counts her modesty as one of the only two adornments she needs.",
+     "quote": "the shy look of a doe, and modesty"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:ornament",
+     "basis": "explicit",
+     "reason": "Takes the jewels away and gives her a look and modesty to wear instead.",
+     "quote": "ornaments that are strangers to her"
+    }
+   ]
+  },
+  {
+   "n": 1090,
+   "gloss": "Liquor pleases only those who drink it; love, unlike it, delights you just by looking.",
+   "keywords": [
+    "intoxicating love",
+    "love drunk",
+    "just seeing her"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:passion",
+     "basis": "explicit",
+     "reason": "Desire outdoes drink: it delights at a mere look.",
+     "quote": "It can’t delight those who merely see, as desire does"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:wine",
+     "basis": "explicit",
+     "reason": "Sets liquor, which has to be drunk, against desire, which only has to be seen.",
+     "quote": "Brewed liquor gives joy only to those who drink it"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "OPPOSES",
+   "source": "quality:greatness",
+   "target": "quality:littleness",
+   "basis": "explicit",
+   "reason": "Three couplets set them head to head: bending low against self-admiring, free of pride against riding on it, hiding shame against telling faults.",
+   "quote": "Greatness always bends low. Smallness admires itself and dresses itself up.",
+   "couplets": [
+    978,
+    979,
+    980
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:worth",
+   "target": "quality:affection",
+   "basis": "explicit",
+   "reason": "Loving-kindness is the first of the five pillars that hold up worth.",
+   "quote": "Loving-kindness",
+   "couplets": [
+    983
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:worth",
+   "target": "quality:helpfulness",
+   "basis": "explicit",
+   "reason": "Take away the readiness to be of use, and one pillar of worth is gone.",
+   "quote": "helpfulness",
+   "couplets": [
+    983
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:worth",
+   "target": "quality:considerateness",
+   "basis": "explicit",
+   "reason": "Worth leans on a kindly eye towards other people.",
+   "quote": "considerateness",
+   "couplets": [
+    983
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:worth",
+   "target": "quality:truthfulness",
+   "basis": "explicit",
+   "reason": "The last pillar named under worth is truthfulness.",
+   "quote": "truthfulness",
+   "couplets": [
+    983
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:affection",
+   "target": "quality:courtesy",
+   "basis": "inferred",
+   "reason": "Loving-kindness is one of the two things that make up courtesy.",
+   "quote": "Having loving-kindness",
+   "couplets": [
+    992
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:noble-birth",
+   "target": "quality:courtesy",
+   "basis": "explicit",
+   "reason": "Birth in a good family must join loving-kindness before courtesy can appear.",
+   "quote": "being born into a good family",
+   "couplets": [
+    992
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:worth",
+   "target": "quality:sense-of-shame",
+   "basis": "explicit",
+   "reason": "Shame is a pillar of worth in 983, and in 1013 the good that worth is tied to.",
+   "quote": "a sense of shame",
+   "couplets": [
+    983,
+    1013
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:exertion",
+   "target": "theme:family-line",
+   "basis": "explicit",
+   "reason": "Long, unbroken effort is what makes a family grow.",
+   "quote": "A family grows through long work",
+   "couplets": [
+    1021,
+    1022
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:understanding",
+   "target": "theme:family-line",
+   "basis": "explicit",
+   "reason": "Sound judgment, joined to effort, is the other thing that raises a house.",
+   "quote": "effort and full understanding",
+   "couplets": [
+    1022
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:agriculture",
+   "target": "quality:charity",
+   "basis": "explicit",
+   "reason": "Eating by the work of your own hands leaves you able to give to all who beg.",
+   "quote": "They give to those who beg, and hide nothing",
+   "couplets": [
+    1035
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:renunciation",
+   "target": "theme:agriculture",
+   "basis": "explicit",
+   "reason": "Even those who have given up all desire can’t stand firm once those who plough fold their hands.",
+   "quote": "even those who say they have given up all desire",
+   "couplets": [
+    1036
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "theme:poverty",
+   "target": "quality:noble-birth",
+   "basis": "inferred",
+   "reason": "Poverty destroys the old standing and fine speech that a good birth passes down.",
+   "quote": "your old family standing and your fine speech",
+   "couplets": [
+    1043
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "theme:poverty",
+   "target": "quality:servility",
+   "basis": "explicit",
+   "reason": "Need forces grovelling speech even out of the well-born.",
+   "quote": "a weakness from which shameful words are born",
+   "couplets": [
+    1044
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:charity",
+   "target": "theme:begging",
+   "basis": "explicit",
+   "reason": "People can live by asking only because some never refuse.",
+   "quote": "there are people in the world who don’t hide what they have",
+   "couplets": [
+    1055
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:charity",
+   "target": "theme:poverty",
+   "basis": "explicit",
+   "reason": "Those who would never deny charity end want's pangs by being seen.",
+   "quote": "all the misery of poverty ends at once",
+   "couplets": [
+    1056
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "quality:liberality",
+   "target": "theme:begging",
+   "basis": "explicit",
+   "reason": "The glory of an open hand has nothing to stand on if no one asks.",
+   "quote": "What glory would givers have",
+   "couplets": [
+    1059
+   ]
+  },
+  {
+   "type": "OPPOSES",
+   "source": "quality:worth",
+   "target": "quality:baseness",
+   "basis": "explicit",
+   "reason": "Sets those moved by a word against those moved only by crushing.",
+   "quote": "The worthy are of use at a word. The low, like sugarcane, are of use only when crushed.",
+   "couplets": [
+    1078
+   ]
+  }
+ ],
+ "proposals": []
+}

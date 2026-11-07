@@ -1,0 +1,148 @@
+{
+  "chapter": 82,
+  "title": "Bad Friendship",
+  "note": "Friendship that must be dropped, because its faults can’t be borne, takes two chapters. This first one is on friendship with people of bad character.",
+  "couplets": [
+    {
+      "n": 811,
+      "plain": "Even if they seem ready to drink you up, the friendship of people without character is better shrinking than growing.",
+      "pm": "People of bad character may seem so fond that they would drink you up, but their friendship is better shrinking than growing. The harm that comes when it grows doesn’t come when it shrinks.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "a4c8c124222c60d0",
+          "quote": "better shrinking than growing",
+          "reason": "A show of devouring fondness from those without character is best seen shrinking."
+        }
+      ]
+    },
+    {
+      "n": 812,
+      "plain": "Those who don’t fit, who make friends when it pays and leave when it doesn’t: what does it matter if you gain or lose them?",
+      "pm": "What is gained by having, or lost by losing, the friendship of those who befriend you when there is use in it and leave when there isn’t? People who look only to their own gain fit with no one, so he calls them unmatched. Stay indifferent to them.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "b637483f04500622",
+          "quote": "make friends when it pays and leave when it doesn’t"
+        },
+        {
+          "id": "b200511a335ce6e5",
+          "quote": "what does it matter if you gain or lose them"
+        }
+      ]
+    },
+    {
+      "n": 813,
+      "plain": "Friends who weigh what they stand to gain, those who take what they are paid, and thieves are all alike.",
+      "pm": "Friends who look not at the measure of friendship but at the measure of their gain, public women who take not the giver but the price, and thieves who look not at your loss but at your lapse of attention are all alike. They care only for wealth, and they deceive.",
+      "tag": "adds",
+      "sensitive": "classes sex workers with thieves",
+      "links": [
+        {
+          "id": "7535f6a9b540d898",
+          "quote": "Friends who weigh what they stand to gain",
+          "reason": "Ranks the friend who weighs the gain with thieves and those who take what they are paid."
+        }
+      ]
+    },
+    {
+      "n": 814,
+      "plain": "Better to be alone than to call your own those who are like an untaught horse that fails you in battle.",
+      "pm": "Better to be alone than to have as your own those like an untrained horse, which seems to carry you until battle comes, then throws you on the field and runs. Untrained means not knowing its paces, movements and battle work. Such friends seem to help until trouble comes, then leave. Being alone is bad too, but it is the better.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "77fa7fe856ada0ba",
+          "quote": "Better to be alone",
+          "reason": "Prefers being alone to friends who fail you in the fight like an untaught horse."
+        }
+      ]
+    },
+    {
+      "n": 815,
+      "plain": "The shabby friendship of small people, who give no protection even when you have made it, is better not had than had.",
+      "pm": "The bad friendship of base people, which is no defence even when you have formed it, is better not to have than to have. Being no defence means leaving you when ruin comes.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "b20c6f0d21c8836a",
+          "quote": "give no protection even when you have made it"
+        },
+        {
+          "id": "db1c8ec5a0832c7f",
+          "quote": "better not had than had"
+        }
+      ]
+    },
+    {
+      "n": 816,
+      "plain": "The enmity of the wise is worth ten million times the deepest friendship of a fool.",
+      "pm": "The enmity of a wise person is ten million times better than the close friendship of a fool. A wise person’s enmity does no harm, and a fool’s friendship brings every harm.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "71c730f958f75306",
+          "quote": "the deepest friendship of a fool"
+        }
+      ]
+    },
+    {
+      "n": 817,
+      "plain": "What enemies bring is a hundred million times better than a friendship that is only laughter.",
+      "pm": "What comes from enemies is a hundred million times better than what comes from a friendship that makes you someone to laugh at and not someone who knows. Such friends are like rogues, rakes and jesters, who amuse you in many ways and take what they want. He rejects all other readings as against the grammar.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "aa98d2fad94bf38b",
+          "quote": "a friendship that is only laughter",
+          "reason": "Puts friends who are only for laughter below enemies by a hundred million times."
+        }
+      ]
+    },
+    {
+      "n": 818,
+      "plain": "With those who spoil work that could be done, say nothing, and let the friendship slowly slip away.",
+      "pm": "With those who pretend that work they could do can’t be done, and don’t do it, say nothing once you see it, and let the friendship wind down bit by bit without seeming to drop it. If you speak, or seem to be dropping them, they will mend matters for the moment and try to go on as friends.",
+      "tag": "adds",
+      "links": [
+        {
+          "id": "13a44e15c130e0c6",
+          "quote": "say nothing, and let the friendship slowly slip away",
+          "reason": "A friend who spoils your work earns only a slow and silent letting go."
+        }
+      ]
+    },
+    {
+      "n": 819,
+      "plain": "The friendship of those whose acts are one thing and words another is bitter even in a dream.",
+      "pm": "The friendship of those whose acts and words don’t match is bitter, not only awake but even in a dream. They are enemies in deed and friends in word. It is so real in waking life that it pains even in a dream.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "a0e67ccfe45e1998",
+          "quote": "whose acts are one thing and words another"
+        }
+      ]
+    },
+    {
+      "n": 820,
+      "plain": "Don’t let the friendship of those who are warm at home and blame you in the assembly come near you at all.",
+      "pm": "Take care that those who are friendly when you are alone at home, and speak blame in the assembly before others, don’t come near you in the least. Both the friendliness at home and the blame in public are bad, so guard against them always.",
+      "tag": "agrees",
+      "links": [
+        {
+          "id": "8df8b2401fe6ba8d",
+          "quote": "warm at home and blame you in the assembly",
+          "reason": "Sets warmth at home against blame in the assembly."
+        },
+        {
+          "id": "c2f5e00b6a82a077",
+          "quote": "come near you at all",
+          "reason": "Gives one flat rule for those who are warm in private and blame you in public: keep away."
+        }
+      ]
+    }
+  ],
+  "ideaLinks": []
+}

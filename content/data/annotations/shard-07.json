@@ -1,0 +1,2984 @@
+{
+ "shard": "shard-07",
+ "chapters": [
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96
+ ],
+ "couplets": [
+  {
+   "n": 831,
+   "gloss": "Foolishness means letting go of what does you good and hanging on to what does you harm.",
+   "keywords": [
+    "self-sabotage",
+    "bad decisions",
+    "what is stupidity"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Answers its own question: folly is dropping what profits and gripping what harms.",
+     "quote": "taking hold of what harms you and letting go of what profits you"
+    }
+   ]
+  },
+  {
+   "n": 832,
+   "gloss": "The very worst foolishness is wanting to do things that are beneath you.",
+   "keywords": [
+    "acting out of character",
+    "doing what you know is wrong",
+    "lowering yourself"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Ranks setting your heart on conduct that isn’t for you as the worst folly there is.",
+     "quote": "The worst folly of all"
+    }
+   ]
+  },
+  {
+   "n": 833,
+   "gloss": "A fool feels no shame, shirks what needs doing, has no warmth for anyone and looks after nothing worth keeping.",
+   "keywords": [
+    "irresponsible",
+    "shameless behaviour",
+    "careless person"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Lists the fool’s habits: no shame, no inquiry, no warmth, no care for anything.",
+     "quote": "these are a fool’s habits"
+    }
+   ]
+  },
+  {
+   "n": 834,
+   "gloss": "Nobody is a bigger fool than an educated person who teaches others how to behave but can't govern himself.",
+   "keywords": [
+    "not practising what you preach",
+    "educated but foolish",
+    "hypocritical teacher"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Study and teaching don’t save someone without self-control from being the worst fool of all.",
+     "quote": "No one is a greater fool"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-control",
+     "basis": "inferred",
+     "reason": "Self-control is the one thing all that learning lacks, and the lack makes a fool.",
+     "quote": "still has no self-control"
+    }
+   ]
+  },
+  {
+   "n": 835,
+   "gloss": "In one lifetime a fool can do enough harm to bring suffering on himself through every life to come.",
+   "keywords": [
+    "long-term consequences",
+    "karma",
+    "ruining your future"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "One birth of foolishness is enough to spoil all the births after it.",
+     "quote": "the mire of hell for all seven births"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "Misery is a crop the fool plants now and reaps across lifetimes.",
+     "quote": "sowing in one birth the seeds of misery"
+    }
+   ]
+  },
+  {
+   "n": 836,
+   "gloss": "Put a fool in charge of serious work and he not only wrecks it but may end up in chains for it.",
+   "keywords": [
+    "incompetent person in charge",
+    "out of their depth",
+    "botched project"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "A fool who takes on a task without knowing how wrecks it and lands in fetters.",
+     "quote": "the fool ends up in fetters"
+    }
+   ]
+  },
+  {
+   "n": 837,
+   "gloss": "If a fool comes into big money, outsiders live well off it while his own family goes hungry.",
+   "keywords": [
+    "wasting an inheritance",
+    "neglecting family",
+    "freeloaders"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "A fool’s wealth feeds outsiders and leaves his own people hungry.",
+     "quote": "strangers eat their fill and the fool’s own people go hungry"
+    }
+   ]
+  },
+  {
+   "n": 838,
+   "gloss": "Give a fool something valuable and he acts like someone unhinged who has also been drinking.",
+   "keywords": [
+    "sudden windfall",
+    "new money",
+    "losing your head"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Anything of value sends a fool as wild as a drunken lunatic.",
+     "quote": "like a madman getting drunk"
+    }
+   ]
+  },
+  {
+   "n": 839,
+   "gloss": "Being friends with fools has one great charm: you feel no sorrow at all when it ends.",
+   "keywords": [
+    "shallow friendships",
+    "friends worth losing",
+    "no regrets"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "inferred",
+     "reason": "Mock praise: the one pleasure of befriending fools is that parting does not hurt.",
+     "quote": "When it ends, it brings no pain at all"
+    }
+   ]
+  },
+  {
+   "n": 840,
+   "gloss": "A fool walking in among good people is like someone putting a dirty foot on a clean bed.",
+   "keywords": [
+    "out of place",
+    "embarrassing person",
+    "lowering the tone"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "A fool among the worthy soils the gathering as an unwashed foot soils a bed.",
+     "quote": "an unwashed foot on a bed"
+    }
+   ]
+  },
+  {
+   "n": 841,
+   "gloss": "Lack of sense is the real poverty: people hardly count any other kind of want as being poor.",
+   "keywords": [
+    "stupidity",
+    "real wealth",
+    "being poor in mind"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "Counts a lack of understanding as the one true poverty.",
+     "quote": "The worst poverty is a lack of understanding"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:true-treasure",
+     "basis": "explicit",
+     "reason": "Moves the word poverty onto understanding, and says no other lack deserves it.",
+     "quote": "does not count any other lack as poverty"
+    }
+   ]
+  },
+  {
+   "n": 842,
+   "gloss": "When a fool gives something willingly, the credit belongs to the receiver's good luck and nothing else.",
+   "keywords": [
+    "unexpected generosity",
+    "gift from a fool",
+    "lucky break"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "inferred",
+     "reason": "A gift from someone without understanding earns the giver no credit: the receiver’s penance brought it about.",
+     "quote": "nothing but the penance of the one who receives"
+    }
+   ]
+  },
+  {
+   "n": 843,
+   "gloss": "A senseless person does himself more damage than his worst enemies could ever manage.",
+   "keywords": [
+    "your own worst enemy",
+    "shooting yourself in the foot",
+    "own goal"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "People without understanding cause themselves more pain than their enemies could.",
+     "quote": "hard even for their enemies to cause"
+    }
+   ]
+  },
+  {
+   "n": 844,
+   "gloss": "Real shallowness is telling yourself how clever you are.",
+   "keywords": [
+    "know-it-all",
+    "overconfidence",
+    "dunning-kruger",
+    "big-headed"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "Pins it to one inner voice, the conceit that tells itself it is wise.",
+     "quote": "the conceit that says, “I am wise.”"
+    }
+   ]
+  },
+  {
+   "n": 845,
+   "gloss": "Claim to know what you don't, and people start doubting even what you really do know.",
+   "keywords": [
+    "faking expertise",
+    "bluffing",
+    "losing credibility"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "Pretending to learning casts doubt even on what you have truly mastered.",
+     "quote": "makes people doubt even what you have truly mastered"
+    }
+   ]
+  },
+  {
+   "n": 846,
+   "gloss": "What's the point of a fool covering his body while the flaws in his character stay on open show?",
+   "keywords": [
+    "keeping up appearances",
+    "hiding your flaws",
+    "character over looks"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "Mocks a modesty that clothes the body and leaves your own faults bare.",
+     "quote": "leave your own faults uncovered"
+    }
+   ]
+  },
+  {
+   "n": 847,
+   "gloss": "A shallow person who can't keep confidential things to himself does himself terrible harm.",
+   "keywords": [
+    "oversharing",
+    "leaking information",
+    "loose lips"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Letting a secret slip is how someone without understanding brings great harm on himself.",
+     "quote": "lets a precious secret slip"
+    }
+   ]
+  },
+  {
+   "n": 848,
+   "gloss": "Someone who won't take direction and can't work out what's right alone is a burden on others all his life.",
+   "keywords": [
+    "refusing advice",
+    "impossible to help",
+    "difficult person",
+    "stubborn"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "He won’t do as he is told and can’t see for himself, and all his life he is a disease.",
+     "quote": "He won’t act when told and can’t work it out himself"
+    }
+   ]
+  },
+  {
+   "n": 849,
+   "gloss": "Trying to enlighten a fool makes you a fool too: he knows only his own way and can't imagine it's wrong.",
+   "keywords": [
+    "pointless argument",
+    "can't reason with them",
+    "closed mind",
+    "giving up on convincing someone"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "explicit",
+     "reason": "The man who can’t see holds to what he saw and can’t be shown anything else.",
+     "quote": "goes on seeing it the way he saw it"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:eye",
+     "basis": "explicit",
+     "reason": "Turns the whole problem into sight: a man who can’t see, and a teacher who ends up seeing nothing.",
+     "quote": "a man who can’t see"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:someone-wont-listen",
+     "basis": "explicit",
+     "reason": "Tells anyone still arguing that whoever tries to show such a man ends up seeing nothing himself.",
+     "quote": "ends up seeing nothing himself"
+    }
+   ]
+  },
+  {
+   "n": 850,
+   "gloss": "Anyone who flatly denies what everyone else knows to be so gets treated as something less than human.",
+   "keywords": [
+    "contrarian",
+    "denying the obvious",
+    "conspiracy thinking"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:conceited-folly",
+     "basis": "inferred",
+     "reason": "Denying what the world affirms earns the name of a demon.",
+     "quote": "will be counted a demon on this earth"
+    }
+   ]
+  },
+  {
+   "n": 851,
+   "gloss": "Hostility is a sickness in every living being, and it spreads the disease of hatred and division.",
+   "keywords": [
+    "where hatred comes from",
+    "toxic attitude",
+    "conflict"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Calls strife the disease that feeds division in every living being.",
+     "quote": "They call strife the disease"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Frames strife as a disease that spreads division through all that lives.",
+     "quote": "the disease that feeds, in every living being, the fault of drawing apart"
+    }
+   ]
+  },
+  {
+   "n": 852,
+   "gloss": "Even if a neighbour sets out to hurt you and start a quarrel, the best course is not to hit back.",
+   "keywords": [
+    "neighbour dispute",
+    "turning the other cheek",
+    "don't retaliate"
+   ],
+   "sensitive": "Counsels not answering deliberate injury",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:revenge",
+     "basis": "explicit",
+     "reason": "Rules out answering with harm, even against someone who injures you on purpose.",
+     "quote": "it is best not to answer with harm"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:non-injury",
+     "basis": "explicit",
+     "reason": "Asks that harm not be returned, even when the other began it.",
+     "quote": "not to answer with harm"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:someone-picks-fights",
+     "basis": "explicit",
+     "reason": "Speaks to someone set on a break with you, and says not to answer with harm.",
+     "quote": "means to break with you"
+    }
+   ]
+  },
+  {
+   "n": 853,
+   "gloss": "The urge to oppose everyone is a painful sickness, and anyone who gets rid of it wins a name that lasts.",
+   "keywords": [
+    "argumentative habit",
+    "always disagreeing",
+    "letting go of conflict"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Promises undying brightness to whoever gets rid of strife.",
+     "quote": "the painful disease called strife"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:disease",
+     "basis": "explicit",
+     "reason": "Treats strife as a sickness you can be rid of.",
+     "quote": "Get rid of the painful disease"
+    }
+   ]
+  },
+  {
+   "n": 854,
+   "gloss": "Get rid of hostility, the worst of all miseries, and the greatest happiness comes within your reach.",
+   "keywords": [
+    "inner peace",
+    "holding on to resentment",
+    "happiness"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Ranks strife the worst of all pains, and its end the greatest joy.",
+     "quote": "strife, the worst pain of all pains"
+    }
+   ]
+  },
+  {
+   "n": 855,
+   "gloss": "No one wants to bring down a person who is skilled at stepping back from conflict.",
+   "keywords": [
+    "de-escalation",
+    "avoiding arguments",
+    "having no enemies"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "inferred",
+     "reason": "Shows the safety of the opposite: nobody tries to beat those who turn aside from strife.",
+     "quote": "those who can turn aside from strife"
+    }
+   ]
+  },
+  {
+   "n": 856,
+   "gloss": "Whoever enjoys getting the better of others in a fight is close to his own collapse.",
+   "keywords": [
+    "picking fights",
+    "aggressive neighbour",
+    "love of conflict"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Relish for strife means the ruin of your own life is close.",
+     "quote": "calls it sweet to press on in strife"
+    }
+   ]
+  },
+  {
+   "n": 857,
+   "gloss": "People with a spiteful mind who love strife can't see the real way to get ahead.",
+   "keywords": [
+    "spite",
+    "losing sight of the goal",
+    "fighting for its own sake"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "A taste for strife blinds people of bitter understanding to the truth that brings victory.",
+     "quote": "can’t see the truth that brings victory"
+    }
+   ]
+  },
+  {
+   "n": 858,
+   "gloss": "Backing away from a fight brings you prosperity, but let it escalate and ruin follows close behind.",
+   "keywords": [
+    "escalating conflict",
+    "walking away from a fight",
+    "keeping the peace"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Press on in strife, and ruin presses on to meet you.",
+     "quote": "ruin presses on towards you"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:someone-picks-fights",
+     "basis": "explicit",
+     "reason": "Gives the choice plainly: step back and prosper, or let the quarrel grow and be ruined.",
+     "quote": "Turning aside from strife brings gain"
+    }
+   ]
+  },
+  {
+   "n": 859,
+   "gloss": "A person on the way up shrugs off provocation, while one heading for ruin lets his hostility run without limit.",
+   "keywords": [
+    "ignoring provocation",
+    "warning signs",
+    "not taking the bait"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Reads a wish to increase strife as the sign that a man is already headed for ruin.",
+     "quote": "To bring about his own ruin, he looks to increase it"
+    }
+   ]
+  },
+  {
+   "n": 860,
+   "gloss": "Hostility is the source of everything unpleasant, while friendliness brings the pride of living in peace with others.",
+   "keywords": [
+    "getting along",
+    "friendliness",
+    "root of unhappiness"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:defiance",
+     "basis": "explicit",
+     "reason": "Traces everything bitter in life back to this one source.",
+     "quote": "Strife brings all that is bitter"
+    }
+   ]
+  },
+  {
+   "n": 861,
+   "gloss": "Don't take on anyone stronger than you, but keep up unrelenting pressure on those who are weaker.",
+   "keywords": [
+    "picking your battles",
+    "outgunned",
+    "competition strategy"
+   ],
+   "sensitive": "Urges relentless war on the weak",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Sorts foes by strength: leave the powerful alone and press the weak without pause.",
+     "quote": "seek enmity with the weak"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "inferred",
+     "reason": "Whom to fight is settled by weighing one's force against theirs.",
+     "quote": "opposing the strong"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:stronger-rival",
+     "basis": "explicit",
+     "reason": "Its first clause is direct advice to one facing a stronger opponent: don’t stand against them.",
+     "quote": "Keep from opposing the strong"
+    }
+   ]
+  },
+  {
+   "n": 862,
+   "gloss": "Someone with no love for others, no strong allies and no strength of his own cannot hold out against an enemy.",
+   "keywords": [
+    "isolated",
+    "no support network",
+    "weak position"
+   ],
+   "edges": []
+  },
+  {
+   "n": 863,
+   "gloss": "Someone who is fearful, ignorant, ungenerous and unable to get along with others is easy prey for any enemy.",
+   "keywords": [
+    "easy target",
+    "weaknesses rivals exploit",
+    "poor leadership"
+   ],
+   "edges": [
+    {
+     "type": "ENUMERATES",
+     "target": "quality:courage",
+     "basis": "explicit",
+     "reason": "Fear comes first among the lacks that make him easy for his enemies.",
+     "quote": "He fears"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:understanding",
+     "basis": "explicit",
+     "reason": "No understanding is the second gap his foes can use.",
+     "quote": "he doesn’t understand"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Refusing to give completes the list of what he is without.",
+     "quote": "he won’t give"
+    }
+   ]
+  },
+  {
+   "n": 864,
+   "gloss": "Someone who never lets go of anger and has no self-restraint is easy for anybody to beat, anywhere, at any time.",
+   "keywords": [
+    "short temper",
+    "losing your cool",
+    "being easily beaten"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "A temper that never cools hands victory to anyone, at any time or place.",
+     "quote": "doesn’t give up anger"
+    }
+   ]
+  },
+  {
+   "n": 865,
+   "gloss": "Someone who ignores sound method, does nothing fitting, shrugs off disgrace and lacks character is a gift to his enemies.",
+   "keywords": [
+    "bad leader",
+    "ignoring reputation",
+    "making things easy for rivals"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:honour",
+     "basis": "inferred",
+     "reason": "Not minding blame is among the faults that make him sweet to his enemies.",
+     "quote": "doesn’t mind blame"
+    }
+   ]
+  },
+  {
+   "n": 866,
+   "gloss": "A person ruled by blind rage and excessive lust is the kind of enemy others are glad to have.",
+   "keywords": [
+    "uncontrolled desire",
+    "blind rage",
+    "predictable opponent"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Boundless desire makes a man’s enmity something his foes welcome.",
+     "quote": "overflowing desire"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:anger",
+     "basis": "explicit",
+     "reason": "Anger that blinds a man leaves an opponent whose enmity is worth wanting.",
+     "quote": "blinding anger"
+    }
+   ]
+  },
+  {
+   "n": 867,
+   "gloss": "It is worth paying to have as your enemy someone who takes a project on and then does everything that sabotages it.",
+   "keywords": [
+    "self-sabotaging rival",
+    "incompetent opponent",
+    "worst enemy to have"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Names the one opponent worth paying for: the man who undermines his own undertaking.",
+     "quote": "Even if you must pay for it, be sure to get the enmity"
+    }
+   ]
+  },
+  {
+   "n": 868,
+   "gloss": "Someone with no good qualities and many faults ends up without allies, which suits his enemies perfectly.",
+   "keywords": [
+    "character flaws",
+    "losing allies",
+    "no friends left"
+   ],
+   "edges": []
+  },
+  {
+   "n": 869,
+   "gloss": "Nothing delights an enemy more than facing someone both foolish and frightened.",
+   "keywords": [
+    "showing fear",
+    "easy opponent",
+    "weakness attracts attack"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:cowardice",
+     "basis": "explicit",
+     "reason": "A frightened opponent is what foes most hope to meet.",
+     "quote": "is full of fear"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Having no understanding gives a man’s enemies joy that is never far away.",
+     "quote": "has no understanding"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Takes the enemy's side of the matter: what he most delights to find in an opponent.",
+     "quote": "joy is never far away"
+    }
+   ]
+  },
+  {
+   "n": 870,
+   "gloss": "Whoever won't even take on a foolish neighbour for an easy win will never know glory.",
+   "keywords": [
+    "easy win",
+    "avoiding a contest",
+    "missed chance"
+   ],
+   "sensitive": "Ties glory to attacking a weak neighbour",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "inferred",
+     "reason": "Refusing even the small prize of fighting an unlearned man shuts you out of glory for good.",
+     "quote": "glory will never come to you"
+    }
+   ]
+  },
+  {
+   "n": 871,
+   "gloss": "Hostility is a wretched thing and should never be invited, not even as a joke.",
+   "keywords": [
+    "joking that goes too far",
+    "making enemies",
+    "banter turning nasty"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:enmity",
+     "basis": "explicit",
+     "reason": "So graceless a thing that no one should want it, even in jest.",
+     "quote": "No one should want it, even in jest"
+    }
+   ]
+  },
+  {
+   "n": 872,
+   "gloss": "Make enemies of soldiers if you must, but never make an enemy of those who fight with words.",
+   "keywords": [
+    "power of words",
+    "never cross a writer",
+    "reputation risk",
+    "critics"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:speech",
+     "basis": "inferred",
+     "reason": "Rates the ploughmen of the word as more dangerous to cross than those of the bow.",
+     "quote": "ploughmen whose plough is the word"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:bow-and-arrow",
+     "basis": "explicit",
+     "reason": "The archer is the lesser danger against which the speaker is measured.",
+     "quote": "ploughmen whose plough is the bow"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:plough",
+     "basis": "inferred",
+     "reason": "Both are ploughmen here, one with the bow for a plough and one with the word.",
+     "quote": "whose plough is the word"
+    }
+   ]
+  },
+  {
+   "n": 873,
+   "gloss": "Anyone who takes on many enemies alone and without allies is more foolish than someone who has lost his mind.",
+   "keywords": [
+    "making too many enemies",
+    "fighting on all fronts",
+    "overreaching"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:folly",
+     "basis": "explicit",
+     "reason": "Calling many foes down on oneself with no ally is worse than madness.",
+     "quote": "more foolish than the mad"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:knowing-ones-strength",
+     "basis": "inferred",
+     "reason": "One man against a multitude has plainly not weighed his force against theirs.",
+     "quote": "stands alone and makes enemies of many"
+    }
+   ]
+  },
+  {
+   "n": 874,
+   "gloss": "Someone with the grace to turn enemies into friends has the whole world resting on his greatness.",
+   "keywords": [
+    "making peace",
+    "winning over opponents",
+    "turning rivals into friends"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Praises making friends of enemies as the way to hold the world.",
+     "quote": "make friends of enemies"
+    }
+   ]
+  },
+  {
+   "n": 875,
+   "gloss": "If you are alone against two enemies, make one of them your ally.",
+   "keywords": [
+    "divide and conquer",
+    "outnumbered",
+    "finding an ally"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Outnumbered and alone, one should split the pair by winning one of them over.",
+     "quote": "Make one of the two your good ally"
+    }
+   ]
+  },
+  {
+   "n": 876,
+   "gloss": "While you are in trouble, don't commit to anyone as friend or foe: leave him alone until it passes.",
+   "keywords": [
+    "bad time to decide",
+    "staying neutral",
+    "decisions in a crisis"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:time",
+     "basis": "inferred",
+     "reason": "A time of ruin is the wrong time to fix anyone as friend or foe.",
+     "quote": "in a time of ruin"
+    }
+   ]
+  },
+  {
+   "n": 877,
+   "gloss": "Don't pour out your troubles to people who can't grasp them, and don't let enemies see where you are weak.",
+   "keywords": [
+    "showing weakness",
+    "who to confide in",
+    "poker face"
+   ],
+   "sensitive": "Could deter someone in distress from confiding",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:discretion",
+     "basis": "explicit",
+     "reason": "Hides what could be used against one: troubles from the unknowing, weak spots from foes.",
+     "quote": "Don’t show weakness to your enemies"
+    }
+   ]
+  },
+  {
+   "n": 878,
+   "gloss": "Work out your plan, build up your strength and secure your defences, and your enemies' pride will soon fall.",
+   "keywords": [
+    "strategy",
+    "preparation",
+    "beating a rival"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Knowing the way, building yourself up and guarding yourself are what bring a proud enemy down.",
+     "quote": "Know the way, build yourself up and guard yourself"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:enemy",
+     "basis": "explicit",
+     "reason": "Names the enemy's pride as the thing such readiness will bring low.",
+     "quote": "your enemies’ pride will die"
+    }
+   ]
+  },
+  {
+   "n": 879,
+   "gloss": "Cut down a thorn bush while it is young: once it hardens it will wound whoever tries to remove it.",
+   "keywords": [
+    "nip it in the bud",
+    "deal with problems early",
+    "problems that grow"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "inferred",
+     "reason": "Deal with a foe early, before he grows strong enough to wound the hand.",
+     "quote": "while it is young"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:tree",
+     "basis": "explicit",
+     "reason": "The young thorn-tree stands for an enemy still small enough to fell.",
+     "quote": "Kill a thorn tree while it is young"
+    }
+   ]
+  },
+  {
+   "n": 880,
+   "gloss": "Those who can't break the pride of people who oppose them won't survive for long.",
+   "keywords": [
+    "standing up to opponents",
+    "being walked over",
+    "pushback"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:war",
+     "basis": "explicit",
+     "reason": "Gives short life to those who leave the pride of their foes unbroken.",
+     "quote": "fail to crush the pride of their foes"
+    }
+   ]
+  },
+  {
+   "n": 881,
+   "gloss": "Even shade and water are unwelcome if they make you ill, and so are relatives who are out to harm you.",
+   "keywords": [
+    "toxic family",
+    "relatives who hurt you",
+    "family betrayal"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Your own people turn as bad as sickening shade and water when they do you harm.",
+     "quote": "Your own people’s ways are bad too, if they do you harm"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:kinsman",
+     "basis": "explicit",
+     "reason": "Being your own earns no exemption: relations are judged by what they do to you.",
+     "quote": "Your own people’s ways"
+    }
+   ]
+  },
+  {
+   "n": 882,
+   "gloss": "Don't be afraid of enemies who come at you openly like a drawn sword: fear the ones who act like friends.",
+   "keywords": [
+    "fake friends",
+    "betrayal",
+    "backstabbers",
+    "hidden enemies"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:false-friendship",
+     "basis": "explicit",
+     "reason": "Fears the foe who looks like kin more than any open attacker.",
+     "quote": "enemies who are like kin"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:sword-and-spear",
+     "basis": "explicit",
+     "reason": "The open enemy is a bare blade, which at least can be seen coming.",
+     "quote": "enemies who are like swords"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:two-faced-person",
+     "basis": "explicit",
+     "reason": "Tells someone unsure whom to fear to save that fear for the friendly face, not the open foe.",
+     "quote": "Fear the company of enemies who are like kin"
+    }
+   ]
+  },
+  {
+   "n": 883,
+   "gloss": "Be on guard against the enemy within: at your weakest moment he will cut you more cleanly than a potter's blade.",
+   "keywords": [
+    "insider threat",
+    "betrayal at the worst time",
+    "trust at work"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "The hidden foe waits for one's moment of difficulty, then cuts clean through.",
+     "quote": "In your moment of weakness"
+    }
+   ]
+  },
+  {
+   "n": 884,
+   "gloss": "An enemy hidden in your circle soon turns your own people against you and brings trouble after trouble.",
+   "keywords": [
+    "divided family",
+    "turning people against you",
+    "poisoning relationships"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "A hidden foe's first work is to spoil one's own people, and many evils follow.",
+     "quote": "turn your own people bad"
+    }
+   ]
+  },
+  {
+   "n": 885,
+   "gloss": "When a relative turns against you, the harm is many-sided and can even put your life in danger.",
+   "keywords": [
+    "relative plotting against me",
+    "family feud",
+    "inheritance dispute"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Betrayal from within the family puts life itself at risk.",
+     "quote": "harms that lead towards death"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:kinsman",
+     "basis": "explicit",
+     "reason": "Takes up the particular case of the relation who turns traitor.",
+     "quote": "an enemy within appears who is close by kinship"
+    }
+   ]
+  },
+  {
+   "n": 886,
+   "gloss": "Once division breaks out among your closest people, it's nearly impossible to escape being destroyed by it.",
+   "keywords": [
+    "inner circle",
+    "disloyal team",
+    "betrayal at the top"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Discord among those closest makes death hard to escape, at any time.",
+     "quote": "it is always hard to escape death"
+    }
+   ]
+  },
+  {
+   "n": 887,
+   "gloss": "A household at odds with itself is like a pot and its lid: it looks like one thing but never truly joins.",
+   "keywords": [
+    "family at war",
+    "unhappy home",
+    "pretending to be united"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "A split family keeps the look of one piece, like a casket and its lid, but is never whole.",
+     "quote": "may seem to fit together, but it never joins"
+    }
+   ]
+  },
+  {
+   "n": 888,
+   "gloss": "A family torn by inner conflict wears away bit by bit, like iron being filed down.",
+   "keywords": [
+    "family falling apart",
+    "slow decline",
+    "infighting"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "An enemy inside a family wears its strength away.",
+     "quote": "wears away its strength"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:file",
+     "basis": "explicit",
+     "reason": "Gold under the file pictures a family worn away stroke by stroke.",
+     "quote": "Like gold rubbed by a file"
+    }
+   ]
+  },
+  {
+   "n": 889,
+   "gloss": "However small the rift, even as tiny as a crack in a sesame seed, inner division means ruin is coming.",
+   "keywords": [
+    "small rifts",
+    "minor disagreement",
+    "cracks in a relationship"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "No enemy within is too small: one the size of a split sesame seed still holds ruin.",
+     "quote": "as small as a split sesame seed"
+    }
+   ]
+  },
+  {
+   "n": 890,
+   "gloss": "Living closely with someone who is not truly with you is like sharing a small hut with a snake.",
+   "keywords": [
+    "living with an enemy",
+    "walking on eggshells",
+    "toxic relationship",
+    "unsafe at home"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:treachery",
+     "basis": "explicit",
+     "reason": "Close daily life with those not of one mind with you is a standing danger.",
+     "quote": "those who are not of one mind with you"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:serpent",
+     "basis": "explicit",
+     "reason": "The snake in the hut is a danger too near to step away from.",
+     "quote": "sharing a hut with a snake"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:two-faced-person",
+     "basis": "explicit",
+     "reason": "Names the risk of staying intimate with someone whose heart is against you.",
+     "quote": "Living with those who are not of one mind with you"
+    }
+   ]
+  },
+  {
+   "n": 891,
+   "gloss": "If you care about staying safe, the first thing to watch is never to offend those with real power.",
+   "keywords": [
+    "office politics",
+    "respecting powerful people",
+    "staying safe"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "Puts not offending the great at the very top of all self-protection.",
+     "quote": "not to scorn the power of those who can get things done"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "Sets those who can get things done apart as the ones above all not to scorn.",
+     "quote": "those who can get things done"
+    }
+   ]
+  },
+  {
+   "n": 892,
+   "gloss": "Disrespect those with great power and they can make your life a misery for good.",
+   "keywords": [
+    "disrespecting elders",
+    "crossing a powerful person",
+    "consequences of arrogance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "A slight to the great comes back as misery with no end.",
+     "quote": "lasting pain through the great"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "The great themselves are the means by which the pain comes.",
+     "quote": "through the great"
+    }
+   ]
+  },
+  {
+   "n": 893,
+   "gloss": "Ignoring good advice and insulting people who can crush you is a sure way to bring about your own downfall.",
+   "keywords": [
+    "ignoring warnings",
+    "provoking the wrong person",
+    "bad idea"
+   ],
+   "sensitive": "Mock recipe for one's own destruction; risky read literally",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "inferred",
+     "reason": "Sarcasm: provoking those who can destroy you is offered as the quick road to disaster.",
+     "quote": "offend those who can kill the moment they wish"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:listening",
+     "basis": "inferred",
+     "reason": "Refusing to listen is the first step in its mocking recipe for ruin.",
+     "quote": "don’t listen"
+    }
+   ]
+  },
+  {
+   "n": 894,
+   "gloss": "A weak person who insults the powerful is as good as waving death over to come and get him.",
+   "keywords": [
+    "punching up",
+    "foolish provocation",
+    "taking on the powerful"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "For the weak to harm the mighty is to invite their own end.",
+     "quote": "For the powerless to harm the powerful"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:god-of-death",
+     "basis": "explicit",
+     "reason": "Pictures the offender calling Death over to him with a wave.",
+     "quote": "beckoning Death with your hand"
+    }
+   ],
+   "sensitive": "Warns the weak against standing up to the powerful."
+  },
+  {
+   "n": 895,
+   "gloss": "Anger a mighty ruler and there's nowhere you can go where you will thrive.",
+   "keywords": [
+    "crossing the government",
+    "no place to hide",
+    "powerful enemies"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "Whoever draws a strong ruler’s anger finds no refuge anywhere.",
+     "quote": "will live nowhere"
+    }
+   ]
+  },
+  {
+   "n": 896,
+   "gloss": "You might survive being caught in a fire, but there is no surviving the wrong you do to the great.",
+   "keywords": [
+    "irreparable mistake",
+    "worse than a fire",
+    "never recovering"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "Rates a wrong done to the mighty as harder to survive than a blaze.",
+     "quote": "Those who offend the great will not survive"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:fire",
+     "basis": "explicit",
+     "reason": "Sets a fire one might live through against an offence one will not.",
+     "quote": "survive being burned by fire"
+    }
+   ]
+  },
+  {
+   "n": 897,
+   "gloss": "A rich life and great wealth mean nothing once truly great people of spiritual power are angry with you.",
+   "keywords": [
+    "what money can't protect",
+    "losing everything",
+    "offending a holy person"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "A splendid life and vast wealth count for nothing once the worthy turn in anger.",
+     "quote": "if the truly worthy turn in anger on you"
+    }
+   ]
+  },
+  {
+   "n": 898,
+   "gloss": "Even rulers who seem secure for ever will vanish with all their family if those as great as mountains turn against them.",
+   "keywords": [
+    "downfall of the powerful",
+    "no one is untouchable",
+    "sudden collapse"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "People who seem fixed on the earth vanish, with their families, at the mere will of the great.",
+     "quote": "vanish, with their families"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:mountain",
+     "basis": "explicit",
+     "reason": "Measures the stature of the great by the mountain.",
+     "quote": "those who are like mountains"
+    }
+   ]
+  },
+  {
+   "n": 899,
+   "gloss": "An angry glance from people bound by sacred vows could topple Indra himself from his throne.",
+   "keywords": [
+    "indra",
+    "power of the holy",
+    "spiritual authority"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "The anger of those with lofty vows is enough to unseat a ruler.",
+     "quote": "even a ruler breaks midway and loses his rule"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:great-one",
+     "basis": "explicit",
+     "reason": "Places those of lofty vows above even a ruler.",
+     "quote": "those of lofty vows"
+    }
+   ]
+  },
+  {
+   "n": 900,
+   "gloss": "No backing, however strong, can rescue you once spiritually mighty people turn against you.",
+   "keywords": [
+    "powerful connections",
+    "having backing",
+    "no safety net"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:reverence-for-the-great",
+     "basis": "explicit",
+     "reason": "The greatest support gives no protection from the anger of those of surpassing worth.",
+     "quote": "Even those with the greatest of supports won’t survive"
+    }
+   ]
+  },
+  {
+   "n": 901,
+   "gloss": "A man wrapped up in doting on his wife won't achieve much; those set on big things keep clear of that.",
+   "keywords": [
+    "work versus marriage",
+    "ambition and love",
+    "neglecting goals"
+   ],
+   "sensitive": "Treats devotion to a wife as a lure away from greatness",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Sets doting on a wife against any hope of the finest reward.",
+     "quote": "Men who dote on their wives"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:husband",
+     "basis": "explicit",
+     "reason": "Speaks to men as husbands, and says those set on action want no part of this.",
+     "quote": "Men who are set on action"
+    }
+   ]
+  },
+  {
+   "n": 902,
+   "gloss": "A man obsessed with his wife and careless of all else is an embarrassment however well he is doing.",
+   "keywords": [
+    "obsessed with partner",
+    "public embarrassment",
+    "reputation"
+   ],
+   "sensitive": "Holds a man's love for his wife up to public shame",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Even his gains become a great disgrace once he craves a woman, careless of all else.",
+     "quote": "become a great disgrace"
+    }
+   ]
+  },
+  {
+   "n": 903,
+   "gloss": "A husband who abases himself to his spouse can never face decent people without embarrassment.",
+   "keywords": [
+    "deferring to your wife",
+    "shame in marriage",
+    "doormat husband"
+   ],
+   "sensitive": "Treats deferring to a wife as shameful weakness",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Bowing to his wife brings a man shame among good people.",
+     "quote": "always bring you shame among good people"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:husband",
+     "basis": "explicit",
+     "reason": "Singles out the husband by what he does before his wife.",
+     "quote": "bowing to your wife"
+    }
+   ]
+  },
+  {
+   "n": 904,
+   "gloss": "However capable a man is, his abilities earn no regard if he is frightened of his wife.",
+   "keywords": [
+    "afraid of my wife",
+    "respect at work",
+    "talent overlooked"
+   ],
+   "sensitive": "Scorns a man who fears his wife; could reach an abused husband",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Fear of his wife strips a man's abilities of any standing.",
+     "quote": "A man who fears his wife"
+    }
+   ]
+  },
+  {
+   "n": 905,
+   "gloss": "A husband scared of his spouse won't dare do a good turn, even for people who deserve it.",
+   "keywords": [
+    "controlling marriage",
+    "not allowed to help friends",
+    "scared at home"
+   ],
+   "sensitive": "Blames a frightened husband; could reach someone abused at home",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Fear of his wife reaches outward and stops him doing good even to good people.",
+     "quote": "afraid to do good to good people"
+    }
+   ]
+  },
+  {
+   "n": 906,
+   "gloss": "Men in awe of their wives' embrace get no respect, however grandly they live.",
+   "keywords": [
+    "status and respect",
+    "intimidated by your wife",
+    "losing respect"
+   ],
+   "sensitive": "Shames men for being in awe of their wives",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Living like the gods earns nothing for men who fear their wives’ shoulders.",
+     "quote": "men who fear their wives’ bamboo shoulders have no standing"
+    }
+   ]
+  },
+  {
+   "n": 907,
+   "gloss": "A modest young woman has more dignity than a man who spends his life doing a woman's bidding.",
+   "keywords": [
+    "manhood",
+    "dignity",
+    "taking orders from your wife"
+   ],
+   "sensitive": "Treats a woman's lead as beneath a man's dignity",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Ranks such a man’s manhood below the greatness of a woman with modesty.",
+     "quote": "A woman with modesty has more greatness"
+    }
+   ]
+  },
+  {
+   "n": 908,
+   "gloss": "Men who do whatever their wives want won't come through for friends or do any good.",
+   "keywords": [
+    "wife won't let me",
+    "letting friends down",
+    "neglecting friends after marriage"
+   ],
+   "sensitive": "Blames a wife's influence for a man's failures",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Being governed at home is said to cost a man his duty to friends and all good works.",
+     "quote": "won’t meet their friends’ needs and won’t do good"
+    }
+   ]
+  },
+  {
+   "n": 909,
+   "gloss": "Men who take orders from their wives will miss out on goodness, wealth and the rest of life's aims.",
+   "keywords": [
+    "purpose of life",
+    "wasted life",
+    "priorities"
+   ],
+   "sensitive": "Says a wife's direction empties a man's life of all good",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Holds that nothing worth having survives in a man who does a woman’s bidding.",
+     "quote": "those who do a woman’s bidding"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "theme:three-aims",
+     "basis": "explicit",
+     "reason": "Counts what such a man loses: righteous acts, wealth and other deeds, the aims of life.",
+     "quote": "Righteous acts, great wealth and other deeds"
+    }
+   ]
+  },
+  {
+   "n": 910,
+   "gloss": "People with thoughtful minds and firm character never fall into the foolishness of doting on a woman.",
+   "keywords": [
+    "clear head",
+    "big goals",
+    "infatuation"
+   ],
+   "sensitive": "Calls a man's devotion to his wife folly",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:submission-to-wife",
+     "basis": "explicit",
+     "reason": "Claims those with a broad, thinking heart never give way to this, and calls it folly.",
+     "quote": "the folly that comes of clinging to a woman"
+    }
+   ]
+  },
+  {
+   "n": 911,
+   "gloss": "Women who want a man for his money, not out of love, have sweet talk that ends only in his ruin.",
+   "keywords": [
+    "gold digger",
+    "being used for money",
+    "paid relationship"
+   ],
+   "sensitive": "Portrays sex workers as mercenary deceivers",
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prostitute",
+     "basis": "explicit",
+     "reason": "Describes them by what they want: wealth and not love.",
+     "quote": "who want wealth and not love"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "inferred",
+     "reason": "Warns the man drawn to her that the sweet talk ends only in misery.",
+     "quote": "their cajoleries will lead only to misery"
+    }
+   ]
+  },
+  {
+   "n": 912,
+   "gloss": "Women whose sweet words are aimed only at what they can get should be weighed up and kept at arm's length.",
+   "keywords": [
+    "flattery",
+    "being manipulated",
+    "charm with a motive"
+   ],
+   "sensitive": "Portrays paid women as scheming; advises shunning them",
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prostitute",
+     "basis": "explicit",
+     "reason": "Takes talk of virtue with an eye to gain as their mark, and says to keep away.",
+     "quote": "Weigh their ways and keep away"
+    }
+   ]
+  },
+  {
+   "n": 913,
+   "gloss": "The embrace of a woman paid for it is false, as empty as holding a stranger's corpse in the dark.",
+   "keywords": [
+    "fake intimacy",
+    "loveless sex",
+    "paying for affection"
+   ],
+   "sensitive": "Likens a sex worker's embrace to a corpse",
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:prostitute",
+     "basis": "explicit",
+     "reason": "Names the paid embrace as false, like holding a stranger’s corpse in the dark.",
+     "quote": "The false embrace"
+    }
+   ]
+  },
+  {
+   "n": 914,
+   "gloss": "People whose minds are on goodness don't sink to the cheap pleasures sold by women who want only money.",
+   "keywords": [
+    "paying for sex",
+    "staying pure",
+    "spiritual discipline"
+   ],
+   "sensitive": "Calls sex workers defiling",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Those who look to compassion are known by keeping clear of a bought embrace.",
+     "quote": "won’t touch the cheap charms"
+    }
+   ]
+  },
+  {
+   "n": 915,
+   "gloss": "People of sharp judgment and deep learning don't go near the cheap pleasures that are open to anyone for a price.",
+   "keywords": [
+    "casual sex",
+    "wisdom and desire",
+    "self-discipline"
+   ],
+   "sensitive": "Treats women open to all as defiling",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "A good mind joined to understanding is what holds people back here.",
+     "quote": "won’t touch the cheap charms of women who are common to all"
+    }
+   ]
+  },
+  {
+   "n": 916,
+   "gloss": "Those who want to protect their own good name stay away from women who parade their charms for sale.",
+   "keywords": [
+    "protecting your reputation",
+    "visiting a brothel",
+    "self-respect"
+   ],
+   "sensitive": "Uses contemptuous language for sex workers",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Those who spread their own goodness are said to stay out of paid embraces.",
+     "quote": "Those who spread their own goodness"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prostitute",
+     "basis": "explicit",
+     "reason": "Pictures the woman as spreading her cheap charms about.",
+     "quote": "spread their cheap charms about"
+    }
+   ]
+  },
+  {
+   "n": 917,
+   "gloss": "Only weak-minded men go looking for women whose bodies are present while their thoughts are elsewhere.",
+   "keywords": [
+    "empty sex",
+    "no real connection",
+    "weak willpower"
+   ],
+   "sensitive": "Demeans sex workers as bodies without feeling",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Going after an embrace with no heart in it marks an unsteady mind.",
+     "quote": "Those without a steady heart"
+    }
+   ]
+  },
+  {
+   "n": 918,
+   "gloss": "For men who can't judge well, the embrace of deceptive women is like falling under a demon's spell.",
+   "keywords": [
+    "falling under someone's spell",
+    "seduction",
+    "poor judgement"
+   ],
+   "sensitive": "Casts women as wily spirits who ensnare men",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Those without sharp understanding are struck by such embraces as by a deadly spirit.",
+     "quote": "a deadly spirit’s touch"
+    }
+   ]
+  },
+  {
+   "n": 919,
+   "gloss": "A dressed-up woman for hire and her gentle embrace are the pit of filth that worthless men sink into.",
+   "keywords": [
+    "sex addiction",
+    "sinking low",
+    "degrading habits"
+   ],
+   "sensitive": "Compares a sex worker to a filthy ditch",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Makes those shoulders the mire of hell where only worthless low men sink.",
+     "quote": "the mire of hell where worthless low men sink"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:prostitute",
+     "basis": "explicit",
+     "reason": "Begins with their jewels and soft shoulders, and turns them into the danger.",
+     "quote": "soft shoulders of finely jewelled women"
+    }
+   ]
+  },
+  {
+   "n": 920,
+   "gloss": "Two-timing women, drink and dice are the company kept by men whose luck has left them.",
+   "keywords": [
+    "vices",
+    "bad habits",
+    "hitting rock bottom"
+   ],
+   "sensitive": "Ranks women of divided heart among the signs of a ruined man",
+   "edges": [
+    {
+     "type": "ENUMERATES",
+     "target": "quality:lust",
+     "basis": "explicit",
+     "reason": "Women of two hearts come first among the friends of those prosperity has left.",
+     "quote": "Women of two hearts"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Drink stands second in this list of what ruined men turn to.",
+     "quote": "liquor"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "The dice close the list of friends left to those prosperity has abandoned.",
+     "quote": "dice"
+    }
+   ]
+  },
+  {
+   "n": 921,
+   "gloss": "Heavy drinkers lose the respect their enemies had for them, and they lose their good name as well.",
+   "keywords": [
+    "alcohol and reputation",
+    "losing respect",
+    "drinking problem"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "The drinker stops being feared and loses his glory as well.",
+     "quote": "are never feared"
+    }
+   ]
+  },
+  {
+   "n": 922,
+   "gloss": "Nobody should drink, unless they are people who don't care what good people think of them.",
+   "keywords": [
+    "should i stop drinking",
+    "sobriety",
+    "social drinking"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Forbids drink outright, then grants it only to those who have given up on being respected.",
+     "quote": "Don’t drink liquor"
+    }
+   ]
+  },
+  {
+   "n": 923,
+   "gloss": "Even the woman who gave birth to him can't bear to see a drunk, so imagine how he looks to decent people.",
+   "keywords": [
+    "family of an alcoholic",
+    "ashamed of drinking",
+    "drunk in front of parents"
+   ],
+   "sensitive": "Shames a person with a drinking problem through his mother's disgust",
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Even a mother recoils at the sight, and the worthy still more.",
+     "quote": "hateful even in your mother’s sight"
+    }
+   ]
+  },
+  {
+   "n": 924,
+   "gloss": "Shame, that fine lady, turns her back on anyone given to the disgraceful fault of drinking.",
+   "keywords": [
+    "drunken behaviour",
+    "no self-respect",
+    "embarrassing myself when drunk"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Drink is the low vice that drives away even the sense of shame.",
+     "quote": "the great, despised fault called liquor"
+    }
+   ]
+  },
+  {
+   "n": 925,
+   "gloss": "It is the height of stupidity to pay good money just to make yourself numb.",
+   "keywords": [
+    "wasting money on alcohol",
+    "drinking to forget",
+    "blackouts"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "inferred",
+     "reason": "Drink goes unnamed, but the trade is plain: wealth paid out for mere senselessness.",
+     "quote": "Paying out your wealth to buy senselessness"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drinking-too-much",
+     "basis": "explicit",
+     "reason": "Puts the bargain to the drinker in plain terms: wealth out, senselessness back.",
+     "quote": "shows you don’t know what to do"
+    }
+   ]
+  },
+  {
+   "n": 926,
+   "gloss": "People who drink toxic liquor every day are no better than the sleeping, and the sleeping no better than the dead.",
+   "keywords": [
+    "alcoholism",
+    "daily drinking",
+    "wasting your life"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Calls liquor what it is, a dose of poison.",
+     "quote": "always drinking poison"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:living-dead",
+     "basis": "explicit",
+     "reason": "Drinkers are set beside sleepers and the dead.",
+     "quote": "no different from the dead"
+    }
+   ]
+  },
+  {
+   "n": 927,
+   "gloss": "Secret drinkers who spend their days in a stupor get found out by those nearby and laughed at.",
+   "keywords": [
+    "hiding my drinking",
+    "secret alcoholic",
+    "drinking alone"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Drinking in hiding ends in the laughter of the townsfolk anyway.",
+     "quote": "laughed at by their townsfolk"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drinking-too-much",
+     "basis": "explicit",
+     "reason": "Tells the secret drinker that concealment will not hold for long.",
+     "quote": "who see right through them"
+    }
+   ]
+  },
+  {
+   "n": 928,
+   "gloss": "A drinker should stop claiming he's never been drunk: that only adds a lie to the habit.",
+   "keywords": [
+    "denial about drinking",
+    "lying about alcohol",
+    "covering up"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:falsehood",
+     "basis": "explicit",
+     "reason": "Denying the drinking only stacks a lie on top of the vice.",
+     "quote": "Give up saying, “I have never been drunk.”"
+    },
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Takes away the drinker's plea that he has never been drunk.",
+     "quote": "“I have never been drunk.”"
+    }
+   ]
+  },
+  {
+   "n": 929,
+   "gloss": "Reasoning with a drunk is like hunting with a torch for someone who has gone under water.",
+   "keywords": [
+    "arguing with a drunk person",
+    "my husband drinks",
+    "pointless confrontation"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "inferred",
+     "reason": "A man in drink is beyond reproof, as far out of reach as one under water.",
+     "quote": "Reasoning with a drunk"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:lamp",
+     "basis": "explicit",
+     "reason": "A flame carried down to find a man under water shows how useless reproof is here.",
+     "quote": "searcheth torch in hand"
+    }
+   ]
+  },
+  {
+   "n": 930,
+   "gloss": "When a sober person looks at someone drunk, can't he imagine how he himself looks after a drink?",
+   "keywords": [
+    "seeing yourself drunk",
+    "wake-up call",
+    "how others see me"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:drunkenness",
+     "basis": "explicit",
+     "reason": "Holds up another man's drunken state as a picture of the drinker's own.",
+     "quote": "sees a drunk man"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:self-examination",
+     "basis": "inferred",
+     "reason": "Asks him to apply to himself what he sees so clearly in another.",
+     "quote": "doesn’t he think of how he slips when he has drunk?"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:drinking-too-much",
+     "basis": "explicit",
+     "reason": "Gives a sober moment a use: watch someone drunk and see yourself.",
+     "quote": "sober for the moment"
+    }
+   ]
+  },
+  {
+   "n": 931,
+   "gloss": "Don't gamble even when you are winning: a win is only the hook swallowed by the fish.",
+   "keywords": [
+    "winning streak",
+    "casino",
+    "online betting"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Even a win is a trap, the bait on a hook the fish swallows.",
+     "quote": "Your winnings are a hook swallowed by a fish"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-stop-gambling",
+     "basis": "explicit",
+     "reason": "Speaks to someone kept at the table by wins: those wins are the hook.",
+     "quote": "Don’t want gambling, even if you win"
+    }
+   ]
+  },
+  {
+   "n": 932,
+   "gloss": "Gamblers lose a hundred for every one they gain, so how can they ever expect to do well in life?",
+   "keywords": [
+    "the odds",
+    "the house always wins",
+    "losing money on bets"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Does the sum: a hundred lost for each one gained leaves no road to thriving.",
+     "quote": "gain one and lose a hundred"
+    }
+   ]
+  },
+  {
+   "n": 933,
+   "gloss": "Keep betting on the roll of the dice and everything you own ends up in other people's pockets.",
+   "keywords": [
+    "gambling debts",
+    "lost my savings",
+    "constant betting"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Constant betting moves your wealth and income into other hands.",
+     "quote": "your wealth and income will leave and go to others"
+    }
+   ]
+  },
+  {
+   "n": 934,
+   "gloss": "Nothing makes you poor as surely as gambling, which destroys your reputation and drags you into shabby acts.",
+   "keywords": [
+    "gambling addiction",
+    "ruined reputation",
+    "what gambling does to you"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Ranks it the surest road to poverty, shrinking you and ruining your good name.",
+     "quote": "Nothing brings poverty like gambling"
+    }
+   ]
+  },
+  {
+   "n": 935,
+   "gloss": "Plenty of people have boasted of their luck at dice and been obsessed with the gaming house, and every one of them ended up with nothing.",
+   "keywords": [
+    "skilled gambler",
+    "system for winning",
+    "poker"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Allows no exception: those who cling in pride to dice have come to nothing.",
+     "quote": "have come to nothing"
+    }
+   ]
+  },
+  {
+   "n": 936,
+   "gloss": "People taken over by gambling, as if by the goddess of bad luck, go hungry and suffer every kind of hardship.",
+   "keywords": [
+    "gambling took everything",
+    "can't afford food",
+    "blinded by addiction"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "The passion leaves its victims starving and in every misery.",
+     "quote": "won’t fill their bellies, and will suffer"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:goddess-of-fortune",
+     "basis": "explicit",
+     "reason": "Makes gambling a disguise of Fortune’s dark sister, who covers over those she takes.",
+     "quote": "the goddess of misfortune called gambling"
+    }
+   ]
+  },
+  {
+   "n": 937,
+   "gloss": "Spend your time in the gambling den and you will lose your family money and your good character.",
+   "keywords": [
+    "hours at the casino",
+    "losing inheritance",
+    "gambling away the family money"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Time in the gaming hall eats up long-held wealth and good nature.",
+     "quote": "destroys the wealth and good nature you have long had"
+    }
+   ]
+  },
+  {
+   "n": 938,
+   "gloss": "Gambling eats your money, pushes you into lying, kills your compassion and leaves you miserable.",
+   "keywords": [
+    "lying about gambling",
+    "personality change",
+    "gambling and honesty"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Follows the damage in order: wealth, then truth, then compassion, then suffering.",
+     "quote": "destroys your wealth, makes you take up lying"
+    }
+   ]
+  },
+  {
+   "n": 939,
+   "gloss": "Take up gambling and you lose your reputation, education, money, food and clothes.",
+   "keywords": [
+    "everything lost",
+    "gambling consequences",
+    "dropping out"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Whoever turns to the game ends up without even food and clothing.",
+     "quote": "won’t come near you if you take to dice"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:glory",
+     "basis": "explicit",
+     "reason": "Glory is on the list of what won’t come to the gambler.",
+     "quote": "glory"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:learning",
+     "basis": "explicit",
+     "reason": "Learning is on the list too, among the five that stay away.",
+     "quote": "learning"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "theme:wealth",
+     "basis": "explicit",
+     "reason": "Wealth is among the five that won’t come to the gambler.",
+     "quote": "wealth"
+    }
+   ]
+  },
+  {
+   "n": 940,
+   "gloss": "Gamblers crave the game more with every loss, just as living beings cling tighter to life the more they suffer in it.",
+   "keywords": [
+    "chasing losses",
+    "can't stop betting",
+    "why losing makes you bet more"
+   ],
+   "edges": [
+    {
+     "type": "CONDEMNS",
+     "target": "quality:gambling",
+     "basis": "explicit",
+     "reason": "Shows the cruel logic of the passion: every loss makes it stronger.",
+     "quote": "loved more with each loss"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:cant-stop-gambling",
+     "basis": "explicit",
+     "reason": "Explains why losing keeps one at the table, so the urge can be seen for what it is.",
+     "quote": "As gambling is loved more with each loss"
+    }
+   ]
+  },
+  {
+   "n": 941,
+   "gloss": "Each of the three bodily humours in the old medical books causes illness when it runs too high or too low.",
+   "keywords": [
+    "ayurveda",
+    "doshas",
+    "vata pitta kapha",
+    "balance in the body"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:health",
+     "basis": "explicit",
+     "reason": "Gives the sages' account of sickness: any humour pushed to an extreme brings it on.",
+     "quote": "would cause disease whenever they go to either extreme"
+    }
+   ]
+  },
+  {
+   "n": 942,
+   "gloss": "You won't need medicine if you only eat once your last meal has been fully digested.",
+   "keywords": [
+    "indigestion",
+    "eating between meals",
+    "gut health",
+    "snacking"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:health",
+     "basis": "explicit",
+     "reason": "Makes digestion the whole of prevention: respect it and no medicine is wanted.",
+     "quote": "The body needs nothing called medicine"
+    }
+   ]
+  },
+  {
+   "n": 943,
+   "gloss": "Eat sensibly and wait until your food has gone down: that's how to live a long life.",
+   "keywords": [
+    "longevity",
+    "how to eat better",
+    "portion control"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Measure in eating is named as the way to lengthen one's days.",
+     "quote": "eat knowing the measure"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:eating-badly",
+     "basis": "explicit",
+     "reason": "Gives someone unwell from eating a plain rule: eat in measure, and only after the last meal has gone.",
+     "quote": "When your food has been digested, eat knowing the measure"
+    }
+   ]
+  },
+  {
+   "n": 944,
+   "gloss": "Wait until you're properly hungry and your last meal has gone, then eat what suits you, and not too much.",
+   "keywords": [
+    "eating when hungry",
+    "mindful eating",
+    "food intolerance"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:health",
+     "basis": "explicit",
+     "reason": "Real hunger and food that suits one are the conditions for a wholesome meal.",
+     "quote": "get properly hungry"
+    }
+   ]
+  },
+  {
+   "n": 945,
+   "gloss": "Eat lightly and stick to foods that suit your body, and you won't have physical problems.",
+   "keywords": [
+    "light eating",
+    "food sensitivities",
+    "avoiding illness"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Eating sparingly of what agrees with you keeps your life free of harm.",
+     "quote": "stop short, and your life will come to no harm"
+    }
+   ]
+  },
+  {
+   "n": 946,
+   "gloss": "Health comes to those who eat only on an empty stomach, just as sickness comes after those who overeat.",
+   "keywords": [
+    "overeating",
+    "hunger cues",
+    "gluttony"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Has joy stay with the light eater and disease with the glutton.",
+     "quote": "disease stays with someone who gorges"
+    }
+   ]
+  },
+  {
+   "n": 947,
+   "gloss": "Overeat beyond what your digestion can handle and your illnesses will grow out of all proportion.",
+   "keywords": [
+    "binge eating",
+    "weight problems",
+    "digestive fire"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:moderation",
+     "basis": "explicit",
+     "reason": "Eating past what the body’s fire can take breeds disease without limit.",
+     "quote": "more than the fire can take"
+    },
+    {
+     "type": "GUIDES",
+     "target": "situation:eating-badly",
+     "basis": "explicit",
+     "reason": "Warns the overeater that illness grows in step with the excess.",
+     "quote": "diseases without measure"
+    }
+   ]
+  },
+  {
+   "n": 948,
+   "gloss": "Work out what the illness is, find its cause and the way to treat it, then go ahead carefully.",
+   "keywords": [
+    "diagnosis",
+    "root cause",
+    "treating the cause not the symptom"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "theme:health",
+     "basis": "explicit",
+     "reason": "Orders the work of cure: the illness, then its root, then the remedy.",
+     "quote": "Find the disease, find its cause, find the way to ease it"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:physician",
+     "basis": "inferred",
+     "reason": "Reads as a rule for whoever treats the sick, though no healer is named.",
+     "quote": "act so that it works"
+    }
+   ]
+  },
+  {
+   "n": 949,
+   "gloss": "A doctor should weigh up the patient, the illness and the time of year before beginning any treatment.",
+   "keywords": [
+    "good doctor",
+    "personalised treatment",
+    "medical judgement"
+   ],
+   "edges": [
+    {
+     "type": "ADDRESSES",
+     "target": "role:physician",
+     "basis": "explicit",
+     "reason": "Tells the learned healer which three things to weigh before treating.",
+     "quote": "weigh the patient, the disease and the time"
+    }
+   ]
+  },
+  {
+   "n": 950,
+   "gloss": "All treatment rests on four parties: the patient, the doctor, the drug and the pharmacist, each with four qualities of its own.",
+   "keywords": [
+    "healthcare team",
+    "patient responsibilities",
+    "what makes treatment work"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:health",
+     "basis": "explicit",
+     "reason": "Lays out medicine as a fourfold whole on which every cure depends.",
+     "quote": "medicine has these four parts"
+    },
+    {
+     "type": "ADDRESSES",
+     "target": "role:physician",
+     "basis": "explicit",
+     "reason": "Places the healer as one of the four on whom recovery rests.",
+     "quote": "the healer"
+    }
+   ]
+  },
+  {
+   "n": 951,
+   "gloss": "It is said that honest dealing and a natural sense of shame are found only in those from good families.",
+   "keywords": [
+    "family background",
+    "good upbringing",
+    "inherited character"
+   ],
+   "sensitive": "Says virtue comes naturally only to the well born",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Credits good family with uprightness and shame as natural gifts.",
+     "quote": "do uprightness and shame come together by nature"
+    }
+   ]
+  },
+  {
+   "n": 952,
+   "gloss": "People of good family don't slip in three things: how they behave, telling the truth and feeling shame.",
+   "keywords": [
+    "family values",
+    "upbringing",
+    "personal principles"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Says those of family hold fast to this three-part standard.",
+     "quote": "never slip from these three"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:good-conduct",
+     "basis": "explicit",
+     "reason": "Correct behaviour is the first of the three they keep.",
+     "quote": "good conduct"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:truthfulness",
+     "basis": "explicit",
+     "reason": "Their word is the second thing they do not let slip.",
+     "quote": "truth"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "The third is the feeling that recoils from what is unworthy.",
+     "quote": "shame"
+    }
+   ]
+  },
+  {
+   "n": 953,
+   "gloss": "A truly good family shows in four things: a ready smile, giving freely, pleasant words and looking down on no one.",
+   "keywords": [
+    "being a gentleman",
+    "good manners",
+    "well brought up"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Gives the four marks of those from a true family.",
+     "quote": "these four belong to a true family"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Giving is the second of the four.",
+     "quote": "giving"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:kind-speech",
+     "basis": "explicit",
+     "reason": "Pleasant words come third among the marks.",
+     "quote": "sweet words"
+    },
+    {
+     "type": "ENUMERATES",
+     "target": "quality:humility",
+     "basis": "inferred",
+     "reason": "Scorning no one is the last of the four.",
+     "quote": "scorning no one"
+    }
+   ]
+  },
+  {
+   "n": 954,
+   "gloss": "People of good family won't do anything that lowers them, even if offered vast sums.",
+   "keywords": [
+    "integrity",
+    "bribes",
+    "not for sale"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "No sum, however vast, can buy a stain on a good family's name.",
+     "quote": "Even for piled-up millions"
+    }
+   ]
+  },
+  {
+   "n": 955,
+   "gloss": "People of long-standing families keep on giving generously even when they have less to give.",
+   "keywords": [
+    "generous despite money troubles",
+    "old money",
+    "giving when times are hard"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:liberality",
+     "basis": "explicit",
+     "reason": "Even when what they can give has shrunk, such people stay as they were.",
+     "quote": "what they have to give has shrunk"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Good nature that outlasts the means to give is offered as the mark of an old family.",
+     "quote": "those of an old family"
+    }
+   ]
+  },
+  {
+   "n": 956,
+   "gloss": "Those determined to live up to their family's clean record won't stoop to trickery or shameful acts.",
+   "keywords": [
+    "family reputation",
+    "upholding family honour",
+    "refusing to cheat"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "explicit",
+     "reason": "Care for a family's unstained tradition rules out deceit and low acts.",
+     "quote": "won’t turn to deceit and do unworthy things"
+    }
+   ]
+  },
+  {
+   "n": 957,
+   "gloss": "A fault in someone from a respected family stands out for all to see, like the mark on the moon.",
+   "keywords": [
+    "public scrutiny",
+    "high standards",
+    "family name under a spotlight"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "inferred",
+     "reason": "High birth holds a person to a standard where even one flaw is seen by all.",
+     "quote": "A fault in those of good family stands out"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:moon",
+     "basis": "explicit",
+     "reason": "The spot on the moon is a small blemish that all the world can see.",
+     "quote": "the spot on the moon"
+    }
+   ]
+  },
+  {
+   "n": 958,
+   "gloss": "If someone from a good family behaves unkindly, people start wondering whether he really belongs to it.",
+   "keywords": [
+    "bad manners",
+    "behaviour reflecting on family",
+    "rude person"
+   ],
+   "sensitive": "Links rudeness with doubtful birth",
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:noble-birth",
+     "basis": "inferred",
+     "reason": "A lack of warmth is held so far from good family that it puts a man’s birth in doubt.",
+     "quote": "people will doubt his family"
+    }
+   ]
+  },
+  {
+   "n": 959,
+   "gloss": "A sprout shows you what the soil is like, and the way someone talks shows you what family they come from.",
+   "keywords": [
+    "how you speak",
+    "accent and background",
+    "first impressions"
+   ],
+   "edges": [
+    {
+     "type": "DEFINES",
+     "target": "theme:speech",
+     "basis": "explicit",
+     "reason": "Makes words the test by which a man's family is known.",
+     "quote": "the family of a man known by the words that come out of his mouth"
+    },
+    {
+     "type": "USES_IMAGE",
+     "target": "image:seed-and-sowing",
+     "basis": "explicit",
+     "reason": "The sprout tells the soil as someone’s words tell their family.",
+     "quote": "A sprout shows what the soil is like"
+    }
+   ]
+  },
+  {
+   "n": 960,
+   "gloss": "To be good you need a sense of shame, and to bring your family credit you need to treat everyone with respect.",
+   "keywords": [
+    "respect for everyone",
+    "family honour",
+    "being a good person"
+   ],
+   "edges": [
+    {
+     "type": "COMMENDS",
+     "target": "quality:sense-of-shame",
+     "basis": "explicit",
+     "reason": "Names shame as what anyone who wants goodness must have.",
+     "quote": "If you want goodness, have shame"
+    },
+    {
+     "type": "COMMENDS",
+     "target": "quality:humility",
+     "basis": "explicit",
+     "reason": "Asks for bowing to everyone as the price of a good family name.",
+     "quote": "bow to everyone"
+    }
+   ]
+  }
+ ],
+ "ideaLinks": [
+  {
+   "type": "LEADS_TO",
+   "source": "quality:defiance",
+   "target": "quality:enmity",
+   "basis": "explicit",
+   "reason": "Strife feeds the habit of drawing apart from others, which is the start of enmity.",
+   "quote": "feeds, in every living being, the fault of drawing apart",
+   "couplets": [
+    851
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:drunkenness",
+   "target": "quality:sense-of-shame",
+   "basis": "explicit",
+   "reason": "Shame turns her back on those with the fault of liquor.",
+   "quote": "The good woman called Shame turns her back",
+   "couplets": [
+    924
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:drunkenness",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Even glory already won is lost to those in love with liquor.",
+   "quote": "they lose their glory",
+   "couplets": [
+    921
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:gambling",
+   "target": "theme:poverty",
+   "basis": "explicit",
+   "reason": "Gambling destroys wealth, and nothing else brings poverty as it does.",
+   "quote": "Nothing brings poverty like gambling",
+   "couplets": [
+    934,
+    938
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:gambling",
+   "target": "quality:falsehood",
+   "basis": "explicit",
+   "reason": "Gambling makes you take up lying.",
+   "quote": "makes you take up lying",
+   "couplets": [
+    938
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:gambling",
+   "target": "quality:compassion",
+   "basis": "explicit",
+   "reason": "Gambling destroys your compassion.",
+   "quote": "destroys your compassion",
+   "couplets": [
+    938
+   ]
+  },
+  {
+   "type": "OVERCOMES",
+   "source": "quality:gambling",
+   "target": "theme:glory",
+   "basis": "explicit",
+   "reason": "Gambling ruins your good name, and glory won’t come to those who take to it.",
+   "quote": "ruins your good name",
+   "couplets": [
+    934,
+    937,
+    939
+   ]
+  },
+  {
+   "type": "LEADS_TO",
+   "source": "quality:moderation",
+   "target": "theme:health",
+   "basis": "explicit",
+   "reason": "Eating in measure keeps the body free of trouble and lengthens life.",
+   "quote": "eat knowing the measure",
+   "couplets": [
+    943,
+    945
+   ]
+  },
+  {
+   "type": "REQUIRES",
+   "source": "theme:family-line",
+   "target": "quality:humility",
+   "basis": "explicit",
+   "reason": "To keep a good family name you must bow to everyone.",
+   "quote": "If you want a good family name, bow to everyone",
+   "couplets": [
+    960
+   ]
+  }
+ ],
+ "proposals": []
+}
