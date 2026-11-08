@@ -27,20 +27,28 @@ const storedAfter = (): boolean => {
   }
 };
 
-/** Voices load asynchronously in some browsers; wait briefly for them. */
-function voicesReady(): Promise<SpeechSynthesisVoice[]> {
+// Android starts its speech engine only when a page first asks for voices, and the list can take seconds to come. Ask
+// as the page loads, so the first Listen doesn't wait for it: that first wait is what made the first press find no voice.
+if (typeof speechSynthesis !== "undefined") speechSynthesis.getVoices();
+
+/**
+ * Voices load asynchronously in some browsers; wait for them. Only a list with voices in it ends the wait:
+ * `voiceschanged` can arrive with an empty one, and some browsers fill the list without firing it, so look as well.
+ */
+function voicesReady(wait = 5000): Promise<SpeechSynthesisVoice[]> {
   const now = speechSynthesis.getVoices();
   if (now.length) return Promise.resolve(now);
   return new Promise((res) => {
-    const t = setTimeout(() => res(speechSynthesis.getVoices()), 1500);
-    speechSynthesis.addEventListener(
-      "voiceschanged",
-      () => {
-        clearTimeout(t);
-        res(speechSynthesis.getVoices());
-      },
-      { once: true },
-    );
+    const check = () => speechSynthesis.getVoices().length && done();
+    const done = () => {
+      clearTimeout(t);
+      clearInterval(poll);
+      speechSynthesis.removeEventListener("voiceschanged", check);
+      res(speechSynthesis.getVoices());
+    };
+    const t = setTimeout(done, wait);
+    const poll = setInterval(check, 250);
+    speechSynthesis.addEventListener("voiceschanged", check);
   });
 }
 
