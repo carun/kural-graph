@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { AudioLines, LoaderCircle, Pause, Play, RotateCcw, SkipBack, SkipForward, SlidersHorizontal, X } from "lucide-react";
-import { audio, setCommentaryAfter, useAudio } from "@/lib/store/audioStore";
+import { audio, setCommentaryAfter, setSkipTamil, useAudio } from "@/lib/store/audioStore";
 import { useGita } from "@/lib/store/useGitaStore";
 import { LANG_NAME } from "@/lib/commentary/traditions";
 
@@ -140,7 +140,9 @@ export function AudioDock() {
                     </div>
                     <Toggle on={a.autoAdvance} onChange={(autoAdvance) => useAudio.setState({ autoAdvance })} label="Continue automatically" hint="Play the next couplet or chapter when one ends" />
                     <Toggle on={a.follow} onChange={(follow) => useAudio.setState({ follow })} label="Follow along" hint="Move the graph camera and reader to the couplet being read" />
-                    <Toggle on={a.commentaryAfter} onChange={setCommentaryAfter} label="After each couplet, read the translation" hint={`${chosen}, as chosen on the page. Read by this device's voice, one couplet at a time only.`} />
+                    <Toggle on={a.skipTamil} onChange={setSkipTamil} label="Skip the Tamil" hint={`Read only the translation: ${chosen}, as chosen on the page, by this device's voice.`} />
+                    {/* Skipping the Tamil reads the translation already, so this would only read it twice. */}
+                    {!a.skipTamil && <Toggle on={a.commentaryAfter} onChange={setCommentaryAfter} label="After each couplet, read the translation" hint={`${chosen}, as chosen on the page. Read by this device's voice, one couplet at a time only.`} />}
                     {a.sourceLabel && <div className="mt-2 border-t border-line pt-2 text-[11.5px] text-text-3">Source: {a.sourceLabel}</div>}
                   </motion.div>
                 )}

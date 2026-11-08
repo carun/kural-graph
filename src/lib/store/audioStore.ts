@@ -19,12 +19,19 @@ export interface CommentaryReading {
 }
 
 const AFTER_KEY = "gitaviswa:commentary-after";
-const storedAfter = (): boolean => {
+const SKIP_KEY = "gitaviswa:skip-tamil";
+const stored = (key: string): boolean => {
   try {
-    return !!localStorage.getItem(AFTER_KEY);
+    return !!localStorage.getItem(key);
   } catch {
     return false;
   }
+};
+const store = (key: string, on: boolean) => {
+  try {
+    if (on) localStorage.setItem(key, "1");
+    else localStorage.removeItem(key);
+  } catch {}
 };
 
 // Android starts its speech engine only when a page first asks for voices, and the list can take seconds to come. Ask
@@ -71,6 +78,8 @@ interface AudioState {
   error?: string;
   /** Read the translation chosen on the page aloud after each verse (one-verse-at-a-time mode). */
   commentaryAfter: boolean;
+  /** Leave out the Tamil, recorded or read, and read only the translation chosen on the page. */
+  skipTamil: boolean;
   reading: CommentaryReading | null;
 }
 
@@ -89,7 +98,8 @@ export const useAudio = create<AudioState>(() => ({
   currentTime: 0,
   duration: 0,
   approx: false,
-  commentaryAfter: storedAfter(),
+  commentaryAfter: stored(AFTER_KEY),
+  skipTamil: stored(SKIP_KEY),
   reading: null,
 }));
 
@@ -99,10 +109,13 @@ const st = () => useAudio.getState();
 /** Switch the reading after each verse on or off. Remembered on this device. */
 export function setCommentaryAfter(on: boolean) {
   set({ commentaryAfter: on });
-  try {
-    if (on) localStorage.setItem(AFTER_KEY, "1");
-    else localStorage.removeItem(AFTER_KEY);
-  } catch {}
+  store(AFTER_KEY, on);
+}
+
+/** Read only the translation, not the Tamil. Remembered on this device. */
+export function setSkipTamil(on: boolean) {
+  set({ skipTamil: on });
+  store(SKIP_KEY, on);
 }
 
 class AudioEngine {
@@ -285,6 +298,11 @@ class AudioEngine {
     if (!v) return;
     this.stopSpeech();
     this.primeSpeech();
+    if (st().skipTamil) {
+      // Straight to the translation. thenNext carries on to the next couplet, as the Tamil would have.
+      this.follow(id);
+      return void this.readCommentary(id, g.enAuthor, { thenNext: true });
+    }
     const ch = g.versesDoc?.chapters.find((c) => c.number === v.chapter);
     set({ verseId: id, chapter: v.chapter, mode: "verse", loading: true, error: undefined, note, source: "recitation", sourceLabel: "Recording", approx: false, currentTime: 0, duration: 0 });
     const el = this.ensure();
@@ -314,6 +332,8 @@ class AudioEngine {
     if (!ch) return;
     this.stopSpeech();
     this.primeSpeech();
+    // A chapter recording is all Tamil, so without the Tamil the chapter's translations are read one couplet at a time.
+    if (st().skipTamil) return this.playVerse(`K_${(n - 1) * 10 + 1}`);
     const src = ch.audio[sourceIdx];
     if (!src) return this.playVerse(`K_${(n - 1) * 10 + 1}`, "This chapter has no recording of its own yet, so its couplets play one at a time.");
     this.chapterSourceIdx = sourceIdx;

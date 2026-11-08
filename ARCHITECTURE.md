@@ -330,7 +330,7 @@ There are no analytics and no third-party requests. Cloudflare injects its analy
 
 `src/lib/store/audioStore.ts` plays `/audio/0380.mp3` for Kural 380, if the recording exists, and otherwise hands over to the device's voice. A device with no Tamil voice reads the plain reading in English instead, and says so. Chapter recordings play when they exist.
 
-"After each couplet, read the translation" reads whatever the page's Translation picker has chosen. Translators' words come from `kural-verses.json` and need no network. parimēlaḻagar's English comes from the commentary entry, which on 330 couplets adds a setting or a note to what the page shows. See [public/audio/README.md](public/audio/README.md).
+"After each couplet, read the translation" reads whatever the page's Translation picker has chosen. Translators' words come from `kural-verses.json` and need no network. parimēlaḻagar's English comes from the commentary entry, which on 330 couplets adds a setting or a note to what the page shows. "Skip the Tamil" leaves the Tamil out, recorded or read, and reads only that translation, then moves on as the Tamil would have. A chapter recording is all Tamil, so with it on a whole chapter is read one couplet at a time. See [public/audio/README.md](public/audio/README.md).
 
 Pausing never calls `speechSynthesis.pause()`, because on Android that ends the utterance and leaves `resume()` nothing to resume. So pausing stops the voice and keeps the place, and resuming starts that passage again: a couplet, or one part of a reading, which is at most 220 characters.
 
