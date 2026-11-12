@@ -58,6 +58,30 @@ function Reveal({ children, className, delay = 0 }: { children: ReactNode; class
 
 const PAD = "px-5 sm:px-8 lg:px-12";
 
+/**
+ * Listen from the hero: start reciting where the person left off (or at Kural 1) and carry on couplet by couplet, the
+ * easiest way in for someone new. While a listening session is open it pauses and resumes that session instead.
+ */
+function HeroListen({ from }: { from: string }) {
+  const ready = useGita((s) => s.status === "ready");
+  const active = useAudio((s) => !!s.verseId);
+  const playing = useAudio((s) => s.playing);
+  const loading = useAudio((s) => s.loading);
+  const at = `Kural ${from.slice(2)}`;
+  return (
+    <button
+      className="btn btn-lg home-glass max-sm:flex-1"
+      disabled={!ready}
+      onClick={() => (active ? audio.toggle() : audio.playVerse(from))}
+      aria-label={playing ? "Pause the recitation" : loading ? "Loading the recitation" : active ? "Resume the recitation" : `Listen from ${at}`}
+      title={active ? undefined : `Listen from ${at}`}
+    >
+      {playing ? <Pause size={16} /> : <Play size={16} />}
+      {playing ? "Pause" : loading ? "Loading" : active ? "Resume" : "Listen"}
+    </button>
+  );
+}
+
 // ── Hero: the chariot at dusk ───────────────────────────────────────────────────────────────────────
 function Hero({ scroller }: { scroller: RefObject<HTMLDivElement | null> }) {
   const reduce = useReducedMotion();
@@ -99,6 +123,7 @@ function Hero({ scroller }: { scroller: RefObject<HTMLDivElement | null> }) {
               Explore the graph
               <ArrowRight size={16} />
             </button>
+            <HeroListen from={resume?.verse ?? "K_1"} />
             {resume ? (
               <button className="btn btn-lg home-glass max-sm:flex-1" onClick={go.read}>
                 <BookOpen size={16} />
