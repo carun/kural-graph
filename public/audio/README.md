@@ -68,3 +68,4 @@ To remove a chapter recording, delete the file and regenerate the data.
 - A file that won't play isn't an error. The site treats it as missing and the device reads the couplet instead, so a bad file can go unnoticed. Listen to each batch once.
 - Recordings aren't saved for offline use. With no connection, readers hear the device's voice.
 - Commentaries are always read by the device's voice. Only couplets and whole chapters have recordings.
+- `silence.wav` isn't a recording. It is a twentieth of a second of silence that lets an iPhone in Silent mode hear the device's voice. Leave it here.

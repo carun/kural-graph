@@ -72,6 +72,16 @@ export function chunkText(text: string, max = 220): string[] {
   return out.filter((c) => c.trim().length > 0);
 }
 
+/**
+ * Whether an utterance that has ended made no sound. iOS can list a voice it hasn't downloaded, and that voice ends as
+ * soon as it is asked to speak, without a word. Speech takes about 70 ms a character, so ending in under 20 means
+ * nothing was said, and a voice that marked a word did speak. A text too short to tell by is taken as spoken.
+ */
+export const endedSilent = (chars: number, rate: number, ms: number, words: number) => words === 0 && chars >= 20 && ms < (chars * 20) / rate;
+
+/** An iPhone or iPad, including an iPad that says it is a Mac. Their Silent mode mutes the device's voice. */
+export const isAppleTouch = (userAgent: string, maxTouchPoints: number) => /iPhone|iPad|iPod/.test(userAgent) || (/Macintosh/.test(userAgent) && maxTouchPoints > 1);
+
 export interface VoiceLike {
   lang: string;
   name: string;

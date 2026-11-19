@@ -5,7 +5,7 @@ import { create } from "zustand";
 import { useGita } from "./useGitaStore";
 import { loadCommentary } from "@/lib/data/loader";
 import { COMMENTATORS } from "@/lib/commentary/traditions";
-import { chunkText, pickVoice, speechText, translationText } from "@/lib/commentary/speech";
+import { chunkText, endedSilent, isAppleTouch, pickVoice, speechText, translationText } from "@/lib/commentary/speech";
 
 export type AudioSource = "recitation" | "chapter" | "speech" | "commentary" | null;
 
@@ -171,13 +171,54 @@ class AudioEngine {
     this.followed = chapter;
   }
 
-  /** iOS only lets speech start from a tap, and the fallback starts after a failed load, so unlock it during the tap. */
+  /**
+   * iOS only lets speech start from a tap, and the fallback starts after a failed load, so unlock it during the tap.
+   * The moment of silence is unlocked with it, so that playback() can play it later without one.
+   */
   private primeSpeech() {
     if (this.primed || typeof speechSynthesis === "undefined") return;
     this.primed = true;
+    this.playback();
     const u = new SpeechSynthesisUtterance(" ");
     u.volume = 0;
     speechSynthesis.speak(u);
+  }
+
+  private silence: HTMLAudioElement | null = null;
+
+  /**
+   * In Silent mode an iPhone mutes the device's voice, though it plays a recording. Before each passage, ask for
+   * playback as a player would, and play a moment of silence through an <audio> element, which is what moves the page
+   * to playback where navigator.audioSession is missing. Only on an iPhone or iPad: a Mac would list the silence in
+   * Now Playing. It lives in /audio/, which the service worker leaves alone: a player asks for byte ranges.
+   */
+  private playback() {
+    if (typeof navigator === "undefined" || !isAppleTouch(navigator.userAgent, navigator.maxTouchPoints)) return;
+    try {
+      const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+      if (session) session.type = "playback";
+    } catch {}
+    this.silence ??= new Audio("/audio/silence.wav");
+    this.silence.currentTime = 0;
+    this.silence.play().catch(() => {});
+  }
+
+  /** Voices that ended without a word (see endedSilent), passed over from then on. */
+  private mute = new Set<string>();
+  /** How many utterances in a row have ended that way. */
+  private silentRun = 0;
+  private usable = (voices: SpeechSynthesisVoice[]) => voices.filter((v) => !this.mute.has(v.voiceURI));
+
+  /**
+   * The voice ended without a word. Pass over it from now on and try again, which picks another. When three in a row
+   * have done it, the device's voice isn't working: stop and say so, rather than race through the couplets in silence.
+   */
+  private noSound(voice: SpeechSynthesisVoice, again: () => void) {
+    this.mute.add(voice.voiceURI);
+    if (++this.silentRun < 3) return again();
+    this.silentRun = 0;
+    this.speaking = false;
+    set({ playing: false, loading: false, error: `${voice.name}, this device's voice, ended without reading anything, so listening stopped.` });
   }
 
   /** The commentary being read: its chunks, voice, and a token that retires stale utterance callbacks. */
@@ -206,6 +247,7 @@ class AudioEngine {
     const v = g.versesById.get(verseId);
     this.el?.pause();
     this.stopSpeech();
+    this.primeSpeech(); // Reading a commentary can be the first tap, and it speaks after a load.
     const my = this.gen;
     set({ verseId, chapter: v?.chapter ?? null, mode: "verse", loading: true, playing: false, error: undefined, note: "", source: "commentary", sourceLabel: "", approx: false, currentTime: 0, duration: 0 });
     // A translator has no commentary entry: their words are in the verse, so reading them needs no network.
@@ -222,7 +264,7 @@ class AudioEngine {
     }
     const voices = await voicesReady();
     if (my !== this.gen) return;
-    const voice = pickVoice(voices, text.lang);
+    const voice = pickVoice(this.usable(voices), text.lang);
     if (!voice) return set({ loading: false, error: text.lang === "en" ? "No English voice is available on this device." : "This device has no Tamil voice, so this can't be read aloud." });
     const parts = chunkText(text.said);
     if (!parts.length) return thenNext ? this.afterCommentary() : set({ loading: false });
@@ -273,8 +315,14 @@ class AudioEngine {
     u.voice = r.voice;
     u.lang = r.voice.lang;
     u.rate = (r.lang === "en" ? 1 : 0.95) * st().rate;
+    const t0 = performance.now();
+    let words = 0;
+    u.onboundary = () => void words++;
     u.onend = () => {
-      if (this.reading === r && r.tok === tok) this.sayPart(i + 1);
+      if (this.reading !== r || r.tok !== tok) return;
+      if (endedSilent(u.text.length, u.rate, performance.now() - t0, words)) return this.noSound(r.voice, () => this.revoice(r, i));
+      this.silentRun = 0;
+      this.sayPart(i + 1);
     };
     u.onerror = (ev) => {
       if (this.reading !== r || r.tok !== tok || ev.error === "interrupted" || ev.error === "canceled") return;
@@ -283,7 +331,20 @@ class AudioEngine {
     };
     const cur = st().reading;
     if (cur) set({ reading: { ...cur, part: i } });
+    this.playback();
     speechSynthesis.speak(u);
+  }
+
+  /** Read part `i` again in another voice, the last one having said nothing. */
+  private revoice(r: NonNullable<AudioEngine["reading"]>, i: number) {
+    const voice = pickVoice(this.usable(speechSynthesis.getVoices()), r.lang);
+    if (!voice) {
+      this.speaking = false;
+      return set({ playing: false, error: `No ${r.lang === "en" ? "English" : "Tamil"} voice on this device read anything, so this can't be read aloud.` });
+    }
+    r.voice = voice;
+    set({ sourceLabel: `${voice.name}, this device's voice` });
+    this.sayPart(i);
   }
 
   /** After a commentary read between verses: go on, unless continuing is switched off. */
@@ -364,16 +425,21 @@ class AudioEngine {
     set({ verseId: id, chapter: v.chapter, loading: true, playing: false, source: "speech", sourceLabel: "Read by your device", mode: "verse", error: undefined, approx: false, currentTime: 0, duration: 0 });
     const voices = await voicesReady();
     if (my !== this.gen) return;
-    const tamil = pickVoice(voices, "sa");
-    const voice = tamil ?? pickVoice(voices, "en");
+    const tamil = pickVoice(this.usable(voices), "sa");
+    const voice = tamil ?? pickVoice(this.usable(voices), "en");
     if (!voice) return set({ loading: false, error: "There is no recording of this couplet yet, and this device has no voice to read it." });
     const u = new SpeechSynthesisUtterance(tamil ? v.sanskrit.join(" ") : v.translations.en["1"]);
     u.voice = voice;
     u.lang = voice.lang;
     u.rate = (tamil ? 0.78 : 1) * st().rate;
+    const t0 = performance.now();
+    let words = 0;
+    u.onboundary = () => void words++;
     u.onend = () => {
       if (my !== this.gen) return;
       this.speaking = false;
+      if (endedSilent(u.text.length, u.rate, performance.now() - t0, words)) return this.noSound(voice, () => void this.speak(id));
+      this.silentRun = 0;
       set({ playing: false });
       this.onEnded(tamil ? undefined : 1);
     };
@@ -383,6 +449,7 @@ class AudioEngine {
       set({ playing: false, error: "The device voice stopped reading." });
     };
     this.speaking = true;
+    this.playback();
     speechSynthesis.speak(u);
     set({ playing: true, loading: false, sourceLabel: `Read by your device (${voice.name})`, note: tamil ? kept : "This device has no Tamil voice, so it is reading the plain reading in English." });
     this.follow(id);

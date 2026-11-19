@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { findExcerpts, latinStemPattern, matcherFor, regexFor, splitHits, stemToDeva } from "../src/lib/commentary/lens.ts";
-import { chunkText, pickVoice, speechText, translationText } from "../src/lib/commentary/speech.ts";
+import { chunkText, endedSilent, isAppleTouch, pickVoice, speechText, translationText } from "../src/lib/commentary/speech.ts";
 
 test("stems in the holy-bhagavad-gita.org style convert to Devanagari", () => {
   assert.equal(stemToDeva("karm"), "कर्म");
@@ -85,4 +85,28 @@ test("voices: US English for English, Hindi for Hindi and Sanskrit, natural voic
   assert.equal(pickVoice(voices, "sa"), null);
   assert.equal(pickVoice([...voices, { lang: "ta-IN", name: "Microsoft Valluvar" }], "sa")?.name, "Microsoft Valluvar");
   assert.equal(pickVoice([{ lang: "en-US", name: "x" }], "hi"), null);
+});
+
+test("Silent mode: iPhones and iPads, an iPad that says it is a Mac included, but not a Mac", () => {
+  const iphone = "Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Mobile/15E148 Safari/604.1";
+  const mac = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15";
+  const android = "Mozilla/5.0 (Linux; Android 16; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36";
+  assert.equal(isAppleTouch(iphone, 5), true);
+  assert.equal(isAppleTouch(mac, 5), true);
+  assert.equal(isAppleTouch(mac, 0), false);
+  assert.equal(isAppleTouch(android, 5), false);
+});
+
+test("a voice that ends at once without a word said nothing; real speech, or a word marked, did", () => {
+  const couplet = "As all letters begin with A, the world begins with the First Lord.".length; // 67
+  // An iPhone voice it hasn't downloaded: ends in a few milliseconds.
+  assert.equal(endedSilent(couplet, 1, 15, 0), true);
+  assert.equal(endedSilent(couplet, 0.78, 900, 0), true);
+  // Read aloud, it takes about 4 s, and more than a second even at double speed.
+  assert.equal(endedSilent(couplet, 1, 4000, 0), false);
+  assert.equal(endedSilent(couplet, 2, 1500, 0), false);
+  // A word marked means something was said, however fast.
+  assert.equal(endedSilent(couplet, 1, 15, 1), false);
+  // Too short to tell.
+  assert.equal(endedSilent("Amen.".length, 1, 15, 0), false);
 });

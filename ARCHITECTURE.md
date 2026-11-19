@@ -338,6 +338,8 @@ The device's voice belongs to the operating system, not the browser, and English
 
 - **Linux:** Chromium browsers, Brave included, have no voices unless `speech-dispatcher` is installed and the browser starts with `--enable-speech-dispatcher`. Its default engine, eSpeak NG, sounds robotic.
 - **Brave:** at the strictest fingerprinting setting, Shields hides every voice on any system. At the standard setting it adds one fake voice, which `pickVoice` doesn't reach because the real ones come first.
+- **iPhone and iPad:** Silent mode mutes the device's voice, though it lets a recording play. An iPhone Air or 17 has no switch to show it: the Action button or Control Center turns it on. Before each passage the player asks for playback through `navigator.audioSession`, as a media player would, and plays a twentieth of a second of silence, `/audio/silence.wav`, through an `<audio>` element. It plays that first in the tap that unlocks speech, so it can play again later without a tap.
+- **A voice listed but not there:** on three iPhone Airs in one family, while an iPhone 17 read fine, the voice named in the player ended at once without a word, so Listen raced from couplet to couplet in silence. iOS can list a voice it hasn't downloaded. An utterance that ends in under 20 ms a character with no word marked (`endedSilent`) said nothing: the player passes over that voice from then on and reads the couplet again in another. After three in a row it stops and says so. With this, the Airs read aloud.
 
 With no voice and no recording, the player says so. Only recordings reach every reader.
 
