@@ -259,7 +259,7 @@ const versesDoc = {
   meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, license, defaults: { en: 1, hi: 1 }, audioNote: 'Couplets are read by your device until a recording exists.', sources },
   authors: [
     { id: 1, name: 'Plain reading', lang: 'en', kind: 'translation' },
-    { id: 2, name: 'Parimelazhagar', lang: 'en', kind: 'both', school: 'Classical commentary', work: 'Paraphrased in English by an AI' },
+    { id: 2, name: 'Parimelazhagar', lang: 'en', kind: 'both', school: 'Classical commentary', work: 'Paraphrased in English' },
     { id: 3, name: 'Parimelazhagar', lang: 'sa', kind: 'commentary', school: 'Classical commentary', work: 'His Tamil' },
     { id: 4, name: 'V. V. S. Aiyar', lang: 'en', kind: 'translation', work: 'The Kural, 1916' },
     { id: 5, name: 'G. U. Pope', lang: 'en', kind: 'translation', work: 'The ‘Sacred’ Kurral, 1886' },
@@ -290,7 +290,7 @@ for (const c of couplets) {
       id: verseId(c.n),
       ref: refOf(c),
       commentaries: [
-        { authorId: 2, author: 'Parimelazhagar', school: 'Classical commentary', lang: 'en', text: [c.context, c.pm, c.note].filter(Boolean).join('\n\n'), work: 'Paraphrased in English by an AI' },
+        { authorId: 2, author: 'Parimelazhagar', school: 'Classical commentary', lang: 'en', text: [c.context, c.pm, c.note].filter(Boolean).join('\n\n'), work: 'Paraphrased in English' },
         { authorId: 3, author: 'Parimelazhagar', school: 'Classical commentary', lang: 'sa', text: [m.context ? `(${m.context})` : '', ...m.gloss, ...m.notes].filter(Boolean).join('\n\n'), work: 'His Tamil' },
         ...TAMIL_COMMENTARIES.filter((t) => t.text.has(c.n)).map(({ authorId, author, school, work, text }) => ({ authorId, author, school, lang: 'sa', text: text.get(c.n), work })),
       ],

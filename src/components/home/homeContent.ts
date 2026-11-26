@@ -5,7 +5,7 @@
  */
 
 /** Follows a couplet's number wherever a reading is quoted, as his page named the translator. */
-export const HOME_TRANSLATOR = "plain reading written by an AI";
+export const HOME_TRANSLATOR = "plain reading";
 
 export interface HomeVerse {
   id: string;

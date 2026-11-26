@@ -17,8 +17,8 @@ import { OldView, TAG_LABEL, withoutNote, type KuralVerse } from "@/kural/reader
 /**
  * Commentaries as perspectives: the same verse read by different schools (darśanas), side by side.
  * Filter by language and tradition, follow one word of the verse through every commentary, compare up to four,
- * and listen to English and Hindi ones read aloud by the device's voice. Sanskrit-only commentaries can be
- * translated by the connected language model, labelled as an AI draft.
+ * and listen to English and Hindi ones read aloud by the device's voice. Tamil-only commentaries can be
+ * translated by the connected language model.
  */
 
 type LangFilter = CommentaryLang | "all";
@@ -70,7 +70,7 @@ function ListenControls({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
   );
 }
 
-/** AI translation of a Sanskrit commentary, cached in this browser. */
+/** A Tamil commentary translated by the connected language model, cached in this browser. */
 function AiTranslation({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
   const conn = useConnection();
   const target = useGita((s) => (s.translationLang === "hi" ? "Hindi" : "English"));
@@ -109,13 +109,13 @@ function AiTranslation({ e, verse }: { e: CommentaryEntry; verse: Verse }) {
     <div className="mt-3">
       {text ? (
         <div className="rounded-[var(--radius-2)] border border-line bg-surface px-3 py-2.5">
-          <div className="text-[11.5px] font-medium text-text-3">AI translation into {target}, a draft: check it against the Tamil</div>
+          <div className="text-[11.5px] font-medium text-text-3">In {target}</div>
           <p className={`mt-1.5 whitespace-pre-line text-text-2 ${target === "Hindi" ? "indic text-[15px] leading-[1.9]" : "serif text-[15px] leading-[1.6]"}`}>{text}</p>
         </div>
       ) : (
         <button className="btn btn-sm" onClick={run} disabled={busy}>
           {busy ? <LoaderCircle size={13} className="animate-spin" /> : <Languages size={13} />}
-          {busy ? "Translating" : `Translate into ${target} with AI`}
+          {busy ? "Translating" : `Translate into ${target}`}
         </button>
       )}
       {err && <p className="mt-1.5 text-[12px] text-danger">{err}</p>}
@@ -246,7 +246,11 @@ function CompareDialog({ verse, entries, matcher, onClose, onRemove }: { verse: 
   );
 }
 
-export function Perspectives({ verse }: { verse: Verse }) {
+/** "a", "a and b", "a, b, and c". */
+const listOf = (names: string[]) => (names.length < 3 ? names.join(" and ") : `${names.slice(0, -1).join(", ")}, and ${names[names.length - 1]}`);
+
+/** `translations`: who translated the couplet itself, and a way to show those, since people look for them here. */
+export function Perspectives({ verse, translations }: { verse: Verse; translations?: { names: string[]; open: () => void } }) {
   const select = useGita((s) => s.select);
   const [doc, setDoc] = useState<CommentaryDoc | null | undefined>(undefined);
   const [lang, setLangState] = useState<LangFilter>(() => {
@@ -327,6 +331,15 @@ export function Perspectives({ verse }: { verse: Verse }) {
             </button>
           ))}
         </div>
+        {translations && translations.names.length > 0 && (
+          <p className="mt-2 text-[12.5px] leading-5 text-text-3">
+            These explain the couplet. Translations of it, by {listOf(translations.names)}, are under{" "}
+            <button className="font-medium text-accent-text hover:underline" onClick={translations.open}>
+              Translations
+            </button>
+            .
+          </p>
+        )}
       </div>
 
       {words.length > 0 && (

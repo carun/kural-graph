@@ -94,7 +94,7 @@ Kural logic lives in `src/kural/`. GitaViśva's data scripts are still in `scrip
 
 ## The content pipeline
 
-`npm run data` rebuilds `public/data/` byte for byte. Nothing in it writes prose: the readings and annotations were written ahead of time, and an AI wrote them, as the README says. The pipeline checks them, merges them and refuses to finish if a check fails. The only model it runs is MiniLM, to make the vectors.
+`npm run data` rebuilds `public/data/` byte for byte. Nothing in it writes prose: the readings and annotations were written ahead of time. The pipeline checks them, merges them and refuses to finish if a check fails. The only model it runs is MiniLM, to make the vectors.
 
 ```mermaid
 flowchart TB

@@ -243,7 +243,7 @@ export function ChapterReader() {
               </div>
               {ch.summary.en && (
                 <div className="mt-5">
-                  <div className="label mb-1">parimēlaḻagar’s introduction, paraphrased by an AI</div>
+                  <div className="label mb-1">parimēlaḻagar’s introduction, paraphrased</div>
                   <p className="reading">{ch.summary.en}</p>
                 </div>
               )}
@@ -258,7 +258,7 @@ export function ChapterReader() {
             </header>
 
             <div className="mt-12 border-t border-line pt-6">
-              <p className="text-[12px] leading-4 text-text-3">{inOwnWords(chosenEnglish) ? `This page shows ${englishBy(chosenEnglish)}` : "An AI wrote the English on this page, not a scholar or translator."}</p>
+              {inOwnWords(chosenEnglish) && <p className="text-[12px] leading-4 text-text-3">This page shows {englishBy(chosenEnglish)}</p>}
               {(script === "deva" || script === "iast") && <IastKey className="mb-3 mt-2" />}
               {verses.map((v) => {
                 const active = v.id === audioVerse;

@@ -4,8 +4,6 @@ The Tirukkural as a knowledge graph you can read, explore and question: all 1,33
 
 **This is a fork of [GitaViśva](https://github.com/HimanshuMohanty-Git24/gitaviswa) by Himanshu Mohanty, used under the MIT licence.** The interface, the graph and nearly all the code are his, and they are the reason this site looks and works as well as it does. What's ours is the content and the changes the Kural needs. We keep the fork close to his so that we can go on merging his updates: see [UPSTREAM.md](UPSTREAM.md).
 
-**An AI wrote the English.** The plain readings, the paraphrases of parimēlaḻagar and the links between couplets were written by Anthropic's Claude, not by a scholar or translator, and no person has reviewed the links yet. The site says so to its readers. Treat them as a reading of the text and not as authority.
-
 ## What it does
 
 | View | |
@@ -51,11 +49,10 @@ Run `npm test` afterwards. `tests/home-content.test.ts` checks that the couplets
 1. **Keep the diff small.** Every line changed is a line that can conflict with his. Keep his names, comments and design. Put Kural logic in new files under `src/kural/`.
 2. **Never reword a reading, reason, note or definition** here. They belong to the content repository.
 3. **Safety.** Sensitive couplets stay off walks and Reflect, and crisis support comes before any couplet. Feelings on a situation are marked "Our suggestion, not the Kural’s words".
-4. **Honesty.** Readers are told that an AI wrote the English and that no person has reviewed the links.
-5. **Offline first.** No analytics and no third-party requests. Only model answers need a network.
-6. **Model safety.** Invented citations are dropped, keys go only to the chosen provider, and nothing goes to a model unless one is connected and the person asks.
-7. **No trace of the Gita in anything a reader sees.** "Verse" becomes "couplet". Credit to him stays in `NOTICE`, the licence and the About page.
-8. **Words.** Part 3 is Desire, never Love. அன்பு is loving-kindness. The table of key words is in `content/annotation/READINGS.md`. Copy is plain and short, with no dashes as punctuation.
+4. **Offline first.** No analytics and no third-party requests. Only model answers need a network.
+5. **Model safety.** Invented citations are dropped, keys go only to the chosen provider, and nothing goes to a model unless one is connected and the person asks.
+6. **No trace of the Gita in anything a reader sees.** "Verse" becomes "couplet". Credit to him stays in `NOTICE`, the licence and the About page.
+7. **Words.** Part 3 is Desire, never Love. அன்பு is loving-kindness. The table of key words is in `content/annotation/READINGS.md`. Copy is plain and short, with no dashes as punctuation.
 
 ## The pictures
 

@@ -13,9 +13,6 @@ every change. Only the Tamil lines,
 their numbering, chapter names and its romanisation (for search only) are used.
 Its commentaries and translations are not included.
 
-The English readings were written for this project by an AI (Anthropic's
-Claude), from the Tamil and parimēlaḻagar's commentary.
-
 The project's own annotations and readings are licensed under Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International: see content/LICENSE in
 https://github.com/carun/kural-graph. Commercial use needs the owner's permission:

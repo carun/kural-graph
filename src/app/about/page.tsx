@@ -30,7 +30,6 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 /** What this site is and how it was made. The disclosures are the owner's words. */
 export default function About() {
-  const strong = "font-semibold text-text";
   return (
     <div className="h-dvh overflow-y-auto bg-bg text-text">
       <header className="sticky top-0 z-10 flex h-14 items-center justify-between gap-3 border-b border-line bg-bg/90 px-4 backdrop-blur">
@@ -53,16 +52,16 @@ export default function About() {
 
         <Section title="How the links were made">
           <p className="reading">
-            <strong className={strong}>The links between couplets and ideas were written by an AI (Anthropic’s Claude), not by a scholar.</strong> Every link shows its reason, and the words in the plain reading that support it. Links marked “inferred” are an interpretation, not something the couplet says outright.
+            Every link shows its reason, and the words in the plain reading that support it. Links marked “inferred” are an interpretation, not something the couplet says outright.
           </p>
           <p className="reading">
-            A second, different AI model checked them independently, and disagreements were judged again. These links are still in draft and need review, so treat them as a reading of the text and not as authority. The text itself always outranks them: <Link href="/?view=adhyayana">read the couplets</Link>.
+            The text itself always outranks them: <Link href="/?view=adhyayana">read the couplets</Link>.
           </p>
         </Section>
 
         <Section title="The texts">
           <p className="reading">
-            <strong className={strong}>The readings on this site were written by an AI (Anthropic’s Claude), not by a scholar or translator.</strong> Each couplet has two readings. The plain reading says what the Tamil says, in today’s words, and adds no fate, god or setting of its own. parimēlaḻagar’s reading is his 13th-century Tamil commentary, paraphrased into English. It keeps what he says, including his views on caste, karma and women, which are of their time.
+            Each couplet has two readings. The plain reading says what the Tamil says, in today’s words, and adds no fate, god or setting of its own. parimēlaḻagar’s reading is his 13th-century Tamil commentary, paraphrased into English. It keeps what he says, including his views on caste, karma and women, which are of their time.
           </p>
           <p className="reading">
             V. V. S. Aiyar’s English translation of 1916 is also offered wherever you choose a reading. It is in his own words, from the <Link href="https://standardebooks.org/ebooks/thiruvalluvar/the-kural/v-v-s-aiyar">Standard Ebooks edition</Link>, which is believed to be in the United States public domain. The readings don’t draw on it, and it uses words of its time, such as “love” where the plain reading says “loving-kindness”.

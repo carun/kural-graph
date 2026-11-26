@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, type ReactNode, type RefObject } from "react";
 import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Bot, BookOpen, Info, Library, MessagesSquare, NotebookPen, Pause, Play, Search, Settings, ShieldCheck, Sparkles, Waypoints, CircleHelp } from "lucide-react";
+import { ArrowRight, BookOpen, Info, Library, MessagesSquare, NotebookPen, Pause, Play, Search, Settings, ShieldCheck, Sparkles, Waypoints, CircleHelp } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { audio, useAudio } from "@/lib/store/audioStore";
 import { useDraft } from "@/lib/store/draftStore";
@@ -516,7 +516,6 @@ function WaysIn() {
 // ── What it promises ────────────────────────────────────────────────────────────────────────────────
 function TrustStrip() {
   const items = [
-    { icon: Bot, title: "An AI wrote the English", body: "The readings and the links between couplets were written by an AI (Anthropic’s Claude), not by a scholar or translator. They’re still in draft and need review, so treat them as a reading of the text and not as authority." },
     { icon: ShieldCheck, title: "Your thoughts stay with you", body: "Reflections are saved on this device, in this browser. They don't sync anywhere; export them when you want to move them." },
     { icon: Sparkles, title: "AI is optional", body: "Reading, search, the graph and suggestions all work without a language model. If you connect one, only the text you choose is sent." },
     { icon: Library, title: "Built on open texts", body: "The Tamil starts from an open dataset and was checked line by line against Project Madurai and Tamil Wikisource. parimēlaḻagar’s Tamil comes from Tamil Wikisource." },
@@ -598,7 +597,7 @@ function Footer() {
         </nav>
       </div>
       <p className="mx-auto mt-6 max-w-7xl text-[12.5px] leading-5 text-text-3">
-        An AI wrote the readings on this site. They’re still in draft and need review. The pictures on this page were painted by a computer program, not by an artist.
+        The pictures on this page were painted by a computer program, not by an artist.
       </p>
       <p className="mx-auto mt-1 max-w-7xl text-[12.5px] leading-5 text-text-3">
         The interface is adapted from{" "}

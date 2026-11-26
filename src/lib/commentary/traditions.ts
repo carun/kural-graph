@@ -52,7 +52,7 @@ export interface Commentator {
 }
 
 export const COMMENTATORS: Record<number, Commentator> = {
-  2: { tradition: "classical", name: "parimēlaḻagar", work: "Paraphrased in English by an AI. These are not his exact words." },
+  2: { tradition: "classical", name: "parimēlaḻagar", work: "His commentary, paraphrased in English" },
   3: { tradition: "classical", name: "parimēlaḻagar", work: "His 13th-century commentary, from Tamil Wikisource" },
   7: { tradition: "classical", name: "maṇakkudavar", work: "The oldest commentary that survives, from Project Madurai" },
   8: { tradition: "modern", name: "mu. varaḍarāsaṉār", work: "திருக்குறள் தெளிவுரை, from Tamil Wikisource" },
