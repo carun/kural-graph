@@ -16,7 +16,7 @@ import { egoPositions, pickEgo, type EgoCandidate, type EgoPick } from "@/lib/gr
 import { sheetPx, sheetShowing } from "@/components/layout/SidePanel";
 import { LOTUS_VIEW, lotusPositions, useGraphShape, type GraphColor } from "@/kural/graphShape";
 import { ShapeMorph, drawLine, pointBatches } from "@/kural/shapeMorph";
-import { hubsNear, pickLabels, sizeLabel, type LabelView } from "@/kural/chapterLabels";
+import { anchorLabel, hubsNear, pickAround, pickLabels, placeLabel, spriteRect, type Hub, type LabelView, type Rect, type Side } from "@/kural/chapterLabels";
 import type { GraphNode, NodeLabel, RelationType } from "@/lib/types";
 
 type NodeT = { id: string; type: NodeLabel; label: string; data: GraphNode };
@@ -132,6 +132,10 @@ interface NodeVisual {
   color: string;
   r: number;
   labelOpacity: number;
+  /** Where its name sits beside its point, kept while it fades out. */
+  side?: Side;
+  /** Placed beside its point in a focused neighbourhood, to be put back above it afterwards. */
+  anchored?: boolean;
   /** Sized for the screen, like a chapter label, while it is part of a path or thread seen from far away. */
   fitted?: boolean;
 }
@@ -547,7 +551,9 @@ export default function CosmicGraph3D() {
     }
   }, []);
 
-  const named = useRef<ReadonlySet<string>>(new Set());
+  const named = useRef<ReadonlyMap<string, Side>>(new Map());
+  /** In a focused or highlighted neighbourhood: the names that fit, and where. */
+  const around = useRef<ReadonlyMap<string, Side>>(new Map());
   const namedAt = useRef(0);
   const mobileNow = useRef(mobile);
   mobileNow.current = mobile;
@@ -589,27 +595,65 @@ export default function CosmicGraph3D() {
       view.home = Math.hypot(hp.x, hp.y, hp.z);
       if (performance.now() >= namedAt.current) {
         namedAt.current = performance.now() + 160;
-        named.current = pickLabels(hubsNear(visuals.current, view), named.current, view, mobileNow.current ? 12 : 32);
+        // Names keep clear of the panels over the graph (tools, legend, camera buttons, hint) and the phone's sheet.
+        const box = el?.getBoundingClientRect();
+        const blocked: Rect[] = [];
+        if (box) for (const o of document.querySelectorAll<HTMLElement>(".hud, aside[role=dialog]")) {
+          const r = o.getBoundingClientRect();
+          if (r.width && r.height) blocked.push({ x0: r.left - box.left, y0: r.top - box.top, x1: r.right - box.left, y1: r.bottom - box.top });
+        }
+        named.current = pickLabels(hubsNear(visuals.current, view), named.current, view, mobileNow.current ? 12 : 32, blocked);
+        // A neighbourhood wants all its names, but each takes a free place around its point, clear of the others and of
+        // the relation tags, or waits.
+        if (forceAll && e) {
+          const ego = live.current.ego;
+          const hubs: Hub[] = [];
+          for (const id of new Set([...e.nodes, ...marks.current.verseLabels.keys()])) {
+            const v = visuals.current.get(id);
+            if (!v?.group.parent) continue;
+            const verse = marks.current.verseLabels.get(id);
+            const l = v.labelSpec ? (e.nodes.has(id) ? v.label : null) : verse;
+            if (v.labelSpec && !e.nodes.has(id)) continue;
+            if (!v.labelSpec && !verse) continue;
+            const text = v.labelSpec?.text ?? verse!.text;
+            // Chapters, and everything outside the focus view, are sized for the screen; the rest keep a world size.
+            const screen = v.kind === "chapter" || !ego;
+            const size = screen ? undefined : (l?.scale.y ?? (v.labelSpec?.size ?? 4.6) * labelScale.current);
+            hubs.push({ id, text, at: v.group.position, r: v.r, size, aspect: l ? l.scale.x / l.scale.y : undefined, first: id === sel });
+          }
+          const tags = fg.scene().getObjectByName("gv-ego-relations");
+          if (tags) for (const t of tags.children) {
+            const r = spriteRect(t as THREE.Sprite, view);
+            if (r) blocked.push(r);
+          }
+          around.current = pickAround(hubs, around.current, view, blocked);
+        }
       }
+      const crowd = forceAll && !!e;
       for (const [id, v] of visuals.current) {
         if (!v.label && !v.labelSpec) continue;
         const on = !e || e.nodes.has(id);
         let target: number;
         if (id === sel || id === hov) target = 1;
         else if (!on) target = v.kind === "chapter" && named.current.has(id) ? 0.18 : 0;
-        else if (v.kind === "chapter") target = named.current.has(id) || (e && forceAll) ? 0.92 : 0;
-        else if (e && forceAll) target = 0.9;
+        else if (crowd) target = around.current.has(id) ? (v.kind === "chapter" ? 0.92 : 0.9) : 0;
+        else if (v.kind === "chapter") target = named.current.has(id) ? 0.92 : 0;
         else {
           v.group.getWorldPosition(p);
           target = named.current.has(id) ? 0.9 * (1 - smooth(320, 600, p.distanceTo(cam.position))) : 0;
         }
-        if (v.label?.visible && (v.kind === "chapter" || (e && forceAll && !live.current.ego))) {
-          sizeLabel(v.label, v.r, v.group.position, view);
+        const side: Side = crowd && on ? (around.current.get(id) ?? v.side ?? 0) : v.kind === "chapter" ? (named.current.get(id) ?? v.side ?? 1) : 0;
+        if (v.label?.visible && (v.kind === "chapter" || (crowd && !live.current.ego))) {
+          placeLabel(v.label, v.r, v.group.position, view, (v.side = side));
           v.fitted = true;
-        } else if (v.fitted && v.label && v.labelSpec && v.kind !== "chapter") {
-          v.fitted = false;
-          v.label.scale.set((v.label.scale.x / v.label.scale.y) * v.labelSpec.size, v.labelSpec.size, 1);
-          v.label.position.y = v.labelSpec.y;
+        } else if (v.label?.visible && crowd) {
+          anchorLabel(v.label, v.r, v.group.position, view, (v.side = side));
+          v.anchored = true;
+        } else if ((v.fitted || v.anchored) && v.label && v.labelSpec && v.kind !== "chapter") {
+          if (v.fitted) v.label.scale.set((v.label.scale.x / v.label.scale.y) * v.labelSpec.size, v.labelSpec.size, 1);
+          v.fitted = v.anchored = false;
+          v.label.center.set(0.5, 0.5);
+          v.label.position.set(0, v.labelSpec.y, 0);
         }
         // A halo too small to see is a draw call for nothing: on phones it waits until you come closer.
         if (v.kind === "chapter" && v.ringSprite && tier === "low") v.ringSprite.visible = v.group.position.distanceTo(cam.position) < view.height * 2.4;
@@ -617,7 +661,7 @@ export default function CosmicGraph3D() {
         if (!v.label) {
           if (target <= 0.02 || !v.labelSpec) continue;
           v.label = makeLabel(v.labelSpec, fontFace.current, live.current.ego?.has(id) ? labelScale.current : 1);
-          if (v.kind === "chapter") sizeLabel(v.label, v.r, v.group.position, view);
+          if (v.kind === "chapter") placeLabel(v.label, v.r, v.group.position, view, (v.side = named.current.get(id) ?? 1));
           v.group.add(v.label);
         }
         fading = true;
@@ -626,12 +670,16 @@ export default function CosmicGraph3D() {
         v.label.material.opacity = v.labelOpacity;
         v.label.visible = v.labelOpacity > 0.02;
       }
-      // The references of couplets on a path stay readable however far back the camera has to stand to frame it.
-      if (!live.current.ego) {
-        for (const [id, l] of marks.current.verseLabels) {
-          const v = visuals.current.get(id);
-          if (v) sizeLabel(l, v.r, v.group.position, view);
-        }
+      // The references of couplets on a path stay readable however far back the camera has to stand to frame it. In a
+      // neighbourhood each takes its free place, or waits.
+      for (const [id, l] of marks.current.verseLabels) {
+        const v = visuals.current.get(id);
+        if (!v) continue;
+        const side = crowd ? around.current.get(id) : 0;
+        l.visible = side !== undefined || id === sel || id === hov;
+        if (!l.visible) continue;
+        if (live.current.ego) anchorLabel(l, v.r, v.group.position, view, side ?? 0);
+        else placeLabel(l, v.r, v.group.position, view, side ?? 0);
       }
       // Sleep when nothing moves: no rotation, no label fading, no flowing path particles, no recent input or change.
       const rotating = !!(fg.controls() as { autoRotate?: boolean }).autoRotate;

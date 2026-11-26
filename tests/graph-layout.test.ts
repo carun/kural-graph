@@ -51,3 +51,46 @@ test("every suggested path exists, takes more than one step, and passes no sensi
     for (const id of path.nodes) assert.ok(!("sensitive" in graphs.nodeById.get(id)!), `${p.label} passes ${id}`);
   }
 });
+
+const { lotusPositions, spreadRound } = await import("../src/kural/graphShape.ts");
+
+test("the crown sets each kind of idea on a ring of its own, narrowing as it rises in the legend's order", () => {
+  const crown = lotusPositions(layout)!;
+  const rings = ["concept:", "emotion:", "dilemma:", "character:"].map((prefix) => {
+    const at = [...crown].filter(([id]) => id.startsWith(prefix)).map(([, p]) => p);
+    assert.ok(at.length > 0, prefix);
+    const heights = new Set(at.map((p) => p[1].toFixed(3)));
+    const radii = new Set(at.map((p) => Math.hypot(p[0], p[2]).toFixed(3)));
+    assert.equal(heights.size, 1, `${prefix} all at one height`);
+    assert.equal(radii.size, 1, `${prefix} all on one ring`);
+    return { height: at[0]![1], radius: Math.hypot(at[0]![0], at[0]![2]) };
+  });
+  for (let i = 1; i < rings.length; i++) {
+    assert.ok(rings[i]!.height > rings[i - 1]!.height, "each tier above the last");
+    assert.ok(rings[i]!.radius < rings[i - 1]!.radius, "each tier narrower than the last");
+  }
+  // The rim and its couplets stay where the layout put them.
+  const s = RING_R / (layout as { lotusRing?: number }).lotusRing!;
+  for (const id of ["CH_1", "CH_133", "K_1", "K_1330"]) {
+    const [x, y, z] = (layout.lotus as Record<string, Vec3>)[id]!;
+    assert.deepEqual(crown.get(id), [y * s, z * s, x * s], id);
+  }
+});
+
+test("spreading bearings round a ring keeps their order and a minimum gap", () => {
+  const TAU = 2 * Math.PI;
+  const bearings = [0.1, 0.11, 0.12, 0.13, 3, 3.001, -3.1, -3.09, 1.5];
+  const gap = (0.6 * TAU) / bearings.length;
+  const out = spreadRound(bearings, gap);
+  const order = (xs: number[]) => xs.map((b, i) => [((b % TAU) + TAU) % TAU, i] as const).sort((a, b) => a[0] - b[0]);
+  // The same cyclic order, starting from wherever the first one landed.
+  const before = order(bearings).map(([, i]) => i);
+  const after = order(out).map(([, i]) => i);
+  const turn = after.indexOf(before[0]!);
+  assert.deepEqual([...after.slice(turn), ...after.slice(0, turn)], before);
+  const sorted = order(out).map(([b]) => b);
+  for (let k = 0; k < sorted.length; k++) {
+    const next = k + 1 < sorted.length ? sorted[k + 1]! : sorted[0]! + TAU;
+    assert.ok(next - sorted[k]! >= gap - 1e-6, `gap after bearing ${k}`);
+  }
+});

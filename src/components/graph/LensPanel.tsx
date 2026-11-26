@@ -12,7 +12,7 @@ const COLOR_HELP: Record<GraphColor, string> = {
 
 const SHAPE_HELP: Record<GraphShape, string> = {
   galaxy: "Chapters on a wheel, their couplets around them and the ideas gathered in the middle.",
-  lotus: "Each chapter a petal of ten couplets around the rim, with the ideas rising above it in a dome.",
+  lotus: "Each chapter’s ten couplets rise from the rim like the points of a crown. Above them, a ring for each kind of idea: concepts, then mental states, life situations and, at the top, the characters.",
 };
 
 /** Display options for the cosmos: colour encoding and which families of relationships are drawn. */
@@ -33,7 +33,7 @@ export function DisplayPanel() {
           {(
             [
               ["galaxy", "Galaxy"],
-              ["lotus", "Lotus"],
+              ["lotus", "Crown"],
             ] as const
           ).map(([id, name]) => (
             <button key={id} role="radio" aria-checked={shape === id} className="flex-1" onClick={() => setShape(id)}>
