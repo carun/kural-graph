@@ -132,7 +132,7 @@ export function AudioDock() {
                     </div>
                     <div className="label mb-1.5">Speed</div>
                     <div className="seg mb-2 w-full">
-                      {[0.75, 1, 1.25, 1.5].map((r) => (
+                      {[0.25, 0.5, 0.75, 1].map((r) => (
                         <button key={r} className="num flex-1" aria-pressed={a.rate === r} onClick={() => audio.setRate(r)}>
                           {r}×
                         </button>
