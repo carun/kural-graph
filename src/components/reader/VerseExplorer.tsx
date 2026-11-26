@@ -296,12 +296,21 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
 
   return (
     <div className="flex h-full flex-col">
-      <header className="flex h-14 shrink-0 items-center gap-1 border-b border-line pl-4 pr-2">
+      <header className="flex min-h-14 shrink-0 items-center gap-1 border-b border-line py-1 pl-4 pr-2">
         <button className="min-w-0 flex-1 text-left" onClick={() => useGita.getState().openChapter(verse.chapter)} title={`Read chapter ${verse.chapter}`}>
-          <div className="label truncate">
+          {/* Both names, uncut: a long pair wraps, and the Tamil moves down whole rather than splitting. */}
+          <div className="label">
             Chapter {verse.chapter} · {ch?.title}
+            {ch && (
+              <>
+                {" · "}
+                <span lang="ta" className="deva inline-block leading-4">
+                  {ch.name}
+                </span>
+              </>
+            )}
           </div>
-          <div className="text-[14px] font-semibold leading-5 text-text">Couplet {verse.verse} of {ch?.verseCount}</div>
+          <div className="text-[14px] font-semibold leading-5 text-text">Couplet {verse.ref}</div>
         </button>
         <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous couplet" title={prev ? `Kural ${prev.ref}` : undefined}>
           <ChevronLeft size={16} />
