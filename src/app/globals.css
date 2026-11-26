@@ -133,6 +133,8 @@
 html,
 body {
   height: 100%;
+  /* The app never scrolls the page itself, so a pull down past the top of the reader or a sheet must not reload it. */
+  overscroll-behavior-y: none;
 }
 body {
   background: var(--bg);

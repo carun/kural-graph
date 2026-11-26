@@ -175,14 +175,21 @@ export default function App() {
   }, []);
 
   // Keep the URL shareable. Moving to another view adds a history entry, so browser/system Back retraces your path
-  // instead of leaving the app; selections and chapter changes replace the current entry.
+  // instead of leaving the app; chapter changes replace the current entry. Opening a couplet or node adds one too, so
+  // Back (a phone's above all) closes it; moving between couplets while it is open replaces that entry.
   const readerChapter = useGita((s) => s.readerChapter);
   const lastView = useRef<string | null>(null);
+  const lastSelected = useRef<string | null>(null);
   const popping = useRef(false);
+  /** Closing from the page (×, a swipe, Escape) went back over the entry its opening added. */
+  const closingByBack = useRef(false);
   useEffect(() => {
     if (status !== "ready") return;
-    const changedView = lastView.current !== null && lastView.current !== view;
+    const first = lastView.current === null;
+    const changedView = !first && lastView.current !== view;
     lastView.current = view;
+    const wasSelected = lastSelected.current;
+    lastSelected.current = selectedId;
     const fromPop = popping.current;
     popping.current = false;
     const qs = new URLSearchParams();
@@ -190,13 +197,26 @@ export default function App() {
     if (selectedId) qs.set("node", selectedId);
     if (view === "adhyayana") qs.set("chapter", String(readerChapter));
     const next = `${window.location.pathname}${qs.size ? `?${qs}` : ""}`;
-    if (next === window.location.pathname + window.location.search) return;
-    if (changedView && !fromPop) window.history.pushState(null, "", next);
-    else window.history.replaceState(null, "", next);
+    const here = window.location.pathname + window.location.search;
+    if (next === here) return;
+    const h = window.history;
+    if (fromPop) h.replaceState(h.state, "", next);
+    else if (changedView) h.pushState(null, "", next);
+    // The entry remembers the address it was opened from, to know later whether going back would land there.
+    else if (!first && !wasSelected && selectedId) h.pushState({ kgSheet: here }, "", next);
+    else if (wasSelected && !selectedId && h.state?.kgSheet === next) {
+      closingByBack.current = true;
+      h.back();
+    } else h.replaceState(selectedId ? h.state : null, "", next);
   }, [status, view, selectedId, readerChapter]);
   // Back / Forward: restore the view, chapter and selection the URL describes.
   useEffect(() => {
     const onPop = () => {
+      // Our own step back over a closed couplet: the page already shows what that entry describes.
+      if (closingByBack.current) {
+        closingByBack.current = false;
+        return;
+      }
       const qs = new URLSearchParams(window.location.search);
       const ch = Number(qs.get("chapter"));
       const node = qs.get("node");

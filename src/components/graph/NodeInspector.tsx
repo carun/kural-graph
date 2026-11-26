@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BookOpen, ChevronDown, MessagesSquare, Orbit, Play, Spline, Waypoints, X } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { audio } from "@/lib/store/audioStore";
@@ -65,6 +65,11 @@ export function NodeInspector({ nodeId, onClose }: { nodeId: string; onClose: ()
   const setHighlight = useGita((s) => s.setHighlight);
   const n = graphs?.nodeById.get(nodeId);
   const nb = useMemo(() => (graphs ? neighbors(graphs, nodeId) : []), [graphs, nodeId]);
+  // Each node starts at its top, not where the last one was scrolled to. (Braces: scrollTo may return a Promise.)
+  const bodyRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    bodyRef.current?.scrollTo({ top: 0 });
+  }, [nodeId]);
   if (!n || !graphs) return null;
 
   // Each neighbour once per section (two relations between the same pair, e.g. both directions, would repeat it).
@@ -114,12 +119,12 @@ export function NodeInspector({ nodeId, onClose }: { nodeId: string; onClose: ()
           <div className="label">{typeName(n)}</div>
           <div className="truncate text-[14px] font-semibold leading-5 text-text">{n.type === "Chapter" ? `Chapter ${n.number}` : n.label}</div>
         </div>
-        <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">
+        <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" onClick={onClose} aria-label="Close">
           <X size={16} />
         </button>
       </header>
 
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-10 pt-5">
+      <div ref={bodyRef} className="min-h-0 flex-1 overflow-y-auto px-5 pb-10 pt-5">
         <h2 className="text-[24px] font-semibold leading-tight tracking-[-0.015em] text-text">{n.type === "Chapter" ? n.title : n.label}</h2>
         {("sa" in n || n.type === "Chapter") && <div className="deva mt-1 text-[18px] text-text-2">{n.type === "Chapter" ? n.name : "sa" in n ? n.sa : ""}</div>}
         {"en" in n && <div className="serif mt-0.5 text-[15px] text-text-3">{n.en}</div>}

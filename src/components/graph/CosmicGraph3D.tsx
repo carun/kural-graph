@@ -13,7 +13,7 @@ import { useCoarsePointer, useIsDesktop, useIsMobile, useReducedMotion } from "@
 import { loadLayout } from "@/lib/data/loader";
 import { RING_R, WORLD, containForce, fixedPosition, linkDistance, linkStrength, placeThought, ringWave } from "@/lib/graph/layoutParams";
 import { egoPositions, pickEgo, type EgoCandidate, type EgoPick } from "@/lib/graph/ego";
-import { sheetPx } from "@/components/layout/SidePanel";
+import { sheetPx, sheetShowing } from "@/components/layout/SidePanel";
 import { LOTUS_VIEW, lotusPositions, useGraphShape, type GraphColor } from "@/kural/graphShape";
 import { ShapeMorph, drawLine, pointBatches } from "@/kural/shapeMorph";
 import { hubsNear, pickLabels, sizeLabel, type LabelView } from "@/kural/chapterLabels";
@@ -1008,11 +1008,22 @@ export default function CosmicGraph3D() {
     if (!cam?.setViewOffset) return;
     const { w, h } = size;
     // Phones: shift the picture up by half the sheet, so what is selected sits in the part still visible above it.
-    if (dockOpen && mobile) cam.setViewOffset(w, h, 0, (sheetPx(chatOpen && !selectedId ? "full" : sheetSnap, h) - TOP_HUD) / 2, w, h);
-    else if (dockOpen && !desktop) cam.setViewOffset(w, h, 200, 0, w, h);
+    // Frame by frame with the sheet as it moves, so the picture glides with it instead of jumping at each snap.
+    if (mobile) {
+      const follow = () => {
+        const up = Math.max(0, sheetShowing.get() - TOP_HUD) / 2;
+        if (up) cam.setViewOffset(w, h, 0, up, w, h);
+        else cam.clearViewOffset();
+        cam.updateProjectionMatrix();
+        wake(250);
+      };
+      follow();
+      return sheetShowing.on("change", follow);
+    }
+    if (dockOpen && !desktop) cam.setViewOffset(w, h, 200, 0, w, h);
     else cam.clearViewOffset();
     cam.updateProjectionMatrix();
-  }, [dockOpen, mobile, desktop, size, sheetSnap, chatOpen, selectedId]);
+  }, [dockOpen, mobile, desktop, size, wake]);
 
   // Pause rendering when the tab is hidden.
   useEffect(() => {

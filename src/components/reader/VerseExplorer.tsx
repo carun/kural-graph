@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BookOpen, ChevronDown, ChevronLeft, ChevronRight, LoaderCircle, MessagesSquare, NotebookPen, Orbit, Pause, Play, Waypoints, X } from "lucide-react";
 import { useGita, type ScriptChoice } from "@/lib/store/useGitaStore";
 import { audio, useAudio } from "@/lib/store/audioStore";
@@ -254,6 +254,11 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
   const [showMeter, setShowMeter] = useState(false);
   const graphs = useGita((s) => s.graphs);
   const connCount = useMemo(() => (graphs ? neighbors(graphs, verseId).filter((n) => !["BELONGS_TO", "NEXT_VERSE", "SPOKE", "NARRATED"].includes(n.type)).length : 0), [graphs, verseId]);
+  // Each couplet starts at its top, not where the last one was scrolled to. (Braces: scrollTo may return a Promise.)
+  const bodyRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    bodyRef.current?.scrollTo({ top: 0 });
+  }, [verseId]);
   if (!verse || !versesDoc) return null;
   const ch = versesDoc.chapters.find((c) => c.number === verse.chapter);
   const idx = versesDoc.verses.findIndex((v) => v.id === verse.id);
@@ -280,18 +285,18 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
           </div>
           <div className="text-[14px] font-semibold leading-5 text-text">Couplet {verse.verse} of {ch?.verseCount}</div>
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous couplet" title={prev ? `Kural ${prev.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" disabled={!prev} onClick={() => prev && select(prev.id, { fly: view === "cosmos" })} aria-label="Previous couplet" title={prev ? `Kural ${prev.ref}` : undefined}>
           <ChevronLeft size={16} />
         </button>
-        <button className="btn btn-ghost btn-icon" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next couplet" title={next ? `Kural ${next.ref}` : undefined}>
+        <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" disabled={!next} onClick={() => next && select(next.id, { fly: view === "cosmos" })} aria-label="Next couplet" title={next ? `Kural ${next.ref}` : undefined}>
           <ChevronRight size={16} />
         </button>
-        <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">
+        <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" onClick={onClose} aria-label="Close">
           <X size={16} />
         </button>
       </header>
 
-      <div className="min-h-0 flex-1 overflow-y-auto">
+      <div ref={bodyRef} className="min-h-0 flex-1 overflow-y-auto">
         <div className="px-5 pb-6 pt-5">
           <div className="flex items-baseline justify-between gap-3">
             <h2 className="text-[24px] font-semibold tracking-[-0.015em] text-text">Kural {verse.ref}</h2>
@@ -318,11 +323,12 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
             </div>
           )}
 
-          <div className="mt-4 flex flex-wrap gap-1.5">
-            <button className="btn btn-primary max-sm:h-11" onClick={reflect} title="Write what this couplet means to you, or where you disagree. Saved on this device.">
+          {/* Phones: one row that scrolls sideways, so the couplet itself is not pushed below a stack of buttons. */}
+          <div className="mt-4 flex flex-wrap gap-1.5 max-md:-mx-5 max-md:flex-nowrap max-md:overflow-x-auto max-md:px-5 max-md:[scrollbar-width:none] [&>*]:shrink-0 [&>*]:max-sm:h-11">
+            <button className="btn btn-primary" onClick={reflect} title="Write what this couplet means to you, or where you disagree. Saved on this device.">
               <NotebookPen size={14} /> Reflect on this couplet
             </button>
-            <button className="btn max-sm:h-11" aria-pressed={isPlaying} onClick={() => (isCurrent ? audio.toggle() : audio.playVerse(verse.id))}>
+            <button className="btn" aria-pressed={isPlaying} onClick={() => (isCurrent ? audio.toggle() : audio.playVerse(verse.id))}>
               {isCurrent && loading ? <LoaderCircle size={14} className="animate-spin" /> : isPlaying ? <Pause size={14} /> : <Play size={14} />}
               {isPlaying ? "Pause" : "Listen"}
             </button>

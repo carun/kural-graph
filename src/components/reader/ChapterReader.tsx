@@ -1,11 +1,14 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ALargeSmall, ArrowLeft, ArrowRight, AudioLines, BookOpen, Orbit, Pause, Play } from "lucide-react";
+import { ALargeSmall, ArrowLeft, ArrowRight, AudioLines, Orbit, Pause, Play } from "lucide-react";
 import { useGita } from "@/lib/store/useGitaStore";
 import { audio, useAudio } from "@/lib/store/audioStore";
 import { isRegionalScript } from "@/lib/indic/scripts";
-import { getReadingPosition, lessonDoneAt, setReadingPosition } from "@/lib/store/readingPosition";
+import { getReadingPosition, setReadingPosition } from "@/lib/store/readingPosition";
+import { useIsMobile } from "@/lib/hooks/useMedia";
+import { useElementHeight } from "@/lib/hooks/useElementHeight";
+import { sheetPx } from "@/components/layout/SidePanel";
 import { ScriptPicker, verseLines } from "./VerseExplorer";
 import { Lesson } from "./Lesson";
 import { IastKey, OldView, chapterGroups, englishBy, inOwnWords, partOf } from "@/kural/reader";
@@ -75,9 +78,13 @@ export function ChapterReader() {
   const audioChapter = useAudio((s) => s.chapter);
   const playing = useAudio((s) => s.playing);
   const lessonOpen = useGita((s) => s.lessonOpen);
+  const chatOpen = useGita((s) => s.chatOpen);
+  const sheetSnap = useGita((s) => s.sheetSnap);
+  const mobile = useIsMobile();
   const scrollRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
-  const [lessonDone] = useState(lessonDoneAt);
+  const [root, setRoot] = useState<HTMLDivElement | null>(null);
+  const rootH = useElementHeight(root);
   const ch = versesDoc?.chapters.find((c) => c.number === chapterNo);
   const verses = versesDoc?.verses.filter((v) => v.chapter === chapterNo) || [];
   // With no recording of its own, a chapter plays couplet by couplet, and this button still pauses that.
@@ -95,11 +102,34 @@ export function ChapterReader() {
       scrollRef.current?.scrollTo({ top: 0 });
     }
   }, [chapterNo, lessonOpen]);
+  // On a phone the sheet covers the lower part of the reader. Below full, a couplet it should show goes just under
+  // the toolbar, above the sheet, unless it is already in sight there. Returns false when there is no sheet to avoid.
+  const sheetOpen = mobile && (!!selectedId || chatOpen) && sheetSnap !== "full";
+  const revealAboveSheet = useCallback(
+    (id: string) => {
+      const el = scrollRef.current;
+      const a = document.getElementById(`reader-${id}`);
+      if (!sheetOpen || !el || !root || !a) return false;
+      const box = root.getBoundingClientRect();
+      const top = el.getBoundingClientRect().top;
+      const r = a.getBoundingClientRect();
+      if (r.top < top || r.bottom > box.bottom - sheetPx(sheetSnap, box.height) - 8) el.scrollTo({ top: el.scrollTop + r.top - top - 12, behavior: "smooth" });
+      return true;
+    },
+    [sheetOpen, root, sheetSnap],
+  );
   // After the one above, so that moving to a new chapter with the audio ends on the couplet being read.
   useEffect(() => {
     if (!audioVerse || !useAudio.getState().follow) return;
-    document.getElementById(`reader-${audioVerse}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (!revealAboveSheet(audioVerse)) document.getElementById(`reader-${audioVerse}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    // Only when the couplet being read changes, not when the sheet moves.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioVerse, chapterNo]);
+  // The couplet open in the sheet stays in sight above it: on tapping it, on previous and next, and when the sheet
+  // comes down from full.
+  useEffect(() => {
+    if (selectedId?.startsWith("K_")) revealAboveSheet(selectedId);
+  }, [selectedId, revealAboveSheet]);
   // 133 chapters: keep the current one in sight in the list.
   useEffect(() => {
     const nav = navRef.current;
@@ -136,7 +166,7 @@ export function ChapterReader() {
   const lineCls = script === "deva" ? "deva text-[18px] leading-[1.8] sm:text-[19px]" : isRegionalScript(script) ? "indic text-[18px]" : "serif text-[17px] leading-[1.6]";
 
   return (
-    <div className="absolute inset-0 flex bg-bg">
+    <div ref={setRoot} className="absolute inset-0 flex bg-bg">
       <nav ref={navRef} className="hidden w-[248px] shrink-0 overflow-y-auto border-r border-line pb-3 lg:block" aria-label="Chapters">
         {groups.map((p) => (
           <section key={p.n} aria-label={`Part ${p.n}, ${p.title}`}>
@@ -225,14 +255,6 @@ export function ChapterReader() {
                   <Orbit size={14} /> See in graph
                 </button>
               </div>
-              <button className="group mt-6 flex w-full items-start gap-3 rounded-3 border border-accent-line bg-accent-soft px-4 py-3.5 text-left transition-colors hover:bg-surface-2" onClick={() => useGita.getState().openLesson(true)}>
-                <BookOpen size={17} className="mt-0.5 shrink-0 text-accent-text" />
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold text-text">{lessonDone ? "Revisit: harsh words, when sweet ones are there" : "New to the Kural? Start with one idea"}</span>
-                  <span className="mt-0.5 block text-[13px] leading-5 text-text-2">Kural 100: its setting, a plain explanation, an example, and your own view. About five minutes.</span>
-                </span>
-                <ArrowRight size={15} className="mt-1 shrink-0 text-text-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
             </header>
 
             <div className="mt-12 border-t border-line pt-6">
@@ -256,7 +278,8 @@ export function ChapterReader() {
                         {v.ref}
                       </button>
                       <button
-                        className={`btn btn-ghost btn-icon btn-sm -ml-1.5 ${active && playing ? "" : "opacity-0 focus-visible:opacity-100 group-hover:opacity-100 max-md:opacity-60"}`}
+                        // A 44px target on phones, from a button that has to fit the narrow number column.
+                        className={`btn btn-ghost btn-icon btn-sm relative -ml-1.5 max-sm:before:absolute max-sm:before:-inset-2 max-sm:before:content-[''] ${active && playing ? "" : "opacity-0 focus-visible:opacity-100 group-hover:opacity-100 max-md:opacity-60"}`}
                         onClick={(e) => (e.stopPropagation(), active ? audio.toggle() : audio.playVerse(v.id))}
                         aria-label={active && playing ? `Pause ${v.ref}` : `Listen to ${v.ref}`}
                       >
@@ -309,6 +332,8 @@ export function ChapterReader() {
                 </button>
               )}
             </nav>
+            {/* Room for the last couplets to come up above the sheet. */}
+            {mobile && selectedId && <div aria-hidden style={{ height: Math.max(0, sheetPx("half", rootH) - 96) }} />}
           </div>
           )}
         </div>

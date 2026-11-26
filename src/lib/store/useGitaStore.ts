@@ -83,6 +83,8 @@ interface GitaState {
   egoSummary: { id: string; shown: number; total: number } | null;
   /** Phone bottom sheet height: a peek keeps the graph visible; half suits reading; full for long content. */
   sheetSnap: "peek" | "half" | "full";
+  /** The size a phone sheet opens at outside the graph views: the size the reader last left it at. */
+  sheetSize: "half" | "full";
 
   init: () => Promise<void>;
   ragContext: () => RagContext | null;
@@ -115,6 +117,7 @@ interface GitaState {
   fly: (id: string) => void;
   setGraphMode: (m: "world" | "focus") => void;
   setSheetSnap: (s: "peek" | "half" | "full") => void;
+  setSheetSize: (s: "half" | "full") => void;
 }
 
 /** Lineage opens on what was last traced, else the verse last read, else BG 2.47 (first visit). */
@@ -194,6 +197,7 @@ export const useGita = create<GitaState>((set, get) => ({
   graphMode: "focus",
   egoSummary: null,
   sheetSnap: "half",
+  sheetSize: "half",
 
   init: async () => {
     if (get().status === "loading" || get().status === "ready") return;
@@ -219,6 +223,13 @@ export const useGita = create<GitaState>((set, get) => ({
             return localStorage.getItem("gitaviswa:graph-mode") === "world" ? "world" : "focus";
           } catch {
             return "focus";
+          }
+        })(),
+        sheetSize: (() => {
+          try {
+            return localStorage.getItem("gitaviswa:sheet-size") === "full" ? "full" : "half";
+          } catch {
+            return "half";
           }
         })(),
         status: "ready",
@@ -308,6 +319,12 @@ export const useGita = create<GitaState>((set, get) => ({
     } catch {}
   },
   setSheetSnap: (sheetSnap) => set({ sheetSnap }),
+  setSheetSize: (sheetSize) => {
+    set({ sheetSize });
+    try {
+      localStorage.setItem("gitaviswa:sheet-size", sheetSize);
+    } catch {}
+  },
   setTheme: (theme) => set({ theme }),
   setDockTab: (dockTab) => set({ dockTab }),
   setWelcomeOpen: (welcomeOpen) => {

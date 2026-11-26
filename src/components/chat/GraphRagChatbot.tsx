@@ -200,11 +200,11 @@ export function GraphRagChatbot({ onClose }: { onClose: () => void }) {
           <div className="truncate text-[12px] text-text-3">{conn ? `${PROVIDERS[conn.provider].name}, ${conn.model}` : "Offline: answers are composed from the graph"}</div>
         </div>
         {messages.length > 0 && (
-          <button className="btn btn-ghost btn-icon" title="Clear conversation" aria-label="Clear conversation" onClick={() => (setMessages(() => []), setHighlight(null))}>
+          <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" title="Clear conversation" aria-label="Clear conversation" onClick={() => (setMessages(() => []), setHighlight(null))}>
             <Trash2 size={15} />
           </button>
         )}
-        <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close Ask">
+        <button className="btn btn-ghost btn-icon max-sm:h-11 max-sm:w-11" onClick={onClose} aria-label="Close Ask">
           <X size={16} />
         </button>
       </header>
