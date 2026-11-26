@@ -20,6 +20,8 @@ export const RELATIONS: Record<RelationType, RelationMeta> = {
   NARRATED: { verb: "narrates", inverse: "is narrated by", group: "structure", pathCost: 7, rag: 0.03 },
   ADDRESSES: { verb: "addresses", inverse: "is addressed by", group: "structure", pathCost: 5, rag: 0.05 },
   MENTIONS_CHARACTER: { verb: "names", inverse: "is named in", group: "lexical", pathCost: 5, rag: 0.08 },
+  // Someone a couplet never names, but parimēlaḻagar's note on who speaks and to whom puts in its scene.
+  INVOLVES_CHARACTER: { verb: "involves", inverse: "appears in", group: "structure", pathCost: 5, rag: 0.05 },
   MENTIONS_CONCEPT: { verb: "speaks of", inverse: "is spoken of in", group: "lexical", pathCost: 1.8, rag: 0.45 },
   DEFINES_CONCEPT: { verb: "defines", inverse: "is defined in", group: "curated", pathCost: 1, rag: 1 },
   EXPOUNDS: { verb: "expounds", inverse: "is expounded in", group: "curated", pathCost: 2.2, rag: 0.25 },

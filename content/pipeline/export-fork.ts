@@ -51,7 +51,29 @@ const SPEAKERS: Record<string, { id: string; label: string; tamil: string; role:
   she: { id: 'character:she', label: 'She', tamil: 'தலைவி', role: 'The woman in love', desc: 'The woman of Part 3, who speaks in most of its couplets.' },
   maid: { id: 'character:friend', label: 'The Friend', tamil: 'தோழி', role: 'Her friend', desc: 'Her friend in Part 3, who speaks to them both.' },
 };
-const POET = { id: 'character:tiruvalluvar', label: 'Tiruvalluvar', tamil: 'திருவள்ளுவர்', role: 'The poet', desc: 'The poet of the Kural, who speaks in Parts 1 and 2.' };
+// Parts 1 and 2 have no speaker. Tiruvalluvar wrote them, but no couplet names him, so he isn't a character.
+
+/** Everyone else in the couplets: the figures they name, and the people parimēlaḻagar puts in a couplet's scene. */
+interface Other {
+  id: string;
+  label: string;
+  tamil: string;
+  role: string;
+  desc: string;
+  named?: { n: number; as: string[]; why?: string; basis?: 'explicit' | 'inferred' }[];
+  involved?: { n: number; why: string }[];
+  addressedBy?: { by: string; why: string }[];
+}
+const others: Other[] = readJson<{ characters: Other[] }>(join(ROOT, 'data', 'annotations', 'characters.json')).characters;
+for (const o of others) {
+  const id = `character:${o.id}`;
+  if (Object.values(SPEAKERS).some((c) => c.id === id) || others.filter((x) => x.id === o.id).length > 1) throw new Error(`characters.json: ${o.id} is used twice`);
+  for (const { n } of [...(o.named ?? []), ...(o.involved ?? [])]) if (!Number.isInteger(n) || n < 1 || n > 1330) throw new Error(`characters.json: ${o.id} lists couplet ${n}`);
+  for (const { n, as } of o.named ?? []) if (!as?.length) throw new Error(`characters.json: ${o.id} needs the word Kural ${n} names them by`);
+  for (const { n, why } of o.involved ?? []) if (!why) throw new Error(`characters.json: ${o.id} needs a reason for Kural ${n}`);
+  for (const { by, why } of o.addressedBy ?? []) if (!SPEAKERS[by] || !why) throw new Error(`characters.json: ${o.id} is addressed by ${by}, who needs to be a speaker, with a reason`);
+  if (!o.named?.length && !o.involved?.length) throw new Error(`characters.json: ${o.id} needs at least one couplet`);
+}
 
 /** Our node ids, in the prefixes his app reads. */
 function idOf(id: string): string {
@@ -69,7 +91,7 @@ function idOf(id: string): string {
   throw new Error(`no mapping for ${id}`);
 }
 
-const speakerOf = (c: any): string => (c.voice ? SPEAKERS[c.voice.speaker]!.id : POET.id).replace('character:', '');
+const speakerOf = (c: any): string => (c.voice ? SPEAKERS[c.voice.speaker]!.id.replace('character:', '') : '');
 const refOf = (c: any): string => String(c.n);
 
 // His word-by-word grid comes from the commentator's own gloss, written "word= meaning;".
@@ -138,8 +160,11 @@ for (const v of versesOut) {
 
 const spokenCount = new Map<string, number>();
 for (const v of versesOut) spokenCount.set(v.speaker, (spokenCount.get(v.speaker) ?? 0) + 1);
-for (const c of [POET, ...Object.values(SPEAKERS)]) {
+for (const c of Object.values(SPEAKERS)) {
   nodes.push({ id: c.id, type: 'Character', label: c.label, sa: c.tamil, iast: toRevisedIast(c.tamil), role: c.role, desc: c.desc, side: '', versesSpoken: spokenCount.get(c.id.replace('character:', '')) ?? 0 });
+}
+for (const o of others) {
+  nodes.push({ id: `character:${o.id}`, type: 'Character', label: o.label, sa: o.tamil, iast: toRevisedIast(o.tamil), role: o.role, desc: o.desc, side: '', versesSpoken: 0 });
 }
 
 for (const v of ideas) {
@@ -218,7 +243,14 @@ for (const { chapter, after, reason } of flows.chapters) {
   if (existing) existing.props = { why: reason };
   else push(chapterId(after), chapterId(chapter), 'NEXT_CHAPTER', { why: reason });
 }
-for (const v of versesOut) push(`character:${v.speaker}`, v.id, 'SPOKE');
+for (const v of versesOut) if (v.speaker) push(`character:${v.speaker}`, v.id, 'SPOKE');
+for (const o of others) {
+  const id = `character:${o.id}`;
+  for (const { n, as, why, basis } of o.named ?? []) push(verseId(n), id, 'MENTIONS_CHARACTER', { epithets: as, why: why ?? `Named as ${as.join(', ')}.`, basis: basis ?? 'explicit' });
+  // Known only from his notes, so an interpretation, not something the couplet says.
+  for (const { n, why } of o.involved ?? []) push(verseId(n), id, 'INVOLVES_CHARACTER', { why, basis: 'inferred' });
+  for (const { by, why } of o.addressedBy ?? []) push(SPEAKERS[by]!.id, id, 'ADDRESSES', { why, basis: 'inferred' });
+}
 
 // --- Paths through the book
 const COLOURS = ['#D4AF37', '#3987e5', '#199e70', '#d95926', '#9085e9', '#c874b2', '#2fa8b5', '#e3a44b'];
@@ -246,7 +278,7 @@ const sources = [
 
 const graphDoc = {
   meta: { name: 'Kural Graph', version: '1.0.0', generatedAt, numbering, license, sources },
-  schema: { nodeLabels: { Chapter: '133 chapters', Verse: '1,330 couplets', Character: 'the poet and the speakers of Part 3', SanskritConcept: 'themes, roles and images', Emotion: 'virtues, vices and states of mind', LifeDilemma: 'life situations', PersonalThought: 'private thoughts, on this device only' }, relations: {} },
+  schema: { nodeLabels: { Chapter: '133 chapters', Verse: '1,330 couplets', Character: 'the speakers of Part 3, and the others in the couplets', SanskritConcept: 'themes, roles and images', Emotion: 'virtues, vices and states of mind', LifeDilemma: 'life situations', PersonalThought: 'private thoughts, on this device only' }, relations: {} },
   categories: { theme: 'Themes', role: 'Roles', image: 'Images' },
   threads,
   dialogues: [],
@@ -280,6 +312,11 @@ writeFileSync(join(OUT, 'kural-graph.json'), spelled(graphDoc));
 const layoutFile = join(OUT, 'kural-layout.json');
 const shown = new Set(nodes.map((n) => n.id));
 const lotus = Object.fromEntries(graph.nodes.flatMap(([id, type, , x, y, z]: any[]) => (['part', 'division'].includes(graph.nodeTypes[type]) || !shown.has(idOf(id)) ? [] : [[idOf(id), [x, y, z]]])));
+// The characters beyond the speakers aren't in the pipeline's graph: each sits just inside the couplets it is linked to.
+for (const o of others) {
+  const at: number[][] = [...(o.named ?? []), ...(o.involved ?? [])].map(({ n }) => lotus[verseId(n)]);
+  lotus[`character:${o.id}`] = [0, 1, 2].map((i) => Math.round((at.reduce((sum, p) => sum + p[i]!, 0) / at.length) * 0.88 * 10) / 10);
+}
 writeFileSync(layoutFile, JSON.stringify({ ...(existsSync(layoutFile) ? readJson<any>(layoutFile) : { kind: 'gitaviswa-layout', version: 1, positions: {} }), lotus, lotusRing: 1000 }));
 writeFileSync(join(OUT, 'kural-verses.json'), spelled(versesDoc));
 for (const c of couplets) {

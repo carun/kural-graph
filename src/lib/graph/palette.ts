@@ -19,7 +19,7 @@ export const KIND_META: Record<NodeKind, { label: string; shape: NodeShape; hint
   afflictive: { label: "Vices and feelings", shape: "sphere", hint: "Anger, envy, grief and the other states the Kural warns of or gives voice to" },
   healing: { label: "Virtues", shape: "sphere", hint: "Compassion, truthfulness, forgiveness: the states it commends" },
   dilemma: { label: "Life situations", shape: "ring", hint: "Everyday situations the couplets speak to" },
-  character: { label: "Characters", shape: "sphere", hint: "The poet, and the three who speak in Part 3" },
+  character: { label: "Characters", shape: "sphere", hint: "The three who speak in Part 3, and the others in the couplets" },
   personal: { label: "My reflections", shape: "halo", hint: "Your journal entries, stored only in this browser" },
 };
 

@@ -1,0 +1,181 @@
+{
+  "about": "Characters beyond the poet and the three speakers of Part 3. `named`: couplets that name the figure, with the word they use, in its dictionary form; a `why` and `basis` (inferred) mark a name that rests on parimēlaḻagar’s reading. `involved`: couplets whose setting, in parimēlaḻagar’s note on who speaks and to whom, includes someone the couplet never names. `addressedBy`: speakers (he, she or maid) who talk to them, and where. export-fork.ts turns each into a Character node and its links, and places it in the lotus beside its couplets.",
+  "characters": [
+    {
+      "id": "god",
+      "label": "God",
+      "tamil": "இறைவன்",
+      "role": "Praised in Chapter 1",
+      "desc": "The subject of the first chapter, praised in each couplet by a different name: the First, the one of pure knowledge, the one without likes or dislikes, the one beyond compare.",
+      "named": [
+        { "n": 1, "as": ["ஆதி பகவன்"] },
+        { "n": 2, "as": ["வாலறிவன்"] },
+        { "n": 3, "as": ["மலர்மிசை ஏகினான்"] },
+        { "n": 4, "as": ["வேண்டுதல் வேண்டாமை இலான்"] },
+        { "n": 5, "as": ["இறைவன்"] },
+        { "n": 6, "as": ["பொறிவாயில் ஐந்தவித்தான்"] },
+        { "n": 7, "as": ["தனக்குவமை இல்லாதான்"] },
+        { "n": 8, "as": ["அறவாழி அந்தணன்"] },
+        { "n": 9, "as": ["எண்குணத்தான்"] },
+        { "n": 10, "as": ["இறைவன்"] }
+      ]
+    },
+    {
+      "id": "indra",
+      "label": "Indra",
+      "tamil": "இந்திரன்",
+      "role": "King of the deities",
+      "desc": "Named in Kural 25 as “the lord of those in the wide sky”, witness enough to the power of one who has quenched the desires of the five senses.",
+      "named": [{ "n": 25, "as": ["அகல்விசும்புளார் கோமான்", "இந்திரன்"] }]
+    },
+    {
+      "id": "tirumal",
+      "label": "Tirumal",
+      "tamil": "திருமால்",
+      "role": "Vishnu, who measured the worlds",
+      "desc": "Named in Kural 610 as “the one who measured with his feet”: Tirumal, who took the worlds in three strides. A king who never slackens gains all that he strode across.",
+      "named": [{ "n": 610, "as": ["அடியளந்தான்"] }]
+    },
+    {
+      "id": "lakshmi",
+      "label": "Lakshmi",
+      "tamil": "திருமகள்",
+      "role": "Goddess of fortune",
+      "desc": "Fortune as a goddess. She lives with the generous host and the hard worker, and hands the envious over to her elder sister.",
+      "named": [
+        { "n": 84, "as": ["செய்யாள்"] },
+        { "n": 167, "as": ["செய்யவள்"] },
+        { "n": 179, "as": ["திரு"], "why": "Named as திரு, fortune, which parimēlaḻagar reads as the goddess.", "basis": "inferred" },
+        { "n": 519, "as": ["திரு"], "why": "Named as திரு, fortune, which parimēlaḻagar reads as the goddess.", "basis": "inferred" },
+        { "n": 617, "as": ["தாமரையினாள்"] }
+      ]
+    },
+    {
+      "id": "mudevi",
+      "label": "Mūdēvi",
+      "tamil": "மூதேவி",
+      "role": "Goddess of misfortune, Lakshmi’s elder sister",
+      "desc": "Misfortune as a goddess. She lives in sloth, and gambling is called by her name.",
+      "named": [
+        { "n": 167, "as": ["தவ்வை"] },
+        { "n": 617, "as": ["மாமுகடி"] },
+        { "n": 936, "as": ["முகடி"] }
+      ]
+    },
+    {
+      "id": "death",
+      "label": "Death",
+      "tamil": "கூற்றுவன்",
+      "role": "The taker of life",
+      "desc": "Death as a god who takes lives. He cannot reach one who never kills, and in Part 3 her look is likened to him.",
+      "named": [
+        { "n": 269, "as": ["கூற்றம்"] },
+        { "n": 326, "as": ["கூற்று"] },
+        { "n": 765, "as": ["கூற்று"] },
+        { "n": 894, "as": ["கூற்றம்"] },
+        { "n": 1050, "as": ["கூற்று"] },
+        { "n": 1083, "as": ["கூற்று"] },
+        { "n": 1085, "as": ["கூற்றம்"] }
+      ]
+    },
+    {
+      "id": "kaman",
+      "label": "Kāmaṉ",
+      "tamil": "காமன்",
+      "role": "God of desire",
+      "desc": "Named once, in Kural 1197. She asks whether the god of desire, who torments only one of the two lovers, cannot see her pain.",
+      "named": [{ "n": 1197, "as": ["காமன்"] }]
+    },
+    {
+      "id": "anangu",
+      "label": "Aṇaṅgu",
+      "tamil": "அணங்கு",
+      "role": "A goddess who strikes",
+      "desc": "A divine woman who takes life through desire, in parimēlaḻagar’s words. He wonders if she is one when he first sees her, and the embrace of false women is called one.",
+      "named": [
+        { "n": 918, "as": ["அணங்கு"] },
+        { "n": 1081, "as": ["அணங்கு"] },
+        { "n": 1082, "as": ["தாக்கணங்கு"] }
+      ]
+    },
+    {
+      "id": "deities",
+      "label": "Deities",
+      "tamil": "தேவர்",
+      "role": "The deities of the sky",
+      "desc": "The deities together, named in passing: even their worship fails without rain, and one who lives well on earth is placed among them.",
+      "named": [
+        { "n": 18, "as": ["வானோர்"] },
+        { "n": 43, "as": ["தெய்வம்"] },
+        { "n": 50, "as": ["தெய்வம்"] },
+        { "n": 55, "as": ["தெய்வம்"] },
+        { "n": 121, "as": ["அமரர்"] },
+        { "n": 234, "as": ["புத்தேள் உலகு"] },
+        { "n": 346, "as": ["வானோர்"] },
+        { "n": 702, "as": ["தெய்வம்"] },
+        { "n": 1023, "as": ["தெய்வம்"] },
+        { "n": 1073, "as": ["தேவர்"] }
+      ]
+    },
+    {
+      "id": "ancestors",
+      "label": "The Ancestors",
+      "tamil": "தென்புலத்தார்",
+      "role": "The departed forebears",
+      "desc": "Named in Kural 43, first of the five a householder keeps: the ancestors, the deities, guests, kin and himself.",
+      "named": [{ "n": 43, "as": ["தென்புலத்தார்"] }]
+    },
+    {
+      "id": "his-friend",
+      "label": "His Friend",
+      "tamil": "பாங்கன்",
+      "role": "The man’s friend",
+      "desc": "His friend in Part 3, known from parimēlaḻagar’s notes. He chides the man for his love, arranges their meeting, and later carries his message. He never speaks a couplet.",
+      "addressedBy": [{ "by": "he", "why": "He speaks to his friend in Kurals 1103, 1113 and 1201, in parimēlaḻagar’s notes." }],
+      "involved": [
+        { "n": 1103, "why": "Said to his friend, who told him that one fit for the highest joy shouldn’t be so taken with this small one." },
+        { "n": 1104, "why": "Said at the end of the meeting his friend arranged." },
+        { "n": 1113, "why": "He tells his friend, who is bringing them together, what she is like." },
+        { "n": 1114, "why": "Said as he goes to her, at the meeting his friend arranged." },
+        { "n": 1201, "why": "Said to his friend, who went to her as his messenger." }
+      ]
+    },
+    {
+      "id": "foster-mother",
+      "label": "The Foster-Mother",
+      "tamil": "செவிலி",
+      "role": "The woman’s foster-mother",
+      "desc": "The woman’s foster-mother in Part 3, known from parimēlaḻagar’s note on Kural 1140.",
+      "involved": [{ "n": 1140, "why": "Her friend has told the foster-mother of the love, and then teased her about it. Cross with her friend, she says this to herself." }]
+    },
+    {
+      "id": "other-women",
+      "label": "The Other Women",
+      "tamil": "பரத்தையர்",
+      "role": "The courtesans he strays to",
+      "desc": "The courtesans he goes to in Part 3, known from parimēlaḻagar’s notes on the couplets where she sulks when he comes back.",
+      "involved": [
+        { "n": 1257, "why": "He has come back from other women, and she gave in. Asked by her friend why she didn’t sulk, she answers." },
+        { "n": 1303, "why": "He has come back from other women. Sulking, she says this to him." },
+        { "n": 1304, "why": "The same scene. In parimēlaḻagar’s reading, “those who sulk” are the other women, now cross with him." },
+        { "n": 1311, "why": "In parimēlaḻagar’s reading, the “womanly ones” whose eyes all feast on him are the courtesans." }
+      ]
+    },
+    {
+      "id": "town",
+      "label": "The Town",
+      "tamil": "ஊரார்",
+      "role": "The townsfolk who gossip",
+      "desc": "The people of her town in Part 3, whose gossip about the lovers she fears and, at times, welcomes.",
+      "named": [
+        { "n": 1129, "as": ["இவ் வூர்"] },
+        { "n": 1130, "as": ["இவ் வூர்"] },
+        { "n": 1142, "as": ["இவ் வூர்"] },
+        { "n": 1143, "as": ["ஊர்"] },
+        { "n": 1147, "as": ["ஊரவர்"] },
+        { "n": 1150, "as": ["இவ் வூர்"] },
+        { "n": 1180, "as": ["ஊரார்"] }
+      ]
+    }
+  ]
+}

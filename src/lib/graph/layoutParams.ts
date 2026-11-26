@@ -11,11 +11,11 @@ export const VELOCITY_DECAY = 0.33;
 export const CHARGE = { strength: -22, distanceMax: 420 };
 
 export const LINK_DIST: Record<string, number> = {
-  BELONGS_TO: 34, NEXT_VERSE: 12, SPOKE: 240, NARRATED: 240, ADDRESSES: 60, MENTIONS_CHARACTER: 180, MENTIONS_CONCEPT: 120,
+  BELONGS_TO: 34, NEXT_VERSE: 12, SPOKE: 240, NARRATED: 240, ADDRESSES: 60, MENTIONS_CHARACTER: 180, INVOLVES_CHARACTER: 180, MENTIONS_CONCEPT: 120,
   MENTIONS_STATE: 120, EXPOUNDS: 150, NEXT_CHAPTER: 120,
 };
 export const LINK_STR: Record<string, number> = {
-  BELONGS_TO: 0.8, NEXT_VERSE: 0.25, SPOKE: 0.003, NARRATED: 0.003, ADDRESSES: 0.02, MENTIONS_CHARACTER: 0.008, MENTIONS_CONCEPT: 0.025,
+  BELONGS_TO: 0.8, NEXT_VERSE: 0.25, SPOKE: 0.003, NARRATED: 0.003, ADDRESSES: 0.02, MENTIONS_CHARACTER: 0.008, INVOLVES_CHARACTER: 0.008, MENTIONS_CONCEPT: 0.025,
   MENTIONS_STATE: 0.025, EXPOUNDS: 0.04, NEXT_CHAPTER: 0,
 };
 export const linkDistance = (type: string) => LINK_DIST[type] ?? 85;
@@ -36,7 +36,6 @@ export function fixedPosition(node: { id: string; type: string; number?: number 
     const th = chapterAngle(node.number);
     return [RING_R * Math.cos(th), ringWave(th), RING_R * Math.sin(th)];
   }
-  if (node.id === "character:tiruvalluvar") return [0, 0, 0];
   return null;
 }
 

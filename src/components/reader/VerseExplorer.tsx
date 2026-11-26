@@ -17,7 +17,8 @@ import { PadacchedaLexicon } from "./PadacchedaLexicon";
 import { Perspectives } from "./Perspectives";
 import { IastKey, OldView, englishBy, inOwnWords } from "@/kural/reader";
 
-const SPEAKER: Record<string, string> = { tiruvalluvar: "Tiruvalluvar", he: "He", she: "She", friend: "The Friend" };
+/** Part 3's speakers. Parts 1 and 2 have none: everyone knows Tiruvalluvar wrote them, and no couplet names him. */
+const SPEAKER: Record<string, string> = { he: "He", she: "She", friend: "The Friend" };
 const PRIMARY_SCRIPTS: { id: ScriptChoice; label: string }[] = [
   { id: "deva", label: "தமிழ்" },
   { id: "iast", label: "Revised IAST" },
@@ -208,7 +209,7 @@ function Connections({ verse }: { verse: Verse }) {
       ["Life situations", (t) => t === "ADDRESSES_DILEMMA"],
       ["States of mind", (t) => ["HEALS", "CULTIVATES", "DEPICTS_STATE", "MENTIONS_STATE"].includes(t)],
       ["Concepts", (t) => t === "DEFINES_CONCEPT" || t === "MENTIONS_CONCEPT"],
-      ["People named", (t) => t === "MENTIONS_CHARACTER"],
+      ["People", (t) => t === "MENTIONS_CHARACTER" || t === "INVOLVES_CHARACTER"],
     ];
     return def.map(([title, f]) => [title, nb.filter((n) => f(n.type))] as const).filter(([, l]) => l.length);
   }, [graphs, verse.id]);
@@ -335,9 +336,7 @@ export function VerseExplorer({ verseId, onClose }: { verseId: string; onClose: 
               <span className="chip shrink-0">{verse.meter.name}</span>
             )}
           </div>
-          <div className="mt-0.5 text-[13px] text-text-3">
-            {SPEAKER[verse.speaker]}
-          </div>
+          {SPEAKER[verse.speaker] && <div className="mt-0.5 text-[13px] text-text-3">{SPEAKER[verse.speaker]}</div>}
           {verse.uvacha?.tr && verse.uvacha.tr !== SPEAKER[verse.speaker] && <p className="mt-1 text-[13px] leading-5 text-text-2">{verse.uvacha.tr}</p>}
           {!verse.canonical && <div className="mt-2"><Notice>This verse appears in some recensions but not in the traditional count of 700.</Notice></div>}
 

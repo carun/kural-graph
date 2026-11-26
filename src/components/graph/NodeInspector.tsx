@@ -87,7 +87,7 @@ export function NodeInspector({ nodeId, onClose }: { nodeId: string; onClose: ()
       // Shown by <WalkDetails />: what the walk shows, in its order, so a couplet it holds back can't return here.
       break;
     case "Character":
-      sections.push(["In conversation with", of(["ADDRESSES"])], ["Named in", of(["MENTIONS_CHARACTER"], false)]);
+      sections.push(["In conversation with", of(["ADDRESSES"])], ["Named in", of(["MENTIONS_CHARACTER"], false)], ["Appears in", of(["INVOLVES_CHARACTER"], false)]);
       break;
     case "Chapter":
       sections.push(["Main themes", of(["EXPOUNDS"], true)], ["Neighbouring chapters", of(["NEXT_CHAPTER"])]);

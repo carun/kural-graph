@@ -15,7 +15,7 @@ The first run downloads its sources into `content/.cache/`, which takes a few mi
 |---|---|
 | `data/clean/` | The texts. `tamil.json` and `parimelazhagar.json` are rebuilt from the downloads, with `tamil-fixes.yaml` applied. The other translators and commentators are hand-checked files, so edit those directly: each lists its corrections and sources. |
 | `data/readings/` | The plain reading and parimēlaḻagar's reading of each chapter |
-| `data/annotations/` | The links between couplets and ideas, and the feelings, walks and chains |
+| `data/annotations/` | The links between couplets and ideas, the feelings, walks and chains, and the characters beyond the four speakers (`characters.json`) |
 | `data/ontology/` | The ideas and what each one means |
 | `data/eval/` | `walks.md`, which a test holds the walks to, and where the Tamil witnesses disagree |
 | `annotation/` | The guides for writing annotations and readings, including the table of key words |

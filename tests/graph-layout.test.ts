@@ -17,12 +17,11 @@ const layout = read("../public/data/kural-layout.json") as { positions: Record<s
 const graphs = buildGraphs(data);
 const reach = (id: string) => Math.hypot(layout.positions[id][0], layout.positions[id][2]);
 
-test("every point has a place in both shapes, except the poet in the lotus, who keeps the centre", () => {
+test("every point has a place in both shapes", () => {
   for (const n of data.nodes) {
     assert.ok(layout.positions[n.id], `${n.id} in the galaxy`);
-    if (n.id !== "character:tiruvalluvar") assert.ok(layout.lotus[n.id], `${n.id} in the lotus`);
+    assert.ok(layout.lotus[n.id], `${n.id} in the lotus`);
   }
-  assert.deepEqual(layout.positions["character:tiruvalluvar"], [0, 0, 0]);
 });
 
 test("chapters keep their ring, with a gap before each Part", () => {

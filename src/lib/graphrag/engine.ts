@@ -49,7 +49,7 @@ export interface Retrieval {
 }
 
 const HUB_DEGREE = 60;
-const SPEAKER_NAME: Record<string, string> = { tiruvalluvar: "Tiruvalluvar", he: "the man in love", she: "the woman in love", friend: "her friend" };
+const SPEAKER_NAME: Record<string, string> = { he: "the man in love", she: "the woman in love", friend: "her friend" };
 
 /** Separates a relation from its curated explanation in a retrieval reason ("heals Krodha (Anger): …"). */
 export const WHY_SEP = ": ";
@@ -250,9 +250,10 @@ function verseBlock(ctx: RagContext, id: string, reasons: string[]) {
   const def = String(ctx.versesDoc.meta.defaults.en);
   const en = v.translations.en?.[def] || Object.values(v.translations.en || {})[0] || "";
   const alt = v.translations.en?.["2"];
+  // Only Part 3 has speakers.
   const speaker = SPEAKER_NAME[v.speaker] || v.speaker;
   return [
-    `[K${v.ref}], spoken by ${speaker}`,
+    `[K${v.ref}]${speaker ? `, spoken by ${speaker}` : ""}`,
     `  Tamil: ${v.sanskrit.join(" ")}`,
     `  Romanised: ${v.iast.join(" ")}`,
     `  Plain reading: ${en.replace(/\s+/g, " ").slice(0, 600)}`,

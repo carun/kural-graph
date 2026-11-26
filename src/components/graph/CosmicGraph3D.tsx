@@ -145,7 +145,7 @@ function radiusOf(d: GraphNode, degree: number, maxDegree: number) {
     case "verse":
       return d.type === "Verse" && !d.canonical ? 1.3 : 2.1;
     case "character":
-      return d.id === "character:tiruvalluvar" ? 7.5 : d.id === "character:she" ? 5 : 3.2;
+      return d.id === "character:she" ? 5 : 3.2;
     case "dilemma":
       return 5.2 * lift;
     case "personal":
@@ -446,7 +446,7 @@ export default function CosmicGraph3D() {
       if (kind !== "verse") {
         labelSpec = {
           text: d.type === "Chapter" ? `${d.number}  ${d.title}` : d.label,
-          size: kind === "chapter" ? 8.5 : d.id === "character:tiruvalluvar" ? 6.4 : 5,
+          size: kind === "chapter" ? 8.5 : 5,
           // Hundreds of these can end up in memory, so they are no sharper than they will ever be seen.
           fontSize: tier === "low" ? 44 : kind === "chapter" ? 56 : 90,
           color: dark ? (kind === "chapter" ? "#edeae4" : "#cfc9bf") : kind === "chapter" ? "#1b1a17" : "#3a3732",
@@ -744,7 +744,7 @@ export default function CosmicGraph3D() {
       geo.setIndex(idx);
       const [rgb, opacity] = style[c] ?? style.curated;
       const line = new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color: new THREE.Color(`rgb(${rgb})`), transparent: true, opacity, depthWrite: false }));
-      // The poet's lines to his couplets make the star at the heart of the galaxy; the lotus has a stem there instead.
+      // The speakers' lines to their couplets in Part 3 show in the galaxy and fade out in the lotus.
       if (c === "spoke") (morph.links.spokes = line.material).opacity = opacity * (1 - morph.mix);
       line.frustumCulled = false;
       line.raycast = () => {};

@@ -191,4 +191,4 @@ export const LADDER = {
 export const SAMPLE_QUESTIONS = ["What does the Kural say about anger?", "How do I choose a friend?", "Is it wrong to want wealth?"];
 
 /** Shown while the graph data loads; matches public/data/kural-graph.json (stats). */
-export const GRAPH_COUNTS_FALLBACK = { Chapter: 133, Verse: 1330, SanskritConcept: 117, Emotion: 129, LifeDilemma: 58, Character: 4, edges: 6862 };
+export const GRAPH_COUNTS_FALLBACK = { Chapter: 133, Verse: 1330, SanskritConcept: 117, Emotion: 129, LifeDilemma: 58, Character: 17, edges: 5842 };

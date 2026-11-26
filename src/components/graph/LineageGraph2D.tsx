@@ -125,7 +125,7 @@ function buildLineage(g: GitaGraphs, focus: string, versesById: Map<string, Vers
         out.push(...pick(["ADDRESSES_DILEMMA"], false, 6, "down", versesFirst), ...pick(["RESOLVED_THROUGH"], true, 3, "down"));
         break;
       case "Character":
-        out.push(...pick(["ADDRESSES"], false, 3, "up"), ...pick(["ADDRESSES"], true, 2, "down"), ...pick(["MENTIONS_CHARACTER"], false, 6, "down"));
+        out.push(...pick(["ADDRESSES"], false, 3, "up"), ...pick(["ADDRESSES"], true, 2, "down"), ...pick(["MENTIONS_CHARACTER"], false, 6, "down"), ...pick(["INVOLVES_CHARACTER"], false, 6, "down"));
         break;
       case "Chapter":
         out.push(...pick(["NEXT_CHAPTER"], false, 1, "up"), ...pick(["EXPOUNDS"], true, 5, "down"), ...pick(["NEXT_CHAPTER"], true, 1, "down"));
