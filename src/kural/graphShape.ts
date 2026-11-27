@@ -5,7 +5,8 @@ import type { ColorBy } from "@/lib/store/useGitaStore";
 
 /**
  * The map has two shapes: the galaxy (his wheel) and the crown (ours). Both share the same rim. The crown was first
- * called the lotus, and keeps that id in code and in saved settings.
+ * called the lotus, and keeps that id in code and in saved settings. The crown is the default; the galaxy shows only
+ * once chosen.
  */
 export type GraphShape = "galaxy" | "lotus";
 /** His colour modes, plus the three Parts of the book. */
@@ -17,9 +18,9 @@ const KEY = "gitaviswa:graph-shape";
 export const useGraphShape = create<{ shape: GraphShape; setShape: (shape: GraphShape) => void }>((set) => ({
   shape: (() => {
     try {
-      return typeof window !== "undefined" && localStorage.getItem(KEY) === "lotus" ? "lotus" : "galaxy";
+      return typeof window !== "undefined" && localStorage.getItem(KEY) === "galaxy" ? "galaxy" : "lotus";
     } catch {
-      return "galaxy";
+      return "lotus";
     }
   })(),
   setShape: (shape) => {
